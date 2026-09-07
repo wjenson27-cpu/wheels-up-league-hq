@@ -1,0 +1,1045 @@
+{
+  "updated": "2026-09-07",
+  "seasons": [
+    {
+      "year": 2014,
+      "games": 13,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Team Collins",
+          "owner": "Towner / Aga",
+          "record": "8-5",
+          "notes": "CHAMP \u2014 co-owned"
+        },
+        {
+          "rank": 2,
+          "team": "Optimus Prime",
+          "owner": "Bill",
+          "record": "6-7",
+          "notes": "Runner-up"
+        },
+        {
+          "rank": 3,
+          "team": "Larry's Miscarries",
+          "owner": "Luke",
+          "record": "10-3",
+          "notes": "Best record, bronze"
+        },
+        {
+          "rank": 4,
+          "team": "Team Mikhed",
+          "owner": "Heff",
+          "record": "10-3",
+          "notes": "Tied most wins"
+        },
+        {
+          "rank": 5,
+          "team": "Suck On Dez Nuts",
+          "owner": "Chase",
+          "record": "8-5",
+          "notes": ""
+        },
+        {
+          "rank": 6,
+          "team": "Larry Killers",
+          "owner": "Kellen",
+          "record": "6-7",
+          "notes": "Host / Pocket Agents"
+        },
+        {
+          "rank": 7,
+          "team": "Klyde and Clyde",
+          "owner": "Erin",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 8,
+          "team": "In Hauschka We Trust",
+          "owner": "Richard",
+          "record": "9-4",
+          "notes": ""
+        },
+        {
+          "rank": 9,
+          "team": "Team Morgasms",
+          "owner": "Stephen",
+          "record": "5-8",
+          "notes": ""
+        },
+        {
+          "rank": 10,
+          "team": "Team marinosmash",
+          "owner": "Rickey",
+          "record": "3-10",
+          "notes": ""
+        },
+        {
+          "rank": 11,
+          "team": "Its on Bitchez",
+          "owner": "Gabe",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 12,
+          "team": "Mean Jerk Time",
+          "owner": "Kyle",
+          "record": "5-8",
+          "notes": ""
+        },
+        {
+          "rank": 13,
+          "team": "Team 1893Tony",
+          "owner": "Tony",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 14,
+          "team": "Blounts Blunt",
+          "owner": "Harty",
+          "record": "3-10",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "games": 13,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Pocket Agents",
+          "owner": "Kellen",
+          "record": "10-3",
+          "notes": "CHAMP \u2014 Host"
+        },
+        {
+          "rank": 2,
+          "team": "Stafford Infection",
+          "owner": "Heff",
+          "record": "7-6",
+          "notes": "Runner-up"
+        },
+        {
+          "rank": 3,
+          "team": "Romo Witten His Pants",
+          "owner": "Chase",
+          "record": "7-6",
+          "notes": ""
+        },
+        {
+          "rank": 4,
+          "team": "Team Harty",
+          "owner": "Harty",
+          "record": "9-4",
+          "notes": ""
+        },
+        {
+          "rank": 5,
+          "team": "Team Rickey",
+          "owner": "Rickey",
+          "record": "6-6-1",
+          "notes": ""
+        },
+        {
+          "rank": 6,
+          "team": "Back to Back",
+          "owner": "Towner / Aga",
+          "record": "10-3",
+          "notes": "Tied most wins, co-owned"
+        },
+        {
+          "rank": 7,
+          "team": "Gronk Spike",
+          "owner": "Bill",
+          "record": "9-4",
+          "notes": ""
+        },
+        {
+          "rank": 8,
+          "team": "dropping like flies",
+          "owner": "Rymo",
+          "record": "8-5",
+          "notes": "Rymo first year"
+        },
+        {
+          "rank": 9,
+          "team": "Mean Jerk Time",
+          "owner": "Kyle",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 10,
+          "team": "Drinkin Fortes",
+          "owner": "Erin",
+          "record": "6-6-1",
+          "notes": ""
+        },
+        {
+          "rank": 11,
+          "team": "One Last Dingle",
+          "owner": "Luke",
+          "record": "4-9",
+          "notes": ""
+        },
+        {
+          "rank": 12,
+          "team": "Beast Mode",
+          "owner": "Gabe",
+          "record": "4-9",
+          "notes": ""
+        },
+        {
+          "rank": 13,
+          "team": "New Kids On the Block",
+          "owner": "Sak",
+          "record": "3-10",
+          "notes": "Sak first year"
+        },
+        {
+          "rank": 14,
+          "team": "Team 1893Tony",
+          "owner": "Tony",
+          "record": "1-12",
+          "notes": "Alumni \u2014 12-game skid"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "games": 13,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "The Zeke-a Virus",
+          "owner": "Chase",
+          "record": "7-6",
+          "notes": "CHAMP"
+        },
+        {
+          "rank": 2,
+          "team": "Concussion Protocol",
+          "owner": "Gabe",
+          "record": "8-5",
+          "notes": "Alumni runner-up"
+        },
+        {
+          "rank": 3,
+          "team": "Slump Buster",
+          "owner": "Bill",
+          "record": "8-5",
+          "notes": ""
+        },
+        {
+          "rank": 4,
+          "team": "Le'Theon Belljoy",
+          "owner": "Luke",
+          "record": "8-5",
+          "notes": ""
+        },
+        {
+          "rank": 5,
+          "team": "Mean Jerk Time",
+          "owner": "Kyle",
+          "record": "8-5",
+          "notes": ""
+        },
+        {
+          "rank": 6,
+          "team": "Team Morgan",
+          "owner": "Stephen",
+          "record": "7-6",
+          "notes": ""
+        },
+        {
+          "rank": 7,
+          "team": "Roethlisberger will Forsett",
+          "owner": "Grizz",
+          "record": "7-6",
+          "notes": "Grizz first year on shots"
+        },
+        {
+          "rank": 8,
+          "team": "Phil My Cup Up",
+          "owner": "Heff",
+          "record": "10-3",
+          "notes": "Best record, missed podium"
+        },
+        {
+          "rank": 9,
+          "team": "Bobby Swagner",
+          "owner": "Erin",
+          "record": "5-8",
+          "notes": ""
+        },
+        {
+          "rank": 10,
+          "team": "Team Harty",
+          "owner": "Harty",
+          "record": "7-6",
+          "notes": ""
+        },
+        {
+          "rank": 11,
+          "team": "Business Is Boomin",
+          "owner": "Towner / Aga",
+          "record": "7-6",
+          "notes": "Co-owned"
+        },
+        {
+          "rank": 12,
+          "team": "Team Richard",
+          "owner": "Richard",
+          "record": "4-9",
+          "notes": ""
+        },
+        {
+          "rank": 13,
+          "team": "Team Rickey",
+          "owner": "Rickey",
+          "record": "1-12",
+          "notes": ""
+        },
+        {
+          "rank": 14,
+          "team": "Pocket Agents",
+          "owner": "Kellen",
+          "record": "4-9",
+          "notes": "Host \u2014 defending champ flop"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "games": 13,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Phil My Cup Up",
+          "owner": "Heff",
+          "record": "9-4",
+          "notes": "CHAMP"
+        },
+        {
+          "rank": 2,
+          "team": "Billionaire's Club",
+          "owner": "Bill",
+          "record": "7-6",
+          "notes": "Runner-up"
+        },
+        {
+          "rank": 3,
+          "team": "Team Morgan",
+          "owner": "Stephen",
+          "record": "6-7",
+          "notes": "Alumni bronze"
+        },
+        {
+          "rank": 4,
+          "team": "Hawk bLockett",
+          "owner": "Towner / Aga",
+          "record": "9-4",
+          "notes": "Last co-owned year"
+        },
+        {
+          "rank": 5,
+          "team": "Mean Jerk Time",
+          "owner": "Kyle",
+          "record": "7-6",
+          "notes": ""
+        },
+        {
+          "rank": 6,
+          "team": "Pocket Agents",
+          "owner": "Kellen",
+          "record": "11-2",
+          "notes": "Best record \u2014 Host"
+        },
+        {
+          "rank": 7,
+          "team": "Crows before Hoes",
+          "owner": "Grizz",
+          "record": "7-6",
+          "notes": "Grizz"
+        },
+        {
+          "rank": 8,
+          "team": "In search of New RB",
+          "owner": "Chase",
+          "record": "8-5",
+          "notes": ""
+        },
+        {
+          "rank": 9,
+          "team": "MBWP Forclosure",
+          "owner": "Luke",
+          "record": "5-8",
+          "notes": ""
+        },
+        {
+          "rank": 10,
+          "team": "Team Replacements",
+          "owner": "Nate",
+          "record": "5-8",
+          "notes": "Nate first year"
+        },
+        {
+          "rank": 11,
+          "team": "Dude Where's My Carr?",
+          "owner": "Sak",
+          "record": "5-8",
+          "notes": ""
+        },
+        {
+          "rank": 12,
+          "team": "Beast Or Bust",
+          "owner": "Gabe",
+          "record": "4-9",
+          "notes": ""
+        },
+        {
+          "rank": 13,
+          "team": "Taking L's",
+          "owner": "Erin",
+          "record": "4-9",
+          "notes": ""
+        },
+        {
+          "rank": 14,
+          "team": "Team Rickey",
+          "owner": "Rickey",
+          "record": "4-9",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "games": 13,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Adam Schefter's Source",
+          "owner": "Nate",
+          "record": "11-2",
+          "notes": "CHAMP \u2014 year 2"
+        },
+        {
+          "rank": 2,
+          "team": "Phil My Cup Up",
+          "owner": "Heff",
+          "record": "9-4",
+          "notes": "Back-to-back finals"
+        },
+        {
+          "rank": 3,
+          "team": "Pocket Agents",
+          "owner": "Kellen",
+          "record": "8-5",
+          "notes": "Host"
+        },
+        {
+          "rank": 4,
+          "team": "Larry Murphy's Take N'B\u2026",
+          "owner": "Luke",
+          "record": "10-3",
+          "notes": ""
+        },
+        {
+          "rank": 5,
+          "team": "Billionaire's Club",
+          "owner": "Bill",
+          "record": "7-6",
+          "notes": ""
+        },
+        {
+          "rank": 6,
+          "team": "Captain Morgasms",
+          "owner": "Stephen",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 7,
+          "team": "Highway To Bell",
+          "owner": "Towner",
+          "record": "6-7",
+          "notes": "First solo Towner year"
+        },
+        {
+          "rank": 8,
+          "team": "OBEY D-LAW",
+          "owner": "Chase",
+          "record": "8-5",
+          "notes": ""
+        },
+        {
+          "rank": 9,
+          "team": "JUST TAKE MY TEAM",
+          "owner": "Aga",
+          "record": "6-7",
+          "notes": "First solo Aga year"
+        },
+        {
+          "rank": 10,
+          "team": "CORK SHOTS",
+          "owner": "Show",
+          "record": "4-9",
+          "notes": "Big Show first year"
+        },
+        {
+          "rank": 11,
+          "team": "SAK'D HIMSELF",
+          "owner": "Sak",
+          "record": "4-9",
+          "notes": ""
+        },
+        {
+          "rank": 12,
+          "team": "POCKET AGENTS SECRETARY",
+          "owner": "Grizz",
+          "record": "4-9",
+          "notes": "Grizz"
+        },
+        {
+          "rank": 13,
+          "team": "ALLERGIC TO PLAYOFFS",
+          "owner": "Erin",
+          "record": "5-8",
+          "notes": ""
+        },
+        {
+          "rank": 14,
+          "team": "Coonspiracy Theory",
+          "owner": "Kyle",
+          "record": "3-10",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "games": 13,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Adam Schefter's Source",
+          "owner": "Nate",
+          "record": "8-5",
+          "notes": "CHAMP \u2014 repeat"
+        },
+        {
+          "rank": 2,
+          "team": "Run CMC",
+          "owner": "Towner",
+          "record": "11-1-1",
+          "notes": "Best RS in ESPN era"
+        },
+        {
+          "rank": 3,
+          "team": "Pocket Agents",
+          "owner": "Kellen",
+          "record": "8-5",
+          "notes": "Host \u2014 third bronze"
+        },
+        {
+          "rank": 4,
+          "team": "ALMIGHTY TRON",
+          "owner": "Aga",
+          "record": "7-6",
+          "notes": ""
+        },
+        {
+          "rank": 5,
+          "team": "Rodgers Pak'd Kyle's Bum",
+          "owner": "Kyle",
+          "record": "7-6",
+          "notes": ""
+        },
+        {
+          "rank": 6,
+          "team": "Billionaire's Club",
+          "owner": "Bill",
+          "record": "11-2",
+          "notes": "Tied most wins"
+        },
+        {
+          "rank": 7,
+          "team": "Baby got Dak",
+          "owner": "Chase",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 8,
+          "team": "Dillard's House of Horrors",
+          "owner": "Grizz",
+          "record": "7-6",
+          "notes": "Grizz"
+        },
+        {
+          "rank": 9,
+          "team": "DJ Eazy Dick",
+          "owner": "Erin",
+          "record": "5-8",
+          "notes": ""
+        },
+        {
+          "rank": 10,
+          "team": "Officially Chubbless",
+          "owner": "Sak",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 11,
+          "team": "CORK SHOTS",
+          "owner": "Show",
+          "record": "5-8",
+          "notes": ""
+        },
+        {
+          "rank": 12,
+          "team": "Larry the Layup",
+          "owner": "Luke",
+          "record": "1-12",
+          "notes": ""
+        },
+        {
+          "rank": 13,
+          "team": "100pt RockFight (-_-)",
+          "owner": "Heff",
+          "record": "3-9-1",
+          "notes": ""
+        },
+        {
+          "rank": 14,
+          "team": "Jesse's Freshies",
+          "owner": "Jesse",
+          "record": "5-8",
+          "notes": "Jesse first year"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "games": 13,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Jordy Nelson's Revenge",
+          "owner": "Rymo",
+          "record": "6-7",
+          "notes": "CHAMP \u2014 6-7 title"
+        },
+        {
+          "rank": 2,
+          "team": "2 GOFFS 1 KUPP",
+          "owner": "Towner",
+          "record": "6-7",
+          "notes": "Runner-up"
+        },
+        {
+          "rank": 3,
+          "team": "DK You're My Only Hope",
+          "owner": "Show",
+          "record": "7-6",
+          "notes": ""
+        },
+        {
+          "rank": 4,
+          "team": "Overcooked Gizz",
+          "owner": "Grizz",
+          "record": "9-4",
+          "notes": "Grizz \u2014 best ESPN RS"
+        },
+        {
+          "rank": 5,
+          "team": "Gizz Cook'd up a Coons\u2026",
+          "owner": "Kyle",
+          "record": "8-5",
+          "notes": ""
+        },
+        {
+          "rank": 6,
+          "team": "Adam Schefter's Source",
+          "owner": "Nate",
+          "record": "8-4-1",
+          "notes": ""
+        },
+        {
+          "rank": 7,
+          "team": "Who wants 12am Trades?",
+          "owner": "Chase",
+          "record": "11-2",
+          "notes": "Best record"
+        },
+        {
+          "rank": 8,
+          "team": "Aga Tron",
+          "owner": "Aga",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 9,
+          "team": "Pocket Agents",
+          "owner": "Kellen",
+          "record": "6-7",
+          "notes": "Host"
+        },
+        {
+          "rank": 10,
+          "team": "Billionaire's Club",
+          "owner": "Bill",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 11,
+          "team": "Jesse's Freshies",
+          "owner": "Jesse",
+          "record": "5-7-1",
+          "notes": ""
+        },
+        {
+          "rank": 12,
+          "team": "Noplayoffs4Me Toiletbo\u2026",
+          "owner": "Erin",
+          "record": "6-7",
+          "notes": ""
+        },
+        {
+          "rank": 13,
+          "team": "30for30:TheFall of The Goat",
+          "owner": "Heff",
+          "record": "2-11",
+          "notes": ""
+        },
+        {
+          "rank": 14,
+          "team": "Larry Murphy's TNB",
+          "owner": "Luke",
+          "record": "4-9",
+          "notes": "Co-owned"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "games": 14,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Big Fat Pomo",
+          "owner": "Luke",
+          "record": "9-5",
+          "notes": "CHAMP"
+        },
+        {
+          "rank": 2,
+          "team": "Madden, Betty And my t\u2026",
+          "owner": "Heff",
+          "record": "8-6",
+          "notes": "Runner-up"
+        },
+        {
+          "rank": 3,
+          "team": "No Second Best",
+          "owner": "Kyle",
+          "record": "11-3",
+          "notes": "Best record"
+        },
+        {
+          "rank": 4,
+          "team": "Quest for 8 Seed",
+          "owner": "Nate",
+          "record": "7-7",
+          "notes": ""
+        },
+        {
+          "rank": 5,
+          "team": "Jesse's Freshies",
+          "owner": "Jesse",
+          "record": "9-5",
+          "notes": ""
+        },
+        {
+          "rank": 6,
+          "team": "Aga Tron",
+          "owner": "Aga",
+          "record": "7-7",
+          "notes": ""
+        },
+        {
+          "rank": 7,
+          "team": "Hubba Hubba",
+          "owner": "Show",
+          "record": "10-3-1",
+          "notes": ""
+        },
+        {
+          "rank": 8,
+          "team": "Sacrificial Lamb",
+          "owner": "Bill",
+          "record": "7-7",
+          "notes": ""
+        },
+        {
+          "rank": 9,
+          "team": "Pocket Agents",
+          "owner": "Kellen",
+          "record": "3-11",
+          "notes": "Host"
+        },
+        {
+          "rank": 10,
+          "team": "Catch 22",
+          "owner": "Towner",
+          "record": "6-8",
+          "notes": ""
+        },
+        {
+          "rank": 11,
+          "team": "Let's Go Brandon",
+          "owner": "Grizz",
+          "record": "4-9-1",
+          "notes": "Grizz"
+        },
+        {
+          "rank": 12,
+          "team": "Steppin Quon Toes",
+          "owner": "Rymo",
+          "record": "5-9",
+          "notes": ""
+        },
+        {
+          "rank": 13,
+          "team": "Playoffs\u2026haha",
+          "owner": "Erin",
+          "record": "6-8",
+          "notes": ""
+        },
+        {
+          "rank": 14,
+          "team": "Aga top Towner bottom",
+          "owner": "Chase",
+          "record": "5-9",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "games": 14,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Aga Tron",
+          "owner": "Aga",
+          "record": "7-6-1",
+          "notes": "CHAMP"
+        },
+        {
+          "rank": 2,
+          "team": "He Who Shall Not Be Named",
+          "owner": "Nate",
+          "record": "8-6",
+          "notes": "Runner-up"
+        },
+        {
+          "rank": 3,
+          "team": "Bye Bye Bus",
+          "owner": "Show",
+          "record": "8-6",
+          "notes": ""
+        },
+        {
+          "rank": 4,
+          "team": "Sous Vide Is Overrated",
+          "owner": "Heff",
+          "record": "8-6",
+          "notes": ""
+        },
+        {
+          "rank": 5,
+          "team": "Heff loves Dee Eye See Kay",
+          "owner": "Chase",
+          "record": "9-5",
+          "notes": "Tied most wins"
+        },
+        {
+          "rank": 6,
+          "team": "Pocket Agents",
+          "owner": "Kellen",
+          "record": "9-5",
+          "notes": "Host \u2014 sat 2023 after this"
+        },
+        {
+          "rank": 7,
+          "team": "Chosen 1",
+          "owner": "Towner",
+          "record": "9-4-1",
+          "notes": "Tied most wins"
+        },
+        {
+          "rank": 8,
+          "team": "Herb Your Enthusiasm",
+          "owner": "Grizz",
+          "record": "8-6",
+          "notes": "Grizz"
+        },
+        {
+          "rank": 9,
+          "team": "0 for September And No\u2026",
+          "owner": "Rymo",
+          "record": "5-9",
+          "notes": ""
+        },
+        {
+          "rank": 10,
+          "team": "ChumpPomo OrBust No\u2026",
+          "owner": "Luke",
+          "record": "5-9",
+          "notes": ""
+        },
+        {
+          "rank": 11,
+          "team": "TheVaxSavedMe NotMy\u2026",
+          "owner": "Kyle",
+          "record": "7-7",
+          "notes": ""
+        },
+        {
+          "rank": 12,
+          "team": "Punt Team!",
+          "owner": "Bill",
+          "record": "4-10",
+          "notes": "Career-worst RS"
+        },
+        {
+          "rank": 13,
+          "team": "Re Freshies",
+          "owner": "Jesse",
+          "record": "5-9",
+          "notes": ""
+        },
+        {
+          "rank": 14,
+          "team": "The Ship Has Sunk",
+          "owner": "Erin / Connor",
+          "record": "5-9",
+          "notes": "Alumni / Connor debut"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "games": 14,
+      "standings": [
+        {
+          "rank": 1,
+          "team": "Mrs. DoubtPfizer",
+          "owner": "Kyle",
+          "record": "10-4",
+          "notes": "CHAMP"
+        },
+        {
+          "rank": 2,
+          "team": "Post Mahomes",
+          "owner": "Towner",
+          "record": "8-6",
+          "notes": "Runner-up"
+        },
+        {
+          "rank": 3,
+          "team": "Kill Bills 7 Game Streak",
+          "owner": "Jesse",
+          "record": "7-7",
+          "notes": "First podium"
+        },
+        {
+          "rank": 4,
+          "team": "LaPorta Potty",
+          "owner": "Show",
+          "record": "9-5",
+          "notes": ""
+        },
+        {
+          "rank": 5,
+          "team": "Bill's Killed",
+          "owner": "Bill",
+          "record": "10-4",
+          "notes": "Tied most wins + 7-game streak"
+        },
+        {
+          "rank": 6,
+          "team": "Kyle loves dee eye see",
+          "owner": "Chase",
+          "record": "8-6",
+          "notes": ""
+        },
+        {
+          "rank": 7,
+          "team": "Everyone Cut!!!",
+          "owner": "Nate",
+          "record": "8-6",
+          "notes": ""
+        },
+        {
+          "rank": 8,
+          "team": "Preemptive Karma",
+          "owner": "Luke",
+          "record": "8-6",
+          "notes": ""
+        },
+        {
+          "rank": 9,
+          "team": "Tron",
+          "owner": "Aga",
+          "record": "6-8",
+          "notes": ""
+        },
+        {
+          "rank": 10,
+          "team": "No Risk, All Rewards",
+          "owner": "Rymo",
+          "record": "6-8",
+          "notes": ""
+        },
+        {
+          "rank": 11,
+          "team": "Playoffs?",
+          "owner": "Connor",
+          "record": "5-9",
+          "notes": ""
+        },
+        {
+          "rank": 12,
+          "team": "Sit yer Studz",
+          "owner": "Heff",
+          "record": "4-10",
+          "notes": ""
+        },
+        {
+          "rank": 13,
+          "team": "Tua Fast Tua Furious",
+          "owner": "Sak",
+          "record": "5-9",
+          "notes": "Returned after gap years"
+        },
+        {
+          "rank": 14,
+          "team": "Eye of the Pfizer",
+          "owner": "Grizz",
+          "record": "4-10",
+          "notes": "Grizz"
+        }
+      ]
+    }
+  ]
+}
