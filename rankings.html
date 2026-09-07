@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Power Rankings — Wheels Up Collective</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow">Week 1 · SAMPLE takes</span>
+      <h1>Power rankings</h1>
+      <p class="lede">1–14 with blurbs. Other teams are invented SAMPLE for the site — edit <code>data/rankings.json</code> when you want real heat.</p>
+    </header>
+    <ol class="rank-list" id="rankList"><li class="muted">Loading…</li></ol>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const data = await WUC.loadJSON("data/rankings.json");
+        document.querySelector(".page-hero .lede").insertAdjacentHTML(
+          "beforeend",
+          ` <span class="dim">Updated ${WUC.formatDate(data.updated)}.</span>`
+        );
+        document.getElementById("rankList").innerHTML = (data.rankings || []).map(r => `
+          <li class="rank-row${r.rank <= 3 ? " top3" : ""}">
+            <div class="rank-num">${r.rank}</div>
+            <div>
+              <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
+              <h2 class="rank-team">${WUC.escapeHtml(r.team)}</h2>
+              <p class="rank-blurb">${WUC.escapeHtml(r.blurb)}</p>
+            </div>
+          </li>`).join("");
+      } catch (e) {
+        document.getElementById("rankList").innerHTML = `<li class="muted">Couldn’t load rankings.</li>`;
+      }
+    });
+  </script>
+</body>
+</html>

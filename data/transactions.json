@@ -1,0 +1,150 @@
+{
+  "updated": "2026-09-07",
+  "source": "Fantrax transactions page Sep 7 2026 ~8:52–9:49 AM PT (Daily Fantrax roster sync)",
+  "items": [
+    {
+      "date": "2026-09-06",
+      "type": "FAAB",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Added Makai Lemon (WR/PHI) bid $2; dropped Amani Hooker (DB/TEN)"
+    },
+    {
+      "date": "2026-09-05",
+      "type": "ADD",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Added Chris Bell"
+    },
+    {
+      "date": "2026-09-05",
+      "type": "ADD",
+      "team": "Pocket Agents",
+      "summary": "Added Upton Stout"
+    },
+    {
+      "date": "2026-09-05",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Kaleb Johnson; dropped Nadjee Harris"
+    },
+    {
+      "date": "2026-09-05",
+      "type": "ADD",
+      "team": "The Hypersecretors",
+      "summary": "Added Malik Willis"
+    },
+    {
+      "date": "2026-09-04",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Nadjee Harris; dropped Tyler Shough"
+    },
+    {
+      "date": "2026-09-04",
+      "type": "ADD",
+      "team": "The Hypersecretors",
+      "summary": "Added Kenyon Sadiq"
+    },
+    {
+      "date": "2026-09-04",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Churn: +Denzel Boston −Craig Woodson; +Craig Woodson −Brandon Jones; +Brandon Jones −Dante Trader"
+    },
+    {
+      "date": "2026-09-04",
+      "type": "ADD/DROP",
+      "team": "Eagle Ridge Eddies",
+      "summary": "Added Evan Williams (DB/GB); dropped Ja'Quan McMillian (DB/DEN)"
+    },
+    {
+      "date": "2026-09-04",
+      "type": "ADD/DROP",
+      "team": "The Hypersecretors",
+      "summary": "Added Chigoziem Okonkwo, dropped Gunnar Helm; added Dallas Turner, dropped Makai Lemon"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "ADD",
+      "team": "Little Ass Boys",
+      "summary": "Added Ronnie Hickman; added Caleb Douglas"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Moves: +Emmett Johnson −Nadjee Harris; +Nadjee Harris −Justin Strnad; +Jaishawn Barham −Trenton Simpson; +Bryce Boettcher −Nadjee Harris"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "ADD/DROP",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Added Roschon Johnson; dropped Chigoziem Okonkwo"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "ADD/DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Added Zavion Thomas; dropped Evan Williams (related to Sep 3 Ultron trade package)"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "ADD",
+      "team": "Pocket Agents",
+      "summary": "Added Malik Mustafa"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "ADD/DROP",
+      "team": "The Hypersecretors",
+      "summary": "TE churn Helm/Barner; later +Gunnar Helm −Dylan Sampson"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "+Nadjee Harris −George Holani; +George Holani −Keenan Allen; +Justin Strnad −Branson Combs"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "ADD/DROP",
+      "team": "Valley Old Goats",
+      "summary": "+Camryn Bynum −Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "ADD",
+      "team": "Eagle Ridge Eddies",
+      "summary": "Added Denzel Perryman (LB/LAC)"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "ADD",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Added Harold Landry; added Devin White"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "FAAB",
+      "team": "League",
+      "summary": "FAAB batch: notable — Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; −Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0–$2 IDP/depth adds"
+    },
+    {
+      "date": "2026-09-01",
+      "type": "ADD/DROP",
+      "team": "Pocket Agents",
+      "summary": "Added Josiah Trotter; dropped Jeremiah Trotter"
+    },
+    {
+      "date": "2026-08-30",
+      "type": "TRADE BLOCK",
+      "team": "Pocket Agents",
+      "summary": "Cody Barton (LB/TEN) listed on the block (last confirmed Sep 6; Sep 7 sync could not re-open trade-block page)"
+    },
+    {
+      "date": "2026-08-30",
+      "type": "DRAFT",
+      "team": "League",
+      "summary": "20-round snake complete — Wheels Up 2026 is locked"
+    }
+  ]
+}

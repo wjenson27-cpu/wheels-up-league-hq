@@ -1,0 +1,742 @@
+{
+  "league": "Wheels Up Collective",
+  "updated": "2026-09-06",
+  "source": "League Archives docx (ESPN 2014\u20132023, Fantrax 2024\u20132025), compiled Sep 6 2026",
+  "note": "ESPN years: #1 row = playoff champion. Fantrax years: regular-season order by record then PF; gold/silver/bronze = playoff podium.",
+  "commissioners": [
+    {
+      "name": "Larry Salisbury",
+      "era": "Founding / ongoing"
+    },
+    {
+      "name": "Luke Sahlberg (ThiccSwede)",
+      "era": "Co-commissioner / Saltese Slamm"
+    }
+  ],
+  "ringsThrough2025": "Nate 2 \u00b7 Kyle 2 \u00b7 Heff 2 \u00b7 Towner/Aga shared 1 \u00b7 Aga solo 1 \u00b7 Chase 1 \u00b7 Rymo 1 \u00b7 Larry 1 \u00b7 Kellen 1. Bill still looking. Kyle only owner with titles in both eras.",
+  "champions": [
+    {
+      "year": 2014,
+      "era": "ESPN",
+      "champion": "Team Collins",
+      "owner": "Towner / Aga",
+      "rs": "8-5",
+      "note": "Co-owned"
+    },
+    {
+      "year": 2015,
+      "era": "ESPN",
+      "champion": "Pocket Agents",
+      "owner": "Kellen Olson",
+      "rs": "10-3",
+      "note": "Host"
+    },
+    {
+      "year": 2016,
+      "era": "ESPN",
+      "champion": "The Zeke-a Virus",
+      "owner": "Chase Anderson",
+      "rs": "7-6",
+      "note": ""
+    },
+    {
+      "year": 2017,
+      "era": "ESPN",
+      "champion": "Phil My Cup Up",
+      "owner": "Mike Heff",
+      "rs": "9-4",
+      "note": ""
+    },
+    {
+      "year": 2018,
+      "era": "ESPN",
+      "champion": "Adam Schefter's Source",
+      "owner": "Nathan Kelly",
+      "rs": "11-2",
+      "note": "Repeat start"
+    },
+    {
+      "year": 2019,
+      "era": "ESPN",
+      "champion": "Adam Schefter's Source",
+      "owner": "Nathan Kelly",
+      "rs": "8-5",
+      "note": "Only back-to-back"
+    },
+    {
+      "year": 2020,
+      "era": "ESPN",
+      "champion": "Jordy Nelson's Revenge",
+      "owner": "Ryan McCallum",
+      "rs": "6-7",
+      "note": "Worst champ RS"
+    },
+    {
+      "year": 2021,
+      "era": "ESPN",
+      "champion": "Big Fat Pomo",
+      "owner": "Luke Sahlberg",
+      "rs": "9-5",
+      "note": ""
+    },
+    {
+      "year": 2022,
+      "era": "ESPN",
+      "champion": "Aga Tron",
+      "owner": "Brian Aga",
+      "rs": "7-6-1",
+      "note": "Solo title"
+    },
+    {
+      "year": 2023,
+      "era": "ESPN",
+      "champion": "Mrs. DoubtPfizer",
+      "owner": "Kyle Weberg",
+      "rs": "10-4",
+      "note": ""
+    },
+    {
+      "year": 2024,
+      "era": "Fantrax",
+      "champion": "Valley Old Goats",
+      "owner": "Mike Heff",
+      "rs": "10-4",
+      "note": "Second ring \u00b7 first Fantrax cup"
+    },
+    {
+      "year": 2025,
+      "era": "Fantrax",
+      "champion": "Mrs. DoubtPfizer",
+      "owner": "Kyle Weberg",
+      "rs": "9-5",
+      "note": "Second ring, 5-seed"
+    }
+  ],
+  "podium": [
+    {
+      "year": 2014,
+      "era": "ESPN",
+      "champion": "Towner / Aga",
+      "runnerUp": "Bill",
+      "third": "Larry"
+    },
+    {
+      "year": 2015,
+      "era": "ESPN",
+      "champion": "Kellen Olson",
+      "runnerUp": "Heff",
+      "third": "Chase"
+    },
+    {
+      "year": 2016,
+      "era": "ESPN",
+      "champion": "Chase",
+      "runnerUp": "Gabe Harrington",
+      "third": "Bill"
+    },
+    {
+      "year": 2017,
+      "era": "ESPN",
+      "champion": "Heff",
+      "runnerUp": "Bill",
+      "third": "Stephen Morgan"
+    },
+    {
+      "year": 2018,
+      "era": "ESPN",
+      "champion": "Nate",
+      "runnerUp": "Heff",
+      "third": "Kellen"
+    },
+    {
+      "year": 2019,
+      "era": "ESPN",
+      "champion": "Nate",
+      "runnerUp": "Towner",
+      "third": "Kellen"
+    },
+    {
+      "year": 2020,
+      "era": "ESPN",
+      "champion": "Rymo",
+      "runnerUp": "Towner",
+      "third": "Gavin"
+    },
+    {
+      "year": 2021,
+      "era": "ESPN",
+      "champion": "Larry",
+      "runnerUp": "Heff",
+      "third": "Kyle"
+    },
+    {
+      "year": 2022,
+      "era": "ESPN",
+      "champion": "Aga",
+      "runnerUp": "Nate",
+      "third": "Gavin"
+    },
+    {
+      "year": 2023,
+      "era": "ESPN",
+      "champion": "Kyle",
+      "runnerUp": "Towner",
+      "third": "Jesse"
+    },
+    {
+      "year": 2024,
+      "era": "Fantrax",
+      "champion": "Heff",
+      "runnerUp": "Chase",
+      "third": "Bill"
+    },
+    {
+      "year": 2025,
+      "era": "Fantrax",
+      "champion": "Kyle",
+      "runnerUp": "Kellen",
+      "third": "Heff"
+    }
+  ],
+  "allTimeRecords": [
+    {
+      "rk": 1,
+      "owner": "Bill Jenson",
+      "team2026": "Eagle Ridge Eddies",
+      "through23": "76-58",
+      "y2024": "8-6",
+      "y2025": "12-2",
+      "overall": "96-66",
+      "winPct": ".593"
+    },
+    {
+      "rk": 2,
+      "owner": "Chase Anderson",
+      "team2026": "Towner Top Aga Bottom",
+      "through23": "77-57",
+      "y2024": "7-7",
+      "y2025": "6-8",
+      "overall": "90-72",
+      "winPct": ".556"
+    },
+    {
+      "rk": 2,
+      "owner": "Brian Aga",
+      "team2026": "Ultron",
+      "through23": "73-61",
+      "y2024": "8-6",
+      "y2025": "9-5",
+      "overall": "90-72",
+      "winPct": ".556"
+    },
+    {
+      "rk": 2,
+      "owner": "Mike Heff",
+      "team2026": "Valley Old Goats",
+      "through23": "70-64",
+      "y2024": "10-4",
+      "y2025": "10-4",
+      "overall": "90-72",
+      "winPct": ".556"
+    },
+    {
+      "rk": 5,
+      "owner": "Ryan Towner",
+      "team2026": "Indian Trail Slumlords",
+      "through23": "81-53",
+      "y2024": "4-10",
+      "y2025": "2-12",
+      "overall": "87-75",
+      "winPct": ".537"
+    },
+    {
+      "rk": 5,
+      "owner": "Kyle Weberg",
+      "team2026": "Mrs. Doubtpfizer",
+      "through23": "72-62",
+      "y2024": "6-8",
+      "y2025": "9-5",
+      "overall": "87-75",
+      "winPct": ".537"
+    },
+    {
+      "rk": 7,
+      "owner": "Kellen Olson",
+      "team2026": "Pocket Agents",
+      "through23": "65-54*",
+      "y2024": "5-9",
+      "y2025": "10-4",
+      "overall": "80-67",
+      "winPct": ".544"
+    },
+    {
+      "rk": 8,
+      "owner": "Luke Sahlberg",
+      "team2026": "Saltese Slamm",
+      "through23": "64-70",
+      "y2024": "8-6",
+      "y2025": "7-7",
+      "overall": "79-83",
+      "winPct": ".488"
+    },
+    {
+      "rk": 9,
+      "owner": "Nathan Kelly",
+      "team2026": "Substation",
+      "through23": "55-38-1",
+      "y2024": "7-7",
+      "y2025": "7-7",
+      "overall": "69-52-1",
+      "winPct": ".569"
+    },
+    {
+      "rk": 10,
+      "owner": "Tim Brandle",
+      "team2026": "Morningside Muff Divers",
+      "through23": "50-55-1",
+      "y2024": "3-11",
+      "y2025": "6-8",
+      "overall": "59-74-1",
+      "winPct": ".444"
+    },
+    {
+      "rk": 11,
+      "owner": "Gavin Heaton",
+      "team2026": "Drummond Dongers",
+      "through23": "43-37-1",
+      "y2024": "7-7",
+      "y2025": "7-7",
+      "overall": "57-51-1",
+      "winPct": ".527"
+    },
+    {
+      "rk": 12,
+      "owner": "Jesse Nicholson",
+      "team2026": "Little Ass Boys",
+      "through23": "31-37",
+      "y2024": "8-6",
+      "y2025": "4-10",
+      "overall": "43-53",
+      "winPct": ".448"
+    },
+    {
+      "rk": 13,
+      "owner": "Ryan McCallum",
+      "team2026": "Newman Lake Demons",
+      "through23": "30-38",
+      "y2024": "6-8",
+      "y2025": "5-9",
+      "overall": "41-55",
+      "winPct": ".427"
+    },
+    {
+      "rk": 14,
+      "owner": "Michael Sakurada",
+      "team2026": "retired 2025",
+      "through23": "23-43",
+      "y2024": "11-3",
+      "y2025": "4-10",
+      "overall": "38-56",
+      "winPct": ".404"
+    },
+    {
+      "rk": null,
+      "owner": "Jacob Crisp",
+      "team2026": "The Hypersecretors",
+      "through23": "\u2014",
+      "y2024": "\u2014",
+      "y2025": "\u2014",
+      "overall": "Rookie 2026",
+      "winPct": "\u2014"
+    }
+  ],
+  "seasons": [
+    {
+      "year": 2026,
+      "era": "Fantrax",
+      "champion": "TBD",
+      "runnerUp": "TBD",
+      "third": "TBD",
+      "note": "Current season \u2014 14-team IDP, draft Aug 30 2026. Sak retired; Jacob Crisp is the rookie in that chair."
+    },
+    {
+      "year": 2025,
+      "era": "Fantrax",
+      "champion": "Mrs. DoubtPfizer (Kyle Weberg)",
+      "runnerUp": "Pocket Agents (Kellen Olson)",
+      "third": "Valley Old Goats (Mike Heff)",
+      "note": "Kyle champ from 5-seed. Bill 12-2 1-seed, most PF (3,658), lost semis (233) to Kyle after 408\u2013181 R1 vs Larry. Towner Chump at 2-12 with 6th-most PF. Sak 4-10 then retired."
+    },
+    {
+      "year": 2024,
+      "era": "Fantrax",
+      "champion": "Valley Old Goats (Mike Heff)",
+      "runnerUp": "Towner Top Aga Bottom (Chase)",
+      "third": "Eagle Ridge Eddies (Bill)",
+      "note": "First Fantrax cup. Sak best RS 11-3 / 3,728 PF, no ring. Aga 4th. Rymo Chump. Moved off ESPN; 8-team playoffs."
+    },
+    {
+      "year": 2023,
+      "era": "ESPN",
+      "champion": "Mrs. DoubtPfizer (Kyle)",
+      "runnerUp": "Post Mahomes (Towner)",
+      "third": "Kill Bills 7 Game Streak (Jesse)",
+      "note": "Last ESPN season. Kyle's first title."
+    },
+    {
+      "year": 2022,
+      "era": "ESPN",
+      "champion": "Aga Tron (Brian Aga)",
+      "runnerUp": "Nate",
+      "third": "Gavin",
+      "note": "Aga solo title."
+    },
+    {
+      "year": 2021,
+      "era": "ESPN",
+      "champion": "Big Fat Pomo (Luke/Larry)",
+      "runnerUp": "Heff",
+      "third": "Kyle",
+      "note": ""
+    },
+    {
+      "year": 2020,
+      "era": "ESPN",
+      "champion": "Jordy Nelson's Revenge (Rymo)",
+      "runnerUp": "Towner",
+      "third": "Gavin",
+      "note": "6-7 champion \u2014 worst champ RS."
+    },
+    {
+      "year": 2019,
+      "era": "ESPN",
+      "champion": "Adam Schefter's Source (Nate)",
+      "runnerUp": "Towner",
+      "third": "Kellen",
+      "note": "Only back-to-back champ."
+    },
+    {
+      "year": 2018,
+      "era": "ESPN",
+      "champion": "Adam Schefter's Source (Nate)",
+      "runnerUp": "Heff",
+      "third": "Kellen",
+      "note": "Nate year 2. Towner/Aga split to solo chairs."
+    },
+    {
+      "year": 2017,
+      "era": "ESPN",
+      "champion": "Phil My Cup Up (Heff)",
+      "runnerUp": "Bill",
+      "third": "Stephen Morgan",
+      "note": "Last Towner/Aga co-owned year."
+    },
+    {
+      "year": 2016,
+      "era": "ESPN",
+      "champion": "The Zeke-a Virus (Chase)",
+      "runnerUp": "Gabe Harrington",
+      "third": "Bill",
+      "note": ""
+    },
+    {
+      "year": 2015,
+      "era": "ESPN",
+      "champion": "Pocket Agents (Kellen)",
+      "runnerUp": "Heff",
+      "third": "Chase",
+      "note": "Host."
+    },
+    {
+      "year": 2014,
+      "era": "ESPN",
+      "champion": "Team Collins (Towner/Aga)",
+      "runnerUp": "Bill",
+      "third": "Larry",
+      "note": "Inaugural \u2014 co-owned champ."
+    }
+  ],
+  "fantraxTwoYear": [
+    {
+      "owner": "Bill",
+      "y2024": "8-6 (3rd)",
+      "y2025": "12-2 (semis)",
+      "wl": "20-8",
+      "note": "Best Fantrax owner, 0 rings"
+    },
+    {
+      "owner": "Heff",
+      "y2024": "10-4 CHAMP",
+      "y2025": "10-4 (3rd)",
+      "wl": "20-8",
+      "note": "First Fantrax cup"
+    },
+    {
+      "owner": "Aga",
+      "y2024": "8-6",
+      "y2025": "9-5",
+      "wl": "17-11",
+      "note": "4th in 2024"
+    },
+    {
+      "owner": "Kellen",
+      "y2024": "5-9",
+      "y2025": "10-4 (2nd)",
+      "wl": "15-13",
+      "note": "Hiatus then final"
+    },
+    {
+      "owner": "Kyle",
+      "y2024": "6-8",
+      "y2025": "9-5 CHAMP",
+      "wl": "15-13",
+      "note": "Missed then 5-seed title"
+    },
+    {
+      "owner": "Larry",
+      "y2024": "8-6",
+      "y2025": "7-7 (R1)",
+      "wl": "15-13",
+      "note": "Sneaky 8-seed in '25"
+    },
+    {
+      "owner": "Show",
+      "y2024": "7-7",
+      "y2025": "7-7 (R1)",
+      "wl": "14-14",
+      "note": "Two straight sneak-ins"
+    },
+    {
+      "owner": "Nate",
+      "y2024": "7-7 missed",
+      "y2025": "7-7 (R1)",
+      "wl": "14-14",
+      "note": "PF gated him in '24"
+    },
+    {
+      "owner": "Chase",
+      "y2024": "7-7 (2nd)",
+      "y2025": "6-8",
+      "wl": "13-15",
+      "note": "2024 runner-up, missed '25"
+    },
+    {
+      "owner": "Jesse",
+      "y2024": "8-6",
+      "y2025": "4-10",
+      "wl": "12-16",
+      "note": "2024 was the year"
+    },
+    {
+      "owner": "Sak",
+      "y2024": "11-3 (1-seed)",
+      "y2025": "4-10",
+      "wl": "15-13",
+      "note": "Best RS then retired"
+    },
+    {
+      "owner": "Rymo",
+      "y2024": "6-8 Chump",
+      "y2025": "5-9",
+      "wl": "11-17",
+      "note": "2024 Chump"
+    },
+    {
+      "owner": "Towner",
+      "y2024": "4-10",
+      "y2025": "2-12 Chump",
+      "wl": "6-22",
+      "note": "6th in PF in '25"
+    },
+    {
+      "owner": "Grizz",
+      "y2024": "3-11",
+      "y2025": "6-8",
+      "wl": "9-19",
+      "note": "No playoffs either year"
+    }
+  ],
+  "careers": [
+    {
+      "owner": "Bill Jenson",
+      "team": "Eagle Ridge Eddies",
+      "years": "2014\u2013present (12)",
+      "overall": "96-66 (.593)",
+      "hardware": "0 rings \u00b7 2nd in 2014, 2017 \u00b7 3rd in 2016, 2024",
+      "cut": "All-time wins leader. 12-2 and most PF in 2025. Lost the semis to Kyle. Lord of No Rings."
+    },
+    {
+      "owner": "Chase Anderson",
+      "team": "Towner Top Aga Bottom",
+      "years": "2014\u2013present (12)",
+      "overall": "90-72 (.556)",
+      "hardware": "1 ring (2016) \u00b7 3rd in 2015 \u00b7 2nd in 2024",
+      "cut": "10 playoff appearances. Runner-up in 2024. Missed 2025."
+    },
+    {
+      "owner": "Brian Aga",
+      "team": "Ultron",
+      "years": "2014\u2013present (12)",
+      "overall": "90-72 (.556)",
+      "hardware": "2 rings (2014 shared, 2022 solo)",
+      "cut": "Tied for second in wins. 4th in 2024. 9-5 in 2025, dumped in R1 by eventual champ."
+    },
+    {
+      "owner": "Ryan Towner",
+      "team": "Indian Trail Slumlords",
+      "years": "2014\u2013present (12)",
+      "overall": "87-75 (.537)",
+      "hardware": "1 ring (2014 shared) \u00b7 2nd in 2019, 2020, 2023",
+      "cut": "Was the wins leader. Then 4-10 and 2-12. 2025 Chump with 6th-most points."
+    },
+    {
+      "owner": "Mike Heff",
+      "team": "Valley Old Goats",
+      "years": "2014\u2013present (12)",
+      "overall": "90-72 (.556)",
+      "hardware": "2 rings (2017, 2024) \u00b7 multiple runner-ups \u00b7 3rd in 2025",
+      "cut": "First Fantrax champion. Back-to-back 10-4."
+    },
+    {
+      "owner": "Kyle Weberg",
+      "team": "Mrs. Doubtpfizer",
+      "years": "2014\u2013present (12)",
+      "overall": "87-75 (.537)",
+      "hardware": "2 rings (2023, 2025)",
+      "cut": "Only owner with a title in both eras. 5-seed champ in 2025."
+    },
+    {
+      "owner": "Luke Sahlberg",
+      "team": "Saltese Slamm",
+      "years": "2014\u2013present (12)",
+      "overall": "79-83 (.488)",
+      "hardware": "1 ring (2021) \u00b7 3rd in 2014",
+      "cut": "Ate 408 from Bill in the 2025 opener. Still sneaking into 8-seeds."
+    },
+    {
+      "owner": "Kellen Olson",
+      "team": "Pocket Agents (Host)",
+      "years": "2014\u20132022, 2024\u2013present (11)",
+      "overall": "80-67 (.544)*",
+      "hardware": "1 ring (2015) \u00b7 2nd in 2025",
+      "cut": "Sat 2023. Came back, made the 2025 final."
+    },
+    {
+      "owner": "Nathan Kelly",
+      "team": "Substation",
+      "years": "2017\u2013present (9)",
+      "overall": "69-52-1 (.569)",
+      "hardware": "2 rings (2018, 2019) \u00b7 2nd in 2022",
+      "cut": "Only back-to-back champ. Best winning % in the league."
+    },
+    {
+      "owner": "Tim Brandle",
+      "team": "Morningside Muff Divers (Grizz)",
+      "years": "2016\u2013present",
+      "overall": "59-74-1 (.444)",
+      "hardware": "0 rings",
+      "cut": "Grizz. Still here."
+    },
+    {
+      "owner": "Gavin Heaton",
+      "team": "Drummond Dongers",
+      "years": "2018\u2013present (8)",
+      "overall": "57-51-1 (.527)",
+      "hardware": "0 rings \u00b7 3rd in 2020, 2022",
+      "cut": "Two straight 7-7 sneak-ins."
+    },
+    {
+      "owner": "Jesse Nicholson",
+      "team": "Little Ass Boys",
+      "years": "2019\u2013present (7)",
+      "overall": "43-53 (.448)",
+      "hardware": "0 rings \u00b7 3rd in 2023",
+      "cut": "8-6 in 2024, 4-10 in 2025."
+    },
+    {
+      "owner": "Ryan McCallum",
+      "team": "Newman Lake Demons",
+      "years": "2015, 2020\u2013present (7)",
+      "overall": "41-55 (.427)",
+      "hardware": "1 ring (2020) \u00b7 2024 Chump",
+      "cut": "6-7 champion. That sentence still slaps."
+    },
+    {
+      "owner": "Jacob Crisp",
+      "team": "The Hypersecretors",
+      "years": "2026 rookie",
+      "overall": "\u2014",
+      "hardware": "\u2014",
+      "cut": "Takes the Sak chair as The Hypersecretors (confirmed Bill). Don\u2019t blow it."
+    }
+  ],
+  "alumni": [
+    {
+      "owner": "Michael Sakurada",
+      "years": "2015, 2017\u201319, 2023\u201325",
+      "record": "38-56",
+      "note": "Retired after 2025. Best Fantrax RS (11-3, 3,728 PF). Jacob has the chair."
+    },
+    {
+      "owner": "Connor Stevens",
+      "years": "2022\u20132023",
+      "record": "10-18",
+      "note": "Two years, out."
+    },
+    {
+      "owner": "Erin Coleman",
+      "years": "2014\u20132022",
+      "record": "48-70-1",
+      "note": "Nine years. Allergic to Playoffs."
+    },
+    {
+      "owner": "Stephen Morgan",
+      "years": "2014, 2016\u20132018",
+      "record": "24-28",
+      "note": "3rd in 2017."
+    },
+    {
+      "owner": "Gabe Harrington",
+      "years": "2014\u20132017",
+      "record": "22-30",
+      "note": "2016 runner-up."
+    },
+    {
+      "owner": "Josh Harty",
+      "years": "2014\u20132016",
+      "record": "19-20",
+      "note": ""
+    },
+    {
+      "owner": "Bryan Rickey",
+      "years": "2014\u20132017",
+      "record": "14-37-1",
+      "note": "1-12 in 2016."
+    },
+    {
+      "owner": "Tony Fulgaro",
+      "years": "2014\u20132015",
+      "record": "7-19",
+      "note": "12-game losing streak in 2015."
+    },
+    {
+      "owner": "Josh Richard",
+      "years": "2014, 2016",
+      "record": "13-13",
+      "note": ""
+    }
+  ],
+  "lore": [
+    "ESPN era 2014\u20132023 \u00b7 Fantrax era 2024\u2013present. 14-team league.",
+    "Bill is the all-time wins leader (96-66) and Lord of No Rings \u2014 12-2 with most PF in 2025, lost semis to Kyle.",
+    "Kyle Weberg is the only owner with titles in both eras (2023 ESPN, 2025 Fantrax from the 5-seed).",
+    "Mike Heff took the first Fantrax cup (2024) and went back-to-back 10-4.",
+    "Nate Kelly is the only back-to-back champ (2018\u201319) and owns the best win% among active owners under 90 wins.",
+    "Sak posted the best Fantrax regular season (11-3, 3,728 PF) in 2024, went 4-10 in 2025, then retired. Jacob Crisp is the 2026 rookie.",
+    "Towner went 6-22 across two Fantrax years and still scored the 6th-most points in 2025 \u2014 then won the Chump.",
+    "Bill dropped 408 on Larry (Saltese) in the 2025 playoff opener.",
+    "Towner/Aga co-owned 2014\u20132017 and split in 2018.",
+    "Kellen sat 2023, returned, and made the 2025 final.",
+    "2026 Fantrax names (Bill confirmed): TTAB=Chase, Ultron=Aga, Substation=Nate, Hypersecretors=Jacob Crisp (Sak chair)."
+  ]
+}

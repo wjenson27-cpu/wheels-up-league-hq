@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Podcast — Wheels Up Collective</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <section class="podcast-hero">
+      <span class="eyebrow">Hit play</span>
+      <h1>League podcast</h1>
+      <p>Waivers, rankings takes, and post-draft therapy. Stream the show on Spotify — URL is wired from <code>js/config.js</code> (<code>PODCAST_URL</code>).</p>
+      <div class="cta-row" style="justify-content:center" id="podcastCta"></div>
+      <div id="podcastEmbed"></div>
+    </section>
+
+    <div class="grid grid-2">
+      <article class="card">
+        <h2>What to expect</h2>
+        <p>Week-ahead previews, IDP sleepers, FAAB autopsy, and whoever talked the most smack getting put on blast.</p>
+      </article>
+      <article class="card">
+        <h2>Change the link</h2>
+        <p>Edit <code>PODCAST_URL</code> / <code>podcastUrl</code> in <code>js/config.js</code>. This page picks up the Spotify show embed automatically.</p>
+      </article>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const url = WUC.podcastUrl();
+      const cta = document.getElementById("podcastCta");
+      const emb = document.getElementById("podcastEmbed");
+      if (!url) {
+        cta.innerHTML = `<span class="muted">Set <code>PODCAST_URL</code> in js/config.js</span>`;
+        return;
+      }
+      cta.innerHTML = `<a class="btn btn-primary" href="${WUC.escapeHtml(url)}" target="_blank" rel="noopener">Open on Spotify</a>
+        <a class="btn btn-ghost" href="https://www.fantrax.com/fantasy/league/hms8onqvmsb3ulsx/home" target="_blank" rel="noopener">Fantrax HQ</a>`;
+      emb.innerHTML = WUC.spotifyEmbedHtml(url);
+    });
+  </script>
+</body>
+</html>

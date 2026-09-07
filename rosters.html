@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rosters — Wheels Up Collective</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow">All 14 clubs</span>
+      <h1>Rosters &amp; transactions</h1>
+      <p class="lede">League field first. Depth charts expand as Fantrax exports land in <code>data/rosters/</code>. Wire feed is league-wide.</p>
+    </header>
+
+    <h2 style="font-size:1.1rem;margin:0 0 0.75rem">League field</h2>
+    <div class="grid grid-2" id="teamGrid"></div>
+
+    <h2 style="font-size:1.1rem;margin:2rem 0 0.75rem">League transaction feed</h2>
+    <div class="card" id="txFull"><p class="muted">Loading…</p></div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const POS_ORDER = ["QB", "RB", "WR", "TE", "LB", "DL", "DB", "IR"];
+
+    function renderPos(roster) {
+      return POS_ORDER.filter(p => roster[p] && roster[p].length).map(pos => `
+        <div class="pos-block">
+          <div class="pos-label">${pos}</div>
+          <div class="player-chips">
+            ${roster[pos].map(n => `<span class="chip${pos === "IR" ? " ir" : ""}">${WUC.escapeHtml(n)}</span>`).join("")}
+          </div>
+        </div>`).join("");
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const [teams, tx] = await Promise.all([
+          WUC.loadJSON("data/teams.json"),
+          WUC.loadJSON("data/transactions.json")
+        ]);
+
+        const cards = await Promise.all((teams.teams || []).map(async (t) => {
+          let depth = "";
+          try {
+            const r = await WUC.loadJSON(`data/rosters/${t.id}.json`);
+            if (r && r.roster) {
+              depth = `<div style="margin-top:0.75rem">${renderPos(r.roster)}</div>`;
+            }
+          } catch (_) {
+            // optional per-team depth file
+          }
+          // legacy single file for eddies during transition
+          if (!depth && t.id === "eddies") {
+            try {
+              const r = await WUC.loadJSON("data/roster-eddies.json");
+              if (r && r.roster) depth = `<div style="margin-top:0.75rem">${renderPos(r.roster)}</div>`;
+            } catch (_) {}
+          }
+          const faab = t.faab != null ? ` · FAAB $${t.faab}` : "";
+          const proj = t.projW1 != null ? ` · W1 proj ${t.projW1}` : "";
+          const pr = t.powerRank != null ? ` · PR #${t.powerRank}` : "";
+          return `
+          <article class="card team-card" id="team-${WUC.escapeHtml(t.id)}">
+            <div class="team-head">
+              <div>
+                <h3 style="margin:0">${WUC.escapeHtml(t.name)}</h3>
+                <p class="muted mb-0">${WUC.escapeHtml(t.owner || "Owner TBD")} · ${WUC.escapeHtml(t.record || "0-0")}${faab}${proj}${pr}</p>
+              </div>
+              <span class="abbrev">${WUC.escapeHtml(t.abbrev || "")}</span>
+            </div>
+            <p class="mb-0">${WUC.escapeHtml(t.note || "")}</p>
+            ${depth || `<p class="muted mt-1" style="margin-top:0.6rem;font-size:0.82rem">Full depth chart coming — Fantrax export TBD.</p>`}
+          </article>`;
+        }));
+
+        document.getElementById("teamGrid").innerHTML = cards.join("");
+
+        document.getElementById("txFull").innerHTML = (tx.items || []).length
+          ? (tx.items || []).map(t => `
+          <div class="feed-item">
+            <div class="feed-date">${WUC.formatDate(t.date)}</div>
+            <div class="feed-body"><span class="type-tag">${WUC.escapeHtml(t.type)}</span>
+              <strong>${WUC.escapeHtml(t.team)}</strong> — ${WUC.escapeHtml(t.summary)}</div>
+          </div>`).join("")
+          : `<p class="muted">No transactions loaded yet.</p>`;
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+{
+  "week": 1,
+  "season": 2026,
+  "title": "Week 1 Power Rankings",
+  "updated": "2026-09-06",
+  "method": "Pre-games seed from Fantrax W1 projected scores + roster notes. Not final standings.",
+  "rankings": [
+    {
+      "rank": 1,
+      "teamId": "slumlords",
+      "team": "Indian Trail Slumlords",
+      "owner": "Ryan Towner",
+      "projW1": 197.89,
+      "blurb": "Highest Fantrax Week 1 projection in the league. Opens vs Aga \u2014 if the board is right, early statement win."
+    },
+    {
+      "rank": 2,
+      "teamId": "newman",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "owner": "Ryan McCallum",
+      "projW1": 193.09,
+      "blurb": "#2 on paper this week (193). Draws Valley Old Goats in a soft open \u2014 chance to bank an easy W."
+    },
+    {
+      "rank": 3,
+      "teamId": "saltese",
+      "team": "Saltese Slamm",
+      "owner": "Luke Sahlberg",
+      "projW1": 191.27,
+      "blurb": "Slight favorite over Eagle Ridge in the Week 1 projected score (191\u2013187). Quietly dangerous opener."
+    },
+    {
+      "rank": 4,
+      "teamId": "lab",
+      "team": "Little Ass Boys",
+      "owner": "Jesse Nicholson",
+      "projW1": 191.27,
+      "blurb": "Tied with Saltese on W1 proj. Faces Pocket Agents \u2014 mismatch on paper."
+    },
+    {
+      "rank": 5,
+      "teamId": "doubtpfizer",
+      "team": "Mrs. Doubtpfizer",
+      "owner": "Kyle Weberg",
+      "projW1": 188.76,
+      "blurb": "Solid mid-high projection; favored over Morningside. Watch how the IDP flexes land."
+    },
+    {
+      "rank": 6,
+      "teamId": "eddies",
+      "team": "Eagle Ridge Eddies",
+      "owner": "Bill Jenson",
+      "projW1": 187.31,
+      "blurb": "TE room is unfair in this scoring (Bowers/Warren/Pitts). FAAB $105. Slight underdog vs Saltese on Fantrax proj \u2014 still a top-half build until proven otherwise."
+    },
+    {
+      "rank": 7,
+      "teamId": "dongers",
+      "team": "Drummond Dongers",
+      "owner": "Gavin Heaton",
+      "projW1": 187.17,
+      "blurb": "Coin-flip favorite vs Hypersecretors. Middle of the pack with upside if waivers hit."
+    },
+    {
+      "rank": 8,
+      "teamId": "ttab",
+      "team": "Towner Top Aga Bottom",
+      "owner": "Chase Anderson",
+      "projW1": 185.52,
+      "blurb": "Tough open vs Slumlords. Trade-happy history \u2014 expect noise on the block."
+    },
+    {
+      "rank": 9,
+      "teamId": "jacob",
+      "team": "The Hypersecretors",
+      "owner": "Jacob Crisp",
+      "projW1": 183.76,
+      "blurb": "Slight dog to Dongers Week 1. Need a clean IDP week to hang with the pack.",
+      "note": "Jacob Crisp (confirmed Bill) \u2014 2026 rookie, Sak chair."
+    },
+    {
+      "rank": 10,
+      "teamId": "morningside",
+      "team": "Morningside Muff Divers",
+      "owner": "Tim Brandle",
+      "projW1": 176.7,
+      "blurb": "Underdog vs Doubtpfizer. Early FAAB opportunities if the offense sputters."
+    },
+    {
+      "rank": 11,
+      "teamId": "aga",
+      "team": "Ultron",
+      "owner": "Brian Aga",
+      "projW1": 173.31,
+      "blurb": "Favored over Substation but low absolute projection. Prove-it week for the build.",
+      "note": "Brian Aga (confirmed Bill) \u2014 was Agatron in archives."
+    },
+    {
+      "rank": 12,
+      "teamId": "goats",
+      "team": "Valley Old Goats",
+      "owner": "Mike Heff",
+      "projW1": 172.12,
+      "blurb": "Rough projected open vs Newman Lake. Veterans\u2019 tax due Week 1."
+    },
+    {
+      "rank": 13,
+      "teamId": "pocket",
+      "team": "Pocket Agents",
+      "owner": "Kellen Olson",
+      "projW1": 169.07,
+      "blurb": "Soft projection and Barton still on the trade block. Needs a waiver spark."
+    },
+    {
+      "rank": 14,
+      "teamId": "nate",
+      "team": "Substation",
+      "owner": "Nathan Kelly",
+      "projW1": 157.94,
+      "blurb": "Lowest Fantrax W1 projection. Live by the wire early or dig a hole.",
+      "note": "Nathan Kelly (confirmed Bill) \u2014 was Abuse of Power in archives."
+    }
+  ],
+  "week1Matchups": [
+    "Eagle Ridge Eddies @ Saltese Slamm \u2014 proj 187.31\u2013191.27",
+    "Ultron @ Substation \u2014 173.31\u2013157.94",
+    "The Hypersecretors @ Drummond Dongers \u2014 183.76\u2013187.17",
+    "Morningside Muff Divers @ Mrs. Doubtpfizer \u2014 176.70\u2013188.76",
+    "Towner Top Aga Bottom @ Indian Trail Slumlords \u2014 185.52\u2013197.89",
+    "Newman Lake Sleep Paralysis Demons @ Valley Old Goats \u2014 193.09\u2013172.12",
+    "Pocket Agents @ Little Ass Boys \u2014 169.07\u2013191.27"
+  ],
+  "sources": [
+    "Fantrax standings + livescoring W1 projections, 2026-09-06"
+  ],
+  "ownerSource": "Bill confirmed Sep 6 2026 + League Archives"
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trades — Wheels Up Collective</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow">Deal sheet</span>
+      <h1>Trade scoreboard</h1>
+      <p class="lede">League-wide completed deals, pending offers, and trade-block noise. Refreshed from Fantrax via Eddie. <span class="muted" id="updatedLabel"></span></p>
+    </header>
+
+    <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Completed</h2>
+    <div id="tradeCompleted"><p class="muted">Loading…</p></div>
+
+    <h2 style="font-size:1.05rem;margin:2rem 0 0.75rem">Pending offers</h2>
+    <div id="tradePending"><p class="muted">Loading…</p></div>
+
+    <h2 style="font-size:1.05rem;margin:2rem 0 0.75rem">On the block</h2>
+    <div id="tradeBlocks"><p class="muted">Loading…</p></div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function card(t) {
+      const a = (t.givesA || t.aSends || []).join ? (t.givesA || t.aSends || []).map(WUC.escapeHtml).join(", ") : WUC.escapeHtml(String(t.givesA || t.aSends || "—"));
+      const b = (t.givesB || t.bSends || []).join ? (t.givesB || t.bSends || []).map(WUC.escapeHtml).join(", ") : WUC.escapeHtml(String(t.givesB || t.bSends || "—"));
+      const teamA = WUC.escapeHtml(t.teamA || (t.teams && t.teams[0]) || "Team A");
+      const teamB = WUC.escapeHtml(t.teamB || (t.teams && t.teams[1]) || "Team B");
+      const status = WUC.escapeHtml(t.status || "completed");
+      const date = t.date ? WUC.formatDate(t.date) : "—";
+      return `
+        <article class="card" style="margin-bottom:0.75rem">
+          <h3 style="margin:0 0 0.35rem">${teamA} ↔ ${teamB}
+            <span class="sample-badge">${status}</span></h3>
+          <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">${date}</p>
+          <p><strong>${teamA} sends:</strong> ${a || "—"}</p>
+          <p><strong>${teamB} sends:</strong> ${b || "—"}</p>
+          <p class="muted mb-0">${WUC.escapeHtml(t.summary || t.notes || "")}</p>
+        </article>`;
+    }
+
+    function blockCard(b) {
+      return `
+        <article class="card" style="margin-bottom:0.75rem">
+          <h3 style="margin:0 0 0.35rem">${WUC.escapeHtml(b.team || "Team")}
+            <span class="sample-badge">block</span></h3>
+          <p class="mb-0"><strong>Listed:</strong> ${WUC.escapeHtml(b.player || b.assets || "—")}
+            ${b.notes ? ` — <span class="muted">${WUC.escapeHtml(b.notes)}</span>` : ""}</p>
+        </article>`;
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const data = await WUC.loadJSON("data/trades.json?v=" + Date.now());
+        if (data.updated) {
+          document.getElementById("updatedLabel").textContent = "Updated " + data.updated;
+        }
+        const completed = (data.trades || []).filter(t => !t.status || t.status === "completed");
+        const pending = (data.pending || data.trades || []).filter(t => t.status === "pending");
+        const blocks = data.blocks || [];
+
+        const empty = `<div class="card trade-empty"><div class="big">🤝</div>
+          <h2 style="margin:0 0 0.35rem">Nothing here yet</h2>
+          <p class="mb-0">Eddie refreshes this from Fantrax. Board stays quiet until deals show up.</p></div>`;
+
+        document.getElementById("tradeCompleted").innerHTML =
+          completed.length ? completed.map(card).join("") : empty;
+        document.getElementById("tradePending").innerHTML =
+          pending.length ? pending.map(card).join("") : `<p class="muted">No pending offers on file.</p>`;
+        document.getElementById("tradeBlocks").innerHTML =
+          blocks.length ? blocks.map(blockCard).join("") : `<p class="muted">No trade-block listings on file.</p>`;
+      } catch (e) {
+        console.error(e);
+        document.getElementById("tradeCompleted").innerHTML = `<p class="muted">Couldn’t load trades.</p>`;
+      }
+    });
+  </script>
+</body>
+</html>

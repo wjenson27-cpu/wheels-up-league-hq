@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smack Talk — Wheels Up Collective</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow">Trash talk zone</span>
+      <h1>Smack board</h1>
+      <p class="lede">Say it with your chest. Posts stay on <em>this</em> browser only — perfect for the group chat demo.</p>
+    </header>
+
+    <div class="demo-banner">
+      <strong>Demo only:</strong> smack talk uses <code>localStorage</code>. Everyone sees their own board until this ships with a real backend. Don’t treat it as league-official.
+    </div>
+
+    <div class="card smack-form-card">
+      <form id="smackForm" class="smack-form">
+        <div>
+          <label for="smackName">Handle / team</label>
+          <input id="smackName" name="name" maxlength="40" placeholder="e.g. your team name" required />
+        </div>
+        <div>
+          <label for="smackBody">The take</label>
+          <textarea id="smackBody" name="body" rows="3" maxlength="800" placeholder="Keep it spicy. Keep it PG-13-ish." required></textarea>
+        </div>
+        <div class="cta-row">
+          <button type="submit" class="btn btn-primary">Post smack</button>
+          <button type="button" class="btn btn-ghost" id="clearSmack">Clear my local posts</button>
+        </div>
+      </form>
+    </div>
+
+    <section style="margin-top:1.5rem" aria-live="polite">
+      <h2 class="sr-only">Posts</h2>
+      <div id="smackList"></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/smack.js"></script>
+</body>
+</html>

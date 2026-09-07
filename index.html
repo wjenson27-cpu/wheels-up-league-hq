@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wheels Up Collective — League HQ</title>
+  <meta name="description" content="Wheels Up Collective fantasy football HQ — 14-team IDP on Fantrax." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <section class="pulse-banner">
+      <span class="eyebrow">Season 2026 · Week 1 pulse</span>
+      <h1>Wheels Up Collective</h1>
+      <p class="tagline">14-team IDP on Fantrax. Full PPR + TE premium. Draft locked Aug 30. Commissioners: Larry Salisbury &amp; Luke Sahlberg (ThiccSwede). This HQ is for the whole league — smack, rankings, wire noise, and the pod.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://www.fantrax.com/fantasy/league/hms8onqvmsb3ulsx/home" target="_blank" rel="noopener">Open Fantrax</a>
+        <a class="btn btn-ghost" href="smack.html">Smack board</a>
+        <a class="btn btn-teal" href="podcast.html">Podcast</a>
+        <a class="btn btn-ghost" href="rankings.html">Power rankings</a>
+      </div>
+    </section>
+
+    <div class="stat-row" id="homeStats">
+      <span class="stat-pill"><strong>14</strong> teams</span>
+      <span class="stat-pill"><strong>IDP</strong> · 1 DL / 1 LB / 2 DB / 3 flex</span>
+      <span class="stat-pill">Draft <strong class="hot">Aug 30, 2026</strong></span>
+      <span class="stat-pill">All clubs <strong>0–0</strong></span>
+    </div>
+
+    <div class="grid grid-2">
+      <article class="card">
+        <h2>League transaction pulse</h2>
+        <div id="txFeed"><p class="muted">Loading…</p></div>
+        <p class="mt-1"><a href="rosters.html">Rosters &amp; full feed →</a></p>
+      </article>
+      <article class="card">
+        <h2>Week 1 slate</h2>
+        <div id="matchupList"><p class="muted">Loading…</p></div>
+        <div class="cta-row mt-1">
+          <a class="btn btn-ghost" href="rankings.html">Full power rankings</a>
+          <a class="btn btn-ghost" href="scoring.html">Scoring sheet</a>
+        </div>
+      </article>
+    </div>
+
+    <section class="card mt-1" style="margin-top:1rem">
+      <h2>Top of the board</h2>
+      <p class="muted mb-0">Pre-games power rankings (Fantrax Week 1 projections). Not standings.</p>
+      <ol id="topBoard" style="margin:0.75rem 0 0;padding-left:1.2rem;color:var(--text-muted)"></ol>
+      <p class="mt-1"><a href="rankings.html">See all 14 →</a></p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const [tx, ranks] = await Promise.all([
+          WUC.loadJSON("data/transactions.json"),
+          WUC.loadJSON("data/rankings.json")
+        ]);
+        const feed = document.getElementById("txFeed");
+        const items = (tx.items || []).slice(0, 6);
+        feed.innerHTML = items.length ? items.map(t => `
+          <div class="feed-item">
+            <div class="feed-date">${WUC.formatDate(t.date)}</div>
+            <div class="feed-body"><span class="type-tag">${WUC.escapeHtml(t.type)}</span>
+              <strong>${WUC.escapeHtml(t.team)}</strong> — ${WUC.escapeHtml(t.summary)}</div>
+          </div>`).join("") : `<p class="muted">No league transactions loaded yet — Eddie will fill the wire.</p>`;
+
+        const mu = document.getElementById("matchupList");
+        const matchups = ranks.week1Matchups || [];
+        mu.innerHTML = matchups.length
+          ? `<ul style="margin:0;padding-left:1.1rem;color:var(--text-muted)">${matchups.map(m => `<li>${WUC.escapeHtml(m)}</li>`).join("")}</ul>`
+          : `<p class="muted">Matchups TBD.</p>`;
+
+        const top = (ranks.rankings || []).slice(0, 5);
+        document.getElementById("topBoard").innerHTML = top.map(r =>
+          `<li><strong style="color:var(--text)">#${r.rank} ${WUC.escapeHtml(r.team)}</strong> — ${WUC.escapeHtml(r.blurb)}</li>`
+        ).join("");
+      } catch (e) {
+        console.error(e);
+        document.getElementById("txFeed").innerHTML = `<p class="muted">Couldn’t load league pulse.</p>`;
+      }
+    });
+  </script>
+</body>
+</html>

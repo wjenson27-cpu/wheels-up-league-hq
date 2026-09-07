@@ -1,0 +1,123 @@
+{
+  "updated": "2026-09-07",
+  "source": "Fantrax Daily sync Sep 7 2026 AM PT + prior HQ (official trades Aug 28\u2013Sep 3)",
+  "season": 2026,
+  "trades": [
+    {
+      "date": "2026-08-28",
+      "status": "completed",
+      "teamA": "Towner Top Aga Bottom (Chase)",
+      "teamB": "Ultron (Aga)",
+      "givesA": [
+        "5 draft picks (swap package)"
+      ],
+      "givesB": [
+        "5 draft picks (swap package)"
+      ],
+      "summary": "Fantrax official #1 \u2014 draft 5-for-5 pick swap (Aug 28).",
+      "official": true
+    },
+    {
+      "date": "2026-08-30",
+      "status": "completed",
+      "teamA": "Saltese Slamm (Larry)",
+      "teamB": "Ultron (Aga)",
+      "givesA": [
+        "$20 FAAB"
+      ],
+      "givesB": [
+        "Kaleb Elarms-Orr (LB)"
+      ],
+      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "official": true
+    },
+    {
+      "date": "2026-09-03",
+      "status": "completed",
+      "teamA": "Towner Top Aga Bottom (Chase)",
+      "teamB": "Ultron (Aga)",
+      "givesA": [
+        "Michael Wilson (WR)",
+        "Robert Spillane (LB)"
+      ],
+      "givesB": [
+        "Cameron Skattebo (RB)",
+        "Caleb Downs (DB)",
+        "$10 FAAB"
+      ],
+      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
+      "official": true
+    },
+    {
+      "date": "2026-08-30",
+      "status": "completed",
+      "teamA": "Saltese Slamm (Larry)",
+      "teamB": "Substation (Nate)",
+      "givesA": [
+        "draft pick(s) \u2014 handshake"
+      ],
+      "givesB": [
+        "draft pick(s) \u2014 handshake"
+      ],
+      "summary": "Handshake only \u2014 Fantrax chairs unchanged (Larry\u2194Nate pick swap).",
+      "official": false
+    },
+    {
+      "date": "2026-08-30",
+      "status": "completed",
+      "teamA": "Eagle Ridge Eddies (Bill)",
+      "teamB": "Substation (Nate)",
+      "givesA": [
+        "R2 / R3 / R8 chairs (handshake)"
+      ],
+      "givesB": [
+        "R2 / R3 / R8 chairs (handshake)"
+      ],
+      "summary": "Handshake only \u2014 Bill\u2194Nate R2/R3/R8; Eddies still sat 10/19/38/103 on Fantrax.",
+      "official": false
+    },
+    {
+      "date": "2026-08-30",
+      "status": "completed",
+      "teamA": "Substation (Nate)",
+      "teamB": "Towner Top Aga Bottom (Chase)",
+      "givesA": [
+        "3.04"
+      ],
+      "givesB": [
+        "4.08",
+        "4.12"
+      ],
+      "summary": "Handshake \u2014 Nate 3.04 for Chase 4.08+4.12; Schwesinger still Nate on Fantrax.",
+      "official": false
+    },
+    {
+      "date": "2026-08-30",
+      "status": "completed",
+      "teamA": "Substation (Nate)",
+      "teamB": "Greenacres Goblins / Hypersecretors (Jacob)",
+      "givesA": [
+        "$10 FAAB",
+        "R20 chair (Branch stays Nate)"
+      ],
+      "givesB": [
+        "R20 chair (Sadiq stays Jacob)"
+      ],
+      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "official": false
+    }
+  ],
+  "pending": [],
+  "blocks": [
+    {
+      "team": "Pocket Agents",
+      "player": "Cody Barton (LB/TEN)",
+      "notes": "Last confirmed on Fantrax Sep 6 2026. Sep 7 daily sync could not re-open trade-block page (browser nav blocked after history/standings). Treat as still listed until reverified.",
+      "date": "2026-08-30",
+      "last_confirmed": "2026-09-06"
+    }
+  ],
+  "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
+  "pending_note": "Fantrax pending trades page: No pending trades (Sep 7 ~9 AM PT).",
+  "fantrax_completed_view": "Fantrax trades page showed \u201cNo trades\u201d on Sep 7 \u2014 historical official + handshake deals retained in trades[]."
+}

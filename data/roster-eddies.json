@@ -1,0 +1,57 @@
+{
+  "teamId": "eddies",
+  "teamName": "Eagle Ridge Eddies",
+  "owner": "Bill Jenson",
+  "asOf": "2026-09-07",
+  "faabLeft": 105,
+  "faabTotal": 115,
+  "counts": {
+    "active": "14/14",
+    "reserve": "6/6",
+    "ir": "3/3"
+  },
+  "matchup": "Week 1 @ Saltese Slamm (proj 187.3\u2013191.3)",
+  "roster": {
+    "QB": [
+      "Trevor Lawrence"
+    ],
+    "RB": [
+      "Omarion Hampton",
+      "Jacory Croskey-Merritt",
+      "Tyjae Spears"
+    ],
+    "WR": [
+      "Garrett Wilson",
+      "Brian Thomas Jr.",
+      "Chimere Dike",
+      "Jalen Coker"
+    ],
+    "TE": [
+      "Brock Bowers",
+      "Tyler Warren",
+      "Kyle Pitts"
+    ],
+    "LB": [
+      "Jamien Sherwood",
+      "Fred Warner",
+      "Mack Wilson",
+      "Henry To'oTo'o",
+      "Troy Dye"
+    ],
+    "DL": [
+      "Leonard Williams"
+    ],
+    "DB": [
+      "Quentin Lake",
+      "Julian Love",
+      "Evan Williams"
+    ],
+    "IR": [
+      "Zach Charbonnet",
+      "Jordyn Tyson",
+      "Denzel Perryman"
+    ]
+  },
+  "notes": "Sep 7 sync: live roster nav blocked mid-scrape; composition matches Sep 6 Fantrax snapshot. FAAB $105. No Eddies moves since Sep 4 (Evan Williams). Source: Fantrax.",
+  "source": "Fantrax Daily roster sync Sep 7 2026 AM PT"
+}

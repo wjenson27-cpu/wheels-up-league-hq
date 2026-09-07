@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>History — Wheels Up Collective</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .table-wrap { overflow-x: auto; margin-bottom: 1.5rem; }
+    table.archive { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    table.archive th, table.archive td {
+      text-align: left; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--border);
+    }
+    table.archive th { color: var(--accent); font-weight: 600; white-space: nowrap; }
+    table.archive tr:hover td { background: var(--bg-card-hover); }
+    .section-block { margin-bottom: 2.25rem; }
+    .cut { color: var(--text-muted); font-size: 0.9rem; margin: 0.25rem 0 0; }
+    .career-card { margin-bottom: 0.75rem; }
+    .pill {
+      display: inline-block; font-size: 0.7rem; padding: 0.1rem 0.45rem; border-radius: 999px;
+      background: var(--teal-dim); color: var(--accent); margin-left: 0.35rem; vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow">Archive</span>
+      <h1>League history</h1>
+      <p class="lede">ESPN 2014–2023 · Fantrax 2024–present. Compiled from the League Archives (Sep 6, 2026).</p>
+      <p><a href="archives.html" style="color:var(--accent);font-weight:700">Open full Archives (Trophies / Board / Fantrax / ESPN / Chairs) →</a></p>
+    </header>
+
+    <div class="grid grid-2" style="margin-bottom:1.5rem">
+      <article class="card">
+        <h2>Commissioners</h2>
+        <div id="commishList"><p class="muted">Loading…</p></div>
+      </article>
+      <article class="card">
+        <h2>Rings through 2025</h2>
+        <p id="ringsLine" class="muted mb-0">Loading…</p>
+      </article>
+    </div>
+
+    <section class="section-block">
+      <h2 style="font-size:1.1rem;margin-bottom:0.75rem">Champions</h2>
+      <div class="table-wrap card" style="padding:0.5rem">
+        <table class="archive" id="champTable">
+          <thead><tr><th>Year</th><th>Era</th><th>Champion</th><th>Owner</th><th>RS</th><th>Note</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2 style="font-size:1.1rem;margin-bottom:0.75rem">Podium board</h2>
+      <div class="table-wrap card" style="padding:0.5rem">
+        <table class="archive" id="podiumTable">
+          <thead><tr><th>Year</th><th>Champion</th><th>Runner-up</th><th>Third</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2 style="font-size:1.1rem;margin-bottom:0.75rem">All-time regular-season records</h2>
+      <p class="muted" style="margin-top:0">Through 2025 · Fantrax 2024–25 added to ESPN baseline</p>
+      <div class="table-wrap card" style="padding:0.5rem">
+        <table class="archive" id="recordsTable">
+          <thead><tr><th>Rk</th><th>Owner</th><th>2026 team</th><th>Overall</th><th>Win%</th><th>’24</th><th>’25</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2 style="font-size:1.1rem;margin-bottom:1rem">Season timeline</h2>
+      <div class="timeline" id="seasonTimeline"></div>
+    </section>
+
+    <section class="section-block">
+      <h2 style="font-size:1.1rem;margin-bottom:1rem">Current chairs — the cut</h2>
+      <div id="careerList"></div>
+    </section>
+
+    <section class="section-block">
+      <h2 style="font-size:1.1rem;margin-bottom:0.75rem">Lore</h2>
+      <ul id="loreList" style="margin:0;padding-left:1.1rem;color:var(--text-muted)"></ul>
+    </section>
+
+    <section class="section-block">
+      <h2 style="font-size:1.1rem;margin-bottom:0.75rem">Alumni</h2>
+      <div id="alumniList"></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const data = await WUC.loadJSON("data/history.json");
+        document.getElementById("commishList").innerHTML = (data.commissioners || []).map(c =>
+          `<p class="mb-0" style="margin-bottom:0.5rem"><strong>${WUC.escapeHtml(c.name)}</strong><br><span class="muted">${WUC.escapeHtml(c.era || "")}</span></p>`
+        ).join("");
+        document.getElementById("ringsLine").textContent = data.ringsThrough2025 || "";
+        document.getElementById("loreList").innerHTML = (data.lore || []).map(l =>
+          `<li>${WUC.escapeHtml(l)}</li>`
+        ).join("");
+
+        const champBody = document.querySelector("#champTable tbody");
+        champBody.innerHTML = (data.champions || []).slice().reverse().map(r => `
+          <tr>
+            <td>${r.year}</td>
+            <td>${WUC.escapeHtml(r.era || "")}</td>
+            <td><strong>${WUC.escapeHtml(r.champion || "")}</strong></td>
+            <td>${WUC.escapeHtml(r.owner || "")}</td>
+            <td>${WUC.escapeHtml(r.rs || "")}</td>
+            <td class="muted">${WUC.escapeHtml(r.note || "")}</td>
+          </tr>`).join("");
+
+        document.querySelector("#podiumTable tbody").innerHTML = (data.podium || []).slice().reverse().map(r => `
+          <tr>
+            <td>${r.year}</td>
+            <td>${WUC.escapeHtml(r.champion || "")}</td>
+            <td>${WUC.escapeHtml(r.runnerUp || "")}</td>
+            <td>${WUC.escapeHtml(r.third || "")}</td>
+          </tr>`).join("");
+
+        document.querySelector("#recordsTable tbody").innerHTML = (data.allTimeRecords || []).map(r => `
+          <tr>
+            <td>${r.rk == null ? "—" : r.rk}</td>
+            <td><strong>${WUC.escapeHtml(r.owner || "")}</strong></td>
+            <td>${WUC.escapeHtml(r.team2026 || "")}</td>
+            <td>${WUC.escapeHtml(r.overall || "")}</td>
+            <td>${WUC.escapeHtml(r.winPct || "")}</td>
+            <td>${WUC.escapeHtml(r.y2024 || "")}</td>
+            <td>${WUC.escapeHtml(r.y2025 || "")}</td>
+          </tr>`).join("");
+
+        document.getElementById("seasonTimeline").innerHTML = (data.seasons || []).map(s => `
+          <div class="timeline-item">
+            <div class="timeline-year">${s.year}${s.era ? `<span class="pill">${WUC.escapeHtml(s.era)}</span>` : ""}</div>
+            <div class="card" style="margin-top:0.35rem">
+              <p><strong>Champion:</strong> ${WUC.escapeHtml(s.champion || "TBD")}</p>
+              <p><strong>Runner-up:</strong> ${WUC.escapeHtml(s.runnerUp || "TBD")}</p>
+              ${s.third ? `<p><strong>Third:</strong> ${WUC.escapeHtml(s.third)}</p>` : ""}
+              <p class="muted mb-0">${WUC.escapeHtml(s.note || "")}</p>
+            </div>
+          </div>`).join("");
+
+        document.getElementById("careerList").innerHTML = (data.careers || []).map(c => `
+          <article class="card career-card">
+            <p class="mb-0"><strong>${WUC.escapeHtml(c.owner)}</strong> → ${WUC.escapeHtml(c.team || "")}</p>
+            <p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(c.years || "")} · ${WUC.escapeHtml(c.overall || "")}</p>
+            <p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(c.hardware || "")}</p>
+            <p class="cut">${WUC.escapeHtml(c.cut || "")}</p>
+          </article>`).join("");
+
+        document.getElementById("alumniList").innerHTML = (data.alumni || []).map(a => `
+          <article class="card career-card">
+            <p class="mb-0"><strong>${WUC.escapeHtml(a.owner)}</strong> <span class="muted">${WUC.escapeHtml(a.years || "")}</span></p>
+            <p class="muted mb-0">${WUC.escapeHtml(a.record || "")}</p>
+            <p class="cut">${WUC.escapeHtml(a.note || "")}</p>
+          </article>`).join("");
+      } catch (e) {
+        document.getElementById("commishList").innerHTML = `<p class="muted">Couldn’t load history.</p>`;
+        console.error(e);
+      }
+    });
+  </script>
+</body>
+</html>
