@@ -30,9 +30,10 @@
 
     <div class="grid grid-2">
       <article class="card">
-        <h2>League transaction pulse</h2>
-        <div id="txFeed"><p class="muted">Loading…</p></div>
-        <p class="mt-1"><a href="rosters.html">Rosters &amp; full feed →</a></p>
+        <h2>Trade leaderboard</h2>
+        <p class="muted mb-0">Completed deals per team (2026 season — official + handshake).</p>
+        <div id="tradeBoard" class="trade-board"><p class="muted">Loading…</p></div>
+        <p class="mt-1"><a href="trades.html">Full trade board →</a></p>
       </article>
       <article class="card">
         <h2>Week 1 slate</h2>
@@ -57,18 +58,63 @@
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       try {
-        const [tx, ranks] = await Promise.all([
-          WUC.loadJSON("data/transactions.json"),
+        const [trades, teamsData, ranks] = await Promise.all([
+          WUC.loadJSON("data/trades.json"),
+          WUC.loadJSON("data/teams.json"),
           WUC.loadJSON("data/rankings.json")
         ]);
-        const feed = document.getElementById("txFeed");
-        const items = (tx.items || []).slice(0, 6);
-        feed.innerHTML = items.length ? items.map(t => `
-          <div class="feed-item">
-            <div class="feed-date">${WUC.formatDate(t.date)}</div>
-            <div class="feed-body"><span class="type-tag">${WUC.escapeHtml(t.type)}</span>
-              <strong>${WUC.escapeHtml(t.team)}</strong> — ${WUC.escapeHtml(t.summary)}</div>
-          </div>`).join("") : `<p class="muted">No league transactions loaded yet — Eddie will fill the wire.</p>`;
+
+        const board = document.getElementById("tradeBoard");
+        const teams = teamsData.teams || [];
+        const completed = (trades.trades || []).filter(t => t.status === "completed");
+        const counts = Object.fromEntries(teams.map(t => [t.id, 0]));
+
+        function resolveTeamId(label) {
+          const bare = String(label || "").split("(")[0].trim();
+          const hit = teams.find(t => t.name === bare || bare.includes(t.name) || t.name.includes(bare));
+          if (hit) return hit.id;
+          const aliases = [
+            ["Greenacres Goblins", "hyper"],
+            ["Hypersecretors", "hyper"],
+            ["Towner Top Aga Bottom", "ttab"],
+            ["Pocket Agents", "pocket"],
+            ["Substation", "substation"],
+            ["Ultron", "ultron"],
+            ["Saltese Slamm", "saltese"],
+            ["Eagle Ridge Eddies", "eddies"]
+          ];
+          for (const [key, id] of aliases) {
+            if (bare.includes(key) || key.includes(bare)) return id;
+          }
+          return null;
+        }
+
+        for (const tr of completed) {
+          for (const side of ["teamA", "teamB"]) {
+            const id = resolveTeamId(tr[side]);
+            if (id && id in counts) counts[id] += 1;
+          }
+        }
+
+        const ranked = [...teams].sort((a, b) => {
+          const d = counts[b.id] - counts[a.id];
+          return d !== 0 ? d : a.name.localeCompare(b.name);
+        });
+        const max = Math.max(1, ...Object.values(counts));
+
+        board.innerHTML = ranked.map((t, i) => {
+          const n = counts[t.id];
+          const pct = Math.round((n / max) * 100);
+          const place = i + 1;
+          return `<div class="trade-row${place <= 3 && n > 0 ? " hot" : ""}">
+            <span class="trade-place">#${place}</span>
+            <div class="trade-main">
+              <div class="trade-name">${WUC.escapeHtml(t.name)}</div>
+              <div class="trade-bar"><span style="width:${pct}%"></span></div>
+            </div>
+            <span class="trade-count"><strong>${n}</strong> ${n === 1 ? "trade" : "trades"}</span>
+          </div>`;
+        }).join("");
 
         const mu = document.getElementById("matchupList");
         const matchups = ranks.week1Matchups || [];
@@ -82,7 +128,7 @@
         ).join("");
       } catch (e) {
         console.error(e);
-        document.getElementById("txFeed").innerHTML = `<p class="muted">Couldn’t load league pulse.</p>`;
+        document.getElementById("tradeBoard").innerHTML = `<p class="muted">Couldn’t load trade leaderboard.</p>`;
       }
     });
   </script>
