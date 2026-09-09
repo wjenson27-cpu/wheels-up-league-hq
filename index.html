@@ -31,7 +31,7 @@
     <div class="grid grid-2">
       <article class="card">
         <h2>Trade leaderboard</h2>
-        <p class="muted mb-0">Completed deals per team (2026 season — official + handshake).</p>
+        <p class="muted mb-0">2026 completed deals — official + handshake.</p>
         <div id="tradeBoard" class="trade-board"><p class="muted">Loading…</p></div>
         <p class="mt-1"><a href="trades.html">Full trade board →</a></p>
       </article>
@@ -100,21 +100,30 @@
           const d = counts[b.id] - counts[a.id];
           return d !== 0 ? d : a.name.localeCompare(b.name);
         });
-        const max = Math.max(1, ...Object.values(counts));
 
-        board.innerHTML = ranked.map((t, i) => {
+        const rows = ranked.map((t, i) => {
           const n = counts[t.id];
-          const pct = Math.round((n / max) * 100);
           const place = i + 1;
-          return `<div class="trade-row${place <= 3 && n > 0 ? " hot" : ""}">
-            <span class="trade-place">#${place}</span>
-            <div class="trade-main">
-              <div class="trade-name">${WUC.escapeHtml(t.name)}</div>
-              <div class="trade-bar"><span style="width:${pct}%"></span></div>
-            </div>
-            <span class="trade-count"><strong>${n}</strong> ${n === 1 ? "trade" : "trades"}</span>
-          </div>`;
+          const hot = place <= 3 && n > 0 ? " hot" : "";
+          return `<tr class="${hot.trim()}">
+            <td class="col-rank">${place}</td>
+            <td class="col-team">${WUC.escapeHtml(t.name)}</td>
+            <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
+            <td class="col-trades">${n}</td>
+          </tr>`;
         }).join("");
+
+        board.innerHTML = `<table class="trade-table" aria-label="Trade leaderboard">
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th class="col-team">Team</th>
+              <th class="col-owner">Owner</th>
+              <th class="col-trades">Trades</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>`;
 
         const mu = document.getElementById("matchupList");
         const matchups = ranks.week1Matchups || [];

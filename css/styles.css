@@ -662,22 +662,56 @@ img { max-width: 100%; height: auto; }
 }
 
 /* —— Trade leaderboard (home) —— */
-.trade-board { margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.45rem; }
-.trade-row {
-  display: grid;
-  grid-template-columns: 2.2rem 1fr auto;
-  gap: 0.6rem;
-  align-items: center;
-  padding: 0.45rem 0.55rem;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: rgba(255,255,255,0.02);
+.trade-board { margin-top: 0.85rem; overflow-x: auto; }
+.trade-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
 }
-.trade-row.hot { border-color: var(--border-glow); }
-.trade-place { color: var(--text-muted); font-weight: 700; font-variant-numeric: tabular-nums; }
-.trade-row.hot .trade-place { color: var(--accent, #7CFFB2); }
-.trade-name { font-weight: 600; font-size: 0.92rem; line-height: 1.2; }
-.trade-bar { height: 4px; margin-top: 0.3rem; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden; }
-.trade-bar > span { display: block; height: 100%; background: linear-gradient(90deg, var(--teal, #2dd4bf), var(--accent, #7CFFB2)); border-radius: 99px; }
-.trade-count { font-size: 0.85rem; color: var(--text-muted); white-space: nowrap; }
-.trade-count strong { color: var(--text); font-size: 1.05rem; }
+.trade-table thead th {
+  text-align: left;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 700;
+  padding: 0.35rem 0.55rem 0.55rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.trade-table tbody td {
+  padding: 0.55rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  vertical-align: middle;
+}
+.trade-table tbody tr:last-child td { border-bottom: none; }
+.trade-table tbody tr:hover td { background: rgba(255,255,255,0.03); }
+.trade-table tr.hot td { background: rgba(124, 255, 178, 0.04); }
+.trade-table .col-rank {
+  width: 2.4rem;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+.trade-table tr.hot .col-rank { color: var(--sea-green, #7CFFB2); }
+.trade-table .col-team {
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.25;
+  min-width: 10rem;
+}
+.trade-table .col-owner {
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.trade-table .col-trades {
+  text-align: right;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--text);
+  width: 4.2rem;
+}
+.trade-table thead .col-trades { text-align: right; }
+@media (max-width: 560px) {
+  .trade-table .col-owner { display: none; }
+}
