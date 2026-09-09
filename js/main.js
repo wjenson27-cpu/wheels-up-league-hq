@@ -2,7 +2,6 @@
 (function () {
   const PAGES = [
     { href: "index.html", label: "Home" },
-    { href: "smack.html", label: "Smack" },
     { href: "rosters.html", label: "Rosters" },
     { href: "trades.html", label: "Trades" },
     { href: "rankings.html", label: "Rankings" },

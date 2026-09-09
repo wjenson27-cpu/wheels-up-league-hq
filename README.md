@@ -21,7 +21,6 @@ python3 -m http.server 8080
 | File | Purpose |
 |------|---------|
 | `index.html` | Home pulse — CTA, tx snippet, Eddies snapshot |
-| `smack.html` | Smack talk board (`localStorage`) |
 | `rosters.html` | Team cards + Eddies depth chart + tx feed |
 | `trades.html` | Trade scoreboard (empty + sample placeholder) |
 | `rankings.html` | Week 1 power rankings 1–14 |
@@ -53,16 +52,12 @@ podcastUrl: "https://open.spotify.com/show/7q7HcYt7hu5P4jXEcceyUk",
 
 `podcast.html` builds the Spotify embed from that show URL. Change either field and reload.
 
-## Smack talk = demo only
-
-Posts on `smack.html` are stored in the browser via **`localStorage`**. Each device/browser has its own board. Fine for a local demo; **production needs a backend** (or hosted comments) if the whole league should see the same trash talk.
 
 ## Shared assets
 
 - `css/styles.css` — dark sports-editorial theme  
 - `js/config.js` — league constants + `PODCAST_URL`  
 - `js/main.js` — nav, footer, JSON helpers, Spotify embed helper  
-- `js/smack.js` — smack board logic  
 
 ## Fantrax
 
