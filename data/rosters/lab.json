@@ -1,0 +1,50 @@
+{
+  "teamId": "lab",
+  "teamName": "Little Ass Boys",
+  "owner": "Jesse Nicholson",
+  "asOf": "2026-09-08",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Jayden Daniels",
+      "Baker Mayfield"
+    ],
+    "RB": [
+      "Kyren Williams",
+      "Jeremiyah Love",
+      "Jaylen Warren",
+      "Tyler Allgeier"
+    ],
+    "WR": [
+      "Puka Nacua",
+      "Mike Evans",
+      "Caleb Douglas",
+      "Tre Tucker"
+    ],
+    "TE": [
+      "Isaiah Likely"
+    ],
+    "LB": [
+      "Roquan Smith",
+      "Demario Davis",
+      "Akeem Davis-Gaither",
+      "Quay Walker"
+    ],
+    "DL": [
+      "Aidan Hutchinson"
+    ],
+    "DB": [
+      "Kevin Byard",
+      "Trevon Moehrig",
+      "Minkah Fitzpatrick",
+      "Ronnie Hickman"
+    ],
+    "IR": [
+      "Khalil Shakir",
+      "Drue Tranquill"
+    ]
+  },
+  "notes": "FAAB not shown on roster page",
+  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "fantraxTeamId": "a4q2ra3ymsb3ulv4"
+}

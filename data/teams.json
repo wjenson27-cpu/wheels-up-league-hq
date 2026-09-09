@@ -11,7 +11,7 @@
       "projW1": 197.89,
       "powerRank": 1,
       "note": "Ryan Towner \u2014 2025 Chump at 2-12 with 6th-most PF.",
-      "standingsRank": 11
+      "standingsRank": 3
     },
     {
       "id": "newman",
@@ -23,7 +23,7 @@
       "projW1": 193.09,
       "powerRank": 2,
       "note": "Ryan McCallum (Rymo) \u2014 2020 champ, 2024 Chump.",
-      "standingsRank": 2
+      "standingsRank": 7
     },
     {
       "id": "saltese",
@@ -35,7 +35,7 @@
       "projW1": 191.27,
       "powerRank": 3,
       "note": "Luke Sahlberg \u2014 ate Bill's 408 in 2025 R1.",
-      "standingsRank": 1
+      "standingsRank": 8
     },
     {
       "id": "lab",
@@ -58,8 +58,8 @@
       "faab": null,
       "projW1": 188.76,
       "powerRank": 5,
-      "note": "Kyle Weberg \u2014 2023 + 2025 champ (only dual-era titles).",
-      "standingsRank": 13
+      "note": "Kyle Weberg \u2014 2023 + 2025 champ (only dual-era titles). Sep 8: +Dante Trader \u2212Roschon Johnson.",
+      "standingsRank": 6
     },
     {
       "id": "eddies",
@@ -70,8 +70,8 @@
       "faab": 105,
       "projW1": 187.31,
       "powerRank": 6,
-      "note": "Bill Jenson \u2014 all-time wins leader, 0 rings. 2025: 12-2, most PF.",
-      "standingsRank": 7
+      "note": "Bill Jenson \u2014 all-time wins leader, 0 rings. 2025: 12-2, most PF. W1 @ Saltese Slamm (Fantrax proj 187.1\u2013175.5). FAAB $105. Tyler Warren injured but in an active slot.",
+      "standingsRank": 2
     },
     {
       "id": "dongers",
@@ -82,8 +82,8 @@
       "faab": null,
       "projW1": 187.17,
       "powerRank": 7,
-      "note": "Week 1 Fantrax proj 187.17",
-      "standingsRank": 4
+      "note": "Week 1 Fantrax proj 187.17. Sep 9: +Aaron Donald (DL/LAR).",
+      "standingsRank": 9
     },
     {
       "id": "ttab",
@@ -95,7 +95,7 @@
       "projW1": 185.52,
       "powerRank": 8,
       "note": "Chase Anderson (confirmed by Bill). Archives 2026 chair.",
-      "standingsRank": 14
+      "standingsRank": 5
     },
     {
       "id": "hyper",
@@ -107,7 +107,7 @@
       "projW1": 183.76,
       "powerRank": 9,
       "note": "Jacob Crisp (confirmed Bill) \u2014 2026 rookie, Sak chair.",
-      "standingsRank": 8
+      "standingsRank": 11
     },
     {
       "id": "morningside",
@@ -119,7 +119,7 @@
       "projW1": 176.7,
       "powerRank": 10,
       "note": "Week 1 Fantrax proj 176.7",
-      "standingsRank": 6
+      "standingsRank": 14
     },
     {
       "id": "ultron",
@@ -130,8 +130,8 @@
       "faab": null,
       "projW1": 173.31,
       "powerRank": 11,
-      "note": "Brian Aga (confirmed Bill) \u2014 was Agatron in archives.",
-      "standingsRank": 9
+      "note": "Brian Aga (confirmed Bill) \u2014 was Agatron in archives. Sep 8: +Branson Combs \u2212Jaylon Carlies (after brief Carlies add).",
+      "standingsRank": 4
     },
     {
       "id": "goats",
@@ -143,7 +143,7 @@
       "projW1": 172.12,
       "powerRank": 12,
       "note": "Mike Heff \u2014 2024 Fantrax champ, 2025 3rd.",
-      "standingsRank": 12
+      "standingsRank": 13
     },
     {
       "id": "pocket",
@@ -154,8 +154,8 @@
       "faab": null,
       "projW1": 169.07,
       "powerRank": 13,
-      "note": "Kellen Olson (Host) \u2014 2025 runner-up. Barton block TBD.",
-      "standingsRank": 5
+      "note": "Kellen Olson (Host) \u2014 2025 runner-up. Trade block: Cody Barton (LB/TEN). Acquired Jordan Love for Bo Nix (Sep 8).",
+      "standingsRank": 12
     },
     {
       "id": "substation",
@@ -166,12 +166,13 @@
       "faab": null,
       "projW1": 157.94,
       "powerRank": 14,
-      "note": "Nathan Kelly (confirmed Bill) \u2014 was Abuse of Power in archives.",
-      "standingsRank": 3
+      "note": "Nathan Kelly (confirmed Bill) \u2014 was Abuse of Power in archives. Trade block NEW Sep 9: Brock Purdy, Terry McLaurin, Bhayshul Tuten. Acquired Bo Nix for Jordan Love (Sep 8).",
+      "standingsRank": 1
     }
   ],
-  "updated": "2026-09-07",
+  "updated": "2026-09-09",
   "ownerSource": "Bill confirmed Sep 6 2026 + League Archives",
-  "standingsSource": "Fantrax standings Sep 7 2026 AM PT (all 0-0-0 entering Week 1 Sep 9\u201316)",
-  "week": "Week 1 (Sep 9\u201316, 2026)"
+  "standingsSource": "Fantrax standings Sep 9 2026 ~9:39 AM PT (all still 0-0-0 Week 1; zero-record order unstable)",
+  "week": "Week 1 (Sep 9\u201316, 2026)",
+  "hqNote": "Sep 9: all digest items in HQ \u2014 trade blocks (Barton + Substation Purdy/McLaurin/Tuten), Nix\u2194Love, Donald add, corrected Combs/Trader txns, Eddies Warren flag + W1 proj."
 }

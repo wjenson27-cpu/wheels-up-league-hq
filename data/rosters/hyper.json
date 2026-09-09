@@ -1,0 +1,52 @@
+{
+  "teamId": "hyper",
+  "teamName": "The Hypersecretors",
+  "owner": "Jacob Crisp",
+  "asOf": "2026-09-08",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Justin Herbert",
+      "Malik Willis"
+    ],
+    "RB": [
+      "Kenneth Walker III",
+      "RJ Harvey"
+    ],
+    "WR": [
+      "Amon-Ra St. Brown",
+      "Luther Burden",
+      "Emeka Egbuka",
+      "MarShawn Lloyd",
+      "Travis Hunter"
+    ],
+    "TE": [
+      "Chigoziem Okonkwo",
+      "Kenyon Sadiq"
+    ],
+    "LB": [
+      "Nick Bolton",
+      "Blake Cashman",
+      "Jacob Rodriguez",
+      "Payton Wilson",
+      "Kendall Daniels",
+      "Jack Gibbens",
+      "Jihaad Campbell"
+    ],
+    "DL": [
+      "Josh Hines-Allen"
+    ],
+    "DB": [
+      "Travis Hunter",
+      "Tykee Smith"
+    ],
+    "IR": [
+      "Keaton Mitchell",
+      "Jaylin Noel",
+      "Nick Bosa"
+    ]
+  },
+  "notes": "Verified Fantrax teamId xz2uv87rmsb3ulv4 \u2014 header The Hypersecretors, QB Justin Herbert. Prior file wrongly had Ultron's Chase/Cook roster.",
+  "source": "Fantrax verified Sep 8 2026",
+  "fantraxTeamId": "xz2uv87rmsb3ulv4"
+}

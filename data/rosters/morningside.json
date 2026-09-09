@@ -1,0 +1,50 @@
+{
+  "teamId": "morningside",
+  "teamName": "Morningside Muff Divers",
+  "owner": "Tim Brandle",
+  "asOf": "2026-09-08",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Lamar Jackson"
+    ],
+    "RB": [
+      "De'Von Achane",
+      "Jordan Mason",
+      "Jadarian Price",
+      "Malik Davis"
+    ],
+    "WR": [
+      "Justin Jefferson",
+      "Deebo Samuel",
+      "Jordan Addison",
+      "Xavier Worthy"
+    ],
+    "TE": [
+      "Travis Kelce"
+    ],
+    "LB": [
+      "Cedric Gray",
+      "Daiyan Henley",
+      "Demetrius Knight",
+      "Ventrell Miller",
+      "Derrick Barnes",
+      "Bobby Okereke",
+      "Bobby Wagner"
+    ],
+    "DL": [
+      "Byron Young"
+    ],
+    "DB": [
+      "Jessie Bates",
+      "Derwin James"
+    ],
+    "IR": [
+      "De'Zhaun Stribling",
+      "Pete Werner"
+    ]
+  },
+  "notes": "FAAB not shown on roster page",
+  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "fantraxTeamId": "3hpc63ermsb3ulv5"
+}

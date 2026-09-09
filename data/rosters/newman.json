@@ -1,0 +1,52 @@
+{
+  "teamId": "newman",
+  "teamName": "Newman Lake Sleep Paralysis Demons",
+  "owner": "Ryan McCallum",
+  "asOf": "2026-09-08",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Jalen Hurts"
+    ],
+    "RB": [
+      "Jonathan Taylor",
+      "Aaron Jones"
+    ],
+    "WR": [
+      "A.J. Brown",
+      "Davante Adams",
+      "Zay Flowers",
+      "Tee Higgins",
+      "Chris Bell",
+      "Matthew Golden",
+      "Myles Price",
+      "Courtland Sutton"
+    ],
+    "TE": [
+      "Juwan Johnson"
+    ],
+    "LB": [
+      "Zaire Franklin",
+      "Azeez Al-Shaair",
+      "Kaden Ellis",
+      "Eric Wilson",
+      "Devin White"
+    ],
+    "DL": [
+      "Andrew Van Ginkel"
+    ],
+    "DB": [
+      "Marcus Jones",
+      "Xavier Watts"
+    ],
+    "IR": [
+      "TreVeyon Henderson",
+      "Harold Landry",
+      "Payton Adebo"
+    ]
+  },
+  "notes": "Verified Fantrax teamId kwaohsfwmsb3ulv4 \u2014 header Newman Lake Sleep Paralysis Demons, starting QB Jalen Hurts. Prior file wrongly mixed Substation players (Love/Purdy/Nabers).",
+  "source": "Fantrax verified Sep 8 2026",
+  "fantraxTeamId": "kwaohsfwmsb3ulv4",
+  "startingQB": "Jalen Hurts"
+}

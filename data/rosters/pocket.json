@@ -1,0 +1,51 @@
+{
+  "teamId": "pocket",
+  "teamName": "Pocket Agents",
+  "owner": "Kellen Olson",
+  "asOf": "2026-09-09",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Jared Goff",
+      "Jordan Love"
+    ],
+    "RB": [
+      "Kenneth Gainwell",
+      "Woody Marks"
+    ],
+    "WR": [
+      "CeeDee Lamb",
+      "Tetairoa McMillan",
+      "Jaylen Waddle",
+      "Malik Washington",
+      "Zachariah Branch",
+      "Rashid Shaheed"
+    ],
+    "TE": [
+      "Trey McBride",
+      "Dalton Kincaid"
+    ],
+    "LB": [
+      "Ernest Jones",
+      "Cody Barton",
+      "Garrett Carter",
+      "Foyesade Oluokun",
+      "Josiah Trotter"
+    ],
+    "DL": [
+      "Will Anderson Jr."
+    ],
+    "DB": [
+      "Dane Belton",
+      "Jonas Sanker"
+    ],
+    "IR": [
+      "Cooper DeJean",
+      "Malik Mustapha",
+      "Upton Stout"
+    ]
+  },
+  "notes": "Re-verified Sep 8 \u2014 Dowdle is on Saltese, not Pocket. Barton still rostered (also on trade block). | Sep 8 trade: received Jordan Love for Bo Nix.",
+  "source": "Fantrax re-scrape Sep 8 2026",
+  "fantraxTeamId": "20zozmjgmsb3ulv4"
+}

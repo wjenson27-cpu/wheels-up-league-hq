@@ -2,7 +2,7 @@
   "week": 1,
   "season": 2026,
   "title": "Week 1 Power Rankings",
-  "updated": "2026-09-06",
+  "updated": "2026-09-09",
   "method": "Pre-games seed from Fantrax W1 projected scores + roster notes. Not final standings.",
   "rankings": [
     {
@@ -51,7 +51,7 @@
       "team": "Eagle Ridge Eddies",
       "owner": "Bill Jenson",
       "projW1": 187.31,
-      "blurb": "TE room is unfair in this scoring (Bowers/Warren/Pitts). FAAB $105. Slight underdog vs Saltese on Fantrax proj \u2014 still a top-half build until proven otherwise."
+      "blurb": "TE room unfair (Bowers/Warren/Pitts) but Warren injured in an active slot. FAAB $105. Fantrax W1 @ Saltese 187.1\u2013175.5."
     },
     {
       "rank": 7,
@@ -59,7 +59,7 @@
       "team": "Drummond Dongers",
       "owner": "Gavin Heaton",
       "projW1": 187.17,
-      "blurb": "Coin-flip favorite vs Hypersecretors. Middle of the pack with upside if waivers hit."
+      "blurb": "Coin-flip favorite vs Hypersecretors. Middle of the pack with upside if waivers hit. Sep 9: +Aaron Donald."
     },
     {
       "rank": 8,
@@ -109,7 +109,7 @@
       "team": "Pocket Agents",
       "owner": "Kellen Olson",
       "projW1": 169.07,
-      "blurb": "Soft projection and Barton still on the trade block. Needs a waiver spark."
+      "blurb": "Got Jordan Love for Nix (Sep 8). Barton still on the trade block. Soft W1 proj until Love settles."
     },
     {
       "rank": 14,
@@ -117,7 +117,7 @@
       "team": "Substation",
       "owner": "Nathan Kelly",
       "projW1": 157.94,
-      "blurb": "Lowest Fantrax W1 projection. Live by the wire early or dig a hole.",
+      "blurb": "Added Bo Nix for Love. Shopping Purdy, McLaurin, and Tuten on the block (Sep 9).",
       "note": "Nathan Kelly (confirmed Bill) \u2014 was Abuse of Power in archives."
     }
   ],
@@ -133,5 +133,6 @@
   "sources": [
     "Fantrax standings + livescoring W1 projections, 2026-09-06"
   ],
-  "ownerSource": "Bill confirmed Sep 6 2026 + League Archives"
+  "ownerSource": "Bill confirmed Sep 6 2026 + League Archives",
+  "source": "Fantrax Sep 9 AM sync + HQ refresh"
 }

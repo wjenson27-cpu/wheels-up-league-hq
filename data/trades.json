@@ -1,8 +1,23 @@
 {
-  "updated": "2026-09-07",
-  "source": "Fantrax Daily sync Sep 7 2026 AM PT + prior HQ (official trades Aug 28\u2013Sep 3)",
+  "updated": "2026-09-09",
+  "source": "Fantrax Daily sync Sep 9 ~9:39 AM PT \u2014 blocks + Nix/Love confirmed; Bill asked add-all to HQ",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-09-08",
+      "time": "6:04 PM PDT",
+      "status": "completed",
+      "teamA": "Pocket Agents (Kellen)",
+      "teamB": "Substation (Nate)",
+      "givesA": [
+        "Bo Nix (QB)"
+      ],
+      "givesB": [
+        "Jordan Love (QB)"
+      ],
+      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for Jordan Love (Sep 8 6:04 PM PDT).",
+      "official": true
+    },
     {
       "date": "2026-08-28",
       "status": "completed",
@@ -111,13 +126,35 @@
   "blocks": [
     {
       "team": "Pocket Agents",
-      "player": "Cody Barton (LB/TEN)",
-      "notes": "Last confirmed on Fantrax Sep 6 2026. Sep 7 daily sync could not re-open trade-block page (browser nav blocked after history/standings). Treat as still listed until reverified.",
-      "date": "2026-08-30",
-      "last_confirmed": "2026-09-06"
+      "player": "Cody Barton",
+      "pos": "LB/TEN",
+      "lastUpdated": "2026-09-09",
+      "note": "Still on trade block (reconfirmed Sep 9 AM; Fantrax block view showed no timestamp)."
+    },
+    {
+      "team": "Substation",
+      "player": "Brock Purdy",
+      "pos": "QB/SF",
+      "lastUpdated": "2026-09-09",
+      "note": "NEW on trade block as of Sep 9 AM sync."
+    },
+    {
+      "team": "Substation",
+      "player": "Terry McLaurin",
+      "pos": "WR/WAS",
+      "lastUpdated": "2026-09-09",
+      "note": "NEW on trade block as of Sep 9 AM sync."
+    },
+    {
+      "team": "Substation",
+      "player": "Bhayshul Tuten",
+      "pos": "RB/JAX",
+      "lastUpdated": "2026-09-09",
+      "note": "NEW on trade block as of Sep 9 AM sync."
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Fantrax pending trades page: No pending trades (Sep 7 ~9 AM PT).",
-  "fantrax_completed_view": "Fantrax trades page showed \u201cNo trades\u201d on Sep 7 \u2014 historical official + handshake deals retained in trades[]."
+  "pending_note": "Fantrax pending trades page: No pending trades (Sep 9 ~9:39 AM PT).",
+  "fantrax_completed_view": "Official completed since Aug 28 include Nix\u2194Love Sep 8; earlier Aga/Chase/Larry deals retained.",
+  "hqComplete": true
 }

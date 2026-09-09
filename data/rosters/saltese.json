@@ -1,0 +1,51 @@
+{
+  "teamId": "saltese",
+  "teamName": "Saltese Slamm",
+  "owner": "Luke Sahlberg",
+  "asOf": "2026-09-08",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Matthew Stafford",
+      "Sam Darnold"
+    ],
+    "RB": [
+      "Breece Hall",
+      "Rico Dowdle",
+      "Jonah Coleman",
+      "Rhamondre Stevenson"
+    ],
+    "WR": [
+      "Jaxon Smith-Njigba",
+      "Stefon Diggs",
+      "DeVonta Smith",
+      "Ja'Kobi Lane",
+      "Carnell Tate"
+    ],
+    "TE": [
+      "Mike Gesicki"
+    ],
+    "LB": [
+      "Jordyn Brooks",
+      "Terrel Bernard",
+      "Edgerrin Cooper",
+      "Nathan Landman",
+      "Kaleb Elarms-Orr"
+    ],
+    "DL": [
+      "Jalen Carter"
+    ],
+    "DB": [
+      "Jordan Battle",
+      "Grant Delpit"
+    ],
+    "IR": [
+      "Terrance Ferguson",
+      "Jonathon Brooks",
+      "Micah Parsons"
+    ]
+  },
+  "notes": "FAAB not shown on roster page",
+  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "fantraxTeamId": "xdx6ngm2msb3ulv5"
+}

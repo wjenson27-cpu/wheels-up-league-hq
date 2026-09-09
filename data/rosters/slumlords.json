@@ -1,0 +1,51 @@
+{
+  "teamId": "slumlords",
+  "teamName": "Indian Trail Slumlords",
+  "owner": "Ryan Towner",
+  "asOf": "2026-09-08",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Drake Maye"
+    ],
+    "RB": [
+      "Jahmyr Gibbs",
+      "Quinshon Judkins"
+    ],
+    "WR": [
+      "Drake London",
+      "George Pickens",
+      "Wan'Dale Robinson",
+      "Keenan Allen"
+    ],
+    "TE": [
+      "Harold Fannin",
+      "Dalton Schultz"
+    ],
+    "LB": [
+      "Jack Campbell",
+      "Anthony Hill",
+      "Cody Simon",
+      "Tyrel Dodson"
+    ],
+    "DL": [
+      "Maxx Crosby",
+      "Jeffery Simmons"
+    ],
+    "DB": [
+      "Budda Baker",
+      "Chamarri Conner",
+      "Jeremy Chinn",
+      "Talanoa Hufanga",
+      "Devon Witherspoon"
+    ],
+    "IR": [
+      "Isiah Pacheco",
+      "Jakobi Meyers",
+      "Michael Pittman"
+    ]
+  },
+  "notes": "FAAB not shown on roster page",
+  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "fantraxTeamId": "59frnthimsb3ulv4"
+}

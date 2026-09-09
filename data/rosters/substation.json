@@ -1,0 +1,52 @@
+{
+  "teamId": "substation",
+  "teamName": "Substation",
+  "owner": "Nathan Kelly",
+  "asOf": "2026-09-09",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Jaxson Dart",
+      "Bo Nix",
+      "Brock Purdy"
+    ],
+    "RB": [
+      "Saquon Barkley",
+      "David Montgomery",
+      "Bhayshul Tuten",
+      "Tank Bigsby"
+    ],
+    "WR": [
+      "Terry McLaurin",
+      "Malik Nabers",
+      "Alec Pierce"
+    ],
+    "TE": [
+      "Dallas Goedert",
+      "Sam LaPorta"
+    ],
+    "LB": [
+      "Carson Schwesinger",
+      "Dre Greenlaw"
+    ],
+    "DL": [
+      "Jared Verse"
+    ],
+    "DB": [
+      "Antonio Johnson",
+      "Antoine Winfield",
+      "Josh Metellus",
+      "Tyler Nubin",
+      "Nick Emmanwori"
+    ],
+    "IR": [
+      "Tucker Kraft",
+      "Brian Branch",
+      "DeShon Elliott"
+    ]
+  },
+  "notes": "Verified Fantrax teamId bbdlo6fkmsb3ulv5 \u2014 header Substation, starting QB Jaxson Dart. Prior file wrongly duplicated Hypersecretors (Herbert). | Sep 8 trade: received Bo Nix for Jordan Love.",
+  "source": "Fantrax verified Sep 8 2026",
+  "fantraxTeamId": "bbdlo6fkmsb3ulv5",
+  "startingQB": "Jaxson Dart"
+}

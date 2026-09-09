@@ -1,0 +1,48 @@
+{
+  "teamId": "dongers",
+  "teamName": "Drummond Dongers",
+  "owner": "Gavin Heaton",
+  "asOf": "2026-09-09",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Joe Burrow",
+      "Kyler Murray"
+    ],
+    "RB": [
+      "Bijan Robinson",
+      "Chris Rodriguez Jr."
+    ],
+    "WR": [
+      "Chris Olave",
+      "Ladd McConkey",
+      "D.J. Moore",
+      "Parker Washington",
+      "Kayshon Boutte",
+      "KC Concepcion",
+      "KaVontae Turpin"
+    ],
+    "TE": [
+      "Brenton Strange"
+    ],
+    "LB": [
+      "T.J. Edwards",
+      "CJ Allen"
+    ],
+    "DL": [
+      "Nik Bonitto",
+      "Aaron Donald"
+    ],
+    "DB": [
+      "Nick Cross",
+      "Kyle Hamilton",
+      "Xavier McKinney",
+      "Jalen Pitre",
+      "Nick Scott"
+    ],
+    "IR": []
+  },
+  "notes": "Sep 9: +Aaron Donald. Sep 8: +Nick Scott \u2212Barion Brown. Branson Combs went to Ultron (not Dongers).",
+  "source": "Fantrax daily sync Sep 9 2026 ~9:39 AM PT",
+  "fantraxTeamId": "lreem0zbmsb3ulv5"
+}

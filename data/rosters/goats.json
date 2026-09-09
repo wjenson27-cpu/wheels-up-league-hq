@@ -1,0 +1,50 @@
+{
+  "teamId": "goats",
+  "teamName": "Valley Old Goats",
+  "owner": "Mike Heff",
+  "asOf": "2026-09-08",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Patrick Mahomes"
+    ],
+    "RB": [
+      "Chase Brown",
+      "Derrick Henry",
+      "Bucky Irving",
+      "Justice Hill",
+      "Brian Robinson Jr."
+    ],
+    "WR": [
+      "DK Metcalf",
+      "Marvin Harrison",
+      "Marvin Mims"
+    ],
+    "TE": [
+      "Hunter Henry",
+      "George Kittle"
+    ],
+    "LB": [
+      "Devin Lloyd",
+      "Devin Bush",
+      "Arvell Reese",
+      "Quincy Williams",
+      "Drake Thomas"
+    ],
+    "DL": [
+      "T.J. Watt",
+      "Danielle Hunter"
+    ],
+    "DB": [
+      "Camryn Bynum",
+      "Kamren Curl"
+    ],
+    "IR": [
+      "Alvin Kamara",
+      "Josh Jacobs"
+    ]
+  },
+  "notes": "Verified Fantrax teamId 81bbo25imsb3ulv5 \u2014 header Valley Old Goats, QB Mahomes. Prior HQ ultron file had this roster by mistake.",
+  "source": "Fantrax verified Sep 8 2026",
+  "fantraxTeamId": "81bbo25imsb3ulv5"
+}

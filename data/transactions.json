@@ -1,7 +1,73 @@
 {
-  "updated": "2026-09-07",
-  "source": "Fantrax transactions page Sep 7 2026 ~8:52–9:49 AM PT (Daily Fantrax roster sync)",
+  "updated": "2026-09-09",
+  "source": "Fantrax daily sync Sep 9 2026 ~9:39 AM PT",
   "items": [
+    {
+      "date": "2026-09-09",
+      "type": "ADD",
+      "team": "Drummond Dongers",
+      "summary": "Added Aaron Donald (DL/LAR) at 6:24 AM PDT"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Branson Combs (LB/JAX); dropped Jaylon Carlies (LB/IND) at 10:33 PM PDT"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "ADD/DROP",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Added Dante Trader (DB/MIA); dropped Roschon Johnson (RB/CHI) at 6:26 PM PDT"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "TRADE",
+      "team": "Pocket Agents / Substation",
+      "summary": "Bo Nix (Pocket) \u2194 Jordan Love (Substation) completed 6:04 PM PDT (budget amount 10.0 shown)"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Jaylon Carlies (LB/IND); dropped Bryce Boettcher (LB/IND) at 12:50 PM PDT"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "ADD/DROP",
+      "team": "Drummond Dongers",
+      "summary": "Added Nick Scott (DB/CAR); dropped Barion Brown (WR/NO) at 7:27 AM PDT"
+    },
+    {
+      "date": "2026-09-08",
+      "type": "ADD/DROP",
+      "team": "The Hypersecretors",
+      "summary": "Added Kenyon Sadiq (TE/NYJ); dropped Dallas Turner (DL/LB/MIN) at 6:32 AM PDT"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Tyler Nubin (DB/NYG); dropped Denzel Boston (WR/CLE) at 8:21 PM PDT"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "ADD",
+      "team": "Morningside Muff Divers",
+      "summary": "Added Malik Davis (RB/DAL) at 5:28 PM PDT"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "ADD",
+      "team": "Morningside Muff Divers",
+      "summary": "Added Pete Werner (LB/NO) at 5:26 PM PDT"
+    },
+    {
+      "date": "2026-09-07",
+      "type": "ADD",
+      "team": "Indian Trail Slumlords",
+      "summary": "Added Keenan Allen (WR/IND) at 4:49 PM PDT"
+    },
     {
       "date": "2026-09-06",
       "type": "FAAB",
@@ -48,7 +114,7 @@
       "date": "2026-09-04",
       "type": "ADD/DROP",
       "team": "Substation",
-      "summary": "Churn: +Denzel Boston −Craig Woodson; +Craig Woodson −Brandon Jones; +Brandon Jones −Dante Trader"
+      "summary": "Churn: +Denzel Boston \u2212Craig Woodson; +Craig Woodson \u2212Brandon Jones; +Brandon Jones \u2212Dante Trader"
     },
     {
       "date": "2026-09-04",
@@ -72,7 +138,7 @@
       "date": "2026-09-03",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "Moves: +Emmett Johnson −Nadjee Harris; +Nadjee Harris −Justin Strnad; +Jaishawn Barham −Trenton Simpson; +Bryce Boettcher −Nadjee Harris"
+      "summary": "Moves: +Emmett Johnson \u2212Nadjee Harris; +Nadjee Harris \u2212Justin Strnad; +Jaishawn Barham \u2212Trenton Simpson; +Bryce Boettcher \u2212Nadjee Harris"
     },
     {
       "date": "2026-09-03",
@@ -96,19 +162,19 @@
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "The Hypersecretors",
-      "summary": "TE churn Helm/Barner; later +Gunnar Helm −Dylan Sampson"
+      "summary": "TE churn Helm/Barner; later +Gunnar Helm \u2212Dylan Sampson"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "+Nadjee Harris −George Holani; +George Holani −Keenan Allen; +Justin Strnad −Branson Combs"
+      "summary": "+Nadjee Harris \u2212George Holani; +George Holani \u2212Keenan Allen; +Justin Strnad \u2212Branson Combs"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Valley Old Goats",
-      "summary": "+Camryn Bynum −Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
+      "summary": "+Camryn Bynum \u2212Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
     },
     {
       "date": "2026-09-02",
@@ -126,7 +192,7 @@
       "date": "2026-09-02",
       "type": "FAAB",
       "team": "League",
-      "summary": "FAAB batch: notable — Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; −Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0–$2 IDP/depth adds"
+      "summary": "FAAB batch: notable \u2014 Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; \u2212Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0\u2013$2 IDP/depth adds"
     },
     {
       "date": "2026-09-01",
@@ -138,13 +204,13 @@
       "date": "2026-08-30",
       "type": "TRADE BLOCK",
       "team": "Pocket Agents",
-      "summary": "Cody Barton (LB/TEN) listed on the block (last confirmed Sep 6; Sep 7 sync could not re-open trade-block page)"
+      "summary": "Cody Barton (LB/TEN) listed on the block (reconfirmed Sep 8; Pocket Agents last updated Aug 30)"
     },
     {
       "date": "2026-08-30",
       "type": "DRAFT",
       "team": "League",
-      "summary": "20-round snake complete — Wheels Up 2026 is locked"
+      "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
     }
   ]
 }

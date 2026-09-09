@@ -1,0 +1,50 @@
+{
+  "teamId": "ttab",
+  "teamName": "Towner Top Aga Bottom",
+  "owner": "Chase Anderson",
+  "asOf": "2026-09-08",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Josh Allen"
+    ],
+    "RB": [
+      "Cameron Skattebo",
+      "Travis Etienne",
+      "Javonte Williams",
+      "Seth McGowan",
+      "Tony Pollard",
+      "Mike Washington"
+    ],
+    "WR": [
+      "Christian Watson",
+      "Jameson Williams",
+      "Jalen Nailor",
+      "Zavion Thomas"
+    ],
+    "TE": [
+      "Jake Ferguson"
+    ],
+    "LB": [
+      "Tremaine Edmunds",
+      "Zack Baun",
+      "Divine Deablo",
+      "Dee Winters"
+    ],
+    "DL": [
+      "Akheem Mesidor"
+    ],
+    "DB": [
+      "Cole Bishop",
+      "Caleb Downs",
+      "Jalen Thompson"
+    ],
+    "IR": [
+      "Ashton Jeanty",
+      "Jaquan Brisker"
+    ]
+  },
+  "notes": "FAAB not shown on roster page",
+  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "fantraxTeamId": "4grk2ph6msb3ulv4"
+}

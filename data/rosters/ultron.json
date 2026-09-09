@@ -1,0 +1,51 @@
+{
+  "teamId": "ultron",
+  "teamName": "Ultron",
+  "owner": "Brian Aga",
+  "asOf": "2026-09-09",
+  "faabLeft": null,
+  "roster": {
+    "QB": [
+      "Caleb Williams"
+    ],
+    "RB": [
+      "James Cook",
+      "Ray Davis",
+      "Emmett Johnson",
+      "Kaleb Johnson",
+      "J.K. Dobbins"
+    ],
+    "WR": [
+      "Ja'Marr Chase",
+      "Chris Godwin",
+      "Quentin Johnston",
+      "Michael Wilson"
+    ],
+    "TE": [
+      "Colston Loveland"
+    ],
+    "LB": [
+      "Robert Spillane",
+      "Alex Anzalone",
+      "Frankie Luvu",
+      "Patrick Queen",
+      "Branson Combs"
+    ],
+    "DL": [
+      "Myles Garrett",
+      "Jaishawn Barham"
+    ],
+    "DB": [
+      "Dillon Thieneman",
+      "Kevin Winston"
+    ],
+    "IR": [
+      "Kyle Monangai",
+      "Teddye Buchanan",
+      "A.J. Haulcy"
+    ]
+  },
+  "notes": "Verified teamId k9i4qjrlmsb3ulv5. Sep 8 night: +Branson Combs \u2212Jaylon Carlies. Earlier Sep 8: +Carlies \u2212Boettcher. Dante Trader went to Doubtpfizer; Nick Scott is on Dongers.",
+  "source": "Fantrax daily sync Sep 9 2026 ~9:39 AM PT",
+  "fantraxTeamId": "k9i4qjrlmsb3ulv5"
+}
