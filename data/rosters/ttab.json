@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-09-08",
+  "asOf": "2026-09-10",
   "faabLeft": null,
   "roster": {
     "QB": [
@@ -19,8 +19,7 @@
     "WR": [
       "Christian Watson",
       "Jameson Williams",
-      "Jalen Nailor",
-      "Zavion Thomas"
+      "Jalen Nailor"
     ],
     "TE": [
       "Jake Ferguson"
@@ -40,11 +39,10 @@
       "Jalen Thompson"
     ],
     "IR": [
-      "Ashton Jeanty",
-      "Jaquan Brisker"
+      "Ashton Jeanty"
     ]
   },
-  "notes": "FAAB not shown on roster page",
+  "notes": "FAAB not shown on roster page | Sep 9 drops: Zavion Thomas, Jaquan Brisker.",
   "source": "Fantrax scrape Sep 8 2026 for League HQ",
   "fantraxTeamId": "4grk2ph6msb3ulv4"
 }

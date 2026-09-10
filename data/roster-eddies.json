@@ -2,9 +2,8 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-09",
+  "asOf": "2026-09-10",
   "faabLeft": 105,
-  "faabTotal": 115,
   "roster": {
     "QB": [
       "Trevor Lawrence"
@@ -46,13 +45,14 @@
       "Denzel Perryman"
     ]
   },
-  "counts": {
-    "active": "14/14",
-    "reserve": "6/6",
-    "ir": "3/3"
+  "notes": "TNF live Sep 10 6am: trailing Saltese Slamm 17-48. Tyler Warren injured but in an active slot. FAAB $105.",
+  "source": "Fantrax",
+  "week1": {
+    "opponent": "Saltese Slamm",
+    "score": "17-48 trailing (TNF live)",
+    "home": false
   },
-  "matchup": "Week 1 @ Saltese Slamm (Sep 9\u201316); Fantrax proj 187.1\u2013175.5",
-  "notes": "Tyler Warren \u2014 Injured but is in an active slot. Other injury tags: Charbonnet, Perryman, Croskey-Merritt, Warren, Jordyn Tyson. Active: Lawrence, Hampton, G.Wilson, Bowers, Pitts, B.Thomas, Warren, L.Williams, Sherwood, Lake, E.Williams, To'oTo'o, Warner, Mack Wilson. Reserve: Spears, Coker, Croskey-Merritt, Dike, Julian Love, Troy Dye.",
-  "source": "Fantrax daily sync Sep 9 2026 ~9:39 AM PT",
-  "fantraxTeamId": "xbvk9dpgmsb3ulv4"
+  "lineupFlags": [
+    "Tyler Warren injured but in an active slot"
+  ]
 }

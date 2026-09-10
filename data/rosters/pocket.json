@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-09-09",
+  "asOf": "2026-09-10",
   "faabLeft": null,
   "roster": {
     "QB": [
@@ -23,7 +23,8 @@
     ],
     "TE": [
       "Trey McBride",
-      "Dalton Kincaid"
+      "Dalton Kincaid",
+      "Michael Mayer"
     ],
     "LB": [
       "Ernest Jones",
@@ -40,12 +41,10 @@
       "Jonas Sanker"
     ],
     "IR": [
-      "Cooper DeJean",
-      "Malik Mustapha",
-      "Upton Stout"
+      "Cooper DeJean"
     ]
   },
-  "notes": "Re-verified Sep 8 \u2014 Dowdle is on Saltese, not Pocket. Barton still rostered (also on trade block). | Sep 8 trade: received Jordan Love for Bo Nix.",
+  "notes": "Re-verified Sep 8 \u2014 Dowdle is on Saltese, not Pocket. Barton still rostered (also on trade block). | Sep 8 trade: received Jordan Love for Bo Nix. | Sep 9: +Michael Mayer; \u2212Upton Stout; \u2212Malik Mustapha.",
   "source": "Fantrax re-scrape Sep 8 2026",
   "fantraxTeamId": "20zozmjgmsb3ulv4"
 }

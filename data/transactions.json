@@ -1,7 +1,55 @@
 {
-  "updated": "2026-09-09",
-  "source": "Fantrax daily sync Sep 9 2026 ~9:39 AM PT",
+  "updated": "2026-09-10",
+  "source": "Fantrax 6am scrape Sep 10 2026 PT",
   "items": [
+    {
+      "date": "2026-09-09",
+      "type": "DROP",
+      "team": "Morningside Muff Divers",
+      "summary": "Dropped Bobby Wagner (LB) at 10:59 PM PDT"
+    },
+    {
+      "date": "2026-09-09",
+      "type": "DROP",
+      "team": "Pocket Agents",
+      "summary": "Dropped Malik Mustapha (DB) at 9:20 PM PDT"
+    },
+    {
+      "date": "2026-09-09",
+      "type": "ADD/DROP",
+      "team": "Drummond Dongers",
+      "summary": "Added Laiatu Latu (DL); dropped Nik Bonitto (DL) at 4:47 PM PDT"
+    },
+    {
+      "date": "2026-09-09",
+      "type": "DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Dropped Jaquan Brisker (DB) at 4:05 PM PDT"
+    },
+    {
+      "date": "2026-09-09",
+      "type": "DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Dropped Zavion Thomas (WR) at 4:04 PM PDT"
+    },
+    {
+      "date": "2026-09-09",
+      "type": "DROP",
+      "team": "Pocket Agents",
+      "summary": "Dropped Upton Stout (DB) at 3:50 PM PDT"
+    },
+    {
+      "date": "2026-09-09",
+      "type": "ADD",
+      "team": "Pocket Agents",
+      "summary": "Added Michael Mayer (TE) at 12:59 PM PDT"
+    },
+    {
+      "date": "2026-09-09",
+      "type": "ADD/DROP",
+      "team": "Valley Old Goats",
+      "summary": "Added Samaje Perine (RB); dropped Brian Robinson Jr. (RB) at 11:03 AM PDT"
+    },
     {
       "date": "2026-09-09",
       "type": "ADD",

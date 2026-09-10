@@ -70,7 +70,7 @@
       "faab": 105,
       "projW1": 187.31,
       "powerRank": 6,
-      "note": "Bill Jenson \u2014 all-time wins leader, 0 rings. 2025: 12-2, most PF. W1 @ Saltese Slamm (Fantrax proj 187.1\u2013175.5). FAAB $105. Tyler Warren injured but in an active slot.",
+      "note": "Bill Jenson \u2014 all-time wins leader, 0 rings. 2025: 12-2, most PF. W1 @ Saltese Slamm \u2014 TNF live trailing 17-48 (Sep 10 6am). FAAB $105. Tyler Warren injured but in an active slot.",
       "standingsRank": 2
     },
     {
@@ -82,7 +82,7 @@
       "faab": null,
       "projW1": 187.17,
       "powerRank": 7,
-      "note": "Week 1 Fantrax proj 187.17. Sep 9: +Aaron Donald (DL/LAR).",
+      "note": "Sep 9: +Aaron Donald; later +Laiatu Latu \u2212Nik Bonitto.",
       "standingsRank": 9
     },
     {
@@ -94,7 +94,7 @@
       "faab": null,
       "projW1": 185.52,
       "powerRank": 8,
-      "note": "Chase Anderson (confirmed by Bill). Archives 2026 chair.",
+      "note": "Chase Anderson (confirmed by Bill). Archives 2026 chair. Sep 9 drops: Zavion Thomas, Jaquan Brisker.",
       "standingsRank": 5
     },
     {
@@ -118,7 +118,7 @@
       "faab": null,
       "projW1": 176.7,
       "powerRank": 10,
-      "note": "Week 1 Fantrax proj 176.7",
+      "note": "Week 1 Fantrax proj 176.7 Sep 9: dropped Bobby Wagner.",
       "standingsRank": 14
     },
     {
@@ -142,7 +142,7 @@
       "faab": null,
       "projW1": 172.12,
       "powerRank": 12,
-      "note": "Mike Heff \u2014 2024 Fantrax champ, 2025 3rd.",
+      "note": "Mike Heff \u2014 2024 Fantrax champ, 2025 3rd. Sep 9: +Samaje Perine \u2212Brian Robinson Jr.",
       "standingsRank": 13
     },
     {
@@ -154,7 +154,7 @@
       "faab": null,
       "projW1": 169.07,
       "powerRank": 13,
-      "note": "Kellen Olson (Host) \u2014 2025 runner-up. Trade block: Cody Barton (LB/TEN). Acquired Jordan Love for Bo Nix (Sep 8).",
+      "note": "Kellen Olson \u2014 Love for Nix (Sep 8). Block: Barton. Sep 9: +Michael Mayer; dropped Upton Stout, Malik Mustapha.",
       "standingsRank": 12
     },
     {
@@ -170,9 +170,9 @@
       "standingsRank": 1
     }
   ],
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "ownerSource": "Bill confirmed Sep 6 2026 + League Archives",
-  "standingsSource": "Fantrax standings Sep 9 2026 ~9:39 AM PT (all still 0-0-0 Week 1; zero-record order unstable)",
-  "week": "Week 1 (Sep 9\u201316, 2026)",
+  "standingsSource": "Fantrax Sep 10 6am PT \u2014 all still 0-0-0 officially; TNF live: Saltese leads Eddies 48-17",
+  "week": "Week 1 (Sep 9\u201316, 2026) \u2014 TNF underway",
   "hqNote": "Sep 9: all digest items in HQ \u2014 trade blocks (Barton + Substation Purdy/McLaurin/Tuten), Nix\u2194Love, Donald add, corrected Combs/Trader txns, Eddies Warren flag + W1 proj."
 }

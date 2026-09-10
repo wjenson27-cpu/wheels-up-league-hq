@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-09-08",
+  "asOf": "2026-09-10",
   "faabLeft": null,
   "roster": {
     "QB": [
@@ -29,8 +29,7 @@
       "Demetrius Knight",
       "Ventrell Miller",
       "Derrick Barnes",
-      "Bobby Okereke",
-      "Bobby Wagner"
+      "Bobby Okereke"
     ],
     "DL": [
       "Byron Young"
@@ -44,7 +43,7 @@
       "Pete Werner"
     ]
   },
-  "notes": "FAAB not shown on roster page",
+  "notes": "FAAB not shown on roster page | Sep 9: dropped Bobby Wagner.",
   "source": "Fantrax scrape Sep 8 2026 for League HQ",
   "fantraxTeamId": "3hpc63ermsb3ulv5"
 }
