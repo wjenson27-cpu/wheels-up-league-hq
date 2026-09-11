@@ -1,0 +1,358 @@
+{
+  "league": "Wheels Up Collective",
+  "league_id": "hms8onqvmsb3ulsx",
+  "season": "2026-27 NFL",
+  "source": "Fantrax authenticated league pages (read-only scrape)",
+  "login_wall": false,
+  "scraped_at": "2026-09-11T22:45:00Z",
+  "week1_matchups": [
+    {
+      "away": "Eagle Ridge Eddies",
+      "away_listed_score": 83,
+      "away_projection": 188.2,
+      "home": "Saltese Slamm",
+      "home_listed_score": 72,
+      "home_projection": 195.4
+    },
+    {
+      "away": "Ultron",
+      "away_listed_score": 18,
+      "away_projection": 178.2,
+      "home": "Substation",
+      "home_listed_score": 10,
+      "home_projection": 166.4
+    },
+    {
+      "away": "The Hypersecretors",
+      "away_listed_score": 0,
+      "away_projection": 189.8,
+      "home": "Drummond Dongers",
+      "home_listed_score": 0,
+      "home_projection": 196.5
+    },
+    {
+      "away": "Morningside Muff Divers",
+      "away_listed_score": 33,
+      "away_projection": 169.5,
+      "home": "Mrs. Doubtpfizer",
+      "home_listed_score": 14,
+      "home_projection": 192.4
+    },
+    {
+      "away": "Towner Top Aga Bottom",
+      "away_listed_score": 0,
+      "away_projection": 195.2,
+      "home": "Indian Trail Slumlords",
+      "home_listed_score": 18,
+      "home_projection": 185.8
+    },
+    {
+      "away": "Newman Lake Sleep Paralysis Demons",
+      "away_listed_score": 17,
+      "away_projection": 184.2,
+      "home": "Valley Old Goats",
+      "home_listed_score": 11,
+      "home_projection": 181.6
+    },
+    {
+      "away": "Pocket Agents",
+      "away_listed_score": 37,
+      "away_projection": 203.2,
+      "home": "Little Ass Boys",
+      "home_listed_score": 57,
+      "home_projection": 190.7
+    }
+  ],
+  "week_matchups": {
+    "1": [
+      [
+        "Eagle Ridge Eddies",
+        "Saltese Slamm"
+      ],
+      [
+        "Ultron",
+        "Substation"
+      ],
+      [
+        "The Hypersecretors",
+        "Drummond Dongers"
+      ],
+      [
+        "Morningside Muff Divers",
+        "Mrs. Doubtpfizer"
+      ],
+      [
+        "Towner Top Aga Bottom",
+        "Indian Trail Slumlords"
+      ],
+      [
+        "Newman Lake Sleep Paralysis Demons",
+        "Valley Old Goats"
+      ],
+      [
+        "Pocket Agents",
+        "Little Ass Boys"
+      ]
+    ],
+    "2": [
+      [
+        "Eagle Ridge Eddies",
+        "Valley Old Goats"
+      ],
+      [
+        "Drummond Dongers",
+        "Towner Top Aga Bottom"
+      ],
+      [
+        "Newman Lake Sleep Paralysis Demons",
+        "Mrs. Doubtpfizer"
+      ],
+      [
+        "Pocket Agents",
+        "Indian Trail Slumlords"
+      ],
+      [
+        "Saltese Slamm",
+        "The Hypersecretors"
+      ],
+      [
+        "Substation",
+        "Morningside Muff Divers"
+      ],
+      [
+        "Ultron",
+        "Little Ass Boys"
+      ]
+    ],
+    "3": [
+      [
+        "Drummond Dongers",
+        "Eagle Ridge Eddies"
+      ],
+      [
+        "Indian Trail Slumlords",
+        "The Hypersecretors"
+      ],
+      [
+        "Mrs. Doubtpfizer",
+        "Ultron"
+      ],
+      [
+        "Saltese Slamm",
+        "Newman Lake Sleep Paralysis Demons"
+      ],
+      [
+        "Substation",
+        "Pocket Agents"
+      ],
+      [
+        "Towner Top Aga Bottom",
+        "Little Ass Boys"
+      ],
+      [
+        "Valley Old Goats",
+        "Morningside Muff Divers"
+      ]
+    ],
+    "4": [
+      [
+        "Indian Trail Slumlords",
+        "Eagle Ridge Eddies"
+      ],
+      [
+        "Morningside Muff Divers",
+        "Saltese Slamm"
+      ],
+      [
+        "Mrs. Doubtpfizer",
+        "Pocket Agents"
+      ],
+      [
+        "Newman Lake Sleep Paralysis Demons",
+        "Drummond Dongers"
+      ],
+      [
+        "The Hypersecretors",
+        "Little Ass Boys"
+      ],
+      [
+        "Towner Top Aga Bottom",
+        "Substation"
+      ],
+      [
+        "Ultron",
+        "Valley Old Goats"
+      ]
+    ],
+    "5": [
+      [
+        "Eagle Ridge Eddies",
+        "Mrs. Doubtpfizer"
+      ],
+      [
+        "Drummond Dongers",
+        "Pocket Agents"
+      ],
+      [
+        "Indian Trail Slumlords",
+        "Ultron"
+      ],
+      [
+        "Little Ass Boys",
+        "Morningside Muff Divers"
+      ],
+      [
+        "Saltese Slamm",
+        "Towner Top Aga Bottom"
+      ],
+      [
+        "Substation",
+        "Newman Lake Sleep Paralysis Demons"
+      ],
+      [
+        "Valley Old Goats",
+        "The Hypersecretors"
+      ]
+    ]
+  },
+  "per_team_next_opponents": {
+    "Eagle Ridge Eddies": [
+      "Saltese Slamm",
+      "Valley Old Goats",
+      "Drummond Dongers",
+      "Indian Trail Slumlords",
+      "Mrs. Doubtpfizer"
+    ],
+    "Saltese Slamm": [
+      "Eagle Ridge Eddies",
+      "The Hypersecretors",
+      "Newman Lake Sleep Paralysis Demons",
+      "Morningside Muff Divers",
+      "Towner Top Aga Bottom"
+    ],
+    "Ultron": [
+      "Substation",
+      "Little Ass Boys",
+      "Mrs. Doubtpfizer",
+      "Valley Old Goats",
+      "Indian Trail Slumlords"
+    ],
+    "Substation": [
+      "Ultron",
+      "Morningside Muff Divers",
+      "Pocket Agents",
+      "Towner Top Aga Bottom",
+      "Newman Lake Sleep Paralysis Demons"
+    ],
+    "The Hypersecretors": [
+      "Drummond Dongers",
+      "Saltese Slamm",
+      "Indian Trail Slumlords",
+      "Little Ass Boys",
+      "Valley Old Goats"
+    ],
+    "Drummond Dongers": [
+      "The Hypersecretors",
+      "Towner Top Aga Bottom",
+      "Eagle Ridge Eddies",
+      "Newman Lake Sleep Paralysis Demons",
+      "Pocket Agents"
+    ],
+    "Morningside Muff Divers": [
+      "Mrs. Doubtpfizer",
+      "Substation",
+      "Valley Old Goats",
+      "Saltese Slamm",
+      "Little Ass Boys"
+    ],
+    "Mrs. Doubtpfizer": [
+      "Morningside Muff Divers",
+      "Newman Lake Sleep Paralysis Demons",
+      "Ultron",
+      "Pocket Agents",
+      "Eagle Ridge Eddies"
+    ],
+    "Towner Top Aga Bottom": [
+      "Indian Trail Slumlords",
+      "Drummond Dongers",
+      "Little Ass Boys",
+      "Substation",
+      "Saltese Slamm"
+    ],
+    "Indian Trail Slumlords": [
+      "Towner Top Aga Bottom",
+      "Pocket Agents",
+      "The Hypersecretors",
+      "Eagle Ridge Eddies",
+      "Ultron"
+    ],
+    "Newman Lake Sleep Paralysis Demons": [
+      "Valley Old Goats",
+      "Mrs. Doubtpfizer",
+      "Saltese Slamm",
+      "Drummond Dongers",
+      "Substation"
+    ],
+    "Valley Old Goats": [
+      "Newman Lake Sleep Paralysis Demons",
+      "Eagle Ridge Eddies",
+      "Morningside Muff Divers",
+      "Ultron",
+      "The Hypersecretors"
+    ],
+    "Pocket Agents": [
+      "Little Ass Boys",
+      "Indian Trail Slumlords",
+      "Substation",
+      "Mrs. Doubtpfizer",
+      "Drummond Dongers"
+    ],
+    "Little Ass Boys": [
+      "Pocket Agents",
+      "Ultron",
+      "Towner Top Aga Bottom",
+      "The Hypersecretors",
+      "Morningside Muff Divers"
+    ]
+  },
+  "week1_identity_check": {
+    "verified_matchup": [
+      "Towner Top Aga Bottom",
+      "Indian Trail Slumlords"
+    ],
+    "displayed_as": "Towner Top Aga Bottom AWAY vs Indian Trail Slumlords HOME",
+    "owner_attributions_from_request": {
+      "Indian Trail Slumlords": "Ryan Towner",
+      "Towner Top Aga Bottom": "Chase Anderson"
+    },
+    "not_matchup": "Ultron/Aga",
+    "supporting_team_handles_seen": {
+      "Indian Trail Slumlords": "ttown0026",
+      "Towner Top Aga Bottom": "Anderson7608"
+    }
+  },
+  "projections_and_custom_numbers": {
+    "week1_home_matchup_cards": "Fantrax Home displayed listed/current scores plus projected totals; values are recorded in week1_matchups.",
+    "note": "Live Scoring also showed alternate live projected-total figures on matchup cards (e.g. 177.33 vs 177.36 for Eagle Ridge Eddies/Saltese Slamm); the Home card projections above are retained as the clearest Week 1 projections."
+  },
+  "nix_trade_confirmation": {
+    "confirmed": true,
+    "transaction_view": "Trade",
+    "week": 1,
+    "player": "Bo Nix",
+    "from": "Pocket Agents",
+    "to": "Substation",
+    "budget_amount": "$10.00",
+    "interpretation": "Nix is shown moving for a $10.00 Budget Amount (FAAB), not Jordan Love.",
+    "separate_adjacent_row": "Jordan Love is shown from Substation to Pocket Agents marked (Drop); it is not the consideration listed on the Bo Nix row."
+  },
+  "source_urls": {
+    "home": "https://www.fantrax.com/fantasy/league/hms8onqvmsb3ulsx/home",
+    "matchups": "https://www.fantrax.com/fantasy/league/hms8onqvmsb3ulsx/livescoring",
+    "transactions": "https://www.fantrax.com/fantasy/league/hms8onqvmsb3ulsx/transactions/history;view=TRADE"
+  },
+  "screenshots": [
+    "/tmp/.sand-browser/shot-call_5pf6bgcO82xco2S1yUJhmizOfc_076c45671a642e27.png",
+    "/tmp/.sand-browser/shot-call_jPs4LLts8myKpQ1cy8CaSvPmfc_076c45671a642e27.png"
+  ]
+}

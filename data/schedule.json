@@ -1,0 +1,536 @@
+{
+  "updated": "2026-09-11",
+  "season": 2026,
+  "weeks": {
+    "1": [
+      [
+        "Eagle Ridge Eddies",
+        "Saltese Slamm"
+      ],
+      [
+        "Ultron",
+        "Substation"
+      ],
+      [
+        "The Hypersecretors",
+        "Drummond Dongers"
+      ],
+      [
+        "Morningside Muff Divers",
+        "Mrs. Doubtpfizer"
+      ],
+      [
+        "Towner Top Aga Bottom",
+        "Indian Trail Slumlords"
+      ],
+      [
+        "Newman Lake Sleep Paralysis Demons",
+        "Valley Old Goats"
+      ],
+      [
+        "Pocket Agents",
+        "Little Ass Boys"
+      ]
+    ],
+    "2": [
+      [
+        "Eagle Ridge Eddies",
+        "Valley Old Goats"
+      ],
+      [
+        "Drummond Dongers",
+        "Towner Top Aga Bottom"
+      ],
+      [
+        "Newman Lake Sleep Paralysis Demons",
+        "Mrs. Doubtpfizer"
+      ],
+      [
+        "Pocket Agents",
+        "Indian Trail Slumlords"
+      ],
+      [
+        "Saltese Slamm",
+        "The Hypersecretors"
+      ],
+      [
+        "Substation",
+        "Morningside Muff Divers"
+      ],
+      [
+        "Ultron",
+        "Little Ass Boys"
+      ]
+    ],
+    "3": [
+      [
+        "Drummond Dongers",
+        "Eagle Ridge Eddies"
+      ],
+      [
+        "Indian Trail Slumlords",
+        "The Hypersecretors"
+      ],
+      [
+        "Mrs. Doubtpfizer",
+        "Ultron"
+      ],
+      [
+        "Saltese Slamm",
+        "Newman Lake Sleep Paralysis Demons"
+      ],
+      [
+        "Substation",
+        "Pocket Agents"
+      ],
+      [
+        "Towner Top Aga Bottom",
+        "Little Ass Boys"
+      ],
+      [
+        "Valley Old Goats",
+        "Morningside Muff Divers"
+      ]
+    ],
+    "4": [
+      [
+        "Indian Trail Slumlords",
+        "Eagle Ridge Eddies"
+      ],
+      [
+        "Morningside Muff Divers",
+        "Saltese Slamm"
+      ],
+      [
+        "Mrs. Doubtpfizer",
+        "Pocket Agents"
+      ],
+      [
+        "Newman Lake Sleep Paralysis Demons",
+        "Drummond Dongers"
+      ],
+      [
+        "The Hypersecretors",
+        "Little Ass Boys"
+      ],
+      [
+        "Towner Top Aga Bottom",
+        "Substation"
+      ],
+      [
+        "Ultron",
+        "Valley Old Goats"
+      ]
+    ],
+    "5": [
+      [
+        "Eagle Ridge Eddies",
+        "Mrs. Doubtpfizer"
+      ],
+      [
+        "Drummond Dongers",
+        "Pocket Agents"
+      ],
+      [
+        "Indian Trail Slumlords",
+        "Ultron"
+      ],
+      [
+        "Little Ass Boys",
+        "Morningside Muff Divers"
+      ],
+      [
+        "Saltese Slamm",
+        "Towner Top Aga Bottom"
+      ],
+      [
+        "Substation",
+        "Newman Lake Sleep Paralysis Demons"
+      ],
+      [
+        "Valley Old Goats",
+        "The Hypersecretors"
+      ]
+    ]
+  },
+  "perTeam": {
+    "eddies": [
+      {
+        "week": 1,
+        "opponentId": "saltese",
+        "opponent": "Saltese Slamm"
+      },
+      {
+        "week": 2,
+        "opponentId": "goats",
+        "opponent": "Valley Old Goats"
+      },
+      {
+        "week": 3,
+        "opponentId": "dongers",
+        "opponent": "Drummond Dongers"
+      },
+      {
+        "week": 4,
+        "opponentId": "slumlords",
+        "opponent": "Indian Trail Slumlords"
+      },
+      {
+        "week": 5,
+        "opponentId": "doubtpfizer",
+        "opponent": "Mrs. Doubtpfizer"
+      }
+    ],
+    "saltese": [
+      {
+        "week": 1,
+        "opponentId": "eddies",
+        "opponent": "Eagle Ridge Eddies"
+      },
+      {
+        "week": 2,
+        "opponentId": "hyper",
+        "opponent": "The Hypersecretors"
+      },
+      {
+        "week": 3,
+        "opponentId": "newman",
+        "opponent": "Newman Lake Sleep Paralysis Demons"
+      },
+      {
+        "week": 4,
+        "opponentId": "morningside",
+        "opponent": "Morningside Muff Divers"
+      },
+      {
+        "week": 5,
+        "opponentId": "ttab",
+        "opponent": "Towner Top Aga Bottom"
+      }
+    ],
+    "ultron": [
+      {
+        "week": 1,
+        "opponentId": "substation",
+        "opponent": "Substation"
+      },
+      {
+        "week": 2,
+        "opponentId": "lab",
+        "opponent": "Little Ass Boys"
+      },
+      {
+        "week": 3,
+        "opponentId": "doubtpfizer",
+        "opponent": "Mrs. Doubtpfizer"
+      },
+      {
+        "week": 4,
+        "opponentId": "goats",
+        "opponent": "Valley Old Goats"
+      },
+      {
+        "week": 5,
+        "opponentId": "slumlords",
+        "opponent": "Indian Trail Slumlords"
+      }
+    ],
+    "substation": [
+      {
+        "week": 1,
+        "opponentId": "ultron",
+        "opponent": "Ultron"
+      },
+      {
+        "week": 2,
+        "opponentId": "morningside",
+        "opponent": "Morningside Muff Divers"
+      },
+      {
+        "week": 3,
+        "opponentId": "pocket",
+        "opponent": "Pocket Agents"
+      },
+      {
+        "week": 4,
+        "opponentId": "ttab",
+        "opponent": "Towner Top Aga Bottom"
+      },
+      {
+        "week": 5,
+        "opponentId": "newman",
+        "opponent": "Newman Lake Sleep Paralysis Demons"
+      }
+    ],
+    "hyper": [
+      {
+        "week": 1,
+        "opponentId": "dongers",
+        "opponent": "Drummond Dongers"
+      },
+      {
+        "week": 2,
+        "opponentId": "saltese",
+        "opponent": "Saltese Slamm"
+      },
+      {
+        "week": 3,
+        "opponentId": "slumlords",
+        "opponent": "Indian Trail Slumlords"
+      },
+      {
+        "week": 4,
+        "opponentId": "lab",
+        "opponent": "Little Ass Boys"
+      },
+      {
+        "week": 5,
+        "opponentId": "goats",
+        "opponent": "Valley Old Goats"
+      }
+    ],
+    "dongers": [
+      {
+        "week": 1,
+        "opponentId": "hyper",
+        "opponent": "The Hypersecretors"
+      },
+      {
+        "week": 2,
+        "opponentId": "ttab",
+        "opponent": "Towner Top Aga Bottom"
+      },
+      {
+        "week": 3,
+        "opponentId": "eddies",
+        "opponent": "Eagle Ridge Eddies"
+      },
+      {
+        "week": 4,
+        "opponentId": "newman",
+        "opponent": "Newman Lake Sleep Paralysis Demons"
+      },
+      {
+        "week": 5,
+        "opponentId": "pocket",
+        "opponent": "Pocket Agents"
+      }
+    ],
+    "morningside": [
+      {
+        "week": 1,
+        "opponentId": "doubtpfizer",
+        "opponent": "Mrs. Doubtpfizer"
+      },
+      {
+        "week": 2,
+        "opponentId": "substation",
+        "opponent": "Substation"
+      },
+      {
+        "week": 3,
+        "opponentId": "goats",
+        "opponent": "Valley Old Goats"
+      },
+      {
+        "week": 4,
+        "opponentId": "saltese",
+        "opponent": "Saltese Slamm"
+      },
+      {
+        "week": 5,
+        "opponentId": "lab",
+        "opponent": "Little Ass Boys"
+      }
+    ],
+    "doubtpfizer": [
+      {
+        "week": 1,
+        "opponentId": "morningside",
+        "opponent": "Morningside Muff Divers"
+      },
+      {
+        "week": 2,
+        "opponentId": "newman",
+        "opponent": "Newman Lake Sleep Paralysis Demons"
+      },
+      {
+        "week": 3,
+        "opponentId": "ultron",
+        "opponent": "Ultron"
+      },
+      {
+        "week": 4,
+        "opponentId": "pocket",
+        "opponent": "Pocket Agents"
+      },
+      {
+        "week": 5,
+        "opponentId": "eddies",
+        "opponent": "Eagle Ridge Eddies"
+      }
+    ],
+    "ttab": [
+      {
+        "week": 1,
+        "opponentId": "slumlords",
+        "opponent": "Indian Trail Slumlords"
+      },
+      {
+        "week": 2,
+        "opponentId": "dongers",
+        "opponent": "Drummond Dongers"
+      },
+      {
+        "week": 3,
+        "opponentId": "lab",
+        "opponent": "Little Ass Boys"
+      },
+      {
+        "week": 4,
+        "opponentId": "substation",
+        "opponent": "Substation"
+      },
+      {
+        "week": 5,
+        "opponentId": "saltese",
+        "opponent": "Saltese Slamm"
+      }
+    ],
+    "slumlords": [
+      {
+        "week": 1,
+        "opponentId": "ttab",
+        "opponent": "Towner Top Aga Bottom"
+      },
+      {
+        "week": 2,
+        "opponentId": "pocket",
+        "opponent": "Pocket Agents"
+      },
+      {
+        "week": 3,
+        "opponentId": "hyper",
+        "opponent": "The Hypersecretors"
+      },
+      {
+        "week": 4,
+        "opponentId": "eddies",
+        "opponent": "Eagle Ridge Eddies"
+      },
+      {
+        "week": 5,
+        "opponentId": "ultron",
+        "opponent": "Ultron"
+      }
+    ],
+    "newman": [
+      {
+        "week": 1,
+        "opponentId": "goats",
+        "opponent": "Valley Old Goats"
+      },
+      {
+        "week": 2,
+        "opponentId": "doubtpfizer",
+        "opponent": "Mrs. Doubtpfizer"
+      },
+      {
+        "week": 3,
+        "opponentId": "saltese",
+        "opponent": "Saltese Slamm"
+      },
+      {
+        "week": 4,
+        "opponentId": "dongers",
+        "opponent": "Drummond Dongers"
+      },
+      {
+        "week": 5,
+        "opponentId": "substation",
+        "opponent": "Substation"
+      }
+    ],
+    "goats": [
+      {
+        "week": 1,
+        "opponentId": "newman",
+        "opponent": "Newman Lake Sleep Paralysis Demons"
+      },
+      {
+        "week": 2,
+        "opponentId": "eddies",
+        "opponent": "Eagle Ridge Eddies"
+      },
+      {
+        "week": 3,
+        "opponentId": "morningside",
+        "opponent": "Morningside Muff Divers"
+      },
+      {
+        "week": 4,
+        "opponentId": "ultron",
+        "opponent": "Ultron"
+      },
+      {
+        "week": 5,
+        "opponentId": "hyper",
+        "opponent": "The Hypersecretors"
+      }
+    ],
+    "pocket": [
+      {
+        "week": 1,
+        "opponentId": "lab",
+        "opponent": "Little Ass Boys"
+      },
+      {
+        "week": 2,
+        "opponentId": "slumlords",
+        "opponent": "Indian Trail Slumlords"
+      },
+      {
+        "week": 3,
+        "opponentId": "substation",
+        "opponent": "Substation"
+      },
+      {
+        "week": 4,
+        "opponentId": "doubtpfizer",
+        "opponent": "Mrs. Doubtpfizer"
+      },
+      {
+        "week": 5,
+        "opponentId": "dongers",
+        "opponent": "Drummond Dongers"
+      }
+    ],
+    "lab": [
+      {
+        "week": 1,
+        "opponentId": "pocket",
+        "opponent": "Pocket Agents"
+      },
+      {
+        "week": 2,
+        "opponentId": "ultron",
+        "opponent": "Ultron"
+      },
+      {
+        "week": 3,
+        "opponentId": "ttab",
+        "opponent": "Towner Top Aga Bottom"
+      },
+      {
+        "week": 4,
+        "opponentId": "hyper",
+        "opponent": "The Hypersecretors"
+      },
+      {
+        "week": 5,
+        "opponentId": "morningside",
+        "opponent": "Morningside Muff Divers"
+      }
+    ]
+  }
+}
