@@ -106,9 +106,9 @@
       "remaining": null,
       "spentClaims": 0,
       "tradeOut": 0,
-      "tradeIn": 0,
+      "tradeIn": 10,
       "spentKnown": 0,
-      "remainingKnown": 115
+      "remainingKnown": 125
     },
     {
       "id": "hyper",
@@ -145,9 +145,9 @@
       "remaining": null,
       "spentClaims": 0,
       "tradeOut": 10,
-      "tradeIn": 30,
+      "tradeIn": 20,
       "spentKnown": 10,
-      "remainingKnown": 135
+      "remainingKnown": 125
     },
     {
       "id": "goats",
@@ -313,8 +313,8 @@
       "amount": 10,
       "fromTeam": "Ultron",
       "fromTeamId": "ultron",
-      "toTeam": "Ultron",
-      "toTeamId": "ultron",
+      "toTeam": "Towner Top Aga Bottom",
+      "toTeamId": "ttab",
       "for": [
         "Michael Wilson (WR)",
         "Robert Spillane (LB)"
