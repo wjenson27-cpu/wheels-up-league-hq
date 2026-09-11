@@ -2,7 +2,7 @@
   "updated": "2026-09-11",
   "source": "League wire + completed trades",
   "startingBudget": 115,
-  "note": "Waiver claims $1+ only (no $0 bids). Trade FAAB included. Starting bank $115 \u2014 Eddies show $105 left; other remainings update as the board settles.",
+  "note": "Waiver claims $1+ only (no $0 bids). Trade FAAB included (Nix: Nate/Substation $10 \u2192 Pocket). Eddies left $105; others estimated.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -170,9 +170,9 @@
       "remaining": null,
       "spentClaims": 3,
       "tradeOut": 0,
-      "tradeIn": 0,
+      "tradeIn": 10,
       "spentKnown": 3,
-      "remainingKnown": 112
+      "remainingKnown": 122
     },
     {
       "id": "substation",
@@ -182,10 +182,10 @@
       "starting": 115,
       "remaining": null,
       "spentClaims": 0,
-      "tradeOut": 10,
+      "tradeOut": 20,
       "tradeIn": 0,
-      "spentKnown": 10,
-      "remainingKnown": 105
+      "spentKnown": 20,
+      "remainingKnown": 95
     }
   ],
   "claims": [
@@ -293,6 +293,20 @@
     }
   ],
   "trades": [
+    {
+      "date": "2026-09-08",
+      "amount": 10,
+      "fromTeam": "Substation",
+      "fromTeamId": "substation",
+      "toTeam": "Pocket Agents",
+      "toTeamId": "pocket",
+      "for": [
+        "Bo Nix (QB)"
+      ],
+      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
+      "official": true,
+      "kind": "trade"
+    },
     {
       "date": "2026-08-30",
       "amount": 20,

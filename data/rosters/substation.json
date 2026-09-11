@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-09-09",
+  "asOf": "2026-09-11",
   "faabLeft": null,
   "roster": {
     "QB": [
@@ -45,7 +45,7 @@
       "DeShon Elliott"
     ]
   },
-  "notes": "Verified Fantrax teamId bbdlo6fkmsb3ulv5 \u2014 header Substation, starting QB Jaxson Dart. Sep 8: received Bo Nix for FAAB (Bill correction \u2014 not Jordan Love).",
+  "notes": "Verified Fantrax teamId bbdlo6fkmsb3ulv5 \u2014 header Substation, starting QB Jaxson Dart. Sep 8: paid Pocket $10 FAAB for Bo Nix (not Jordan Love). | Sep 11: acquired Bo Nix for $10 FAAB from Pocket; dropped Jordan Love (not traded).",
   "source": "Fantrax verified Sep 8 2026",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "startingQB": "Jaxson Dart"

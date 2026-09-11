@@ -35,7 +35,7 @@
       "matchupEdge": 22.2,
       "composite": 193.6,
       "schedule": "W1: vs Pocket \u2014 smash spot.",
-      "blurb": "Biggest smash spot on the board: Pocket just sold Bo Nix for FAAB (not Love) and walks into Jesse\u2019s house. HQ custom jumps them past pure Fantrax ties \u2014 bank the easy W before the schedule tightens.",
+      "blurb": "Biggest smash spot on the board: Pocket just sold Bo Nix to Nate for $10 FAAB (not Love) and walks into Jesse\u2019s house. HQ custom jumps them past pure Fantrax ties \u2014 bank the easy W before the schedule tightens.",
       "rank": 2
     },
     {
@@ -205,13 +205,13 @@
       "record": "0-0",
       "fantraxW1": 169.07,
       "customW1": 163.07,
-      "customNote": "Sent Nix for FAAB (not Love) \u2014 QB reboot; Barton on block",
+      "customNote": "Sent Nix for $10 FAAB (not Love) \u2014 QB reboot; Barton on block",
       "opponent": "Jesse / LAB",
       "opponentId": "lab",
       "matchupEdge": -22.2,
       "composite": 158.63,
       "schedule": "W1: @ LAB \u2014 rough.",
-      "blurb": "Sent Nix to Nate for FAAB only \u2014 no Love coming back. Barton\u2019s on the block and Week 1 is @ LAB. Reboot mode; ranking reflects the QB fog more than last week\u2019s rumor.",
+      "blurb": "Sent Nix to Nate for $10 FAAB only \u2014 no Love coming back. Barton\u2019s on the block and Week 1 is @ LAB. Reboot mode; ranking reflects the QB fog more than last week\u2019s rumor.",
       "rank": 13
     },
     {
@@ -221,13 +221,13 @@
       "record": "0-0",
       "fantraxW1": 157.94,
       "customW1": 160.94,
-      "customNote": "Got Nix for FAAB; Dart still listed starter; shopping pieces",
+      "customNote": "Paid $10 FAAB for Nix; Dart still listed starter; shopping pieces",
       "opponent": "Aga / Ultron",
       "opponentId": "ultron",
       "matchupEdge": -15.37,
       "composite": 158.28,
       "schedule": "W1: vs Ultron.",
-      "blurb": "Got Bo Nix for FAAB (Bill\u2019s correction \u2014 Love was never in it). Still the lowest Fantrax print, but HQ bumps them for the QB add vs Ultron at home. Dart/Nix chaos could be a feature.",
+      "blurb": "Paid Pocket $10 FAAB for Bo Nix (Bill\u2019s correction \u2014 Love was never in it). Still a low Fantrax print, but HQ bumps them for the QB add vs Ultron at home. Dart/Nix chaos could be a feature.",
       "rank": 14
     }
   ],
@@ -241,7 +241,8 @@
     "Pocket Agents @ Little Ass Boys \u2014 169.1\u2013191.3"
   ],
   "corrections": [
-    "Bo Nix: Pocket \u2192 Substation for FAAB only (not Jordan Love).",
+    "Bo Nix: Pocket \u2192 Substation for $10 FAAB only (not Jordan Love).",
     "Week 1: Ryan Towner / Slumlords vs Chase / TTAB \u2014 not vs Aga / Ultron."
-  ]
+  ],
+  "correctionNote": "Nix deal corrected (FAAB only). W1: Slumlords vs TTAB (Chase) confirmed."
 }

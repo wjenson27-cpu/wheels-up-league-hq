@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-11",
-  "source": "Fantrax",
+  "source": "Fantrax | Nix deal corrected Sep 11 (FAAB only)",
   "season": 2026,
   "trades": [
     {
@@ -13,10 +13,11 @@
         "Bo Nix (QB)"
       ],
       "givesB": [
-        "FAAB (amount TBD)"
+        "$10 FAAB"
       ],
-      "summary": "Pocket Agents traded Bo Nix to Substation for FAAB (Sep 8). Jordan Love was not in the deal.",
-      "official": true
+      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
+      "official": true,
+      "corrected": true
     },
     {
       "date": "2026-08-28",
