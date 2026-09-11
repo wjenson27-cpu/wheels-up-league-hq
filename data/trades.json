@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-10",
-  "source": "Fantrax 6am scrape Sep 10 2026 PT",
+  "updated": "2026-09-11",
+  "source": "Fantrax 6am scrape Sep 11 2026 PT",
   "season": 2026,
   "trades": [
     {
@@ -128,33 +128,33 @@
       "team": "Pocket Agents",
       "player": "Cody Barton",
       "pos": "LB/TEN",
-      "lastUpdated": "2026-09-10",
-      "note": "Still on trade block (reconfirmed Sep 10 6am)."
+      "lastUpdated": "2026-09-11",
+      "note": "Still on trade block (reconfirmed Sep 11 6am)."
     },
     {
       "team": "Substation",
       "player": "Brock Purdy",
       "pos": "QB/SF",
-      "lastUpdated": "2026-09-10",
+      "lastUpdated": "2026-09-11",
       "note": "Still on trade block."
     },
     {
       "team": "Substation",
       "player": "Terry McLaurin",
       "pos": "WR/WAS",
-      "lastUpdated": "2026-09-10",
+      "lastUpdated": "2026-09-11",
       "note": "Still on trade block."
     },
     {
       "team": "Substation",
       "player": "Bhayshul Tuten",
       "pos": "RB/JAX",
-      "lastUpdated": "2026-09-10",
+      "lastUpdated": "2026-09-11",
       "note": "Still on trade block."
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Fantrax pending trades page: No pending trades (Sep 9 ~9:39 AM PT).",
+  "pending_note": "Fantrax Pending Trades view empty as of Sep 11 2026 ~6:11 AM PT.",
   "fantrax_completed_view": "Official completed since Aug 28 include Nix\u2194Love Sep 8; earlier Aga/Chase/Larry deals retained.",
   "hqComplete": true
 }

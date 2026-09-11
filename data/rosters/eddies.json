@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-10",
+  "asOf": "2026-09-11",
   "faabLeft": 105,
   "faabTotal": 115,
   "roster": {
@@ -51,8 +51,11 @@
     "reserve": "6/6",
     "ir": "3/3"
   },
-  "matchup": "Week 1 @ Saltese Slamm (Sep 9\u201316); Fantrax proj 187.1\u2013175.5",
-  "notes": "TNF live Sep 10 6am: trailing Saltese Slamm 17-48. Tyler Warren injured but in an active slot. FAAB $105.",
-  "source": "Fantrax daily sync Sep 9 2026 ~9:39 AM PT",
-  "fantraxTeamId": "xbvk9dpgmsb3ulv4"
+  "matchup": "Week 1 @ Saltese Slamm (Sep 9\u201316); live 83\u201372 Eddies lead as of Sep 11 ~6:11 AM PT",
+  "notes": "Week 1 live Sep 11 6am: Eddies lead Saltese Slamm 83-72 (away). Tyler Warren injured but in an active slot. FAAB $105. No Eddies txns since prior sync.",
+  "source": "Fantrax 6am scrape Sep 11 2026 PT",
+  "fantraxTeamId": "xbvk9dpgmsb3ulv4",
+  "lineupFlags": [
+    "Tyler Warren injured but in an active slot"
+  ]
 }
