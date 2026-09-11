@@ -3,8 +3,8 @@
   "season": 2026,
   "title": "Week 1 Power Rankings",
   "updated": "2026-09-11",
-  "subtitle": "Multi-factor: live Fantrax W1 projections + HQ injury/trade adjusts, matchup edges, 0\u20130 records, and W2\u2013W5 schedule SOS.",
-  "method": "composite \u2248 45% HQ custom + 30% W1 edge + 15% Fantrax + 10% easier upcoming SOS (W2\u2013W5).",
+  "subtitle": "Week 1 vibes check \u2014 HQ custom board with matchup edges, 0\u20130 records, and W2\u2013W5 SOS. Games kick Sun 9/13. Bring snacks and excuses.",
+  "method": "HQ custom = live Fantrax W1 + injury/trade spice. Ranked on custom, matchup edge, and easier W2\u2013W5 SOS.",
   "rankings": [
     {
       "teamId": "pocket",
@@ -27,7 +27,7 @@
       "schedule": "W2\u2013W5: Towner/Slumlords, Substation, Doubtpfizer, Dongers",
       "composite": 175.89,
       "rank": 1,
-      "blurb": "Fantrax suddenly loves Pocket\u2019s W1 print even after selling Nix for $10 FAAB (Goff-only, Love was Nate\u2019s drop). HQ keeps a QB fog penalty. @ LAB is no longer the automatic smash it looked like yesterday."
+      "blurb": "Fantrax has Pocket projecting like they didn\u2019t just pawn Nix for a ten-spot. Goff-only life, Barton on the clearance rack, and somehow the model\u2019s still thirsty. @ LAB \u2014 if this hits, Kellen owes the algorithm a fruit basket."
     },
     {
       "teamId": "doubtpfizer",
@@ -50,7 +50,7 @@
       "schedule": "W2\u2013W5: Newman, Ultron, Pocket, Eddies",
       "composite": 174.91,
       "rank": 2,
-      "blurb": "HQ custom 193.4 on Fantrax 192.4. W1 vs Morningside (edge +22.9). Quiet Lemon add; clean favorite. Upcoming: W2\u2013W5: Newman, Ultron, Pocket, Eddies (opp avg proj 188.4)."
+      "blurb": "Kyle vs Tim is the \u2018adults in the room\u2019 game until someone starts an IDP. Doubtpfizer\u2019s the clean favorite \u2014 Lemon on the wire, no drama, just a boring W waiting to be collected. Take it before the schedule gets spicy."
     },
     {
       "teamId": "saltese",
@@ -73,7 +73,7 @@
       "schedule": "W2\u2013W5: Hyper, Newman, Morningside, Chase/TTAB",
       "composite": 172.83,
       "rank": 3,
-      "blurb": "Home favorite over Eddies after the Elarms-Orr buy. W3 Newman and W5 Chase are the early SOS bumps."
+      "blurb": "Luke paid rent on Elarms-Orr ($20 FAAB) and gets Bill\u2019s TE buffet at home. Slight favorite, which in this league means \u2018please don\u2019t let a backup LB ruin Christmas.\u2019 Win and the room has to admit Saltese is cooking."
     },
     {
       "teamId": "dongers",
@@ -96,7 +96,7 @@
       "schedule": "W2\u2013W5: Chase/TTAB, Eddies, Newman, Pocket",
       "composite": 172.09,
       "rank": 4,
-      "blurb": "HQ custom 197.5 on Fantrax 196.5. W1 vs Hyper (edge +6.7). +Aaron Donald IDP juice. Upcoming: W2\u2013W5: Chase/TTAB, Eddies, Newman, Pocket (opp avg proj 192.7)."
+      "blurb": "Gavin + Donald vs Jacob\u2019s Hyper crew \u2014 coin flip with a side of pass rush. If the IDP goes nuclear, Dongers jump the mid-tier queue; if not, we\u2019re all pretending we believed in Hyper all along."
     },
     {
       "teamId": "ttab",
@@ -119,7 +119,7 @@
       "schedule": "W2\u2013W5: Dongers, LAB, Substation, Saltese",
       "composite": 171.31,
       "rank": 5,
-      "blurb": "Live Fantrax flipped the headliner \u2014 Chase/TTAB now projects ahead on the road at Towner\u2019s Slumlords. HQ still trims for trade chaos, but this is no longer a free L on paper. Survive W1 and the W2 Dongers date is the next test."
+      "blurb": "Chase rolls into Towner\u2019s house (yes, Slumlords \u2014 not Aga, we checked twice) projecting like the road favorite. Trade chaos? $10 FAAB out? Cute. Survive Sunday and the Dongers date in W2 is where the real trauma starts."
     },
     {
       "teamId": "hyper",
@@ -142,7 +142,7 @@
       "schedule": "W2\u2013W5: Saltese, Towner/Slumlords, LAB, Goats",
       "composite": 164.03,
       "rank": 6,
-      "blurb": "HQ custom 189.8 on Fantrax 189.8. W1 @ Dongers (edge -6.7). Flat adjust; $10 FAAB bank from Nate handshake. Upcoming: W2\u2013W5: Saltese, Towner/Slumlords, LAB, Goats (opp avg proj 188.4)."
+      "blurb": "Slight dog at Dongers with extra FAAB jingling from Nate\u2019s R20 handshake. Hang around, don\u2019t gift a dunk-on-able scoreboard, and let the wire do the talking later."
     },
     {
       "teamId": "lab",
@@ -165,7 +165,7 @@
       "schedule": "W2\u2013W5: Ultron, Chase/TTAB, Hyper, Morningside",
       "composite": 163.8,
       "rank": 7,
-      "blurb": "Home vs Pocket\u2019s reboot. Fantrax now has Pocket ahead on raw proj \u2014 HQ still likes Jesse\u2019s spot if Goff is shaky, but it\u2019s not a free square anymore."
+      "blurb": "Jesse hosts Pocket\u2019s QB reboot tour. Yesterday this looked like a smash; today Fantrax has Kellen ahead on paper. Still: home crowd, Goff fog, and a chance to make Pocket\u2019s \u2018model loves us\u2019 narrative look silly."
     },
     {
       "teamId": "newman",
@@ -188,7 +188,7 @@
       "schedule": "W2\u2013W5: Doubtpfizer, Saltese, Dongers, Substation",
       "composite": 163.53,
       "rank": 8,
-      "blurb": "Matchup vs Goats tightened a lot on the new Fantrax board. Still favored, just not the bye-week energy from the old projections."
+      "blurb": "Ryan M vs Heff \u2014 used to be a bye-week energy mismatch, now it\u2019s a proper scrap on the new board. Still favored. Cash the W before W3 Saltese shows up with clipboards."
     },
     {
       "teamId": "ultron",
@@ -211,7 +211,7 @@
       "schedule": "W2\u2013W5: LAB, Doubtpfizer, Goats, Towner/Slumlords",
       "composite": 161.8,
       "rank": 9,
-      "blurb": "HQ custom 176.2 on Fantrax 178.2. W1 @ Substation (edge +11.8). Sold Elarms-Orr for FAAB \u2014 cash over W1 juice. Upcoming: W2\u2013W5: LAB, Doubtpfizer, Goats, Towner/Slumlords (opp avg proj 187.6)."
+      "blurb": "Aga\u2019s cash-rich, projection-thin, and visiting Nate. Sold the IDP stud for FAAB, which is either galaxy-brain or a future podcast apology. Separate slate from the Towner/Chase circus \u2014 prove the build."
     },
     {
       "teamId": "eddies",
@@ -234,7 +234,7 @@
       "schedule": "W2\u2013W5: Goats, Dongers, Towner/Slumlords, Doubtpfizer",
       "composite": 161.5,
       "rank": 10,
-      "blurb": "Road at Saltese. Warren ding keeps the HQ trim on; TE depth + $105 FAAB is the ceiling story. W2 Goats looks friendlier if you survive Luke."
+      "blurb": "Bill\u2019s on the road at Saltese with a dinged Warren and a TE room that still looks illegal. $105 FAAB says the wire\u2019s not scared. Get to 1\u20130 and W2 Goats looks like a palate cleanser."
     },
     {
       "teamId": "slumlords",
@@ -257,7 +257,7 @@
       "schedule": "W2\u2013W5: Pocket, Hyper, Eddies, Ultron",
       "composite": 161.12,
       "rank": 11,
-      "blurb": "Ryan Towner hosts Chase (not Aga). Old board had Slumlords as a runaway favorite; fresh Fantrax has them trailing TTAB\u2019s projection. Still a statement home game \u2014 just don\u2019t sleep on Chase\u2019s side."
+      "blurb": "Ryan Towner hosts Chase in the Week 1 headliner \u2014 not Ultron, not Aga, just two Towners\u2019 worth of chaos branding. Fresh Fantrax has TTAB ahead; the home crowd disagrees. Statement game or early meme. No in-between."
     },
     {
       "teamId": "goats",
@@ -280,7 +280,7 @@
       "schedule": "W2\u2013W5: Eddies, Morningside, Ultron, Hyper",
       "composite": 160.59,
       "rank": 12,
-      "blurb": "HQ custom 180.6 on Fantrax 181.6. W1 vs Newman (edge -2.6). Hard-ish open vs Newman. Upcoming: W2\u2013W5: Eddies, Morningside, Ultron, Hyper (opp avg proj 181.4)."
+      "blurb": "Heff draws Newman Lake to open. Veterans\u2019 tax is due Sunday \u2014 pay it, survive, then hunt the wire like the old bulls still remember how."
     },
     {
       "teamId": "substation",
@@ -303,7 +303,7 @@
       "schedule": "W2\u2013W5: Morningside, Pocket, Chase/TTAB, Newman",
       "composite": 149.85,
       "rank": 13,
-      "blurb": "Paid Pocket $10 FAAB for Nix and dropped Love. Home vs Ultron with a better live projection than the stale board \u2014 Dart/Nix chaos can still bite."
+      "blurb": "Nate dropped Love, paid Pocket $10 for Nix, and still starts the week looking like the bargain bin. Home vs Ultron is the chance to make \u2018budget QB arc\u2019 sound intentional. Dart/Nix roulette: spin responsibly."
     },
     {
       "teamId": "morningside",
@@ -326,7 +326,7 @@
       "schedule": "W2\u2013W5: Substation, Goats, Saltese, LAB",
       "composite": 147.03,
       "rank": 14,
-      "blurb": "HQ custom 168.5 on Fantrax 169.5. W1 @ Doubtpfizer (edge -22.9). Dog on paper. Upcoming: W2\u2013W5: Substation, Goats, Saltese, LAB (opp avg proj 183.5)."
+      "blurb": "Tim\u2019s the biggest dog on the board at Doubtpfizer. Early FAAB window if the offense ghost-jobs \u2014 just don\u2019t dig a 0\u20132 crater before September ends."
     }
   ],
   "week1Matchups": [
@@ -337,10 +337,5 @@
     "Towner Top Aga Bottom @ Indian Trail Slumlords \u2014 Fantrax 195.2\u2013185.8",
     "Newman Lake Sleep Paralysis Demons @ Valley Old Goats \u2014 Fantrax 184.2\u2013181.6",
     "Pocket Agents @ Little Ass Boys \u2014 Fantrax 203.2\u2013190.7"
-  ],
-  "corrections": [
-    "Bo Nix: Pocket \u2192 Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Pocket QBs: Goff only.",
-    "Week 1: Ryan Towner / Slumlords vs Chase / TTAB \u2014 not vs Aga / Ultron.",
-    "Projections refreshed from live Fantrax Home cards Sep 11 (board moved \u2014 TTAB/Pocket flipped vs prior seed)."
   ]
 }

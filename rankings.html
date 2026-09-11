@@ -46,7 +46,6 @@
       <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Week 1 matchups</h2>
       <ul class="matchup-list" id="matchupList"><li class="muted">Loading…</li></ul>
     </section>
-    <div class="corrections" id="corrections" hidden></div>
   </main>
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
@@ -90,13 +89,7 @@
         const mus = data.week1Matchups || [];
         document.getElementById("matchupList").innerHTML = mus.length
           ? mus.map((m) => `<li>${WUC.escapeHtml(m)}</li>`).join("")
-          : `<li class="muted">Matchups drop with the weekly board.</li>`;
-
-        const corr = data.corrections || [];
-        const box = document.getElementById("corrections");
-        if (corr.length) {
-          box.hidden = false;
-          box.innerHTML = `<strong>Board notes</strong><br>` + corr.map((c) => `• ${WUC.escapeHtml(c)}`).join("<br>");
+          : `<li class="muted">Matchups drop with the weekly board.</li>`;`).join("<br>");
         }
       } catch (e) {
         document.getElementById("rankList").innerHTML = `<li class="muted">Couldn’t load rankings.</li>`;
