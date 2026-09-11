@@ -6,6 +6,7 @@
     { href: "trades.html", label: "Trades" },
     { href: "faab.html", label: "FAAB" },
     { href: "td-parlay.html", label: "TD Parlay" },
+    { href: "recap.html", label: "Recap" },
     { href: "rankings.html", label: "Rankings" },
     { href: "history.html", label: "History" },
     { href: "podcast.html", label: "Podcast" },

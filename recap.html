@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>League Recap — Wheels Up Collective</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .recap-card { margin-bottom: 1.25rem; }
+    .recap-card h2 { margin: 0 0 0.35rem; font-size: 1.2rem; }
+    .recap-meta { color: var(--text-muted); font-size: 0.85rem; margin: 0 0 0.75rem; }
+    .recap-open { color: var(--text); margin: 0 0 1rem; font-size: 1.02rem; }
+    .matchup {
+      border-top: 1px solid var(--border);
+      padding: 0.85rem 0;
+    }
+    .matchup:first-of-type { border-top: none; }
+    .matchup-score {
+      font-weight: 700;
+      color: var(--sea-green-hot);
+      font-variant-numeric: tabular-nums;
+      margin: 0 0 0.35rem;
+    }
+    .matchup-blurb { margin: 0; color: var(--text-muted); }
+    .empty-recap { color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow">After the dust settles</span>
+      <h1>League recap</h1>
+      <p class="lede">Tuesday drops — every matchup, heroes, goats, and smack. <span class="muted" id="updatedLabel"></span></p>
+    </header>
+    <div id="recapList"><p class="empty-recap">Week 1 games are Sunday 9/13. First recap lands Tuesday 9/15.</p></div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const data = await WUC.loadJSON("data/recaps.json");
+        if (data.updated) {
+          document.getElementById("updatedLabel").textContent =
+            `Updated ${WUC.formatDate(data.updated)}.`;
+        }
+        const list = data.recaps || [];
+        if (!list.length) return;
+        document.getElementById("recapList").innerHTML = list.map((r) => {
+          const mus = (r.matchups || []).map((m) => `
+            <div class="matchup">
+              <div class="matchup-score">${WUC.escapeHtml(m.scoreline || m.title || "")}</div>
+              <p class="matchup-blurb">${WUC.escapeHtml(m.blurb || "")}</p>
+            </div>`).join("");
+          return `
+            <article class="card recap-card">
+              <h2>${WUC.escapeHtml(r.title || `Week ${r.week}`)}</h2>
+              <p class="recap-meta">${WUC.escapeHtml(r.dateLabel || "")}</p>
+              <p class="recap-open">${WUC.escapeHtml(r.coldOpen || "")}</p>
+              ${mus}
+            </article>`;
+        }).join("");
+      } catch (e) {
+        document.getElementById("recapList").innerHTML =
+          `<p class="empty-recap">Couldn’t load recaps.</p>`;
+      }
+    });
+  </script>
+</body>
+</html>
