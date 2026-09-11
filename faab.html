@@ -12,7 +12,7 @@
     <header class="page-hero">
       <span class="eyebrow">Waiver bank</span>
       <h1>FAAB board</h1>
-      <p class="lede">Team budgets up top. Every known claim below, highest bid first. Starting bank <strong>$<span id="startBudget">115</span></strong>. <span class="muted" id="updatedLabel"></span></p>
+      <p class="lede">Team budgets up top. Waiver claims ($1+) and trade FAAB below. Starting bank <strong>$<span id="startBudget">115</span></strong>. <span class="muted" id="updatedLabel"></span></p>
       <p class="muted" id="faabNote"></p>
     </header>
 
@@ -21,9 +21,14 @@
       <div class="trade-board" id="teamTotals"><p class="muted">Loading…</p></div>
     </section>
 
-    <section class="card">
+    <section class="card" style="margin-bottom:1.25rem">
       <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Claims — high to low</h2>
       <div class="trade-board" id="claimBoard"><p class="muted">Loading…</p></div>
+    </section>
+
+    <section class="card">
+      <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Trade FAAB</h2>
+      <div class="trade-board" id="tradeBoard"><p class="muted">Loading…</p></div>
     </section>
   </main>
   <div id="site-footer"></div>
@@ -43,8 +48,8 @@
         }
 
         const teams = [...(data.teamBalances || [])].sort((a, b) => {
-          const as = (a.spentKnown ?? (start - (a.remaining ?? start)));
-          const bs = (b.spentKnown ?? (start - (b.remaining ?? start)));
+          const as = a.spentKnown ?? 0;
+          const bs = b.spentKnown ?? 0;
           if (bs !== as) return bs - as;
           return (a.name || "").localeCompare(b.name || "");
         });
@@ -56,31 +61,39 @@
                 <th class="col-rank">#</th>
                 <th class="col-team">Team</th>
                 <th class="col-owner">Owner</th>
-                <th class="col-trades">Spent</th>
+                <th class="col-trades">Claims</th>
+                <th class="col-trades">Trade −/+</th>
                 <th class="col-trades">Left</th>
               </tr>
             </thead>
             <tbody>
               ${teams.map((t, i) => {
-                const spent = t.spentKnown ?? Math.max(0, start - (t.remaining ?? start));
-                const left = t.remaining != null ? t.remaining : (start - spent);
+                const claims = t.spentClaims ?? 0;
+                const out = t.tradeOut ?? 0;
+                const inn = t.tradeIn ?? 0;
+                const tradeLabel = (out || inn) ? `−$${out} / +$${inn}` : "—";
+                const left = t.remaining != null ? t.remaining : (t.remainingKnown ?? (start - claims - out + inn));
                 const leftLabel = t.remaining != null ? left : `${left}*`;
+                const spent = (t.spentKnown ?? (claims + out));
                 return `<tr class="${i < 3 && spent > 0 ? "hot" : ""}">
                   <td class="col-rank">${i + 1}</td>
                   <td class="col-team">${WUC.escapeHtml(t.name || "—")}</td>
                   <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
-                  <td class="col-trades">$${spent}</td>
+                  <td class="col-trades">$${claims}</td>
+                  <td class="col-trades">${tradeLabel}</td>
                   <td class="col-trades">$${leftLabel}</td>
                 </tr>`;
               }).join("")}
             </tbody>
           </table>
-          <p class="muted" style="margin:0.75rem 0 0;font-size:0.8rem">* Left estimated from tagged claims only when Fantrax remaining is unknown.</p>`;
+          <p class="muted" style="margin:0.75rem 0 0;font-size:0.8rem">* Left estimated when Fantrax remaining is unknown. $0 waiver bids omitted.</p>`;
 
-        const claims = [...(data.claims || [])].sort((a, b) => {
-          if (b.amount !== a.amount) return b.amount - a.amount;
-          return String(b.date || "").localeCompare(String(a.date || ""));
-        });
+        const claims = [...(data.claims || [])]
+          .filter((c) => (c.amount || 0) > 0)
+          .sort((a, b) => {
+            if (b.amount !== a.amount) return b.amount - a.amount;
+            return String(b.date || "").localeCompare(String(a.date || ""));
+          });
 
         document.getElementById("claimBoard").innerHTML = claims.length ? `
           <table class="trade-table" aria-label="FAAB claims">
@@ -107,6 +120,42 @@
               }).join("")}
             </tbody>
           </table>` : `<p class="muted">No FAAB claims loaded yet.</p>`;
+
+        const trades = [...(data.trades || [])]
+          .filter((t) => (t.amount || 0) > 0)
+          .sort((a, b) => {
+            if (b.amount !== a.amount) return b.amount - a.amount;
+            return String(b.date || "").localeCompare(String(a.date || ""));
+          });
+
+        document.getElementById("tradeBoard").innerHTML = trades.length ? `
+          <table class="trade-table" aria-label="Trade FAAB">
+            <thead>
+              <tr>
+                <th class="col-rank">#</th>
+                <th class="col-team">From → To</th>
+                <th class="col-owner">For</th>
+                <th class="col-owner">Date</th>
+                <th class="col-trades">FAAB</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${trades.map((t, i) => {
+                const forWhat = (t.for || []).length
+                  ? (t.for || []).map(WUC.escapeHtml).join(", ")
+                  : "—";
+                const lane = `${WUC.escapeHtml(t.fromTeam || "?")} → ${WUC.escapeHtml(t.toTeam || "?")}`;
+                const off = t.official === false ? ` <span class="muted">(handshake)</span>` : "";
+                return `<tr class="${i < 3 ? "hot" : ""}">
+                  <td class="col-rank">${i + 1}</td>
+                  <td class="col-team">${lane}${off}</td>
+                  <td class="col-owner">${forWhat}</td>
+                  <td class="col-owner">${t.date ? WUC.formatDate(t.date) : "—"}</td>
+                  <td class="col-trades">$${t.amount}</td>
+                </tr>`;
+              }).join("")}
+            </tbody>
+          </table>` : `<p class="muted">No trade FAAB yet.</p>`;
       } catch (e) {
         console.error(e);
         document.getElementById("teamTotals").innerHTML = `<p class="muted">Couldn’t load FAAB board.</p>`;

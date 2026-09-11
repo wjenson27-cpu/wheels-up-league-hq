@@ -1,9 +1,10 @@
 {
   "updated": "2026-09-11",
-  "source": "Parsed from League HQ transactions.json (partial \u2014 Sep 2 batch + tagged claims). Full Fantrax FAAB board still STALE for untagged teams.",
+  "source": "transactions.json claims + trades.json FAAB transfers (partial until Eddie full scrape).",
   "startingBudget": 115,
   "incomplete": true,
-  "note": "Only claims with known $ amounts are listed. Many $0\u2013$2 IDP adds from the Sep 2 batch are not expanded. Team remaining is known for Eddies ($105); others are computed from tagged claims only until Eddie scrapes full FAAB.",
+  "note": "Waiver claims $1+ only (no $0 bids). Trade FAAB included. Team remaining known for Eddies ($105); others estimated until Eddie\u2019s 4 PM scrape.",
+  "excludeZeroBids": true,
   "teamBalances": [
     {
       "id": "slumlords",
@@ -12,6 +13,9 @@
       "abbrev": "ITS",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 0,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 0,
       "remainingKnown": 115
     },
@@ -22,6 +26,9 @@
       "abbrev": "NLS",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 0,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 0,
       "remainingKnown": 115
     },
@@ -32,8 +39,11 @@
       "abbrev": "SAL",
       "starting": 115,
       "remaining": null,
-      "spentKnown": 0,
-      "remainingKnown": 115
+      "spentClaims": 0,
+      "tradeOut": 20,
+      "tradeIn": 0,
+      "spentKnown": 20,
+      "remainingKnown": 95
     },
     {
       "id": "lab",
@@ -42,6 +52,9 @@
       "abbrev": "LAB",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 0,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 0,
       "remainingKnown": 115
     },
@@ -52,6 +65,9 @@
       "abbrev": "MDP",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 2,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 2,
       "remainingKnown": 113
     },
@@ -62,6 +78,9 @@
       "abbrev": "ERE",
       "starting": 115,
       "remaining": 105,
+      "spentClaims": 10,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 10,
       "remainingKnown": 105
     },
@@ -72,6 +91,9 @@
       "abbrev": "DDG",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 0,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 0,
       "remainingKnown": 115
     },
@@ -82,6 +104,9 @@
       "abbrev": "TTA",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 0,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 0,
       "remainingKnown": 115
     },
@@ -92,8 +117,11 @@
       "abbrev": "HYP",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 0,
+      "tradeOut": 0,
+      "tradeIn": 10,
       "spentKnown": 0,
-      "remainingKnown": 115
+      "remainingKnown": 125
     },
     {
       "id": "morningside",
@@ -102,6 +130,9 @@
       "abbrev": "MMD",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 0,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 0,
       "remainingKnown": 115
     },
@@ -112,8 +143,11 @@
       "abbrev": "ULT",
       "starting": 115,
       "remaining": null,
-      "spentKnown": 0,
-      "remainingKnown": 115
+      "spentClaims": 0,
+      "tradeOut": 10,
+      "tradeIn": 30,
+      "spentKnown": 10,
+      "remainingKnown": 135
     },
     {
       "id": "goats",
@@ -122,6 +156,9 @@
       "abbrev": "VOG",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 0,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 0,
       "remainingKnown": 115
     },
@@ -132,6 +169,9 @@
       "abbrev": "PKT",
       "starting": 115,
       "remaining": null,
+      "spentClaims": 3,
+      "tradeOut": 0,
+      "tradeIn": 0,
       "spentKnown": 3,
       "remainingKnown": 112
     },
@@ -142,8 +182,11 @@
       "abbrev": "SUB",
       "starting": 115,
       "remaining": null,
-      "spentKnown": 0,
-      "remainingKnown": 115
+      "spentClaims": 0,
+      "tradeOut": 10,
+      "tradeIn": 0,
+      "spentKnown": 10,
+      "remainingKnown": 105
     }
   ],
   "claims": [
@@ -153,6 +196,7 @@
       "amount": 11,
       "team": null,
       "note": "FAAB batch",
+      "kind": "claim",
       "teamId": null
     },
     {
@@ -162,6 +206,7 @@
       "team": "Eagle Ridge Eddies",
       "dropped": "Christian Harris",
       "note": "FAAB batch",
+      "kind": "claim",
       "teamId": "eddies"
     },
     {
@@ -170,6 +215,7 @@
       "amount": 6,
       "team": null,
       "note": "FAAB batch",
+      "kind": "claim",
       "teamId": null
     },
     {
@@ -177,7 +223,8 @@
       "player": "Evan Williams",
       "amount": 6,
       "team": null,
-      "note": "FAAB batch (later moves may differ)",
+      "note": "FAAB batch",
+      "kind": "claim",
       "teamId": null
     },
     {
@@ -186,6 +233,7 @@
       "amount": 5,
       "team": null,
       "note": "FAAB batch",
+      "kind": "claim",
       "teamId": null
     },
     {
@@ -194,6 +242,7 @@
       "amount": 5,
       "team": null,
       "note": "FAAB batch",
+      "kind": "claim",
       "teamId": null
     },
     {
@@ -202,6 +251,7 @@
       "amount": 4,
       "team": null,
       "note": "FAAB batch",
+      "kind": "claim",
       "teamId": null
     },
     {
@@ -210,6 +260,7 @@
       "amount": 3,
       "team": null,
       "note": "FAAB batch",
+      "kind": "claim",
       "teamId": null
     },
     {
@@ -218,14 +269,7 @@
       "amount": 3,
       "team": "Eagle Ridge Eddies",
       "note": "FAAB batch",
-      "teamId": "eddies"
-    },
-    {
-      "date": "2026-09-02",
-      "player": "Jalen Coker",
-      "amount": 0,
-      "team": "Eagle Ridge Eddies",
-      "note": "FAAB batch",
+      "kind": "claim",
       "teamId": "eddies"
     },
     {
@@ -235,6 +279,7 @@
       "team": "Mrs. Doubtpfizer",
       "dropped": "Amani Hooker",
       "pos": "WR/PHI",
+      "kind": "claim",
       "teamId": "doubtpfizer"
     },
     {
@@ -244,7 +289,53 @@
       "team": "Pocket Agents",
       "dropped": "Michael Mayer",
       "pos": "WR",
+      "kind": "claim",
       "teamId": "pocket"
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-08-30",
+      "amount": 20,
+      "fromTeam": "Saltese Slamm",
+      "fromTeamId": "saltese",
+      "toTeam": "Ultron",
+      "toTeamId": "ultron",
+      "for": [
+        "Kaleb Elarms-Orr (LB)"
+      ],
+      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "official": true,
+      "kind": "trade"
+    },
+    {
+      "date": "2026-09-03",
+      "amount": 10,
+      "fromTeam": "Ultron",
+      "fromTeamId": "ultron",
+      "toTeam": "Ultron",
+      "toTeamId": "ultron",
+      "for": [
+        "Michael Wilson (WR)",
+        "Robert Spillane (LB)"
+      ],
+      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
+      "official": true,
+      "kind": "trade"
+    },
+    {
+      "date": "2026-08-30",
+      "amount": 10,
+      "fromTeam": "Substation",
+      "fromTeamId": "substation",
+      "toTeam": "The Hypersecretors",
+      "toTeamId": "hyper",
+      "for": [
+        "R20 chair (Sadiq stays Jacob)"
+      ],
+      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "official": false,
+      "kind": "trade"
     }
   ]
 }
