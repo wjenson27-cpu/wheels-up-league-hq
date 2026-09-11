@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-09-10",
+  "asOf": "2026-09-11",
   "faabLeft": null,
   "roster": {
     "QB": [
@@ -19,12 +19,12 @@
       "Jaylen Waddle",
       "Malik Washington",
       "Zachariah Branch",
-      "Rashid Shaheed"
+      "Rashid Shaheed",
+      "Barion Brown"
     ],
     "TE": [
       "Trey McBride",
-      "Dalton Kincaid",
-      "Michael Mayer"
+      "Dalton Kincaid"
     ],
     "LB": [
       "Ernest Jones",
@@ -44,7 +44,7 @@
       "Cooper DeJean"
     ]
   },
-  "notes": "Re-verified Sep 8 \u2014 Dowdle is on Saltese, not Pocket. Barton still rostered (also on trade block). | Sep 8 trade: received Jordan Love for Bo Nix. | Sep 9: +Michael Mayer; \u2212Upton Stout; \u2212Malik Mustapha.",
-  "source": "Fantrax re-scrape Sep 8 2026",
+  "notes": "Re-verified Sep 8 \u2014 Dowdle is on Saltese, not Pocket. Barton still rostered (also on trade block). | Sep 8 trade: received Jordan Love for Bo Nix. | Sep 9: +Michael Mayer; \u2212Upton Stout; \u2212Malik Mustapha. | Sep 10: +Barion Brown ($3 FAAB) \u2212Michael Mayer.",
+  "source": "Fantrax Fantasy-check verify Sep 11 2026 ~6:50 AM PT",
   "fantraxTeamId": "20zozmjgmsb3ulv4"
 }

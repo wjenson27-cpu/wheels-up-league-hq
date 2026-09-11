@@ -1,7 +1,25 @@
 {
   "updated": "2026-09-11",
-  "source": "Fantrax 6am scrape Sep 11 2026 PT",
+  "source": "Fantrax Fantasy-check verify scrape Sep 11 2026 ~6:50 AM PT",
   "items": [
+    {
+      "date": "2026-09-10",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Jaylon Carlies (LB); dropped Branson Combs (LB) at 7:59 AM PDT"
+    },
+    {
+      "date": "2026-09-10",
+      "type": "ADD/DROP",
+      "team": "The Hypersecretors",
+      "summary": "Added Michael Mayer (TE); dropped Chigoziem Okonkwo (TE) at 7:54 AM PDT"
+    },
+    {
+      "date": "2026-09-10",
+      "type": "ADD/DROP",
+      "team": "Pocket Agents",
+      "summary": "Added Barion Brown (WR) for $3 FAAB; dropped Michael Mayer (TE) at 7:27 AM PDT"
+    },
     {
       "date": "2026-09-09",
       "type": "DROP",
@@ -261,5 +279,5 @@
       "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
     }
   ],
-  "note": "No new executed transactions after Sep 9 10:59 PM PDT (Bobby Wagner drop). Reconfirmed Sep 11 6am scrape."
+  "note": "Sep 10 AM claims added (Ultron Carlies, Hyper Mayer, Pocket Barion Brown $3)."
 }
