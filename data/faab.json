@@ -1,9 +1,8 @@
 {
   "updated": "2026-09-11",
-  "source": "transactions.json claims + trades.json FAAB transfers (partial until Eddie full scrape).",
+  "source": "League wire + completed trades",
   "startingBudget": 115,
-  "incomplete": true,
-  "note": "Waiver claims $1+ only (no $0 bids). Trade FAAB included (TTAB $10\u2192Ultron corrected). Eddies left $105; others estimated until Eddie scrape.",
+  "note": "Waiver claims $1+ only (no $0 bids). Trade FAAB included. Starting bank $115 \u2014 Eddies show $105 left; other remainings update as the board settles.",
   "excludeZeroBids": true,
   "teamBalances": [
     {

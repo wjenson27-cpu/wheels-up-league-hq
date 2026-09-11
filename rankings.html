@@ -5,16 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Power Rankings — Wheels Up Collective</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .rank-proj {
+      display: inline-block;
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--sea-green-hot);
+      font-variant-numeric: tabular-nums;
+    }
+    .matchup-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .matchup-list li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+    .matchup-list li:last-child { border-bottom: none; }
+  </style>
 </head>
 <body>
   <div id="site-nav"></div>
   <main class="wrap">
     <header class="page-hero">
-      <span class="eyebrow">Week 1 · SAMPLE takes</span>
+      <span class="eyebrow" id="rankEyebrow">Week 1</span>
       <h1>Power rankings</h1>
-      <p class="lede">1–14 with blurbs. Other teams are invented SAMPLE for the site — edit <code>data/rankings.json</code> when you want real heat.</p>
+      <p class="lede" id="rankLede">1–14 with Week 1 projection heat and early trade/FAAB notes.</p>
     </header>
+
     <ol class="rank-list" id="rankList"><li class="muted">Loading…</li></ol>
+
+    <section class="card" style="margin-top:1.5rem">
+      <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Week 1 matchups</h2>
+      <ul class="matchup-list" id="matchupList"><li class="muted">Loading…</li></ul>
+    </section>
   </main>
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
@@ -23,19 +51,31 @@
     document.addEventListener("DOMContentLoaded", async () => {
       try {
         const data = await WUC.loadJSON("data/rankings.json");
-        document.querySelector(".page-hero .lede").insertAdjacentHTML(
-          "beforeend",
-          ` <span class="dim">Updated ${WUC.formatDate(data.updated)}.</span>`
-        );
-        document.getElementById("rankList").innerHTML = (data.rankings || []).map(r => `
+        const week = data.week || 1;
+        document.getElementById("rankEyebrow").textContent = `Week ${week} · ${data.season || ""}`.trim();
+        const lede = data.subtitle || "1–14 with blurbs.";
+        document.getElementById("rankLede").innerHTML =
+          `${WUC.escapeHtml(lede)} <span class="dim">Updated ${WUC.formatDate(data.updated)}.</span>`;
+
+        document.getElementById("rankList").innerHTML = (data.rankings || []).map((r) => {
+          const proj = r.projW1 != null
+            ? `<span class="rank-proj">${Number(r.projW1).toFixed(1)} proj</span>`
+            : "";
+          return `
           <li class="rank-row${r.rank <= 3 ? " top3" : ""}">
             <div class="rank-num">${r.rank}</div>
             <div>
-              <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
+              <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}${proj}</div>
               <h2 class="rank-team">${WUC.escapeHtml(r.team)}</h2>
               <p class="rank-blurb">${WUC.escapeHtml(r.blurb)}</p>
             </div>
-          </li>`).join("");
+          </li>`;
+        }).join("");
+
+        const mus = data.week1Matchups || [];
+        document.getElementById("matchupList").innerHTML = mus.length
+          ? mus.map((m) => `<li>${WUC.escapeHtml(m)}</li>`).join("")
+          : `<li class="muted">Matchups drop with the weekly board.</li>`;
       } catch (e) {
         document.getElementById("rankList").innerHTML = `<li class="muted">Couldn’t load rankings.</li>`;
       }

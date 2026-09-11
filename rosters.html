@@ -12,7 +12,7 @@
     <header class="page-hero">
       <span class="eyebrow">All 14 clubs</span>
       <h1>Rosters &amp; transactions</h1>
-      <p class="lede">League field first. Depth charts expand as Fantrax exports land in <code>data/rosters/</code>. Wire feed is league-wide.</p>
+      <p class="lede">All 14 clubs and the league wire. Expand a team for the depth chart.</p>
     </header>
 
     <h2 style="font-size:1.1rem;margin:0 0 0.75rem">League field</h2>
@@ -54,7 +54,7 @@
           } catch (_) {
             // optional per-team depth file
           }
-          // legacy single file for eddies during transition
+          // Eddies depth fallback
           if (!depth && t.id === "eddies") {
             try {
               const r = await WUC.loadJSON("data/roster-eddies.json");

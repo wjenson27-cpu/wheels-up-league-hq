@@ -103,11 +103,11 @@
     </header>
 
     <div class="parlay-toolbar">
-      <button type="button" class="primary" id="btnSave">Saved in browser</button>
-      <button type="button" id="btnExport">Export JSON</button>
-      <button type="button" id="btnImport">Import JSON</button>
+      <button type="button" class="primary" id="btnSave">Auto-save on</button>
+      <button type="button" id="btnExport">Download backup</button>
+      <button type="button" id="btnImport">Load backup</button>
       <input type="file" id="fileImport" accept="application/json,.json" hidden />
-      <button type="button" id="btnReset">Reset to league seed</button>
+      <button type="button" id="btnReset">Reset board</button>
       <span class="parlay-status" id="saveStatus">Loading…</span>
       <a class="muted" href="files/WU-TD-Parlay.xlsx" style="margin-left:0.5rem">Download Excel</a>
     </div>
@@ -189,7 +189,7 @@
 
     function render() {
       document.getElementById("updatedLabel").textContent = state.updated
-        ? `Seed updated ${WUC.formatDate(state.updated)}.`
+        ? `Updated ${WUC.formatDate(state.updated)}.`
         : "";
       document.getElementById("noteLabel").textContent = state.note || "";
 
@@ -263,8 +263,8 @@
 
       renderTallyOnly();
       document.getElementById("saveStatus").textContent = localStorage.getItem(STORAGE_KEY)
-        ? "Loaded local edits (or seed)"
-        : "Loaded league seed";
+        ? "Your saved board"
+        : "Official board";
     }
 
     async function loadSeed() {
@@ -297,11 +297,11 @@
       e.target.value = "";
     });
     document.getElementById("btnReset").addEventListener("click", async () => {
-      if (!confirm("Wipe local edits and reload the league seed?")) return;
+      if (!confirm("Reset the board to the official Week 1 picks?")) return;
       localStorage.removeItem(STORAGE_KEY);
       state = await loadSeed();
       render();
-      document.getElementById("saveStatus").textContent = "Reset to league seed";
+      document.getElementById("saveStatus").textContent = "Board reset";
     });
 
     document.addEventListener("DOMContentLoaded", async () => {

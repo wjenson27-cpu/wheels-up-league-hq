@@ -12,7 +12,7 @@
     <header class="page-hero">
       <span class="eyebrow">Deal sheet</span>
       <h1>Trade scoreboard</h1>
-      <p class="lede">League-wide completed deals, pending offers, and trade-block noise. Refreshed from Fantrax via Eddie. <span class="muted" id="updatedLabel"></span></p>
+      <p class="lede">League-wide completed deals, pending offers, and trade-block noise. <span class="muted" id="updatedLabel"></span></p>
     </header>
 
     <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Completed</h2>
@@ -68,7 +68,7 @@
 
         const empty = `<div class="card trade-empty"><div class="big">🤝</div>
           <h2 style="margin:0 0 0.35rem">Nothing here yet</h2>
-          <p class="mb-0">Eddie refreshes this from Fantrax. Board stays quiet until deals show up.</p></div>`;
+          <p class="mb-0">Nothing on the board yet — check back after the next wave of deals.</p></div>`;
 
         document.getElementById("tradeCompleted").innerHTML =
           completed.length ? completed.map(card).join("") : empty;

@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-11",
-  "source": "Fantrax Fantasy-check verify scrape Sep 11 2026 ~6:50 AM PT",
+  "source": "Fantrax",
   "season": 2026,
   "trades": [
     {
@@ -153,8 +153,8 @@
       "note": "Still on trade block (reconfirmed Sep 11 ~6:50 AM)."
     }
   ],
-  "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Fantrax Pending Trades view empty as of Sep 11 2026 ~6:50 AM PT.",
+  "leaderboard_note": "2026 deal count \u2014 official Fantrax + handshake.",
+  "pending_note": "No pending offers right now.",
   "fantrax_completed_view": "Official completed since Aug 28 include Nix\u2194Love Sep 8; earlier Aga/Chase/Larry deals retained.",
   "hqComplete": true
 }
