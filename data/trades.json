@@ -13,9 +13,9 @@
         "Bo Nix (QB)"
       ],
       "givesB": [
-        "Jordan Love (QB)"
+        "FAAB (amount TBD)"
       ],
-      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for Jordan Love (Sep 8 6:04 PM PDT).",
+      "summary": "Pocket Agents traded Bo Nix to Substation for FAAB (Sep 8). Jordan Love was not in the deal.",
       "official": true
     },
     {
@@ -155,6 +155,6 @@
   ],
   "leaderboard_note": "2026 deal count \u2014 official Fantrax + handshake.",
   "pending_note": "No pending offers right now.",
-  "fantrax_completed_view": "Official completed since Aug 28 include Nix\u2194Love Sep 8; earlier Aga/Chase/Larry deals retained.",
+  "fantrax_completed_view": "Official completed since Aug 28 include Nix for FAAB Sep 8; earlier Aga/Chase/Larry deals retained.",
   "hqComplete": true
 }

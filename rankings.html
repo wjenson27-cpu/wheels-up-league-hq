@@ -6,26 +6,29 @@
   <title>Power Rankings — Wheels Up Collective</title>
   <link rel="stylesheet" href="css/styles.css" />
   <style>
-    .rank-proj {
-      display: inline-block;
-      margin-left: 0.5rem;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--sea-green-hot);
+    .rank-stats {
+      display: flex; flex-wrap: wrap; gap: 0.45rem 0.75rem;
+      margin: 0.25rem 0 0.45rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
       font-variant-numeric: tabular-nums;
     }
-    .matchup-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+    .rank-stats span strong { color: var(--sea-green-hot); font-weight: 700; }
+    .rank-stats .edge-pos strong { color: var(--sea-green-hot); }
+    .rank-stats .edge-neg strong { color: var(--red); }
+    .matchup-list { list-style: none; padding: 0; margin: 0; }
     .matchup-list li {
-      padding: 0.45rem 0;
-      border-bottom: 1px solid var(--border);
-      color: var(--text-muted);
-      font-size: 0.92rem;
+      padding: 0.45rem 0; border-bottom: 1px solid var(--border);
+      color: var(--text-muted); font-size: 0.92rem;
     }
     .matchup-list li:last-child { border-bottom: none; }
+    .corrections {
+      margin-top: 1rem; padding: 0.75rem 1rem;
+      border: 1px solid var(--border); border-radius: 10px;
+      background: rgba(105, 190, 40, 0.06);
+      font-size: 0.88rem; color: var(--text-muted);
+    }
+    .corrections strong { color: var(--text); }
   </style>
 </head>
 <body>
@@ -34,7 +37,7 @@
     <header class="page-hero">
       <span class="eyebrow" id="rankEyebrow">Week 1</span>
       <h1>Power rankings</h1>
-      <p class="lede" id="rankLede">1–14 with Week 1 projection heat and early trade/FAAB notes.</p>
+      <p class="lede" id="rankLede">HQ custom board — matchups, adjusts, records.</p>
     </header>
 
     <ol class="rank-list" id="rankList"><li class="muted">Loading…</li></ol>
@@ -43,6 +46,7 @@
       <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Week 1 matchups</h2>
       <ul class="matchup-list" id="matchupList"><li class="muted">Loading…</li></ul>
     </section>
+    <div class="corrections" id="corrections" hidden></div>
   </main>
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
@@ -58,15 +62,24 @@
           `${WUC.escapeHtml(lede)} <span class="dim">Updated ${WUC.formatDate(data.updated)}.</span>`;
 
         document.getElementById("rankList").innerHTML = (data.rankings || []).map((r) => {
-          const proj = r.projW1 != null
-            ? `<span class="rank-proj">${Number(r.projW1).toFixed(1)} proj</span>`
-            : "";
+          const edge = r.matchupEdge;
+          const edgeCls = edge > 0 ? "edge-pos" : edge < 0 ? "edge-neg" : "";
+          const edgeStr = edge == null ? "—" : (edge > 0 ? `+${edge}` : `${edge}`);
+          const custom = r.customW1 != null ? Number(r.customW1).toFixed(1) : "—";
+          const fx = r.fantraxW1 != null ? Number(r.fantraxW1).toFixed(1) : (r.projW1 != null ? Number(r.projW1).toFixed(1) : "—");
           return `
           <li class="rank-row${r.rank <= 3 ? " top3" : ""}">
             <div class="rank-num">${r.rank}</div>
             <div>
-              <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}${proj}</div>
+              <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
               <h2 class="rank-team">${WUC.escapeHtml(r.team)}</h2>
+              <div class="rank-stats">
+                <span><strong>${WUC.escapeHtml(r.record || "0-0")}</strong> record</span>
+                <span>vs <strong>${WUC.escapeHtml(r.opponent || "—")}</strong></span>
+                <span>HQ <strong>${custom}</strong></span>
+                <span>Fantrax <strong>${fx}</strong></span>
+                <span class="${edgeCls}">edge <strong>${edgeStr}</strong></span>
+              </div>
               <p class="rank-blurb">${WUC.escapeHtml(r.blurb)}</p>
             </div>
           </li>`;
@@ -76,6 +89,13 @@
         document.getElementById("matchupList").innerHTML = mus.length
           ? mus.map((m) => `<li>${WUC.escapeHtml(m)}</li>`).join("")
           : `<li class="muted">Matchups drop with the weekly board.</li>`;
+
+        const corr = data.corrections || [];
+        const box = document.getElementById("corrections");
+        if (corr.length) {
+          box.hidden = false;
+          box.innerHTML = `<strong>Board notes</strong><br>` + corr.map((c) => `• ${WUC.escapeHtml(c)}`).join("<br>");
+        }
       } catch (e) {
         document.getElementById("rankList").innerHTML = `<li class="muted">Couldn’t load rankings.</li>`;
       }
