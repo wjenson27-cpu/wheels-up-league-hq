@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAAB — Wheels Up Collective</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow">Waiver bank</span>
+      <h1>FAAB board</h1>
+      <p class="lede">Team budgets up top. Every known claim below, highest bid first. Starting bank <strong>$<span id="startBudget">115</span></strong>. <span class="muted" id="updatedLabel"></span></p>
+      <p class="muted" id="faabNote"></p>
+    </header>
+
+    <section class="card" style="margin-bottom:1.25rem">
+      <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Team totals</h2>
+      <div class="trade-board" id="teamTotals"><p class="muted">Loading…</p></div>
+    </section>
+
+    <section class="card">
+      <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Claims — high to low</h2>
+      <div class="trade-board" id="claimBoard"><p class="muted">Loading…</p></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const data = await WUC.loadJSON("data/faab.json");
+        const start = data.startingBudget || 115;
+        document.getElementById("startBudget").textContent = start;
+        document.getElementById("updatedLabel").textContent = data.updated
+          ? `Updated ${WUC.formatDate(data.updated)}.`
+          : "";
+        if (data.note) {
+          document.getElementById("faabNote").textContent = data.note;
+        }
+
+        const teams = [...(data.teamBalances || [])].sort((a, b) => {
+          const as = (a.spentKnown ?? (start - (a.remaining ?? start)));
+          const bs = (b.spentKnown ?? (start - (b.remaining ?? start)));
+          if (bs !== as) return bs - as;
+          return (a.name || "").localeCompare(b.name || "");
+        });
+
+        document.getElementById("teamTotals").innerHTML = `
+          <table class="trade-table" aria-label="FAAB team totals">
+            <thead>
+              <tr>
+                <th class="col-rank">#</th>
+                <th class="col-team">Team</th>
+                <th class="col-owner">Owner</th>
+                <th class="col-trades">Spent</th>
+                <th class="col-trades">Left</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${teams.map((t, i) => {
+                const spent = t.spentKnown ?? Math.max(0, start - (t.remaining ?? start));
+                const left = t.remaining != null ? t.remaining : (start - spent);
+                const leftLabel = t.remaining != null ? left : `${left}*`;
+                return `<tr class="${i < 3 && spent > 0 ? "hot" : ""}">
+                  <td class="col-rank">${i + 1}</td>
+                  <td class="col-team">${WUC.escapeHtml(t.name || "—")}</td>
+                  <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
+                  <td class="col-trades">$${spent}</td>
+                  <td class="col-trades">$${leftLabel}</td>
+                </tr>`;
+              }).join("")}
+            </tbody>
+          </table>
+          <p class="muted" style="margin:0.75rem 0 0;font-size:0.8rem">* Left estimated from tagged claims only when Fantrax remaining is unknown.</p>`;
+
+        const claims = [...(data.claims || [])].sort((a, b) => {
+          if (b.amount !== a.amount) return b.amount - a.amount;
+          return String(b.date || "").localeCompare(String(a.date || ""));
+        });
+
+        document.getElementById("claimBoard").innerHTML = claims.length ? `
+          <table class="trade-table" aria-label="FAAB claims">
+            <thead>
+              <tr>
+                <th class="col-rank">#</th>
+                <th class="col-team">Player</th>
+                <th class="col-owner">Team</th>
+                <th class="col-owner">Date</th>
+                <th class="col-trades">Bid</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${claims.map((c, i) => {
+                const team = c.team || "Unassigned";
+                const drop = c.dropped ? ` <span class="muted">(−${WUC.escapeHtml(c.dropped)})</span>` : "";
+                return `<tr class="${i < 3 ? "hot" : ""}">
+                  <td class="col-rank">${i + 1}</td>
+                  <td class="col-team">${WUC.escapeHtml(c.player || "—")}${drop}</td>
+                  <td class="col-owner">${WUC.escapeHtml(team)}</td>
+                  <td class="col-owner">${c.date ? WUC.formatDate(c.date) : "—"}</td>
+                  <td class="col-trades">$${c.amount}</td>
+                </tr>`;
+              }).join("")}
+            </tbody>
+          </table>` : `<p class="muted">No FAAB claims loaded yet.</p>`;
+      } catch (e) {
+        console.error(e);
+        document.getElementById("teamTotals").innerHTML = `<p class="muted">Couldn’t load FAAB board.</p>`;
+      }
+    });
+  </script>
+</body>
+</html>

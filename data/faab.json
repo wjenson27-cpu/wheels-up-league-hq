@@ -1,0 +1,250 @@
+{
+  "updated": "2026-09-11",
+  "source": "Parsed from League HQ transactions.json (partial \u2014 Sep 2 batch + tagged claims). Full Fantrax FAAB board still STALE for untagged teams.",
+  "startingBudget": 115,
+  "incomplete": true,
+  "note": "Only claims with known $ amounts are listed. Many $0\u2013$2 IDP adds from the Sep 2 batch are not expanded. Team remaining is known for Eddies ($105); others are computed from tagged claims only until Eddie scrapes full FAAB.",
+  "teamBalances": [
+    {
+      "id": "slumlords",
+      "name": "Indian Trail Slumlords",
+      "owner": "Ryan Towner",
+      "abbrev": "ITS",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "newman",
+      "name": "Newman Lake Sleep Paralysis Demons",
+      "owner": "Ryan McCallum",
+      "abbrev": "NLS",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "saltese",
+      "name": "Saltese Slamm",
+      "owner": "Luke Sahlberg",
+      "abbrev": "SAL",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "lab",
+      "name": "Little Ass Boys",
+      "owner": "Jesse Nicholson",
+      "abbrev": "LAB",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "doubtpfizer",
+      "name": "Mrs. Doubtpfizer",
+      "owner": "Kyle Weberg",
+      "abbrev": "MDP",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 2,
+      "remainingKnown": 113
+    },
+    {
+      "id": "eddies",
+      "name": "Eagle Ridge Eddies",
+      "owner": "Bill Jenson",
+      "abbrev": "ERE",
+      "starting": 115,
+      "remaining": 105,
+      "spentKnown": 10,
+      "remainingKnown": 105
+    },
+    {
+      "id": "dongers",
+      "name": "Drummond Dongers",
+      "owner": "Gavin Heaton",
+      "abbrev": "DDG",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "ttab",
+      "name": "Towner Top Aga Bottom",
+      "owner": "Chase Anderson",
+      "abbrev": "TTA",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "hyper",
+      "name": "The Hypersecretors",
+      "owner": "Jacob Crisp",
+      "abbrev": "HYP",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "morningside",
+      "name": "Morningside Muff Divers",
+      "owner": "Tim Brandle",
+      "abbrev": "MMD",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "ultron",
+      "name": "Ultron",
+      "owner": "Brian Aga",
+      "abbrev": "ULT",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "goats",
+      "name": "Valley Old Goats",
+      "owner": "Mike Heff",
+      "abbrev": "VOG",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    },
+    {
+      "id": "pocket",
+      "name": "Pocket Agents",
+      "owner": "Kellen Olson",
+      "abbrev": "PKT",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 3,
+      "remainingKnown": 112
+    },
+    {
+      "id": "substation",
+      "name": "Substation",
+      "owner": "Nathan Kelly",
+      "abbrev": "SUB",
+      "starting": 115,
+      "remaining": null,
+      "spentKnown": 0,
+      "remainingKnown": 115
+    }
+  ],
+  "claims": [
+    {
+      "date": "2026-09-02",
+      "player": "Kendal Daniels",
+      "amount": 11,
+      "team": null,
+      "note": "FAAB batch",
+      "teamId": null
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Henry To'oTo'o",
+      "amount": 7,
+      "team": "Eagle Ridge Eddies",
+      "dropped": "Christian Harris",
+      "note": "FAAB batch",
+      "teamId": "eddies"
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Cole Bishop",
+      "amount": 6,
+      "team": null,
+      "note": "FAAB batch",
+      "teamId": null
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Evan Williams",
+      "amount": 6,
+      "team": null,
+      "note": "FAAB batch (later moves may differ)",
+      "teamId": null
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Chris Rodriguez Jr.",
+      "amount": 5,
+      "team": null,
+      "note": "FAAB batch",
+      "teamId": null
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Josh Metellus",
+      "amount": 5,
+      "team": null,
+      "note": "FAAB batch",
+      "teamId": null
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Jack Gibbens",
+      "amount": 4,
+      "team": null,
+      "note": "FAAB batch",
+      "teamId": null
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Jordan Love",
+      "amount": 3,
+      "team": null,
+      "note": "FAAB batch",
+      "teamId": null
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Troy Dye",
+      "amount": 3,
+      "team": "Eagle Ridge Eddies",
+      "note": "FAAB batch",
+      "teamId": "eddies"
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Jalen Coker",
+      "amount": 0,
+      "team": "Eagle Ridge Eddies",
+      "note": "FAAB batch",
+      "teamId": "eddies"
+    },
+    {
+      "date": "2026-09-06",
+      "player": "Makai Lemon",
+      "amount": 2,
+      "team": "Mrs. Doubtpfizer",
+      "dropped": "Amani Hooker",
+      "pos": "WR/PHI",
+      "teamId": "doubtpfizer"
+    },
+    {
+      "date": "2026-09-10",
+      "player": "Barion Brown",
+      "amount": 3,
+      "team": "Pocket Agents",
+      "dropped": "Michael Mayer",
+      "pos": "WR",
+      "teamId": "pocket"
+    }
+  ]
+}
