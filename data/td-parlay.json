@@ -1,0 +1,899 @@
+{
+  "updated": "2026-09-11",
+  "season": 2026,
+  "weeks": 17,
+  "note": "Anytime TD Yes/No. Week 1 all games Sun 9/13/2026. Edits auto-save in your browser. Export JSON to share; Reset reloads the league seed. Excel: files/WU-TD-Parlay.xlsx",
+  "weekNotes": {
+    "1": "All games Sunday 9/13/2026"
+  },
+  "owners": [
+    {
+      "id": "nate",
+      "name": "Nate",
+      "weeks": {
+        "1": {
+          "player": "Saquon Barkley",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "bill",
+      "name": "Bill",
+      "weeks": {
+        "1": {
+          "player": "Tee Higgins",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "larry",
+      "name": "Larry",
+      "weeks": {
+        "1": {
+          "player": "Omarion Hampton",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "aga",
+      "name": "Aga",
+      "weeks": {
+        "1": {
+          "player": "Javonte Williams",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "ryan-m",
+      "name": "Ryan M",
+      "weeks": {
+        "1": {
+          "player": "Jonathan Taylor",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "chase",
+      "name": "Chase",
+      "weeks": {
+        "1": {
+          "player": "Travis Etienne Jr.",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "ryan-t",
+      "name": "Ryan T",
+      "weeks": {
+        "1": {
+          "player": "Jahmyr Gibbs",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "big-show",
+      "name": "Big Show",
+      "weeks": {
+        "1": {
+          "player": "Chris Olave",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "heff",
+      "name": "Heff",
+      "weeks": {
+        "1": {
+          "player": "Derrick Henry",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "jesse",
+      "name": "Jesse",
+      "weeks": {
+        "1": {
+          "player": "Ashton Jeanty",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "coon",
+      "name": "Coon",
+      "weeks": {
+        "1": {
+          "player": "Ja'Marr Chase",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    },
+    {
+      "id": "jacob",
+      "name": "Jacob",
+      "weeks": {
+        "1": {
+          "player": "Bijan Robinson",
+          "td": ""
+        },
+        "2": {
+          "player": "",
+          "td": ""
+        },
+        "3": {
+          "player": "",
+          "td": ""
+        },
+        "4": {
+          "player": "",
+          "td": ""
+        },
+        "5": {
+          "player": "",
+          "td": ""
+        },
+        "6": {
+          "player": "",
+          "td": ""
+        },
+        "7": {
+          "player": "",
+          "td": ""
+        },
+        "8": {
+          "player": "",
+          "td": ""
+        },
+        "9": {
+          "player": "",
+          "td": ""
+        },
+        "10": {
+          "player": "",
+          "td": ""
+        },
+        "11": {
+          "player": "",
+          "td": ""
+        },
+        "12": {
+          "player": "",
+          "td": ""
+        },
+        "13": {
+          "player": "",
+          "td": ""
+        },
+        "14": {
+          "player": "",
+          "td": ""
+        },
+        "15": {
+          "player": "",
+          "td": ""
+        },
+        "16": {
+          "player": "",
+          "td": ""
+        },
+        "17": {
+          "player": "",
+          "td": ""
+        }
+      }
+    }
+  ]
+}

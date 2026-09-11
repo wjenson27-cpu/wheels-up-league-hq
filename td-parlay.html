@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TD Parlay — Wheels Up Collective</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .wrap-wide { max-width: min(1600px, 98vw); margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+    .parlay-toolbar {
+      display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
+      margin: 0 0 1rem;
+    }
+    .parlay-toolbar button, .parlay-toolbar label.btn {
+      font: inherit; cursor: pointer;
+      background: var(--bg-elev); color: var(--text);
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 0.45rem 0.75rem;
+    }
+    .parlay-toolbar button.primary {
+      background: rgba(105, 190, 40, 0.2);
+      border-color: var(--sea-green);
+      color: var(--sea-green-hot);
+    }
+    .parlay-toolbar button:hover { border-color: var(--border-glow); }
+    .parlay-status { font-size: 0.85rem; color: var(--text-muted); margin-left: auto; }
+    .parlay-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
+    table.parlay-table {
+      border-collapse: collapse; width: max-content; min-width: 100%;
+      font-size: 0.85rem;
+    }
+    .parlay-table th, .parlay-table td {
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid rgba(26, 58, 92, 0.6);
+      padding: 0.35rem 0.4rem;
+      vertical-align: middle;
+    }
+    .parlay-table thead th {
+      position: sticky; top: 0; z-index: 2;
+      background: var(--sea-navy);
+      color: var(--text);
+      font-weight: 600;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .parlay-table th.owner-col, .parlay-table td.owner-col {
+      position: sticky; left: 0; z-index: 3;
+      background: var(--bg-card);
+      min-width: 6.5rem;
+      font-weight: 600;
+    }
+    .parlay-table thead th.owner-col { z-index: 4; background: var(--sea-navy); }
+    .parlay-table th.week-head { background: #003366; }
+    .parlay-table th.week-head.alt { background: #002244; }
+    .parlay-table input.player {
+      width: 9.5rem; max-width: 28vw;
+      background: rgba(0,0,0,0.25);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      padding: 0.3rem 0.4rem;
+      font: inherit;
+    }
+    .parlay-table input.player:focus {
+      outline: none; border-color: var(--sea-green);
+      box-shadow: 0 0 0 2px rgba(105, 190, 40, 0.25);
+    }
+    .parlay-table select.td {
+      background: rgba(0,0,0,0.25);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      padding: 0.3rem 0.25rem;
+      font: inherit;
+      min-width: 4.2rem;
+    }
+    .parlay-table select.td.yes { background: rgba(105, 190, 40, 0.25); border-color: var(--sea-green); }
+    .parlay-table select.td.no { background: rgba(244, 63, 94, 0.2); border-color: var(--red); }
+    .parlay-table td.stat {
+      text-align: center; font-variant-numeric: tabular-nums; color: var(--text-muted);
+      min-width: 2.5rem;
+    }
+    .parlay-table tr.parlay-row td {
+      background: rgba(254, 243, 199, 0.06);
+      font-weight: 700;
+      text-align: center;
+    }
+    .parlay-table .hit { color: var(--sea-green-hot); }
+    .parlay-table .miss { color: var(--red); }
+    .parlay-table .pending { color: var(--text-dim); }
+    .season-tally { margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .season-tally strong { color: var(--sea-green-hot); font-size: 1.25rem; }
+  </style>
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap-wide">
+    <header class="page-hero">
+      <span class="eyebrow">League side bet</span>
+      <h1>TD Parlay</h1>
+      <p class="lede">17 weeks. Change players anytime. Mark anytime TD Yes/No. Weekly HIT only if all 12 hit. <span class="muted" id="updatedLabel"></span></p>
+      <p class="muted" id="noteLabel"></p>
+    </header>
+
+    <div class="parlay-toolbar">
+      <button type="button" class="primary" id="btnSave">Saved in browser</button>
+      <button type="button" id="btnExport">Export JSON</button>
+      <button type="button" id="btnImport">Import JSON</button>
+      <input type="file" id="fileImport" accept="application/json,.json" hidden />
+      <button type="button" id="btnReset">Reset to league seed</button>
+      <span class="parlay-status" id="saveStatus">Loading…</span>
+      <a class="muted" href="files/WU-TD-Parlay.xlsx" style="margin-left:0.5rem">Download Excel</a>
+    </div>
+
+    <div class="card parlay-scroll" id="board"><p class="muted">Loading…</p></div>
+
+    <div class="season-tally">
+      <div>Season parlays HIT: <strong id="seasonHits">0</strong> <span class="muted">of 17</span></div>
+      <div>Season parlays MISS: <strong id="seasonMisses">0</strong></div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const STORAGE_KEY = "wuc-td-parlay-v1";
+    let state = null;
+    let dirty = false;
+
+    function weekResult(owners, w) {
+      const tds = owners.map((o) => (o.weeks[String(w)] || {}).td || "");
+      if (tds.some((t) => !t)) return "…";
+      if (tds.every((t) => t === "Yes")) return "HIT";
+      return "MISS";
+    }
+
+    function ownerStats(o) {
+      let hits = 0, misses = 0, open = 0;
+      for (let w = 1; w <= 17; w++) {
+        const td = (o.weeks[String(w)] || {}).td || "";
+        if (td === "Yes") hits++;
+        else if (td === "No") misses++;
+        else open++;
+      }
+      return { hits, misses, open };
+    }
+
+    function persist() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      dirty = false;
+      const el = document.getElementById("saveStatus");
+      el.textContent = "Saved locally · " + new Date().toLocaleTimeString();
+    }
+
+    function markDirty() {
+      dirty = true;
+      document.getElementById("saveStatus").textContent = "Unsaved changes…";
+      clearTimeout(window._parlaySaveTimer);
+      window._parlaySaveTimer = setTimeout(persist, 400);
+      renderTallyOnly();
+    }
+
+    function renderTallyOnly() {
+      let hits = 0, misses = 0;
+      for (let w = 1; w <= 17; w++) {
+        const r = weekResult(state.owners, w);
+        if (r === "HIT") hits++;
+        if (r === "MISS") misses++;
+      }
+      document.getElementById("seasonHits").textContent = hits;
+      document.getElementById("seasonMisses").textContent = misses;
+      // update parlay row cells if present
+      for (let w = 1; w <= 17; w++) {
+        const cell = document.querySelector(`[data-parlay-week="${w}"]`);
+        if (!cell) continue;
+        const r = weekResult(state.owners, w);
+        cell.textContent = r;
+        cell.className = r === "HIT" ? "hit" : r === "MISS" ? "miss" : "pending";
+      }
+      state.owners.forEach((o) => {
+        const s = ownerStats(o);
+        const row = document.querySelector(`tr[data-owner="${o.id}"]`);
+        if (!row) return;
+        row.querySelector(".stat-hits").textContent = s.hits;
+        row.querySelector(".stat-misses").textContent = s.misses;
+        row.querySelector(".stat-open").textContent = s.open;
+      });
+    }
+
+    function render() {
+      document.getElementById("updatedLabel").textContent = state.updated
+        ? `Seed updated ${WUC.formatDate(state.updated)}.`
+        : "";
+      document.getElementById("noteLabel").textContent = state.note || "";
+
+      const body = state.owners.map((o) => {
+        const s = ownerStats(o);
+        let cells = `<td class="owner-col">${WUC.escapeHtml(o.name)}</td>`;
+        for (let w = 1; w <= 17; w++) {
+          const cell = o.weeks[String(w)] || { player: "", td: "" };
+          const tdClass = cell.td === "Yes" ? "yes" : cell.td === "No" ? "no" : "";
+          cells += `<td><input class="player" data-owner="${o.id}" data-week="${w}" value="${WUC.escapeHtml(cell.player || "")}" placeholder="Player" /></td>`;
+          cells += `<td><select class="td ${tdClass}" data-owner="${o.id}" data-week="${w}">
+            <option value="" ${!cell.td ? "selected" : ""}>—</option>
+            <option value="Yes" ${cell.td === "Yes" ? "selected" : ""}>Yes</option>
+            <option value="No" ${cell.td === "No" ? "selected" : ""}>No</option>
+          </select></td>`;
+        }
+        cells += `<td class="stat stat-hits">${s.hits}</td><td class="stat stat-misses">${s.misses}</td><td class="stat stat-open">${s.open}</td>`;
+        return `<tr data-owner="${o.id}">${cells}</tr>`;
+      }).join("");
+
+      let parlay = `<td class="owner-col">WEEK PARLAY</td>`;
+      for (let w = 1; w <= 17; w++) {
+        const r = weekResult(state.owners, w);
+        const cls = r === "HIT" ? "hit" : r === "MISS" ? "miss" : "pending";
+        parlay += `<td colspan="2" data-parlay-week="${w}" class="${cls}">${r}</td>`;
+      }
+      parlay += `<td class="stat"></td><td class="stat"></td><td class="stat"></td>`;
+
+      const weekHeads = Array.from({ length: 17 }, (_, i) => {
+        const w = i + 1;
+        const note = (state.weekNotes && state.weekNotes[String(w)]) || "";
+        const title = note ? ` title="${WUC.escapeHtml(note)}"` : "";
+        return `<th class="week-head ${w % 2 ? "" : "alt"}" colspan="2"${title}>W${w}</th>`;
+      }).join("");
+
+      document.getElementById("board").innerHTML = `
+        <table class="parlay-table" aria-label="TD Parlay season board">
+          <thead>
+            <tr>
+              <th class="owner-col" rowspan="2">Owner</th>
+              ${weekHeads}
+              <th rowspan="2">Hits</th><th rowspan="2">Miss</th><th rowspan="2">Open</th>
+            </tr>
+            <tr>
+              ${Array.from({ length: 17 }, () => "<th>Player</th><th>TD?</th>").join("")}
+            </tr>
+          </thead>
+          <tbody>${body}</tbody>
+          <tfoot><tr class="parlay-row">${parlay}</tr></tfoot>
+        </table>`;
+
+      document.querySelectorAll("input.player").forEach((inp) => {
+        inp.addEventListener("input", () => {
+          const o = state.owners.find((x) => x.id === inp.dataset.owner);
+          if (!o) return;
+          o.weeks[inp.dataset.week].player = inp.value;
+          markDirty();
+        });
+      });
+      document.querySelectorAll("select.td").forEach((sel) => {
+        sel.addEventListener("change", () => {
+          const o = state.owners.find((x) => x.id === sel.dataset.owner);
+          if (!o) return;
+          o.weeks[sel.dataset.week].td = sel.value;
+          sel.classList.remove("yes", "no");
+          if (sel.value === "Yes") sel.classList.add("yes");
+          if (sel.value === "No") sel.classList.add("no");
+          markDirty();
+        });
+      });
+
+      renderTallyOnly();
+      document.getElementById("saveStatus").textContent = localStorage.getItem(STORAGE_KEY)
+        ? "Loaded local edits (or seed)"
+        : "Loaded league seed";
+    }
+
+    async function loadSeed() {
+      return WUC.loadJSON("data/td-parlay.json");
+    }
+
+    document.getElementById("btnSave").addEventListener("click", persist);
+    document.getElementById("btnExport").addEventListener("click", () => {
+      persist();
+      const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "td-parlay.json";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    document.getElementById("btnImport").addEventListener("click", () => {
+      document.getElementById("fileImport").click();
+    });
+    document.getElementById("fileImport").addEventListener("change", async (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      try {
+        state = JSON.parse(await file.text());
+        persist();
+        render();
+      } catch (err) {
+        alert("Couldn’t read that JSON.");
+      }
+      e.target.value = "";
+    });
+    document.getElementById("btnReset").addEventListener("click", async () => {
+      if (!confirm("Wipe local edits and reload the league seed?")) return;
+      localStorage.removeItem(STORAGE_KEY);
+      state = await loadSeed();
+      render();
+      document.getElementById("saveStatus").textContent = "Reset to league seed";
+    });
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const local = localStorage.getItem(STORAGE_KEY);
+        if (local) {
+          state = JSON.parse(local);
+        } else {
+          state = await loadSeed();
+        }
+        render();
+      } catch (e) {
+        console.error(e);
+        document.getElementById("board").innerHTML = `<p class="muted">Couldn’t load TD parlay.</p>`;
+      }
+    });
+  </script>
+</body>
+</html>

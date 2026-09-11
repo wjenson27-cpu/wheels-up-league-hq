@@ -5,6 +5,7 @@
     { href: "rosters.html", label: "Rosters" },
     { href: "trades.html", label: "Trades" },
     { href: "faab.html", label: "FAAB" },
+    { href: "td-parlay.html", label: "TD Parlay" },
     { href: "rankings.html", label: "Rankings" },
     { href: "history.html", label: "History" },
     { href: "podcast.html", label: "Podcast" },
