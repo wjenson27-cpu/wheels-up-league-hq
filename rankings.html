@@ -80,6 +80,10 @@
                 <span class="${edgeCls}">edge <strong>${edgeStr}</strong></span>
                 <span>W2–W5 SOS <strong>${r.sosW2W5 != null ? Number(r.sosW2W5).toFixed(1) : "—"}</strong></span>
               </div>
+              <div class="rank-stats">
+                <span>Last 2 <strong>${WUC.escapeHtml(r.last2 || "—")}</strong> <span class="dim">(${WUC.escapeHtml(r.y2024 || "—")}/${WUC.escapeHtml(r.y2025 || "—")})</span></span>
+                <span>Opp last 2 <strong>${WUC.escapeHtml(r.oppLast2 || "—")}</strong></span>
+              </div>
               ${r.nextOpponents && r.nextOpponents.length ? `<div class="rank-stats"><span>Next: <strong>${WUC.escapeHtml(r.nextOpponents.join(" · "))}</strong></span></div>` : ""}
               <p class="rank-blurb">${WUC.escapeHtml(r.blurb)}</p>
             </div>

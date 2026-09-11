@@ -3,7 +3,7 @@
   "season": 2026,
   "title": "Week 1 Power Rankings",
   "updated": "2026-09-11",
-  "subtitle": "Week 1 vibes check \u2014 HQ custom board with matchup edges, 0\u20130 records, and W2\u2013W5 SOS. Games kick Sun 9/13. Bring snacks and excuses.",
+  "subtitle": "Week 1 vibes \u2014 HQ custom board, matchup edges, and last-two-seasons form vs this week\u2019s opponent (2024\u201325 Fantrax records). Games Sun 9/13.",
   "method": "HQ custom = live Fantrax W1 + injury/trade spice. Ranked on custom, matchup edge, and easier W2\u2013W5 SOS.",
   "rankings": [
     {
@@ -27,7 +27,14 @@
       "schedule": "W2\u2013W5: Towner/Slumlords, Substation, Doubtpfizer, Dongers",
       "composite": 175.89,
       "rank": 1,
-      "blurb": "Fantrax has Pocket projecting like they didn\u2019t just pawn Nix for a ten-spot. Goff-only life, Barton on the clearance rack, and somehow the model\u2019s still thirsty. @ LAB \u2014 if this hits, Kellen owes the algorithm a fruit basket."
+      "blurb": "Fantrax has Pocket projecting like they didn\u2019t just pawn Nix for a ten-spot. Goff-only life, Barton on the clearance rack, and somehow the model\u2019s still thirsty. @ LAB \u2014 if this hits, Kellen owes the algorithm a fruit basket. Form edge: Pocket 5-9/10-4 (15-13) vs LAB 8-6/4-10 (12-16).",
+      "last2": "15-13",
+      "y2024": "5-9",
+      "y2025": "10-4",
+      "oppLast2": "12-16",
+      "oppY2024": "8-6",
+      "oppY2025": "4-10",
+      "formEdge": 3
     },
     {
       "teamId": "doubtpfizer",
@@ -50,7 +57,14 @@
       "schedule": "W2\u2013W5: Newman, Ultron, Pocket, Eddies",
       "composite": 174.91,
       "rank": 2,
-      "blurb": "Kyle vs Tim is the \u2018adults in the room\u2019 game until someone starts an IDP. Doubtpfizer\u2019s the clean favorite \u2014 Lemon on the wire, no drama, just a boring W waiting to be collected. Take it before the schedule gets spicy."
+      "blurb": "Kyle vs Tim is the \u2018adults in the room\u2019 game until someone starts an IDP. Doubtpfizer\u2019s the clean favorite \u2014 Lemon on the wire, no drama, just a boring W waiting to be collected. Take it before the schedule gets spicy. Form edge: Doubtpfizer 6-8/9-5 (15-13) vs Morningside 3-11/6-8 (9-19).",
+      "last2": "15-13",
+      "y2024": "6-8",
+      "y2025": "9-5",
+      "oppLast2": "9-19",
+      "oppY2024": "3-11",
+      "oppY2025": "6-8",
+      "formEdge": 6
     },
     {
       "teamId": "saltese",
@@ -73,7 +87,14 @@
       "schedule": "W2\u2013W5: Hyper, Newman, Morningside, Chase/TTAB",
       "composite": 172.83,
       "rank": 3,
-      "blurb": "Luke paid rent on Elarms-Orr ($20 FAAB) and gets Bill\u2019s TE buffet at home. Slight favorite, which in this league means \u2018please don\u2019t let a backup LB ruin Christmas.\u2019 Win and the room has to admit Saltese is cooking."
+      "blurb": "Luke paid rent on Elarms-Orr ($20 FAAB) and gets Bill\u2019s TE buffet at home. Slight favorite, which in this league means \u2018please don\u2019t let a backup LB ruin Christmas.\u2019 Win and the room has to admit Saltese is cooking. Eddies owns the better recent card (20-8 vs 15-13). Upset szn starts now or never.",
+      "last2": "15-13",
+      "y2024": "8-6",
+      "y2025": "7-7",
+      "oppLast2": "20-8",
+      "oppY2024": "8-6",
+      "oppY2025": "12-2",
+      "formEdge": -5
     },
     {
       "teamId": "dongers",
@@ -96,7 +117,14 @@
       "schedule": "W2\u2013W5: Chase/TTAB, Eddies, Newman, Pocket",
       "composite": 172.09,
       "rank": 4,
-      "blurb": "Gavin + Donald vs Jacob\u2019s Hyper crew \u2014 coin flip with a side of pass rush. If the IDP goes nuclear, Dongers jump the mid-tier queue; if not, we\u2019re all pretending we believed in Hyper all along."
+      "blurb": "Gavin + Donald vs Jacob\u2019s Hyper crew \u2014 coin flip with a side of pass rush. If the IDP goes nuclear, Dongers jump the mid-tier queue; if not, we\u2019re all pretending we believed in Hyper all along. Dongers is 14-14 the last two Fantrax years; Hyper\u2019s still unproven.",
+      "last2": "14-14",
+      "y2024": "7-7",
+      "y2025": "7-7",
+      "oppLast2": "Rookie",
+      "oppY2024": "\u2014",
+      "oppY2025": "\u2014",
+      "formEdge": null
     },
     {
       "teamId": "ttab",
@@ -119,7 +147,14 @@
       "schedule": "W2\u2013W5: Dongers, LAB, Substation, Saltese",
       "composite": 171.31,
       "rank": 5,
-      "blurb": "Chase rolls into Towner\u2019s house (yes, Slumlords \u2014 not Aga, we checked twice) projecting like the road favorite. Trade chaos? $10 FAAB out? Cute. Survive Sunday and the Dongers date in W2 is where the real trauma starts."
+      "blurb": "Chase rolls into Towner\u2019s house (yes, Slumlords \u2014 not Aga, we checked twice) projecting like the road favorite. Trade chaos? $10 FAAB out? Cute. Survive Sunday and the Dongers date in W2 is where the real trauma starts. Form edge: TTAB 7-7/6-8 (13-15) vs Slumlords 4-10/2-12 (6-22).",
+      "last2": "13-15",
+      "y2024": "7-7",
+      "y2025": "6-8",
+      "oppLast2": "6-22",
+      "oppY2024": "4-10",
+      "oppY2025": "2-12",
+      "formEdge": 7
     },
     {
       "teamId": "hyper",
@@ -142,7 +177,14 @@
       "schedule": "W2\u2013W5: Saltese, Towner/Slumlords, LAB, Goats",
       "composite": 164.03,
       "rank": 6,
-      "blurb": "Slight dog at Dongers with extra FAAB jingling from Nate\u2019s R20 handshake. Hang around, don\u2019t gift a dunk-on-able scoreboard, and let the wire do the talking later."
+      "blurb": "Slight dog at Dongers with extra FAAB jingling from Nate\u2019s R20 handshake. Hang around, don\u2019t gift a dunk-on-able scoreboard, and let the wire do the talking later. Jacob\u2019s a blank slate; the Sak chair went 15-13 the last two years then dipped. Dongers is 14-14 over 2024\u201325.",
+      "last2": "Rookie",
+      "y2024": "\u2014",
+      "y2025": "\u2014",
+      "oppLast2": "14-14",
+      "oppY2024": "7-7",
+      "oppY2025": "7-7",
+      "formEdge": null
     },
     {
       "teamId": "lab",
@@ -165,7 +207,14 @@
       "schedule": "W2\u2013W5: Ultron, Chase/TTAB, Hyper, Morningside",
       "composite": 163.8,
       "rank": 7,
-      "blurb": "Jesse hosts Pocket\u2019s QB reboot tour. Yesterday this looked like a smash; today Fantrax has Kellen ahead on paper. Still: home crowd, Goff fog, and a chance to make Pocket\u2019s \u2018model loves us\u2019 narrative look silly."
+      "blurb": "Jesse hosts Pocket\u2019s QB reboot tour. Yesterday this looked like a smash; today Fantrax has Kellen ahead on paper. Still: home crowd, Goff fog, and a chance to make Pocket\u2019s \u2018model loves us\u2019 narrative look silly. Pocket owns the better recent card (15-13 vs 12-16). Upset szn starts now or never.",
+      "last2": "12-16",
+      "y2024": "8-6",
+      "y2025": "4-10",
+      "oppLast2": "15-13",
+      "oppY2024": "5-9",
+      "oppY2025": "10-4",
+      "formEdge": -3
     },
     {
       "teamId": "newman",
@@ -188,7 +237,14 @@
       "schedule": "W2\u2013W5: Doubtpfizer, Saltese, Dongers, Substation",
       "composite": 163.53,
       "rank": 8,
-      "blurb": "Ryan M vs Heff \u2014 used to be a bye-week energy mismatch, now it\u2019s a proper scrap on the new board. Still favored. Cash the W before W3 Saltese shows up with clipboards."
+      "blurb": "Ryan M vs Heff \u2014 used to be a bye-week energy mismatch, now it\u2019s a proper scrap on the new board. Still favored. Cash the W before W3 Saltese shows up with clipboards. Pedigree check: Goats is 20-8 over 2024\u201325 while Newman sits 11-17. History\u2019s loud; Week 1 doesn\u2019t have to listen.",
+      "last2": "11-17",
+      "y2024": "6-8",
+      "y2025": "5-9",
+      "oppLast2": "20-8",
+      "oppY2024": "10-4",
+      "oppY2025": "10-4",
+      "formEdge": -9
     },
     {
       "teamId": "ultron",
@@ -211,7 +267,14 @@
       "schedule": "W2\u2013W5: LAB, Doubtpfizer, Goats, Towner/Slumlords",
       "composite": 161.8,
       "rank": 9,
-      "blurb": "Aga\u2019s cash-rich, projection-thin, and visiting Nate. Sold the IDP stud for FAAB, which is either galaxy-brain or a future podcast apology. Separate slate from the Towner/Chase circus \u2014 prove the build."
+      "blurb": "Aga\u2019s cash-rich, projection-thin, and visiting Nate. Sold the IDP stud for FAAB, which is either galaxy-brain or a future podcast apology. Separate slate from the Towner/Chase circus \u2014 prove the build. Form edge: Ultron 8-6/9-5 (17-11) vs Substation 7-7/7-7 (14-14).",
+      "last2": "17-11",
+      "y2024": "8-6",
+      "y2025": "9-5",
+      "oppLast2": "14-14",
+      "oppY2024": "7-7",
+      "oppY2025": "7-7",
+      "formEdge": 3
     },
     {
       "teamId": "eddies",
@@ -234,7 +297,14 @@
       "schedule": "W2\u2013W5: Goats, Dongers, Towner/Slumlords, Doubtpfizer",
       "composite": 161.5,
       "rank": 10,
-      "blurb": "Bill\u2019s on the road at Saltese with a dinged Warren and a TE room that still looks illegal. $105 FAAB says the wire\u2019s not scared. Get to 1\u20130 and W2 Goats looks like a palate cleanser."
+      "blurb": "Bill\u2019s on the road at Saltese with a dinged Warren and a TE room that still looks illegal. $105 FAAB says the wire\u2019s not scared. Get to 1\u20130 and W2 Goats looks like a palate cleanser. Form edge: Eddies 8-6/12-2 (20-8) vs Saltese 8-6/7-7 (15-13).",
+      "last2": "20-8",
+      "y2024": "8-6",
+      "y2025": "12-2",
+      "oppLast2": "15-13",
+      "oppY2024": "8-6",
+      "oppY2025": "7-7",
+      "formEdge": 5
     },
     {
       "teamId": "slumlords",
@@ -257,7 +327,14 @@
       "schedule": "W2\u2013W5: Pocket, Hyper, Eddies, Ultron",
       "composite": 161.12,
       "rank": 11,
-      "blurb": "Ryan Towner hosts Chase in the Week 1 headliner \u2014 not Ultron, not Aga, just two Towners\u2019 worth of chaos branding. Fresh Fantrax has TTAB ahead; the home crowd disagrees. Statement game or early meme. No in-between."
+      "blurb": "Ryan Towner hosts Chase in the Week 1 headliner \u2014 not Ultron, not Aga, just two Towners\u2019 worth of chaos branding. Fresh Fantrax has TTAB ahead; the home crowd disagrees. Statement game or early meme. No in-between. TTAB owns the better recent card (13-15 vs 6-22). Upset szn starts now or never.",
+      "last2": "6-22",
+      "y2024": "4-10",
+      "y2025": "2-12",
+      "oppLast2": "13-15",
+      "oppY2024": "7-7",
+      "oppY2025": "6-8",
+      "formEdge": -7
     },
     {
       "teamId": "goats",
@@ -280,7 +357,14 @@
       "schedule": "W2\u2013W5: Eddies, Morningside, Ultron, Hyper",
       "composite": 160.59,
       "rank": 12,
-      "blurb": "Heff draws Newman Lake to open. Veterans\u2019 tax is due Sunday \u2014 pay it, survive, then hunt the wire like the old bulls still remember how."
+      "blurb": "Heff draws Newman Lake to open. Veterans\u2019 tax is due Sunday \u2014 pay it, survive, then hunt the wire like the old bulls still remember how. R\u00e9sum\u00e9 flex: Goats went 20-8 the last two years; Newman is 11-17. That\u2019s not a rivalry, that\u2019s a LinkedIn.",
+      "last2": "20-8",
+      "y2024": "10-4",
+      "y2025": "10-4",
+      "oppLast2": "11-17",
+      "oppY2024": "6-8",
+      "oppY2025": "5-9",
+      "formEdge": 9
     },
     {
       "teamId": "substation",
@@ -303,7 +387,14 @@
       "schedule": "W2\u2013W5: Morningside, Pocket, Chase/TTAB, Newman",
       "composite": 149.85,
       "rank": 13,
-      "blurb": "Nate dropped Love, paid Pocket $10 for Nix, and still starts the week looking like the bargain bin. Home vs Ultron is the chance to make \u2018budget QB arc\u2019 sound intentional. Dart/Nix roulette: spin responsibly."
+      "blurb": "Nate dropped Love, paid Pocket $10 for Nix, and still starts the week looking like the bargain bin. Home vs Ultron is the chance to make \u2018budget QB arc\u2019 sound intentional. Dart/Nix roulette: spin responsibly. Ultron owns the better recent card (17-11 vs 14-14). Upset szn starts now or never.",
+      "last2": "14-14",
+      "y2024": "7-7",
+      "y2025": "7-7",
+      "oppLast2": "17-11",
+      "oppY2024": "8-6",
+      "oppY2025": "9-5",
+      "formEdge": -3
     },
     {
       "teamId": "morningside",
@@ -326,7 +417,14 @@
       "schedule": "W2\u2013W5: Substation, Goats, Saltese, LAB",
       "composite": 147.03,
       "rank": 14,
-      "blurb": "Tim\u2019s the biggest dog on the board at Doubtpfizer. Early FAAB window if the offense ghost-jobs \u2014 just don\u2019t dig a 0\u20132 crater before September ends."
+      "blurb": "Tim\u2019s the biggest dog on the board at Doubtpfizer. Early FAAB window if the offense ghost-jobs \u2014 just don\u2019t dig a 0\u20132 crater before September ends. Doubtpfizer owns the better recent card (15-13 vs 9-19). Upset szn starts now or never.",
+      "last2": "9-19",
+      "y2024": "3-11",
+      "y2025": "6-8",
+      "oppLast2": "15-13",
+      "oppY2024": "6-8",
+      "oppY2025": "9-5",
+      "formEdge": -6
     }
   ],
   "week1Matchups": [
