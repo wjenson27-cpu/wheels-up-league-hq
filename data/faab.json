@@ -3,7 +3,7 @@
   "source": "transactions.json claims + trades.json FAAB transfers (partial until Eddie full scrape).",
   "startingBudget": 115,
   "incomplete": true,
-  "note": "Waiver claims $1+ only (no $0 bids). Trade FAAB included. Team remaining known for Eddies ($105); others estimated until Eddie\u2019s 4 PM scrape.",
+  "note": "Waiver claims $1+ only (no $0 bids). Trade FAAB included (TTAB $10\u2192Ultron corrected). Eddies left $105; others estimated until Eddie scrape.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -105,10 +105,10 @@
       "starting": 115,
       "remaining": null,
       "spentClaims": 0,
-      "tradeOut": 0,
-      "tradeIn": 10,
-      "spentKnown": 0,
-      "remainingKnown": 125
+      "tradeOut": 10,
+      "tradeIn": 0,
+      "spentKnown": 10,
+      "remainingKnown": 105
     },
     {
       "id": "hyper",
@@ -144,10 +144,10 @@
       "starting": 115,
       "remaining": null,
       "spentClaims": 0,
-      "tradeOut": 10,
-      "tradeIn": 20,
-      "spentKnown": 10,
-      "remainingKnown": 125
+      "tradeOut": 0,
+      "tradeIn": 30,
+      "spentKnown": 0,
+      "remainingKnown": 145
     },
     {
       "id": "goats",
@@ -311,15 +311,15 @@
     {
       "date": "2026-09-03",
       "amount": 10,
-      "fromTeam": "Ultron",
-      "fromTeamId": "ultron",
-      "toTeam": "Towner Top Aga Bottom",
-      "toTeamId": "ttab",
+      "fromTeam": "Towner Top Aga Bottom",
+      "fromTeamId": "ttab",
+      "toTeam": "Ultron",
+      "toTeamId": "ultron",
       "for": [
-        "Michael Wilson (WR)",
-        "Robert Spillane (LB)"
+        "Cameron Skattebo (RB)",
+        "Caleb Downs (DB)"
       ],
-      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
+      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
       "official": true,
       "kind": "trade"
     },
