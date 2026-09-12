@@ -1,130 +1,100 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
+  "asOf": "2026-09-12",
   "week": 1,
-  "source": "Fantrax live scoring ad-hoc scrape (Chief ask)",
-  "note": "Week 1 through Thursday + early live scores. Several matchups still pending Sunday.",
+  "source": "Fantrax Live Scoring ad-hoc scrape (Chief/Bill PR redo)",
+  "note": "Players left/played from Fantrax visible counts. homeRemainingProj/awayRemainingProj are Fantrax stock totals \u2014 DO NOT use for HQ power rankings (Bill: Fantrax IDP projs bad). Chief applies HQ/custom proj logic.",
   "matchups": [
     {
       "home": "Eagle Ridge Eddies",
       "away": "Saltese Slamm",
       "homeScore": 83,
       "awayScore": 72,
-      "status": "live",
-      "topScorers": [
-        {
-          "team": "Eagle Ridge Eddies",
-          "player": "Quentin Lake",
-          "pts": 38
-        },
-        {
-          "team": "Saltese Slamm",
-          "player": "Jaxon Smith-Njigba",
-          "pts": 32
-        }
-      ]
+      "homePlayersLeft": 11,
+      "awayPlayersLeft": 10,
+      "homePlayersPlayed": 3,
+      "awayPlayersPlayed": 4,
+      "homeRemainingProj": 177.38,
+      "awayRemainingProj": 177.33,
+      "status": "live"
     },
     {
       "home": "Morningside Muff Divers",
       "away": "Mrs. Doubtpfizer",
       "homeScore": 33,
       "awayScore": 14,
-      "status": "live",
-      "topScorers": [
-        {
-          "team": "Morningside Muff Divers",
-          "player": "Deebo Samuel",
-          "pts": 24
-        },
-        {
-          "team": "Mrs. Doubtpfizer",
-          "player": "Christian McCaffrey",
-          "pts": 14
-        }
-      ]
+      "homePlayersLeft": 11,
+      "awayPlayersLeft": 13,
+      "homePlayersPlayed": 3,
+      "awayPlayersPlayed": 1,
+      "homeRemainingProj": 168.23,
+      "awayRemainingProj": 192.41,
+      "status": "live"
     },
     {
       "home": "Newman Lake Sleep Paralysis Demons",
       "away": "Valley Old Goats",
       "homeScore": 17,
       "awayScore": 11,
-      "status": "live",
-      "topScorers": [
-        {
-          "team": "Newman Lake Sleep Paralysis Demons",
-          "player": "Marcus Jones",
-          "pts": 7
-        },
-        {
-          "team": "Valley Old Goats",
-          "player": "Hunter Henry",
-          "pts": 7
-        }
-      ]
+      "homePlayersLeft": 11,
+      "awayPlayersLeft": 12,
+      "homePlayersPlayed": 3,
+      "awayPlayersPlayed": 2,
+      "homeRemainingProj": 195.35,
+      "awayRemainingProj": 184.74,
+      "status": "live"
     },
     {
       "home": "Pocket Agents",
       "away": "Little Ass Boys",
       "homeScore": 37,
       "awayScore": 57,
-      "status": "live",
-      "topScorers": [
-        {
-          "team": "Pocket Agents",
-          "player": "Ernest Jones",
-          "pts": 28
-        },
-        {
-          "team": "Little Ass Boys",
-          "player": "Kyren Williams",
-          "pts": 16
-        },
-        {
-          "team": "Little Ass Boys",
-          "player": "Mike Evans",
-          "pts": 16
-        }
-      ]
+      "homePlayersLeft": 12,
+      "awayPlayersLeft": 10,
+      "homePlayersPlayed": 2,
+      "awayPlayersPlayed": 4,
+      "homeRemainingProj": 191.4,
+      "awayRemainingProj": 194.12,
+      "status": "live"
     },
     {
       "home": "The Hypersecretors",
       "away": "Drummond Dongers",
       "homeScore": 0,
       "awayScore": 0,
-      "status": "scheduled",
-      "topScorers": []
+      "homePlayersLeft": 14,
+      "awayPlayersLeft": 14,
+      "homePlayersPlayed": 0,
+      "awayPlayersPlayed": 0,
+      "homeRemainingProj": 189.62,
+      "awayRemainingProj": 196.36,
+      "status": "scheduled"
     },
     {
       "home": "Towner Top Aga Bottom",
       "away": "Indian Trail Slumlords",
       "homeScore": 0,
       "awayScore": 18,
-      "status": "live",
-      "topScorers": [
-        {
-          "team": "Indian Trail Slumlords",
-          "player": "Drake Maye",
-          "pts": 9
-        }
-      ]
+      "homePlayersLeft": 14,
+      "awayPlayersLeft": 12,
+      "homePlayersPlayed": 0,
+      "awayPlayersPlayed": 2,
+      "homeRemainingProj": 195.22,
+      "awayRemainingProj": 194.69,
+      "status": "live"
     },
     {
       "home": "Ultron",
       "away": "Substation",
       "homeScore": 18,
       "awayScore": 10,
-      "status": "live",
-      "topScorers": [
-        {
-          "team": "Ultron",
-          "player": "Robert Spillane",
-          "pts": 18
-        },
-        {
-          "team": "Substation",
-          "player": "Dre Greenlaw",
-          "pts": 10
-        }
-      ]
+      "homePlayersLeft": 12,
+      "awayPlayersLeft": 13,
+      "homePlayersPlayed": 2,
+      "awayPlayersPlayed": 1,
+      "homeRemainingProj": 176.65,
+      "awayRemainingProj": 166.32,
+      "status": "live"
     }
   ]
 }

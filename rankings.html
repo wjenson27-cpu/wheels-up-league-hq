@@ -46,9 +46,11 @@
           const opp = r.opponent || "—";
           const hasLive = r.liveScore != null && r.oppLiveScore != null
             && (Number(r.liveScore) > 0 || Number(r.oppLiveScore) > 0);
-          const line = hasLive
-            ? `${opp} · live ${Number(r.liveScore).toFixed(0)}–${Number(r.oppLiveScore).toFixed(0)}`
-            : opp;
+          const bits = [opp];
+          if (hasLive) bits.push(`live ${Number(r.liveScore).toFixed(0)}–${Number(r.oppLiveScore).toFixed(0)}`);
+          if (r.playersLeft != null) bits.push(`${r.playersLeft} left`);
+          if (r.customW1 != null) bits.push(`HQ ${Number(r.customW1).toFixed(0)}`);
+          const line = bits.join(" · ");
           return `
           <li class="rank-row${r.rank <= 3 ? " top3" : ""}" style="--team-color:${(WUC.teamColors && WUC.teamColors[r.teamId] && WUC.teamColors[r.teamId].color) || '#69BE28'}">
             <div class="rank-num">${r.rank}</div>
