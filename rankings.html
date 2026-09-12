@@ -9,29 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
-    .rank-stats {
-      display: flex; flex-wrap: wrap; gap: 0.45rem 0.75rem;
-      margin: 0.25rem 0 0.45rem;
-      font-size: 0.78rem;
+    .rank-line {
+      margin: 0.15rem 0 0.4rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
       font-variant-numeric: tabular-nums;
     }
-    .rank-stats span strong { color: var(--sea-green-hot); font-weight: 700; }
-    .rank-stats .edge-pos strong { color: var(--sea-green-hot); }
-    .rank-stats .edge-neg strong { color: var(--red); }
-    .matchup-list { list-style: none; padding: 0; margin: 0; }
-    .matchup-list li {
-      padding: 0.45rem 0; border-bottom: 1px solid var(--border);
-      color: var(--text-muted); font-size: 0.92rem;
-    }
-    .matchup-list li:last-child { border-bottom: none; }
-    .corrections {
-      margin-top: 1rem; padding: 0.75rem 1rem;
-      border: 1px solid var(--border); border-radius: 10px;
-      background: rgba(105, 190, 40, 0.06);
-      font-size: 0.88rem; color: var(--text-muted);
-    }
-    .corrections strong { color: var(--text); }
   </style>
 </head>
 <body>
@@ -44,11 +27,6 @@
     </header>
 
     <ol class="rank-list" id="rankList"><li class="muted">Loading…</li></ol>
-
-    <section class="card" style="margin-top:1.5rem">
-      <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Week 1 matchups</h2>
-      <ul class="matchup-list" id="matchupList"><li class="muted">Loading…</li></ul>
-    </section>
   </main>
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
@@ -65,11 +43,12 @@
           `${WUC.escapeHtml(lede)} <span class="dim">Updated ${WUC.formatDate(data.updated)}.</span>`;
 
         document.getElementById("rankList").innerHTML = (data.rankings || []).map((r) => {
-          const edge = r.matchupEdge;
-          const edgeCls = edge > 0 ? "edge-pos" : edge < 0 ? "edge-neg" : "";
-          const edgeStr = edge == null ? "—" : (edge > 0 ? `+${edge}` : `${edge}`);
-          const custom = r.customW1 != null ? Number(r.customW1).toFixed(1) : "—";
-          const fx = r.fantraxW1 != null ? Number(r.fantraxW1).toFixed(1) : (r.projW1 != null ? Number(r.projW1).toFixed(1) : "—");
+          const opp = r.opponent || "—";
+          const hasLive = r.liveScore != null && r.oppLiveScore != null
+            && (Number(r.liveScore) > 0 || Number(r.oppLiveScore) > 0);
+          const line = hasLive
+            ? `${opp} · live ${Number(r.liveScore).toFixed(0)}–${Number(r.oppLiveScore).toFixed(0)}`
+            : opp;
           return `
           <li class="rank-row${r.rank <= 3 ? " top3" : ""}" style="--team-color:${(WUC.teamColors && WUC.teamColors[r.teamId] && WUC.teamColors[r.teamId].color) || '#69BE28'}">
             <div class="rank-num">${r.rank}</div>
@@ -77,30 +56,11 @@
             <div>
               <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
               <h2 class="rank-team">${WUC.escapeHtml(r.team)}</h2>
-              <div class="rank-stats">
-                <span><strong>${WUC.escapeHtml(r.record || "0-0")}</strong> record</span>
-                <span>vs <strong>${WUC.escapeHtml(r.opponent || "—")}</strong></span>
-                <span>Live <strong>${r.liveScore != null ? Number(r.liveScore).toFixed(0) : "—"}–${r.oppLiveScore != null ? Number(r.oppLiveScore).toFixed(0) : "—"}</strong></span>
-                <span>FAAB <strong>${r.faabLeft != null ? "$"+r.faabLeft : "—"}</strong></span>
-                <span>HQ <strong>${custom}</strong></span>
-                <span>Fantrax <strong>${fx}</strong></span>
-                <span class="${edgeCls}">edge <strong>${edgeStr}</strong></span>
-                <span>W2–W5 SOS <strong>${r.sosW2W5 != null ? Number(r.sosW2W5).toFixed(1) : "—"}</strong></span>
-              </div>
-              <div class="rank-stats">
-                <span>Last 2 <strong>${WUC.escapeHtml(r.last2 || "—")}</strong> <span class="dim">(${WUC.escapeHtml(r.y2024 || "—")}/${WUC.escapeHtml(r.y2025 || "—")})</span></span>
-                <span>Opp last 2 <strong>${WUC.escapeHtml(r.oppLast2 || "—")}</strong></span>
-              </div>
-              ${r.nextOpponents && r.nextOpponents.length ? `<div class="rank-stats"><span>Next: <strong>${WUC.escapeHtml(r.nextOpponents.join(" · "))}</strong></span></div>` : ""}
+              <div class="rank-line">${WUC.escapeHtml(line)}</div>
               <p class="rank-blurb">${WUC.escapeHtml(r.blurb)}</p>
             </div>
           </li>`;
         }).join("");
-
-        const mus = data.week1Matchups || [];
-        document.getElementById("matchupList").innerHTML = mus.length
-          ? mus.map((m) => `<li>${WUC.escapeHtml(m)}</li>`).join("")
-          : `<li class="muted">Matchups drop with the weekly board.</li>`;
       } catch (e) {
         console.error(e);
         document.getElementById("rankList").innerHTML = `<li class="muted">Couldn’t load rankings.</li>`;
