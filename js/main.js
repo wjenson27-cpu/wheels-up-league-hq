@@ -143,6 +143,7 @@
     loadJSON,
     loadTeamColors,
     teamChip,
+    getTeam: (id) => (teamColors || {})[id] || {},
     get teamColors() { return teamColors || {}; },
     escapeHtml,
     formatDate,

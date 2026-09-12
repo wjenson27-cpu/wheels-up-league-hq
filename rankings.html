@@ -40,7 +40,7 @@
     <header class="page-hero">
       <span class="eyebrow" id="rankEyebrow">Week 1</span>
       <h1>Power rankings</h1>
-      <p class="lede" id="rankLede">Live Week 1 board — Thursday scores in, Sunday still loading.</p>
+      <p class="lede" id="rankLede">Live Week 1 board — Thursday scores in, Sunday slate ahead.</p>
     </header>
 
     <ol class="rank-list" id="rankList"><li class="muted">Loading…</li></ol>
@@ -71,7 +71,7 @@
           const custom = r.customW1 != null ? Number(r.customW1).toFixed(1) : "—";
           const fx = r.fantraxW1 != null ? Number(r.fantraxW1).toFixed(1) : (r.projW1 != null ? Number(r.projW1).toFixed(1) : "—");
           return `
-          <li class="rank-row${r.rank <= 3 ? " top3" : ""}" style="--team-color:${(WUC.teamColors[r.teamId]||{}).color||'#69BE28'}">
+          <li class="rank-row${r.rank <= 3 ? " top3" : ""}" style="--team-color:${(WUC.teamColors && WUC.teamColors[r.teamId] && WUC.teamColors[r.teamId].color) || '#69BE28'}">
             <div class="rank-num">${r.rank}</div>
             ${WUC.teamChip(r.teamId, { size: "md" })}
             <div>
@@ -100,9 +100,9 @@
         const mus = data.week1Matchups || [];
         document.getElementById("matchupList").innerHTML = mus.length
           ? mus.map((m) => `<li>${WUC.escapeHtml(m)}</li>`).join("")
-          : `<li class="muted">Matchups drop with the weekly board.</li>`;`).join("<br>");
-        }
+          : `<li class="muted">Matchups drop with the weekly board.</li>`;
       } catch (e) {
+        console.error(e);
         document.getElementById("rankList").innerHTML = `<li class="muted">Couldn’t load rankings.</li>`;
       }
     });
