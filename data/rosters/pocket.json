@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-09-11",
+  "asOf": "2026-09-12",
   "faabLeft": 120,
   "startingQB": "Jared Goff",
   "roster": {
@@ -44,7 +44,7 @@
       "Zachariah Branch"
     ]
   },
-  "notes": "Goff at QB; Barton still rostered.",
-  "source": "Fantrax",
+  "notes": "Sep 11 ad-hoc. Goff only at QB (Nix sold for $10 FAAB). FAAB $120. Barton still rostered.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "20zozmjgmsb3ulv4"
 }

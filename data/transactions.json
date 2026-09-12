@@ -1,7 +1,55 @@
 {
-  "updated": "2026-09-11",
-  "source": "Fantrax",
+  "updated": "2026-09-12",
+  "source": "Fantrax 6am scrape Sep 12 2026 PT",
   "items": [
+    {
+      "date": "2026-09-11",
+      "type": "ADD/DROP",
+      "team": "Morningside Muff Divers",
+      "summary": "Added Malachi Fields (3:57 PM PDT)"
+    },
+    {
+      "date": "2026-09-11",
+      "type": "ADD/DROP",
+      "team": "Morningside Muff Divers",
+      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) \u2014 Harris briefly added then dropped"
+    },
+    {
+      "date": "2026-09-11",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Trenton Simpson; dropped Jaylon Carlies (1:25 PM PDT)"
+    },
+    {
+      "date": "2026-09-11",
+      "type": "DROP",
+      "team": "Saltese Slamm",
+      "summary": "Dropped Terrance Ferguson (12:57 PM PDT)"
+    },
+    {
+      "date": "2026-09-11",
+      "type": "ADD/DROP",
+      "team": "Eagle Ridge Eddies",
+      "summary": "Added James Williams; dropped Troy Dye (10:32 AM PDT)"
+    },
+    {
+      "date": "2026-09-10",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Jaylon Carlies; dropped Branson Combs (7:59 AM PDT)"
+    },
+    {
+      "date": "2026-09-10",
+      "type": "ADD/DROP",
+      "team": "The Hypersecretors",
+      "summary": "Added Michael Mayer; dropped Chigoziem Okonkwo (7:54 AM PDT)"
+    },
+    {
+      "date": "2026-09-10",
+      "type": "ADD/DROP",
+      "team": "Pocket Agents",
+      "summary": "Added Barion Brown; dropped Michael Mayer (7:27 AM PDT)"
+    },
     {
       "date": "2026-09-10",
       "type": "ADD/DROP",
@@ -279,5 +327,5 @@
       "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
     }
   ],
-  "note": "Recent wire: Ultron Carlies, Hyper Mayer, Pocket Barion Brown $3."
+  "note": "Sep 10 AM claims added (Ultron Carlies, Hyper Mayer, Pocket Barion Brown $3)."
 }

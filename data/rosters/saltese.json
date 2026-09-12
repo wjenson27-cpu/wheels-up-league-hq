@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-11",
+  "asOf": "2026-09-12",
   "faabLeft": 95,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -41,12 +41,11 @@
       "Grant Delpit"
     ],
     "IR": [
-      "Terrance Ferguson",
       "Jonathon Brooks",
       "Micah Parsons"
     ]
   },
-  "notes": "Micah Parsons on IL.",
-  "source": "Fantrax",
+  "notes": "Sep 11 ad-hoc. FAAB $95. Micah Parsons on IL.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5"
 }

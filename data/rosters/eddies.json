@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-11",
+  "asOf": "2026-09-12",
   "faabLeft": 105,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -49,11 +49,13 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "Bowers injured (reserve). Warren active.",
+  "notes": "Sep 11: +James Williams \u2212Troy Dye. Warren cleared. Bowers OUT; Charbonnet/Tyson/Perryman on IL. W1 live 83\u201372 vs Saltese. FAAB $105.",
   "injuryFlags": [
     "Brock Bowers OUT"
   ],
-  "source": "Fantrax",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
-  "lineupFlags": []
+  "lineupFlags": [
+    "Brock Bowers OUT"
+  ]
 }

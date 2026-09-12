@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-09-11",
+  "asOf": "2026-09-12",
   "faabLeft": 108,
   "startingQB": "Justin Herbert",
   "roster": {
@@ -50,8 +50,8 @@
       "Nick Bosa"
     ]
   },
-  "notes": "Michael Mayer on Hyper.",
+  "notes": "Sep 11 ad-hoc. FAAB $108. Mayer on Hyper (not Pocket).",
   "injuryFlags": [],
-  "source": "Fantrax",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4"
 }

@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-11",
-  "source": "Fantrax",
+  "updated": "2026-09-12",
+  "source": "Fantrax 6am scrape Sep 12 2026 PT",
   "season": 2026,
   "trades": [
     {
@@ -15,8 +15,9 @@
       "givesB": [
         "$10 FAAB"
       ],
-      "summary": "Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Substation dropped Jordan Love — Love was not traded to Pocket.",
-      "official": true
+      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8 6:04 PM PDT). Jordan Love was dropped by Substation in the same transaction (not sent to Pocket). Corrected Sep 11 per Bill + Fantrax re-verify.",
+      "official": true,
+      "corrected": true
     },
     {
       "date": "2026-08-28",
@@ -29,7 +30,7 @@
       "givesB": [
         "5 draft picks (swap package)"
       ],
-      "summary": "Fantrax official #1 — draft 5-for-5 pick swap (Aug 28).",
+      "summary": "Fantrax official #1 \u2014 draft 5-for-5 pick swap (Aug 28).",
       "official": true
     },
     {
@@ -43,7 +44,7 @@
       "givesB": [
         "Kaleb Elarms-Orr (LB)"
       ],
-      "summary": "Fantrax official #2 — Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
       "official": true
     },
     {
@@ -60,7 +61,7 @@
         "Cameron Skattebo (RB)",
         "Caleb Downs (DB)"
       ],
-      "summary": "Fantrax official #3 — live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas −Evan Williams; Aga +Bryce Boettcher −Najee.",
+      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
       "official": true
     },
     {
@@ -69,12 +70,12 @@
       "teamA": "Saltese Slamm (Larry)",
       "teamB": "Substation (Nate)",
       "givesA": [
-        "draft pick(s) — handshake"
+        "draft pick(s) \u2014 handshake"
       ],
       "givesB": [
-        "draft pick(s) — handshake"
+        "draft pick(s) \u2014 handshake"
       ],
-      "summary": "Handshake only — Fantrax chairs unchanged (Larry↔Nate pick swap).",
+      "summary": "Handshake only \u2014 Fantrax chairs unchanged (Larry\u2194Nate pick swap).",
       "official": false
     },
     {
@@ -88,7 +89,7 @@
       "givesB": [
         "R2 / R3 / R8 chairs (handshake)"
       ],
-      "summary": "Handshake only — Bill↔Nate R2/R3/R8; Eddies still sat 10/19/38/103 on Fantrax.",
+      "summary": "Handshake only \u2014 Bill\u2194Nate R2/R3/R8; Eddies still sat 10/19/38/103 on Fantrax.",
       "official": false
     },
     {
@@ -103,7 +104,7 @@
         "4.08",
         "4.12"
       ],
-      "summary": "Handshake — Nate 3.04 for Chase 4.08+4.12; Schwesinger still Nate on Fantrax.",
+      "summary": "Handshake \u2014 Nate 3.04 for Chase 4.08+4.12; Schwesinger still Nate on Fantrax.",
       "official": false
     },
     {
@@ -118,7 +119,7 @@
       "givesB": [
         "R20 chair (Sadiq stays Jacob)"
       ],
-      "summary": "Handshake — Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
       "official": false
     }
   ],
@@ -128,33 +129,33 @@
       "team": "Pocket Agents",
       "player": "Cody Barton",
       "pos": "LB/TEN",
-      "lastUpdated": "2026-09-11",
-      "note": ""
+      "lastUpdated": "2026-09-12",
+      "note": "Still on block"
     },
     {
       "team": "Substation",
       "player": "Brock Purdy",
       "pos": "QB/SF",
-      "lastUpdated": "2026-09-11",
-      "note": ""
+      "lastUpdated": "2026-09-12",
+      "note": "Still on block"
     },
     {
       "team": "Substation",
       "player": "Terry McLaurin",
       "pos": "WR/WAS",
-      "lastUpdated": "2026-09-11",
-      "note": ""
+      "lastUpdated": "2026-09-12",
+      "note": "Still on block"
     },
     {
       "team": "Substation",
       "player": "Bhayshul Tuten",
       "pos": "RB/JAX",
-      "lastUpdated": "2026-09-11",
-      "note": ""
+      "lastUpdated": "2026-09-12",
+      "note": "Still on block"
     }
   ],
-  "leaderboard_note": "2026 deal count — official Fantrax + handshake.",
-  "pending_note": "No pending offers right now.",
-  "fantrax_completed_view": "",
+  "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
+  "pending_note": "Fantrax Pending Trades view empty as of Sep 11 2026 ~6:50 AM PT.",
+  "fantrax_completed_view": "Official completed since Aug 28 include Nix\u2194Love Sep 8; earlier Aga/Chase/Larry deals retained.",
   "hqComplete": true
 }
