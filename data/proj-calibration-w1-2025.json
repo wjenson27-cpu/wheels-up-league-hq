@@ -1,0 +1,45 @@
+{
+  "season": 2025,
+  "week": 1,
+  "note": "Bill-provided sample finals \u2014 IDP-heavy; typical 220\u2013255.",
+  "matchups": [
+    {
+      "a": "Towner Top Aga Bottom",
+      "aScore": 254.5,
+      "b": "Indian Trail Slumlords",
+      "bScore": 251.5
+    },
+    {
+      "a": "Morningside Muff Divers",
+      "aScore": 220.5,
+      "b": "Mrs. Doubtpfizer",
+      "bScore": 223.0
+    },
+    {
+      "a": "The Longest Yard",
+      "aScore": 218.5,
+      "b": "The Big Unit",
+      "bScore": 173.0
+    },
+    {
+      "a": "Hot Coffee",
+      "aScore": 255.5,
+      "b": "Puka Shells",
+      "bScore": 219.5
+    },
+    {
+      "a": "Eagle Ridge Eddies",
+      "aScore": 244.0,
+      "b": "Saltese Slamm",
+      "bScore": 184.5
+    }
+  ],
+  "stats": {
+    "medianApprox": 223,
+    "typicalBand": [
+      210,
+      255
+    ],
+    "idpShareNote": "IDP often half or more of team total (7 IDP starters)"
+  }
+}
