@@ -42,6 +42,7 @@
 
     document.addEventListener("DOMContentLoaded", async () => {
       try {
+        await WUC.loadTeamColors();
         const [teams, tx] = await Promise.all([
           WUC.loadJSON("data/teams.json"),
           WUC.loadJSON("data/transactions.json")
