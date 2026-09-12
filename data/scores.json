@@ -1,7 +1,64 @@
 {
-  "updated": null,
-  "week": null,
-  "source": "Fantrax",
-  "note": "Filled on Tuesday 6 AM PT scrapes for Chief\u2019s 9 AM PT league recap. Final scores for every matchup + top scorers when available.",
-  "matchups": []
+  "updated": "2026-09-12",
+  "week": 1,
+  "asOf": "2026-09-12T01:02:00Z",
+  "note": "Through Thursday Night (NE@SEA, SF@LAR). Sunday slate still ahead.",
+  "matchups": [
+    {
+      "away": "Eagle Ridge Eddies",
+      "home": "Saltese Slamm",
+      "awayScore": 83,
+      "homeScore": 72,
+      "awayProj": 177.36,
+      "homeProj": 177.42
+    },
+    {
+      "away": "Morningside Muff Divers",
+      "home": "Mrs. Doubtpfizer",
+      "awayScore": 33,
+      "homeScore": 14,
+      "awayProj": 167.33,
+      "homeProj": 192.28
+    },
+    {
+      "away": "Newman Lake Sleep Paralysis Demons",
+      "home": "Valley Old Goats",
+      "awayScore": 17,
+      "homeScore": 11,
+      "awayProj": 195.4,
+      "homeProj": 184.73
+    },
+    {
+      "away": "Pocket Agents",
+      "home": "Little Ass Boys",
+      "awayScore": 37,
+      "homeScore": 57,
+      "awayProj": 191.16,
+      "homeProj": 194.05
+    },
+    {
+      "away": "The Hypersecretors",
+      "home": "Drummond Dongers",
+      "awayScore": 0,
+      "homeScore": 0,
+      "awayProj": 189.68,
+      "homeProj": 196.48
+    },
+    {
+      "away": "Towner Top Aga Bottom",
+      "home": "Indian Trail Slumlords",
+      "awayScore": 0,
+      "homeScore": 18,
+      "awayProj": 194.93,
+      "homeProj": 194.59
+    },
+    {
+      "away": "Ultron",
+      "home": "Substation",
+      "awayScore": 18,
+      "homeScore": 10,
+      "awayProj": 176.65,
+      "homeProj": 166.21
+    }
+  ]
 }

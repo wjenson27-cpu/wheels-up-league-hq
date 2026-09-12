@@ -37,7 +37,7 @@
     <header class="page-hero">
       <span class="eyebrow" id="rankEyebrow">Week 1</span>
       <h1>Power rankings</h1>
-      <p class="lede" id="rankLede">HQ custom board — matchups, adjusts, records.</p>
+      <p class="lede" id="rankLede">Live Week 1 board — Thursday scores in, Sunday still loading.</p>
     </header>
 
     <ol class="rank-list" id="rankList"><li class="muted">Loading…</li></ol>
@@ -75,6 +75,7 @@
               <div class="rank-stats">
                 <span><strong>${WUC.escapeHtml(r.record || "0-0")}</strong> record</span>
                 <span>vs <strong>${WUC.escapeHtml(r.opponent || "—")}</strong></span>
+                <span>Live <strong>${r.liveScore != null ? Number(r.liveScore).toFixed(0) : "—"}–${r.oppLiveScore != null ? Number(r.oppLiveScore).toFixed(0) : "—"}</strong></span>
                 <span>HQ <strong>${custom}</strong></span>
                 <span>Fantrax <strong>${fx}</strong></span>
                 <span class="${edgeCls}">edge <strong>${edgeStr}</strong></span>

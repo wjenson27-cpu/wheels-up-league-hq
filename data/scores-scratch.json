@@ -1,0 +1,102 @@
+{
+  "asOf": "2026-09-12T01:02:00Z",
+  "week": 1,
+  "matchups": [
+    {
+      "away": "Eagle Ridge Eddies",
+      "home": "Saltese Slamm",
+      "awayScore": 83,
+      "homeScore": 72,
+      "awayProj": 177.36,
+      "homeProj": 177.42,
+      "leaders": [
+        {"player": "Quentin Lake", "team": "Eagle Ridge Eddies", "fpts": 38, "status": "completed"},
+        {"player": "Fred Warner", "team": "Eagle Ridge Eddies", "fpts": 28, "status": "completed"},
+        {"player": "Leonard Williams", "team": "Eagle Ridge Eddies", "fpts": 17, "status": "completed"},
+        {"player": "Jaxon Smith-Njigba", "team": "Saltese Slamm", "fpts": 32, "status": "completed"},
+        {"player": "Rhamondre Stevenson", "team": "Saltese Slamm", "fpts": 16, "status": "completed"},
+        {"player": "Tyler Warren", "team": "Eagle Ridge Eddies", "fpts": 13.45, "status": "projected", "note": "Active; BAL Sun 10:00 AM; Fantrax showed recent-news icon, no injury flag"},
+        {"player": "Jacory Croskey-Merritt", "team": "Eagle Ridge Eddies", "fpts": 7.08, "status": "projected", "note": "Active; @PHI Sun 1:25 PM; Fantrax showed hot-news icon, no injury flag"}
+      ]
+    },
+    {
+      "away": "Morningside Muff Divers",
+      "home": "Mrs. Doubtpfizer",
+      "awayScore": 33,
+      "homeScore": 14,
+      "awayProj": 167.33,
+      "homeProj": 192.28,
+      "leaders": [
+        {"player": "Deebo Samuel", "team": "Morningside Muff Divers", "fpts": 24, "status": "completed"},
+        {"player": "Jadarian Price", "team": "Morningside Muff Divers", "fpts": 8, "status": "completed"},
+        {"player": "Christian McCaffrey", "team": "Mrs. Doubtpfizer", "fpts": 14, "status": "completed"}
+      ]
+    },
+    {
+      "away": "Newman Lake Sleep Paralysis Demons",
+      "home": "Valley Old Goats",
+      "awayScore": 17,
+      "homeScore": 11,
+      "awayProj": 195.4,
+      "homeProj": 184.73,
+      "leaders": [
+        {"player": "A.J. Brown", "team": "Newman Lake Sleep Paralysis Demons", "fpts": 5, "status": "completed"},
+        {"player": "Hunter Henry", "team": "Newman Lake Sleep Paralysis Demons", "fpts": 7, "status": "completed"},
+        {"player": "Marcus Jones", "team": "Newman Lake Sleep Paralysis Demons", "fpts": 7, "status": "completed"}
+      ]
+    },
+    {
+      "away": "Pocket Agents",
+      "home": "Little Ass Boys",
+      "awayScore": 37,
+      "homeScore": 57,
+      "awayProj": 191.16,
+      "homeProj": 194.05,
+      "leaders": [
+        {"player": "Ernest Jones", "team": "Pocket Agents", "fpts": 28, "status": "completed"},
+        {"player": "Rashid Shaheed", "team": "Pocket Agents", "fpts": 9, "status": "completed"},
+        {"player": "Kyren Williams", "team": "Little Ass Boys", "fpts": 16, "status": "completed"},
+        {"player": "Puka Nacua", "team": "Little Ass Boys", "fpts": 14, "status": "completed"},
+        {"player": "Mike Evans", "team": "Little Ass Boys", "fpts": 16, "status": "completed"}
+      ]
+    },
+    {
+      "away": "The Hypersecretors",
+      "home": "Drummond Dongers",
+      "awayScore": 0,
+      "homeScore": 0,
+      "awayProj": 189.68,
+      "homeProj": 196.48,
+      "leaders": []
+    },
+    {
+      "away": "Towner Top Aga Bottom",
+      "home": "Indian Trail Slumlords",
+      "awayScore": 0,
+      "homeScore": 18,
+      "awayProj": 194.93,
+      "homeProj": 194.59,
+      "leaders": [
+        {"player": "Drake Maye", "team": "Indian Trail Slumlords", "fpts": 9, "status": "completed"},
+        {"player": "Devon Witherspoon", "team": "Indian Trail Slumlords", "fpts": 9, "status": "completed"}
+      ]
+    },
+    {
+      "away": "Ultron",
+      "home": "Substation",
+      "awayScore": 18,
+      "homeScore": 10,
+      "awayProj": 176.65,
+      "homeProj": 166.21,
+      "leaders": [
+        {"player": "Robert Spillane", "team": "Ultron", "fpts": 18, "status": "completed"},
+        {"player": "Dre Greenlaw", "team": "Substation", "fpts": 10, "status": "completed"}
+      ]
+    }
+  ],
+  "notes": [
+    "Fantrax Week 1 live scoring displayed completed Thursday games NE 10 @ SEA 13 and SF 27 @ LAR 7; all listed scores/projections were read from the league livescoring page.",
+    "awayProj/homeProj are Fantrax projected full-matchup totals shown beside the current scores.",
+    "Tyler Warren and Jacory Croskey-Merritt are both on Eagle Ridge Eddies' active offense. Warren projected 13.45 for BAL Sun 10:00 AM; JCM projected 7.08 for @PHI Sun 1:25 PM. Neither was flagged as injured; their visible Fantrax icons were recent-news and hot-news indicators respectively."
+  ]
+}
