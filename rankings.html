@@ -73,7 +73,7 @@
           return `
           <li class="rank-row${r.rank <= 3 ? " top3" : ""}" style="--team-color:${(WUC.teamColors && WUC.teamColors[r.teamId] && WUC.teamColors[r.teamId].color) || '#69BE28'}">
             <div class="rank-num">${r.rank}</div>
-            ${WUC.teamChip(r.teamId, { size: "md" })}
+            ${WUC.teamMark(r.teamId, { size: "md" })}
             <div>
               <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
               <h2 class="rank-team">${WUC.escapeHtml(r.team)}</h2>

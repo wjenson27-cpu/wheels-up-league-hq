@@ -89,6 +89,22 @@
     return `<span class="team-chip team-chip-${size}" style="--team-color:${color}" title="${title}"><span class="team-chip-mark">${abbrev}</span></span>`;
   }
 
+  /** Logo img when team.logo exists, else color chip. Accepts team object or teamId. */
+  function teamMark(teamOrId, opts = {}) {
+    const t = typeof teamOrId === "string"
+      ? ((teamColors || {})[teamOrId] || { id: teamOrId })
+      : (teamOrId || {});
+    const id = t.id || (typeof teamOrId === "string" ? teamOrId : "");
+    const size = opts.size || "md";
+    const color = t.color || "#69BE28";
+    const title = escapeHtml(t.name || id || "");
+    const alt = escapeHtml(t.name || t.abbrev || id || "team");
+    if (t.logo) {
+      return `<span class="team-mark team-mark-${size}" style="--team-color:${color}" title="${title}"><img class="team-logo" src="${escapeHtml(t.logo)}" alt="${alt}" loading="lazy" width="44" height="44" /></span>`;
+    }
+    return teamChip(id, opts);
+  }
+
   async function loadJSON(path) {
     const res = await fetch(path);
     if (!res.ok) throw new Error(`Failed to load ${path}`);
@@ -143,6 +159,7 @@
     loadJSON,
     loadTeamColors,
     teamChip,
+    teamMark,
     getTeam: (id) => (teamColors || {})[id] || {},
     get teamColors() { return teamColors || {}; },
     escapeHtml,

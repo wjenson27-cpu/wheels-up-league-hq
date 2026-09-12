@@ -113,7 +113,7 @@
           const hot = place <= 3 && n > 0 ? " hot" : "";
           return `<tr class="${hot.trim()}">
             <td class="col-rank">${place}</td>
-            <td class="col-team">${WUC.escapeHtml(t.name)}</td>
+            <td class="col-team"><span class="team-inline">${WUC.teamMark(t, { size: "sm" })}<span>${WUC.escapeHtml(t.name)}</span></span></td>
             <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
             <td class="col-trades">${n}</td>
           </tr>`;
@@ -139,7 +139,7 @@
 
         const top = (ranks.rankings || []).slice(0, 5);
         document.getElementById("topBoard").innerHTML = top.map(r =>
-          `<li><strong style="color:var(--text)">#${r.rank} ${WUC.escapeHtml(r.team)}</strong> — ${WUC.escapeHtml(r.blurb)}</li>`
+          `<li class="team-inline" style="margin-bottom:0.35rem">${WUC.teamMark(r.teamId, { size: "sm" })}<span><strong style="color:var(--text)">#${r.rank} ${WUC.escapeHtml(r.team)}</strong> — ${WUC.escapeHtml(r.blurb)}</span></li>`
         ).join("");
       } catch (e) {
         console.error(e);

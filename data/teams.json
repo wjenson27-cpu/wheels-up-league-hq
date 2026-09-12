@@ -14,7 +14,8 @@
       "standingsRank": 3,
       "color": "#8B5CF6",
       "colorSecondary": "#C4B5FD",
-      "colorLabel": "Violet"
+      "colorLabel": "Violet",
+      "logo": "img/logos/slumlords.jpg"
     },
     {
       "id": "newman",
@@ -29,7 +30,8 @@
       "standingsRank": 7,
       "color": "#22D3EE",
       "colorSecondary": "#A5F3FC",
-      "colorLabel": "Ice"
+      "colorLabel": "Ice",
+      "logo": "img/logos/newman.jpg"
     },
     {
       "id": "saltese",
@@ -44,7 +46,8 @@
       "standingsRank": 8,
       "color": "#F59E0B",
       "colorSecondary": "#FCD34D",
-      "colorLabel": "Gold"
+      "colorLabel": "Gold",
+      "logo": "img/logos/saltese.jpg"
     },
     {
       "id": "lab",
@@ -59,7 +62,8 @@
       "standingsRank": 10,
       "color": "#EF4444",
       "colorSecondary": "#FCA5A5",
-      "colorLabel": "Crimson"
+      "colorLabel": "Crimson",
+      "logo": "img/logos/lab.jpg"
     },
     {
       "id": "doubtpfizer",
@@ -74,7 +78,8 @@
       "standingsRank": 6,
       "color": "#EC4899",
       "colorSecondary": "#F9A8D4",
-      "colorLabel": "Pink"
+      "colorLabel": "Pink",
+      "logo": "img/logos/doubtpfizer.jpg"
     },
     {
       "id": "eddies",
@@ -89,7 +94,8 @@
       "standingsRank": 2,
       "color": "#69BE28",
       "colorSecondary": "#A3E635",
-      "colorLabel": "Action Green"
+      "colorLabel": "Action Green",
+      "logo": "img/logos/eddies.jpg"
     },
     {
       "id": "dongers",
@@ -104,7 +110,8 @@
       "standingsRank": 9,
       "color": "#F97316",
       "colorSecondary": "#FDBA74",
-      "colorLabel": "Orange"
+      "colorLabel": "Orange",
+      "logo": "img/logos/dongers.jpg"
     },
     {
       "id": "ttab",
@@ -119,7 +126,8 @@
       "standingsRank": 5,
       "color": "#A78BFA",
       "colorSecondary": "#DDD6FE",
-      "colorLabel": "Lilac"
+      "colorLabel": "Lilac",
+      "logo": "img/logos/ttab.jpg"
     },
     {
       "id": "hyper",
@@ -134,7 +142,8 @@
       "standingsRank": 11,
       "color": "#14B8A6",
       "colorSecondary": "#5EEAD4",
-      "colorLabel": "Teal"
+      "colorLabel": "Teal",
+      "logo": "img/logos/hyper.jpg"
     },
     {
       "id": "morningside",
@@ -149,7 +158,8 @@
       "standingsRank": 14,
       "color": "#84CC16",
       "colorSecondary": "#BEF264",
-      "colorLabel": "Lime"
+      "colorLabel": "Lime",
+      "logo": "img/logos/morningside.jpg"
     },
     {
       "id": "ultron",
@@ -164,7 +174,8 @@
       "standingsRank": 4,
       "color": "#E11D48",
       "colorSecondary": "#94A3B8",
-      "colorLabel": "Ultron Red"
+      "colorLabel": "Ultron Red",
+      "logo": "img/logos/ultron.jpg"
     },
     {
       "id": "goats",
@@ -179,7 +190,8 @@
       "standingsRank": 13,
       "color": "#D97706",
       "colorSecondary": "#FDE68A",
-      "colorLabel": "Bronze"
+      "colorLabel": "Bronze",
+      "logo": "img/logos/goats.jpg"
     },
     {
       "id": "pocket",
@@ -194,7 +206,8 @@
       "standingsRank": 12,
       "color": "#3B82F6",
       "colorSecondary": "#93C5FD",
-      "colorLabel": "Agent Blue"
+      "colorLabel": "Agent Blue",
+      "logo": "img/logos/pocket.jpg"
     },
     {
       "id": "substation",
@@ -209,7 +222,8 @@
       "standingsRank": 1,
       "color": "#EAB308",
       "colorSecondary": "#FDE047",
-      "colorLabel": "Volt"
+      "colorLabel": "Volt",
+      "logo": "img/logos/substation.jpg"
     }
   ],
   "updated": "2026-09-10",

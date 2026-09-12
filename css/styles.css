@@ -808,7 +808,7 @@ img { max-width: 100%; height: auto; }
 .rank-list { list-style: none; padding: 0; margin: 0; }
 .rank-row {
   display: grid !important;
-  grid-template-columns: 2.5rem 2.3rem 1fr;
+  grid-template-columns: 2.5rem 2.75rem 1fr;
   gap: 0.75rem 0.85rem;
   align-items: start;
 }
@@ -827,3 +827,32 @@ img { max-width: 100%; height: auto; }
   color: #041018 !important;
   box-shadow: 0 0 16px color-mix(in srgb, var(--team-color, #69BE28) 40%, transparent);
 }
+
+/* —— Team logos (Archives) —— */
+.team-mark {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.team-logo {
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #0a1520;
+  border: 2px solid var(--team-color, #69BE28);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 0 14px color-mix(in srgb, var(--team-color, #69BE28) 40%, transparent);
+}
+.team-mark-sm .team-logo { width: 28px; height: 28px; }
+.team-mark-md .team-logo { width: 40px; height: 40px; }
+.team-mark-lg .team-logo { width: 56px; height: 56px; }
+.rank-row .team-mark { margin-top: 0.15rem; }
+.team-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.team-inline .team-mark,
+.team-inline .team-chip { flex-shrink: 0; }

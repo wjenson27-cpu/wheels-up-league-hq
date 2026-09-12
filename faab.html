@@ -40,6 +40,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       try {
+        await WUC.loadTeamColors();
         const data = await WUC.loadJSON("data/faab.json");
         const start = data.startingBudget || 115;
         document.getElementById("startBudget").textContent = start;
@@ -80,7 +81,7 @@
                 const spent = (t.spentKnown ?? (claims + out));
                 return `<tr class="${i < 3 && spent > 0 ? "hot" : ""}">
                   <td class="col-rank">${i + 1}</td>
-                  <td class="col-team">${WUC.escapeHtml(t.name || "—")}</td>
+                  <td class="col-team"><span class="team-inline">${t.id ? WUC.teamMark(t.id, { size: "sm" }) : ""}${WUC.escapeHtml(t.name || "—")}</span></td>
                   <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
                   <td class="col-trades">$${claims}</td>
                   <td class="col-trades">${tradeLabel}</td>

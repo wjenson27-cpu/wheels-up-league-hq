@@ -31,20 +31,52 @@
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
   <script>
+    function resolveTeamId(label) {
+      const bare = String(label || "").split("(")[0].trim();
+      const teams = Object.values(WUC.teamColors || {});
+      const hit = teams.find(tm => tm.name === bare || bare.includes(tm.name) || (tm.name && tm.name.includes(bare)));
+      if (hit) return hit.id;
+      const aliases = [
+        ["Greenacres Goblins", "hyper"], ["Hypersecretors", "hyper"],
+        ["Towner Top Aga Bottom", "ttab"], ["Pocket Agents", "pocket"],
+        ["Substation", "substation"], ["Ultron", "ultron"],
+        ["Saltese Slamm", "saltese"], ["Eagle Ridge Eddies", "eddies"],
+        ["Slumlords", "slumlords"], ["Doubtpfizer", "doubtpfizer"],
+        ["Dongers", "dongers"], ["Divers", "morningside"],
+        ["Demons", "newman"], ["LAB", "lab"], ["Little Ass", "lab"],
+        ["Goats", "goats"], ["TTAB", "ttab"]
+      ];
+      for (const [key, id] of aliases) {
+        if (bare.includes(key) || key.includes(bare)) return id;
+      }
+      return null;
+    }
+
+    function teamLabel(label) {
+      const id = resolveTeamId(label);
+      const text = WUC.escapeHtml(label || "Team");
+      if (!id) return text;
+      return `<span class="team-inline">${WUC.teamMark(id, { size: "sm" })}<span>${text}</span></span>`;
+    }
+
     function card(t) {
       const a = (t.givesA || t.aSends || []).join ? (t.givesA || t.aSends || []).map(WUC.escapeHtml).join(", ") : WUC.escapeHtml(String(t.givesA || t.aSends || "—"));
       const b = (t.givesB || t.bSends || []).join ? (t.givesB || t.bSends || []).map(WUC.escapeHtml).join(", ") : WUC.escapeHtml(String(t.givesB || t.bSends || "—"));
-      const teamA = WUC.escapeHtml(t.teamA || (t.teams && t.teams[0]) || "Team A");
-      const teamB = WUC.escapeHtml(t.teamB || (t.teams && t.teams[1]) || "Team B");
+      const rawA = t.teamA || (t.teams && t.teams[0]) || "Team A";
+      const rawB = t.teamB || (t.teams && t.teams[1]) || "Team B";
+      const teamA = teamLabel(rawA);
+      const teamB = teamLabel(rawB);
+      const teamAText = WUC.escapeHtml(rawA);
+      const teamBText = WUC.escapeHtml(rawB);
       const status = WUC.escapeHtml(t.status || "completed");
       const date = t.date ? WUC.formatDate(t.date) : "—";
       return `
         <article class="card" style="margin-bottom:0.75rem">
-          <h3 style="margin:0 0 0.35rem">${teamA} ↔ ${teamB}
+          <h3 style="margin:0 0 0.35rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.5rem">${teamA} <span aria-hidden="true">↔</span> ${teamB}
             <span class="sample-badge">${status}</span></h3>
           <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">${date}</p>
-          <p><strong>${teamA} sends:</strong> ${a || "—"}</p>
-          <p><strong>${teamB} sends:</strong> ${b || "—"}</p>
+          <p><strong>${teamAText} sends:</strong> ${a || "—"}</p>
+          <p><strong>${teamBText} sends:</strong> ${b || "—"}</p>
           <p class="muted mb-0">${WUC.escapeHtml(t.summary || t.notes || "")}</p>
         </article>`;
     }
@@ -52,7 +84,7 @@
     function blockCard(b) {
       return `
         <article class="card" style="margin-bottom:0.75rem">
-          <h3 style="margin:0 0 0.35rem">${WUC.escapeHtml(b.team || "Team")}
+          <h3 style="margin:0 0 0.35rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.5rem">${teamLabel(b.team || "Team")}
             <span class="sample-badge">block</span></h3>
           <p class="mb-0"><strong>Listed:</strong> ${WUC.escapeHtml(b.player || b.assets || "—")}
             ${b.notes ? ` — <span class="muted">${WUC.escapeHtml(b.notes)}</span>` : ""}</p>
@@ -61,6 +93,7 @@
 
     document.addEventListener("DOMContentLoaded", async () => {
       try {
+        await WUC.loadTeamColors();
         const data = await WUC.loadJSON("data/trades.json?v=" + Date.now());
         if (data.updated) {
           document.getElementById("updatedLabel").textContent = "Updated " + data.updated;
