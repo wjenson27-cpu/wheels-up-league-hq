@@ -43,11 +43,11 @@
     const fan = cfg.fantraxUrl || "#";
     return `
 <footer class="site-footer">
-  <p><strong>Wheels Up Collective</strong> · 14-team IDP · Fantrax</p>
+  <p><strong>Wheels Up Collective</strong> · 14-team IDP · TE premium · Fantrax · WWJDD</p>
   <p><a href="${fan}" target="_blank" rel="noopener">Open league on Fantrax</a>
     · <a href="scoring.html">Scoring</a>
     · <a href="podcast.html">Podcast</a></p>
-  <p class="dim">Commissioners: ${(cfg.commissioners || []).join(" / ") || "—"}</p>
+  <p class="dim">Commish: ${cfg.commissioner || (cfg.commissioners || [])[0] || "—"}</p>
 </footer>`;
   }
 
