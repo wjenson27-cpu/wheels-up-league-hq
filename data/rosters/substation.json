@@ -3,7 +3,8 @@
   "teamName": "Substation",
   "owner": "Nathan Kelly",
   "asOf": "2026-09-11",
-  "faabLeft": null,
+  "faabLeft": 83,
+  "startingQB": "Jaxson Dart",
   "roster": {
     "QB": [
       "Jaxson Dart",
@@ -13,8 +14,8 @@
     "RB": [
       "Saquon Barkley",
       "David Montgomery",
-      "Bhayshul Tuten",
-      "Tank Bigsby"
+      "Tank Bigsby",
+      "Bhayshul Tuten"
     ],
     "WR": [
       "Terry McLaurin",
@@ -22,8 +23,9 @@
       "Alec Pierce"
     ],
     "TE": [
+      "Sam LaPorta",
       "Dallas Goedert",
-      "Sam LaPorta"
+      "Tucker Kraft"
     ],
     "LB": [
       "Carson Schwesinger",
@@ -37,16 +39,23 @@
       "Antoine Winfield",
       "Josh Metellus",
       "Tyler Nubin",
+      "Brian Branch",
+      "DeShon Elliott",
       "Nick Emmanwori"
     ],
     "IR": [
-      "Tucker Kraft",
       "Brian Branch",
-      "DeShon Elliott"
+      "DeShon Elliott",
+      "Nick Emmanwori"
     ]
   },
-  "notes": "Verified Fantrax teamId bbdlo6fkmsb3ulv5 \u2014 header Substation, starting QB Jaxson Dart. Sep 8: paid Pocket $10 FAAB for Bo Nix (not Jordan Love). | Sep 11: acquired Bo Nix for $10 FAAB from Pocket; dropped Jordan Love (not traded).",
-  "source": "Fantrax verified Sep 8 2026",
-  "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "startingQB": "Jaxson Dart"
+  "notes": "Sep 11 ad-hoc. Acquired Nix for $10 FAAB; Love dropped. FAAB $83.",
+  "injuryFlags": [
+    "Malik Nabers",
+    "Brian Branch",
+    "DeShon Elliott",
+    "Nick Emmanwori OUT"
+  ],
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "fantraxTeamId": "bbdlo6fkmsb3ulv5"
 }

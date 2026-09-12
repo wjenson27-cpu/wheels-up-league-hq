@@ -2,14 +2,16 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-09-09",
-  "faabLeft": null,
+  "asOf": "2026-09-11",
+  "faabLeft": 113,
+  "startingQB": "Dak Prescott",
   "roster": {
     "QB": [
       "Dak Prescott"
     ],
     "RB": [
       "Christian McCaffrey",
+      "Chuba Hubbard",
       "D'Andre Swift",
       "Braelon Allen",
       "Kaelon Black",
@@ -17,7 +19,6 @@
     ],
     "WR": [
       "Nico Collins",
-      "Rome Odunze",
       "Rashee Rice",
       "Makai Lemon",
       "Jayden Reed"
@@ -40,12 +41,12 @@
       "Dante Trader"
     ],
     "IR": [
-      "Chuba Hubbard",
       "Rachaad White",
-      "Josh Downs"
+      "Josh Downs",
+      "Rome Odunze"
     ]
   },
-  "notes": "Sep 8 6:26 PM: +Dante Trader (DB/MIA) \u2212Roschon Johnson. Jaylon Carlies was Ultron churn, not Doubtpfizer.",
-  "source": "Fantrax daily sync Sep 9 2026 ~9:39 AM PT",
+  "notes": "Sep 11 ad-hoc. FAAB $113.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "xg1akj6omsb3ulv5"
 }

@@ -2,8 +2,9 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-09-10",
-  "faabLeft": null,
+  "asOf": "2026-09-11",
+  "faabLeft": 115,
+  "startingQB": "Lamar Jackson",
   "roster": {
     "QB": [
       "Lamar Jackson"
@@ -11,25 +12,26 @@
     "RB": [
       "De'Von Achane",
       "Jordan Mason",
-      "Jadarian Price",
-      "Malik Davis"
+      "Jadarian Price"
     ],
     "WR": [
       "Justin Jefferson",
       "Deebo Samuel",
       "Jordan Addison",
+      "Malachi Fields",
       "Xavier Worthy"
     ],
     "TE": [
       "Travis Kelce"
     ],
     "LB": [
-      "Cedric Gray",
+      "Bobby Okereke",
       "Daiyan Henley",
       "Demetrius Knight",
       "Ventrell Miller",
+      "Josh Uche",
       "Derrick Barnes",
-      "Bobby Okereke"
+      "Pete Werner"
     ],
     "DL": [
       "Byron Young"
@@ -39,11 +41,12 @@
       "Derwin James"
     ],
     "IR": [
+      "Malik Davis",
       "De'Zhaun Stribling",
-      "Pete Werner"
+      "Cedric Gray"
     ]
   },
-  "notes": "FAAB not shown on roster page | Sep 9: dropped Bobby Wagner.",
-  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "notes": "Sep 11 ad-hoc. FAAB $115. Wagner previously dropped.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "3hpc63ermsb3ulv5"
 }

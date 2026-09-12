@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-11",
-  "source": "League wire + completed trades",
+  "updated": "2026-09-12",
+  "source": "Fantrax roster scrape ad-hoc Sep 11 \u2014 remainings from team pages",
   "startingBudget": 115,
-  "note": "Waiver claims $1+ only (no $0 bids). Trade FAAB included (Nix: Nate/Substation $10 \u2192 Pocket). Eddies left $105; others estimated.",
+  "note": "Starting bank $115. Remainings from latest roster sync. Waiver claims $1+; trade FAAB included.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -11,12 +11,12 @@
       "owner": "Ryan Towner",
       "abbrev": "ITS",
       "starting": 115,
-      "remaining": null,
+      "remaining": 113,
       "spentClaims": 0,
       "tradeOut": 0,
       "tradeIn": 0,
       "spentKnown": 0,
-      "remainingKnown": 115
+      "remainingKnown": 113
     },
     {
       "id": "newman",
@@ -24,7 +24,7 @@
       "owner": "Ryan McCallum",
       "abbrev": "NLS",
       "starting": 115,
-      "remaining": null,
+      "remaining": 115,
       "spentClaims": 0,
       "tradeOut": 0,
       "tradeIn": 0,
@@ -37,7 +37,7 @@
       "owner": "Luke Sahlberg",
       "abbrev": "SAL",
       "starting": 115,
-      "remaining": null,
+      "remaining": 95,
       "spentClaims": 0,
       "tradeOut": 20,
       "tradeIn": 0,
@@ -50,7 +50,7 @@
       "owner": "Jesse Nicholson",
       "abbrev": "LAB",
       "starting": 115,
-      "remaining": null,
+      "remaining": 115,
       "spentClaims": 0,
       "tradeOut": 0,
       "tradeIn": 0,
@@ -63,7 +63,7 @@
       "owner": "Kyle Weberg",
       "abbrev": "MDP",
       "starting": 115,
-      "remaining": null,
+      "remaining": 113,
       "spentClaims": 2,
       "tradeOut": 0,
       "tradeIn": 0,
@@ -89,12 +89,12 @@
       "owner": "Gavin Heaton",
       "abbrev": "DDG",
       "starting": 115,
-      "remaining": null,
+      "remaining": 107,
       "spentClaims": 0,
       "tradeOut": 0,
       "tradeIn": 0,
       "spentKnown": 0,
-      "remainingKnown": 115
+      "remainingKnown": 107
     },
     {
       "id": "ttab",
@@ -102,12 +102,12 @@
       "owner": "Chase Anderson",
       "abbrev": "TTA",
       "starting": 115,
-      "remaining": null,
+      "remaining": 93,
       "spentClaims": 0,
       "tradeOut": 10,
       "tradeIn": 0,
       "spentKnown": 10,
-      "remainingKnown": 105
+      "remainingKnown": 93
     },
     {
       "id": "hyper",
@@ -115,12 +115,12 @@
       "owner": "Jacob Crisp",
       "abbrev": "HYP",
       "starting": 115,
-      "remaining": null,
+      "remaining": 108,
       "spentClaims": 0,
       "tradeOut": 0,
       "tradeIn": 10,
       "spentKnown": 0,
-      "remainingKnown": 125
+      "remainingKnown": 108
     },
     {
       "id": "morningside",
@@ -128,7 +128,7 @@
       "owner": "Tim Brandle",
       "abbrev": "MMD",
       "starting": 115,
-      "remaining": null,
+      "remaining": 115,
       "spentClaims": 0,
       "tradeOut": 0,
       "tradeIn": 0,
@@ -141,12 +141,12 @@
       "owner": "Brian Aga",
       "abbrev": "ULT",
       "starting": 115,
-      "remaining": null,
+      "remaining": 144,
       "spentClaims": 0,
       "tradeOut": 0,
       "tradeIn": 30,
       "spentKnown": 0,
-      "remainingKnown": 145
+      "remainingKnown": 144
     },
     {
       "id": "goats",
@@ -154,12 +154,12 @@
       "owner": "Mike Heff",
       "abbrev": "VOG",
       "starting": 115,
-      "remaining": null,
+      "remaining": 100,
       "spentClaims": 0,
       "tradeOut": 0,
       "tradeIn": 0,
       "spentKnown": 0,
-      "remainingKnown": 115
+      "remainingKnown": 100
     },
     {
       "id": "pocket",
@@ -167,12 +167,12 @@
       "owner": "Kellen Olson",
       "abbrev": "PKT",
       "starting": 115,
-      "remaining": null,
+      "remaining": 120,
       "spentClaims": 3,
       "tradeOut": 0,
       "tradeIn": 10,
       "spentKnown": 3,
-      "remainingKnown": 122
+      "remainingKnown": 120
     },
     {
       "id": "substation",
@@ -180,12 +180,12 @@
       "owner": "Nathan Kelly",
       "abbrev": "SUB",
       "starting": 115,
-      "remaining": null,
+      "remaining": 83,
       "spentClaims": 0,
       "tradeOut": 20,
       "tradeIn": 0,
       "spentKnown": 20,
-      "remainingKnown": 95
+      "remainingKnown": 83
     }
   ],
   "claims": [

@@ -3,8 +3,8 @@
   "season": 2026,
   "title": "Week 1 Power Rankings",
   "updated": "2026-09-12",
-  "subtitle": "Recalc after Thursday (NE@SEA, SF@LAR). Warren + JCM active. Live scores + fresh Fantrax projs + last-two form vs opponent.",
-  "method": "composite mixes HQ custom, W1 proj edge, live Thursday margin, and W2\u2013W5 SOS.",
+  "subtitle": "Post-roster sync: Thursday live scores, full FAAB banks, Warren active / JCM reserve / Bowers OUT. Sunday still ahead.",
+  "method": "HQ custom + proj edge + live Thursday margin + W2\u2013W5 SOS + FAAB spice.",
   "rankings": [
     {
       "teamId": "newman",
@@ -13,13 +13,14 @@
       "record": "0-0",
       "fantraxW1": 195.4,
       "customW1": 195.4,
-      "customNote": "Slight live lead vs Goats",
+      "customNote": "Slight live lead vs Heff",
       "opponent": "@ Goats",
       "opponentId": "goats",
       "matchupEdge": 10.67,
       "liveScore": 17,
       "oppLiveScore": 11,
       "liveEdge": 6,
+      "faabLeft": 115,
       "sosW2W5": 183.1,
       "nextOpponents": [
         "Doubtpfizer",
@@ -37,7 +38,7 @@
       "formEdge": -9,
       "composite": 171.35,
       "rank": 1,
-      "blurb": "Ryan M up 17\u201311 on Heff with a tighter full-week edge than the old board. Cash the W before Saltese shows up with clipboards. Live 17\u201311. Pedigree check: Goats is 20-8 over 2024\u201325 while Newman sits 11-17."
+      "blurb": "Up 17\u201311 on Heff. Not a free square anymore \u2014 just take the W before the schedule grows teeth. Live 17\u201311. FAAB $115. Pedigree check: Goats 20-8 while Newman sits 11-17."
     },
     {
       "teamId": "lab",
@@ -46,13 +47,14 @@
       "record": "0-0",
       "fantraxW1": 194.05,
       "customW1": 195.05,
-      "customNote": "Home vs Pocket; Thursday Puka/Kyren/Evans stacked",
+      "customNote": "Thursday LAR feast lead; $115 FAAB",
       "opponent": "vs Pocket",
       "opponentId": "pocket",
       "matchupEdge": 2.89,
       "liveScore": 57,
       "oppLiveScore": 37,
       "liveEdge": 20,
+      "faabLeft": 115,
       "sosW2W5": 182.15,
       "nextOpponents": [
         "Ultron",
@@ -70,7 +72,7 @@
       "formEdge": -3,
       "composite": 171.01,
       "rank": 2,
-      "blurb": "Jesse\u2019s up 57\u201337 after the LAR feast. Pocket\u2019s model can cry later \u2014 the scoreboard already ate. Close it Sunday. Live 57\u201337. Pocket owns the better recent card (15-13 vs 12-16)."
+      "blurb": "Up 57\u201337 after LAR went supermarket sweep. Pocket can keep the model; Jesse\u2019ll keep the points. Live 57\u201337. FAAB $115. Pocket owns the better recent card (15-13 vs 12-16)."
     },
     {
       "teamId": "doubtpfizer",
@@ -79,13 +81,14 @@
       "record": "0-0",
       "fantraxW1": 192.28,
       "customW1": 193.28,
-      "customNote": "Quiet Lemon add; still projected to overtake",
+      "customNote": "Trailing early; projection + Lemon still loud",
       "opponent": "vs Morningside",
       "opponentId": "morningside",
       "matchupEdge": 24.95,
       "liveScore": 14,
       "oppLiveScore": 33,
       "liveEdge": -19,
+      "faabLeft": 113,
       "sosW2W5": 185.14,
       "nextOpponents": [
         "Newman",
@@ -103,7 +106,7 @@
       "formEdge": 6,
       "composite": 170.24,
       "rank": 3,
-      "blurb": "Kyle\u2019s trailing Tim 14\u201333 after CMC\u2019s quiet Thursday, but the full-week projection still screams comeback. Doubtpfizer specialty: look dead, win ugly. Live 14\u201333. Form edge: Doubtpfizer 15-13 vs Morningside 9-19."
+      "blurb": "Trailing Tim after CMC\u2019s quiet night, but the week-long math still likes Kyle. Classic Doubtpfizer: look cooked, serve leftovers Sunday. Live 14\u201333. FAAB $113. Form edge: Doubtpfizer 15-13 vs Morningside 9-19."
     },
     {
       "teamId": "slumlords",
@@ -112,13 +115,14 @@
       "record": "0-0",
       "fantraxW1": 194.59,
       "customW1": 195.59,
-      "customNote": "Hosts Chase; Thursday crumbs on the board",
+      "customNote": "Up 18\u20130 scraps hosting Chase; $113 FAAB",
       "opponent": "vs Chase/TTAB",
       "opponentId": "ttab",
       "matchupEdge": -0.34,
       "liveScore": 18,
       "oppLiveScore": 0,
       "liveEdge": 18,
+      "faabLeft": 113,
       "sosW2W5": 183.71,
       "nextOpponents": [
         "Pocket",
@@ -136,7 +140,7 @@
       "formEdge": -7,
       "composite": 170.07,
       "rank": 4,
-      "blurb": "Towner hosts Chase, up 18\u20130 on Maye/Witherspoon scraps. Projection\u2019s a coin flip \u2014 home crowd wants a statement, not a meme. Live 18\u20130. Chase/TTAB owns the better recent card (13-15 vs 6-22)."
+      "blurb": "Up 18\u20130 hosting Chase. Projection\u2019s basically tied \u2014 home crowd wants a statement, not a participation trophy. Live 18\u20130. FAAB $113. Chase/TTAB owns the better recent card (13-15 vs 6-22)."
     },
     {
       "teamId": "dongers",
@@ -145,13 +149,14 @@
       "record": "0-0",
       "fantraxW1": 196.48,
       "customW1": 197.48,
-      "customNote": "+Aaron Donald IDP juice",
+      "customNote": "Donald juice; 0\u20130 until Sunday",
       "opponent": "vs Hyper",
       "opponentId": "hyper",
       "matchupEdge": 6.8,
       "liveScore": 0,
       "oppLiveScore": 0,
       "liveEdge": 0,
+      "faabLeft": 107,
       "sosW2W5": 189.71,
       "nextOpponents": [
         "Chase/TTAB",
@@ -169,7 +174,7 @@
       "formEdge": null,
       "composite": 169.9,
       "rank": 5,
-      "blurb": "Gavin + Donald vs Jacob \u2014 still 0\u20130 on the scoreboard because nobody\u2019s played. Coin flip with pass-rush seasoning. First real points win the vibe war. Live 0\u20130. Dongers is 14-14 the last two Fantrax years; Hyper\u2019s still unproven."
+      "blurb": "0\u20130 vs Hyper until somebody plays football. Donald\u2019s the spice; Jacob\u2019s the mystery meat. Live 0\u20130. FAAB $107. Dongers is 14-14 the last two Fantrax years; Hyper\u2019s still unproven."
     },
     {
       "teamId": "ttab",
@@ -178,13 +183,14 @@
       "record": "0-0",
       "fantraxW1": 194.93,
       "customW1": 192.93,
-      "customNote": "Skattebo package + $10 FAAB out; volatile",
+      "customNote": "Trailing 0\u201318 crumbs at Towner; volatile roster",
       "opponent": "@ Towner/Slumlords",
       "opponentId": "slumlords",
       "matchupEdge": 0.34,
       "liveScore": 0,
       "oppLiveScore": 18,
       "liveEdge": -18,
+      "faabLeft": 93,
       "sosW2W5": 183.54,
       "nextOpponents": [
         "Dongers",
@@ -202,7 +208,7 @@
       "formEdge": 7,
       "composite": 164.55,
       "rank": 6,
-      "blurb": "Chase at Towner\u2019s house, basically knotted on projection, Slumlords up 18\u20130 on Thursday crumbs. Survive Sunday or become the early meme. Live 0\u201318. Form edge: Chase/TTAB 13-15 vs Towner/Slumlords 6-22."
+      "blurb": "0\u201318 crumbs at Towner\u2019s place and a coin-flip projection. Survive or meme \u2014 those are the options. Live 0\u201318. FAAB $93. Form edge: Chase/TTAB 13-15 vs Towner/Slumlords 6-22."
     },
     {
       "teamId": "hyper",
@@ -211,13 +217,14 @@
       "record": "0-0",
       "fantraxW1": 189.68,
       "customW1": 189.68,
-      "customNote": "Flat adjust; $10 FAAB from Nate handshake",
+      "customNote": "Waiting on first points; $108 FAAB",
       "opponent": "@ Dongers",
       "opponentId": "dongers",
       "matchupEdge": -6.8,
       "liveScore": 0,
       "oppLiveScore": 0,
       "liveEdge": 0,
+      "faabLeft": 108,
       "sosW2W5": 187.7,
       "nextOpponents": [
         "Saltese",
@@ -235,7 +242,7 @@
       "formEdge": null,
       "composite": 162.76,
       "rank": 7,
-      "blurb": "0\u20130 waiting room at Dongers. Extra FAAB from Nate\u2019s handshake doesn\u2019t score points. Don\u2019t gift a blank screen. Live 0\u20130. Jacob\u2019s a blank slate; Dongers is 14-14 over 2024\u201325."
+      "blurb": "Still scoreless, $108 FAAB jingling. First points get to define the narrative. Live 0\u20130. FAAB $108. Jacob\u2019s a blank slate; Dongers is 14-14 over 2024\u201325."
     },
     {
       "teamId": "ultron",
@@ -243,14 +250,15 @@
       "owner": "Brian Aga",
       "record": "0-0",
       "fantraxW1": 176.65,
-      "customW1": 174.65,
-      "customNote": "Sold Elarms-Orr for FAAB \u2014 cash over W1 juice",
+      "customW1": 176.65,
+      "customNote": "FAAB monster ($144) after selling talent; live lead on Nate",
       "opponent": "@ Substation",
       "opponentId": "substation",
       "matchupEdge": 10.44,
       "liveScore": 18,
       "oppLiveScore": 10,
       "liveEdge": 8,
+      "faabLeft": 144,
       "sosW2W5": 191.41,
       "nextOpponents": [
         "LAB",
@@ -266,9 +274,9 @@
       "oppY2024": "7-7",
       "oppY2025": "7-7",
       "formEdge": 3,
-      "composite": 160.17,
+      "composite": 160.97,
       "rank": 8,
-      "blurb": "Aga up 18\u201310 on Nate after Spillane. Cash-rich, still thin \u2014 but Thursday said the IDP can still bully. Prove it when the skill players wake up. Live 18\u201310. Form edge: Ultron 17-11 vs Substation 14-14."
+      "blurb": "Up 18\u201310 with a dragon\u2019s hoard of FAAB ($144). Sold the stud, bought the bank. Skill players still on snooze. Live 18\u201310. FAAB $144. Form edge: Ultron 17-11 vs Substation 14-14."
     },
     {
       "teamId": "pocket",
@@ -276,14 +284,15 @@
       "owner": "Kellen Olson",
       "record": "0-0",
       "fantraxW1": 191.16,
-      "customW1": 186.16,
-      "customNote": "Nix sold for $10 FAAB; Goff-only room",
+      "customW1": 187.16,
+      "customNote": "Goff-only after Nix sale; $120 FAAB; down to LAB",
       "opponent": "@ LAB",
       "opponentId": "lab",
       "matchupEdge": -2.89,
       "liveScore": 37,
       "oppLiveScore": 57,
       "liveEdge": -20,
+      "faabLeft": 120,
       "sosW2W5": 187.39,
       "nextOpponents": [
         "Towner/Slumlords",
@@ -299,42 +308,9 @@
       "oppY2024": "8-6",
       "oppY2025": "4-10",
       "formEdge": 3,
-      "composite": 159.94,
+      "composite": 160.34,
       "rank": 9,
-      "blurb": "Fantrax still has Pocket projecting like they didn\u2019t pawn Nix for a ten-spot. Goff-only life, Barton on clearance, and LAB already banked the Thursday fireworks (Puka/Kyren/Evans). Climb-out mode. Live 37\u201357. Form edge: Pocket 15-13 vs LAB 12-16."
-    },
-    {
-      "teamId": "eddies",
-      "team": "Eagle Ridge Eddies",
-      "owner": "Bill Jenson",
-      "record": "0-0",
-      "fantraxW1": 177.36,
-      "customW1": 179.36,
-      "customNote": "Warren + JCM both active (off IR); TE room back to unfair + $105 FAAB",
-      "opponent": "@ Saltese",
-      "opponentId": "saltese",
-      "matchupEdge": -0.06,
-      "liveScore": 83,
-      "oppLiveScore": 72,
-      "liveEdge": 11,
-      "sosW2W5": 192.02,
-      "nextOpponents": [
-        "Goats",
-        "Dongers",
-        "Towner/Slumlords",
-        "Doubtpfizer"
-      ],
-      "schedule": "W2\u2013W5: Goats, Dongers, Towner/Slumlords, Doubtpfizer",
-      "last2": "20-8",
-      "y2024": "8-6",
-      "y2025": "12-2",
-      "oppLast2": "15-13",
-      "oppY2024": "8-6",
-      "oppY2025": "7-7",
-      "formEdge": 5,
-      "composite": 159.84,
-      "rank": 10,
-      "blurb": "Warren\u2019s healthy, JCM\u2019s off the report, and the IDP already threw a rager (Lake 38, Warner 28). Up 83\u201372 at Saltese with the TE cheat codes unlocked. Don\u2019t blow the lead like a sitcom. Live 83\u201372. Form edge: Eddies 20-8 vs Saltese 15-13."
+      "blurb": "Goff-only after the Nix ten-spot, $120 FAAB in the sock drawer, and LAB already threw a Thursday party. Reboot still loading. Live 37\u201357. FAAB $120. Form edge: Pocket 15-13 vs LAB 12-16."
     },
     {
       "teamId": "goats",
@@ -343,13 +319,14 @@
       "record": "0-0",
       "fantraxW1": 184.73,
       "customW1": 183.73,
-      "customNote": "Trailing Newman early",
+      "customNote": "Trailing Newman; Heff starting FAAB $100",
       "opponent": "vs Newman",
       "opponentId": "newman",
       "matchupEdge": -10.67,
       "liveScore": 11,
       "oppLiveScore": 17,
       "liveEdge": -6,
+      "faabLeft": 100,
       "sosW2W5": 177.75,
       "nextOpponents": [
         "Eddies",
@@ -366,8 +343,42 @@
       "oppY2025": "5-9",
       "formEdge": 9,
       "composite": 159.04,
+      "rank": 10,
+      "blurb": "Trailing Newman. Veterans\u2019 tax with interest. Pay it. Live 11\u201317. FAAB $100. R\u00e9sum\u00e9 flex: Goats 20-8 vs Newman 11-17."
+    },
+    {
+      "teamId": "eddies",
+      "team": "Eagle Ridge Eddies",
+      "owner": "Bill Jenson",
+      "record": "0-0",
+      "fantraxW1": 177.36,
+      "customW1": 176.36,
+      "customNote": "Warren active, JCM on reserve (not IR), Bowers OUT \u2014 TE room half-cheat code; up big on Thursday IDP",
+      "opponent": "@ Saltese",
+      "opponentId": "saltese",
+      "matchupEdge": -0.06,
+      "liveScore": 83,
+      "oppLiveScore": 72,
+      "liveEdge": 11,
+      "faabLeft": 105,
+      "sosW2W5": 192.02,
+      "nextOpponents": [
+        "Goats",
+        "Dongers",
+        "Towner/Slumlords",
+        "Doubtpfizer"
+      ],
+      "schedule": "W2\u2013W5: Goats, Dongers, Towner/Slumlords, Doubtpfizer",
+      "last2": "20-8",
+      "y2024": "8-6",
+      "y2025": "12-2",
+      "oppLast2": "15-13",
+      "oppY2024": "8-6",
+      "oppY2025": "7-7",
+      "formEdge": 5,
+      "composite": 158.64,
       "rank": 11,
-      "blurb": "Heff trailing Newman early. Veterans\u2019 tax is due \u2014 pay it without becoming the chump-adjacent subplot. Live 11\u201317. R\u00e9sum\u00e9 flex: Goats went 20-8 the last two years; Newman is 11-17."
+      "blurb": "Warren\u2019s active, JCM\u2019s on reserve (not IR), Bowers is OUT \u2014 messy TE soap opera, filthy IDP start (Lake/Warner). Up 83\u201372. Don\u2019t fumble the sitcom ending. Live 83\u201372. FAAB $105. Form edge: Eddies 20-8 vs Saltese 15-13."
     },
     {
       "teamId": "saltese",
@@ -376,13 +387,14 @@
       "record": "0-0",
       "fantraxW1": 177.42,
       "customW1": 179.42,
-      "customNote": "Paid $20 FAAB for Elarms-Orr; chasing Eddies\u2019 early IDP lead",
+      "customNote": "Chasing 83\u201372 hole; Elarms-Orr buy still the HQ bump",
       "opponent": "vs Eddies",
       "opponentId": "eddies",
       "matchupEdge": 0.06,
       "liveScore": 72,
       "oppLiveScore": 83,
       "liveEdge": -11,
+      "faabLeft": 95,
       "sosW2W5": 186.84,
       "nextOpponents": [
         "Hyper",
@@ -400,40 +412,7 @@
       "formEdge": -5,
       "composite": 157.56,
       "rank": 12,
-      "blurb": "Luke\u2019s down 72\u201383 after Eddies\u2019 IDP party (Lake/Warner). JSN went off \u2014 not enough yet. Home favorite on paper now a chase. Christmas still cancellable. Live 72\u201383. Eddies owns the better recent card (20-8 vs 15-13)."
-    },
-    {
-      "teamId": "substation",
-      "team": "Substation",
-      "owner": "Nathan Kelly",
-      "record": "0-0",
-      "fantraxW1": 166.21,
-      "customW1": 169.21,
-      "customNote": "Paid $10 FAAB for Nix; dropped Love",
-      "opponent": "vs Ultron",
-      "opponentId": "ultron",
-      "matchupEdge": -10.44,
-      "liveScore": 10,
-      "oppLiveScore": 18,
-      "liveEdge": -8,
-      "sosW2W5": 187.21,
-      "nextOpponents": [
-        "Morningside",
-        "Pocket",
-        "Chase/TTAB",
-        "Newman"
-      ],
-      "schedule": "W2\u2013W5: Morningside, Pocket, Chase/TTAB, Newman",
-      "last2": "14-14",
-      "y2024": "7-7",
-      "y2025": "7-7",
-      "oppLast2": "17-11",
-      "oppY2024": "8-6",
-      "oppY2025": "9-5",
-      "formEdge": -3,
-      "composite": 149.86,
-      "rank": 13,
-      "blurb": "Nate down 10\u201318 to Ultron after the Love drop / Nix ten-spot arc. Dart/Nix roulette still has time. Spin better than Thursday. Live 10\u201318. Ultron owns the better recent card (17-11 vs 14-14)."
+      "blurb": "Down 72\u201383 to Eddies\u2019 IDP rager. JSN showed up; Bowers being OUT is the gift. Chase the lead, don\u2019t chase ghosts. Live 72\u201383. FAAB $95. Eddies owns the better recent card (20-8 vs 15-13)."
     },
     {
       "teamId": "morningside",
@@ -442,13 +421,14 @@
       "record": "0-0",
       "fantraxW1": 167.33,
       "customW1": 166.33,
-      "customNote": "Dog on paper despite early Deebo pop",
+      "customNote": "Deebo pop but full-week dog; $115 FAAB",
       "opponent": "@ Doubtpfizer",
       "opponentId": "doubtpfizer",
       "matchupEdge": -24.95,
       "liveScore": 33,
       "oppLiveScore": 14,
       "liveEdge": 19,
+      "faabLeft": 115,
       "sosW2W5": 180.6,
       "nextOpponents": [
         "Substation",
@@ -465,17 +445,51 @@
       "oppY2025": "9-5",
       "formEdge": -6,
       "composite": 149.38,
+      "rank": 13,
+      "blurb": "Up 33\u201314 on Deebo juice and still the dog on the full slate. Enjoy it; don\u2019t frame it. Live 33\u201314. FAAB $115. Doubtpfizer owns the better recent card (15-13 vs 9-19)."
+    },
+    {
+      "teamId": "substation",
+      "team": "Substation",
+      "owner": "Nathan Kelly",
+      "record": "0-0",
+      "fantraxW1": 166.21,
+      "customW1": 167.21,
+      "customNote": "Nix for $10; FAAB down to $83; trailing Ultron",
+      "opponent": "vs Ultron",
+      "opponentId": "ultron",
+      "matchupEdge": -10.44,
+      "liveScore": 10,
+      "oppLiveScore": 18,
+      "liveEdge": -8,
+      "faabLeft": 83,
+      "sosW2W5": 187.21,
+      "nextOpponents": [
+        "Morningside",
+        "Pocket",
+        "Chase/TTAB",
+        "Newman"
+      ],
+      "schedule": "W2\u2013W5: Morningside, Pocket, Chase/TTAB, Newman",
+      "last2": "14-14",
+      "y2024": "7-7",
+      "y2025": "7-7",
+      "oppLast2": "17-11",
+      "oppY2024": "8-6",
+      "oppY2025": "9-5",
+      "formEdge": -3,
+      "composite": 149.06,
       "rank": 14,
-      "blurb": "Tim\u2019s up 33\u201314 on Deebo juice but still the full-week dog at Doubtpfizer. Enjoy the lead; don\u2019t trust it. Live 33\u201314. Doubtpfizer owns the better recent card (15-13 vs 9-19)."
+      "blurb": "Down 10\u201318, FAAB at $83 after shopping. Nix in, Love out \u2014 plot still needs a second act. Live 10\u201318. FAAB $83. Ultron owns the better recent card (17-11 vs 14-14)."
     }
   ],
   "week1Matchups": [
-    "Eagle Ridge Eddies 83 @ Saltese Slamm 72 \u2014 proj 177.4\u2013177.4",
-    "Morningside Muff Divers 33 @ Mrs. Doubtpfizer 14 \u2014 proj 167.3\u2013192.3",
     "Newman Lake Sleep Paralysis Demons 17 @ Valley Old Goats 11 \u2014 proj 195.4\u2013184.7",
     "Pocket Agents 37 @ Little Ass Boys 57 \u2014 proj 191.2\u2013194.1",
-    "The Hypersecretors 0 @ Drummond Dongers 0 \u2014 proj 189.7\u2013196.5",
+    "Morningside Muff Divers 33 @ Mrs. Doubtpfizer 14 \u2014 proj 167.3\u2013192.3",
     "Towner Top Aga Bottom 0 @ Indian Trail Slumlords 18 \u2014 proj 194.9\u2013194.6",
-    "Ultron 18 @ Substation 10 \u2014 proj 176.7\u2013166.2"
+    "The Hypersecretors 0 @ Drummond Dongers 0 \u2014 proj 189.7\u2013196.5",
+    "Ultron 18 @ Substation 10 \u2014 proj 176.7\u2013166.2",
+    "Eagle Ridge Eddies 83 @ Saltese Slamm 72 \u2014 proj 177.4\u2013177.4"
   ]
 }

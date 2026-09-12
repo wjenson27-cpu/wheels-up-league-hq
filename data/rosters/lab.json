@@ -2,8 +2,9 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-09-08",
-  "faabLeft": null,
+  "asOf": "2026-09-11",
+  "faabLeft": 115,
+  "startingQB": "Jayden Daniels",
   "roster": {
     "QB": [
       "Jayden Daniels",
@@ -44,7 +45,7 @@
       "Drue Tranquill"
     ]
   },
-  "notes": "FAAB not shown on roster page",
-  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "notes": "Sep 11 ad-hoc. FAAB $115.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4"
 }

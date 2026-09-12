@@ -2,8 +2,9 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-09-08",
-  "faabLeft": null,
+  "asOf": "2026-09-11",
+  "faabLeft": 115,
+  "startingQB": "Jalen Hurts",
   "roster": {
     "QB": [
       "Jalen Hurts"
@@ -28,7 +29,7 @@
     "LB": [
       "Zaire Franklin",
       "Azeez Al-Shaair",
-      "Kaden Ellis",
+      "Kaden Elliss",
       "Eric Wilson",
       "Devin White"
     ],
@@ -42,11 +43,10 @@
     "IR": [
       "TreVeyon Henderson",
       "Harold Landry",
-      "Payton Adebo"
+      "Paulson Adebo"
     ]
   },
-  "notes": "Verified Fantrax teamId kwaohsfwmsb3ulv4 \u2014 header Newman Lake Sleep Paralysis Demons, starting QB Jalen Hurts. Prior file wrongly mixed Substation players (Love/Purdy/Nabers).",
-  "source": "Fantrax verified Sep 8 2026",
-  "fantraxTeamId": "kwaohsfwmsb3ulv4",
-  "startingQB": "Jalen Hurts"
+  "notes": "Sep 11 ad-hoc. FAAB $115. A.J. Brown injury list.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "fantraxTeamId": "kwaohsfwmsb3ulv4"
 }

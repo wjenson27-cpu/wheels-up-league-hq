@@ -2,8 +2,9 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-09-10",
-  "faabLeft": null,
+  "asOf": "2026-09-11",
+  "faabLeft": 107,
+  "startingQB": "Joe Burrow",
   "roster": {
     "QB": [
       "Joe Burrow",
@@ -30,7 +31,6 @@
       "CJ Allen"
     ],
     "DL": [
-      "Aaron Donald",
       "Laiatu Latu"
     ],
     "DB": [
@@ -40,9 +40,11 @@
       "Jalen Pitre",
       "Nick Scott"
     ],
-    "IR": []
+    "IR": [
+      "Aaron Donald"
+    ]
   },
-  "notes": "Sep 9: +Aaron Donald. Sep 8: +Nick Scott \u2212Barion Brown. Branson Combs went to Ultron (not Dongers). | Sep 9 PM: +Laiatu Latu \u2212Nik Bonitto.",
-  "source": "Fantrax daily sync Sep 9 2026 ~9:39 AM PT",
+  "notes": "Sep 11 ad-hoc. FAAB $107. Donald on IR; Latu active DL.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "lreem0zbmsb3ulv5"
 }

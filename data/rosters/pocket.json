@@ -3,7 +3,8 @@
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
   "asOf": "2026-09-11",
-  "faabLeft": null,
+  "faabLeft": 120,
+  "startingQB": "Jared Goff",
   "roster": {
     "QB": [
       "Jared Goff"
@@ -13,13 +14,12 @@
       "Woody Marks"
     ],
     "WR": [
+      "Rashid Shaheed",
       "CeeDee Lamb",
       "Tetairoa McMillan",
       "Jaylen Waddle",
-      "Malik Washington",
-      "Zachariah Branch",
-      "Rashid Shaheed",
-      "Barion Brown"
+      "Barion Brown",
+      "Malik Washington"
     ],
     "TE": [
       "Trey McBride",
@@ -28,7 +28,7 @@
     "LB": [
       "Ernest Jones",
       "Cody Barton",
-      "Garrett Carter",
+      "Barrett Carter",
       "Foyesade Oluokun",
       "Josiah Trotter"
     ],
@@ -36,14 +36,15 @@
       "Will Anderson Jr."
     ],
     "DB": [
-      "Dane Belton",
-      "Jonas Sanker"
+      "Cooper DeJean",
+      "Jonas Sanker",
+      "Dane Belton"
     ],
     "IR": [
-      "Cooper DeJean"
+      "Zachariah Branch"
     ]
   },
-  "notes": "Sep 11 Fantrax re-verify: QBs Jared Goff only (no Love, no Nix). Sep 8 trade: sent Bo Nix to Substation for $10 FAAB (not Love).",
-  "source": "Fantrax Fantasy-check verify Sep 11 2026 ~6:50 AM PT",
+  "notes": "Sep 11 ad-hoc. Goff only at QB (Nix sold for $10 FAAB). FAAB $120. Barton still rostered.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "20zozmjgmsb3ulv4"
 }

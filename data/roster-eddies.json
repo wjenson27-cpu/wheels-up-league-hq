@@ -11,25 +11,28 @@
     "RB": [
       "Omarion Hampton",
       "Tyjae Spears",
-      "Jacory Croskey-Merritt"
+      "Jacory Croskey-Merritt",
+      "Zach Charbonnet"
     ],
     "WR": [
       "Garrett Wilson",
-      "Brian Thomas",
       "Jalen Coker",
-      "Chimere Dike"
+      "Brian Thomas",
+      "Chimere Dike",
+      "Jordyn Tyson"
     ],
     "TE": [
-      "Brock Bowers",
+      "Tyler Warren",
       "Kyle Pitts",
-      "Tyler Warren"
+      "Brock Bowers"
     ],
     "LB": [
       "Jamien Sherwood",
       "Henry To'oTo'o",
       "Fred Warner",
       "Mack Wilson",
-      "Troy Dye"
+      "James Williams",
+      "Denzel Perryman"
     ],
     "DL": [
       "Leonard Williams"
@@ -45,14 +48,12 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "Week 1 live Sep 11 6am: Eddies lead Saltese Slamm 83-72 (away). Tyler Warren injured but in an active slot. FAAB $105. No Eddies txns since prior sync.",
-  "source": "Fantrax",
+  "notes": "Sep 11 ad-hoc scrape: Tyler Warren NOT injured (active). JCM (Jacory Croskey-Merritt) on Reserve, not IR. Bowers INJURED_OUT on reserve. FAAB $105.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "week1": {
     "opponent": "Saltese Slamm",
     "score": "83-72 leading (live)",
-    "home": false
+    "home": true
   },
-  "lineupFlags": [
-    "Tyler Warren injured but in an active slot"
-  ]
+  "lineupFlags": []
 }

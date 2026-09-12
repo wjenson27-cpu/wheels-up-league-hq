@@ -1,32 +1,17 @@
 {
   "updated": "2026-09-12",
   "week": 1,
-  "asOf": "2026-09-12T01:02:00Z",
-  "note": "Through Thursday Night (NE@SEA, SF@LAR). Sunday slate still ahead.",
+  "asOf": "2026-09-12T01:20:00Z",
+  "note": "Through Thursday (NE@SEA, SF@LAR). Sunday slate still ahead.",
   "matchups": [
-    {
-      "away": "Eagle Ridge Eddies",
-      "home": "Saltese Slamm",
-      "awayScore": 83,
-      "homeScore": 72,
-      "awayProj": 177.36,
-      "homeProj": 177.42
-    },
-    {
-      "away": "Morningside Muff Divers",
-      "home": "Mrs. Doubtpfizer",
-      "awayScore": 33,
-      "homeScore": 14,
-      "awayProj": 167.33,
-      "homeProj": 192.28
-    },
     {
       "away": "Newman Lake Sleep Paralysis Demons",
       "home": "Valley Old Goats",
       "awayScore": 17,
       "homeScore": 11,
       "awayProj": 195.4,
-      "homeProj": 184.73
+      "homeProj": 184.73,
+      "status": "live"
     },
     {
       "away": "Pocket Agents",
@@ -34,15 +19,17 @@
       "awayScore": 37,
       "homeScore": 57,
       "awayProj": 191.16,
-      "homeProj": 194.05
+      "homeProj": 194.05,
+      "status": "live"
     },
     {
-      "away": "The Hypersecretors",
-      "home": "Drummond Dongers",
-      "awayScore": 0,
-      "homeScore": 0,
-      "awayProj": 189.68,
-      "homeProj": 196.48
+      "away": "Morningside Muff Divers",
+      "home": "Mrs. Doubtpfizer",
+      "awayScore": 33,
+      "homeScore": 14,
+      "awayProj": 167.33,
+      "homeProj": 192.28,
+      "status": "live"
     },
     {
       "away": "Towner Top Aga Bottom",
@@ -50,7 +37,17 @@
       "awayScore": 0,
       "homeScore": 18,
       "awayProj": 194.93,
-      "homeProj": 194.59
+      "homeProj": 194.59,
+      "status": "live"
+    },
+    {
+      "away": "The Hypersecretors",
+      "home": "Drummond Dongers",
+      "awayScore": 0,
+      "homeScore": 0,
+      "awayProj": 189.68,
+      "homeProj": 196.48,
+      "status": "scheduled"
     },
     {
       "away": "Ultron",
@@ -58,7 +55,17 @@
       "awayScore": 18,
       "homeScore": 10,
       "awayProj": 176.65,
-      "homeProj": 166.21
+      "homeProj": 166.21,
+      "status": "live"
+    },
+    {
+      "away": "Eagle Ridge Eddies",
+      "home": "Saltese Slamm",
+      "awayScore": 83,
+      "homeScore": 72,
+      "awayProj": 177.36,
+      "homeProj": 177.42,
+      "status": "live"
     }
   ]
 }

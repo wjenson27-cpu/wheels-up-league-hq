@@ -3,7 +3,8 @@
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
   "asOf": "2026-09-11",
-  "faabLeft": null,
+  "faabLeft": 108,
+  "startingQB": "Justin Herbert",
   "roster": {
     "QB": [
       "Justin Herbert",
@@ -11,30 +12,33 @@
     ],
     "RB": [
       "Kenneth Walker III",
-      "RJ Harvey"
+      "MarShawn Lloyd",
+      "RJ Harvey",
+      "Keaton Mitchell"
     ],
     "WR": [
       "Amon-Ra St. Brown",
       "Luther Burden",
       "Emeka Egbuka",
-      "MarShawn Lloyd",
+      "Jaylin Noel",
       "Travis Hunter"
     ],
     "TE": [
-      "Kenyon Sadiq",
-      "Michael Mayer"
+      "Michael Mayer",
+      "Kenyon Sadiq"
     ],
     "LB": [
       "Nick Bolton",
+      "Jihaad Campbell",
       "Blake Cashman",
       "Jacob Rodriguez",
-      "Payton Wilson",
-      "Kendall Daniels",
+      "Kendal Daniels",
       "Jack Gibbens",
-      "Jihaad Campbell"
+      "Payton Wilson"
     ],
     "DL": [
-      "Josh Hines-Allen"
+      "Josh Hines-Allen",
+      "Nick Bosa"
     ],
     "DB": [
       "Travis Hunter",
@@ -46,7 +50,8 @@
       "Nick Bosa"
     ]
   },
-  "notes": "Verified Fantrax teamId xz2uv87rmsb3ulv4 \u2014 header The Hypersecretors, QB Justin Herbert. Prior file wrongly had Ultron's Chase/Cook roster. | Sep 10: +Michael Mayer \u2212Chigoziem Okonkwo.",
-  "source": "Fantrax Fantasy-check verify Sep 11 2026 ~6:50 AM PT",
+  "notes": "Sep 11 ad-hoc. FAAB $108. Mayer on Hyper (not Pocket).",
+  "injuryFlags": [],
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4"
 }

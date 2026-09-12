@@ -2,8 +2,9 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-08",
-  "faabLeft": null,
+  "asOf": "2026-09-11",
+  "faabLeft": 95,
+  "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
       "Matthew Stafford",
@@ -12,14 +13,14 @@
     "RB": [
       "Breece Hall",
       "Rico Dowdle",
-      "Jonah Coleman",
-      "Rhamondre Stevenson"
+      "Rhamondre Stevenson",
+      "Jonah Coleman"
     ],
     "WR": [
       "Jaxon Smith-Njigba",
-      "Stefon Diggs",
       "DeVonta Smith",
       "Ja'Kobi Lane",
+      "Stefon Diggs",
       "Carnell Tate"
     ],
     "TE": [
@@ -45,7 +46,7 @@
       "Micah Parsons"
     ]
   },
-  "notes": "FAAB not shown on roster page",
-  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "notes": "Sep 11 ad-hoc. FAAB $95. Micah Parsons on IL.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5"
 }

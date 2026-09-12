@@ -2,8 +2,9 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-09-10",
-  "faabLeft": null,
+  "asOf": "2026-09-11",
+  "faabLeft": 100,
+  "startingQB": "Patrick Mahomes",
   "roster": {
     "QB": [
       "Patrick Mahomes"
@@ -13,7 +14,9 @@
       "Derrick Henry",
       "Bucky Irving",
       "Justice Hill",
-      "Samaje Perine"
+      "Samaje Perine",
+      "Alvin Kamara",
+      "Josh Jacobs"
     ],
     "WR": [
       "DK Metcalf",
@@ -44,7 +47,12 @@
       "Josh Jacobs"
     ]
   },
-  "notes": "Verified Fantrax teamId 81bbo25imsb3ulv5 \u2014 header Valley Old Goats, QB Mahomes. Prior HQ ultron file had this roster by mistake. | Sep 9: +Samaje Perine \u2212Brian Robinson Jr.",
-  "source": "Fantrax verified Sep 8 2026",
+  "notes": "Sep 11 ad-hoc. FAAB $100.",
+  "injuryFlags": [
+    "Alvin Kamara",
+    "Josh Jacobs",
+    "Kamren Curl"
+  ],
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "81bbo25imsb3ulv5"
 }

@@ -4,7 +4,7 @@
   "owner": "Bill Jenson",
   "asOf": "2026-09-11",
   "faabLeft": 105,
-  "faabTotal": 115,
+  "startingQB": "Trevor Lawrence",
   "roster": {
     "QB": [
       "Trevor Lawrence"
@@ -12,25 +12,28 @@
     "RB": [
       "Omarion Hampton",
       "Tyjae Spears",
-      "Jacory Croskey-Merritt"
+      "Jacory Croskey-Merritt",
+      "Zach Charbonnet"
     ],
     "WR": [
       "Garrett Wilson",
-      "Brian Thomas",
       "Jalen Coker",
-      "Chimere Dike"
+      "Brian Thomas",
+      "Chimere Dike",
+      "Jordyn Tyson"
     ],
     "TE": [
-      "Brock Bowers",
+      "Tyler Warren",
       "Kyle Pitts",
-      "Tyler Warren"
+      "Brock Bowers"
     ],
     "LB": [
       "Jamien Sherwood",
       "Henry To'oTo'o",
       "Fred Warner",
       "Mack Wilson",
-      "Troy Dye"
+      "James Williams",
+      "Denzel Perryman"
     ],
     "DL": [
       "Leonard Williams"
@@ -46,16 +49,11 @@
       "Denzel Perryman"
     ]
   },
-  "counts": {
-    "active": "14/14",
-    "reserve": "6/6",
-    "ir": "3/3"
-  },
-  "matchup": "Week 1 @ Saltese Slamm (Sep 9\u201316); live 83\u201372 Eddies lead as of Sep 11 ~6:11 AM PT",
-  "notes": "Week 1 live Sep 12: Eddies lead Saltese 83-72 (away). Tyler Warren ACTIVE (off IR). Jacory Croskey-Merritt ACTIVE (off IR). FAAB $105.",
-  "source": "Fantrax 6am scrape Sep 11 2026 PT",
+  "notes": "Sep 11 ad-hoc scrape: Tyler Warren NOT injured (active). JCM (Jacory Croskey-Merritt) on Reserve, not IR. Bowers INJURED_OUT on reserve. FAAB $105.",
+  "injuryFlags": [
+    "Brock Bowers OUT"
+  ],
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
-  "lineupFlags": [
-    "Tyler Warren injured but in an active slot"
-  ]
+  "lineupFlags": []
 }

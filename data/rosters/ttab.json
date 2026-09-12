@@ -2,32 +2,34 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-09-10",
-  "faabLeft": null,
+  "asOf": "2026-09-11",
+  "faabLeft": 93,
+  "startingQB": "Josh Allen",
   "roster": {
     "QB": [
       "Josh Allen"
     ],
     "RB": [
-      "Cameron Skattebo",
       "Travis Etienne",
+      "Ashton Jeanty",
+      "Cameron Skattebo",
       "Javonte Williams",
       "Seth McGowan",
-      "Tony Pollard",
-      "Mike Washington"
+      "Tony Pollard"
     ],
     "WR": [
       "Christian Watson",
-      "Jameson Williams",
-      "Jalen Nailor"
+      "Mike Washington",
+      "Jalen Nailor",
+      "Jameson Williams"
     ],
     "TE": [
       "Jake Ferguson"
     ],
     "LB": [
-      "Tremaine Edmunds",
-      "Zack Baun",
       "Divine Deablo",
+      "Zack Baun",
+      "Tremaine Edmunds",
       "Dee Winters"
     ],
     "DL": [
@@ -38,11 +40,9 @@
       "Caleb Downs",
       "Jalen Thompson"
     ],
-    "IR": [
-      "Ashton Jeanty"
-    ]
+    "IR": []
   },
-  "notes": "FAAB not shown on roster page | Sep 9 drops: Zavion Thomas, Jaquan Brisker.",
-  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "notes": "Sep 11 ad-hoc. FAAB $93. W1 vs Slumlords.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "4grk2ph6msb3ulv4"
 }

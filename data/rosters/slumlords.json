@@ -2,8 +2,9 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-09-08",
-  "faabLeft": null,
+  "asOf": "2026-09-11",
+  "faabLeft": 113,
+  "startingQB": "Drake Maye",
   "roster": {
     "QB": [
       "Drake Maye"
@@ -16,7 +17,8 @@
       "Drake London",
       "George Pickens",
       "Wan'Dale Robinson",
-      "Keenan Allen"
+      "Keenan Allen",
+      "Michael Pittman"
     ],
     "TE": [
       "Harold Fannin",
@@ -34,18 +36,17 @@
     ],
     "DB": [
       "Budda Baker",
-      "Chamarri Conner",
+      "Devon Witherspoon",
       "Jeremy Chinn",
-      "Talanoa Hufanga",
-      "Devon Witherspoon"
+      "Talanoa Hufanga"
     ],
     "IR": [
       "Isiah Pacheco",
       "Jakobi Meyers",
-      "Michael Pittman"
+      "Chamarri Conner"
     ]
   },
-  "notes": "FAAB not shown on roster page",
-  "source": "Fantrax scrape Sep 8 2026 for League HQ",
+  "notes": "Sep 11 ad-hoc. FAAB $113. W1 vs TTAB.",
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "59frnthimsb3ulv4"
 }

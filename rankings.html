@@ -76,6 +76,7 @@
                 <span><strong>${WUC.escapeHtml(r.record || "0-0")}</strong> record</span>
                 <span>vs <strong>${WUC.escapeHtml(r.opponent || "—")}</strong></span>
                 <span>Live <strong>${r.liveScore != null ? Number(r.liveScore).toFixed(0) : "—"}–${r.oppLiveScore != null ? Number(r.oppLiveScore).toFixed(0) : "—"}</strong></span>
+                <span>FAAB <strong>${r.faabLeft != null ? "$"+r.faabLeft : "—"}</strong></span>
                 <span>HQ <strong>${custom}</strong></span>
                 <span>Fantrax <strong>${fx}</strong></span>
                 <span class="${edgeCls}">edge <strong>${edgeStr}</strong></span>

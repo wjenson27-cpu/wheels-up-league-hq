@@ -3,7 +3,8 @@
   "teamName": "Ultron",
   "owner": "Brian Aga",
   "asOf": "2026-09-11",
-  "faabLeft": null,
+  "faabLeft": 144,
+  "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
       "Caleb Williams"
@@ -13,7 +14,8 @@
       "Ray Davis",
       "Emmett Johnson",
       "Kaleb Johnson",
-      "J.K. Dobbins"
+      "J.K. Dobbins",
+      "Kyle Monangai"
     ],
     "WR": [
       "Ja'Marr Chase",
@@ -29,7 +31,8 @@
       "Alex Anzalone",
       "Frankie Luvu",
       "Patrick Queen",
-      "Jaylon Carlies"
+      "Trenton Simpson",
+      "Teddye Buchanan"
     ],
     "DL": [
       "Myles Garrett",
@@ -37,7 +40,8 @@
     ],
     "DB": [
       "Dillon Thieneman",
-      "Kevin Winston"
+      "Kevin Winston",
+      "A.J. Haulcy"
     ],
     "IR": [
       "Kyle Monangai",
@@ -45,7 +49,12 @@
       "A.J. Haulcy"
     ]
   },
-  "notes": "Verified teamId k9i4qjrlmsb3ulv5. Sep 8 night: +Branson Combs \u2212Jaylon Carlies. Earlier Sep 8: +Carlies \u2212Boettcher. Dante Trader went to Doubtpfizer; Nick Scott is on Dongers. | Sep 10: +Jaylon Carlies \u2212Branson Combs (reversed Sep 8 move).",
-  "source": "Fantrax Fantasy-check verify Sep 11 2026 ~6:50 AM PT",
+  "notes": "Sep 11 ad-hoc. FAAB $144 (received trade FAAB).",
+  "injuryFlags": [
+    "Teddye Buchanan OUT",
+    "Kyle Monangai",
+    "A.J. Haulcy"
+  ],
+  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5"
 }

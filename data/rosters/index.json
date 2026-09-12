@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09",
+  "updated": "2026-09-11",
   "teams": [
     "dongers",
     "doubtpfizer",
@@ -16,5 +16,6 @@
     "ttab",
     "ultron"
   ],
-  "note": "Bill Sep 9: add-all confirmed. Trade blocks, Nix\u2194Love, Donald, corrected Combs/Trader, Eddies Warren/W1 proj all in HQ data."
+  "count": 14,
+  "note": "Full 14-team Fantrax roster pull (ad-hoc Chief/Bill). Warren/JCM Eddies flags cleared. scores.json refreshed Week 1 live."
 }
