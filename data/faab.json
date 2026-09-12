@@ -193,10 +193,10 @@
       "date": "2026-09-02",
       "player": "Kendal Daniels",
       "amount": 11,
-      "team": null,
+      "team": "The Hypersecretors",
       "note": "",
       "kind": "claim",
-      "teamId": null
+      "teamId": "hyper"
     },
     {
       "date": "2026-09-02",
@@ -212,55 +212,55 @@
       "date": "2026-09-02",
       "player": "Cole Bishop",
       "amount": 6,
-      "team": null,
+      "team": "Towner Top Aga Bottom",
       "note": "",
       "kind": "claim",
-      "teamId": null
+      "teamId": "ttab"
     },
     {
       "date": "2026-09-02",
       "player": "Evan Williams",
       "amount": 6,
-      "team": null,
+      "team": "Towner Top Aga Bottom",
       "note": "",
       "kind": "claim",
-      "teamId": null
+      "teamId": "ttab"
     },
     {
       "date": "2026-09-02",
       "player": "Chris Rodriguez Jr.",
       "amount": 5,
-      "team": null,
+      "team": "Drummond Dongers",
       "note": "",
       "kind": "claim",
-      "teamId": null
+      "teamId": "dongers"
     },
     {
       "date": "2026-09-02",
       "player": "Josh Metellus",
       "amount": 5,
-      "team": null,
+      "team": "Substation",
       "note": "",
       "kind": "claim",
-      "teamId": null
+      "teamId": "substation"
     },
     {
       "date": "2026-09-02",
       "player": "Jack Gibbens",
       "amount": 4,
-      "team": null,
+      "team": "The Hypersecretors",
       "note": "",
       "kind": "claim",
-      "teamId": null
+      "teamId": "hyper"
     },
     {
       "date": "2026-09-02",
       "player": "Jordan Love",
       "amount": 3,
-      "team": null,
+      "team": "Substation",
       "note": "",
       "kind": "claim",
-      "teamId": null
+      "teamId": "substation"
     },
     {
       "date": "2026-09-02",
@@ -303,7 +303,7 @@
       "for": [
         "Bo Nix (QB)"
       ],
-      "summary": "Fantrax official — Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
+      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
       "official": true,
       "kind": "trade"
     },
@@ -317,7 +317,7 @@
       "for": [
         "Kaleb Elarms-Orr (LB)"
       ],
-      "summary": "Fantrax official #2 — Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
       "official": true,
       "kind": "trade"
     },
@@ -332,7 +332,7 @@
         "Cameron Skattebo (RB)",
         "Caleb Downs (DB)"
       ],
-      "summary": "Fantrax official #3 — live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas −Evan Williams; Aga +Bryce Boettcher −Najee.",
+      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
       "official": true,
       "kind": "trade"
     },
@@ -346,7 +346,7 @@
       "for": [
         "R20 chair (Sadiq stays Jacob)"
       ],
-      "summary": "Handshake — Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
       "official": false,
       "kind": "trade"
     }

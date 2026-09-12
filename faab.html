@@ -113,10 +113,13 @@
               ${claims.map((c, i) => {
                 const team = c.team || "Unassigned";
                 const drop = c.dropped ? ` <span class="muted">(−${WUC.escapeHtml(c.dropped)})</span>` : "";
+                const teamCell = c.teamId
+                  ? `<span class="team-inline">${WUC.teamMark(c.teamId, { size: "sm" })}<span>${WUC.escapeHtml(team)}</span></span>`
+                  : WUC.escapeHtml(team);
                 return `<tr class="${i < 3 ? "hot" : ""}">
                   <td class="col-rank">${i + 1}</td>
                   <td class="col-team">${WUC.escapeHtml(c.player || "—")}${drop}</td>
-                  <td class="col-owner">${WUC.escapeHtml(team)}</td>
+                  <td class="col-owner">${teamCell}</td>
                   <td class="col-owner">${c.date ? WUC.formatDate(c.date) : "—"}</td>
                   <td class="col-trades">$${c.amount}</td>
                 </tr>`;
