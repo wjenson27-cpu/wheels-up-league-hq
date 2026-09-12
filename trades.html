@@ -87,7 +87,7 @@
           <h3 style="margin:0 0 0.35rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.5rem">${teamLabel(b.team || "Team")}
             <span class="sample-badge">block</span></h3>
           <p class="mb-0"><strong>Listed:</strong> ${WUC.escapeHtml(b.player || b.assets || "—")}
-            ${b.notes ? ` — <span class="muted">${WUC.escapeHtml(b.notes)}</span>` : ""}</p>
+            ${(b.note || b.notes) ? ` — <span class="muted">${WUC.escapeHtml(b.note || b.notes)}</span>` : ""}</p>
         </article>`;
     }
 

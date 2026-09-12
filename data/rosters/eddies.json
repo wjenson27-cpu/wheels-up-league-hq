@@ -49,11 +49,11 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "Sep 11 ad-hoc scrape: Tyler Warren NOT injured (active). JCM (Jacory Croskey-Merritt) on Reserve, not IR. Bowers INJURED_OUT on reserve. FAAB $105.",
+  "notes": "Bowers injured (reserve). Warren active.",
   "injuryFlags": [
     "Brock Bowers OUT"
   ],
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "source": "Fantrax",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": []
 }

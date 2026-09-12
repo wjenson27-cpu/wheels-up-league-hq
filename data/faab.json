@@ -1,8 +1,8 @@
 {
   "updated": "2026-09-12",
-  "source": "Fantrax roster scrape ad-hoc Sep 11 \u2014 remainings from team pages",
+  "source": "Fantrax",
   "startingBudget": 115,
-  "note": "Starting bank $115. Remainings from latest roster sync. Waiver claims $1+; trade FAAB included.",
+  "note": "",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -194,7 +194,7 @@
       "player": "Kendal Daniels",
       "amount": 11,
       "team": null,
-      "note": "FAAB batch",
+      "note": "",
       "kind": "claim",
       "teamId": null
     },
@@ -204,7 +204,7 @@
       "amount": 7,
       "team": "Eagle Ridge Eddies",
       "dropped": "Christian Harris",
-      "note": "FAAB batch",
+      "note": "",
       "kind": "claim",
       "teamId": "eddies"
     },
@@ -213,7 +213,7 @@
       "player": "Cole Bishop",
       "amount": 6,
       "team": null,
-      "note": "FAAB batch",
+      "note": "",
       "kind": "claim",
       "teamId": null
     },
@@ -222,7 +222,7 @@
       "player": "Evan Williams",
       "amount": 6,
       "team": null,
-      "note": "FAAB batch",
+      "note": "",
       "kind": "claim",
       "teamId": null
     },
@@ -231,7 +231,7 @@
       "player": "Chris Rodriguez Jr.",
       "amount": 5,
       "team": null,
-      "note": "FAAB batch",
+      "note": "",
       "kind": "claim",
       "teamId": null
     },
@@ -240,7 +240,7 @@
       "player": "Josh Metellus",
       "amount": 5,
       "team": null,
-      "note": "FAAB batch",
+      "note": "",
       "kind": "claim",
       "teamId": null
     },
@@ -249,7 +249,7 @@
       "player": "Jack Gibbens",
       "amount": 4,
       "team": null,
-      "note": "FAAB batch",
+      "note": "",
       "kind": "claim",
       "teamId": null
     },
@@ -258,7 +258,7 @@
       "player": "Jordan Love",
       "amount": 3,
       "team": null,
-      "note": "FAAB batch",
+      "note": "",
       "kind": "claim",
       "teamId": null
     },
@@ -267,7 +267,7 @@
       "player": "Troy Dye",
       "amount": 3,
       "team": "Eagle Ridge Eddies",
-      "note": "FAAB batch",
+      "note": "",
       "kind": "claim",
       "teamId": "eddies"
     },
@@ -303,7 +303,7 @@
       "for": [
         "Bo Nix (QB)"
       ],
-      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
+      "summary": "Fantrax official — Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
       "official": true,
       "kind": "trade"
     },
@@ -317,7 +317,7 @@
       "for": [
         "Kaleb Elarms-Orr (LB)"
       ],
-      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "summary": "Fantrax official #2 — Larry buys Elarms-Orr from Aga for $20 FAAB.",
       "official": true,
       "kind": "trade"
     },
@@ -332,7 +332,7 @@
         "Cameron Skattebo (RB)",
         "Caleb Downs (DB)"
       ],
-      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
+      "summary": "Fantrax official #3 — live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas −Evan Williams; Aga +Bryce Boettcher −Najee.",
       "official": true,
       "kind": "trade"
     },
@@ -346,7 +346,7 @@
       "for": [
         "R20 chair (Sadiq stays Jacob)"
       ],
-      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "summary": "Handshake — Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
       "official": false,
       "kind": "trade"
     }
