@@ -428,7 +428,7 @@ img { max-width: 100%; height: auto; }
 .rank-row:nth-child(n+4) .rank-num { color: var(--text-muted); font-size: 1.4rem; }
 .rank-meta { font-size: 0.8rem; color: var(--text-dim); margin-bottom: 0.35rem; }
 .rank-team { font-size: 1.15rem; font-weight: 800; margin: 0 0 0.35rem; }
-.rank-blurb { margin: 0; color: var(--text-muted); font-size: 0.92rem; }
+.rank-blurb { margin: 0; color: var(--text-muted); font-size: 0.92rem; line-height: 1.45; max-width: 52rem; }
 
 /* —— Smack —— */
 .smack-form {
@@ -856,3 +856,6 @@ img { max-width: 100%; height: auto; }
 }
 .team-inline .team-mark,
 .team-inline .team-chip { flex-shrink: 0; }
+
+.rank-blurb .blurb-brag { color: var(--sea-green-hot); }
+.rank-blurb .blurb-dog { color: #f87171; }

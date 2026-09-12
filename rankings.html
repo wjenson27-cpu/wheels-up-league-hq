@@ -42,6 +42,18 @@
         document.getElementById("rankLede").innerHTML =
           `${WUC.escapeHtml(lede)} <span class="dim">Updated ${WUC.formatDate(data.updated)}.</span>`;
 
+        
+        function formatBlurb(text) {
+          const raw = String(text || "");
+          const parts = raw.split(/(?=Dog:)/);
+          return parts.map(p => {
+            const t = WUC.escapeHtml(p.trim());
+            if (t.startsWith("Brag:")) return `<span class="blurb-brag">${t}</span>`;
+            if (t.startsWith("Dog:")) return ` <span class="blurb-dog">${t}</span>`;
+            return t;
+          }).join("");
+        }
+
         document.getElementById("rankList").innerHTML = (data.rankings || []).map((r) => {
           const opp = r.opponent || "—";
           const hasLive = r.liveScore != null && r.oppLiveScore != null
@@ -61,7 +73,7 @@
               <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
               <h2 class="rank-team">${WUC.escapeHtml(r.team)}</h2>
               <div class="rank-line">${WUC.escapeHtml(line)}</div>
-              <p class="rank-blurb">${WUC.escapeHtml(r.blurb)}</p>
+              <p class="rank-blurb">${formatBlurb(r.blurb)}</p>
             </div>
           </li>`;
         }).join("");
