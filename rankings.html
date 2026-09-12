@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Power Rankings — Wheels Up Collective</title>
+  <title>Season Power Rankings — Wheels Up Collective</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
@@ -22,7 +22,7 @@
   <main class="wrap">
     <header class="page-hero">
       <span class="eyebrow" id="rankEyebrow">Week 1</span>
-      <h1>Power rankings</h1>
+      <h1>Season power rankings</h1>
       <p class="lede" id="rankLede">Live Week 1 board — Thursday scores in, Sunday slate ahead.</p>
     </header>
 
@@ -46,10 +46,12 @@
           const opp = r.opponent || "—";
           const hasLive = r.liveScore != null && r.oppLiveScore != null
             && (Number(r.liveScore) > 0 || Number(r.oppLiveScore) > 0);
-          const bits = [opp];
+          const bits = [];
+          if (r.faabLeft != null) bits.push(`FAAB $${r.faabLeft}`);
+          bits.push(opp);
           if (hasLive) bits.push(`live ${Number(r.liveScore).toFixed(0)}–${Number(r.oppLiveScore).toFixed(0)}`);
           if (r.playersLeft != null) bits.push(`${r.playersLeft} left`);
-          if (r.customW1 != null) bits.push(`HQ ${Number(r.customW1).toFixed(0)}`);
+          if (r.customW1 != null) bits.push(`W1 HQ ${Number(r.customW1).toFixed(0)}`);
           const line = bits.join(" · ");
           return `
           <li class="rank-row${r.rank <= 3 ? " top3" : ""}" style="--team-color:${(WUC.teamColors && WUC.teamColors[r.teamId] && WUC.teamColors[r.teamId].color) || '#69BE28'}">
