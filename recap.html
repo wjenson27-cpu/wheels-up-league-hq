@@ -26,6 +26,9 @@
     }
     .matchup-blurb { margin: 0; color: var(--text-muted); }
     .empty-recap { color: var(--text-muted); }
+    .recap-list { margin: 0.25rem 0 0; padding-left: 1.1rem; color: var(--text-muted); }
+    .recap-list li { margin: 0.25rem 0; }
+    .chip { display: inline-block; font-size: 0.7rem; padding: 0.15rem 0.45rem; border-radius: 999px; background: rgba(105,190,40,0.15); color: var(--sea-green-hot); vertical-align: middle; }
   </style>
 </head>
 <body>
@@ -57,12 +60,23 @@
               <div class="matchup-score">${WUC.escapeHtml(m.scoreline || m.title || "")}</div>
               <p class="matchup-blurb">${WUC.escapeHtml(m.blurb || "")}</p>
             </div>`).join("");
+          const heroes = (r.heroes || []).length
+            ? `<div class="matchup"><div class="matchup-score">Juice</div><ul class="recap-list">${(r.heroes || []).map(h => `<li>${WUC.escapeHtml(h)}</li>`).join("")}</ul></div>`
+            : "";
+          const goats = (r.goats || []).length
+            ? `<div class="matchup"><div class="matchup-score">Junk</div><ul class="recap-list">${(r.goats || []).map(g => `<li>${WUC.escapeHtml(g)}</li>`).join("")}</ul></div>`
+            : "";
+          const closer = r.closer ? `<p class="recap-meta" style="margin-top:1rem">${WUC.escapeHtml(r.closer)}</p>` : "";
+          const sample = r.sample ? `<span class="chip" style="margin-left:0.5rem">SAMPLE</span>` : "";
           return `
             <article class="card recap-card">
-              <h2>${WUC.escapeHtml(r.title || `Week ${r.week}`)}</h2>
+              <h2>${WUC.escapeHtml(r.title || `Week ${r.week}`)}${sample}</h2>
               <p class="recap-meta">${WUC.escapeHtml(r.dateLabel || "")}</p>
               <p class="recap-open">${WUC.escapeHtml(r.coldOpen || "")}</p>
               ${mus}
+              ${heroes}
+              ${goats}
+              ${closer}
             </article>`;
         }).join("");
       } catch (e) {

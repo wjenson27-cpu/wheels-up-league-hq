@@ -1,5 +1,48 @@
 {
-  "updated": "2026-09-11",
-  "note": "Weekly Tuesday recaps drop after the prior week\u2019s games are final.",
-  "recaps": []
+  "updated": "2026-09-12",
+  "note": "Weekly Tuesday recaps after finals. First entry is a 2025 Week 1 SAMPLE for format.",
+  "recaps": [
+    {
+      "week": 1,
+      "season": 2025,
+      "sample": true,
+      "title": "Sample: 2025 Week 1 Recap",
+      "dateLabel": "Sample format \u2014 last season\u2019s Week 1 finals (not 2026)",
+      "coldOpen": "Welcome to IDP country, where 220 is a Tuesday and 250 is a personality. Week 1 reminded everyone: offense sells tickets, defense runs up the scoreboard. Hero of the week: anybody with a green jersey and a tackle. Goat of the week: whoever brought a Fantrax projection to a gunfight.",
+      "heroes": [
+        "Josh Allen (TTAB) \u2014 50 points, dual-threat chaos",
+        "Myles Garrett (TTAB) \u2014 42 on DL, ruined someone\u2019s Sunday",
+        "S. Dennis (Eddies) \u2014 35 IDP, the quiet assassin",
+        "B. Okereke (Morningside) \u2014 32 on 16 tackles"
+      ],
+      "goats": [
+        "Saltese\u2019s Week 1 script \u2014 184.5 while Bill hit 244",
+        "The Big Unit \u2014 173 in a league that averages 220+",
+        "Anyone who started the week trusting Fantrax IDP math"
+      ],
+      "matchups": [
+        {
+          "scoreline": "Towner Top Aga Bottom 254.5, Indian Trail Slumlords 251.5",
+          "blurb": "Three points. THREE. Allen dropped 50, Garrett dropped 42, and Towner still needed every tackle-assist to survive Gibbs & Co. Closest game of the week \u2014 if your heart rate didn\u2019t spike, you\u2019re lying."
+        },
+        {
+          "scoreline": "Mrs. Doubtpfizer 223, Morningside Muff Divers 220.5",
+          "blurb": "Kyle wins ugly, as is tradition. Puka did Puka things; Tim\u2019s IDP (Okereke 32) almost stole it. Dual-era champ energy: never pretty, always enough."
+        },
+        {
+          "scoreline": "Eagle Ridge Eddies 244, Saltese Slamm 184.5",
+          "blurb": "Bill\u2019s defense threw a house party (Dennis 35, Brooks 31) while Luke\u2019s offense filed a missing-persons report. Commish gets the early reminder: the rings don\u2019t care about your title."
+        },
+        {
+          "scoreline": "Hot Coffee 255.5, Puka Shells 219.5",
+          "blurb": "Ceiling check: Hot Coffee\u2019s IDP put up 161 by itself. Mack, Warner, Watt \u2014 that\u2019s not a defense, that\u2019s a tax audit. 219.5 would win most leagues. Here it\u2019s a polite loss."
+        },
+        {
+          "scoreline": "The Longest Yard 218.5, The Big Unit 173",
+          "blurb": "Alumni energy. One team remembered tackles are points; the other brought a 173 to a 220 fight. If your IDP week looks like The Big Unit, start making waiver friends."
+        }
+      ],
+      "closer": "Template for Tuesdays: cold open \u2192 every scoreline with smack \u2192 heroes/goats. First live 2026 drop lands after Week 1 finals (Tue 9/15). WWJDD."
+    }
+  ]
 }
