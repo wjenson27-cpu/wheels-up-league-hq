@@ -56,6 +56,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       try {
+        await WUC.loadTeamColors();
         const data = await WUC.loadJSON("data/rankings.json");
         const week = data.week || 1;
         document.getElementById("rankEyebrow").textContent = `Week ${week} · ${data.season || ""}`.trim();
@@ -70,8 +71,9 @@
           const custom = r.customW1 != null ? Number(r.customW1).toFixed(1) : "—";
           const fx = r.fantraxW1 != null ? Number(r.fantraxW1).toFixed(1) : (r.projW1 != null ? Number(r.projW1).toFixed(1) : "—");
           return `
-          <li class="rank-row${r.rank <= 3 ? " top3" : ""}">
+          <li class="rank-row${r.rank <= 3 ? " top3" : ""}" style="--team-color:${(WUC.teamColors[r.teamId]||{}).color||'#69BE28'}">
             <div class="rank-num">${r.rank}</div>
+            ${WUC.teamChip(r.teamId, { size: "md" })}
             <div>
               <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
               <h2 class="rank-team">${WUC.escapeHtml(r.team)}</h2>

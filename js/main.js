@@ -67,6 +67,28 @@
     }
   }
 
+
+  let teamColors = null;
+  async function loadTeamColors() {
+    if (teamColors) return teamColors;
+    try {
+      const data = await loadJSON("data/teams.json");
+      teamColors = Object.fromEntries((data.teams || []).map((t) => [t.id, t]));
+    } catch (e) {
+      teamColors = {};
+    }
+    return teamColors;
+  }
+
+  function teamChip(teamId, opts = {}) {
+    const t = (teamColors || {})[teamId] || {};
+    const color = t.color || "#69BE28";
+    const abbrev = escapeHtml(t.abbrev || String(teamId || "?").slice(0, 3).toUpperCase());
+    const size = opts.size || "md";
+    const title = escapeHtml(t.name || teamId || "");
+    return `<span class="team-chip team-chip-${size}" style="--team-color:${color}" title="${title}"><span class="team-chip-mark">${abbrev}</span></span>`;
+  }
+
   async function loadJSON(path) {
     const res = await fetch(path);
     if (!res.ok) throw new Error(`Failed to load ${path}`);
@@ -119,6 +141,9 @@
 
   window.WUC = {
     loadJSON,
+    loadTeamColors,
+    teamChip,
+    get teamColors() { return teamColors || {}; },
     escapeHtml,
     formatDate,
     podcastUrl,

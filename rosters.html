@@ -68,13 +68,13 @@
           const proj = t.projW1 != null ? ` · W1 proj ${t.projW1}` : "";
           const pr = t.powerRank != null ? ` · PR #${t.powerRank}` : "";
           return `
-          <article class="card team-card" id="team-${WUC.escapeHtml(t.id)}">
+          <article class="card team-card" id="team-${WUC.escapeHtml(t.id)}" style="--team-color:${WUC.escapeHtml(t.color || "#69BE28")}">
             <div class="team-head">
               <div>
                 <h3 style="margin:0">${WUC.escapeHtml(t.name)}</h3>
                 <p class="muted mb-0">${WUC.escapeHtml(t.owner || "Owner TBD")} · ${WUC.escapeHtml(t.record || "0-0")}${faab}${proj}${pr}</p>
               </div>
-              <span class="abbrev">${WUC.escapeHtml(t.abbrev || "")}</span>
+              ${WUC.teamChip(t.id, { size: "lg" })}
             </div>
             <p class="mb-0">${WUC.escapeHtml(t.note || "")}</p>
             ${depth || `<p class="muted mt-1" style="margin-top:0.6rem;font-size:0.82rem">Full depth chart coming — Fantrax export TBD.</p>`}

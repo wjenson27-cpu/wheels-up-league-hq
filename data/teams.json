@@ -11,7 +11,10 @@
       "projW1": 197.89,
       "powerRank": 1,
       "note": "Ryan Towner \u2014 2025 Chump at 2-12 with 6th-most PF.",
-      "standingsRank": 3
+      "standingsRank": 3,
+      "color": "#8B5CF6",
+      "colorSecondary": "#C4B5FD",
+      "colorLabel": "Violet"
     },
     {
       "id": "newman",
@@ -23,7 +26,10 @@
       "projW1": 193.09,
       "powerRank": 2,
       "note": "Ryan McCallum (Rymo) \u2014 2020 champ, 2024 Chump.",
-      "standingsRank": 7
+      "standingsRank": 7,
+      "color": "#22D3EE",
+      "colorSecondary": "#A5F3FC",
+      "colorLabel": "Ice"
     },
     {
       "id": "saltese",
@@ -35,7 +41,10 @@
       "projW1": 191.27,
       "powerRank": 3,
       "note": "Luke Sahlberg \u2014 ate Bill's 408 in 2025 R1.",
-      "standingsRank": 8
+      "standingsRank": 8,
+      "color": "#F59E0B",
+      "colorSecondary": "#FCD34D",
+      "colorLabel": "Gold"
     },
     {
       "id": "lab",
@@ -47,7 +56,10 @@
       "projW1": 191.27,
       "powerRank": 4,
       "note": "Week 1 Fantrax proj 191.27",
-      "standingsRank": 10
+      "standingsRank": 10,
+      "color": "#EF4444",
+      "colorSecondary": "#FCA5A5",
+      "colorLabel": "Crimson"
     },
     {
       "id": "doubtpfizer",
@@ -59,7 +71,10 @@
       "projW1": 188.76,
       "powerRank": 5,
       "note": "Kyle Weberg \u2014 2023 + 2025 champ (only dual-era titles). Sep 8: +Dante Trader \u2212Roschon Johnson.",
-      "standingsRank": 6
+      "standingsRank": 6,
+      "color": "#EC4899",
+      "colorSecondary": "#F9A8D4",
+      "colorLabel": "Pink"
     },
     {
       "id": "eddies",
@@ -71,7 +86,10 @@
       "projW1": 187.31,
       "powerRank": 6,
       "note": "Bill Jenson \u2014 all-time wins leader, 0 rings. 2025: 12-2, most PF. W1 @ Saltese Slamm \u2014 TNF live trailing 17-48 (Sep 10 6am). FAAB $105. Tyler Warren injured but in an active slot.",
-      "standingsRank": 2
+      "standingsRank": 2,
+      "color": "#69BE28",
+      "colorSecondary": "#A3E635",
+      "colorLabel": "Action Green"
     },
     {
       "id": "dongers",
@@ -83,7 +101,10 @@
       "projW1": 187.17,
       "powerRank": 7,
       "note": "Sep 9: +Aaron Donald; later +Laiatu Latu \u2212Nik Bonitto.",
-      "standingsRank": 9
+      "standingsRank": 9,
+      "color": "#F97316",
+      "colorSecondary": "#FDBA74",
+      "colorLabel": "Orange"
     },
     {
       "id": "ttab",
@@ -95,7 +116,10 @@
       "projW1": 185.52,
       "powerRank": 8,
       "note": "Chase Anderson (confirmed by Bill). Archives 2026 chair. Sep 9 drops: Zavion Thomas, Jaquan Brisker.",
-      "standingsRank": 5
+      "standingsRank": 5,
+      "color": "#A78BFA",
+      "colorSecondary": "#DDD6FE",
+      "colorLabel": "Lilac"
     },
     {
       "id": "hyper",
@@ -107,7 +131,10 @@
       "projW1": 183.76,
       "powerRank": 9,
       "note": "Jacob Crisp (confirmed Bill) \u2014 2026 rookie, Sak chair.",
-      "standingsRank": 11
+      "standingsRank": 11,
+      "color": "#14B8A6",
+      "colorSecondary": "#5EEAD4",
+      "colorLabel": "Teal"
     },
     {
       "id": "morningside",
@@ -119,7 +146,10 @@
       "projW1": 176.7,
       "powerRank": 10,
       "note": "Week 1 Fantrax proj 176.7 Sep 9: dropped Bobby Wagner.",
-      "standingsRank": 14
+      "standingsRank": 14,
+      "color": "#84CC16",
+      "colorSecondary": "#BEF264",
+      "colorLabel": "Lime"
     },
     {
       "id": "ultron",
@@ -131,7 +161,10 @@
       "projW1": 173.31,
       "powerRank": 11,
       "note": "Brian Aga (confirmed Bill) \u2014 was Agatron in archives. Sep 8: +Branson Combs \u2212Jaylon Carlies (after brief Carlies add).",
-      "standingsRank": 4
+      "standingsRank": 4,
+      "color": "#E11D48",
+      "colorSecondary": "#94A3B8",
+      "colorLabel": "Ultron Red"
     },
     {
       "id": "goats",
@@ -143,7 +176,10 @@
       "projW1": 172.12,
       "powerRank": 12,
       "note": "Mike Heff \u2014 2024 Fantrax champ, 2025 3rd. Sep 9: +Samaje Perine \u2212Brian Robinson Jr.",
-      "standingsRank": 13
+      "standingsRank": 13,
+      "color": "#D97706",
+      "colorSecondary": "#FDE68A",
+      "colorLabel": "Bronze"
     },
     {
       "id": "pocket",
@@ -155,7 +191,10 @@
       "projW1": 169.07,
       "powerRank": 13,
       "note": "Kellen Olson \u2014 Love for Nix (Sep 8). Block: Barton. Sep 9: +Michael Mayer; dropped Upton Stout, Malik Mustapha.",
-      "standingsRank": 12
+      "standingsRank": 12,
+      "color": "#3B82F6",
+      "colorSecondary": "#93C5FD",
+      "colorLabel": "Agent Blue"
     },
     {
       "id": "substation",
@@ -167,7 +206,10 @@
       "projW1": 157.94,
       "powerRank": 14,
       "note": "Nathan Kelly (confirmed Bill) \u2014 was Abuse of Power in archives. Trade block NEW Sep 9: Brock Purdy, Terry McLaurin, Bhayshul Tuten. Acquired Bo Nix for Jordan Love (Sep 8).",
-      "standingsRank": 1
+      "standingsRank": 1,
+      "color": "#EAB308",
+      "colorSecondary": "#FDE047",
+      "colorLabel": "Volt"
     }
   ],
   "updated": "2026-09-10",
