@@ -45,11 +45,11 @@
         
         function formatBlurb(text) {
           const raw = String(text || "");
-          const parts = raw.split(/(?=Dog:)/);
+          const parts = raw.split(/(?=Junk:)/);
           return parts.map(p => {
             const t = WUC.escapeHtml(p.trim());
-            if (t.startsWith("Brag:")) return `<span class="blurb-brag">${t}</span>`;
-            if (t.startsWith("Dog:")) return ` <span class="blurb-dog">${t}</span>`;
+            if (t.startsWith("Juice:")) return `<span class="blurb-juice">${t}</span>`;
+            if (t.startsWith("Junk:")) return ` <span class="blurb-junk">${t}</span>`;
             return t;
           }).join("");
         }

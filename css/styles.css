@@ -857,5 +857,5 @@ img { max-width: 100%; height: auto; }
 .team-inline .team-mark,
 .team-inline .team-chip { flex-shrink: 0; }
 
-.rank-blurb .blurb-brag { color: var(--sea-green-hot); }
-.rank-blurb .blurb-dog { color: #f87171; }
+.rank-blurb .blurb-juice { color: var(--sea-green-hot); }
+.rank-blurb .blurb-junk { color: #f87171; }
