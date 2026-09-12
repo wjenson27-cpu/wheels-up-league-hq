@@ -52,9 +52,9 @@
         }
 
         const teams = [...(data.teamBalances || [])].sort((a, b) => {
-          const as = a.spentKnown ?? 0;
-          const bs = b.spentKnown ?? 0;
-          if (bs !== as) return bs - as;
+          const leftOf = (x) => x.remaining != null ? x.remaining : (x.remainingKnown ?? (start - (x.spentClaims ?? 0) - (x.tradeOut ?? 0) + (x.tradeIn ?? 0)));
+          const d = leftOf(b) - leftOf(a);
+          if (d !== 0) return d;
           return (a.name || "").localeCompare(b.name || "");
         });
 
@@ -78,8 +78,7 @@
                 const tradeLabel = (out || inn) ? `−$${out} / +$${inn}` : "—";
                 const left = t.remaining != null ? t.remaining : (t.remainingKnown ?? (start - claims - out + inn));
                 const leftLabel = t.remaining != null ? left : `${left}*`;
-                const spent = (t.spentKnown ?? (claims + out));
-                return `<tr class="${i < 3 && spent > 0 ? "hot" : ""}">
+                return `<tr class="${i < 3 ? "hot" : ""}">
                   <td class="col-rank">${i + 1}</td>
                   <td class="col-team"><span class="team-inline">${t.id ? WUC.teamMark(t.id, { size: "sm" }) : ""}${WUC.escapeHtml(t.name || "—")}</span></td>
                   <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
