@@ -11,28 +11,27 @@
     "RB": [
       "Omarion Hampton",
       "Tyjae Spears",
-      "Jacory Croskey-Merritt",
-      "Zach Charbonnet"
+      "Jacory Croskey-Merritt"
     ],
     "WR": [
       "Garrett Wilson",
-      "Jalen Coker",
       "Brian Thomas",
       "Chimere Dike",
-      "Jordyn Tyson"
+      "Jordyn Tyson",
+      "Jalen Coker"
     ],
     "TE": [
       "Tyler Warren",
-      "Kyle Pitts",
-      "Brock Bowers"
+      "Brock Bowers",
+      "Kyle Pitts"
     ],
     "LB": [
       "Jamien Sherwood",
+      "James Williams",
+      "Denzel Perryman",
       "Henry To'oTo'o",
       "Fred Warner",
-      "Mack Wilson",
-      "James Williams",
-      "Denzel Perryman"
+      "Mack Wilson"
     ],
     "DL": [
       "Leonard Williams"
@@ -42,20 +41,44 @@
       "Evan Williams",
       "Julian Love"
     ],
-    "IR": [
-      "Zach Charbonnet",
-      "Jordyn Tyson",
-      "Denzel Perryman"
-    ]
+    "IR": []
   },
-  "notes": "Sep 11: +James Williams \u2212Troy Dye. Warren cleared. Bowers OUT; Charbonnet/Tyson/Perryman on IL. W1 live 83\u201372 vs Saltese. FAAB $105.",
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "starters": [
+    "Trevor Lawrence",
+    "Omarion Hampton",
+    "Garrett Wilson",
+    "Tyler Warren",
+    "Jalen Coker",
+    "Kyle Pitts",
+    "Brian Thomas",
+    "Leonard Williams",
+    "Jamien Sherwood",
+    "Quentin Lake",
+    "Evan Williams",
+    "Henry To'oTo'o",
+    "Fred Warner",
+    "Mack Wilson"
+  ],
+  "bench": [
+    "Tyjae Spears",
+    "Brock Bowers",
+    "Jacory Croskey-Merritt",
+    "Chimere Dike",
+    "James Williams",
+    "Julian Love",
+    "Denzel Perryman"
+  ],
+  "notes": "Sep 12 6am: +James Williams \u2212Troy Dye still latest Eddies move (Sep 11). Warren injury marker but active TE. No names under Inj Res (Charbonnet/Tyson/Perryman/JCM on reserve). Bowers on bench. W1 live 83\u201372 vs Saltese (11 left). FAAB $105.",
+  "source": "Fantrax 6am scrape Sep 12 2026 PT",
   "week1": {
     "opponent": "Saltese Slamm",
     "score": "83-72 leading",
-    "home": true
+    "home": true,
+    "playersLeft": 11,
+    "oppPlayersLeft": 10
   },
   "lineupFlags": [
-    "Brock Bowers OUT"
+    "Tyler Warren injury/news marker (still active)",
+    "Brock Bowers on bench"
   ]
 }

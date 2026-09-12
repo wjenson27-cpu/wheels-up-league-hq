@@ -12,10 +12,10 @@
       "abbrev": "ITS",
       "starting": 115,
       "remaining": 113,
-      "spentClaims": 0,
+      "spentClaims": 2,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 0,
+      "spentKnown": 2,
       "remainingKnown": 113
     },
     {
@@ -90,10 +90,10 @@
       "abbrev": "DDG",
       "starting": 115,
       "remaining": 107,
-      "spentClaims": 0,
+      "spentClaims": 8,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 0,
+      "spentKnown": 8,
       "remainingKnown": 107
     },
     {
@@ -103,10 +103,10 @@
       "abbrev": "TTA",
       "starting": 115,
       "remaining": 93,
-      "spentClaims": 0,
+      "spentClaims": 12,
       "tradeOut": 10,
       "tradeIn": 0,
-      "spentKnown": 10,
+      "spentKnown": 22,
       "remainingKnown": 93
     },
     {
@@ -116,10 +116,10 @@
       "abbrev": "HYP",
       "starting": 115,
       "remaining": 108,
-      "spentClaims": 0,
+      "spentClaims": 17,
       "tradeOut": 0,
       "tradeIn": 10,
-      "spentKnown": 0,
+      "spentKnown": 17,
       "remainingKnown": 108
     },
     {
@@ -142,10 +142,10 @@
       "abbrev": "ULT",
       "starting": 115,
       "remaining": 144,
-      "spentClaims": 0,
+      "spentClaims": 1,
       "tradeOut": 0,
       "tradeIn": 30,
-      "spentKnown": 0,
+      "spentKnown": 1,
       "remainingKnown": 144
     },
     {
@@ -168,10 +168,10 @@
       "abbrev": "PKT",
       "starting": 115,
       "remaining": 120,
-      "spentClaims": 3,
+      "spentClaims": 5,
       "tradeOut": 0,
       "tradeIn": 10,
-      "spentKnown": 3,
+      "spentKnown": 5,
       "remainingKnown": 120
     },
     {
@@ -181,115 +181,189 @@
       "abbrev": "SUB",
       "starting": 115,
       "remaining": 83,
-      "spentClaims": 0,
+      "spentClaims": 12,
       "tradeOut": 20,
       "tradeIn": 0,
-      "spentKnown": 20,
+      "spentKnown": 32,
       "remainingKnown": 83
     }
   ],
   "claims": [
     {
-      "date": "2026-09-02",
-      "player": "Kendal Daniels",
-      "amount": 11,
-      "team": "The Hypersecretors",
-      "note": "",
-      "kind": "claim",
-      "teamId": "hyper"
-    },
-    {
-      "date": "2026-09-02",
-      "player": "Henry To'oTo'o",
-      "amount": 7,
-      "team": "Eagle Ridge Eddies",
-      "dropped": "Christian Harris",
-      "note": "",
-      "kind": "claim",
-      "teamId": "eddies"
-    },
-    {
-      "date": "2026-09-02",
-      "player": "Cole Bishop",
-      "amount": 6,
-      "team": "Towner Top Aga Bottom",
-      "note": "",
-      "kind": "claim",
-      "teamId": "ttab"
-    },
-    {
-      "date": "2026-09-02",
-      "player": "Evan Williams",
-      "amount": 6,
-      "team": "Towner Top Aga Bottom",
-      "note": "",
-      "kind": "claim",
-      "teamId": "ttab"
-    },
-    {
-      "date": "2026-09-02",
-      "player": "Chris Rodriguez Jr.",
-      "amount": 5,
-      "team": "Drummond Dongers",
-      "note": "",
-      "kind": "claim",
-      "teamId": "dongers"
-    },
-    {
-      "date": "2026-09-02",
-      "player": "Josh Metellus",
-      "amount": 5,
-      "team": "Substation",
-      "note": "",
-      "kind": "claim",
-      "teamId": "substation"
-    },
-    {
-      "date": "2026-09-02",
-      "player": "Jack Gibbens",
-      "amount": 4,
-      "team": "The Hypersecretors",
-      "note": "",
-      "kind": "claim",
-      "teamId": "hyper"
-    },
-    {
-      "date": "2026-09-02",
-      "player": "Jordan Love",
+      "date": "2026-09-10",
+      "player": "Barion Brown",
       "amount": 3,
-      "team": "Substation",
-      "note": "",
+      "team": "Pocket Agents",
       "kind": "claim",
-      "teamId": "substation"
-    },
-    {
-      "date": "2026-09-02",
-      "player": "Troy Dye",
-      "amount": 3,
-      "team": "Eagle Ridge Eddies",
-      "note": "",
-      "kind": "claim",
-      "teamId": "eddies"
+      "teamId": "pocket",
+      "dropped": "Michael Mayer",
+      "pos": "WR",
+      "note": ""
     },
     {
       "date": "2026-09-06",
       "player": "Makai Lemon",
       "amount": 2,
       "team": "Mrs. Doubtpfizer",
+      "kind": "claim",
+      "teamId": "doubtpfizer",
       "dropped": "Amani Hooker",
       "pos": "WR/PHI",
-      "kind": "claim",
-      "teamId": "doubtpfizer"
+      "note": ""
     },
     {
-      "date": "2026-09-10",
-      "player": "Barion Brown",
-      "amount": 3,
-      "team": "Pocket Agents",
-      "dropped": "Michael Mayer",
-      "pos": "WR",
+      "date": "2026-09-02",
+      "player": "Kendal Daniels",
+      "amount": 11,
+      "team": "The Hypersecretors",
       "kind": "claim",
-      "teamId": "pocket"
+      "teamId": "hyper",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Henry To'oTo'o",
+      "amount": 7,
+      "team": "Eagle Ridge Eddies",
+      "kind": "claim",
+      "teamId": "eddies",
+      "dropped": "Christian Harris",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Evan Williams",
+      "amount": 6,
+      "team": "Towner Top Aga Bottom",
+      "kind": "claim",
+      "teamId": "ttab",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Cole Bishop",
+      "amount": 6,
+      "team": "Towner Top Aga Bottom",
+      "kind": "claim",
+      "teamId": "ttab",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Chris Rodriguez Jr.",
+      "amount": 5,
+      "team": "Drummond Dongers",
+      "kind": "claim",
+      "teamId": "dongers",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Josh Metellus",
+      "amount": 5,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Jack Gibbens",
+      "amount": 4,
+      "team": "The Hypersecretors",
+      "kind": "claim",
+      "teamId": "hyper",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Jordan Love",
+      "amount": 3,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Kayshon Boutte",
+      "amount": 3,
+      "team": "Drummond Dongers",
+      "kind": "claim",
+      "teamId": "dongers",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Troy Dye",
+      "amount": 3,
+      "team": "Eagle Ridge Eddies",
+      "kind": "claim",
+      "teamId": "eddies",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Dante Trader",
+      "amount": 2,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Antonio Johnson",
+      "amount": 2,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Josh Hines-Allen",
+      "amount": 2,
+      "team": "The Hypersecretors",
+      "kind": "claim",
+      "teamId": "hyper",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Dane Belton",
+      "amount": 2,
+      "team": "Pocket Agents",
+      "kind": "claim",
+      "teamId": "pocket",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Cody Simon",
+      "amount": 1,
+      "team": "Indian Trail Slumlords",
+      "kind": "claim",
+      "teamId": "slumlords",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Teddye Buchanan",
+      "amount": 1,
+      "team": "Ultron",
+      "kind": "claim",
+      "teamId": "ultron",
+      "note": ""
+    },
+    {
+      "date": "2026-09-02",
+      "player": "Dalton Schultz",
+      "amount": 1,
+      "team": "Indian Trail Slumlords",
+      "kind": "claim",
+      "teamId": "slumlords",
+      "note": ""
     }
   ],
   "trades": [
@@ -350,5 +424,6 @@
       "official": false,
       "kind": "trade"
     }
-  ]
+  ],
+  "incomplete": false
 }

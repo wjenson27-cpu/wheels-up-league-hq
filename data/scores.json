@@ -2,8 +2,8 @@
   "updated": "2026-09-12",
   "asOf": "2026-09-12",
   "week": 1,
-  "source": "Fantrax Live Scoring ad-hoc scrape (Chief/Bill PR redo)",
-  "note": "Players left/played from Fantrax visible counts. homeRemainingProj/awayRemainingProj are Fantrax stock totals \u2014 DO NOT use for HQ power rankings (Bill: Fantrax IDP projs bad). Chief applies HQ/custom proj logic.",
+  "source": "Fantrax 6am scrape Sep 12 2026 PT",
+  "note": "Players left from Fantrax. homeRemainingProj/awayRemainingProj are Fantrax stock totals \u2014 DO NOT use for HQ power rankings (Bill: Fantrax IDP projs bad). Scores unchanged vs prior ad-hoc (Eddies 83\u201372).",
   "matchups": [
     {
       "home": "Eagle Ridge Eddies",
@@ -14,8 +14,8 @@
       "awayPlayersLeft": 10,
       "homePlayersPlayed": 3,
       "awayPlayersPlayed": 4,
-      "homeRemainingProj": 177.38,
-      "awayRemainingProj": 177.33,
+      "homeRemainingProj": 177.52,
+      "awayRemainingProj": 177.32,
       "status": "live"
     },
     {
@@ -27,8 +27,8 @@
       "awayPlayersLeft": 13,
       "homePlayersPlayed": 3,
       "awayPlayersPlayed": 1,
-      "homeRemainingProj": 168.23,
-      "awayRemainingProj": 192.41,
+      "homeRemainingProj": 168.15,
+      "awayRemainingProj": 191.54,
       "status": "live"
     },
     {
@@ -40,8 +40,8 @@
       "awayPlayersLeft": 12,
       "homePlayersPlayed": 3,
       "awayPlayersPlayed": 2,
-      "homeRemainingProj": 195.35,
-      "awayRemainingProj": 184.74,
+      "homeRemainingProj": 196.61,
+      "awayRemainingProj": 184.83,
       "status": "live"
     },
     {
@@ -53,8 +53,8 @@
       "awayPlayersLeft": 10,
       "homePlayersPlayed": 2,
       "awayPlayersPlayed": 4,
-      "homeRemainingProj": 191.4,
-      "awayRemainingProj": 194.12,
+      "homeRemainingProj": 191.25,
+      "awayRemainingProj": 194.1,
       "status": "live"
     },
     {
@@ -66,8 +66,8 @@
       "awayPlayersLeft": 14,
       "homePlayersPlayed": 0,
       "awayPlayersPlayed": 0,
-      "homeRemainingProj": 189.62,
-      "awayRemainingProj": 196.36,
+      "homeRemainingProj": 189.61,
+      "awayRemainingProj": 197.66,
       "status": "scheduled"
     },
     {
@@ -79,8 +79,8 @@
       "awayPlayersLeft": 12,
       "homePlayersPlayed": 0,
       "awayPlayersPlayed": 2,
-      "homeRemainingProj": 195.22,
-      "awayRemainingProj": 194.69,
+      "homeRemainingProj": 195.05,
+      "awayRemainingProj": 195.78,
       "status": "live"
     },
     {
@@ -92,8 +92,8 @@
       "awayPlayersLeft": 13,
       "homePlayersPlayed": 2,
       "awayPlayersPlayed": 1,
-      "homeRemainingProj": 176.65,
-      "awayRemainingProj": 166.32,
+      "homeRemainingProj": 176.68,
+      "awayRemainingProj": 166.1,
       "status": "live"
     }
   ]
