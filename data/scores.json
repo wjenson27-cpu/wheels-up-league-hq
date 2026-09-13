@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-12",
-  "asOf": "2026-09-12",
+  "updated": "2026-09-13",
+  "asOf": "2026-09-13",
   "week": 1,
-  "source": "Fantrax 6am scrape Sep 12 2026 PT",
-  "note": "Players left from Fantrax. homeRemainingProj/awayRemainingProj are Fantrax stock totals \u2014 DO NOT use for HQ power rankings (Bill: Fantrax IDP projs bad). Scores unchanged vs prior ad-hoc (Eddies 83\u201372).",
+  "source": "Fantrax 6am scrape Sep 13 2026 PT",
+  "note": "Wire: Substation +Mooney \u2212Dart (Sep 12). Eddies still 83\u201372 vs Saltese; Sunday slate not kicked at scrape. Fantrax stock remaining projs left as-is (Bill: IDP projs bad for rankings).",
   "matchups": [
     {
       "home": "Eagle Ridge Eddies",

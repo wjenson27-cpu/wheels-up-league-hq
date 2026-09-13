@@ -1,7 +1,13 @@
 {
-  "updated": "2026-09-12",
-  "source": "Fantrax 6am scrape Sep 12 2026 PT",
+  "updated": "2026-09-13",
+  "source": "Fantrax 6am scrape Sep 13 2026 PT",
   "items": [
+    {
+      "date": "2026-09-12",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Darnell Mooney (WR); dropped Jaxson Dart (QB) (1:11 PM PDT)"
+    },
     {
       "date": "2026-09-11",
       "type": "ADD/DROP",

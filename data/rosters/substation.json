@@ -2,12 +2,11 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-09-11",
+  "asOf": "2026-09-13",
   "faabLeft": 83,
-  "startingQB": "Jaxson Dart",
+  "startingQB": "Bo Nix",
   "roster": {
     "QB": [
-      "Jaxson Dart",
       "Bo Nix",
       "Brock Purdy"
     ],
@@ -20,7 +19,8 @@
     "WR": [
       "Terry McLaurin",
       "Malik Nabers",
-      "Alec Pierce"
+      "Alec Pierce",
+      "Darnell Mooney"
     ],
     "TE": [
       "Sam LaPorta",
@@ -49,13 +49,13 @@
       "Nick Emmanwori"
     ]
   },
-  "notes": "Acquired Bo Nix; Love dropped.",
+  "notes": "Sep 13 6am: +Darnell Mooney \u2212Jaxson Dart (Sep 12 1:11 PM). FAAB $83.",
   "injuryFlags": [
     "Malik Nabers",
     "Brian Branch",
     "DeShon Elliott",
     "Nick Emmanwori OUT"
   ],
-  "source": "Fantrax",
+  "source": "Fantrax 6am scrape Sep 13 2026 PT",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5"
 }
