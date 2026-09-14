@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-12",
+  "asOf": "2026-09-14",
   "faabLeft": 105,
   "roster": {
     "QB": [
@@ -68,17 +68,18 @@
     "Julian Love",
     "Denzel Perryman"
   ],
-  "notes": "Sep 12 6am: +James Williams \u2212Troy Dye still latest Eddies move (Sep 11). Warren injury marker but active TE. No names under Inj Res (Charbonnet/Tyson/Perryman/JCM on reserve). Bowers on bench. W1 live 83\u201372 vs Saltese (11 left). FAAB $105.",
-  "source": "Fantrax 6am scrape Sep 12 2026 PT",
+  "notes": "Sep 14 6am: no newer Eddies adds/drops after Sep 11 +James Williams \u2212Troy Dye. W1 FINAL loss 241\u2013255 at Saltese. FAAB $105. Bowers OUT; To'oTo'o injured but in an active slot; Warren clear (news icon only).",
+  "source": "Fantrax 6am scrape Sep 14 2026 PT",
   "week1": {
     "opponent": "Saltese Slamm",
-    "score": "83-72 leading",
-    "home": true,
-    "playersLeft": 11,
-    "oppPlayersLeft": 10
+    "score": "241-255 FINAL loss",
+    "home": false,
+    "playersLeft": 0,
+    "oppPlayersLeft": 0
   },
   "lineupFlags": [
-    "Tyler Warren injury/news marker (still active)",
-    "Brock Bowers on bench"
+    "Brock Bowers OUT",
+    "Henry To'oTo'o injured in an active slot",
+    "Tyler Warren clear (no injury icon)"
   ]
 }

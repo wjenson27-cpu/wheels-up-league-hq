@@ -1,7 +1,25 @@
 {
-  "updated": "2026-09-13",
-  "source": "Fantrax 6am scrape Sep 13 2026 PT",
+  "updated": "2026-09-14",
+  "source": "Fantrax 6am scrape Sep 14 2026 PT",
   "items": [
+    {
+      "date": "2026-09-13",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Justin Strnad; dropped Darnell Mooney (4:52 PM PDT)"
+    },
+    {
+      "date": "2026-09-13",
+      "type": "ADD/DROP",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Added Jaelan Phillips; dropped Paulson Adebo (8:58 AM PDT)"
+    },
+    {
+      "date": "2026-09-13",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Darnell Mooney; dropped Trenton Simpson (8:32 AM PDT)"
+    },
     {
       "date": "2026-09-12",
       "type": "ADD/DROP",
