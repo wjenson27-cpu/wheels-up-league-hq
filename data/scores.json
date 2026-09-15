@@ -1,9 +1,30 @@
 {
-  "updated": "2026-09-14",
-  "asOf": "2026-09-14",
+  "updated": "2026-09-15",
+  "asOf": "2026-09-15",
   "week": 1,
-  "source": "Fantrax",
-  "note": "Week 1 Mon AM: Eddies\u2013Saltese FINAL 241\u2013255 (Eddies loss, Saltese home). Other matchups still open/live on Fantrax (MNF/window).",
+  "weekStatus": "final",
+  "complete": true,
+  "source": "Fantrax Week 1 Results post-MNF scrape Sep 15",
+  "note": "All 14 clubs locked after Monday. Kitty TTAB 315 (unchanged). Survivor lowest: Slumlords 176.5 (was 164.5; still eliminated). Hyper FLIPPED to beat Dongers 259.5\u2013246.5.",
+  "kitty": {
+    "team": "TTAB",
+    "teamFull": "Towner Top Aga Bottom",
+    "teamId": "ttab",
+    "score": 315
+  },
+  "survivorLowest": {
+    "team": "Indian Trail Slumlords",
+    "teamId": "slumlords",
+    "score": 176.5
+  },
+  "mondayMovers": [
+    "Morningside 258.5\u2013237 Doubtpfizer (was 246\u2013199)",
+    "Goats 254\u2013221 Newman (was 229\u2013221)",
+    "LAB 246\u2013216.5 Pocket (was 246\u2013215.5)",
+    "Hyper 259.5\u2013246.5 Dongers FLIP (was 202.5\u2013246.5 L)",
+    "TTAB 315\u2013176.5 Slumlords (was 315\u2013164.5)",
+    "Substation 193\u2013180 Ultron (was 188\u2013180)"
+  ],
   "matchups": [
     {
       "home": "Saltese Slamm",
@@ -12,67 +33,61 @@
       "awayScore": 241,
       "status": "final",
       "winner": "Saltese Slamm",
-      "notes": "FINAL \u2014 Eagle Ridge Eddies 241, Saltese Slamm 255"
+      "notes": "FINAL \u2014 Eddies 241, Saltese 255 (unchanged post-MNF)"
     },
     {
       "home": "Mrs. Doubtpfizer",
       "away": "Morningside Muff Divers",
-      "homeScore": 199,
-      "awayScore": 246,
-      "status": "live",
-      "homeProj": 228.72,
-      "awayProj": 259.09,
-      "notes": "live/open; player tokens 13/12, 0/0, 1/2; timer 60/120; win% 96/4"
+      "homeScore": 237,
+      "awayScore": 258.5,
+      "status": "final",
+      "winner": "Morningside Muff Divers",
+      "notes": "FINAL post-MNF \u2014 was 246-199; now Divers 258.5, Doubtpfizer 237"
     },
     {
       "home": "Valley Old Goats",
       "away": "Newman Lake Sleep Paralysis Demons",
-      "homeScore": 229,
+      "homeScore": 254,
       "awayScore": 221,
-      "status": "live",
-      "homeProj": 247.16,
-      "awayProj": 221,
-      "notes": "live/open; player tokens 14/13, 0/0, 0/1; timer 0/60; win% 3/97"
+      "status": "final",
+      "winner": "Valley Old Goats",
+      "notes": "FINAL post-MNF \u2014 was 229-221; Goats now 254"
     },
     {
       "home": "Little Ass Boys",
       "away": "Pocket Agents",
       "homeScore": 246,
-      "awayScore": 215.5,
-      "status": "live",
-      "homeProj": 246,
-      "awayProj": 227.1,
-      "notes": "live/open; player tokens 13/14, 0/0, 1/0; timer 60/0; win% 4/96"
+      "awayScore": 216.5,
+      "status": "final",
+      "winner": "Little Ass Boys",
+      "notes": "FINAL post-MNF \u2014 Pocket 216.5 (was 215.5); LAB 246 unchanged"
     },
     {
       "home": "Drummond Dongers",
       "away": "The Hypersecretors",
       "homeScore": 246.5,
-      "awayScore": 202.5,
-      "status": "live",
-      "homeProj": 246.5,
-      "awayProj": 237.03,
-      "notes": "live/open; player tokens 12/14, 0/0, 2/0; timer 120/0; win% 23/77"
+      "awayScore": 259.5,
+      "status": "final",
+      "winner": "The Hypersecretors",
+      "notes": "FINAL post-MNF FLIP \u2014 was Hyper 202.5\u2013Dongers 246.5 LOSS; now Hyper 259.5 WIN"
     },
     {
       "home": "Indian Trail Slumlords",
       "away": "Towner Top Aga Bottom",
-      "homeScore": 164.5,
+      "homeScore": 176.5,
       "awayScore": 315,
-      "status": "live",
-      "homeProj": 180.11,
-      "awayProj": 315,
-      "notes": "live/open; player tokens 14/13, 0/0, 0/1; timer 0/60; win% 100/0"
+      "status": "final",
+      "winner": "Towner Top Aga Bottom",
+      "notes": "FINAL post-MNF \u2014 TTAB 315 unchanged; Slumlords 176.5 (was 164.5)"
     },
     {
       "home": "Substation",
       "away": "Ultron",
-      "homeScore": 188,
+      "homeScore": 193,
       "awayScore": 180,
-      "status": "live",
-      "homeProj": 205.74,
-      "awayProj": 180,
-      "notes": "live/open; player tokens 14/13, 0/0, 0/1; timer 0/60; win% 2/98"
+      "status": "final",
+      "winner": "Substation",
+      "notes": "FINAL post-MNF \u2014 Sub 193 (was 188); Ultron 180 unchanged"
     }
   ]
 }
