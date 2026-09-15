@@ -8,6 +8,7 @@
     { href: "td-parlay.html", label: "TD Parlay" },
     { href: "recap.html", label: "Recap" },
     { href: "rankings.html", label: "Rankings" },
+    { href: "awards.html", label: "Awards" },
     { href: "history.html", label: "History" },
     { href: "podcast.html", label: "Podcast" },
     { href: "scoring.html", label: "Scoring" }
@@ -73,7 +74,11 @@
     if (teamColors) return teamColors;
     try {
       const data = await loadJSON("data/teams.json");
-      teamColors = Object.fromEntries((data.teams || []).map((t) => [t.id, t]));
+      teamColors = Object.fromEntries((data.teams || []).map((t) => {
+        const copy = Object.assign({}, t);
+        if (!copy.logo && copy.id) copy.logo = "img/logos/" + copy.id + ".jpg";
+        return [t.id, copy];
+      }));
     } catch (e) {
       teamColors = {};
     }

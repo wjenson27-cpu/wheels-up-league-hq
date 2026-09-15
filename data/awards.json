@@ -55,7 +55,7 @@
         "score": 176.5,
         "aliveBefore": 14,
         "aliveAfter": 13,
-        "note": "Lowest Week 1 final score (post-MNF 176.5) \u2014 off the bus"
+        "note": "Lowest Week 1 final score (post-MNF 176.5) — off the bus"
       }
     ]
   },
@@ -74,7 +74,7 @@
           "teamId": "ttab",
           "team": "Towner Top Aga Bottom",
           "value": "1-0",
-          "valueLabel": "1-0 \u00b7 315.0 PF",
+          "valueLabel": "1-0 · 315.0 PF",
           "teamShort": "TTAB"
         },
         {
@@ -82,17 +82,17 @@
           "teamId": "hyper",
           "team": "The Hypersecretors",
           "value": "1-0",
-          "valueLabel": "1-0 \u00b7 259.5 PF"
+          "valueLabel": "1-0 · 259.5 PF"
         },
         {
           "rank": 3,
           "teamId": "morningside",
           "team": "Morningside Muff Divers",
           "value": "1-0",
-          "valueLabel": "1-0 \u00b7 258.5 PF"
+          "valueLabel": "1-0 · 258.5 PF"
         }
       ],
-      "note": "Live after Week 1 \u00b7 locks at season end"
+      "note": "Live after Week 1 · locks at season end"
     },
     "topPoints": {
       "key": "topPoints",
@@ -126,7 +126,7 @@
           "valueLabel": "258.5"
         }
       ],
-      "note": "Live season PF \u00b7 locks at season end"
+      "note": "Live season PF · locks at season end"
     },
     "topOffensivePlayer": {
       "key": "topOffensivePlayer",
@@ -138,7 +138,7 @@
       "team": null,
       "value": null,
       "leaders": [],
-      "note": "Top 3 offense \u2014 needs Fantrax player totals (Eddie)"
+      "note": "Top 3 offense — needs Fantrax player totals (Eddie)"
     },
     "topDefensivePlayer": {
       "key": "topDefensivePlayer",
@@ -150,7 +150,7 @@
       "team": null,
       "value": null,
       "leaders": [],
-      "note": "Top 3 IDP \u2014 needs Fantrax player totals (Eddie)"
+      "note": "Top 3 IDP — needs Fantrax player totals (Eddie)"
     }
   },
   "weekScores": {
@@ -161,19 +161,29 @@
         "score": 315.0
       },
       {
+        "teamId": "hyper",
+        "team": "The Hypersecretors",
+        "score": 259.5
+      },
+      {
+        "teamId": "morningside",
+        "team": "Morningside Muff Divers",
+        "score": 258.5
+      },
+      {
         "teamId": "saltese",
         "team": "Saltese Slamm",
         "score": 255.0
       },
       {
+        "teamId": "goats",
+        "team": "Valley Old Goats",
+        "score": 254.0
+      },
+      {
         "teamId": "dongers",
         "team": "Drummond Dongers",
         "score": 246.5
-      },
-      {
-        "teamId": "morningside",
-        "team": "Morningside Muff Divers",
-        "score": 246.0
       },
       {
         "teamId": "lab",
@@ -186,9 +196,9 @@
         "score": 241.0
       },
       {
-        "teamId": "goats",
-        "team": "Valley Old Goats",
-        "score": 229.0
+        "teamId": "doubtpfizer",
+        "team": "Mrs. Doubtpfizer",
+        "score": 237.0
       },
       {
         "teamId": "newman",
@@ -198,22 +208,12 @@
       {
         "teamId": "pocket",
         "team": "Pocket Agents",
-        "score": 215.5
-      },
-      {
-        "teamId": "hyper",
-        "team": "The Hypersecretors",
-        "score": 202.5
-      },
-      {
-        "teamId": "doubtpfizer",
-        "team": "Mrs. Doubtpfizer",
-        "score": 199.0
+        "score": 216.5
       },
       {
         "teamId": "substation",
         "team": "Substation",
-        "score": 188.0
+        "score": 193.0
       },
       {
         "teamId": "ultron",
@@ -223,7 +223,7 @@
       {
         "teamId": "slumlords",
         "team": "Indian Trail Slumlords",
-        "score": 164.5
+        "score": 176.5
       }
     ]
   }

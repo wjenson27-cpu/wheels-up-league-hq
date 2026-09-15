@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Awards &amp; Survivor — Wheels Up Collective</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow" id="awardsEyebrow">Season 2026</span>
+      <h1>Awards &amp; Survivor</h1>
+      <p class="lede">Weekly kitty, League Survivor (off the bus), and season award trackers.</p>
+    </header>
+
+    <section class="card awards-rules" style="margin-bottom:1.25rem">
+      <h2 style="font-size:1.05rem;margin:0 0 0.5rem">How it works</h2>
+      <ul class="awards-rules-list" id="rulesList">
+        <li><strong>Weekly kitty</strong> — highest final score that week takes the pot.</li>
+        <li><strong>League Survivor</strong> — lowest score among teams still alive is kicked off the bus.</li>
+        <li><strong>Yearly awards</strong> — top record, top points, top offensive &amp; defensive players lock at season end.</li>
+      </ul>
+    </section>
+
+    <div class="grid grid-2" style="margin-bottom:1.25rem">
+      <article class="card award-spotlight kitty-spot" id="latestKitty">
+        <span class="eyebrow">Latest kitty</span>
+        <p class="muted mb-0">Loading…</p>
+      </article>
+      <article class="card award-spotlight bus-spot" id="latestBus">
+        <span class="eyebrow">Off the bus</span>
+        <p class="muted mb-0">Loading…</p>
+      </article>
+    </div>
+
+    <section class="card" style="margin-bottom:1.25rem">
+      <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Weekly kitty winners</h2>
+      <p class="muted" style="margin:0 0 0.75rem">Top score each week wins the kitty.</p>
+      <div class="trade-board" id="kittyBoard"><p class="muted">Loading…</p></div>
+    </section>
+
+    <section class="card" style="margin-bottom:1.25rem">
+      <h2 style="font-size:1.05rem;margin:0 0 0.75rem">League Survivor</h2>
+      <p class="muted" style="margin:0 0 0.75rem" id="survivorLede">Lowest scoring team still alive — off the bus.</p>
+      <div class="survivor-alive" id="survivorAlive"></div>
+      <div class="trade-board" id="survivorBoard" style="margin-top:1rem"><p class="muted">Loading…</p></div>
+    </section>
+
+    <section class="card">
+      <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Yearly awards</h2>
+      <p class="muted" style="margin:0 0 0.75rem">Live top 3 for each award. Locks at season end.</p>
+      <div class="grid grid-2" id="yearlyGrid"></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        await WUC.loadTeamColors();
+        const data = await WUC.loadJSON("data/awards.json");
+        const season = data.season || (window.WUC_CONFIG || {}).season || "";
+        document.getElementById("awardsEyebrow").textContent = `Season ${season}`;
+
+        const kitty = [...(data.weeklyKitty || [])].filter((w) => w.status === "final");
+        const latest = kitty.length ? kitty[kitty.length - 1] : null;
+        const elim = [...((data.survivor && data.survivor.eliminations) || [])].filter((e) => e.status === "final");
+        const latestElim = elim.length ? elim[elim.length - 1] : null;
+
+        const kittyEl = document.getElementById("latestKitty");
+        if (latest) {
+          kittyEl.innerHTML = `
+            <span class="eyebrow">Week ${latest.week} kitty</span>
+            <div class="award-hero team-inline">
+              ${WUC.teamMark(latest.winnerTeamId, { size: "lg" })}
+              <div>
+                <h2 class="award-hero-name">${WUC.escapeHtml((latest.winnerTeamId === "ttab" || (latest.winner || "").includes("Towner Top")) ? "TTAB" : (latest.winner || "—"))}</h2>
+                <p class="award-hero-score hot">${Number(latest.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</p>
+              </div>
+            </div>`;
+        } else {
+          kittyEl.innerHTML = `<span class="eyebrow">Latest kitty</span><p class="muted mb-0">No weekly winner yet.</p>`;
+        }
+
+        const busEl = document.getElementById("latestBus");
+        if (latestElim) {
+          busEl.innerHTML = `
+            <span class="eyebrow">Week ${latestElim.week} · off the bus</span>
+            <div class="award-hero team-inline">
+              ${WUC.teamMark(latestElim.teamId, { size: "lg" })}
+              <div>
+                <h2 class="award-hero-name">${WUC.escapeHtml(latestElim.team || "—")}</h2>
+                <p class="award-hero-score bus-score">${Number(latestElim.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</p>
+              </div>
+            </div>`;
+        } else {
+          busEl.innerHTML = `<span class="eyebrow">Off the bus</span><p class="muted mb-0">Nobody kicked yet.</p>`;
+        }
+
+        document.getElementById("kittyBoard").innerHTML = kitty.length ? `
+          <table class="trade-table" aria-label="Weekly kitty winners">
+            <thead>
+              <tr>
+                <th class="col-rank">Week</th>
+                <th class="col-team">Winner</th>
+                <th class="col-trades">Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${kitty.map((w) => `
+                <tr class="hot">
+                  <td class="col-rank">${w.week}</td>
+                  <td class="col-team"><span class="team-inline">${WUC.teamMark(w.winnerTeamId, { size: "sm" })}<span>${WUC.escapeHtml(w.winner || "—")}</span></span></td>
+                  <td class="col-trades">${Number(w.score).toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
+                </tr>`).join("")}
+            </tbody>
+          </table>` : `<p class="muted">No kitty winners yet.</p>`;
+
+        const aliveIds = (data.survivor && data.survivor.aliveTeamIds) || [];
+        document.getElementById("survivorLede").textContent =
+          `${aliveIds.length} teams still on the bus · ${elim.length} eliminated.`;
+        document.getElementById("survivorAlive").innerHTML = aliveIds.length
+          ? `<div class="survivor-chips">${aliveIds.map((id) => {
+              const t = WUC.getTeam(id) || {};
+              return `<span class="survivor-chip team-inline" title="${WUC.escapeHtml(t.name || id)}">${WUC.teamMark(id, { size: "sm" })}<span>${WUC.escapeHtml(t.abbrev || id)}</span></span>`;
+            }).join("")}</div>`
+          : "";
+
+        document.getElementById("survivorBoard").innerHTML = elim.length ? `
+          <table class="trade-table" aria-label="Survivor eliminations">
+            <thead>
+              <tr>
+                <th class="col-rank">Week</th>
+                <th class="col-team">Off the bus</th>
+                <th class="col-trades">Score</th>
+                <th class="col-owner">Left</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${elim.map((e) => `
+                <tr>
+                  <td class="col-rank">${e.week}</td>
+                  <td class="col-team"><span class="team-inline">${WUC.teamMark(e.teamId, { size: "sm" })}<span>${WUC.escapeHtml(e.team || "—")}</span></span></td>
+                  <td class="col-trades">${Number(e.score).toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
+                  <td class="col-owner">${e.aliveAfter != null ? e.aliveAfter : "—"}</td>
+                </tr>`).join("")}
+            </tbody>
+          </table>` : `<p class="muted">No eliminations yet — all 14 start alive.</p>`;
+
+        const yearly = data.yearly || {};
+        const order = ["topRecord", "topPoints", "topOffensivePlayer", "topDefensivePlayer"];
+        document.getElementById("yearlyGrid").innerHTML = order.map((key) => {
+          const a = yearly[key] || { label: key, status: "tbd", leaders: [] };
+          const isPlayer = key.includes("Player");
+          const status = (a.status || "tbd").toLowerCase();
+          const leaders = Array.isArray(a.leaders) ? a.leaders.slice(0, a.trackTop || 3) : [];
+          let body;
+          if (leaders.length) {
+            body = `<ol class="award-podium">` + leaders.map((L) => {
+              const name = isPlayer ? (L.player || L.teamShort || L.team || "—") : (L.teamShort || (L.teamId === "ttab" ? "TTAB" : (L.team || "—")));
+              const meta = L.valueLabel || (L.value != null ? String(L.value) : "");
+              return `<li class="podium-row rank-${L.rank || ""}">
+                <span class="podium-rank">${L.rank || ""}</span>
+                ${L.teamId ? WUC.teamMark(L.teamId, { size: "sm" }) : "<span class=\"podium-spacer\"></span>"}
+                <div class="podium-meta">
+                  <div class="podium-name">${WUC.escapeHtml(name)}</div>
+                  ${meta ? `<div class="podium-val">${WUC.escapeHtml(meta)}</div>` : ""}
+                  ${isPlayer && L.team ? `<div class="muted" style="font-size:0.75rem">${WUC.escapeHtml(L.team)}</div>` : ""}
+                </div>
+              </li>`;
+            }).join("") + `</ol>
+            <p class="muted mb-0" style="font-size:0.8rem;margin-top:0.65rem">${WUC.escapeHtml(a.note || (status === "final" ? "Final" : "Live · locks at season end"))}</p>`;
+          } else {
+            body = `<div class="yearly-tbd">TBD · top 3</div><p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(a.note || "Season still in progress")}</p>`;
+          }
+          return `
+            <article class="yearly-card">
+              <span class="eyebrow">${WUC.escapeHtml(a.label || key)} · top 3</span>
+              ${body}
+            </article>`;
+        }).join("");
+      } catch (e) {
+        console.error(e);
+        document.getElementById("kittyBoard").innerHTML = `<p class="muted">Couldn’t load awards.</p>`;
+      }
+    });
+  </script>
+</body>
+</html>

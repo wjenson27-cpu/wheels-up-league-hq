@@ -14,12 +14,12 @@
   <div id="site-nav"></div>
   <main class="wrap">
     <section class="pulse-banner">
-      <span class="eyebrow">Season 2026 · Week 1 pulse</span>
+      <span class="eyebrow">Season 2026 · Week 1 final</span>
       <h1>Wheels Up Collective</h1>
       <p class="tagline">14-team <strong>IDP</strong> on Fantrax · Full PPR + <strong>TE premium</strong>. Draft locked Aug 30. Commish: <strong>Luke Sahlberg (ThiccSwede)</strong>. <strong>WWJDD</strong>.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://www.fantrax.com/fantasy/league/hms8onqvmsb3ulsx/home" target="_blank" rel="noopener">Open Fantrax</a>
-        <a class="btn btn-teal" href="podcast.html">Podcast</a>
+        <a class="btn btn-teal" href="awards.html">Awards</a>
         <a class="btn btn-ghost" href="rankings.html">Power rankings</a>
       </div>
     </section>
@@ -57,6 +57,15 @@
       <p class="mt-1"><a href="rankings.html">See all 14 →</a></p>
     </section>
   </main>
+
+  <div id="weekRecapOverlay" class="week-recap-overlay" hidden aria-hidden="true">
+    <div class="week-recap-panel" role="dialog" aria-modal="true" aria-labelledby="weekRecapTitle">
+      <button type="button" class="week-recap-close" id="weekRecapClose" aria-label="Dismiss">×</button>
+      <div class="week-recap-stage" id="weekRecapStage"></div>
+      <div class="week-recap-dots" id="weekRecapDots" aria-hidden="true"></div>
+      <p class="week-recap-hint muted">Tap anywhere or press Esc to dismiss</p>
+    </div>
+  </div>
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
@@ -64,10 +73,12 @@
     document.addEventListener("DOMContentLoaded", async () => {
       try {
         await WUC.loadTeamColors();
-        const [trades, teamsData, ranks] = await Promise.all([
+        const [trades, teamsData, ranks, scores, awards] = await Promise.all([
           WUC.loadJSON("data/trades.json"),
           WUC.loadJSON("data/teams.json"),
-          WUC.loadJSON("data/rankings.json")
+          WUC.loadJSON("data/rankings.json"),
+          WUC.loadJSON("data/scores.json").catch(() => null),
+          WUC.loadJSON("data/awards.json").catch(() => null)
         ]);
 
         const board = document.getElementById("tradeBoard");
@@ -141,11 +152,183 @@
         document.getElementById("topBoard").innerHTML = top.map(r =>
           `<li class="team-inline" style="margin-bottom:0.35rem">${WUC.teamMark(r.teamId, { size: "sm" })}<span><strong style="color:var(--text)">#${r.rank} ${WUC.escapeHtml(r.team)}</strong> — ${WUC.escapeHtml(r.blurb)}</span></li>`
         ).join("");
+
+        // Week slate from live scores when available
+        if (scores && Array.isArray(scores.matchups) && scores.matchups.length) {
+          const weekNum = scores.week || 1;
+          const weekDone = scores.weekStatus === "final" || scores.complete === true
+            || scores.matchups.every((m) => String(m.status || "").toLowerCase() === "final");
+          const mu = document.getElementById("matchupList");
+          const slateTitle = document.querySelector("#matchupList")?.closest("article")?.querySelector("h2");
+          if (slateTitle) slateTitle.textContent = weekDone ? `Week ${weekNum} final` : `Week ${weekNum} slate`;
+          mu.innerHTML = `<ul class="home-matchups">${scores.matchups.map((m) => {
+            const hs = Number(m.homeScore);
+            const as = Number(m.awayScore);
+            const st = String(m.status || "").toLowerCase();
+            const tag = st === "final" ? "FINAL" : (st === "live" ? "LIVE" : st.toUpperCase() || "");
+            return `<li><span class="mu-line"><strong>${WUC.escapeHtml(m.away)}</strong> ${as.toLocaleString(undefined,{maximumFractionDigits:1})} @ <strong>${WUC.escapeHtml(m.home)}</strong> ${hs.toLocaleString(undefined,{maximumFractionDigits:1})}</span>${tag ? ` <span class="mu-tag">${tag}</span>` : ""}</li>`;
+          }).join("")}</ul>`;
+
+          const pills = document.getElementById("homeStats");
+          if (pills && weekDone) {
+            const last = pills.querySelector(".stat-pill:last-child");
+            if (last) last.innerHTML = `Week ${weekNum} <strong class="hot">FINAL</strong>`;
+          }
+
+          runWeekRecapOverlay(scores, awards, weekNum, weekDone);
+        }
       } catch (e) {
         console.error(e);
         document.getElementById("tradeBoard").innerHTML = `<p class="muted">Couldn’t load trade leaderboard.</p>`;
       }
     });
+
+    function runWeekRecapOverlay(scores, awards, weekNum, weekDone) {
+      if (!weekDone) return;
+      const storageKey = `wuc-week-recap-dismissed-w${weekNum}`;
+      try {
+        const forcePreview = new URLSearchParams(location.search).has("preview");
+        if (!forcePreview && sessionStorage.getItem(storageKey) === "1") return;
+      } catch (_) {}
+
+      let kitty = null;
+      let bus = null;
+      if (awards) {
+        const k = (awards.weeklyKitty || []).find((w) => Number(w.week) === Number(weekNum) && w.status === "final");
+        const e = ((awards.survivor && awards.survivor.eliminations) || []).find((x) => Number(x.week) === Number(weekNum) && x.status === "final");
+        if (k) kitty = k;
+        if (e) bus = e;
+      }
+      // Fallback: derive from scores if awards missing
+      if ((!kitty || !bus) && scores && scores.matchups) {
+        const rows = [];
+        for (const m of scores.matchups) {
+          rows.push({ name: m.home, score: Number(m.homeScore) });
+          rows.push({ name: m.away, score: Number(m.awayScore) });
+        }
+        rows.sort((a, b) => b.score - a.score);
+        if (!kitty && rows.length) {
+          const top = rows[0];
+          const t = Object.values(WUC.teamColors || {}).find((x) => x.name === top.name);
+          kitty = { week: weekNum, winner: top.name, winnerTeamId: t && t.id, score: top.score };
+        }
+        if (!bus && rows.length) {
+          const low = rows[rows.length - 1];
+          const t = Object.values(WUC.teamColors || {}).find((x) => x.name === low.name);
+          bus = { week: weekNum, team: low.name, teamId: t && t.id, score: low.score };
+        }
+      }
+      if (!kitty && !bus) return;
+
+      const overlay = document.getElementById("weekRecapOverlay");
+      const stage = document.getElementById("weekRecapStage");
+      const dots = document.getElementById("weekRecapDots");
+      if (!overlay || !stage) return;
+
+      const slides = [];
+      if (kitty) {
+        slides.push({
+          kind: "kitty",
+          html: `
+            <span class="eyebrow">Week ${weekNum} · Weekly kitty</span>
+            <h2 id="weekRecapTitle" class="week-recap-title">Takes the pot</h2>
+            <div class="week-recap-hero team-inline">
+              ${WUC.teamMark(kitty.winnerTeamId, { size: "lg" })}
+              <div>
+                <div class="week-recap-name">${WUC.escapeHtml((kitty.winnerTeamId === "ttab" || (kitty.winner || "").includes("Towner Top")) ? "TTAB" : (kitty.winner || "—"))}</div>
+                <div class="week-recap-score hot">${Number(kitty.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</div>
+              </div>
+            </div>
+            <div class="kitty-scene" aria-hidden="true">
+              <img class="money-bag" src="img/money-bag.png" alt="" />
+              <img class="kitty-cat" src="img/kitty-cat.png" alt="" />
+              <div class="kitty-sparkle s1">✦</div>
+              <div class="kitty-sparkle s2">✦</div>
+              <div class="kitty-sparkle s3">$</div>
+            </div>
+            <p class="week-recap-sub muted">Highest final score of the week</p>`
+        });
+      }
+      if (bus) {
+        slides.push({
+          kind: "bus",
+          html: `
+            <span class="eyebrow">Week ${weekNum} · Survivor</span>
+            <h2 class="week-recap-title bus-title">Off the bus</h2>
+            <div class="week-recap-hero team-inline week-recap-bus">
+              <div>
+                <div class="week-recap-name">${WUC.escapeHtml((bus.teamId === "ttab" || (bus.team || "").includes("Towner Top")) ? "TTAB" : (bus.team || "—"))}</div>
+                <div class="week-recap-score bus-score">${Number(bus.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</div>
+              </div>
+            </div>
+            <div class="bus-scene" aria-hidden="true">
+              <img class="bus-art" src="img/survivor-bus.png" alt="" />
+              <div class="bus-victim">${WUC.teamMark(bus.teamId, { size: "md" })}</div>
+              <div class="bus-dust d1"></div>
+              <div class="bus-dust d2"></div>
+              <div class="bus-dust d3"></div>
+            </div>
+            <p class="week-recap-sub muted">Lowest score still alive — eliminated</p>
+            <p class="mt-1"><a class="btn btn-teal" href="awards.html">See awards board</a></p>`
+        });
+      }
+
+      let idx = 0;
+      let timer = null;
+      dots.innerHTML = slides.map((_, i) => `<span class="week-recap-dot${i === 0 ? " on" : ""}"></span>`).join("");
+
+      function show(i) {
+        idx = i;
+        stage.innerHTML = slides[i].html;
+        stage.className = "week-recap-stage week-recap-enter" + (slides[i].kind === "bus" ? " is-bus" : " is-kitty");
+        dots.querySelectorAll(".week-recap-dot").forEach((d, di) => d.classList.toggle("on", di === i));
+      }
+
+      function dismiss() {
+        overlay.hidden = true;
+        overlay.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("week-recap-open");
+        if (timer) clearTimeout(timer);
+        try { sessionStorage.setItem(storageKey, "1"); } catch (_) {}
+      }
+
+      function advance() {
+        if (idx < slides.length - 1) {
+          show(idx + 1);
+          timer = setTimeout(advance, 5200);
+        } else {
+          // stay on last slide; auto-dismiss after a beat
+          timer = setTimeout(dismiss, 6000);
+        }
+      }
+
+      overlay.hidden = false;
+      overlay.setAttribute("aria-hidden", "false");
+      document.body.classList.add("week-recap-open");
+      show(0);
+      timer = setTimeout(advance, 5000);
+
+      document.getElementById("weekRecapClose").onclick = dismiss;
+      overlay.addEventListener("click", (ev) => {
+        if (ev.target === overlay || ev.target.id === "weekRecapClose") dismiss();
+      });
+      overlay.querySelector(".week-recap-panel").addEventListener("click", (ev) => {
+        if (ev.target.closest("a,button")) return;
+        if (idx < slides.length - 1) {
+          if (timer) clearTimeout(timer);
+          show(idx + 1);
+          timer = setTimeout(advance, 5200);
+        } else {
+          dismiss();
+        }
+      });
+      document.addEventListener("keydown", function onEsc(ev) {
+        if (ev.key === "Escape") {
+          dismiss();
+          document.removeEventListener("keydown", onEsc);
+        }
+      });
+    }
   </script>
 </body>
 </html>
