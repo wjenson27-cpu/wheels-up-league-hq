@@ -1,8 +1,23 @@
 {
   "updated": "2026-09-15",
-  "source": "Fantrax 4pm trade-offer scrape Sep 15 2026 PT",
+  "source": "Fantrax full scrape Sep 15 evening",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-09-14",
+      "time": "11:50 PM PDT",
+      "status": "completed",
+      "official": true,
+      "teamA": "Pocket Agents (Kellen)",
+      "teamB": "Saltese Slamm (Luke)",
+      "givesA": [
+        "Jonas Sanker (DB)"
+      ],
+      "givesB": [
+        "$4 FAAB"
+      ],
+      "summary": "Fantrax official \u2014 Pocket Agents traded Jonas Sanker to Saltese for $4 FAAB."
+    },
     {
       "date": "2026-09-08",
       "time": "6:04 PM PDT",
@@ -125,6 +140,13 @@
   ],
   "pending": [],
   "blocks": [
+    {
+      "team": "Pocket Agents",
+      "player": null,
+      "players": [],
+      "lastUpdated": "2026-09-14 2:11 PM PDT",
+      "note": "Block cleared (Barton dropped)."
+    },
     {
       "team": "Substation",
       "player": "Brock Purdy",

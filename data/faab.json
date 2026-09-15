@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-12",
-  "source": "Fantrax",
+  "updated": "2026-09-15",
+  "source": "Fantrax full scrape Sep 15 evening",
   "startingBudget": 115,
-  "note": "",
+  "note": "Remainings from Fantrax Sep 15 evening scrape. Pocket +$4 / Saltese \u2212$4 on Sanker deal.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -37,12 +37,12 @@
       "owner": "Luke Sahlberg",
       "abbrev": "SAL",
       "starting": 115,
-      "remaining": 95,
+      "remaining": 91,
       "spentClaims": 0,
       "tradeOut": 20,
       "tradeIn": 0,
       "spentKnown": 20,
-      "remainingKnown": 95
+      "remainingKnown": 91
     },
     {
       "id": "lab",
@@ -167,12 +167,12 @@
       "owner": "Kellen Olson",
       "abbrev": "PKT",
       "starting": 115,
-      "remaining": 120,
+      "remaining": 124,
       "spentClaims": 5,
       "tradeOut": 0,
       "tradeIn": 10,
       "spentKnown": 5,
-      "remainingKnown": 120
+      "remainingKnown": 124
     },
     {
       "id": "substation",
@@ -422,6 +422,20 @@
       ],
       "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
       "official": false,
+      "kind": "trade"
+    },
+    {
+      "date": "2026-09-14",
+      "amount": 4,
+      "fromTeam": "Saltese Slamm",
+      "fromTeamId": "saltese",
+      "toTeam": "Pocket Agents",
+      "toTeamId": "pocket",
+      "for": [
+        "Jonas Sanker (DB)"
+      ],
+      "summary": "Saltese paid $4 FAAB to Pocket for Jonas Sanker.",
+      "official": true,
       "kind": "trade"
     }
   ],

@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-14",
+  "asOf": "2026-09-15",
   "faabLeft": 105,
   "roster": {
     "QB": [
@@ -11,27 +11,28 @@
     "RB": [
       "Omarion Hampton",
       "Tyjae Spears",
-      "Jacory Croskey-Merritt"
+      "Jacory Croskey-Merritt",
+      "Zach Charbonnet"
     ],
     "WR": [
       "Garrett Wilson",
+      "Jalen Coker",
       "Brian Thomas",
       "Chimere Dike",
-      "Jordyn Tyson",
-      "Jalen Coker"
+      "Jordyn Tyson"
     ],
     "TE": [
       "Tyler Warren",
-      "Brock Bowers",
-      "Kyle Pitts"
+      "Kyle Pitts",
+      "Brock Bowers"
     ],
     "LB": [
       "Jamien Sherwood",
-      "James Williams",
-      "Denzel Perryman",
       "Henry To'oTo'o",
       "Fred Warner",
-      "Mack Wilson"
+      "Mack Wilson",
+      "James Williams",
+      "Denzel Perryman"
     ],
     "DL": [
       "Leonard Williams"
@@ -41,45 +42,18 @@
       "Evan Williams",
       "Julian Love"
     ],
-    "IR": []
+    "IR": [
+      "Zach Charbonnet",
+      "Jordyn Tyson",
+      "Denzel Perryman"
+    ]
   },
-  "starters": [
-    "Trevor Lawrence",
-    "Omarion Hampton",
-    "Garrett Wilson",
-    "Tyler Warren",
-    "Jalen Coker",
-    "Kyle Pitts",
-    "Brian Thomas",
-    "Leonard Williams",
-    "Jamien Sherwood",
-    "Quentin Lake",
-    "Evan Williams",
-    "Henry To'oTo'o",
-    "Fred Warner",
-    "Mack Wilson"
-  ],
-  "bench": [
-    "Tyjae Spears",
-    "Brock Bowers",
-    "Jacory Croskey-Merritt",
-    "Chimere Dike",
-    "James Williams",
-    "Julian Love",
-    "Denzel Perryman"
-  ],
-  "notes": "Sep 14 6am: no newer Eddies adds/drops after Sep 11 +James Williams \u2212Troy Dye. W1 FINAL loss 241\u2013255 at Saltese. FAAB $105. Bowers OUT; To'oTo'o injured but in an active slot; Warren clear (news icon only).",
-  "source": "Fantrax 6am scrape Sep 14 2026 PT",
-  "week1": {
-    "opponent": "Saltese Slamm",
-    "score": "241-255 FINAL loss",
-    "home": false,
-    "playersLeft": 0,
-    "oppPlayersLeft": 0
+  "notes": "W1 FINAL L 241\u2013255 at Saltese. FAAB $105. PENDING on Fantrax (not applied here): claim Amani Hooker / drop James Williams \u2014 needs Bill yes. Bowers OUT; To'oTo'o watch.",
+  "pendingClaim": {
+    "add": "Amani Hooker",
+    "drop": "James Williams",
+    "status": "pending",
+    "note": "Recommend only until yes, do it"
   },
-  "lineupFlags": [
-    "Brock Bowers OUT",
-    "Henry To'oTo'o injured in an active slot",
-    "Tyler Warren clear (no injury icon)"
-  ]
+  "source": "Fantrax Sep 15 evening"
 }

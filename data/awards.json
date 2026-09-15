@@ -55,7 +55,7 @@
         "score": 176.5,
         "aliveBefore": 14,
         "aliveAfter": 13,
-        "note": "Lowest Week 1 final score (post-MNF 176.5) — off the bus"
+        "note": "Lowest Week 1 final score (post-MNF 176.5) \u2014 off the bus"
       }
     ]
   },
@@ -74,7 +74,7 @@
           "teamId": "ttab",
           "team": "Towner Top Aga Bottom",
           "value": "1-0",
-          "valueLabel": "1-0 · 315.0 PF",
+          "valueLabel": "1-0 \u00b7 315.0 PF",
           "teamShort": "TTAB"
         },
         {
@@ -82,17 +82,17 @@
           "teamId": "hyper",
           "team": "The Hypersecretors",
           "value": "1-0",
-          "valueLabel": "1-0 · 259.5 PF"
+          "valueLabel": "1-0 \u00b7 259.5 PF"
         },
         {
           "rank": 3,
           "teamId": "morningside",
           "team": "Morningside Muff Divers",
           "value": "1-0",
-          "valueLabel": "1-0 · 258.5 PF"
+          "valueLabel": "1-0 \u00b7 258.5 PF"
         }
       ],
-      "note": "Live after Week 1 · locks at season end"
+      "note": "Live after Week 1 \u00b7 locks at season end"
     },
     "topPoints": {
       "key": "topPoints",
@@ -126,31 +126,95 @@
           "valueLabel": "258.5"
         }
       ],
-      "note": "Live season PF · locks at season end"
+      "note": "Live season PF \u00b7 locks at season end"
     },
     "topOffensivePlayer": {
       "key": "topOffensivePlayer",
       "label": "Top Offensive Player",
-      "status": "tbd",
+      "status": "live",
       "trackTop": 3,
-      "player": null,
-      "teamId": null,
-      "team": null,
-      "value": null,
-      "leaders": [],
-      "note": "Top 3 offense — needs Fantrax player totals (Eddie)"
+      "player": "Kenneth Walker III",
+      "teamId": "hyper",
+      "team": "The Hypersecretors",
+      "value": 48,
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Kenneth Walker III",
+          "pos": "RB",
+          "teamId": "hyper",
+          "team": "The Hypersecretors",
+          "teamShort": "Hyper",
+          "value": 48,
+          "valueLabel": "48"
+        },
+        {
+          "rank": 2,
+          "player": "Josh Allen",
+          "pos": "QB",
+          "teamId": "ttab",
+          "team": "Towner Top Aga Bottom",
+          "teamShort": "TTAB",
+          "value": 45,
+          "valueLabel": "45"
+        },
+        {
+          "rank": 3,
+          "player": "Jalen Coker",
+          "pos": "WR",
+          "teamId": "eddies",
+          "team": "Eagle Ridge Eddies",
+          "teamShort": "Eddies",
+          "value": 45,
+          "valueLabel": "45"
+        }
+      ],
+      "note": "Live after Week 1 \u00b7 Fantrax player totals (excl. free agents) \u00b7 locks at season end",
+      "pos": "RB"
     },
     "topDefensivePlayer": {
       "key": "topDefensivePlayer",
       "label": "Top Defensive Player",
-      "status": "tbd",
+      "status": "live",
       "trackTop": 3,
-      "player": null,
-      "teamId": null,
-      "team": null,
-      "value": null,
-      "leaders": [],
-      "note": "Top 3 IDP — needs Fantrax player totals (Eddie)"
+      "player": "Josiah Trotter",
+      "teamId": "pocket",
+      "team": "Pocket Agents",
+      "value": 53,
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Josiah Trotter",
+          "pos": "LB",
+          "teamId": "pocket",
+          "team": "Pocket Agents",
+          "teamShort": "Pocket",
+          "value": 53,
+          "valueLabel": "53"
+        },
+        {
+          "rank": 2,
+          "player": "T.J. Watt",
+          "pos": "DL",
+          "teamId": "goats",
+          "team": "Valley Old Goats",
+          "teamShort": "Goats",
+          "value": 51,
+          "valueLabel": "51"
+        },
+        {
+          "rank": 3,
+          "player": "Ventrell Miller",
+          "pos": "LB",
+          "teamId": "morningside",
+          "team": "Morningside Muff Divers",
+          "teamShort": "Morningside",
+          "value": 40,
+          "valueLabel": "40"
+        }
+      ],
+      "note": "Live after Week 1 \u00b7 Fantrax IDP totals (excl. free agents) \u00b7 locks at season end",
+      "pos": "LB"
     }
   },
   "weekScores": {

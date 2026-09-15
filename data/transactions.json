@@ -1,7 +1,55 @@
 {
-  "updated": "2026-09-14",
-  "source": "Fantrax 6am scrape Sep 14 2026 PT",
+  "updated": "2026-09-15",
+  "source": "Fantrax full scrape Sep 15 evening",
   "items": [
+    {
+      "date": "2026-09-15",
+      "type": "PENDING",
+      "team": "Eagle Ridge Eddies",
+      "summary": "Pending claim: add Amani Hooker (DB); drop James Williams (LB) \u2014 NOT processed (needs Bill yes)"
+    },
+    {
+      "date": "2026-09-14",
+      "type": "TRADE",
+      "team": "Pocket Agents / Saltese Slamm",
+      "summary": "Pocket sent Jonas Sanker (DB) to Saltese for $4 FAAB (executed 11:50 PM PDT)"
+    },
+    {
+      "date": "2026-09-14",
+      "type": "DROP",
+      "team": "Saltese Slamm",
+      "summary": "Dropped Sam Darnold (10:52 PM PDT)"
+    },
+    {
+      "date": "2026-09-14",
+      "type": "DROP",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Dropped Devin White (8:22 PM PDT)"
+    },
+    {
+      "date": "2026-09-14",
+      "type": "DROP",
+      "team": "Ultron",
+      "summary": "Dropped Kaleb Johnson (8:16 PM PDT)"
+    },
+    {
+      "date": "2026-09-14",
+      "type": "DROP",
+      "team": "Pocket Agents",
+      "summary": "Dropped Dane Belton (4:26 PM PDT)"
+    },
+    {
+      "date": "2026-09-14",
+      "type": "DROP",
+      "team": "Saltese Slamm",
+      "summary": "Dropped Grant Delpit (3:22 PM PDT)"
+    },
+    {
+      "date": "2026-09-14",
+      "type": "DROP",
+      "team": "Pocket Agents",
+      "summary": "Dropped Cody Barton (2:11 PM PDT) \u2014 cleared trade block"
+    },
     {
       "date": "2026-09-13",
       "type": "ADD/DROP",

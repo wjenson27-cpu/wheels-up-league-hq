@@ -2,13 +2,12 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-12",
-  "faabLeft": 95,
+  "asOf": "2026-09-15",
+  "faabLeft": 91,
   "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
-      "Matthew Stafford",
-      "Sam Darnold"
+      "Matthew Stafford"
     ],
     "RB": [
       "Breece Hall",
@@ -38,14 +37,14 @@
     ],
     "DB": [
       "Jordan Battle",
-      "Grant Delpit"
+      "Jonas Sanker"
     ],
     "IR": [
       "Jonathon Brooks",
       "Micah Parsons"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $95. Micah Parsons on IL.",
+  "notes": "Sep 15 scrape: bought Sanker for $4 FAAB; dropped Darnold + Delpit. Beat Eddies 255\u2013241. FAAB $91.",
   "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5"
 }

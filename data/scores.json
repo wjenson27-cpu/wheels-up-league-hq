@@ -4,8 +4,8 @@
   "week": 1,
   "weekStatus": "final",
   "complete": true,
-  "source": "Fantrax Week 1 Results post-MNF scrape Sep 15",
-  "note": "All 14 clubs locked after Monday. Kitty TTAB 315 (unchanged). Survivor lowest: Slumlords 176.5 (was 164.5; still eliminated). Hyper FLIPPED to beat Dongers 259.5\u2013246.5.",
+  "source": "Fantrax full league scrape Sep 15 evening \u2014 finals reconfirmed",
+  "note": "Week 1 FINAL confirmed post-MNF. All 14 clubs locked. Kitty TTAB 315; Survivor Slumlords 176.5.",
   "kitty": {
     "team": "TTAB",
     "teamFull": "Towner Top Aga Bottom",
@@ -89,5 +89,6 @@
       "winner": "Substation",
       "notes": "FINAL post-MNF \u2014 Sub 193 (was 188); Ultron 180 unchanged"
     }
-  ]
+  ],
+  "scoresMatchPostMnf": true
 }

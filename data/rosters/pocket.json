@@ -2,8 +2,8 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-09-12",
-  "faabLeft": 120,
+  "asOf": "2026-09-15",
+  "faabLeft": 124,
   "startingQB": "Jared Goff",
   "roster": {
     "QB": [
@@ -27,7 +27,6 @@
     ],
     "LB": [
       "Ernest Jones",
-      "Cody Barton",
       "Barrett Carter",
       "Foyesade Oluokun",
       "Josiah Trotter"
@@ -36,15 +35,13 @@
       "Will Anderson Jr."
     ],
     "DB": [
-      "Cooper DeJean",
-      "Jonas Sanker",
-      "Dane Belton"
+      "Cooper DeJean"
     ],
     "IR": [
       "Zachariah Branch"
     ]
   },
-  "notes": "Sep 11 ad-hoc. Goff only at QB (Nix sold for $10 FAAB). FAAB $120. Barton still rostered.",
+  "notes": "Sep 15 scrape: traded Sanker to Saltese for $4 FAAB; dropped Barton + Belton. FAAB $124.",
   "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
   "fantraxTeamId": "20zozmjgmsb3ulv4"
 }

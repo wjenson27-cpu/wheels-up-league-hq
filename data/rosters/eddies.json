@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-14",
+  "asOf": "2026-09-15",
   "faabLeft": 105,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -49,7 +49,7 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "W1 FINAL: lost 241\u2013255 to Saltese. W2: Bowers OUT; To'oTo'o injured in active slot; Warren clear. FAAB $105.",
+  "notes": "W1 FINAL L 241\u2013255 at Saltese. FAAB $105. PENDING on Fantrax (not applied here): claim Amani Hooker / drop James Williams \u2014 needs Bill yes. Bowers OUT; To'oTo'o watch.",
   "injuryFlags": [
     "Brock Bowers OUT"
   ],
@@ -58,5 +58,11 @@
   "lineupFlags": [
     "Brock Bowers OUT",
     "Henry To'oTo'o injured (active slot)"
-  ]
+  ],
+  "pendingClaim": {
+    "add": "Amani Hooker",
+    "drop": "James Williams",
+    "status": "pending",
+    "note": "Recommend only until yes, do it"
+  }
 }
