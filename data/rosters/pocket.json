@@ -2,12 +2,13 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-09-15",
-  "faabLeft": 124,
+  "asOf": "2026-09-16",
+  "faabLeft": 111,
   "startingQB": "Jared Goff",
   "roster": {
     "QB": [
-      "Jared Goff"
+      "Jared Goff",
+      "Tyler Shough"
     ],
     "RB": [
       "Kenneth Gainwell",
@@ -18,8 +19,9 @@
       "CeeDee Lamb",
       "Tetairoa McMillan",
       "Jaylen Waddle",
-      "Barion Brown",
-      "Malik Washington"
+      "Malik Washington",
+      "Dontayvion Wicks",
+      "Adonai Mitchell"
     ],
     "TE": [
       "Trey McBride",
@@ -35,13 +37,14 @@
       "Will Anderson Jr."
     ],
     "DB": [
-      "Cooper DeJean"
+      "Cooper DeJean",
+      "Jaquan Brisker"
     ],
     "IR": [
       "Zachariah Branch"
     ]
   },
-  "notes": "Sep 15 scrape: traded Sanker to Saltese for $4 FAAB; dropped Barton + Belton. FAAB $124.",
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "notes": "Sep 16 post-waiver: +Brisker $10 (−Barion Brown); +Adonai Mitchell $3; +Tyler Shough (null bid) / Wicks $0 re-add. FAAB $111.",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "20zozmjgmsb3ulv4"
 }

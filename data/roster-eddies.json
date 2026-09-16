@@ -3,7 +3,7 @@
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
   "asOf": "2026-09-16",
-  "faabLeft": 105,
+  "faabLeft": 91,
   "roster": {
     "QB": [
       "Trevor Lawrence"
@@ -28,11 +28,10 @@
     ],
     "LB": [
       "Jamien Sherwood",
-      "Henry To'oTo'o",
       "Fred Warner",
       "Mack Wilson",
-      "James Williams",
-      "Denzel Perryman"
+      "Denzel Perryman",
+      "Dorian Williams"
     ],
     "DL": [
       "Leonard Williams"
@@ -40,7 +39,8 @@
     "DB": [
       "Quentin Lake",
       "Evan Williams",
-      "Julian Love"
+      "Julian Love",
+      "Andrew Wingard"
     ],
     "IR": [
       "Zach Charbonnet",
@@ -48,33 +48,9 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "W1 FINAL L 241–255 at Saltese. Week 2 at Valley Old Goats (proj 183.8–188.4). FAAB $105. Two pending claims both dropping James Williams: Hooker $7 (processes ~9:00 AM PT Sep 16) and Wingard $6. Coker injured in an active slot. Bowers OUT; To'oTo'o watch.",
-  "pendingClaims": [
-    {
-      "add": "Amani Hooker",
-      "drop": "James Williams",
-      "bid": 7,
-      "status": "pending",
-      "submitted": "2026-09-15 9:11 AM PDT",
-      "processing": "2026-09-16 9:00 AM PDT",
-      "note": "Recommend only until yes, do it — Bill parked Sep 15"
-    },
-    {
-      "add": "Andrew Wingard",
-      "drop": "James Williams",
-      "bid": 6,
-      "status": "pending",
-      "submitted": "2026-09-15 5:58 PM PDT",
-      "note": "Second claim same drop; recommend only"
-    }
-  ],
-  "pendingClaim": {
-    "add": "Amani Hooker",
-    "drop": "James Williams",
-    "bid": 7,
-    "status": "pending",
-    "note": "Also pending Wingard $6 same drop; recommend only until yes, do it"
-  },
+  "notes": "W1 FINAL L 241–255 at Saltese. Week 2 at Valley Old Goats (proj 183.8–188.4). FAAB $91. Won Andrew Wingard $6 (−James Williams); won Dorian Williams $8 (−Henry To'oTo'o). Lost Hooker $7 to Ultron $18; lost Dart $5 to Hyper $16. No pending claims. Chimere Dike still rostered. Bonitto still FA. Coker + Bowers injured flags.",
+  "pendingClaims": [],
+  "pendingClaim": null,
   "week2": {
     "opponent": "Valley Old Goats",
     "homeAway": "away",
@@ -83,8 +59,15 @@
   },
   "flags": [
     "Jalen Coker injured in active slot",
-    "Brock Bowers OUT",
-    "Henry To'oTo'o watch"
+    "Brock Bowers OUT"
   ],
-  "source": "Fantrax Sep 16 6am"
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
+  "injuryFlags": [
+    "Jalen Coker injured (active slot)",
+    "Brock Bowers OUT"
+  ],
+  "lineupFlags": [
+    "Jalen Coker injured in active slot",
+    "Brock Bowers OUT"
+  ]
 }

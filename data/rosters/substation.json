@@ -3,12 +3,12 @@
   "teamName": "Substation",
   "owner": "Nathan Kelly",
   "asOf": "2026-09-16",
-  "faabLeft": 83,
-  "startingQB": "Bo Nix",
+  "faabLeft": 70,
+  "startingQB": "Jordan Love",
   "roster": {
     "QB": [
-      "Bo Nix",
-      "Brock Purdy"
+      "Brock Purdy",
+      "Jordan Love"
     ],
     "RB": [
       "Saquon Barkley",
@@ -29,8 +29,7 @@
     "LB": [
       "Carson Schwesinger",
       "Dre Greenlaw",
-      "Jihaad Campbell",
-      "Justin Strnad"
+      "Jihaad Campbell"
     ],
     "DL": [
       "Jared Verse"
@@ -41,7 +40,8 @@
       "Tyler Nubin",
       "Brian Branch",
       "DeShon Elliott",
-      "Nick Emmanwori"
+      "Nick Emmanwori",
+      "Avonte Maddox"
     ],
     "IR": [
       "Brian Branch",
@@ -49,13 +49,13 @@
       "Nick Emmanwori"
     ]
   },
-  "notes": "Sep 16 AM: +Campbell +Harvey \u2212LaPorta (trade); \u2212Metellus; +Strnad \u2212Mooney (Sep 13). FAAB $83.",
+  "notes": "Sep 16 post-waiver: +Jordan Love $11 (−Bo Nix); +Avonte Maddox $2 (−Justin Strnad). FAAB $70.",
   "injuryFlags": [
     "Malik Nabers",
     "Brian Branch",
     "DeShon Elliott",
     "Nick Emmanwori OUT"
   ],
-  "source": "Fantrax scrape Sep 16 6:15 AM PT",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5"
 }

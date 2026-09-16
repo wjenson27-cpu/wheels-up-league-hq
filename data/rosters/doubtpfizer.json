@@ -3,7 +3,7 @@
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
   "asOf": "2026-09-16",
-  "faabLeft": 113,
+  "faabLeft": 109,
   "startingQB": "Dak Prescott",
   "roster": {
     "QB": [
@@ -36,8 +36,9 @@
       "Brian Burns"
     ],
     "DB": [
-      "Reed Blankenship",
-      "Kamari Lassiter"
+      "Kamari Lassiter",
+      "Jalen Ramsey",
+      "Chauncey Gardner-Johnson"
     ],
     "IR": [
       "Rachaad White",
@@ -45,7 +46,7 @@
       "Rome Odunze"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $113. Sep 16: \u2212Dante Trader.",
-  "source": "Fantrax scrape Sep 16 6:15 AM PT",
+  "notes": "Sep 16 post-waiver: +Jalen Ramsey $2 (−Reed Blankenship); +Chauncey Gardner-Johnson $2. FAAB $109.",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "xg1akj6omsb3ulv5"
 }

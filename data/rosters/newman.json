@@ -3,7 +3,7 @@
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
   "asOf": "2026-09-16",
-  "faabLeft": 115,
+  "faabLeft": 110,
   "startingQB": "Jalen Hurts",
   "roster": {
     "QB": [
@@ -11,7 +11,8 @@
     ],
     "RB": [
       "Jonathan Taylor",
-      "Aaron Jones"
+      "Aaron Jones",
+      "Chris Johnson"
     ],
     "WR": [
       "A.J. Brown",
@@ -38,13 +39,15 @@
     ],
     "DB": [
       "Marcus Jones",
-      "Xavier Watts"
+      "Xavier Watts",
+      "L'Jarius Sneed",
+      "Malaki Starks"
     ],
     "IR": [
       "TreVeyon Henderson"
     ]
   },
-  "notes": "Sep 16 AM: \u2212Harold Landry; +Jaelan Phillips \u2212Paulson Adebo (Sep 13). Trade block: Henderson/Jones/AJ Brown/Golden/Higgins.",
-  "source": "Fantrax scrape Sep 16 6:15 AM PT",
+  "notes": "Sep 16 post-waiver: +Malaki Starks $5; +L'Jarius Sneed (null); +Chris Johnson (null, pos uncertain→RB). FAAB $110.",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4"
 }

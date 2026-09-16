@@ -3,16 +3,16 @@
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
   "asOf": "2026-09-16",
-  "faabLeft": 108,
+  "faabLeft": 92,
   "startingQB": "Justin Herbert",
   "roster": {
     "QB": [
-      "Justin Herbert"
+      "Justin Herbert",
+      "Jaxson Dart"
     ],
     "RB": [
       "Kenneth Walker III",
-      "MarShawn Lloyd",
-      "Keaton Mitchell"
+      "MarShawn Lloyd"
     ],
     "WR": [
       "Amon-Ra St. Brown",
@@ -41,13 +41,12 @@
       "Tykee Smith"
     ],
     "IR": [
-      "Keaton Mitchell",
       "Jaylin Noel",
       "Nick Bosa"
     ]
   },
-  "notes": "Sep 16 AM: +LaPorta \u2212Campbell \u2212Harvey (trade); \u2212Willis \u2212Mayer \u2212Daniels. FAAB $108.",
+  "notes": "Sep 16 post-waiver: +Jaxson Dart $16 (−Keaton Mitchell); beat Eddies $5. FAAB $92.",
   "injuryFlags": [],
-  "source": "Fantrax scrape Sep 16 6:15 AM PT",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4"
 }

@@ -3,7 +3,7 @@
   "teamName": "Ultron",
   "owner": "Brian Aga",
   "asOf": "2026-09-16",
-  "faabLeft": 144,
+  "faabLeft": 126,
   "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
@@ -40,7 +40,8 @@
     "DB": [
       "Dillon Thieneman",
       "Kevin Winston",
-      "A.J. Haulcy"
+      "A.J. Haulcy",
+      "Amani Hooker"
     ],
     "IR": [
       "Kyle Monangai",
@@ -48,12 +49,12 @@
       "A.J. Haulcy"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $144 (received trade FAAB). | Sep 10\u201311: Combs\u2192Carlies\u2192Simpson churn. Sep 16: +Mooney \u2212Simpson (Sep 13); \u2212Kaleb Johnson (Sep 14).",
+  "notes": "Sep 16 post-waiver: +Amani Hooker $18 (beat Eddies $7). FAAB $126. | DATA CONFLICT: Hooker $18 is Scrape A; Scrape B had Ultron +Vele $18 instead. FAAB $126 either way.",
   "injuryFlags": [
     "Teddye Buchanan OUT",
     "Kyle Monangai",
     "A.J. Haulcy"
   ],
-  "source": "Fantrax scrape Sep 16 6:15 AM PT",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT); contested late claims use Scrape A pending verify",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5"
 }

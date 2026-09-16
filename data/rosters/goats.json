@@ -2,8 +2,8 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-09-11",
-  "faabLeft": 100,
+  "asOf": "2026-09-16",
+  "faabLeft": 84,
   "startingQB": "Patrick Mahomes",
   "roster": {
     "QB": [
@@ -21,7 +21,7 @@
     "WR": [
       "DK Metcalf",
       "Marvin Harrison",
-      "Marvin Mims"
+      "Devaughn Vele"
     ],
     "TE": [
       "Hunter Henry",
@@ -47,12 +47,12 @@
       "Josh Jacobs"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $100.",
+  "notes": "Sep 16 post-waiver: +Devaughn Vele $16 (−Marvin Mims). FAAB $84. | DATA CONFLICT: Vele $16 −Mims is Scrape A; Scrape B had Valley +Ezeiruaku $16. FAAB $84 either way.",
   "injuryFlags": [
     "Alvin Kamara",
     "Josh Jacobs",
     "Kamren Curl"
   ],
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT); contested late claims use Scrape A pending verify",
   "fantraxTeamId": "81bbo25imsb3ulv5"
 }

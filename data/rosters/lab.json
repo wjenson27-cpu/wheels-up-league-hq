@@ -2,8 +2,8 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-09-11",
-  "faabLeft": 115,
+  "asOf": "2026-09-16",
+  "faabLeft": 104,
   "startingQB": "Jayden Daniels",
   "roster": {
     "QB": [
@@ -20,7 +20,7 @@
       "Puka Nacua",
       "Mike Evans",
       "Caleb Douglas",
-      "Tre Tucker"
+      "Kendrick Bourne"
     ],
     "TE": [
       "Isaiah Likely"
@@ -45,7 +45,7 @@
       "Drue Tranquill"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $115.",
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "notes": "Sep 16 post-waiver: +Kendrick Bourne $11 (−Tre Tucker). FAAB $104.",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4"
 }

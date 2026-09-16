@@ -2,8 +2,8 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-09-11",
-  "faabLeft": 107,
+  "asOf": "2026-09-16",
+  "faabLeft": 93,
   "startingQB": "Joe Burrow",
   "roster": {
     "QB": [
@@ -31,7 +31,8 @@
       "CJ Allen"
     ],
     "DL": [
-      "Laiatu Latu"
+      "Laiatu Latu",
+      "Donovan Ezeiruaku"
     ],
     "DB": [
       "Nick Cross",
@@ -44,7 +45,7 @@
       "Aaron Donald"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $107. Donald on IR; Latu active DL.",
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "notes": "Sep 16 post-waiver: +Donovan Ezeiruaku $14. FAAB $93. | DATA CONFLICT: Ezeiruaku $14 is Scrape A; Scrape B had Dongers +Sigle $14. FAAB $93 either way.",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT); contested late claims use Scrape A pending verify",
   "fantraxTeamId": "lreem0zbmsb3ulv5"
 }

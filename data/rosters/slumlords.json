@@ -2,8 +2,8 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-09-11",
-  "faabLeft": 113,
+  "asOf": "2026-09-16",
+  "faabLeft": 98,
   "startingQB": "Drake Maye",
   "roster": {
     "QB": [
@@ -18,7 +18,8 @@
       "George Pickens",
       "Wan'Dale Robinson",
       "Keenan Allen",
-      "Michael Pittman"
+      "Michael Pittman",
+      "Kalif Raymond"
     ],
     "TE": [
       "Harold Fannin",
@@ -46,7 +47,7 @@
       "Chamarri Conner"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $113. W1 vs TTAB.",
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98.",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "59frnthimsb3ulv4"
 }

@@ -2,8 +2,8 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-15",
-  "faabLeft": 91,
+  "asOf": "2026-09-16",
+  "faabLeft": 83,
   "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
@@ -30,21 +30,23 @@
       "Terrel Bernard",
       "Edgerrin Cooper",
       "Nathan Landman",
-      "Kaleb Elarms-Orr"
+      "Kaleb Elarms-Orr",
+      "Shaun Dolac"
     ],
     "DL": [
-      "Jalen Carter"
+      "Zach Allen"
     ],
     "DB": [
       "Jordan Battle",
-      "Jonas Sanker"
+      "Jonas Sanker",
+      "Marques Sigle"
     ],
     "IR": [
       "Jonathon Brooks",
       "Micah Parsons"
     ]
   },
-  "notes": "Sep 15 scrape: bought Sanker for $4 FAAB; dropped Darnold + Delpit. Beat Eddies 255\u2013241. FAAB $91.",
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "notes": "Sep 16 post-waiver: +Shaun Dolac $3; +Marques Sigle $3; +Zach Allen $2 (−Jalen Carter). FAAB $83. | DATA CONFLICT: Sigle $3 is Scrape A; Scrape B had Saltese +Cody Simon $3. Dolac/Allen unchanged. FAAB $83 either way.",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT); contested late claims use Scrape A pending verify",
   "fantraxTeamId": "xdx6ngm2msb3ulv5"
 }

@@ -1,12 +1,143 @@
 {
   "updated": "2026-09-16",
-  "source": "Fantrax scrape Sep 16 6:15 AM PT",
+  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "items": [
     {
       "date": "2026-09-16",
-      "type": "PENDING",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Won Amani Hooker (DB) $18 FAAB (Eddies lost at $7) [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
+      "attribution": "scrapeA-preferred-unverified"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "The Hypersecretors",
+      "summary": "Added Jaxson Dart (QB) $16; dropped Keaton Mitchell (Eddies lost Dart at $5)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Added Treydan Stukes (DB) $18; dropped Jalen Nailor"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Added Kwity Paye (DL) $16; dropped Akheem Mesidor"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Added Del'Shawn Phillips (LB) $8"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Valley Old Goats",
+      "summary": "Added Devaughn Vele (WR) $16; dropped Marvin Mims [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
+      "attribution": "scrapeA-preferred-unverified"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Indian Trail Slumlords",
+      "summary": "Added Kalif Raymond (WR) $15"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Drummond Dongers",
+      "summary": "Added Donovan Ezeiruaku (DL) $14 [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
+      "attribution": "scrapeA-preferred-unverified"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Jordan Love (QB) $11; dropped Bo Nix"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Avonte Maddox (DB) $2; dropped Justin Strnad"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Little Ass Boys",
+      "summary": "Added Kendrick Bourne (WR) $11; dropped Tre Tucker"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
       "team": "Eagle Ridge Eddies",
-      "summary": "Pending claims (process ~9:00 AM PT): (1) add Amani Hooker (DB) drop James Williams (LB) $7; (2) add Andrew Wingard (DB) drop James Williams (LB) $6 \u2014 NOT processed"
+      "summary": "Added Andrew Wingard (DB) $6; dropped James Williams"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Eagle Ridge Eddies",
+      "summary": "Added Dorian Williams (LB) $8; dropped Henry To'oTo'o"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "FAILED",
+      "team": "Eagle Ridge Eddies",
+      "summary": "FAILED claim Amani Hooker $7 (Ultron won at $18); drop James Williams unused for Hooker — Wingard claim on same drop succeeded [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
+      "attribution": "scrapeA-preferred-unverified"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "FAILED",
+      "team": "Eagle Ridge Eddies",
+      "summary": "FAILED claim Jaxson Dart $5 (Hyper won at $16); Dart now owned by Hyper; Bonitto still FA"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Pocket Agents",
+      "summary": "Added Jaquan Brisker (DB) $10; dropped Barion Brown"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Pocket Agents",
+      "summary": "Added Adonai Mitchell (WR) $3"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Pocket Agents",
+      "summary": "Added Tyler Shough (QB) drop Dontayvion Wicks (bid null/-); later re-added Dontayvion Wicks $0 (excluded from FAAB claims)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Added Malaki Starks (DB) $5; also added Chris Johnson and L'Jarius Sneed (bid null/- excluded)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Added Jalen Ramsey (DB) $2; dropped Reed Blankenship"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Added Chauncey Gardner-Johnson (DB) $2"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Saltese Slamm",
+      "summary": "Added Shaun Dolac (LB) $3; Marques Sigle (DB) $3; Zach Allen (DL) $2 drop Jalen Carter [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
+      "attribution": "scrapeA-preferred-unverified"
     },
     {
       "date": "2026-09-15",
@@ -57,12 +188,6 @@
       "summary": "Dropped Kendal Daniels (3:27 PM PDT)"
     },
     {
-      "date": "2026-09-16",
-      "type": "PENDING",
-      "team": "Eagle Ridge Eddies",
-      "summary": "Pending claims (not processed): (1) Amani Hooker (DB) $7 / drop James Williams \u2014 submitted Sep 15 9:11 AM, processes Sep 16 9:00 AM PT; (2) Andrew Wingard (DB) $6 / drop James Williams \u2014 submitted Sep 15 5:58 PM. Both still pending as of 6:15 AM scrape."
-    },
-    {
       "date": "2026-09-15",
       "type": "TRADE",
       "team": "Substation / The Hypersecretors",
@@ -108,7 +233,7 @@
       "date": "2026-09-14",
       "type": "DROP",
       "team": "Pocket Agents",
-      "summary": "Dropped Cody Barton (2:11 PM PDT) \u2014 cleared trade block"
+      "summary": "Dropped Cody Barton (2:11 PM PDT) — cleared trade block"
     },
     {
       "date": "2026-09-13",
@@ -144,7 +269,7 @@
       "date": "2026-09-11",
       "type": "ADD/DROP",
       "team": "Morningside Muff Divers",
-      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) \u2014 Harris briefly added then dropped"
+      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) — Harris briefly added then dropped"
     },
     {
       "date": "2026-09-11",
@@ -270,7 +395,7 @@
       "date": "2026-09-08",
       "type": "TRADE",
       "team": "Pocket Agents / Substation",
-      "summary": "Bo Nix (Pocket) \u2192 Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
+      "summary": "Bo Nix (Pocket) → Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
     },
     {
       "date": "2026-09-08",
@@ -360,7 +485,7 @@
       "date": "2026-09-04",
       "type": "ADD/DROP",
       "team": "Substation",
-      "summary": "Churn: +Denzel Boston \u2212Craig Woodson; +Craig Woodson \u2212Brandon Jones; +Brandon Jones \u2212Dante Trader"
+      "summary": "Churn: +Denzel Boston −Craig Woodson; +Craig Woodson −Brandon Jones; +Brandon Jones −Dante Trader"
     },
     {
       "date": "2026-09-04",
@@ -384,7 +509,7 @@
       "date": "2026-09-03",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "Moves: +Emmett Johnson \u2212Nadjee Harris; +Nadjee Harris \u2212Justin Strnad; +Jaishawn Barham \u2212Trenton Simpson; +Bryce Boettcher \u2212Nadjee Harris"
+      "summary": "Moves: +Emmett Johnson −Nadjee Harris; +Nadjee Harris −Justin Strnad; +Jaishawn Barham −Trenton Simpson; +Bryce Boettcher −Nadjee Harris"
     },
     {
       "date": "2026-09-03",
@@ -408,19 +533,19 @@
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "The Hypersecretors",
-      "summary": "TE churn Helm/Barner; later +Gunnar Helm \u2212Dylan Sampson"
+      "summary": "TE churn Helm/Barner; later +Gunnar Helm −Dylan Sampson"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "+Nadjee Harris \u2212George Holani; +George Holani \u2212Keenan Allen; +Justin Strnad \u2212Branson Combs"
+      "summary": "+Nadjee Harris −George Holani; +George Holani −Keenan Allen; +Justin Strnad −Branson Combs"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Valley Old Goats",
-      "summary": "+Camryn Bynum \u2212Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
+      "summary": "+Camryn Bynum −Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
     },
     {
       "date": "2026-09-02",
@@ -438,7 +563,7 @@
       "date": "2026-09-02",
       "type": "FAAB",
       "team": "League",
-      "summary": "FAAB batch: notable \u2014 Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; \u2212Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0\u2013$2 IDP/depth adds"
+      "summary": "FAAB batch: notable — Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; −Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0–$2 IDP/depth adds"
     },
     {
       "date": "2026-09-01",
@@ -456,8 +581,9 @@
       "date": "2026-08-30",
       "type": "DRAFT",
       "team": "League",
-      "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
+      "summary": "20-round snake complete — Wheels Up 2026 is locked"
     }
   ],
-  "note": "Sep 16 6am: new Sep 15 evening trade + 7 drops; Eddies still has 2 pending claims (Hooker $7, Wingard $6)."
+  "note": "Sep 16 6am: new Sep 15 evening trade + 7 drops; Eddies still has 2 pending claims (Hooker $7, Wingard $6).",
+  "dataConflictNote": "DATA CONFLICT (late claims): Scrape A (preferred until verified) — Ultron +Hooker $18; Valley +Vele $16 −Mims; Dongers +Ezeiruaku $14; Saltese +Sigle $3. Scrape B alternate — Ultron +Vele $18; Valley +Ezeiruaku $16; Dongers +Sigle $14; Saltese +Cody Simon $3. Remainings identical either way; player attribution unverified."
 }
