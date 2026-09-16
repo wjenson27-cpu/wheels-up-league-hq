@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-09-13",
+  "asOf": "2026-09-16",
   "faabLeft": 83,
   "startingQB": "Bo Nix",
   "roster": {
@@ -14,22 +14,23 @@
       "Saquon Barkley",
       "David Montgomery",
       "Tank Bigsby",
-      "Bhayshul Tuten"
+      "Bhayshul Tuten",
+      "R.J. Harvey"
     ],
     "WR": [
       "Terry McLaurin",
       "Malik Nabers",
-      "Alec Pierce",
-      "Darnell Mooney"
+      "Alec Pierce"
     ],
     "TE": [
-      "Sam LaPorta",
       "Dallas Goedert",
       "Tucker Kraft"
     ],
     "LB": [
       "Carson Schwesinger",
-      "Dre Greenlaw"
+      "Dre Greenlaw",
+      "Jihaad Campbell",
+      "Justin Strnad"
     ],
     "DL": [
       "Jared Verse"
@@ -37,7 +38,6 @@
     "DB": [
       "Antonio Johnson",
       "Antoine Winfield",
-      "Josh Metellus",
       "Tyler Nubin",
       "Brian Branch",
       "DeShon Elliott",
@@ -49,13 +49,13 @@
       "Nick Emmanwori"
     ]
   },
-  "notes": "Sep 13 6am: +Darnell Mooney \u2212Jaxson Dart (Sep 12 1:11 PM). FAAB $83.",
+  "notes": "Sep 16 AM: +Campbell +Harvey \u2212LaPorta (trade); \u2212Metellus; +Strnad \u2212Mooney (Sep 13). FAAB $83.",
   "injuryFlags": [
     "Malik Nabers",
     "Brian Branch",
     "DeShon Elliott",
     "Nick Emmanwori OUT"
   ],
-  "source": "Fantrax 6am scrape Sep 13 2026 PT",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5"
 }

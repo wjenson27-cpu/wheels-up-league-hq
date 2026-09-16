@@ -2,18 +2,16 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-09-12",
+  "asOf": "2026-09-16",
   "faabLeft": 108,
   "startingQB": "Justin Herbert",
   "roster": {
     "QB": [
-      "Justin Herbert",
-      "Malik Willis"
+      "Justin Herbert"
     ],
     "RB": [
       "Kenneth Walker III",
       "MarShawn Lloyd",
-      "RJ Harvey",
       "Keaton Mitchell"
     ],
     "WR": [
@@ -24,15 +22,13 @@
       "Travis Hunter"
     ],
     "TE": [
-      "Michael Mayer",
-      "Kenyon Sadiq"
+      "Kenyon Sadiq",
+      "Sam LaPorta"
     ],
     "LB": [
       "Nick Bolton",
-      "Jihaad Campbell",
       "Blake Cashman",
       "Jacob Rodriguez",
-      "Kendal Daniels",
       "Jack Gibbens",
       "Payton Wilson"
     ],
@@ -50,8 +46,8 @@
       "Nick Bosa"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $108. Mayer on Hyper (not Pocket).",
+  "notes": "Sep 16 AM: +LaPorta \u2212Campbell \u2212Harvey (trade); \u2212Willis \u2212Mayer \u2212Daniels. FAAB $108.",
   "injuryFlags": [],
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT",
   "fantraxTeamId": "xz2uv87rmsb3ulv4"
 }

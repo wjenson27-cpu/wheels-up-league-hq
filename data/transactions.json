@@ -1,12 +1,72 @@
 {
-  "updated": "2026-09-15",
-  "source": "Fantrax full scrape Sep 15 evening",
+  "updated": "2026-09-16",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT",
   "items": [
     {
-      "date": "2026-09-15",
+      "date": "2026-09-16",
       "type": "PENDING",
       "team": "Eagle Ridge Eddies",
-      "summary": "Pending claim: add Amani Hooker (DB); drop James Williams (LB) \u2014 NOT processed (needs Bill yes)"
+      "summary": "Pending claims (process ~9:00 AM PT): (1) add Amani Hooker (DB) drop James Williams (LB) $7; (2) add Andrew Wingard (DB) drop James Williams (LB) $6 \u2014 NOT processed"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "TRADE",
+      "team": "Substation / The Hypersecretors",
+      "summary": "Substation sent Sam LaPorta (TE) to Hypersecretors for Jihaad Campbell (LB) + R.J. Harvey (RB) (executed 6:39 PM PDT)"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "DROP",
+      "team": "Substation",
+      "summary": "Dropped Josh Metellus (6:41 PM PDT)"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "DROP",
+      "team": "The Hypersecretors",
+      "summary": "Dropped Malik Willis (5:18 PM PDT)"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "DROP",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Dropped Dante Trader (5:13 PM PDT)"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "DROP",
+      "team": "Morningside Muff Divers",
+      "summary": "Dropped Josh Uche (4:56 PM PDT)"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "DROP",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Dropped Harold Landry (4:53 PM PDT)"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "DROP",
+      "team": "The Hypersecretors",
+      "summary": "Dropped Michael Mayer (3:33 PM PDT)"
+    },
+    {
+      "date": "2026-09-15",
+      "type": "DROP",
+      "team": "The Hypersecretors",
+      "summary": "Dropped Kendal Daniels (3:27 PM PDT)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "PENDING",
+      "team": "Eagle Ridge Eddies",
+      "summary": "Pending claims (not processed): (1) Amani Hooker (DB) $7 / drop James Williams \u2014 submitted Sep 15 9:11 AM, processes Sep 16 9:00 AM PT; (2) Andrew Wingard (DB) $6 / drop James Williams \u2014 submitted Sep 15 5:58 PM. Both still pending as of 6:15 AM scrape."
+    },
+    {
+      "date": "2026-09-15",
+      "type": "TRADE",
+      "team": "Substation / The Hypersecretors",
+      "summary": "Substation sent Sam LaPorta (TE) to Hypersecretors for Jihaad Campbell (LB) and R.J. Harvey (RB) (6:39 PM PDT)"
     },
     {
       "date": "2026-09-14",
@@ -399,5 +459,5 @@
       "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
     }
   ],
-  "note": "Re-verified Sep 12 6am PT: no transactions after Sep 11 3:57 PM PDT (Morningside +Malachi Fields)."
+  "note": "Sep 16 6am: new Sep 15 evening trade + 7 drops; Eddies still has 2 pending claims (Hooker $7, Wingard $6)."
 }

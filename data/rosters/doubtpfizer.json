@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-09-11",
+  "asOf": "2026-09-16",
   "faabLeft": 113,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -37,8 +37,7 @@
     ],
     "DB": [
       "Reed Blankenship",
-      "Kamari Lassiter",
-      "Dante Trader"
+      "Kamari Lassiter"
     ],
     "IR": [
       "Rachaad White",
@@ -46,7 +45,7 @@
       "Rome Odunze"
     ]
   },
-  "notes": "",
-  "source": "Fantrax",
+  "notes": "Sep 11 ad-hoc. FAAB $113. Sep 16: \u2212Dante Trader.",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT",
   "fantraxTeamId": "xg1akj6omsb3ulv5"
 }

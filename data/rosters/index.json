@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-16",
   "teams": [
     "dongers",
     "doubtpfizer",
@@ -17,5 +17,6 @@
     "ultron"
   ],
   "count": 14,
-  "note": "Full 14-team Fantrax roster pull (ad-hoc Chief/Bill). Warren/JCM Eddies flags cleared. scores.json refreshed Week 1 live."
+  "note": "Full 14-team Fantrax roster pull (ad-hoc Chief/Bill). Warren/JCM Eddies flags cleared. scores.json refreshed Week 1 live.",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT"
 }

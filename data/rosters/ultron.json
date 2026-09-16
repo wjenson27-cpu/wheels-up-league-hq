@@ -2,7 +2,7 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-09-15",
+  "asOf": "2026-09-16",
   "faabLeft": 144,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -20,7 +20,8 @@
       "Ja'Marr Chase",
       "Chris Godwin",
       "Quentin Johnston",
-      "Michael Wilson"
+      "Michael Wilson",
+      "Darnell Mooney"
     ],
     "TE": [
       "Colston Loveland"
@@ -30,7 +31,6 @@
       "Alex Anzalone",
       "Frankie Luvu",
       "Patrick Queen",
-      "Trenton Simpson",
       "Teddye Buchanan"
     ],
     "DL": [
@@ -48,12 +48,12 @@
       "A.J. Haulcy"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $144 (received trade FAAB). | Sep 10\u201311: Combs\u2192Carlies\u2192Simpson churn.",
+  "notes": "Sep 11 ad-hoc. FAAB $144 (received trade FAAB). | Sep 10\u201311: Combs\u2192Carlies\u2192Simpson churn. Sep 16: +Mooney \u2212Simpson (Sep 13); \u2212Kaleb Johnson (Sep 14).",
   "injuryFlags": [
     "Teddye Buchanan OUT",
     "Kyle Monangai",
     "A.J. Haulcy"
   ],
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5"
 }

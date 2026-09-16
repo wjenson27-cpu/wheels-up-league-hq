@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-09-12",
+  "asOf": "2026-09-16",
   "faabLeft": 115,
   "startingQB": "Lamar Jackson",
   "roster": {
@@ -29,7 +29,6 @@
       "Daiyan Henley",
       "Demetrius Knight",
       "Ventrell Miller",
-      "Josh Uche",
       "Derrick Barnes",
       "Pete Werner"
     ],
@@ -46,7 +45,7 @@
       "Cedric Gray"
     ]
   },
-  "notes": "Sep 11 ad-hoc. FAAB $115. Wagner previously dropped.",
-  "source": "Fantrax ad-hoc scrape Sep 11 2026 (Chief)",
+  "notes": "Sep 11 ad-hoc. FAAB $115. Wagner previously dropped. Sep 16: \u2212Josh Uche.",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT",
   "fantraxTeamId": "3hpc63ermsb3ulv5"
 }

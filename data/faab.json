@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-15",
-  "source": "Fantrax full scrape Sep 15 evening",
+  "updated": "2026-09-16",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT",
   "startingBudget": 115,
-  "note": "Remainings from Fantrax Sep 15 evening scrape. Pocket +$4 / Saltese \u2212$4 on Sanker deal.",
+  "note": "Remainings from Fantrax Sep 16 6:15 AM PT scrape (unchanged vs Sep 15 evening balances). Eddies has two pending claims (Hooker $7, Wingard $6).",
   "excludeZeroBids": true,
   "teamBalances": [
     {

@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-09-15",
+  "asOf": "2026-09-16",
   "faabLeft": 115,
   "startingQB": "Jalen Hurts",
   "roster": {
@@ -33,19 +33,18 @@
       "Eric Wilson"
     ],
     "DL": [
-      "Andrew Van Ginkel"
+      "Andrew Van Ginkel",
+      "Jaelan Phillips"
     ],
     "DB": [
       "Marcus Jones",
       "Xavier Watts"
     ],
     "IR": [
-      "TreVeyon Henderson",
-      "Harold Landry",
-      "Paulson Adebo"
+      "TreVeyon Henderson"
     ]
   },
-  "notes": "A.J. Brown on the injury list.",
-  "source": "Fantrax",
+  "notes": "Sep 16 AM: \u2212Harold Landry; +Jaelan Phillips \u2212Paulson Adebo (Sep 13). Trade block: Henderson/Jones/AJ Brown/Golden/Higgins.",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT",
   "fantraxTeamId": "kwaohsfwmsb3ulv4"
 }

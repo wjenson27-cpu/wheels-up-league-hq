@@ -1,8 +1,24 @@
 {
-  "updated": "2026-09-15",
-  "source": "Fantrax full scrape Sep 15 evening",
+  "updated": "2026-09-16",
+  "source": "Fantrax scrape Sep 16 6:15 AM PT",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-09-15",
+      "time": "6:39 PM PDT",
+      "status": "completed",
+      "official": true,
+      "teamA": "Substation (Nate)",
+      "teamB": "The Hypersecretors (Jacob)",
+      "givesA": [
+        "Sam LaPorta (TE)"
+      ],
+      "givesB": [
+        "Jihaad Campbell (LB)",
+        "R.J. Harvey (RB)"
+      ],
+      "summary": "Fantrax official \u2014 Substation traded Sam LaPorta to Hypersecretors for Jihaad Campbell and R.J. Harvey (Sep 15 6:39 PM PDT)."
+    },
     {
       "date": "2026-09-14",
       "time": "11:50 PM PDT",
@@ -141,36 +157,49 @@
   "pending": [],
   "blocks": [
     {
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "player": null,
+      "players": [
+        "TreVeyon Henderson",
+        "Aaron Jones",
+        "A.J. Brown",
+        "Matthew Golden",
+        "Tee Higgins"
+      ],
+      "lastUpdated": "2026-09-15 12:35 PM PDT",
+      "note": "On the block"
+    },
+    {
       "team": "Pocket Agents",
       "player": null,
       "players": [],
       "lastUpdated": "2026-09-14 2:11 PM PDT",
-      "note": "Block cleared (Barton dropped)."
-    },
-    {
-      "team": "Substation",
-      "player": "Brock Purdy",
-      "pos": "QB/SF",
-      "lastUpdated": "2026-09-15",
-      "note": "Still on block"
-    },
-    {
-      "team": "Substation",
-      "player": "Terry McLaurin",
-      "pos": "WR/WAS",
-      "lastUpdated": "2026-09-15",
-      "note": "Still on block"
+      "note": "Block empty (Barton dropped Sep 14)."
     },
     {
       "team": "Substation",
       "player": "Bhayshul Tuten",
       "pos": "RB/JAX",
-      "lastUpdated": "2026-09-15",
-      "note": "Still on block"
+      "lastUpdated": "2026-09-15 11:44 AM PDT",
+      "note": "On the block"
+    },
+    {
+      "team": "Substation",
+      "player": "Terry McLaurin",
+      "pos": "WR/WAS",
+      "lastUpdated": "2026-09-15 11:44 AM PDT",
+      "note": "On the block"
+    },
+    {
+      "team": "Substation",
+      "player": "Dallas Goedert",
+      "pos": "TE/PHI",
+      "lastUpdated": "2026-09-15 11:44 AM PDT",
+      "note": "On the block (replaced Brock Purdy)"
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Fantrax Pending Trades view empty as of Sep 15 2026 ~4:00 PM PT (league pending count 0; no Eagle Ridge offers).",
-  "fantrax_completed_view": "Official completed since Aug 28 include Nix\u2194Love Sep 8; earlier Aga/Chase/Larry deals retained.",
+  "pending_note": "Fantrax Pending Trades view empty as of Sep 16 2026 ~6:15 AM PT (league pending count 0).",
+  "fantrax_completed_view": "Official completed since Aug 28 include LaPorta\u2194Campbell/Harvey Sep 15; Sanker\u2194$4 FAAB Sep 14; Nix\u2194$10 FAAB Sep 8; earlier Aga/Chase/Larry deals retained.",
   "hqComplete": true
 }
