@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-15",
+  "asOf": "2026-09-16",
   "faabLeft": 105,
   "roster": {
     "QB": [
@@ -48,12 +48,43 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "W1 FINAL L 241\u2013255 at Saltese. FAAB $105. PENDING on Fantrax (not applied here): claim Amani Hooker / drop James Williams \u2014 needs Bill yes. Bowers OUT; To'oTo'o watch.",
+  "notes": "W1 FINAL L 241–255 at Saltese. Week 2 at Valley Old Goats (proj 183.8–188.4). FAAB $105. Two pending claims both dropping James Williams: Hooker $7 (processes ~9:00 AM PT Sep 16) and Wingard $6. Coker injured in an active slot. Bowers OUT; To'oTo'o watch.",
+  "pendingClaims": [
+    {
+      "add": "Amani Hooker",
+      "drop": "James Williams",
+      "bid": 7,
+      "status": "pending",
+      "submitted": "2026-09-15 9:11 AM PDT",
+      "processing": "2026-09-16 9:00 AM PDT",
+      "note": "Recommend only until yes, do it — Bill parked Sep 15"
+    },
+    {
+      "add": "Andrew Wingard",
+      "drop": "James Williams",
+      "bid": 6,
+      "status": "pending",
+      "submitted": "2026-09-15 5:58 PM PDT",
+      "note": "Second claim same drop; recommend only"
+    }
+  ],
   "pendingClaim": {
     "add": "Amani Hooker",
     "drop": "James Williams",
+    "bid": 7,
     "status": "pending",
-    "note": "Recommend only until yes, do it"
+    "note": "Also pending Wingard $6 same drop; recommend only until yes, do it"
   },
-  "source": "Fantrax Sep 15 evening"
+  "week2": {
+    "opponent": "Valley Old Goats",
+    "homeAway": "away",
+    "projEddies": 183.8,
+    "projOpp": 188.4
+  },
+  "flags": [
+    "Jalen Coker injured in active slot",
+    "Brock Bowers OUT",
+    "Henry To'oTo'o watch"
+  ],
+  "source": "Fantrax Sep 16 6am"
 }
