@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-16",
-  "source": "Fantrax scrape Sep 16 6:15 AM PT",
+  "updated": "2026-09-17",
+  "source": "Fantrax scrape Sep 17 6:27 AM PT",
   "season": 2026,
   "trades": [
     {
@@ -17,7 +17,7 @@
         "Jihaad Campbell (LB)",
         "R.J. Harvey (RB)"
       ],
-      "summary": "Fantrax official \u2014 Substation traded Sam LaPorta to Hypersecretors for Jihaad Campbell and R.J. Harvey (Sep 15 6:39 PM PDT)."
+      "summary": "Fantrax official — Substation traded Sam LaPorta to Hypersecretors for Jihaad Campbell and R.J. Harvey (Sep 15 6:39 PM PDT)."
     },
     {
       "date": "2026-09-14",
@@ -32,7 +32,7 @@
       "givesB": [
         "$4 FAAB"
       ],
-      "summary": "Fantrax official \u2014 Pocket Agents traded Jonas Sanker to Saltese for $4 FAAB."
+      "summary": "Fantrax official — Pocket Agents traded Jonas Sanker to Saltese for $4 FAAB."
     },
     {
       "date": "2026-09-08",
@@ -46,7 +46,7 @@
       "givesB": [
         "$10 FAAB"
       ],
-      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8 6:04 PM PDT). Jordan Love was dropped by Substation in the same transaction (not sent to Pocket). Corrected Sep 11 per Bill + Fantrax re-verify.",
+      "summary": "Fantrax official — Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8 6:04 PM PDT). Jordan Love was dropped by Substation in the same transaction (not sent to Pocket). Corrected Sep 11 per Bill + Fantrax re-verify.",
       "official": true,
       "corrected": true
     },
@@ -61,7 +61,7 @@
       "givesB": [
         "5 draft picks (swap package)"
       ],
-      "summary": "Fantrax official #1 \u2014 draft 5-for-5 pick swap (Aug 28).",
+      "summary": "Fantrax official #1 — draft 5-for-5 pick swap (Aug 28).",
       "official": true
     },
     {
@@ -75,7 +75,7 @@
       "givesB": [
         "Kaleb Elarms-Orr (LB)"
       ],
-      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "summary": "Fantrax official #2 — Larry buys Elarms-Orr from Aga for $20 FAAB.",
       "official": true
     },
     {
@@ -92,7 +92,7 @@
         "Cameron Skattebo (RB)",
         "Caleb Downs (DB)"
       ],
-      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
+      "summary": "Fantrax official #3 — live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas −Evan Williams; Aga +Bryce Boettcher −Najee.",
       "official": true
     },
     {
@@ -101,12 +101,12 @@
       "teamA": "Saltese Slamm (Larry)",
       "teamB": "Substation (Nate)",
       "givesA": [
-        "draft pick(s) \u2014 handshake"
+        "draft pick(s) — handshake"
       ],
       "givesB": [
-        "draft pick(s) \u2014 handshake"
+        "draft pick(s) — handshake"
       ],
-      "summary": "Handshake only \u2014 Fantrax chairs unchanged (Larry\u2194Nate pick swap).",
+      "summary": "Handshake only — Fantrax chairs unchanged (Larry↔Nate pick swap).",
       "official": false
     },
     {
@@ -120,7 +120,7 @@
       "givesB": [
         "R2 / R3 / R8 chairs (handshake)"
       ],
-      "summary": "Handshake only \u2014 Bill\u2194Nate R2/R3/R8; Eddies still sat 10/19/38/103 on Fantrax.",
+      "summary": "Handshake only — Bill↔Nate R2/R3/R8; Eddies still sat 10/19/38/103 on Fantrax.",
       "official": false
     },
     {
@@ -135,7 +135,7 @@
         "4.08",
         "4.12"
       ],
-      "summary": "Handshake \u2014 Nate 3.04 for Chase 4.08+4.12; Schwesinger still Nate on Fantrax.",
+      "summary": "Handshake — Nate 3.04 for Chase 4.08+4.12; Schwesinger still Nate on Fantrax.",
       "official": false
     },
     {
@@ -150,7 +150,7 @@
       "givesB": [
         "R20 chair (Sadiq stays Jacob)"
       ],
-      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "summary": "Handshake — Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
       "official": false
     }
   ],
@@ -178,28 +178,21 @@
     },
     {
       "team": "Substation",
+      "player": "Tony Pollard",
+      "pos": "RB/TEN",
+      "lastUpdated": "2026-09-16 12:13 PM PDT",
+      "note": "On the block (McLaurin/Goedert cleared)"
+    },
+    {
+      "team": "Substation",
       "player": "Bhayshul Tuten",
       "pos": "RB/JAX",
-      "lastUpdated": "2026-09-15 11:44 AM PDT",
+      "lastUpdated": "2026-09-16 12:13 PM PDT",
       "note": "On the block"
-    },
-    {
-      "team": "Substation",
-      "player": "Terry McLaurin",
-      "pos": "WR/WAS",
-      "lastUpdated": "2026-09-15 11:44 AM PDT",
-      "note": "On the block"
-    },
-    {
-      "team": "Substation",
-      "player": "Dallas Goedert",
-      "pos": "TE/PHI",
-      "lastUpdated": "2026-09-15 11:44 AM PDT",
-      "note": "On the block (replaced Brock Purdy)"
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Fantrax Pending Trades view empty as of Sep 16 2026 ~6:15 AM PT (league pending count 0).",
-  "fantrax_completed_view": "Official completed since Aug 28 include LaPorta\u2194Campbell/Harvey Sep 15; Sanker\u2194$4 FAAB Sep 14; Nix\u2194$10 FAAB Sep 8; earlier Aga/Chase/Larry deals retained.",
+  "pending_note": "Fantrax Pending Trades view empty as of Sep 17 2026 ~6:27 AM PT (league pending count 0).",
+  "fantrax_completed_view": "Official completed since Aug 28 include LaPorta↔Campbell/Harvey Sep 15; Sanker↔$4 FAAB Sep 14; Nix↔$10 FAAB Sep 8; earlier Aga/Chase/Larry deals retained.",
   "hqComplete": true
 }

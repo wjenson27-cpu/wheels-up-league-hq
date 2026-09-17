@@ -1,13 +1,48 @@
 {
-  "updated": "2026-09-16",
-  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
+  "updated": "2026-09-17",
+  "source": "Fantrax scrape Sep 17 6:27 AM PT",
   "items": [
+    {
+      "date": "2026-09-17",
+      "type": "ADD/DROP",
+      "team": "Drummond Dongers",
+      "summary": "Added T.J. Hockenson (TE); dropped Kayshon Boutte (6:17 AM PT)",
+      "time": "6:17 AM PT"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD",
+      "team": "The Hypersecretors",
+      "summary": "Added Dallas Turner (DL/LB) (8:16 PM PT)",
+      "time": "8:16 PM PT"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Romeo Doubs (WR); dropped T.J. Hockenson (TE) (6:42 PM PT)",
+      "time": "6:42 PM PT"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "The Hypersecretors",
+      "summary": "Added Grant Delpit (DB); dropped Brandon Jones (DB) (5:59 PM PT)",
+      "time": "5:59 PM PT"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "DROP",
+      "team": "Little Ass Boys",
+      "summary": "Dropped Baker Mayfield (QB) (5:56 PM PT)",
+      "time": "5:56 PM PT"
+    },
     {
       "date": "2026-09-16",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "Won Amani Hooker (DB) $18 FAAB (Eddies lost at $7) [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
-      "attribution": "scrapeA-preferred-unverified"
+      "summary": "Won Amani Hooker (DB) $18 FAAB (Eddies lost at $7)",
+      "attribution": "scrapeA-verified"
     },
     {
       "date": "2026-09-16",
@@ -37,8 +72,8 @@
       "date": "2026-09-16",
       "type": "ADD/DROP",
       "team": "Valley Old Goats",
-      "summary": "Added Devaughn Vele (WR) $16; dropped Marvin Mims [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
-      "attribution": "scrapeA-preferred-unverified"
+      "summary": "Added Devaughn Vele (WR) $16; dropped Marvin Mims",
+      "attribution": "scrapeA-verified"
     },
     {
       "date": "2026-09-16",
@@ -50,8 +85,8 @@
       "date": "2026-09-16",
       "type": "ADD/DROP",
       "team": "Drummond Dongers",
-      "summary": "Added Donovan Ezeiruaku (DL) $14 [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
-      "attribution": "scrapeA-preferred-unverified"
+      "summary": "Added Donovan Ezeiruaku (DL) $14",
+      "attribution": "scrapeA-verified"
     },
     {
       "date": "2026-09-16",
@@ -87,8 +122,8 @@
       "date": "2026-09-16",
       "type": "FAILED",
       "team": "Eagle Ridge Eddies",
-      "summary": "FAILED claim Amani Hooker $7 (Ultron won at $18); drop James Williams unused for Hooker — Wingard claim on same drop succeeded [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
-      "attribution": "scrapeA-preferred-unverified"
+      "summary": "FAILED claim Amani Hooker $7 (Ultron won at $18); drop James Williams unused for Hooker — Wingard claim on same drop succeeded",
+      "attribution": "scrapeA-verified"
     },
     {
       "date": "2026-09-16",
@@ -136,8 +171,8 @@
       "date": "2026-09-16",
       "type": "ADD/DROP",
       "team": "Saltese Slamm",
-      "summary": "Added Shaun Dolac (LB) $3; Marques Sigle (DB) $3; Zach Allen (DL) $2 drop Jalen Carter [ATTRIBUTION CONFLICT scrapeA preferred vs scrapeB — see faab.dataConflict]",
-      "attribution": "scrapeA-preferred-unverified"
+      "summary": "Added Shaun Dolac (LB) $3; Marques Sigle (DB) $3; Zach Allen (DL) $2 drop Jalen Carter",
+      "attribution": "scrapeA-verified"
     },
     {
       "date": "2026-09-15",
@@ -584,6 +619,6 @@
       "summary": "20-round snake complete — Wheels Up 2026 is locked"
     }
   ],
-  "note": "Sep 16 6am: new Sep 15 evening trade + 7 drops; Eddies still has 2 pending claims (Hooker $7, Wingard $6).",
-  "dataConflictNote": "DATA CONFLICT (late claims): Scrape A (preferred until verified) — Ultron +Hooker $18; Valley +Vele $16 −Mims; Dongers +Ezeiruaku $14; Saltese +Sigle $3. Scrape B alternate — Ultron +Vele $18; Valley +Ezeiruaku $16; Dongers +Sigle $14; Saltese +Cody Simon $3. Remainings identical either way; player attribution unverified."
+  "note": "Sep 17 6:27 AM: post-waiver free-agent moves — Dongers Hockenson/−Boutte; Hyper +Dallas Turner +Delpit/−Brandon Jones; Substation Doubs/−Hockenson; LAB dropped Mayfield. Trade blocks: Newman Lake (unchanged) + Substation Pollard/Tuten.",
+  "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

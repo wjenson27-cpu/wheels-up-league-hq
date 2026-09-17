@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-17",
   "faabLeft": 93,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -19,12 +19,12 @@
       "Ladd McConkey",
       "D.J. Moore",
       "Parker Washington",
-      "Kayshon Boutte",
       "KC Concepcion",
       "KaVontae Turpin"
     ],
     "TE": [
-      "Brenton Strange"
+      "Brenton Strange",
+      "T.J. Hockenson"
     ],
     "LB": [
       "T.J. Edwards",
@@ -45,7 +45,7 @@
       "Aaron Donald"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Donovan Ezeiruaku $14. FAAB $93. | DATA CONFLICT: Ezeiruaku $14 is Scrape A; Scrape B had Dongers +Sigle $14. FAAB $93 either way.",
-  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT); contested late claims use Scrape A pending verify",
+  "notes": "Sep 17 AM: +T.J. Hockenson (−Kayshon Boutte). Sep 16 post-waiver: +Donovan Ezeiruaku $14. FAAB $93.",
+  "source": "Fantrax scrape Sep 17 6:27 AM PT",
   "fantraxTeamId": "lreem0zbmsb3ulv5"
 }

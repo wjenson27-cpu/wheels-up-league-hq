@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-17",
   "faabLeft": 70,
   "startingQB": "Jordan Love",
   "roster": {
@@ -20,7 +20,8 @@
     "WR": [
       "Terry McLaurin",
       "Malik Nabers",
-      "Alec Pierce"
+      "Alec Pierce",
+      "Romeo Doubs"
     ],
     "TE": [
       "Dallas Goedert",
@@ -49,13 +50,13 @@
       "Nick Emmanwori"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Jordan Love $11 (−Bo Nix); +Avonte Maddox $2 (−Justin Strnad). FAAB $70.",
+  "notes": "Sep 17 AM: +Romeo Doubs (−T.J. Hockenson). Trade block: Tony Pollard, Bhayshul Tuten (McLaurin/Goedert cleared). FAAB $70.",
   "injuryFlags": [
     "Malik Nabers",
     "Brian Branch",
     "DeShon Elliott",
     "Nick Emmanwori OUT"
   ],
-  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
+  "source": "Fantrax scrape Sep 17 6:27 AM PT",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5"
 }
