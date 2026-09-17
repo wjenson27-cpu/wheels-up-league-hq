@@ -104,7 +104,7 @@
               <tr>
                 <th class="col-rank">#</th>
                 <th class="col-team">Player</th>
-                <th class="col-owner">Team</th>
+                <th class="col-team">Claiming team</th>
                 <th class="col-owner">Date</th>
                 <th class="col-trades">Bid</th>
               </tr>
@@ -119,7 +119,7 @@
                 return `<tr class="${i < 3 ? "hot" : ""}">
                   <td class="col-rank">${i + 1}</td>
                   <td class="col-team">${WUC.escapeHtml(c.player || "—")}${drop}</td>
-                  <td class="col-owner">${teamCell}</td>
+                  <td class="col-team">${teamCell}</td>
                   <td class="col-owner">${c.date ? WUC.formatDate(c.date) : "—"}</td>
                   <td class="col-trades">$${c.amount}</td>
                 </tr>`;
