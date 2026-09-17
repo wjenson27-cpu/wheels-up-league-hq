@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-17",
   "faabLeft": 91,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -54,7 +54,7 @@
     "Jalen Coker injured (active slot)",
     "Brock Bowers OUT"
   ],
-  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
+  "source": "Fantrax scrape Sep 17 2026 ~6:30 AM PT",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Jalen Coker injured in active slot",
@@ -65,5 +65,6 @@
   "flags": [
     "Jalen Coker injured in active slot",
     "Brock Bowers OUT"
-  ]
+  ],
+  "updated": "2026-09-17"
 }

@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-16",
-  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
+  "updated": "2026-09-17",
+  "source": "Fantrax scrape Sep 17 2026 ~6:30 AM PT",
   "startingBudget": 115,
-  "note": "Remainings from Fantrax Sep 16 post-waiver scrape (after 9:00 AM PT run). Eddies won Wingard $6 (−James Williams) and Dorian Williams $8 (−Henry To'oTo'o); lost Hooker $7 (Ultron $18 per Scrape A) and Dart $5 (Hyper $16). $0/null bids excluded from claims. DATA CONFLICT (late claims): Scrape A (preferred until verified) — Ultron +Hooker $18; Valley +Vele $16 −Mims; Dongers +Ezeiruaku $14; Saltese +Sigle $3. Scrape B alternate — Ultron +Vele $18; Valley +Ezeiruaku $16; Dongers +Sigle $14; Saltese +Cody Simon $3. Remainings identical either way; player attribution unverified. | Hooker/Vele attribution verified Scrape A (Ultron Hooker $18 / Valley Vele $16).",
+  "note": "Remainings from Fantrax Sep 17 ~6:30 AM PT scrape. Sep 16 midday trades moved FAAB: Ultron → Substation $15 (McLaurin deal); Substation → TTAB $8 (Goedert/Winfield deal). No new >$0 waiver claims since Sep 16 9 AM processing. $0/null free-agent adds excluded from claims[]. Hooker/Vele attribution remains Scrape A (Ultron Hooker $18 / Valley Vele $16).",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -102,12 +102,12 @@
       "owner": "Chase Anderson",
       "abbrev": "TTA",
       "starting": 115,
-      "remaining": 51,
+      "remaining": 59,
       "spentClaims": 54,
       "tradeOut": 10,
-      "tradeIn": 0,
+      "tradeIn": 8,
       "spentKnown": 64,
-      "remainingKnown": 51
+      "remainingKnown": 59
     },
     {
       "id": "hyper",
@@ -141,12 +141,12 @@
       "owner": "Brian Aga",
       "abbrev": "ULT",
       "starting": 115,
-      "remaining": 126,
+      "remaining": 111,
       "spentClaims": 19,
-      "tradeOut": 0,
+      "tradeOut": 15,
       "tradeIn": 30,
-      "spentKnown": 19,
-      "remainingKnown": 126
+      "spentKnown": 34,
+      "remainingKnown": 111
     },
     {
       "id": "goats",
@@ -180,12 +180,12 @@
       "owner": "Nathan Kelly",
       "abbrev": "SUB",
       "starting": 115,
-      "remaining": 70,
+      "remaining": 77,
       "spentClaims": 25,
-      "tradeOut": 20,
-      "tradeIn": 0,
-      "spentKnown": 45,
-      "remainingKnown": 70
+      "tradeOut": 28,
+      "tradeIn": 15,
+      "spentKnown": 53,
+      "remainingKnown": 77
     }
   ],
   "claims": [
@@ -594,6 +594,35 @@
   ],
   "trades": [
     {
+      "date": "2026-09-16",
+      "amount": 15,
+      "fromTeam": "Ultron",
+      "fromTeamId": "ultron",
+      "toTeam": "Substation",
+      "toTeamId": "substation",
+      "for": [
+        "Terry McLaurin (WR)"
+      ],
+      "summary": "Fantrax official — Ultron paid $15 FAAB to Substation with Emmett Johnson for Terry McLaurin (Sep 16).",
+      "official": true,
+      "kind": "trade"
+    },
+    {
+      "date": "2026-09-16",
+      "amount": 8,
+      "fromTeam": "Substation",
+      "fromTeamId": "substation",
+      "toTeam": "Towner Top Aga Bottom",
+      "toTeamId": "ttab",
+      "for": [
+        "Dallas Goedert (TE)",
+        "Antoine Winfield (DB)"
+      ],
+      "summary": "Fantrax official — Substation paid $8 FAAB to TTAB with Goedert+Winfield for Pollard+Edmunds (Sep 16).",
+      "official": true,
+      "kind": "trade"
+    },
+    {
       "date": "2026-09-08",
       "amount": 10,
       "fromTeam": "Substation",
@@ -665,20 +694,5 @@
       "kind": "trade"
     }
   ],
-  "incomplete": false,
-  "dataConflict": {
-    "status": "resolved",
-    "verifiedAt": "2026-09-16T10:06-07:00",
-    "resolution": "scrapeA",
-    "verified": {
-      "hookerOwner": "Ultron",
-      "hookerBid": 18,
-      "veleOwner": "Valley Old Goats",
-      "veleBid": 16,
-      "ezeiruakuOwner": "Drummond Dongers",
-      "sigleOwner": "Saltese Slamm",
-      "codySimonOwner": "FA"
-    },
-    "note": "Attribution verified Sep 16 ~10:06 AM PT via Fantrax player ownership: Ultron +Amani Hooker $18; Valley +Devaughn Vele $16; Dongers +Donovan Ezeiruaku $14; Saltese +Marques Sigle $3 (among others). Cody Simon free agent. Scrape A correct; Scrape B was a parse misalign."
-  }
+  "incomplete": false
 }

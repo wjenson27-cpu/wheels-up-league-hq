@@ -1,8 +1,42 @@
 {
   "updated": "2026-09-17",
-  "source": "Fantrax scrape Sep 17 6:27 AM PT",
+  "source": "Fantrax scrape Sep 17 2026 ~6:30 AM PT",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-09-16",
+      "time": "12:13 PM PDT",
+      "status": "completed",
+      "official": true,
+      "teamA": "Substation (Nate)",
+      "teamB": "Ultron (Aga)",
+      "givesA": [
+        "Terry McLaurin (WR)"
+      ],
+      "givesB": [
+        "Emmett Johnson",
+        "$15 FAAB"
+      ],
+      "summary": "Fantrax official — Substation traded Terry McLaurin to Ultron for Emmett Johnson and $15 FAAB (Sep 16 12:13 PM PDT)."
+    },
+    {
+      "date": "2026-09-16",
+      "time": "11:40 AM PDT",
+      "status": "completed",
+      "official": true,
+      "teamA": "Substation (Nate)",
+      "teamB": "Towner Top Aga Bottom (Chase)",
+      "givesA": [
+        "Dallas Goedert (TE)",
+        "Antoine Winfield (DB)",
+        "$8 FAAB"
+      ],
+      "givesB": [
+        "Tony Pollard (RB)",
+        "Tremaine Edmunds (LB)"
+      ],
+      "summary": "Fantrax official — Substation traded Dallas Goedert, Antoine Winfield, and $8 FAAB to TTAB for Tony Pollard and Tremaine Edmunds (Sep 16 11:40 AM PDT)."
+    },
     {
       "date": "2026-09-15",
       "time": "6:39 PM PDT",
@@ -181,18 +215,18 @@
       "player": "Tony Pollard",
       "pos": "RB/TEN",
       "lastUpdated": "2026-09-16 12:13 PM PDT",
-      "note": "On the block (McLaurin/Goedert cleared)"
+      "note": "On the block (acquired from TTAB in Goedert trade)"
     },
     {
       "team": "Substation",
       "player": "Bhayshul Tuten",
       "pos": "RB/JAX",
       "lastUpdated": "2026-09-16 12:13 PM PDT",
-      "note": "On the block"
+      "note": "On the block (McLaurin and Goedert cleared after Sep 16 trades)"
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Fantrax Pending Trades view empty as of Sep 17 2026 ~6:27 AM PT (league pending count 0).",
-  "fantrax_completed_view": "Official completed since Aug 28 include LaPorta↔Campbell/Harvey Sep 15; Sanker↔$4 FAAB Sep 14; Nix↔$10 FAAB Sep 8; earlier Aga/Chase/Larry deals retained.",
+  "pending_note": "Fantrax Pending Trades view empty as of Sep 17 2026 ~6:30 AM PT (league pending count 0).",
+  "fantrax_completed_view": "Official completed since Aug 28 include McLaurin↔Emmett+$15 Sep 16; Goedert/Winfield+$8↔Pollard/Edmunds Sep 16; LaPorta↔Campbell/Harvey Sep 15; Sanker↔$4 FAAB Sep 14; Nix↔$10 FAAB Sep 8; earlier Aga/Chase/Larry deals retained.",
   "hqComplete": true
 }

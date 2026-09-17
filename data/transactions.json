@@ -1,7 +1,115 @@
 {
   "updated": "2026-09-17",
-  "source": "Fantrax scrape Sep 17 6:27 AM PT",
+  "source": "Fantrax scrape Sep 17 2026 ~6:30 AM PT",
   "items": [
+    {
+      "date": "2026-09-17",
+      "type": "ADD/DROP",
+      "team": "Drummond Dongers",
+      "summary": "Added T.J. Hockenson (TE); dropped Kayshon Boutte ($0/null bid)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "TRADE",
+      "team": "Substation",
+      "summary": "Traded Terry McLaurin to Ultron for Emmett Johnson + $15 FAAB (12:13 PM PDT)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "TRADE",
+      "team": "Ultron",
+      "summary": "Traded Emmett Johnson + $15 FAAB to Substation for Terry McLaurin (12:13 PM PDT)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "TRADE",
+      "team": "Substation",
+      "summary": "Traded Dallas Goedert, Antoine Winfield, + $8 FAAB to TTAB for Tony Pollard + Tremaine Edmunds (11:40 AM PDT)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "TRADE",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Traded Tony Pollard + Tremaine Edmunds to Substation for Dallas Goedert, Antoine Winfield, + $8 FAAB (11:40 AM PDT)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD",
+      "team": "The Hypersecretors",
+      "summary": "Added Dallas Turner (DL) ($0/null)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Romeo Doubs (WR); dropped T.J. Hockenson ($0/null)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "The Hypersecretors",
+      "summary": "Added Grant Delpit (DB); dropped Brandon Jones ($0/null)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "DROP",
+      "team": "Little Ass Boys",
+      "summary": "Dropped Baker Mayfield"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "DROP",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Dropped Marcus Jones"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "DROP",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Dropped Rachaad White"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "DROP",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Dropped Makai Lemon"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Added Aiden Fisher; dropped Mike Washington ($0/null)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added T.J. Hockenson; dropped Tyler Nubin (later flipped Hockenson for Doubs)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD",
+      "team": "Indian Trail Slumlords",
+      "summary": "Added Tyson Campbell ($0/null)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD",
+      "team": "Indian Trail Slumlords",
+      "summary": "Added Keenan Allen ($0/null)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Saltese Slamm",
+      "summary": "Added Raheim Sanders; dropped Jonah Coleman ($0/null)"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Leo Chenal; dropped Jaelan Phillips ($0/null)"
+    },
     {
       "date": "2026-09-17",
       "type": "ADD/DROP",
