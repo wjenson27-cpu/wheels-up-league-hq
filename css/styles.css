@@ -738,6 +738,7 @@ img { max-width: 100%; height: auto; }
 .trade-table thead .col-trades { text-align: right; }
 @media (max-width: 560px) {
   .trade-table .col-owner { display: none; }
+  .trade-table .col-team { min-width: 0; }
 }
 
 
