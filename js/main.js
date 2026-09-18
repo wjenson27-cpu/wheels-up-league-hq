@@ -49,6 +49,7 @@
     · <a href="scoring.html">Scoring</a>
     · <a href="podcast.html">Podcast</a></p>
   <p class="dim">Commish: ${cfg.commissioner || (cfg.commissioners || [])[0] || "—"}</p>
+  <p class="dim visit-count">Site visits <strong id="visit-count">…</strong></p>
 </footer>`;
   }
 
@@ -57,6 +58,15 @@
     const footHost = document.getElementById("site-footer");
     if (navHost) navHost.innerHTML = buildNav();
     if (footHost) footHost.innerHTML = buildFooter();
+    const visitEl = document.getElementById("visit-count");
+    if (visitEl) {
+      fetch("https://abacus.jasoncameron.dev/hit/wheels-up-league-hq/visits")
+        .then((r) => r.json())
+        .then((d) => {
+          visitEl.textContent = Number(d && d.value != null ? d.value : 0).toLocaleString("en-US");
+        })
+        .catch(() => { visitEl.textContent = "—"; });
+    }
 
     const toggle = document.getElementById("navToggle");
     const links = document.getElementById("navLinks");
