@@ -19,8 +19,8 @@
       <p class="tagline">14-team <strong>IDP</strong> on Fantrax · Full PPR + <strong>TE premium</strong>. Draft locked Aug 30. Commish: <strong>Luke Sahlberg (ThiccSwede)</strong>. <strong>WWJDD</strong>.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://www.fantrax.com/fantasy/league/hms8onqvmsb3ulsx/home" target="_blank" rel="noopener">Open Fantrax</a>
-        <a class="btn btn-teal" href="awards.html">Awards</a>
         <a class="btn btn-ghost" href="rankings.html">Power rankings</a>
+        <a class="btn btn-ghost" href="awards.html">Awards</a>
       </div>
     </section>
 
@@ -32,17 +32,30 @@
       <span class="stat-pill">Draft <strong class="hot">Aug 30, 2026</strong></span>
       <span class="stat-pill">All clubs <strong>0–0</strong></span>
     </div>
+    <p class="last-sync" id="lastSync" hidden></p>
 
     <div class="grid grid-2">
       <article class="card">
         <h2>Trade leaderboard</h2>
         <p class="muted mb-0">2026 completed deals — official + handshake.</p>
-        <div id="tradeBoard" class="trade-board"><p class="muted">Loading…</p></div>
+        <div id="tradeBoard" class="trade-board" aria-busy="true">
+          <div class="skeleton-stack" aria-hidden="true">
+            <div class="skeleton-bar"></div>
+            <div class="skeleton-bar med"></div>
+            <div class="skeleton-bar short"></div>
+          </div>
+        </div>
         <p class="mt-1"><a href="trades.html">Full trade board →</a></p>
       </article>
       <article class="card">
         <h2>Week 1 slate</h2>
-        <div id="matchupList"><p class="muted">Loading…</p></div>
+        <div id="matchupList" aria-busy="true">
+          <div class="skeleton-stack" aria-hidden="true">
+            <div class="skeleton-bar"></div>
+            <div class="skeleton-bar med"></div>
+            <div class="skeleton-bar short"></div>
+          </div>
+        </div>
         <div class="cta-row mt-1">
           <a class="btn btn-ghost" href="rankings.html">Full power rankings</a>
           <a class="btn btn-ghost" href="scoring.html">Scoring sheet</a>
@@ -66,102 +79,173 @@
       <p class="week-recap-hint muted">Tap anywhere or press Esc to dismiss</p>
     </div>
   </div>
+  <div id="weekRecapToast" class="week-recap-toast" hidden role="status">
+    <span class="toast-msg" id="weekRecapToastMsg">Week survivor updated</span>
+    <button type="button" class="btn btn-ghost" id="weekRecapToastOpen">View</button>
+    <button type="button" class="toast-dismiss" id="weekRecapToastDismiss" aria-label="Dismiss">×</button>
+  </div>
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
+      const softError = (msg, retryId) =>
+        `<div class="soft-error">${msg}<br/><button type="button" class="btn btn-ghost" data-retry="${retryId}">Refresh</button></div>`;
+
+      document.body.addEventListener("click", (ev) => {
+        const btn = ev.target.closest("[data-retry]");
+        if (btn) location.reload();
+      });
+
       try {
         await WUC.loadTeamColors();
-        const [trades, teamsData, ranks, scores, awards] = await Promise.all([
+        const results = await Promise.allSettled([
           WUC.loadJSON("data/trades.json"),
           WUC.loadJSON("data/teams.json"),
           WUC.loadJSON("data/rankings.json"),
-          WUC.loadJSON("data/scores.json").catch(() => null),
-          WUC.loadJSON("data/awards.json").catch(() => null)
+          WUC.loadJSON("data/scores.json"),
+          WUC.loadJSON("data/awards.json"),
+          WUC.loadJSON("data/faab.json").catch(() => null),
+          WUC.loadJSON("data/transactions.json").catch(() => null)
         ]);
 
+        const val = (i) => (results[i].status === "fulfilled" ? results[i].value : null);
+        const trades = val(0);
+        const teamsData = val(1);
+        const ranks = val(2);
+        const scores = val(3);
+        const awards = val(4);
+        const faab = val(5);
+        const tx = val(6);
+
+        // Last sync from newest data file dates
+        const syncDates = [];
+        for (const obj of [trades, teamsData, ranks, scores, awards, faab, tx]) {
+          if (!obj) continue;
+          const raw = obj.updated || obj.asOf || obj.scraped_at;
+          if (raw) syncDates.push(String(raw));
+        }
+        if (syncDates.length) {
+          syncDates.sort();
+          const latest = syncDates[syncDates.length - 1].slice(0, 10);
+          const syncEl = document.getElementById("lastSync");
+          if (syncEl) {
+            try {
+              const d = new Date(latest + "T12:00:00");
+              const label = d.toLocaleDateString("en-US", {
+                month: "short", day: "numeric", year: "numeric",
+                timeZone: "America/Los_Angeles"
+              });
+              syncEl.hidden = false;
+              syncEl.textContent = `Last sync: ${label} PT`;
+            } catch (_) {
+              syncEl.hidden = false;
+              syncEl.textContent = `Last sync: ${latest}`;
+            }
+          }
+        }
+
         const board = document.getElementById("tradeBoard");
-        const teams = teamsData.teams || [];
-        const completed = (trades.trades || []).filter(t => t.status === "completed");
-        const counts = Object.fromEntries(teams.map(t => [t.id, 0]));
+        if (!trades || !teamsData) {
+          board.removeAttribute("aria-busy");
+          board.innerHTML = softError("Trade board unavailable — try Refresh.", "trades");
+        } else {
+          const teams = teamsData.teams || [];
+          const completed = (trades.trades || []).filter(t => t.status === "completed");
+          const counts = Object.fromEntries(teams.map(t => [t.id, 0]));
 
-        function resolveTeamId(label) {
-          const bare = String(label || "").split("(")[0].trim();
-          const hit = teams.find(t => t.name === bare || bare.includes(t.name) || t.name.includes(bare));
-          if (hit) return hit.id;
-          const aliases = [
-            ["Greenacres Goblins", "hyper"],
-            ["Hypersecretors", "hyper"],
-            ["Towner Top Aga Bottom", "ttab"],
-            ["Pocket Agents", "pocket"],
-            ["Substation", "substation"],
-            ["Ultron", "ultron"],
-            ["Saltese Slamm", "saltese"],
-            ["Eagle Ridge Eddies", "eddies"]
-          ];
-          for (const [key, id] of aliases) {
-            if (bare.includes(key) || key.includes(bare)) return id;
+          function resolveTeamId(label) {
+            const bare = String(label || "").split("(")[0].trim();
+            const hit = teams.find(t => t.name === bare || bare.includes(t.name) || t.name.includes(bare));
+            if (hit) return hit.id;
+            const aliases = [
+              ["Greenacres Goblins", "hyper"],
+              ["Hypersecretors", "hyper"],
+              ["Towner Top Aga Bottom", "ttab"],
+              ["Pocket Agents", "pocket"],
+              ["Substation", "substation"],
+              ["Ultron", "ultron"],
+              ["Saltese Slamm", "saltese"],
+              ["Eagle Ridge Eddies", "eddies"]
+            ];
+            for (const [key, id] of aliases) {
+              if (bare.includes(key) || key.includes(bare)) return id;
+            }
+            return null;
           }
-          return null;
-        }
 
-        for (const tr of completed) {
-          for (const side of ["teamA", "teamB"]) {
-            const id = resolveTeamId(tr[side]);
-            if (id && id in counts) counts[id] += 1;
+          for (const tr of completed) {
+            for (const side of ["teamA", "teamB"]) {
+              const id = resolveTeamId(tr[side]);
+              if (id && id in counts) counts[id] += 1;
+            }
+          }
+
+          const ranked = [...teams].sort((a, b) => {
+            const d = counts[b.id] - counts[a.id];
+            return d !== 0 ? d : a.name.localeCompare(b.name);
+          });
+
+          if (!completed.length) {
+            board.removeAttribute("aria-busy");
+            board.innerHTML = `<p class="muted mb-0">No deals yet — board is clear.</p>`;
+          } else {
+            const rows = ranked.map((t, i) => {
+              const n = counts[t.id];
+              const place = i + 1;
+              const hot = place <= 3 && n > 0 ? " hot" : "";
+              return `<tr class="${hot.trim()}">
+                <td class="col-rank">${place}</td>
+                <td class="col-team"><span class="team-inline">${WUC.teamMark(t, { size: "sm" })}<span>${WUC.escapeHtml(t.name)}</span></span></td>
+                <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
+                <td class="col-trades">${n}</td>
+              </tr>`;
+            }).join("");
+
+            board.removeAttribute("aria-busy");
+            board.innerHTML = `<table class="trade-table" aria-label="Trade leaderboard">
+              <thead>
+                <tr>
+                  <th class="col-rank">#</th>
+                  <th class="col-team">Team</th>
+                  <th class="col-owner">Owner</th>
+                  <th class="col-trades">Trades</th>
+                </tr>
+              </thead>
+              <tbody>${rows}</tbody>
+            </table>`;
           }
         }
-
-        const ranked = [...teams].sort((a, b) => {
-          const d = counts[b.id] - counts[a.id];
-          return d !== 0 ? d : a.name.localeCompare(b.name);
-        });
-
-        const rows = ranked.map((t, i) => {
-          const n = counts[t.id];
-          const place = i + 1;
-          const hot = place <= 3 && n > 0 ? " hot" : "";
-          return `<tr class="${hot.trim()}">
-            <td class="col-rank">${place}</td>
-            <td class="col-team"><span class="team-inline">${WUC.teamMark(t, { size: "sm" })}<span>${WUC.escapeHtml(t.name)}</span></span></td>
-            <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
-            <td class="col-trades">${n}</td>
-          </tr>`;
-        }).join("");
-
-        board.innerHTML = `<table class="trade-table" aria-label="Trade leaderboard">
-          <thead>
-            <tr>
-              <th class="col-rank">#</th>
-              <th class="col-team">Team</th>
-              <th class="col-owner">Owner</th>
-              <th class="col-trades">Trades</th>
-            </tr>
-          </thead>
-          <tbody>${rows}</tbody>
-        </table>`;
 
         const mu = document.getElementById("matchupList");
-        const matchups = ranks.week1Matchups || [];
-        mu.innerHTML = matchups.length
-          ? `<ul style="margin:0;padding-left:1.1rem;color:var(--text-muted)">${matchups.map(m => `<li>${WUC.escapeHtml(m)}</li>`).join("")}</ul>`
-          : `<p class="muted">Matchups TBD.</p>`;
+        if (!ranks && !scores) {
+          mu.removeAttribute("aria-busy");
+          mu.innerHTML = softError("Week slate unavailable — try Refresh.", "slate");
+        } else {
+          const matchups = (ranks && ranks.week1Matchups) || [];
+          mu.removeAttribute("aria-busy");
+          mu.innerHTML = matchups.length
+            ? `<ul style="margin:0;padding-left:1.1rem;color:var(--text-muted)">${matchups.map(m => `<li>${WUC.escapeHtml(m)}</li>`).join("")}</ul>`
+            : `<p class="muted">Matchups TBD.</p>`;
 
-        const top = (ranks.rankings || []).slice(0, 5);
-        document.getElementById("topBoard").innerHTML = top.map(r =>
-          `<li class="team-inline" style="margin-bottom:0.35rem">${WUC.teamMark(r.teamId, { size: "sm" })}<span><strong style="color:var(--text)">#${r.rank} ${WUC.escapeHtml(r.team)}</strong> — ${WUC.escapeHtml(r.blurb)}</span></li>`
-        ).join("");
+          if (ranks) {
+            const top = (ranks.rankings || []).slice(0, 5);
+            document.getElementById("topBoard").innerHTML = top.map(r =>
+              `<li class="team-inline" style="margin-bottom:0.35rem">${WUC.teamMark(r.teamId, { size: "sm" })}<span><strong style="color:var(--text)">#${r.rank} ${WUC.escapeHtml(r.team)}</strong> — ${WUC.escapeHtml(r.blurb)}</span></li>`
+            ).join("");
+          }
+        }
 
         // Week slate from live scores when available
         if (scores && Array.isArray(scores.matchups) && scores.matchups.length) {
           const weekNum = scores.week || 1;
           const weekDone = scores.weekStatus === "final" || scores.complete === true
             || scores.matchups.every((m) => String(m.status || "").toLowerCase() === "final");
-          const mu = document.getElementById("matchupList");
-          const slateTitle = document.querySelector("#matchupList")?.closest("article")?.querySelector("h2");
+          const muLive = document.getElementById("matchupList");
+          const slateTitle = muLive?.closest("article")?.querySelector("h2");
           if (slateTitle) slateTitle.textContent = weekDone ? `Week ${weekNum} final` : `Week ${weekNum} slate`;
-          mu.innerHTML = `<ul class="home-matchups">${scores.matchups.map((m) => {
+          muLive.removeAttribute("aria-busy");
+          muLive.innerHTML = `<ul class="home-matchups">${scores.matchups.map((m) => {
             const hs = Number(m.homeScore);
             const as = Number(m.awayScore);
             const st = String(m.status || "").toLowerCase();
@@ -179,16 +263,26 @@
         }
       } catch (e) {
         console.error(e);
-        document.getElementById("tradeBoard").innerHTML = `<p class="muted">Couldn’t load trade leaderboard.</p>`;
+        const board = document.getElementById("tradeBoard");
+        board.removeAttribute("aria-busy");
+        board.innerHTML = softError("Trade board unavailable — try Refresh.", "trades");
+        const mu = document.getElementById("matchupList");
+        if (mu) {
+          mu.removeAttribute("aria-busy");
+          mu.innerHTML = softError("Week slate unavailable — try Refresh.", "slate");
+        }
       }
     });
 
     function runWeekRecapOverlay(scores, awards, weekNum, weekDone) {
       if (!weekDone) return;
-      const storageKey = `wuc-week-recap-dismissed-w${weekNum}`;
+      const seenKey = `wuc-week-recap-seen-w${weekNum}`;
+      const dismissKey = `wuc-week-recap-dismissed-w${weekNum}`;
+      let forcePreview = false;
+      let alreadySeen = false;
       try {
-        const forcePreview = new URLSearchParams(location.search).has("preview");
-        if (!forcePreview && sessionStorage.getItem(storageKey) === "1") return;
+        forcePreview = new URLSearchParams(location.search).has("preview");
+        alreadySeen = localStorage.getItem(seenKey) === "1";
       } catch (_) {}
 
       let kitty = null;
@@ -199,7 +293,6 @@
         if (k) kitty = k;
         if (e) bus = e;
       }
-      // Fallback: derive from scores if awards missing
       if ((!kitty || !bus) && scores && scores.matchups) {
         const rows = [];
         for (const m of scores.matchups) {
@@ -220,6 +313,33 @@
       }
       if (!kitty && !bus) return;
 
+      const openModal = () => openWeekRecapModal(kitty, bus, weekNum, seenKey, dismissKey);
+
+      // After first view (or already dismissed this session): collapsed toast
+      let sessionDismissed = false;
+      try { sessionDismissed = sessionStorage.getItem(dismissKey) === "1"; } catch (_) {}
+      if (!forcePreview && (alreadySeen || sessionDismissed)) {
+        showWeekRecapToast(weekNum, openModal);
+        return;
+      }
+
+      openModal();
+    }
+
+    function showWeekRecapToast(weekNum, onOpen) {
+      const toast = document.getElementById("weekRecapToast");
+      const msg = document.getElementById("weekRecapToastMsg");
+      if (!toast || !msg) return;
+      msg.textContent = `Week ${weekNum} survivor updated`;
+      toast.hidden = false;
+      const openBtn = document.getElementById("weekRecapToastOpen");
+      const dismissBtn = document.getElementById("weekRecapToastDismiss");
+      const hide = () => { toast.hidden = true; };
+      if (openBtn) openBtn.onclick = () => { hide(); if (onOpen) onOpen(); };
+      if (dismissBtn) dismissBtn.onclick = hide;
+    }
+
+    function openWeekRecapModal(kitty, bus, weekNum, seenKey, dismissKey) {
       const overlay = document.getElementById("weekRecapOverlay");
       const stage = document.getElementById("weekRecapStage");
       const dots = document.getElementById("weekRecapDots");
@@ -289,7 +409,10 @@
         overlay.setAttribute("aria-hidden", "true");
         document.body.classList.remove("week-recap-open");
         if (timer) clearTimeout(timer);
-        try { sessionStorage.setItem(storageKey, "1"); } catch (_) {}
+        try {
+          sessionStorage.setItem(dismissKey, "1");
+          localStorage.setItem(seenKey, "1");
+        } catch (_) {}
       }
 
       function advance() {
@@ -297,7 +420,6 @@
           show(idx + 1);
           timer = setTimeout(advance, 5200);
         } else {
-          // stay on last slide; auto-dismiss after a beat
           timer = setTimeout(dismiss, 6000);
         }
       }
@@ -329,6 +451,7 @@
         }
       });
     }
+  </script>
   </script>
 <!-- Cloudflare Web Analytics --><script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

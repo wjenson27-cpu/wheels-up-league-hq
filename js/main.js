@@ -1,18 +1,26 @@
 /* Shared nav, footer, helpers */
 (function () {
-  const PAGES = [
+  const PRIMARY = [
     { href: "index.html", label: "Home" },
-    { href: "rosters.html", label: "Rosters" },
-    { href: "trades.html", label: "Trades" },
-    { href: "faab.html", label: "FAAB" },
-    { href: "td-parlay.html", label: "TD Parlay" },
-    { href: "recap.html", label: "Recap" },
     { href: "rankings.html", label: "Rankings" },
+    { href: "faab.html", label: "FAAB" },
+    { href: "trades.html", label: "Trades" },
     { href: "awards.html", label: "Awards" },
-    { href: "history.html", label: "History" },
-    { href: "podcast.html", label: "Podcast" },
-    { href: "scoring.html", label: "Scoring" }
+    { href: "rosters.html", label: "Rosters" }
   ];
+
+  const MORE = [
+    { href: "recap.html", label: "Recap" },
+    { href: "history.html", label: "Archives" },
+    { href: "archives.html", label: "2014–2025" },
+    { href: "podcast.html", label: "Podcast" },
+    { href: "scoring.html", label: "Scoring" },
+    { href: "td-parlay.html", label: "TD Parlay" }
+  ];
+
+  const PAGES = [...PRIMARY, ...MORE];
+
+  const BRAND_MARK = `<span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#001a33" d="M5.5 21.2c0-.9.7-1.6 1.6-1.6h7.2L25.8 10c.7-.55 1.7-.2 1.7.7v2.2l-7.2 5.6h6.8c1.1 0 1.9.55 2.2 1.45L31.5 25H8.2c-1.5 0-2.7-1.2-2.7-2.7v-1.1z"/><circle cx="14" cy="28.2" r="2.35" fill="#001a33"/><circle cx="22.5" cy="28.2" r="2.35" fill="#001a33"/><path stroke="#001a33" stroke-width="1.6" stroke-linecap="round" d="M14 28.2h8.5"/></svg></span>`;
 
   function currentPage() {
     const path = (location.pathname || "").split("/").pop() || "index.html";
@@ -21,7 +29,12 @@
 
   function buildNav() {
     const cur = currentPage();
-    const links = PAGES.map(
+    const primaryLinks = PRIMARY.map(
+      (p) =>
+        `<li><a href="${p.href}" class="${p.href === cur ? "active" : ""}">${p.label}</a></li>`
+    ).join("");
+    const moreActive = MORE.some((p) => p.href === cur);
+    const moreLinks = MORE.map(
       (p) =>
         `<li><a href="${p.href}" class="${p.href === cur ? "active" : ""}">${p.label}</a></li>`
     ).join("");
@@ -30,11 +43,17 @@
 <header class="site-header">
   <div class="nav-inner">
     <a class="brand" href="index.html">
-      <span class="brand-mark" aria-hidden="true">🦅</span>
+      ${BRAND_MARK}
       <span>Wheels Up</span>
     </a>
     <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
-    <ul class="nav-links" id="navLinks">${links}</ul>
+    <ul class="nav-links" id="navLinks">
+      ${primaryLinks}
+      <li class="nav-more${moreActive ? " has-active" : ""}">
+        <button type="button" class="nav-more-btn" id="navMoreBtn" aria-expanded="false" aria-haspopup="true" aria-controls="navMoreMenu">More</button>
+        <ul class="nav-more-menu" id="navMoreMenu">${moreLinks}</ul>
+      </li>
+    </ul>
   </div>
 </header>`;
   }
@@ -49,7 +68,7 @@
     · <a href="scoring.html">Scoring</a>
     · <a href="podcast.html">Podcast</a></p>
   <p class="dim">Commish: ${cfg.commissioner || (cfg.commissioners || [])[0] || "—"}</p>
-  <p class="dim visit-count">Site visits <strong id="visit-count">…</strong></p>
+  <p class="site-meta visit-count">Visits <strong id="visit-count">…</strong></p>
 </footer>`;
   }
 
@@ -74,6 +93,27 @@
       toggle.addEventListener("click", () => {
         const open = links.classList.toggle("open");
         toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+    const moreBtn = document.getElementById("navMoreBtn");
+    const moreItem = moreBtn && moreBtn.closest(".nav-more");
+    if (moreBtn && moreItem) {
+      moreBtn.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        const open = moreItem.classList.toggle("open");
+        moreBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      document.addEventListener("click", (ev) => {
+        if (!moreItem.contains(ev.target)) {
+          moreItem.classList.remove("open");
+          moreBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+      document.addEventListener("keydown", (ev) => {
+        if (ev.key === "Escape") {
+          moreItem.classList.remove("open");
+          moreBtn.setAttribute("aria-expanded", "false");
+        }
       });
     }
   }

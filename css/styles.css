@@ -6,7 +6,7 @@
   --sea-green: #69BE28;
   --sea-green-hot: #7fd63a;
   --sea-grey: #A5ACAF;
-  --sea-grey-dim: #6b7378;
+  --sea-grey-dim: #8a9399;
 
   --bg: #000d1a;
   --bg-elev: #001a33;
@@ -16,7 +16,7 @@
   --border-glow: #2a5080;
   --text: #e8eef4;
   --text-muted: #A5ACAF;
-  --text-dim: #6b7378;
+  --text-dim: #8a9399;
   --accent: #69BE28;
   --accent-hot: #7fd63a;
   --accent-glow: rgba(105, 190, 40, 0.4);
@@ -101,7 +101,10 @@ img { max-width: 100%; height: auto; }
   place-items: center;
   font-size: 1.1rem;
   box-shadow: 0 0 20px var(--accent-glow);
+  flex-shrink: 0;
+  overflow: hidden;
 }
+.brand-mark svg { display: block; }
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -111,15 +114,27 @@ img { max-width: 100%; height: auto; }
   padding: 0;
   align-items: center;
 }
-.nav-links a {
+.nav-links a,
+.nav-more-btn {
   color: var(--text-muted);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  padding: 0.4rem 0.55rem;
+  padding: 0.55rem 0.65rem;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
   border-radius: 6px;
   transition: color 0.15s, background 0.15s;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+.nav-more-btn:hover {
+  color: var(--text);
+  background: rgba(105, 190, 40, 0.08);
 }
 .nav-links a:hover {
   color: var(--text);
@@ -1246,3 +1261,114 @@ body.week-recap-open { overflow: hidden; }
   font-variant-numeric: tabular-nums;
 }
 .podium-spacer { width: 1.75rem; height: 1.75rem; display: inline-block; }
+
+
+/* —— Design polish 2026-09-18 —— */
+.nav-more { position: relative; list-style: none; }
+.nav-more-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  min-width: 11rem;
+  margin: 0;
+  padding: 0.4rem;
+  list-style: none;
+  background: var(--bg-elev);
+  border: 1px solid rgba(105,190,40,0.2);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  z-index: 120;
+}
+.nav-more.open .nav-more-menu,
+.nav-more:focus-within .nav-more-menu { display: block; }
+.nav-more-menu a { width: 100%; }
+.nav-more.has-active > .nav-more-btn {
+  color: var(--sea-green-hot);
+  background: rgba(105, 190, 40, 0.12);
+  box-shadow: inset 0 -2px 0 var(--sea-green);
+}
+@media (max-width: 900px) {
+  .nav-more { width: 100%; }
+  .nav-more-btn { width: 100%; justify-content: flex-start; padding: 0.75rem 1rem; font-size: 0.9rem; }
+  .nav-more-menu {
+    position: static;
+    display: none;
+    min-width: 0;
+    box-shadow: none;
+    border: 0;
+    background: transparent;
+    padding: 0 0 0 0.75rem;
+  }
+  .nav-more.open .nav-more-menu { display: flex; flex-direction: column; gap: 0.15rem; }
+}
+
+.skeleton-stack { display: flex; flex-direction: column; gap: 0.65rem; padding: 0.35rem 0 0.5rem; }
+.skeleton-bar {
+  height: 0.85rem;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(26,58,92,0.55) 0%, rgba(42,80,128,0.75) 45%, rgba(26,58,92,0.55) 100%);
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.2s ease-in-out infinite;
+}
+.skeleton-bar.short { width: 62%; }
+.skeleton-bar.med { width: 82%; }
+@keyframes skeletonShimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-bar { animation: none; }
+}
+.soft-error {
+  margin: 0.35rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+.soft-error .btn { margin-top: 0.65rem; }
+
+.week-recap-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.25rem;
+  transform: translateX(-50%);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  max-width: min(420px, calc(100vw - 1.5rem));
+  padding: 0.7rem 0.85rem 0.7rem 1rem;
+  background: rgba(0, 26, 51, 0.96);
+  border: 1px solid rgba(105, 190, 40, 0.35);
+  border-radius: 999px;
+  box-shadow: var(--shadow-glow);
+  color: var(--text);
+  font-size: 0.88rem;
+}
+.week-recap-toast[hidden] { display: none !important; }
+.week-recap-toast .toast-msg { flex: 1; min-width: 0; }
+.week-recap-toast .btn { padding: 0.35rem 0.75rem; font-size: 0.78rem; min-height: 0; }
+.week-recap-toast .toast-dismiss {
+  appearance: none; border: 0; background: transparent;
+  color: var(--text-muted); font-size: 1.15rem; line-height: 1;
+  cursor: pointer; padding: 0.2rem 0.35rem;
+}
+.week-recap-toast .toast-dismiss:hover { color: var(--text); }
+
+.site-meta, .visit-count {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+.site-meta strong, .visit-count strong {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-shadow: none;
+}
+.last-sync {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
