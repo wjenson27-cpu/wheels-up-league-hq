@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-18",
+  "asOf": "2026-09-19T06:31:00-07:00",
   "faabLeft": 91,
   "roster": {
     "QB": [
@@ -48,7 +48,7 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "W1 FINAL L 241\u2013255 at Saltese. Week 2 at Valley Old Goats. FAAB $91. Won Andrew Wingard $6 (\u2212James Williams); won Dorian Williams $8 (\u2212Henry To'oTo'o). Lost Hooker $7 to Ultron $18; lost Dart $5 to Hyper $16. No pending claims. League activity Sep 16\u201317: Substation\u2194Ultron McLaurin deal; Substation\u2194TTAB Goedert deal; Dongers scooped Hockenson.",
+  "notes": "Sep 19 6:31 AM sync: no Eddies roster/FAAB change; FAAB still $91; 0 pending claims/trades. Week 2 live FPts Eddies 21 vs Valley 0 (not final).",
   "pendingClaims": [],
   "pendingClaim": null,
   "week2": {
@@ -61,7 +61,7 @@
     "Jalen Coker injured in active slot",
     "Brock Bowers OUT"
   ],
-  "source": "Fantrax scrape Sep 18 2026 ~6:25 AM PT (roster unchanged vs Sep 17; FAAB reconfirmed $91)",
+  "source": "Fantrax scrape Sep 19 2026 ~6:31 AM PT",
   "injuryFlags": [
     "Jalen Coker injured (active slot)",
     "Brock Bowers OUT"

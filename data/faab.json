@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-18",
-  "source": "Fantrax scrape Sep 18 2026 ~6:25 AM PT",
+  "updated": "2026-09-19",
+  "source": "Fantrax scrape Sep 19 2026 ~6:31 AM PT",
   "startingBudget": 115,
-  "note": "Remainings reconfirmed Fantrax Sep 18 ~6:25 AM PT (all 14 via Claim Budget Info). No change vs Sep 17 balances. No new >$0 waiver claims overnight; Sep 17 afternoon\u2013evening adds were $0/null free-agent moves. Sep 16 midday trade FAAB still reflected: Ultron\u2192Substation $15; Substation\u2192TTAB $8. Hooker/Vele attribution remains Scrape A (Ultron Hooker $18 / Valley Vele $16).",
+  "note": "Remainings reconfirmed Fantrax Sep 19 ~6:31 AM PT (all 14 via Claim Budget Remaining on rosters). No change vs Sep 18 balances. No new >$0 waiver claims; Sep 18 FA moves were $0/null. Sep 16 midday trade FAAB still reflected: Ultron\u2192Substation $15; Substation\u2192TTAB $8. Hooker/Vele attribution remains Scrape A (Ultron Hooker $18 / Valley Vele $16).",
   "excludeZeroBids": true,
   "teamBalances": [
     {
