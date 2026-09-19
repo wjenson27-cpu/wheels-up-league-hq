@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-09-17",
+  "asOf": "2026-09-19",
   "faabLeft": 92,
   "startingQB": "Justin Herbert",
   "roster": {
@@ -30,8 +30,7 @@
       "Blake Cashman",
       "Jacob Rodriguez",
       "Jack Gibbens",
-      "Payton Wilson",
-      "Dallas Turner"
+      "Payton Wilson"
     ],
     "DL": [
       "Josh Hines-Allen",
@@ -47,8 +46,8 @@
       "Nick Bosa"
     ]
   },
-  "notes": "Sep 17 AM: +Dallas Turner; +Grant Delpit (−Brandon Jones). Sep 16 post-waiver: +Jaxson Dart $16 (−Keaton Mitchell). FAAB $92.",
+  "notes": "Sep 19 AM: −Dallas Turner. Sep 17: +Grant Delpit (−Brandon Jones). Sep 16: +Jaxson Dart $16 (−Keaton Mitchell). FAAB $92.",
   "injuryFlags": [],
-  "source": "Fantrax scrape Sep 17 6:27 AM PT",
+  "source": "Fantrax scrape Sep 19 2026 ~6:18 AM PT",
   "fantraxTeamId": "xz2uv87rmsb3ulv4"
 }

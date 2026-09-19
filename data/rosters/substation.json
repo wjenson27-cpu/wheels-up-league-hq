@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-09-17",
+  "asOf": "2026-09-19",
   "faabLeft": 70,
   "startingQB": "Jordan Love",
   "roster": {
@@ -20,8 +20,7 @@
     "WR": [
       "Terry McLaurin",
       "Malik Nabers",
-      "Alec Pierce",
-      "Romeo Doubs"
+      "Alec Pierce"
     ],
     "TE": [
       "Dallas Goedert",
@@ -42,7 +41,7 @@
       "Brian Branch",
       "DeShon Elliott",
       "Nick Emmanwori",
-      "Avonte Maddox"
+      "Trent McDuffie"
     ],
     "IR": [
       "Brian Branch",
@@ -50,13 +49,13 @@
       "Nick Emmanwori"
     ]
   },
-  "notes": "Sep 17 AM: +Romeo Doubs (−T.J. Hockenson). Trade block: Tony Pollard, Bhayshul Tuten (McLaurin/Goedert cleared). FAAB $70.",
+  "notes": "Sep 19 AM: +Trent McDuffie (−Romeo Doubs); −Avonte Maddox. Trade block: Tony Pollard, Bhayshul Tuten. FAAB $70.",
   "injuryFlags": [
     "Malik Nabers",
     "Brian Branch",
     "DeShon Elliott",
     "Nick Emmanwori OUT"
   ],
-  "source": "Fantrax scrape Sep 17 6:27 AM PT",
+  "source": "Fantrax scrape Sep 19 2026 ~6:18 AM PT",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5"
 }

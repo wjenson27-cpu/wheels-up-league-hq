@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-19",
   "faabLeft": 111,
   "startingQB": "Jared Goff",
   "roster": {
@@ -21,7 +21,8 @@
       "Jaylen Waddle",
       "Malik Washington",
       "Dontayvion Wicks",
-      "Adonai Mitchell"
+      "Adonai Mitchell",
+      "Marvin Mims"
     ],
     "TE": [
       "Trey McBride",
@@ -44,7 +45,7 @@
       "Zachariah Branch"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Brisker $10 (−Barion Brown); +Adonai Mitchell $3; +Tyler Shough (null bid) / Wicks $0 re-add. FAAB $111.",
-  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
+  "notes": "Sep 19 AM: +Marvin Mims $0 (−Kyler Gordon). Prior: Brisker $10, Mitchell $3. FAAB $111.",
+  "source": "Fantrax scrape Sep 19 2026 ~6:18 AM PT",
   "fantraxTeamId": "20zozmjgmsb3ulv4"
 }
