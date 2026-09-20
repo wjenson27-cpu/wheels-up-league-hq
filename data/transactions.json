@@ -1,7 +1,42 @@
 {
-  "updated": "2026-09-19",
-  "source": "Fantrax scrape Sep 19 2026 ~6:31 AM PT",
+  "updated": "2026-09-20",
+  "source": "Fantrax scrape Sep 20 2026 ~6:25 AM PT",
   "items": [
+    {
+      "date": "2026-09-19",
+      "type": "ADD",
+      "team": "Pocket Agents",
+      "summary": "Added Teddye Buchanan (LB) ($0/null bid)",
+      "time": "10:28 PM PDT"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "DROP",
+      "team": "Pocket Agents",
+      "summary": "Dropped Jake Hansen (LB)",
+      "time": "10:25 PM PDT"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "DROP",
+      "team": "Saltese Slamm",
+      "summary": "Dropped Shaun Dolac (LB)",
+      "time": "6:39 PM PDT"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "ADD/DROP",
+      "team": "Ultron",
+      "summary": "Added Jonah Coleman (RB); dropped Leo Chenal (LB) ($0/null bid)",
+      "time": "10:21 AM PDT"
+    },
+    {
+      "date": "2026-09-19",
+      "type": "DROP",
+      "team": "Ultron",
+      "summary": "Dropped Jonah Coleman (RB)",
+      "time": "6:58 AM PDT"
+    },
     {
       "date": "2026-09-18",
       "type": "ADD/DROP",

@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-19T06:31:00-07:00",
-  "source": "Fantrax scrape Sep 19 2026 ~6:31 AM PT",
+  "updated": "2026-09-20T06:25:00-07:00",
+  "source": "Fantrax scrape Sep 20 2026 ~6:25 AM PT",
   "season": 2026,
   "trades": [
     {
@@ -226,7 +226,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Fantrax Pending Trades view empty as of Sep 19 2026 ~6:31 AM PT (league pending count 0; pending claims 0).",
+  "pending_note": "Fantrax Pending Trades view empty as of Sep 20 2026 ~6:25 AM PT (league pending count 0; pending claims 0).",
   "fantrax_completed_view": "Official completed since Aug 28 include McLaurin\u2194Emmett+$15 Sep 16; Goedert/Winfield+$8\u2194Pollard/Edmunds Sep 16; LaPorta\u2194Campbell/Harvey Sep 15; Sanker\u2194$4 FAAB Sep 14; Nix\u2194$10 FAAB Sep 8; earlier Aga/Chase/Larry deals retained.",
   "hqComplete": true
 }
