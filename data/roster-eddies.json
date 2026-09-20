@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-19T06:31:00-07:00",
+  "asOf": "2026-09-20T06:27:00-07:00",
   "faabLeft": 91,
   "roster": {
     "QB": [
@@ -48,7 +48,7 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "Sep 19 6:31 AM sync: no Eddies roster/FAAB change; FAAB still $91; 0 pending claims/trades. Week 2 live FPts Eddies 21 vs Valley 0 (not final).",
+  "notes": "Sep 20 6:27 AM sync: no Eddies roster/FAAB change; FAAB $91; 0 pending. W2 vs Valley 21–0 (TNF Dorian Williams only); slate not live at scrape. Recommend leave lineup.",
   "pendingClaims": [],
   "pendingClaim": null,
   "week2": {
@@ -61,7 +61,7 @@
     "Jalen Coker injured in active slot",
     "Brock Bowers OUT"
   ],
-  "source": "Fantrax scrape Sep 19 2026 ~6:31 AM PT",
+  "source": "Fantrax scrape Sep 20 2026 ~6:27 AM PT",
   "injuryFlags": [
     "Jalen Coker injured (active slot)",
     "Brock Bowers OUT"

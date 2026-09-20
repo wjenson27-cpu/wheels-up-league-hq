@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-20",
   "faabLeft": 83,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -12,8 +12,7 @@
     "RB": [
       "Breece Hall",
       "Rico Dowdle",
-      "Rhamondre Stevenson",
-      "Jonah Coleman"
+      "Rhamondre Stevenson"
     ],
     "WR": [
       "Jaxon Smith-Njigba",
@@ -30,8 +29,7 @@
       "Terrel Bernard",
       "Edgerrin Cooper",
       "Nathan Landman",
-      "Kaleb Elarms-Orr",
-      "Shaun Dolac"
+      "Kaleb Elarms-Orr"
     ],
     "DL": [
       "Zach Allen"
@@ -46,7 +44,7 @@
       "Micah Parsons"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Shaun Dolac $3; +Marques Sigle $3; +Zach Allen $2 (−Jalen Carter). FAAB $83. | DATA CONFLICT: Sigle $3 is Scrape A; Scrape B had Saltese +Cody Simon $3. Dolac/Allen unchanged. FAAB $83 either way.",
-  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT); contested late claims use Scrape A pending verify",
+  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83.",
+  "source": "Fantrax scrape Sep 20 2026 ~6:27 AM PT",
   "fantraxTeamId": "xdx6ngm2msb3ulv5"
 }

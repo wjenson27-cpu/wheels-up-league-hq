@@ -2,8 +2,8 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-09-19",
-  "faabLeft": 126,
+  "asOf": "2026-09-20",
+  "faabLeft": 111,
   "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
@@ -31,8 +31,7 @@
       "Robert Spillane",
       "Alex Anzalone",
       "Frankie Luvu",
-      "Patrick Queen",
-      "Teddye Buchanan"
+      "Patrick Queen"
     ],
     "DL": [
       "Myles Garrett",
@@ -46,16 +45,14 @@
     ],
     "IR": [
       "Kyle Monangai",
-      "Teddye Buchanan",
       "A.J. Haulcy"
     ]
   },
-  "notes": "Sep 19 AM: +Jonah Coleman (−Christian Elliss). Prior: +Hooker $18 / McLaurin trade Sep 16. FAAB $126.",
+  "notes": "Sep 20 AM: Sat Sep 19 drop Jonah Coleman then +Coleman/−Leo Chenal (null). Cleared stale Teddye Buchanan (now on Pocket). FAAB $111.",
   "injuryFlags": [
-    "Teddye Buchanan OUT",
     "Kyle Monangai",
     "A.J. Haulcy"
   ],
-  "source": "Fantrax scrape Sep 19 2026 ~6:18 AM PT",
+  "source": "Fantrax scrape Sep 20 2026 ~6:27 AM PT",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5"
 }

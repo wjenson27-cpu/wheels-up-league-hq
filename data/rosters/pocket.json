@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-09-19",
+  "asOf": "2026-09-20",
   "faabLeft": 111,
   "startingQB": "Jared Goff",
   "roster": {
@@ -32,7 +32,8 @@
       "Ernest Jones",
       "Barrett Carter",
       "Foyesade Oluokun",
-      "Josiah Trotter"
+      "Josiah Trotter",
+      "Teddye Buchanan"
     ],
     "DL": [
       "Will Anderson Jr."
@@ -45,7 +46,7 @@
       "Zachariah Branch"
     ]
   },
-  "notes": "Sep 19 AM: +Marvin Mims $0 (−Kyler Gordon). Prior: Brisker $10, Mitchell $3. FAAB $111.",
-  "source": "Fantrax scrape Sep 19 2026 ~6:18 AM PT",
+  "notes": "Sep 20 AM: +Teddye Buchanan (−Jake Hansen, null bid, Sat Sep 19 ~10:25–10:28 PM). Prior: +Marvin Mims $0 (−Kyler Gordon). FAAB $111.",
+  "source": "Fantrax scrape Sep 20 2026 ~6:27 AM PT",
   "fantraxTeamId": "20zozmjgmsb3ulv4"
 }
