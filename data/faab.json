@@ -1,8 +1,8 @@
 {
   "updated": "2026-09-21",
-  "source": "Fantrax scrape Sep 21 2026 ~6:41 AM PT",
+  "source": "Fantrax Fantasy check Sep 21 2026 ~6:46 AM PT",
   "startingBudget": 115,
-  "note": "Remainings reconfirmed Fantrax Sep 21 ~6:41 AM PT (all 14). No change vs Sep 20. Sep 20 FA moves were $0/null (Dongers Donald/Mayer, LAB Atwell, Doubtpfizer Freiermuth, TTAB Harris churn, Slumlords Doubs). Eddies still $91.",
+  "note": "Eddies Claim Budget Remaining reconfirmed $91 on roster page Sep 21 ~6:46 AM PT. Sunday Sep 20 FA moves were $0/null dash bids \u2014 no FAAB spend. Other team remainings not re-scraped this pass; left as Sep 20 board.",
   "excludeZeroBids": true,
   "teamBalances": [
     {

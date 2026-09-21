@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-21",
   "faabLeft": 51,
   "startingQB": "Josh Allen",
   "roster": {
@@ -43,7 +43,7 @@
     ],
     "IR": []
   },
-  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (−Nailor); +Kwity Paye $16 (−Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades.",
+  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (\u2212Nailor); +Kwity Paye $16 (\u2212Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/\u2212Christian Harris churn (net zero).",
   "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "4grk2ph6msb3ulv4"
 }

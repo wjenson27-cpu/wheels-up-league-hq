@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-09-17",
+  "asOf": "2026-09-21",
   "faabLeft": 93,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -41,11 +41,9 @@
       "Jalen Pitre",
       "Nick Scott"
     ],
-    "IR": [
-      "Aaron Donald"
-    ]
+    "IR": []
   },
-  "notes": "Sep 17 AM: +T.J. Hockenson (−Kayshon Boutte). Sep 16 post-waiver: +Donovan Ezeiruaku $14. FAAB $93.",
+  "notes": "Sep 17 AM: +T.J. Hockenson (\u2212Kayshon Boutte). Sep 16 post-waiver: +Donovan Ezeiruaku $14. FAAB $93. | Sep 20: \u2212Aaron Donald (also +/\u2212Michael Mayer churn, net Mayer zero).",
   "source": "Fantrax scrape Sep 17 6:27 AM PT",
   "fantraxTeamId": "lreem0zbmsb3ulv5"
 }

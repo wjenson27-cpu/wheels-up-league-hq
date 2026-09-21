@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-21",
   "faabLeft": 109,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -24,7 +24,8 @@
       "Jayden Reed"
     ],
     "TE": [
-      "Mark Andrews"
+      "Mark Andrews",
+      "Pat Freiermuth"
     ],
     "LB": [
       "Nakobe Dean",
@@ -46,7 +47,7 @@
       "Rome Odunze"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Jalen Ramsey $2 (−Reed Blankenship); +Chauncey Gardner-Johnson $2. FAAB $109.",
+  "notes": "Sep 16 post-waiver: +Jalen Ramsey $2 (\u2212Reed Blankenship); +Chauncey Gardner-Johnson $2. FAAB $109. | Sep 20: +Pat Freiermuth \u2212Emari Demercado (Demercado was already absent from HQ roster).",
   "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "xg1akj6omsb3ulv5"
 }

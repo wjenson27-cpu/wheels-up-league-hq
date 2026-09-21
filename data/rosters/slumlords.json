@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-21",
   "faabLeft": 98,
   "startingQB": "Drake Maye",
   "roster": {
@@ -19,7 +19,8 @@
       "Wan'Dale Robinson",
       "Keenan Allen",
       "Michael Pittman",
-      "Kalif Raymond"
+      "Kalif Raymond",
+      "Romeo Doubs"
     ],
     "TE": [
       "Harold Fannin",
@@ -47,7 +48,7 @@
       "Chamarri Conner"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98.",
+  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98. | Sep 20: +Romeo Doubs \u2212Denzel Boston (Boston was already absent from HQ roster).",
   "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
   "fantraxTeamId": "59frnthimsb3ulv4"
 }
