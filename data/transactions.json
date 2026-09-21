@@ -1,7 +1,83 @@
 {
-  "updated": "2026-09-20",
-  "source": "Fantrax scrape Sep 20 2026 ~6:27 AM PT",
+  "updated": "2026-09-21",
+  "source": "Fantrax scrape Sep 21 2026 ~6:41 AM PT",
   "items": [
+    {
+      "date": "2026-09-20",
+      "type": "DROP",
+      "team": "Drummond Dongers",
+      "summary": "Dropped Michael Mayer (TE) ($0/null bid)",
+      "time": "11:41 AM PDT",
+      "player": "Michael Mayer",
+      "playerMeta": "TE-LV"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "ADD/DROP",
+      "team": "Indian Trail Slumlords",
+      "summary": "Added Romeo Doubs (WR), dropped Denzel Boston (WR (R)) ($0/null bid)",
+      "time": "9:49 AM PDT",
+      "player": "Romeo Doubs",
+      "playerMeta": "WR-NE",
+      "dropped": "Denzel Boston",
+      "droppedMeta": "WR (R)-CLE"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Dropped Christian Harris (LB) ($0/null bid)",
+      "time": "9:20 AM PDT",
+      "player": "Christian Harris",
+      "playerMeta": "LB-ATL"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "ADD",
+      "team": "Drummond Dongers",
+      "summary": "Added Michael Mayer (TE) ($0/null bid)",
+      "time": "8:39 AM PDT",
+      "player": "Michael Mayer",
+      "playerMeta": "TE-LV"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "ADD",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Added Christian Harris (LB) ($0/null bid)",
+      "time": "8:37 AM PDT",
+      "player": "Christian Harris",
+      "playerMeta": "LB-ATL"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "ADD/DROP",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Added Pat Freiermuth (TE), dropped Emari Demercado (RB) ($0/null bid)",
+      "time": "8:04 AM PDT",
+      "player": "Pat Freiermuth",
+      "playerMeta": "TE-PIT",
+      "dropped": "Emari Demercado",
+      "droppedMeta": "RB-DAL"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "ADD",
+      "team": "Little Ass Boys",
+      "summary": "Added Tutu Atwell (WR) ($0/null bid)",
+      "time": "7:33 AM PDT",
+      "player": "Tutu Atwell",
+      "playerMeta": "WR-LAR"
+    },
+    {
+      "date": "2026-09-20",
+      "type": "DROP",
+      "team": "Drummond Dongers",
+      "summary": "Dropped Aaron Donald (DL) ($0/null bid)",
+      "time": "6:23 AM PDT",
+      "player": "Aaron Donald",
+      "playerMeta": "DL-LAR"
+    },
     {
       "date": "2026-09-19",
       "type": "ADD",
@@ -391,7 +467,7 @@
       "date": "2026-09-16",
       "type": "FAILED",
       "team": "Eagle Ridge Eddies",
-      "summary": "FAILED claim Amani Hooker $7 (Ultron won at $18); drop James Williams unused for Hooker — Wingard claim on same drop succeeded",
+      "summary": "FAILED claim Amani Hooker $7 (Ultron won at $18); drop James Williams unused for Hooker \u2014 Wingard claim on same drop succeeded",
       "attribution": "scrapeA-verified"
     },
     {
@@ -537,7 +613,7 @@
       "date": "2026-09-14",
       "type": "DROP",
       "team": "Pocket Agents",
-      "summary": "Dropped Cody Barton (2:11 PM PDT) — cleared trade block"
+      "summary": "Dropped Cody Barton (2:11 PM PDT) \u2014 cleared trade block"
     },
     {
       "date": "2026-09-13",
@@ -573,7 +649,7 @@
       "date": "2026-09-11",
       "type": "ADD/DROP",
       "team": "Morningside Muff Divers",
-      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) — Harris briefly added then dropped"
+      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) \u2014 Harris briefly added then dropped"
     },
     {
       "date": "2026-09-11",
@@ -699,7 +775,7 @@
       "date": "2026-09-08",
       "type": "TRADE",
       "team": "Pocket Agents / Substation",
-      "summary": "Bo Nix (Pocket) → Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
+      "summary": "Bo Nix (Pocket) \u2192 Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
     },
     {
       "date": "2026-09-08",
@@ -789,7 +865,7 @@
       "date": "2026-09-04",
       "type": "ADD/DROP",
       "team": "Substation",
-      "summary": "Churn: +Denzel Boston −Craig Woodson; +Craig Woodson −Brandon Jones; +Brandon Jones −Dante Trader"
+      "summary": "Churn: +Denzel Boston \u2212Craig Woodson; +Craig Woodson \u2212Brandon Jones; +Brandon Jones \u2212Dante Trader"
     },
     {
       "date": "2026-09-04",
@@ -813,7 +889,7 @@
       "date": "2026-09-03",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "Moves: +Emmett Johnson −Nadjee Harris; +Nadjee Harris −Justin Strnad; +Jaishawn Barham −Trenton Simpson; +Bryce Boettcher −Nadjee Harris"
+      "summary": "Moves: +Emmett Johnson \u2212Nadjee Harris; +Nadjee Harris \u2212Justin Strnad; +Jaishawn Barham \u2212Trenton Simpson; +Bryce Boettcher \u2212Nadjee Harris"
     },
     {
       "date": "2026-09-03",
@@ -837,19 +913,19 @@
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "The Hypersecretors",
-      "summary": "TE churn Helm/Barner; later +Gunnar Helm −Dylan Sampson"
+      "summary": "TE churn Helm/Barner; later +Gunnar Helm \u2212Dylan Sampson"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "+Nadjee Harris −George Holani; +George Holani −Keenan Allen; +Justin Strnad −Branson Combs"
+      "summary": "+Nadjee Harris \u2212George Holani; +George Holani \u2212Keenan Allen; +Justin Strnad \u2212Branson Combs"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Valley Old Goats",
-      "summary": "+Camryn Bynum −Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
+      "summary": "+Camryn Bynum \u2212Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
     },
     {
       "date": "2026-09-02",
@@ -867,7 +943,7 @@
       "date": "2026-09-02",
       "type": "FAAB",
       "team": "League",
-      "summary": "FAAB batch: notable — Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; −Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0–$2 IDP/depth adds"
+      "summary": "FAAB batch: notable \u2014 Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; \u2212Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0\u2013$2 IDP/depth adds"
     },
     {
       "date": "2026-09-01",
@@ -885,9 +961,9 @@
       "date": "2026-08-30",
       "type": "DRAFT",
       "team": "League",
-      "summary": "20-round snake complete — Wheels Up 2026 is locked"
+      "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
     }
   ],
-  "note": "Sep 19 6:31 AM: five Sep 18 $0/null FA moves after Sep 17 9:01 PM Saltese Nixon/Sigle — Substation +McDuffie−Doubs; Hyper drop Dallas Turner; Ultron +Coleman−Elliss; Pocket +Mims−Gordon ($0); Substation drop Maddox (Wk3). No >$0 claims; pending trades/claims 0; blocks unchanged.",
+  "note": "Sep 21 6:41 AM: eight Sun Sep 20 $0/null FA moves after Sep 19 10:28 PM Pocket +Teddye Buchanan \u2014 Dongers \u2212Aaron Donald then +/\u2212Michael Mayer churn; LAB +Tutu Atwell; Doubtpfizer +Pat Freiermuth/\u2212Emari Demercado; TTAB +/\u2212Christian Harris churn; Slumlords +Romeo Doubs/\u2212Denzel Boston. No >$0 claims. Pending 0. Trade block confirmed (Substation 22 still Sep 20 6:16 PM). All 14 FAAB unchanged (Eddies $91).",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }
