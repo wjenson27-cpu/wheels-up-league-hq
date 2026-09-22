@@ -1,62 +1,117 @@
 {
-  "updated": "2026-09-15",
-  "note": "COMBO PREVIEW v3 — full-story matchup prose. Bill HOLD — no Pages push.",
-  "pendingPublish": true,
+  "updated": "2026-09-22",
+  "note": "Week 2 LIVE \u2014 Bill approved Sep 22 (v2 less Eddies-centric; quality-loss club).",
+  "pendingPublish": false,
   "recaps": [
     {
       "week": 1,
       "season": 2026,
       "sample": false,
-      "title": "Week 1 Recap: TTAB Hits the Lottery, Jacob’s First Win, Slumlords Get Off the Bus",
-      "dateLabel": "Tuesday drop · Week 1 finals locked after MNF",
-      "coldOpen": "Welcome back to IDP country, where 220 is a Tuesday, 315 is a war crime, and Monday night still flips scoreboards like a light switch. Week 1’s thesis was simple: premium draft capital does not equal points, Fantrax IDP math is a rumor, and the only board that mattered was the one still alive after Monday. We got a kitty jackpot, a Survivor eviction, Jacob Crisp’s first Wheels Up win, and enough goose eggs from “safe” stars to stock a diner. Hero of the week: whoever waited until after MNF to write the recap — and T.J. Watt’s 52. Goat of the week: Fantrax projections, Aga’s top-3, and the Host’s Waddle flex.",
+      "title": "Week 1 Recap: TTAB Hits the Lottery, Jacob\u2019s First Win, Slumlords Get Off the Bus",
+      "dateLabel": "Tuesday drop \u00b7 Week 1 finals locked after MNF",
+      "coldOpen": "Welcome back to IDP country, where 220 is a Tuesday, 315 is a war crime, and Monday night still flips scoreboards like a light switch. Week 1\u2019s thesis was simple: premium draft capital does not equal points, Fantrax IDP math is a rumor, and the only board that mattered was the one still alive after Monday. We got a kitty jackpot, a Survivor eviction, Jacob Crisp\u2019s first Wheels Up win, and enough goose eggs from \u201csafe\u201d stars to stock a diner. Hero of the week: whoever waited until after MNF to write the recap \u2014 and T.J. Watt\u2019s 52. Goat of the week: Fantrax projections, Aga\u2019s top-3, and the Host\u2019s Waddle flex.",
       "heroes": [
-        "TTAB’s 315 — Allen 45 / Watson 44 / Jeanty 41 / Baun 35; kitty locked",
-        "Jacob Crisp’s first WU win — Hyper 259.5 over Dongers 246.5 (Monday heist; Walker 48)",
-        "T.J. Watt 52 (Goats) — half-century IDP and a 254 close",
-        "Gesicki 23 (Saltese) — no-name TE beat Bill’s premium room"
+        "TTAB\u2019s 315 \u2014 Allen 45 / Watson 44 / Jeanty 41 / Baun 35; kitty locked",
+        "Jacob Crisp\u2019s first WU win \u2014 Hyper 259.5 over Dongers 246.5 (Monday heist; Walker 48)",
+        "T.J. Watt 52 (Goats) \u2014 half-century IDP and a 254 close",
+        "Gesicki 23 (Saltese) \u2014 no-name TE beat Bill\u2019s premium room"
       ],
       "goats": [
-        "Slumlords 176.5 — Survivor Week 1; London 4 / Pickens 5 / Fannin 5; off the bus",
-        "Aga’s top-3 (Ultron) — Chase 3 / Cook 10 / Loveland 0 (plus Garrett 0)",
-        "Eddies’ TE tax — Gesicki 23 vs Warren 12 + Pitts 0",
-        "The Host’s Waddle — started flex, scored 1",
-        "Dongers 246.5 — lost a game they thought they’d already won"
+        "Slumlords 176.5 \u2014 Survivor Week 1; London 4 / Pickens 5 / Fannin 5; off the bus",
+        "Aga\u2019s top-3 (Ultron) \u2014 Chase 3 / Cook 10 / Loveland 0 (plus Garrett 0)",
+        "Eddies\u2019 TE tax \u2014 Gesicki 23 vs Warren 12 + Pitts 0",
+        "The Host\u2019s Waddle \u2014 started flex, scored 1",
+        "Dongers 246.5 \u2014 lost a game they thought they\u2019d already won"
       ],
       "matchups": [
         {
           "scoreline": "TTAB 315, Indian Trail Slumlords 176.5",
-          "blurb": "Chase didn’t win Week 1 so much as commit a hate crime against the format. While half the league was still arguing about projections, TTAB put **Josh Allen (45), Christian Watson (44), Ashton Jeanty (41), and Zack Baun (35)** on the same card and printed a **315** kitty that made 250 look quaint. That’s not a hot streak — that’s four players who would’ve been a respectable team by themselves wearing one jersey. Ryan Towner’s Slumlords climbed from the early wreckage to **176.5** after Monday and still finished dead last: Gibbs’ **42** was a lighthouse in a fog of **Drake London 4, George Pickens 5, and Harold Fannin 5**. Survivor doesn’t care that you “fought back.” Off the bus. Juice: the nuclear four and a league-high water mark. Junk: a Gibbs 42 in a funeral; London/Pickens/Fannin quiet hours."
+          "blurb": "Chase didn\u2019t win Week 1 so much as commit a hate crime against the format. While half the league was still arguing about projections, TTAB put **Josh Allen (45), Christian Watson (44), Ashton Jeanty (41), and Zack Baun (35)** on the same card and printed a **315** kitty that made 250 look quaint. That\u2019s not a hot streak \u2014 that\u2019s four players who would\u2019ve been a respectable team by themselves wearing one jersey. Ryan Towner\u2019s Slumlords climbed from the early wreckage to **176.5** after Monday and still finished dead last: Gibbs\u2019 **42** was a lighthouse in a fog of **Drake London 4, George Pickens 5, and Harold Fannin 5**. Survivor doesn\u2019t care that you \u201cfought back.\u201d Off the bus. Juice: the nuclear four and a league-high water mark. Junk: a Gibbs 42 in a funeral; London/Pickens/Fannin quiet hours."
         },
         {
           "scoreline": "Saltese Slamm 255, Eagle Ridge Eddies 241",
-          "blurb": "Bill brought **241** to a gunfight and still left with an L — and the TE board was a personal foul. Luke’s Saltese closed it **255–241**, fourteen points that will live rent-free next to the “all-time wins, zero rings” plaque. The humiliation wasn’t even the margin; it was the position battle. Luke started **Mike Gesicki for 23**. Bill started his high-draft-capital room and got **Tyler Warren 12** plus **Kyle Pitts 0** in the flex, with Brock Bowers riding pine for another zero. Gesicki alone outscored Warren and smoked the combined Warren+Pitts stack **23–12** — a no-name TE winning the week against a “premium” room. That’s how you go 0-1 with a roster that was supposed to bully people at the position. Juice: Saltese finishing the job; Gesicki’s 23. Junk: Bill’s TE tax, Pitts’ zero, 241 as a losing score."
+          "blurb": "Bill brought **241** to a gunfight and still left with an L \u2014 and the TE board was a personal foul. Luke\u2019s Saltese closed it **255\u2013241**, fourteen points that will live rent-free next to the \u201call-time wins, zero rings\u201d plaque. The humiliation wasn\u2019t even the margin; it was the position battle. Luke started **Mike Gesicki for 23**. Bill started his high-draft-capital room and got **Tyler Warren 12** plus **Kyle Pitts 0** in the flex, with Brock Bowers riding pine for another zero. Gesicki alone outscored Warren and smoked the combined Warren+Pitts stack **23\u201312** \u2014 a no-name TE winning the week against a \u201cpremium\u201d room. That\u2019s how you go 0-1 with a roster that was supposed to bully people at the position. Juice: Saltese finishing the job; Gesicki\u2019s 23. Junk: Bill\u2019s TE tax, Pitts\u2019 zero, 241 as a losing score."
         },
         {
           "scoreline": "Morningside Muff Divers 258.5, Mrs. Doubtpfizer 237",
-          "blurb": "Tim’s Divers dropped a clean **258.5** and reminded the dual-era champ that Week 1 doesn’t care about your résumé. The engine was the **Swift / Lamar / JJ** stack doing adult work while the rest of the board finished the job Monday made honest. Kyle’s Doubtpfizer landed at **237** — not a collapse into oblivion, just ugly-adjacent for a franchise that usually loses cute. And then there’s the chip you don’t cash: **Brian Burns started for 4**, which is not how “safe” DL is supposed to look on a losing card. Divers win, doubt deferred. Juice: Divers’ skill stack closing the week. Junk: Burns’ four-point apology."
+          "blurb": "Tim\u2019s Divers dropped a clean **258.5** and reminded the dual-era champ that Week 1 doesn\u2019t care about your r\u00e9sum\u00e9. The engine was the **Swift / Lamar / JJ** stack doing adult work while the rest of the board finished the job Monday made honest. Kyle\u2019s Doubtpfizer landed at **237** \u2014 not a collapse into oblivion, just ugly-adjacent for a franchise that usually loses cute. And then there\u2019s the chip you don\u2019t cash: **Brian Burns started for 4**, which is not how \u201csafe\u201d DL is supposed to look on a losing card. Divers win, doubt deferred. Juice: Divers\u2019 skill stack closing the week. Junk: Burns\u2019 four-point apology."
         },
         {
           "scoreline": "Valley Old Goats 254, Newman Lake Sleep Paralysis Demons 221",
-          "blurb": "Heff’s Goats turned an early knife fight into a **254–221** statement after Monday, and the engine was borderline unfair. **T.J. Watt dropped 52** — a half-century on IDP — while **Derrick Henry stamped 43** like the ground still owed him money. Rymo’s Newman answered with real juice from Flowers and Hurts, then watched the alphas ghost the assignment: **A.J. Brown 5** and **Davante Adams 5** as starters. That’s ten combined from two WR1s while Watt alone outscored both of them by a career. 221 is a fine score in most leagues. Here it’s a handshake and a ‘tough one.’ Juice: Watt’s 52 and Henry’s 43. Junk: Brown + Adams totaling a single good TE game."
+          "blurb": "Heff\u2019s Goats turned an early knife fight into a **254\u2013221** statement after Monday, and the engine was borderline unfair. **T.J. Watt dropped 52** \u2014 a half-century on IDP \u2014 while **Derrick Henry stamped 43** like the ground still owed him money. Rymo\u2019s Newman answered with real juice from Flowers and Hurts, then watched the alphas ghost the assignment: **A.J. Brown 5** and **Davante Adams 5** as starters. That\u2019s ten combined from two WR1s while Watt alone outscored both of them by a career. 221 is a fine score in most leagues. Here it\u2019s a handshake and a \u2018tough one.\u2019 Juice: Watt\u2019s 52 and Henry\u2019s 43. Junk: Brown + Adams totaling a single good TE game."
         },
         {
           "scoreline": "Little Ass Boys 246, Pocket Agents 216.5",
-          "blurb": "Jesse’s LAB posted **246** and made it look like a plan. Kellen “the Host” Olson’s Pocket finished **216.5** after selling Bo Nix for $10 FAAB and handing Goff the keys — a transaction that already had the group chat warming up. Then Monday delivered the roast that writes itself: **Jaylen Waddle started in the flex for 1 point.** One. The Host’s featured WR put up a single on fantasy TV and the board still had the nerve to look surprised at 216.5. Hosting duties that didn’t include actual receiving yards. Juice: LAB’s 246. Junk: Waddle’s 1; the Nix-for-FAAB hangover."
+          "blurb": "Jesse\u2019s LAB posted **246** and made it look like a plan. Kellen \u201cthe Host\u201d Olson\u2019s Pocket finished **216.5** after selling Bo Nix for $10 FAAB and handing Goff the keys \u2014 a transaction that already had the group chat warming up. Then Monday delivered the roast that writes itself: **Jaylen Waddle started in the flex for 1 point.** One. The Host\u2019s featured WR put up a single on fantasy TV and the board still had the nerve to look surprised at 216.5. Hosting duties that didn\u2019t include actual receiving yards. Juice: LAB\u2019s 246. Junk: Waddle\u2019s 1; the Nix-for-FAAB hangover."
         },
         {
           "scoreline": "The Hypersecretors 259.5, Drummond Dongers 246.5",
-          "blurb": "THE flip — and **Jacob Crisp’s first Wheels Up victory**. Rookie season, Week 1, Monday night heist: Hyper went from a **202.5** loss to a **259.5** win and stole Gavin’s board while the league was already writing Dongers’ win tweet. **Kenneth Walker III dropped 48** as the lead actor while the rest of the Hyper lineup finally showed up for the new franchise’s first column in the W. Dongers still hit **246.5** with Bijan and Olave at **34** each — a perfectly respectable losing score in this format’s cruel new math — and somehow lost a game they thought they’d already won. First wins don’t come prettier than a Monday erasure. Juice: Jacob’s first W; Walker’s 48; the 57-point Monday swing. Junk: 246.5 tasting like a losing score."
+          "blurb": "THE flip \u2014 and **Jacob Crisp\u2019s first Wheels Up victory**. Rookie season, Week 1, Monday night heist: Hyper went from a **202.5** loss to a **259.5** win and stole Gavin\u2019s board while the league was already writing Dongers\u2019 win tweet. **Kenneth Walker III dropped 48** as the lead actor while the rest of the Hyper lineup finally showed up for the new franchise\u2019s first column in the W. Dongers still hit **246.5** with Bijan and Olave at **34** each \u2014 a perfectly respectable losing score in this format\u2019s cruel new math \u2014 and somehow lost a game they thought they\u2019d already won. First wins don\u2019t come prettier than a Monday erasure. Juice: Jacob\u2019s first W; Walker\u2019s 48; the 57-point Monday swing. Junk: 246.5 tasting like a losing score."
         },
         {
           "scoreline": "Substation 193, Ultron 180",
-          "blurb": "Nate’s Substation closed **193–180** after buying Bo Nix for $10 FAAB (still shopping Purdy, McLaurin, and Tuten on the block) — and **Nix started for 5** in his new colors, which is comedy enough before you even open Ultron’s card. Aga’s Ultron is the garage-sale roast Bill ordered: top-shelf draft capital, empty shelves, lonely QB heroics. **Ja’Marr Chase 3, James Cook 10, and Colston Loveland 0** hit the field as starters, then **Myles Garrett added a 0** on DL for the encore. That’s Aga’s top-3 totaling **13** while Caleb Williams’ **41** tried to drag a brick wall across the finish line. Sub gets over the hump; Ultron gets the tape. Juice: Substation getting the W. Junk: Chase/Cook/Loveland totaling 13; Garrett’s zero."
+          "blurb": "Nate\u2019s Substation closed **193\u2013180** after buying Bo Nix for $10 FAAB (still shopping Purdy, McLaurin, and Tuten on the block) \u2014 and **Nix started for 5** in his new colors, which is comedy enough before you even open Ultron\u2019s card. Aga\u2019s Ultron is the garage-sale roast Bill ordered: top-shelf draft capital, empty shelves, lonely QB heroics. **Ja\u2019Marr Chase 3, James Cook 10, and Colston Loveland 0** hit the field as starters, then **Myles Garrett added a 0** on DL for the encore. That\u2019s Aga\u2019s top-3 totaling **13** while Caleb Williams\u2019 **41** tried to drag a brick wall across the finish line. Sub gets over the hump; Ultron gets the tape. Juice: Substation getting the W. Junk: Chase/Cook/Loveland totaling 13; Garrett\u2019s zero."
         }
       ],
-      "closer": "Kitty to TTAB. Bus seat vacated by Slumlords. Jacob Crisp cashed his first WU win on Monday’s Hyper heist. Bill’s 0-1 with a 241 and a TE room that lost to Gesicki. Aga’s top-3 totaled 13. The Host started Waddle for a single. WWJDD: start your studs, ignore Fantrax IDP math, and don’t celebrate until the Monday board is empty.",
+      "closer": "Kitty to TTAB. Bus seat vacated by Slumlords. Jacob Crisp cashed his first WU win on Monday\u2019s Hyper heist. Bill\u2019s 0-1 with a 241 and a TE room that lost to Gesicki. Aga\u2019s top-3 totaled 13. The Host started Waddle for a single. WWJDD: start your studs, ignore Fantrax IDP math, and don\u2019t celebrate until the Monday board is empty.",
+      "pendingPublish": false,
+      "approvedForPush": true
+    },
+    {
+      "week": 2,
+      "season": 2026,
+      "sample": false,
+      "title": "Week 2 Recap: Host Hits 322, Lloyd\u2019s 66, Three Boards Over 250 Still Lose",
+      "dateLabel": "Tuesday drop \u00b7 Week 2 finals locked",
+      "coldOpen": "Week 2 in IDP country: 158 is a crime scene, 322 is a new religion, and a good score is still an L if the other guy prints more. The Host dropped a kitty that made last week\u2019s 315 look like a warm-up \u2014 and started Waddle for 27 after last week\u2019s single. Three boards cracked 250 and still lost: Slumlords\u2019 252, Eddies\u2019 251.5, and Jacob\u2019s Hyper at 272 in a seven-point street fight. Mike Heff\u2019s Goats fed the league a 66-burger from Devin Lloyd. Luke stayed undefeated. The dual-era champ and the Dongers both woke up 0-2. Hero of the week: Pocket Agents at 322.5 (Goff 43 / CeeDee 41 / Will Anderson 39) and Lloyd\u2019s 66. Goat of the week: Dongers\u2019 158.5, and a format that turns 250 into heartbreak three times in one Tuesday.",
+      "heroes": [
+        "Pocket Agents 322.5 \u2014 Goff 43 / CeeDee 41 / Will Anderson 39; Waddle 27 revenge; week kitty",
+        "Devin Lloyd 66 (Goats) \u2014 IDP nuclear in a 274.5 over Eddies",
+        "JSN 54 (Saltese) \u2014 carried a 279\u2013272 thriller; Luke 2-0",
+        "Davante Adams 47 (Newman) \u2014 from a Week 1 five to a beatdown of Doubtpfizer",
+        "Ultron\u2019s first W \u2014 Hooker 30 / Cook 29 / Chase 26 after the W1 garage sale"
+      ],
+      "goats": [
+        "Dongers 158.5 \u2014 league floor; Goedert 1.5 on the other sideline still a W for TTAB",
+        "Quality-loss club \u2014 Slumlords 252, Eddies 251.5, Hyper 272 (all real boards, all Ls)",
+        "Doubtpfizer 213 \u2014 dual champ at 0-2 despite Dak 37 / Dean 32",
+        "LAB offense \u2014 Atwell 2; Davis-Gaither\u2019s 32 carried a funeral to 182",
+        "Herbert 9 / TLaw 4 / Maye 6 \u2014 QB tax across three otherwise grown-up cards"
+      ],
+      "matchups": [
+        {
+          "scoreline": "Pocket Agents 322.5, Indian Trail Slumlords 252",
+          "blurb": "The Host did not ask for a second chance \u2014 he ordered a nuclear stack. Kellen Olson\u2019s Pocket Agents dropped a **322.5** kitty built on **Jared Goff (43), CeeDee Lamb (41), and Will Anderson Jr. (39)**, then twisted the knife with the punchline of the week: **Jaylen Waddle scored 27** after last week\u2019s flex single. Add **Dalton Kincaid 28** and **Trey McBride 23.5** and you\u2019ve got a TE room that could bully half the league by itself. Ryan Towner\u2019s Slumlords \u2014 already Survivor Week 1 alumni \u2014 still posted a very real **252**. **Dalton Schultz 41** and **Budda Baker 38** showed up; **Drake Maye managed 6** and London stayed quiet-adjacent at **11**. In any other matchup that 252 buys you a win column. Against 322.5 it\u2019s a footnote with a pulse \u2014 the same cruel math that also ate Eddies\u2019 251.5 and Hyper\u2019s 272. Juice: 322.5; the Goff/CeeDee/Anderson triad; Waddle\u2019s redemption arc. Junk: Maye\u2019s 6; a 252 that wins most weeks and still looks like heartbreak."
+        },
+        {
+          "scoreline": "Valley Old Goats 274.5, Eagle Ridge Eddies 251.5",
+          "blurb": "Heff\u2019s Goats closed **274.5** behind a headline that needs no adjective: **Devin Lloyd dropped 66**. Sixty-six. On IDP. **Patrick Mahomes added 40** while **T.J. Watt (21)** kept the defense honest. Bill\u2019s Eddies put up a real **251.5** \u2014 an IDP choir of **Evan Williams 34, Quentin Lake 28, Leonard Williams 27, Dorian Williams 27** \u2014 and still left empty-handed, with **Trevor Lawrence\u2019s ceremonial 4** as the sour note on an otherwise grown-up card. Same movie as Slumlords and Hyper this week: you scored enough to win most matchups and still took the L. Juice: Lloyd\u2019s 66; Mahomes\u2019 40; Goats to 2-0. Junk: TLaw\u2019s 4; another 250+ that tastes like a loss."
+        },
+        {
+          "scoreline": "Saltese Slamm 279, The Hypersecretors 272",
+          "blurb": "Seven points. Rookie franchise vs the commissioner. Luke\u2019s Saltese stayed **2-0** at **279**, powered by **Jaxon Smith-Njigba\u2019s 54**, with **Matthew Stafford (40), DeVonta Smith (35), and Edgerrin Cooper (35)** stacking the rest of the crime. Jacob Crisp\u2019s Hyper put up a very grown-up **272** \u2014 **Amon-Ra St. Brown 41, Kenneth Walker 32**, plus a **Nick Bolton / Blake Cashman 30\u201330** IDP tandem \u2014 and still walked away empty because **Justin Herbert managed 9**. That\u2019s the week\u2019s thesis in one box: 272 is a win most Tuesdays, and this Tuesday it joined Slumlords\u2019 252 and Eddies\u2019 251.5 in the quality-loss club. Jacob\u2019s Week 1 Monday heist met Week 2\u2019s reality check. Juice: JSN\u2019s 54; Luke undefeated. Junk: Herbert\u2019s 9; 272 as a losing number; the seven-point scar."
+        },
+        {
+          "scoreline": "Newman Lake Sleep Paralysis Demons 261, Mrs. Doubtpfizer 213",
+          "blurb": "Rymo remembered how WR1s are supposed to work. After **Davante Adams\u2019 Week 1 five-spot**, Newman printed **261** with **Adams\u2019 47** and **Jonathan Taylor\u2019s 32**, plus **Azeez Al-Shaair\u2019s 25** on IDP for the encore. Kyle Weberg\u2019s dual-era champ landed at **213** \u2014 **Dak Prescott 37** and **Nakobe Dean 32** were real punches, **CMC 23** was fine \u2014 and it\u2019s still **0-2**. Not a Dongers-zone collapse. Just ugly for a franchise that usually loses cute. Juice: Adams\u2019 revenge 47; JT\u2019s 32; Newman back to .500. Junk: champ r\u00e9sum\u00e9, 0-2 reality."
+        },
+        {
+          "scoreline": "Morningside Muff Divers 215, Substation 171",
+          "blurb": "Tim\u2019s Divers went to **2-0** the unspectacular way: **215** over Nate\u2019s Substation **171**. **Travis Kelce (39)** did adult TE things while **Bobby Okereke (28)** and **Byron Young (23)** handled the IDP math \u2014 even with **Justin Jefferson at 8** and **Deebo at 8** ghosting the skill board. Substation got **Brock Purdy\u2019s 32** and still could not drag **Alec Pierce (2)** and **David Montgomery (4)** across the line. After Week 1\u2019s statement, Morningside just collected. Juice: Divers quietly perfect; Kelce\u2019s 39. Junk: Pierce\u2019s 2; Monty\u2019s 4; Sub\u2019s 171."
+        },
+        {
+          "scoreline": "TTAB 188.5, Drummond Dongers 158.5",
+          "blurb": "Chase\u2019s TTAB stayed **2-0** without needing another 315 \u2014 just **Josh Allen\u2019s 47**, **Dee Winters\u2019 26**, and **Caleb Downs\u2019 22** clearing a very low bar, even with **Dallas Goedert\u2019s 1.5** as the trade hangover punchline. Gavin\u2019s Dongers bottomed the league at **158.5**. **Kyle Hamilton (32), Bijan (24), and Olave (22)** showed up; the rest of the board did not. After blowing a Week 1 lead on Monday, Week 2 was a flatline. Allen alone outscored the vibe. Juice: TTAB 2-0 on Allen and IDP. Junk: 158.5 league floor; Goedert\u2019s 1.5; Dongers 0-2 with nothing cute about it."
+        },
+        {
+          "scoreline": "Ultron 200.5, Little Ass Boys 182",
+          "blurb": "Aga\u2019s first Wheels Up win of 2026, and it was an IDP heist. Ultron\u2019s offense managed **78.5** \u2014 **Caleb Williams 6**, **Loveland 1.5**, **Quentin Johnston 1** \u2014 while the defense printed **122** and **Amani Hooker (30)** headlined the rescue. **James Cook (29)** and **Ja\u2019Marr Chase (26)** finally showed up after the Week 1 garage-sale tape. Jesse\u2019s LAB hit **182** with **Akeem Davis-Gaither\u2019s 32** and **Quay Walker\u2019s 23** carrying an offense that featured **Tutu Atwell for 2**. That\u2019s a win for Ultron\u2019s identity and a warning label for LAB\u2019s skill slots. Juice: Hooker\u2019s 30; Cook/Chase bounce-back; Aga to 1-1. Junk: Caleb\u2019s 6; Atwell\u2019s 2; winning ugly on defense."
+        }
+      ],
+      "closer": "Kitty to Pocket. League floor to Dongers. Three teams cracked 250 and still lost \u2014 Slumlords 252, Eddies 251.5, Hyper 272. Luke 2-0 by seven. Heff\u2019s Lloyd dropped 66. Adams remembered how to WR1. Waddle scored 27. Aga finally cashed a W on Hooker\u2019s IDP. WWJDD: start your studs, fear linebackers named Lloyd, and don\u2019t confuse a 250 with a win.",
       "pendingPublish": false,
       "approvedForPush": true
     }
   ],
-  "approvedForPush": false
+  "approvedForPush": true
 }
