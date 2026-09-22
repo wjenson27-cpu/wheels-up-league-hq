@@ -52,7 +52,7 @@
           document.getElementById("updatedLabel").textContent =
             `Updated ${WUC.formatDate(data.updated)}.`;
         }
-        const list = data.recaps || [];
+        const list = (data.recaps || []).slice().sort((a, b) => (b.week || 0) - (a.week || 0));
         if (!list.length) return;
         document.getElementById("recapList").innerHTML = list.map((r) => {
           const mus = (r.matchups || []).map((m) => `
