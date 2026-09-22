@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-09-15",
+  "updated": "2026-09-22",
   "schemaVersion": 2,
   "schema": {
     "weeklyKitty": "Array of weekly high-score (kitty) winners. One entry per completed week.",
@@ -27,6 +27,15 @@
       "score": 315.0,
       "note": "Highest Week 1 final score",
       "winnerShort": "TTAB"
+    },
+    {
+      "week": 2,
+      "status": "final",
+      "winnerTeamId": "pocket",
+      "winner": "Pocket Agents",
+      "winnerShort": "Pocket",
+      "score": 322.5,
+      "note": "Highest Week 2 final score"
     }
   ],
   "survivor": {
@@ -37,7 +46,6 @@
       "lab",
       "doubtpfizer",
       "eddies",
-      "dongers",
       "ttab",
       "hyper",
       "morningside",
@@ -55,7 +63,17 @@
         "score": 176.5,
         "aliveBefore": 14,
         "aliveAfter": 13,
-        "note": "Lowest Week 1 final score (post-MNF 176.5) \u2014 off the bus"
+        "note": "Lowest Week 1 final score (post-MNF 176.5) — off the bus"
+      },
+      {
+        "week": 2,
+        "status": "final",
+        "teamId": "dongers",
+        "team": "Drummond Dongers",
+        "score": 158.5,
+        "aliveBefore": 13,
+        "aliveAfter": 12,
+        "note": "Lowest Week 2 final score among teams still alive — off the bus"
       }
     ]
   },
@@ -65,156 +83,88 @@
       "label": "Top Record",
       "status": "live",
       "trackTop": 3,
-      "teamId": "ttab",
-      "team": "Towner Top Aga Bottom",
-      "value": "1-0",
+      "teamId": "saltese",
+      "team": "Saltese Slamm",
+      "value": "2-0",
       "leaders": [
         {
           "rank": 1,
-          "teamId": "ttab",
-          "team": "Towner Top Aga Bottom",
-          "value": "1-0",
-          "valueLabel": "1-0 \u00b7 315.0 PF",
-          "teamShort": "TTAB"
+          "teamId": "saltese",
+          "team": "Saltese Slamm",
+          "teamShort": "Saltese",
+          "value": "2-0",
+          "valueLabel": "2-0 · 534 PF"
         },
         {
           "rank": 2,
-          "teamId": "hyper",
-          "team": "The Hypersecretors",
-          "value": "1-0",
-          "valueLabel": "1-0 \u00b7 259.5 PF"
+          "teamId": "goats",
+          "team": "Valley Old Goats",
+          "teamShort": "Goats",
+          "value": "2-0",
+          "valueLabel": "2-0 · 528.5 PF"
         },
         {
           "rank": 3,
-          "teamId": "morningside",
-          "team": "Morningside Muff Divers",
-          "value": "1-0",
-          "valueLabel": "1-0 \u00b7 258.5 PF"
+          "teamId": "ttab",
+          "team": "Towner Top Aga Bottom",
+          "teamShort": "TTAB",
+          "value": "2-0",
+          "valueLabel": "2-0 · 503.5 PF"
         }
       ],
-      "note": "Live after Week 1 \u00b7 locks at season end"
+      "note": "Live after Week 2 · locks at season end"
     },
     "topPoints": {
       "key": "topPoints",
       "label": "Top Points",
       "status": "live",
       "trackTop": 3,
-      "teamId": "ttab",
-      "team": "Towner Top Aga Bottom",
-      "value": 315.0,
+      "teamId": "pocket",
+      "team": "Pocket Agents",
+      "value": 539.0,
       "leaders": [
         {
           "rank": 1,
-          "teamId": "ttab",
-          "team": "Towner Top Aga Bottom",
-          "value": 315.0,
-          "valueLabel": "315.0",
-          "teamShort": "TTAB"
+          "teamId": "pocket",
+          "team": "Pocket Agents",
+          "teamShort": "Pocket",
+          "value": 539.0,
+          "valueLabel": "539"
         },
         {
           "rank": 2,
-          "teamId": "hyper",
-          "team": "The Hypersecretors",
-          "value": 259.5,
-          "valueLabel": "259.5"
+          "teamId": "saltese",
+          "team": "Saltese Slamm",
+          "teamShort": "Saltese",
+          "value": 534.0,
+          "valueLabel": "534"
         },
         {
           "rank": 3,
-          "teamId": "morningside",
-          "team": "Morningside Muff Divers",
-          "value": 258.5,
-          "valueLabel": "258.5"
+          "teamId": "hyper",
+          "team": "The Hypersecretors",
+          "teamShort": "Hyper",
+          "value": 531.5,
+          "valueLabel": "531.5"
         }
       ],
-      "note": "Live season PF \u00b7 locks at season end"
+      "note": "Live season PF · locks at season end"
     },
     "topOffensivePlayer": {
       "key": "topOffensivePlayer",
       "label": "Top Offensive Player",
-      "status": "live",
+      "status": "tbd",
       "trackTop": 3,
-      "player": "Kenneth Walker III",
-      "teamId": "hyper",
-      "team": "The Hypersecretors",
-      "value": 48,
-      "leaders": [
-        {
-          "rank": 1,
-          "player": "Kenneth Walker III",
-          "pos": "RB",
-          "teamId": "hyper",
-          "team": "The Hypersecretors",
-          "teamShort": "Hyper",
-          "value": 48,
-          "valueLabel": "48"
-        },
-        {
-          "rank": 2,
-          "player": "Josh Allen",
-          "pos": "QB",
-          "teamId": "ttab",
-          "team": "Towner Top Aga Bottom",
-          "teamShort": "TTAB",
-          "value": 45,
-          "valueLabel": "45"
-        },
-        {
-          "rank": 3,
-          "player": "Jalen Coker",
-          "pos": "WR",
-          "teamId": "eddies",
-          "team": "Eagle Ridge Eddies",
-          "teamShort": "Eddies",
-          "value": 45,
-          "valueLabel": "45"
-        }
-      ],
-      "note": "Live after Week 1 \u00b7 Fantrax player totals (excl. free agents) \u00b7 locks at season end",
-      "pos": "RB"
+      "leaders": [],
+      "note": "TBD — season player totals pending next Fantrax player scrape"
     },
     "topDefensivePlayer": {
       "key": "topDefensivePlayer",
       "label": "Top Defensive Player",
-      "status": "live",
+      "status": "tbd",
       "trackTop": 3,
-      "player": "Josiah Trotter",
-      "teamId": "pocket",
-      "team": "Pocket Agents",
-      "value": 53,
-      "leaders": [
-        {
-          "rank": 1,
-          "player": "Josiah Trotter",
-          "pos": "LB",
-          "teamId": "pocket",
-          "team": "Pocket Agents",
-          "teamShort": "Pocket",
-          "value": 53,
-          "valueLabel": "53"
-        },
-        {
-          "rank": 2,
-          "player": "T.J. Watt",
-          "pos": "DL",
-          "teamId": "goats",
-          "team": "Valley Old Goats",
-          "teamShort": "Goats",
-          "value": 51,
-          "valueLabel": "51"
-        },
-        {
-          "rank": 3,
-          "player": "Ventrell Miller",
-          "pos": "LB",
-          "teamId": "morningside",
-          "team": "Morningside Muff Divers",
-          "teamShort": "Morningside",
-          "value": 40,
-          "valueLabel": "40"
-        }
-      ],
-      "note": "Live after Week 1 \u00b7 Fantrax IDP totals (excl. free agents) \u00b7 locks at season end",
-      "pos": "LB"
+      "leaders": [],
+      "note": "TBD — season player totals pending next Fantrax player scrape"
     }
   },
   "weekScores": {
@@ -288,6 +238,78 @@
         "teamId": "slumlords",
         "team": "Indian Trail Slumlords",
         "score": 176.5
+      }
+    ],
+    "2": [
+      {
+        "teamId": "pocket",
+        "team": "Pocket Agents",
+        "score": 322.5
+      },
+      {
+        "teamId": "saltese",
+        "team": "Saltese Slamm",
+        "score": 279.0
+      },
+      {
+        "teamId": "goats",
+        "team": "Valley Old Goats",
+        "score": 274.5
+      },
+      {
+        "teamId": "hyper",
+        "team": "The Hypersecretors",
+        "score": 272.0
+      },
+      {
+        "teamId": "newman",
+        "team": "Newman Lake Sleep Paralysis Demons",
+        "score": 261.0
+      },
+      {
+        "teamId": "slumlords",
+        "team": "Indian Trail Slumlords",
+        "score": 252.0
+      },
+      {
+        "teamId": "eddies",
+        "team": "Eagle Ridge Eddies",
+        "score": 251.5
+      },
+      {
+        "teamId": "morningside",
+        "team": "Morningside Muff Divers",
+        "score": 215.0
+      },
+      {
+        "teamId": "doubtpfizer",
+        "team": "Mrs. Doubtpfizer",
+        "score": 213.0
+      },
+      {
+        "teamId": "ultron",
+        "team": "Ultron",
+        "score": 200.5
+      },
+      {
+        "teamId": "ttab",
+        "team": "Towner Top Aga Bottom",
+        "score": 188.5
+      },
+      {
+        "teamId": "lab",
+        "team": "Little Ass Boys",
+        "score": 182.0
+      },
+      {
+        "teamId": "substation",
+        "team": "Substation",
+        "score": 171.0
+      },
+      {
+        "teamId": "dongers",
+        "team": "Drummond Dongers",
+        "score": 158.5
       }
     ]
   }
