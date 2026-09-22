@@ -275,6 +275,33 @@
         : "Official board";
     }
 
+
+    function mergeBoard(seed, local) {
+      // Official JSON is the base. Local only fills blanks (so a stale
+      // browser save cannot wipe a newly pushed week).
+      const out = JSON.parse(JSON.stringify(seed));
+      if (!local || !Array.isArray(local.owners)) return out;
+      const byId = Object.fromEntries(local.owners.map((o) => [o.id, o]));
+      for (const owner of out.owners) {
+        const lo = byId[owner.id];
+        if (!lo || !lo.weeks) continue;
+        for (let w = 1; w <= 17; w++) {
+          const key = String(w);
+          const sc = owner.weeks[key] || { player: "", td: "" };
+          const lc = lo.weeks[key] || { player: "", td: "" };
+          if (!sc.player && lc.player) sc.player = lc.player;
+          if (!sc.td && lc.td) sc.td = lc.td;
+          owner.weeks[key] = sc;
+        }
+      }
+      if (local.weekNotes) {
+        out.weekNotes = Object.assign({}, local.weekNotes || {}, seed.weekNotes || {});
+      }
+      out.updated = seed.updated || local.updated;
+      out.note = seed.note || local.note;
+      return out;
+    }
+
     async function loadSeed() {
       return WUC.loadJSON("data/td-parlay.json");
     }
@@ -305,20 +332,27 @@
       e.target.value = "";
     });
     document.getElementById("btnReset").addEventListener("click", async () => {
-      if (!confirm("Reset the board to the official Week 1 picks?")) return;
+      if (!confirm("Reset to the official board from the site (clears your local overrides)?")) return;
       localStorage.removeItem(STORAGE_KEY);
       state = await loadSeed();
       render();
-      document.getElementById("saveStatus").textContent = "Board reset";
+      document.getElementById("saveStatus").textContent = "Official board";
     });
 
     document.addEventListener("DOMContentLoaded", async () => {
       try {
-        const local = localStorage.getItem(STORAGE_KEY);
-        if (local) {
-          state = JSON.parse(local);
+        const seed = await loadSeed();
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          try {
+            state = mergeBoard(seed, JSON.parse(raw));
+          } catch (err) {
+            state = seed;
+          }
+          // Rewrite local cache so a stale save cannot blank a pushed week again
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
         } else {
-          state = await loadSeed();
+          state = seed;
         }
         render();
       } catch (e) {
