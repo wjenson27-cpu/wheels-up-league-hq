@@ -1,0 +1,94 @@
+{
+  "updated": "2026-09-15",
+  "asOf": "2026-09-15",
+  "week": 1,
+  "weekStatus": "final",
+  "complete": true,
+  "source": "Fantrax full league scrape Sep 15 evening \u2014 finals reconfirmed",
+  "note": "Week 1 FINAL confirmed post-MNF. All 14 clubs locked. Kitty TTAB 315; Survivor Slumlords 176.5.",
+  "kitty": {
+    "team": "TTAB",
+    "teamFull": "Towner Top Aga Bottom",
+    "teamId": "ttab",
+    "score": 315
+  },
+  "survivorLowest": {
+    "team": "Indian Trail Slumlords",
+    "teamId": "slumlords",
+    "score": 176.5
+  },
+  "mondayMovers": [
+    "Morningside 258.5\u2013237 Doubtpfizer (was 246\u2013199)",
+    "Goats 254\u2013221 Newman (was 229\u2013221)",
+    "LAB 246\u2013216.5 Pocket (was 246\u2013215.5)",
+    "Hyper 259.5\u2013246.5 Dongers FLIP (was 202.5\u2013246.5 L)",
+    "TTAB 315\u2013176.5 Slumlords (was 315\u2013164.5)",
+    "Substation 193\u2013180 Ultron (was 188\u2013180)"
+  ],
+  "matchups": [
+    {
+      "home": "Saltese Slamm",
+      "away": "Eagle Ridge Eddies",
+      "homeScore": 255,
+      "awayScore": 241,
+      "status": "final",
+      "winner": "Saltese Slamm",
+      "notes": "FINAL \u2014 Eddies 241, Saltese 255 (unchanged post-MNF)"
+    },
+    {
+      "home": "Mrs. Doubtpfizer",
+      "away": "Morningside Muff Divers",
+      "homeScore": 237,
+      "awayScore": 258.5,
+      "status": "final",
+      "winner": "Morningside Muff Divers",
+      "notes": "FINAL post-MNF \u2014 was 246-199; now Divers 258.5, Doubtpfizer 237"
+    },
+    {
+      "home": "Valley Old Goats",
+      "away": "Newman Lake Sleep Paralysis Demons",
+      "homeScore": 254,
+      "awayScore": 221,
+      "status": "final",
+      "winner": "Valley Old Goats",
+      "notes": "FINAL post-MNF \u2014 was 229-221; Goats now 254"
+    },
+    {
+      "home": "Little Ass Boys",
+      "away": "Pocket Agents",
+      "homeScore": 246,
+      "awayScore": 216.5,
+      "status": "final",
+      "winner": "Little Ass Boys",
+      "notes": "FINAL post-MNF \u2014 Pocket 216.5 (was 215.5); LAB 246 unchanged"
+    },
+    {
+      "home": "Drummond Dongers",
+      "away": "The Hypersecretors",
+      "homeScore": 246.5,
+      "awayScore": 259.5,
+      "status": "final",
+      "winner": "The Hypersecretors",
+      "notes": "FINAL post-MNF FLIP \u2014 was Hyper 202.5\u2013Dongers 246.5 LOSS; now Hyper 259.5 WIN"
+    },
+    {
+      "home": "Indian Trail Slumlords",
+      "away": "Towner Top Aga Bottom",
+      "homeScore": 176.5,
+      "awayScore": 315,
+      "status": "final",
+      "winner": "Towner Top Aga Bottom",
+      "notes": "FINAL post-MNF \u2014 TTAB 315 unchanged; Slumlords 176.5 (was 164.5)"
+    },
+    {
+      "home": "Substation",
+      "away": "Ultron",
+      "homeScore": 193,
+      "awayScore": 180,
+      "status": "final",
+      "winner": "Substation",
+      "notes": "FINAL post-MNF \u2014 Sub 193 (was 188); Ultron 180 unchanged"
+    }
+  ],
+  "scoresMatchPostMnf": true
+}

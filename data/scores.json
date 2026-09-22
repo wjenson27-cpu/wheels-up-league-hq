@@ -1,94 +1,169 @@
 {
-  "updated": "2026-09-15",
-  "asOf": "2026-09-15",
-  "week": 1,
+  "updated": "2026-09-22",
+  "asOf": "2026-09-22",
+  "week": 2,
   "weekStatus": "final",
   "complete": true,
-  "source": "Fantrax full league scrape Sep 15 evening \u2014 finals reconfirmed",
-  "note": "Week 1 FINAL confirmed post-MNF. All 14 clubs locked. Kitty TTAB 315; Survivor Slumlords 176.5.",
+  "source": "Fantrax",
+  "note": "Week 2 FINAL from Fantrax Matchups/Standings scrape Tue Sep 22 ~6:42 AM PT. All 7 games locked. Kitty Pocket 322.5; lowest Dongers 158.5.",
   "kitty": {
-    "team": "TTAB",
-    "teamFull": "Towner Top Aga Bottom",
-    "teamId": "ttab",
-    "score": 315
+    "team": "Pocket",
+    "teamFull": "Pocket Agents",
+    "teamId": "pocket",
+    "score": 322.5
   },
   "survivorLowest": {
-    "team": "Indian Trail Slumlords",
-    "teamId": "slumlords",
-    "score": 176.5
+    "team": "Drummond Dongers",
+    "teamId": "dongers",
+    "score": 158.5
   },
-  "mondayMovers": [
-    "Morningside 258.5\u2013237 Doubtpfizer (was 246\u2013199)",
-    "Goats 254\u2013221 Newman (was 229\u2013221)",
-    "LAB 246\u2013216.5 Pocket (was 246\u2013215.5)",
-    "Hyper 259.5\u2013246.5 Dongers FLIP (was 202.5\u2013246.5 L)",
-    "TTAB 315\u2013176.5 Slumlords (was 315\u2013164.5)",
-    "Substation 193\u2013180 Ultron (was 188\u2013180)"
-  ],
   "matchups": [
     {
-      "home": "Saltese Slamm",
+      "home": "Valley Old Goats",
       "away": "Eagle Ridge Eddies",
-      "homeScore": 255,
-      "awayScore": 241,
+      "homeScore": 274.5,
+      "awayScore": 251.5,
       "status": "final",
-      "winner": "Saltese Slamm",
-      "notes": "FINAL \u2014 Eddies 241, Saltese 255 (unchanged post-MNF)"
+      "winner": "Valley Old Goats",
+      "topScorers": [
+        {
+          "team": "Valley Old Goats",
+          "player": "Devin Lloyd",
+          "pts": 66
+        },
+        {
+          "team": "Eagle Ridge Eddies",
+          "player": "Evan Williams",
+          "pts": 34
+        }
+      ],
+      "notes": "Fantrax Standings labels Eagle Ridge as away and Valley as home; all games final."
+    },
+    {
+      "home": "Towner Top Aga Bottom",
+      "away": "Drummond Dongers",
+      "homeScore": 188.5,
+      "awayScore": 158.5,
+      "status": "final",
+      "winner": "Towner Top Aga Bottom",
+      "topScorers": [
+        {
+          "team": "Towner Top Aga Bottom",
+          "player": "Josh Allen",
+          "pts": 47
+        },
+        {
+          "team": "Drummond Dongers",
+          "player": "Kyle Hamilton",
+          "pts": 32
+        }
+      ],
+      "notes": "Fantrax Standings labels Drummond as away and Towner as home; all games final."
     },
     {
       "home": "Mrs. Doubtpfizer",
-      "away": "Morningside Muff Divers",
-      "homeScore": 237,
-      "awayScore": 258.5,
-      "status": "final",
-      "winner": "Morningside Muff Divers",
-      "notes": "FINAL post-MNF \u2014 was 246-199; now Divers 258.5, Doubtpfizer 237"
-    },
-    {
-      "home": "Valley Old Goats",
       "away": "Newman Lake Sleep Paralysis Demons",
-      "homeScore": 254,
-      "awayScore": 221,
+      "homeScore": 213,
+      "awayScore": 261,
       "status": "final",
-      "winner": "Valley Old Goats",
-      "notes": "FINAL post-MNF \u2014 was 229-221; Goats now 254"
-    },
-    {
-      "home": "Little Ass Boys",
-      "away": "Pocket Agents",
-      "homeScore": 246,
-      "awayScore": 216.5,
-      "status": "final",
-      "winner": "Little Ass Boys",
-      "notes": "FINAL post-MNF \u2014 Pocket 216.5 (was 215.5); LAB 246 unchanged"
-    },
-    {
-      "home": "Drummond Dongers",
-      "away": "The Hypersecretors",
-      "homeScore": 246.5,
-      "awayScore": 259.5,
-      "status": "final",
-      "winner": "The Hypersecretors",
-      "notes": "FINAL post-MNF FLIP \u2014 was Hyper 202.5\u2013Dongers 246.5 LOSS; now Hyper 259.5 WIN"
+      "winner": "Newman Lake Sleep Paralysis Demons",
+      "topScorers": [
+        {
+          "team": "Newman Lake Sleep Paralysis Demons",
+          "player": "Davante Adams",
+          "pts": 47
+        },
+        {
+          "team": "Mrs. Doubtpfizer",
+          "player": "Dak Prescott",
+          "pts": 37
+        }
+      ],
+      "notes": "Fantrax Standings labels Newman as away and Mrs. Doubtpfizer as home; all games final."
     },
     {
       "home": "Indian Trail Slumlords",
-      "away": "Towner Top Aga Bottom",
-      "homeScore": 176.5,
-      "awayScore": 315,
+      "away": "Pocket Agents",
+      "homeScore": 252,
+      "awayScore": 322.5,
       "status": "final",
-      "winner": "Towner Top Aga Bottom",
-      "notes": "FINAL post-MNF \u2014 TTAB 315 unchanged; Slumlords 176.5 (was 164.5)"
+      "winner": "Pocket Agents",
+      "topScorers": [
+        {
+          "team": "Pocket Agents",
+          "player": "Jared Goff",
+          "pts": 43
+        },
+        {
+          "team": "Indian Trail Slumlords",
+          "player": "Dalton Schultz",
+          "pts": 41
+        }
+      ],
+      "notes": "Fantrax Standings labels Pocket as away and Indian Trail as home; all games final."
     },
     {
-      "home": "Substation",
-      "away": "Ultron",
-      "homeScore": 193,
-      "awayScore": 180,
+      "home": "The Hypersecretors",
+      "away": "Saltese Slamm",
+      "homeScore": 272,
+      "awayScore": 279,
       "status": "final",
-      "winner": "Substation",
-      "notes": "FINAL post-MNF \u2014 Sub 193 (was 188); Ultron 180 unchanged"
+      "winner": "Saltese Slamm",
+      "topScorers": [
+        {
+          "team": "Saltese Slamm",
+          "player": "Jaxon Smith-Njigba",
+          "pts": 54
+        },
+        {
+          "team": "The Hypersecretors",
+          "player": "Amon-Ra St. Brown",
+          "pts": 41
+        }
+      ],
+      "notes": "Fantrax Standings labels Saltese as away and Hypersecretors as home; all games final."
+    },
+    {
+      "home": "Morningside Muff Divers",
+      "away": "Substation",
+      "homeScore": 215,
+      "awayScore": 171,
+      "status": "final",
+      "winner": "Morningside Muff Divers",
+      "topScorers": [
+        {
+          "team": "Substation",
+          "player": "Brock Purdy",
+          "pts": 32
+        },
+        {
+          "team": "Morningside Muff Divers",
+          "player": "Travis Kelce",
+          "pts": 39
+        }
+      ],
+      "notes": "Fantrax Standings labels Substation as away and Morningside as home; all games final."
+    },
+    {
+      "home": "Little Ass Boys",
+      "away": "Ultron",
+      "homeScore": 182,
+      "awayScore": 200.5,
+      "status": "final",
+      "winner": "Ultron",
+      "topScorers": [
+        {
+          "team": "Ultron",
+          "player": "Amani Hooker",
+          "pts": 30
+        },
+        {
+          "team": "Little Ass Boys",
+          "player": "Akeem Davis-Gaither",
+          "pts": 32
+        }
+      ],
+      "notes": "Fantrax Standings labels Ultron as away and Little Ass Boys as home; all games final."
     }
-  ],
-  "scoresMatchPostMnf": true
+  ]
 }
