@@ -63,7 +63,7 @@
         "score": 176.5,
         "aliveBefore": 14,
         "aliveAfter": 13,
-        "note": "Lowest Week 1 final score (post-MNF 176.5) — off the bus"
+        "note": "Lowest Week 1 final score (post-MNF 176.5) \u2014 off the bus"
       },
       {
         "week": 2,
@@ -73,7 +73,7 @@
         "score": 158.5,
         "aliveBefore": 13,
         "aliveAfter": 12,
-        "note": "Lowest Week 2 final score among teams still alive — off the bus"
+        "note": "Lowest Week 2 final score among teams still alive \u2014 off the bus"
       }
     ]
   },
@@ -93,7 +93,7 @@
           "team": "Saltese Slamm",
           "teamShort": "Saltese",
           "value": "2-0",
-          "valueLabel": "2-0 · 534 PF"
+          "valueLabel": "2-0 \u00b7 534 PF"
         },
         {
           "rank": 2,
@@ -101,7 +101,7 @@
           "team": "Valley Old Goats",
           "teamShort": "Goats",
           "value": "2-0",
-          "valueLabel": "2-0 · 528.5 PF"
+          "valueLabel": "2-0 \u00b7 528.5 PF"
         },
         {
           "rank": 3,
@@ -109,10 +109,10 @@
           "team": "Towner Top Aga Bottom",
           "teamShort": "TTAB",
           "value": "2-0",
-          "valueLabel": "2-0 · 503.5 PF"
+          "valueLabel": "2-0 \u00b7 503.5 PF"
         }
       ],
-      "note": "Live after Week 2 · locks at season end"
+      "note": "Live after Week 2 \u00b7 locks at season end"
     },
     "topPoints": {
       "key": "topPoints",
@@ -148,23 +148,95 @@
           "valueLabel": "531.5"
         }
       ],
-      "note": "Live season PF · locks at season end"
+      "note": "Live season PF \u00b7 locks at season end"
     },
     "topOffensivePlayer": {
       "key": "topOffensivePlayer",
       "label": "Top Offensive Player",
-      "status": "tbd",
+      "status": "live",
       "trackTop": 3,
-      "leaders": [],
-      "note": "TBD — season player totals pending next Fantrax player scrape"
+      "player": "Josh Allen",
+      "pos": "QB",
+      "teamId": "ttab",
+      "team": "Towner Top Aga Bottom",
+      "value": 92,
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Josh Allen",
+          "pos": "QB",
+          "teamId": "ttab",
+          "team": "Towner Top Aga Bottom",
+          "teamShort": "TTAB",
+          "value": 92,
+          "valueLabel": "92"
+        },
+        {
+          "rank": 2,
+          "player": "Jaxon Smith-Njigba",
+          "pos": "WR",
+          "teamId": "saltese",
+          "team": "Saltese Slamm",
+          "teamShort": "Saltese",
+          "value": 86,
+          "valueLabel": "86"
+        },
+        {
+          "rank": 3,
+          "player": "Kenneth Walker III",
+          "pos": "RB",
+          "teamId": "hyper",
+          "team": "The Hypersecretors",
+          "teamShort": "Hyper",
+          "value": 80,
+          "valueLabel": "80"
+        }
+      ],
+      "note": "Live after Week 2 \u00b7 Fantrax YTD All Taken Players (excl. free agents) \u00b7 locks at season end"
     },
     "topDefensivePlayer": {
       "key": "topDefensivePlayer",
       "label": "Top Defensive Player",
-      "status": "tbd",
+      "status": "live",
       "trackTop": 3,
-      "leaders": [],
-      "note": "TBD — season player totals pending next Fantrax player scrape"
+      "player": "Devin Lloyd",
+      "pos": "LB",
+      "teamId": "goats",
+      "team": "Valley Old Goats",
+      "value": 94,
+      "leaders": [
+        {
+          "rank": 1,
+          "player": "Devin Lloyd",
+          "pos": "LB",
+          "teamId": "goats",
+          "team": "Valley Old Goats",
+          "teamShort": "Goats",
+          "value": 94,
+          "valueLabel": "94"
+        },
+        {
+          "rank": 2,
+          "player": "Josiah Trotter",
+          "pos": "LB",
+          "teamId": "pocket",
+          "team": "Pocket Agents",
+          "teamShort": "Pocket",
+          "value": 78,
+          "valueLabel": "78"
+        },
+        {
+          "rank": 3,
+          "player": "Gregory Rousseau",
+          "pos": "DL",
+          "teamId": "slumlords",
+          "team": "Indian Trail Slumlords",
+          "teamShort": "Slumlords",
+          "value": 74,
+          "valueLabel": "74"
+        }
+      ],
+      "note": "Live after Week 2 \u00b7 Fantrax YTD All Taken Players (excl. free agents) \u00b7 locks at season end"
     }
   },
   "weekScores": {
