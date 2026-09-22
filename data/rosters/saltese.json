@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-20",
+  "asOf": "2026-09-22",
   "faabLeft": 83,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -31,9 +31,7 @@
       "Nathan Landman",
       "Kaleb Elarms-Orr"
     ],
-    "DL": [
-      "Zach Allen"
-    ],
+    "DL": [],
     "DB": [
       "Jordan Battle",
       "Jonas Sanker",
@@ -44,7 +42,7 @@
       "Micah Parsons"
     ]
   },
-  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83.",
-  "source": "Fantrax scrape Sep 20 2026 ~6:27 AM PT",
+  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM).",
+  "source": "Fantrax scrape Sep 22 2026 ~6:35 AM PT",
   "fantraxTeamId": "xdx6ngm2msb3ulv5"
 }

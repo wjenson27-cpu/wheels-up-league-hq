@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "teams": [
     "dongers",
     "doubtpfizer",
@@ -17,6 +17,6 @@
     "ultron"
   ],
   "count": 14,
-  "note": "Sep 21 AM: Sunday FA net roster patches \u2014 Dongers \u2212Donald; LAB +Atwell; Doubtpfizer +Freiermuth/\u2212Demercado; Slumlords +Doubs/\u2212Boston; TTAB Harris churn net zero. Transactions already live f200d32.",
-  "source": "Fantrax Fantasy check Sep 21 2026 ~6:46 AM PT"
+  "note": "Sep 22 AM: LAB \u2212Tutu Atwell; Saltese \u2212Zach Allen. Pending trades/claims still 0; trade blocks unchanged.",
+  "source": "Fantrax scrape Sep 22 2026 ~6:35 AM PT"
 }

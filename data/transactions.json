@@ -1,7 +1,25 @@
 {
-  "updated": "2026-09-21",
-  "source": "Fantrax scrape Sep 21 2026 ~6:41 AM PT",
+  "updated": "2026-09-22",
+  "source": "Fantrax scrape Sep 22 2026 ~6:35 AM PT",
   "items": [
+    {
+      "date": "2026-09-22",
+      "type": "DROP",
+      "team": "Little Ass Boys",
+      "summary": "Dropped Tutu Atwell (WR) ($0/null bid)",
+      "time": "5:47 AM PDT",
+      "player": "Tutu Atwell",
+      "playerMeta": "WR-LAR"
+    },
+    {
+      "date": "2026-09-21",
+      "type": "DROP",
+      "team": "Saltese Slamm",
+      "summary": "Dropped Zach Allen (DL) ($0/null bid)",
+      "time": "9:00 PM PDT",
+      "player": "Zach Allen",
+      "playerMeta": "DL-DEN"
+    },
     {
       "date": "2026-09-20",
       "type": "DROP",
