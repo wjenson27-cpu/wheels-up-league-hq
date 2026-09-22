@@ -1,10 +1,11 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-22",
   "season": 2026,
   "weeks": 17,
-  "note": "Anytime TD. Edits save on this device.",
+  "note": "Anytime TD. Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded).",
   "weekNotes": {
-    "1": "All games Sunday 9/13/2026"
+    "1": "All games Sunday 9/13/2026",
+    "2": "Week 2 finals. Coon: Puka DNP \u2192 N/A (doesn't kill weekly HIT)."
   },
   "owners": [
     {
@@ -16,8 +17,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Christian McCaffrey",
+          "td": "Yes"
         },
         "3": {
           "player": "",
@@ -90,8 +91,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Jaxon Smith-Njigba",
+          "td": "Yes"
         },
         "3": {
           "player": "",
@@ -164,8 +165,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Derrick Henry",
+          "td": "Yes"
         },
         "3": {
           "player": "",
@@ -238,8 +239,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Jonathan Taylor",
+          "td": "Yes"
         },
         "3": {
           "player": "",
@@ -312,8 +313,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "David Montgomery",
+          "td": "No"
         },
         "3": {
           "player": "",
@@ -386,8 +387,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Javonte Williams",
+          "td": "No"
         },
         "3": {
           "player": "",
@@ -460,8 +461,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Kyren Williams",
+          "td": "Yes"
         },
         "3": {
           "player": "",
@@ -534,8 +535,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Bijan Robinson",
+          "td": "No"
         },
         "3": {
           "player": "",
@@ -608,8 +609,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Bucky Irving",
+          "td": "No"
         },
         "3": {
           "player": "",
@@ -682,8 +683,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Ashton Jeanty",
+          "td": "No"
         },
         "3": {
           "player": "",
@@ -756,8 +757,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Puka Nacua",
+          "td": "N/A"
         },
         "3": {
           "player": "",
@@ -830,8 +831,8 @@
           "td": ""
         },
         "2": {
-          "player": "",
-          "td": ""
+          "player": "Kenneth Walker III",
+          "td": "No"
         },
         "3": {
           "player": "",

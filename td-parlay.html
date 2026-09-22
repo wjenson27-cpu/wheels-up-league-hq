@@ -79,6 +79,7 @@
     }
     .parlay-table select.td.yes { background: rgba(105, 190, 40, 0.25); border-color: var(--sea-green); }
     .parlay-table select.td.no { background: rgba(244, 63, 94, 0.2); border-color: var(--red); }
+    .parlay-table select.td.na { background: rgba(148, 163, 184, 0.2); border-color: var(--text-dim); }
     .parlay-table td.stat {
       text-align: center; font-variant-numeric: tabular-nums; color: var(--text-muted);
       min-width: 2.5rem;
@@ -101,7 +102,7 @@
     <header class="page-hero">
       <span class="eyebrow">League side bet</span>
       <h1>TD Parlay</h1>
-      <p class="lede">17 weeks. Change players anytime. Mark anytime TD Yes/No. Weekly HIT only if all 12 hit. <span class="muted" id="updatedLabel"></span></p>
+      <p class="lede">17 weeks. Change players anytime. Mark anytime TD Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded). <span class="muted" id="updatedLabel"></span></p>
       <p class="muted" id="noteLabel"></p>
     </header>
 
@@ -133,7 +134,9 @@
     function weekResult(owners, w) {
       const tds = owners.map((o) => (o.weeks[String(w)] || {}).td || "");
       if (tds.some((t) => !t)) return "…";
-      if (tds.every((t) => t === "Yes")) return "HIT";
+      const active = tds.filter((t) => t !== "N/A");
+      if (!active.length) return "…";
+      if (active.every((t) => t === "Yes")) return "HIT";
       return "MISS";
     }
 
@@ -201,12 +204,13 @@
         let cells = `<td class="owner-col">${WUC.escapeHtml(o.name)}</td>`;
         for (let w = 1; w <= 17; w++) {
           const cell = o.weeks[String(w)] || { player: "", td: "" };
-          const tdClass = cell.td === "Yes" ? "yes" : cell.td === "No" ? "no" : "";
+          const tdClass = cell.td === "Yes" ? "yes" : cell.td === "No" ? "no" : cell.td === "N/A" ? "na" : "";
           cells += `<td><input class="player" data-owner="${o.id}" data-week="${w}" value="${WUC.escapeHtml(cell.player || "")}" placeholder="Player" /></td>`;
           cells += `<td><select class="td ${tdClass}" data-owner="${o.id}" data-week="${w}">
             <option value="" ${!cell.td ? "selected" : ""}>—</option>
             <option value="Yes" ${cell.td === "Yes" ? "selected" : ""}>Yes</option>
             <option value="No" ${cell.td === "No" ? "selected" : ""}>No</option>
+            <option value="N/A" ${cell.td === "N/A" ? "selected" : ""}>N/A</option>
           </select></td>`;
         }
         cells += `<td class="stat stat-hits">${s.hits}</td><td class="stat stat-misses">${s.misses}</td><td class="stat stat-open">${s.open}</td>`;
@@ -260,6 +264,7 @@
           sel.classList.remove("yes", "no");
           if (sel.value === "Yes") sel.classList.add("yes");
           if (sel.value === "No") sel.classList.add("no");
+          if (sel.value === "N/A") sel.classList.add("na");
           markDirty();
         });
       });
