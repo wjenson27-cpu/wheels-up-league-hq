@@ -4,7 +4,7 @@
   "weeks": 17,
   "note": "Anytime TD. Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded).",
   "weekNotes": {
-    "1": "All games Sunday 9/13/2026",
+    "1": "Week 1 finals (Sun Sep 13 / MNF Sep 14 2026).",
     "2": "Week 2 finals. Coon: Puka DNP \u2192 N/A (doesn't kill weekly HIT)."
   },
   "owners": [
@@ -14,7 +14,7 @@
       "weeks": {
         "1": {
           "player": "Saquon Barkley",
-          "td": ""
+          "td": "No"
         },
         "2": {
           "player": "Christian McCaffrey",
@@ -88,7 +88,7 @@
       "weeks": {
         "1": {
           "player": "Tee Higgins",
-          "td": ""
+          "td": "No"
         },
         "2": {
           "player": "Jaxon Smith-Njigba",
@@ -162,7 +162,7 @@
       "weeks": {
         "1": {
           "player": "Omarion Hampton",
-          "td": ""
+          "td": "Yes"
         },
         "2": {
           "player": "Derrick Henry",
@@ -236,7 +236,7 @@
       "weeks": {
         "1": {
           "player": "Javonte Williams",
-          "td": ""
+          "td": "Yes"
         },
         "2": {
           "player": "Jonathan Taylor",
@@ -310,7 +310,7 @@
       "weeks": {
         "1": {
           "player": "Jonathan Taylor",
-          "td": ""
+          "td": "Yes"
         },
         "2": {
           "player": "David Montgomery",
@@ -384,7 +384,7 @@
       "weeks": {
         "1": {
           "player": "Travis Etienne Jr.",
-          "td": ""
+          "td": "No"
         },
         "2": {
           "player": "Javonte Williams",
@@ -458,7 +458,7 @@
       "weeks": {
         "1": {
           "player": "Jahmyr Gibbs",
-          "td": ""
+          "td": "Yes"
         },
         "2": {
           "player": "Kyren Williams",
@@ -532,7 +532,7 @@
       "weeks": {
         "1": {
           "player": "Chris Olave",
-          "td": ""
+          "td": "No"
         },
         "2": {
           "player": "Bijan Robinson",
@@ -606,7 +606,7 @@
       "weeks": {
         "1": {
           "player": "Derrick Henry",
-          "td": ""
+          "td": "Yes"
         },
         "2": {
           "player": "Bucky Irving",
@@ -680,7 +680,7 @@
       "weeks": {
         "1": {
           "player": "Ashton Jeanty",
-          "td": ""
+          "td": "Yes"
         },
         "2": {
           "player": "Ashton Jeanty",
@@ -754,7 +754,7 @@
       "weeks": {
         "1": {
           "player": "Ja'Marr Chase",
-          "td": ""
+          "td": "No"
         },
         "2": {
           "player": "Puka Nacua",
@@ -828,7 +828,7 @@
       "weeks": {
         "1": {
           "player": "Bijan Robinson",
-          "td": ""
+          "td": "Yes"
         },
         "2": {
           "player": "Kenneth Walker III",
