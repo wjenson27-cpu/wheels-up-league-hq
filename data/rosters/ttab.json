@@ -2,8 +2,8 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-09-21",
-  "faabLeft": 51,
+  "asOf": "2026-09-23",
+  "faabLeft": 42,
   "startingQB": "Josh Allen",
   "roster": {
     "QB": [
@@ -20,7 +20,9 @@
     "WR": [
       "Christian Watson",
       "Mike Washington",
-      "Jameson Williams"
+      "Jameson Williams",
+      "Tre Tucker",
+      "Keon Coleman"
     ],
     "TE": [
       "Jake Ferguson"
@@ -43,7 +45,7 @@
     ],
     "IR": []
   },
-  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (\u2212Nailor); +Kwity Paye $16 (\u2212Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/\u2212Christian Harris churn (net zero).",
-  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
+  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (\u2212Nailor); +Kwity Paye $16 (\u2212Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/\u2212Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR)",
+  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
   "fantraxTeamId": "4grk2ph6msb3ulv4"
 }

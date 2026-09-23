@@ -2,8 +2,8 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-09-21",
-  "faabLeft": 93,
+  "asOf": "2026-09-23",
+  "faabLeft": 48,
   "startingQB": "Joe Burrow",
   "roster": {
     "QB": [
@@ -12,7 +12,7 @@
     ],
     "RB": [
       "Bijan Robinson",
-      "Chris Rodriguez Jr."
+      "David Bailey"
     ],
     "WR": [
       "Chris Olave",
@@ -28,7 +28,8 @@
     ],
     "LB": [
       "T.J. Edwards",
-      "CJ Allen"
+      "CJ Allen",
+      "Christian Elliss"
     ],
     "DL": [
       "Laiatu Latu",
@@ -39,11 +40,11 @@
       "Kyle Hamilton",
       "Xavier McKinney",
       "Jalen Pitre",
-      "Nick Scott"
+      "Daxton Hill"
     ],
     "IR": []
   },
-  "notes": "Sep 17 AM: +T.J. Hockenson (\u2212Kayshon Boutte). Sep 16 post-waiver: +Donovan Ezeiruaku $14. FAAB $93. | Sep 20: \u2212Aaron Donald (also +/\u2212Michael Mayer churn, net Mayer zero).",
-  "source": "Fantrax scrape Sep 17 6:27 AM PT",
+  "notes": "Sep 17 AM: +T.J. Hockenson (\u2212Kayshon Boutte). Sep 16 post-waiver: +Donovan Ezeiruaku $14. FAAB $93. | Sep 20: \u2212Aaron Donald (also +/\u2212Michael Mayer churn, net Mayer zero). | Sep 23 clear: +David Bailey (RB); +Daxton Hill (DB); +Christian Elliss (LB); -Nick Scott (DB); -Chris Rodriguez Jr. (RB)",
+  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
   "fantraxTeamId": "lreem0zbmsb3ulv5"
 }

@@ -2,12 +2,13 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-09-22",
-  "faabLeft": 104,
+  "asOf": "2026-09-23",
+  "faabLeft": 93,
   "startingQB": "Jayden Daniels",
   "roster": {
     "QB": [
-      "Jayden Daniels"
+      "Jayden Daniels",
+      "C.J. Stroud"
     ],
     "RB": [
       "Kyren Williams",
@@ -44,7 +45,7 @@
       "Drue Tranquill"
     ]
   },
-  "notes": "Sep 17 AM: dropped Baker Mayfield. Sep 16 post-waiver: +Kendrick Bourne $11 (\u2212Tre Tucker). FAAB $104. | Sep 20: +Tutu Atwell. | Sep 22: dropped Tutu Atwell (5:47 AM).",
-  "source": "Fantrax scrape Sep 22 2026 ~6:35 AM PT",
+  "notes": "Sep 17 AM: dropped Baker Mayfield. Sep 16 post-waiver: +Kendrick Bourne $11 (\u2212Tre Tucker). FAAB $104. | Sep 20: +Tutu Atwell. | Sep 22: dropped Tutu Atwell (5:47 AM). | Sep 23 clear: +C.J. Stroud (QB)",
+  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4"
 }

@@ -2,8 +2,8 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-22",
-  "faabLeft": 83,
+  "asOf": "2026-09-23",
+  "faabLeft": 26,
   "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
@@ -19,10 +19,11 @@
       "DeVonta Smith",
       "Ja'Kobi Lane",
       "Stefon Diggs",
-      "Carnell Tate"
+      "Carnell Tate",
+      "Denzel Boston"
     ],
     "TE": [
-      "Mike Gesicki"
+      "Oronde Gadsden"
     ],
     "LB": [
       "Jordyn Brooks",
@@ -31,7 +32,9 @@
       "Nathan Landman",
       "Kaleb Elarms-Orr"
     ],
-    "DL": [],
+    "DL": [
+      "Mason Graham"
+    ],
     "DB": [
       "Jordan Battle",
       "Jonas Sanker",
@@ -42,7 +45,7 @@
       "Micah Parsons"
     ]
   },
-  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM).",
-  "source": "Fantrax scrape Sep 22 2026 ~6:35 AM PT",
+  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM). | Sep 23 clear: +Denzel Boston (WR); +Oronde Gadsden (TE); -Mike Gesicki (TE); +Mason Graham (DL)",
+  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
   "fantraxTeamId": "xdx6ngm2msb3ulv5"
 }

@@ -2,12 +2,13 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-09-20",
-  "faabLeft": 111,
+  "asOf": "2026-09-23",
+  "faabLeft": 2,
   "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
-      "Caleb Williams"
+      "Caleb Williams",
+      "Bryce Young"
     ],
     "RB": [
       "James Cook",
@@ -25,13 +26,15 @@
       "Darnell Mooney"
     ],
     "TE": [
-      "Colston Loveland"
+      "Colston Loveland",
+      "Terrance Ferguson"
     ],
     "LB": [
       "Robert Spillane",
       "Alex Anzalone",
       "Frankie Luvu",
-      "Patrick Queen"
+      "Patrick Queen",
+      "Dallas Turner"
     ],
     "DL": [
       "Myles Garrett",
@@ -48,11 +51,11 @@
       "A.J. Haulcy"
     ]
   },
-  "notes": "Sep 20 AM: Sat Sep 19 drop Jonah Coleman then +Coleman/−Leo Chenal (null). Cleared stale Teddye Buchanan (now on Pocket). FAAB $111.",
+  "notes": "Sep 20 AM: Sat Sep 19 drop Jonah Coleman then +Coleman/\u2212Leo Chenal (null). Cleared stale Teddye Buchanan (now on Pocket). FAAB $111. | Sep 23 clear: +Terrance Ferguson (TE); +Dallas Turner (LB); +Bryce Young (QB)",
   "injuryFlags": [
     "Kyle Monangai",
     "A.J. Haulcy"
   ],
-  "source": "Fantrax scrape Sep 20 2026 ~6:27 AM PT",
+  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5"
 }

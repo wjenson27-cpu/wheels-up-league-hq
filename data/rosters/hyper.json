@@ -2,13 +2,13 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-09-19",
-  "faabLeft": 92,
+  "asOf": "2026-09-23",
+  "faabLeft": 83,
   "startingQB": "Justin Herbert",
   "roster": {
     "QB": [
       "Justin Herbert",
-      "Jaxson Dart"
+      "Sam Darnold"
     ],
     "RB": [
       "Kenneth Walker III",
@@ -39,15 +39,16 @@
     "DB": [
       "Travis Hunter",
       "Tykee Smith",
-      "Grant Delpit"
+      "Grant Delpit",
+      "Michael Taaffe"
     ],
     "IR": [
       "Jaylin Noel",
       "Nick Bosa"
     ]
   },
-  "notes": "Sep 19 AM: −Dallas Turner. Sep 17: +Grant Delpit (−Brandon Jones). Sep 16: +Jaxson Dart $16 (−Keaton Mitchell). FAAB $92.",
+  "notes": "Sep 19 AM: \u2212Dallas Turner. Sep 17: +Grant Delpit (\u2212Brandon Jones). Sep 16: +Jaxson Dart $16 (\u2212Keaton Mitchell). FAAB $92. | Sep 23 clear: +Sam Darnold (QB); +Michael Taaffe (DB); -Jaxson Dart (QB)",
   "injuryFlags": [],
-  "source": "Fantrax scrape Sep 19 2026 ~6:18 AM PT",
+  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
   "fantraxTeamId": "xz2uv87rmsb3ulv4"
 }

@@ -2,8 +2,8 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-09-21",
-  "faabLeft": 98,
+  "asOf": "2026-09-23",
+  "faabLeft": 72,
   "startingQB": "Drake Maye",
   "roster": {
     "QB": [
@@ -20,7 +20,8 @@
       "Keenan Allen",
       "Michael Pittman",
       "Kalif Raymond",
-      "Romeo Doubs"
+      "Chris Moore",
+      "Isaiah Williams"
     ],
     "TE": [
       "Harold Fannin",
@@ -34,21 +35,20 @@
     ],
     "DL": [
       "Maxx Crosby",
-      "Jeffery Simmons"
+      "Jeffery Simmons",
+      "Lukas Van Ness"
     ],
     "DB": [
       "Budda Baker",
       "Devon Witherspoon",
-      "Jeremy Chinn",
       "Talanoa Hufanga"
     ],
     "IR": [
       "Isiah Pacheco",
-      "Jakobi Meyers",
       "Chamarri Conner"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98. | Sep 20: +Romeo Doubs \u2212Denzel Boston (Boston was already absent from HQ roster).",
-  "source": "Fantrax scrape Sep 16 post-waiver (after 9:00 AM PT)",
+  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98. | Sep 20: +Romeo Doubs \u2212Denzel Boston (Boston was already absent from HQ roster). | Sep 23 clear: +Chris Moore (WR); +Isaiah Williams (WR); +Lukas Van Ness (DL); -Jeremy Chinn (DB); -Romeo Doubs (WR); -Jakobi Meyers (IR)",
+  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
   "fantraxTeamId": "59frnthimsb3ulv4"
 }

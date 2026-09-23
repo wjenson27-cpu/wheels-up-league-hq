@@ -1,8 +1,8 @@
 {
   "updated": "2026-09-23",
-  "source": "Fantrax Sep 23 2026 ~6:38\u20136:45 AM PT roster sync \u2014 Ultron \u2212$35 FAAB in two trades ($20\u2192Substation, $15\u2192Slumlords); no new >$0 executed claims; Eddies $91.",
+  "source": "Fantrax Sep 23 2026 ~9:09 AM PT post-waiver clear \u2014 18 paid claims; Ultron \u2212$74 (Young/Turner/Ferguson\u2192$2); Saltese \u2212$57 (Boston/Gadsden\u2192$26); Dongers \u2212$45\u2192$48; Slumlords \u2212$41\u2192$72. Eddies lost Boston $11; still $91. No pending claims.",
   "startingBudget": 115,
-  "note": "All 14 remainings from Fantrax standings Sep 23 ~6:45 AM PT. Ultron 111\u219276 after paying $20 to Substation and $15 to Slumlords. Substation 77\u219297. Slumlords 98\u2192113. Eddies FAAB remaining $91.",
+  "note": "All 14 remainings from Fantrax Team Info Sep 23 ~9:09 AM PT after week-3 FAAB clear. Settled claims only (no pending). Eddies FAAB remaining $91.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -11,12 +11,12 @@
       "owner": "Ryan Towner",
       "abbrev": "ITS",
       "starting": 115,
-      "remaining": 113,
-      "spentClaims": 17,
+      "remaining": 72,
+      "spentClaims": 58,
       "tradeOut": 0,
       "tradeIn": 15,
-      "spentKnown": 17,
-      "remainingKnown": 113
+      "spentKnown": 58,
+      "remainingKnown": 72
     },
     {
       "id": "newman",
@@ -37,12 +37,12 @@
       "owner": "Luke Sahlberg",
       "abbrev": "SAL",
       "starting": 115,
-      "remaining": 83,
-      "spentClaims": 8,
+      "remaining": 26,
+      "spentClaims": 65,
       "tradeOut": 24,
       "tradeIn": 0,
-      "spentKnown": 32,
-      "remainingKnown": 83
+      "spentKnown": 89,
+      "remainingKnown": 26
     },
     {
       "id": "lab",
@@ -50,12 +50,12 @@
       "owner": "Jesse Nicholson",
       "abbrev": "LAB",
       "starting": 115,
-      "remaining": 104,
-      "spentClaims": 11,
+      "remaining": 93,
+      "spentClaims": 22,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 11,
-      "remainingKnown": 104
+      "spentKnown": 22,
+      "remainingKnown": 93
     },
     {
       "id": "doubtpfizer",
@@ -89,12 +89,12 @@
       "owner": "Gavin Heaton",
       "abbrev": "DDG",
       "starting": 115,
-      "remaining": 93,
-      "spentClaims": 22,
+      "remaining": 48,
+      "spentClaims": 67,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 22,
-      "remainingKnown": 93
+      "spentKnown": 67,
+      "remainingKnown": 48
     },
     {
       "id": "ttab",
@@ -102,12 +102,12 @@
       "owner": "Chase Anderson",
       "abbrev": "TTA",
       "starting": 115,
-      "remaining": 59,
-      "spentClaims": 54,
+      "remaining": 42,
+      "spentClaims": 71,
       "tradeOut": 10,
       "tradeIn": 8,
-      "spentKnown": 64,
-      "remainingKnown": 59
+      "spentKnown": 81,
+      "remainingKnown": 42
     },
     {
       "id": "hyper",
@@ -115,12 +115,12 @@
       "owner": "Jacob Crisp",
       "abbrev": "HYP",
       "starting": 115,
-      "remaining": 92,
-      "spentClaims": 33,
+      "remaining": 83,
+      "spentClaims": 42,
       "tradeOut": 0,
       "tradeIn": 10,
-      "spentKnown": 33,
-      "remainingKnown": 92
+      "spentKnown": 42,
+      "remainingKnown": 83
     },
     {
       "id": "morningside",
@@ -141,12 +141,12 @@
       "owner": "Brian Aga",
       "abbrev": "ULT",
       "starting": 115,
-      "remaining": 76,
-      "spentClaims": 19,
+      "remaining": 2,
+      "spentClaims": 93,
       "tradeOut": 50,
       "tradeIn": 30,
-      "spentKnown": 69,
-      "remainingKnown": 76
+      "spentKnown": 143,
+      "remainingKnown": 2
     },
     {
       "id": "goats",
@@ -159,7 +159,8 @@
       "tradeOut": 0,
       "tradeIn": 0,
       "spentKnown": 16,
-      "remainingKnown": 84
+      "remainingKnown": 84,
+      "note": " | Sep23 clear: scrape rem 84 vs formula 99"
     },
     {
       "id": "pocket",
@@ -180,15 +181,213 @@
       "owner": "Nathan Kelly",
       "abbrev": "SUB",
       "starting": 115,
-      "remaining": 97,
-      "spentClaims": 25,
+      "remaining": 79,
+      "spentClaims": 43,
       "tradeOut": 28,
       "tradeIn": 35,
-      "spentKnown": 53,
-      "remainingKnown": 97
+      "spentKnown": 71,
+      "remainingKnown": 79
     }
   ],
   "claims": [
+    {
+      "date": "2026-09-23",
+      "player": "Rashod Bateman",
+      "amount": 9,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "pos": "WR",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Chris Moore",
+      "amount": 10,
+      "team": "Indian Trail Slumlords",
+      "kind": "claim",
+      "teamId": "slumlords",
+      "pos": "WR",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Skyy Moore",
+      "amount": 9,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "pos": "WR",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Isaiah Williams",
+      "amount": 11,
+      "team": "Indian Trail Slumlords",
+      "kind": "claim",
+      "teamId": "slumlords",
+      "pos": "WR",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "David Bailey",
+      "amount": 5,
+      "team": "Drummond Dongers",
+      "kind": "claim",
+      "teamId": "dongers",
+      "pos": "RB",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Sam Darnold",
+      "amount": 7,
+      "team": "The Hypersecretors",
+      "kind": "claim",
+      "teamId": "hyper",
+      "pos": "QB",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Tre Tucker",
+      "amount": 11,
+      "team": "Towner Top Aga Bottom",
+      "kind": "claim",
+      "teamId": "ttab",
+      "pos": "WR",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Terrance Ferguson",
+      "amount": 2,
+      "team": "Ultron",
+      "kind": "claim",
+      "teamId": "ultron",
+      "pos": "TE",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Michael Taaffe",
+      "amount": 2,
+      "team": "The Hypersecretors",
+      "kind": "claim",
+      "teamId": "hyper",
+      "pos": "DB",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Lukas Van Ness",
+      "amount": 20,
+      "team": "Indian Trail Slumlords",
+      "kind": "claim",
+      "teamId": "slumlords",
+      "pos": "DL",
+      "note": "Week 3 FAAB clear 9:00 AM PT; dropped Jeremy Chinn",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Denzel Boston",
+      "amount": 31,
+      "team": "Saltese Slamm",
+      "kind": "claim",
+      "teamId": "saltese",
+      "pos": "WR",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Oronde Gadsden",
+      "amount": 26,
+      "team": "Saltese Slamm",
+      "kind": "claim",
+      "teamId": "saltese",
+      "pos": "TE",
+      "note": "Week 3 FAAB clear 9:00 AM PT; dropped Mike Gesicki",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "C.J. Stroud",
+      "amount": 11,
+      "team": "Little Ass Boys",
+      "kind": "claim",
+      "teamId": "lab",
+      "pos": "QB",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Daxton Hill",
+      "amount": 13,
+      "team": "Drummond Dongers",
+      "kind": "claim",
+      "teamId": "dongers",
+      "pos": "DB",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Keon Coleman",
+      "amount": 6,
+      "team": "Towner Top Aga Bottom",
+      "kind": "claim",
+      "teamId": "ttab",
+      "pos": "WR",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Dallas Turner",
+      "amount": 31,
+      "team": "Ultron",
+      "kind": "claim",
+      "teamId": "ultron",
+      "pos": "LB",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Bryce Young",
+      "amount": 41,
+      "team": "Ultron",
+      "kind": "claim",
+      "teamId": "ultron",
+      "pos": "QB",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
+    {
+      "date": "2026-09-23",
+      "player": "Christian Elliss",
+      "amount": 27,
+      "team": "Drummond Dongers",
+      "kind": "claim",
+      "teamId": "dongers",
+      "pos": "LB",
+      "note": "Week 3 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-clear-2026-09-23"
+    },
     {
       "date": "2026-09-16",
       "player": "Amani Hooker",

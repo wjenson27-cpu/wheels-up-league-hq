@@ -1,7 +1,289 @@
 {
   "updated": "2026-09-23",
-  "source": "Fantrax Sep 23 2026 ~6:38\u20136:45 AM PT roster sync",
+  "source": "Fantrax Sep 23 2026 ~9:09 AM PT post-waiver FAAB clear (18 paid + free moves)",
   "items": [
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Substation",
+      "summary": "Won Rashod Bateman (WR) $9 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Rashod Bateman",
+      "playerMeta": "WR-BAL",
+      "bid": 9
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Indian Trail Slumlords",
+      "summary": "Won Chris Moore (WR) $10 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Chris Moore",
+      "playerMeta": "WR-WAS",
+      "bid": 10
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Substation",
+      "summary": "Won Skyy Moore (WR) $9 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Skyy Moore",
+      "playerMeta": "WR-KC",
+      "bid": 9
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Indian Trail Slumlords",
+      "summary": "Won Isaiah Williams (WR) $11 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Isaiah Williams",
+      "playerMeta": "WR",
+      "bid": 11
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Drummond Dongers",
+      "summary": "Won David Bailey (RB) $5 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "David Bailey",
+      "playerMeta": "RB",
+      "bid": 5
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "The Hypersecretors",
+      "summary": "Won Sam Darnold (QB) $7 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Sam Darnold",
+      "playerMeta": "QB-SEA",
+      "bid": 7
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Won Tre Tucker (WR) $11 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Tre Tucker",
+      "playerMeta": "WR-LV",
+      "bid": 11
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Ultron",
+      "summary": "Won Terrance Ferguson (TE) $2 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Terrance Ferguson",
+      "playerMeta": "TE-LAR",
+      "bid": 2
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "The Hypersecretors",
+      "summary": "Won Michael Taaffe (DB) $2 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Michael Taaffe",
+      "playerMeta": "DB",
+      "bid": 2
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Indian Trail Slumlords",
+      "summary": "Won Lukas Van Ness (DL) $20 FAAB; dropped Jeremy Chinn (DB)",
+      "time": "9:00 AM PDT",
+      "player": "Lukas Van Ness",
+      "playerMeta": "DL-GB",
+      "dropped": "Jeremy Chinn",
+      "droppedMeta": "DB",
+      "bid": 20
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Saltese Slamm",
+      "summary": "Won Denzel Boston (WR) $31 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Denzel Boston",
+      "playerMeta": "WR (R)-SEA",
+      "bid": 31
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Saltese Slamm",
+      "summary": "Won Oronde Gadsden (TE) $26 FAAB; dropped Mike Gesicki (TE)",
+      "time": "9:00 AM PDT",
+      "player": "Oronde Gadsden",
+      "playerMeta": "TE (R)-LAC",
+      "dropped": "Mike Gesicki",
+      "droppedMeta": "TE",
+      "bid": 26
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Little Ass Boys",
+      "summary": "Won C.J. Stroud (QB) $11 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "C.J. Stroud",
+      "playerMeta": "QB-HOU",
+      "bid": 11
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Drummond Dongers",
+      "summary": "Won Daxton Hill (DB) $13 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Daxton Hill",
+      "playerMeta": "DB-CIN",
+      "bid": 13
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Won Keon Coleman (WR) $6 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Keon Coleman",
+      "playerMeta": "WR-BUF",
+      "bid": 6
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Ultron",
+      "summary": "Won Dallas Turner (LB) $31 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Dallas Turner",
+      "playerMeta": "LB-MIN",
+      "bid": 31
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Ultron",
+      "summary": "Won Bryce Young (QB) $41 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Bryce Young",
+      "playerMeta": "QB-CAR",
+      "bid": 41
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Drummond Dongers",
+      "summary": "Won Christian Elliss (LB) $27 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Christian Elliss",
+      "playerMeta": "LB-NE",
+      "bid": 27
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Added Leo Chenal (LB), dropped Chris Bell (WR) ($0/null bid)",
+      "time": "9:03 AM PDT",
+      "player": "Leo Chenal",
+      "playerMeta": "LB",
+      "dropped": "Chris Bell",
+      "droppedMeta": "WR"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Keenan Allen (WR), dropped Trent McDuffie (DB) ($0/null bid)",
+      "time": "9:01 AM PDT",
+      "player": "Keenan Allen",
+      "playerMeta": "WR",
+      "dropped": "Trent McDuffie",
+      "droppedMeta": "DB"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Added Jonathan Allen (DL) ($0/null bid)",
+      "time": "9:00 AM PDT",
+      "player": "Jonathan Allen",
+      "playerMeta": "DL"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Pocket Agents",
+      "summary": "Added Mike Washington (WR), dropped Zachariah Branch (WR) ($0/null bid)",
+      "time": "9:00 AM PDT",
+      "player": "Mike Washington",
+      "playerMeta": "WR",
+      "dropped": "Zachariah Branch",
+      "droppedMeta": "WR"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD",
+      "team": "Saltese Slamm",
+      "summary": "Added Mason Graham (DL) ($0/null bid)",
+      "time": "9:00 AM PDT",
+      "player": "Mason Graham",
+      "playerMeta": "DL"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "DROP",
+      "team": "The Hypersecretors",
+      "summary": "Dropped Jaxson Dart (QB) ($0/null bid)",
+      "time": "8:52 AM PDT",
+      "player": "Jaxson Dart",
+      "playerMeta": "QB"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "DROP",
+      "team": "Substation",
+      "summary": "Dropped Alec Pierce (WR) ($0/null bid)",
+      "time": "8:52 AM PDT",
+      "player": "Alec Pierce",
+      "playerMeta": "WR"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "DROP",
+      "team": "Indian Trail Slumlords",
+      "summary": "Dropped Romeo Doubs (WR) ($0/null bid)",
+      "time": "7:08 AM PDT",
+      "player": "Romeo Doubs",
+      "playerMeta": "WR"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "DROP",
+      "team": "Indian Trail Slumlords",
+      "summary": "Dropped Jakobi Meyers (WR) ($0/null bid)",
+      "time": "7:08 AM PDT",
+      "player": "Jakobi Meyers",
+      "playerMeta": "WR"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Mrs. Doubtpfizer",
+      "summary": "Added Kaelon Black (RB), dropped Pat Freiermuth (TE) ($0/null bid)",
+      "time": "6:47 AM PDT",
+      "player": "Kaelon Black",
+      "playerMeta": "RB (R)",
+      "dropped": "Pat Freiermuth",
+      "droppedMeta": "TE"
+    },
     {
       "date": "2026-09-23",
       "type": "DROP",
@@ -1058,6 +1340,6 @@
       "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
     }
   ],
-  "note": "Sep 21 6:41 AM: eight Sun Sep 20 $0/null FA moves after Sep 19 10:28 PM Pocket +Teddye Buchanan \u2014 Dongers \u2212Aaron Donald then +/\u2212Michael Mayer churn; LAB +Tutu Atwell; Doubtpfizer +Pat Freiermuth/\u2212Emari Demercado; TTAB +/\u2212Christian Harris churn; Slumlords +Romeo Doubs/\u2212Denzel Boston. No >$0 claims. Pending 0. Trade block confirmed (Substation 22 still Sep 20 6:16 PM). All 14 FAAB unchanged (Eddies $91).",
+  "note": "Week-3 waiver clear included. Settled claims only \u2014 no pending-bid language.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

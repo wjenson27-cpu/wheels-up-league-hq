@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-09-20",
+  "asOf": "2026-09-23",
   "faabLeft": 111,
   "startingQB": "Jared Goff",
   "roster": {
@@ -22,7 +22,8 @@
       "Malik Washington",
       "Dontayvion Wicks",
       "Adonai Mitchell",
-      "Marvin Mims"
+      "Marvin Mims",
+      "Mike Washington"
     ],
     "TE": [
       "Trey McBride",
@@ -42,11 +43,9 @@
       "Cooper DeJean",
       "Jaquan Brisker"
     ],
-    "IR": [
-      "Zachariah Branch"
-    ]
+    "IR": []
   },
-  "notes": "Sep 20 AM: +Teddye Buchanan (−Jake Hansen, null bid, Sat Sep 19 ~10:25–10:28 PM). Prior: +Marvin Mims $0 (−Kyler Gordon). FAAB $111.",
-  "source": "Fantrax scrape Sep 20 2026 ~6:27 AM PT",
+  "notes": "Sep 20 AM: +Teddye Buchanan (\u2212Jake Hansen, null bid, Sat Sep 19 ~10:25\u201310:28 PM). Prior: +Marvin Mims $0 (\u2212Kyler Gordon). FAAB $111. | Sep 23 clear: +Mike Washington (WR); -Zachariah Branch (IR)",
+  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
   "fantraxTeamId": "20zozmjgmsb3ulv4"
 }
