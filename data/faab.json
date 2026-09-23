@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-22",
-  "source": "Fantrax Sep 22 2026 ~6:45 AM PT roster sync \u2014 no new >$0 claims; team remainings carried from Sep 21 board (Eddies $91). League-wide FAAB column not exposed on standings this pass.",
+  "updated": "2026-09-23",
+  "source": "Fantrax Sep 23 2026 ~6:38\u20136:45 AM PT roster sync \u2014 Ultron \u2212$35 FAAB in two trades ($20\u2192Substation, $15\u2192Slumlords); no new >$0 executed claims; Eddies $91 (pending $11 Boston claim not yet charged).",
   "startingBudget": 115,
-  "note": "Eddies Claim Budget Remaining reconfirmed $91 on roster page Sep 21 ~6:46 AM PT. Sunday Sep 20 FA moves were $0/null dash bids \u2014 no FAAB spend. Other team remainings not re-scraped this pass; left as Sep 20 board.",
+  "note": "All 14 remainings from Fantrax standings Sep 23 ~6:45 AM PT. Ultron 111\u219276 after paying $20 to Substation and $15 to Slumlords. Substation 77\u219297. Slumlords 98\u2192113. Eddies Claim Budget Remaining $91 on roster; pending CLAIM Denzel Boston $11 \u2212Chimere Dike (not in claims[] until executed).",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -11,12 +11,12 @@
       "owner": "Ryan Towner",
       "abbrev": "ITS",
       "starting": 115,
-      "remaining": 98,
+      "remaining": 113,
       "spentClaims": 17,
       "tradeOut": 0,
-      "tradeIn": 0,
+      "tradeIn": 15,
       "spentKnown": 17,
-      "remainingKnown": 98
+      "remainingKnown": 113
     },
     {
       "id": "newman",
@@ -141,12 +141,12 @@
       "owner": "Brian Aga",
       "abbrev": "ULT",
       "starting": 115,
-      "remaining": 111,
+      "remaining": 76,
       "spentClaims": 19,
-      "tradeOut": 15,
+      "tradeOut": 50,
       "tradeIn": 30,
-      "spentKnown": 34,
-      "remainingKnown": 111
+      "spentKnown": 69,
+      "remainingKnown": 76
     },
     {
       "id": "goats",
@@ -180,12 +180,12 @@
       "owner": "Nathan Kelly",
       "abbrev": "SUB",
       "starting": 115,
-      "remaining": 77,
+      "remaining": 97,
       "spentClaims": 25,
       "tradeOut": 28,
-      "tradeIn": 15,
+      "tradeIn": 35,
       "spentKnown": 53,
-      "remainingKnown": 77
+      "remainingKnown": 97
     }
   ],
   "claims": [
@@ -593,6 +593,37 @@
     }
   ],
   "trades": [
+    {
+      "date": "2026-09-22",
+      "amount": 20,
+      "fromTeam": "Ultron",
+      "fromTeamId": "ultron",
+      "toTeam": "Substation",
+      "toTeamId": "substation",
+      "for": [
+        "Drake London (WR)",
+        "Kevin Winston (DB)"
+      ],
+      "summary": "Fantrax official \u2014 Ultron paid $20 FAAB to Substation with London+Winston for Barkley+Bigsby (Sep 22 8:46 PM PDT).",
+      "official": true,
+      "kind": "trade"
+    },
+    {
+      "date": "2026-09-22",
+      "amount": 15,
+      "fromTeam": "Ultron",
+      "fromTeamId": "ultron",
+      "toTeam": "Indian Trail Slumlords",
+      "toTeamId": "slumlords",
+      "for": [
+        "Alex Anzalone (LB)",
+        "Chris Godwin (WR)",
+        "James Cook (RB)"
+      ],
+      "summary": "Fantrax official \u2014 Ultron paid $15 FAAB to Slumlords with Anzalone+Godwin+Cook for London+Campbell+Pickens (Sep 22 10:20 AM PDT).",
+      "official": true,
+      "kind": "trade"
+    },
     {
       "date": "2026-09-16",
       "amount": 15,
