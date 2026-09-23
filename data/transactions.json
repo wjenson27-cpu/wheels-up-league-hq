@@ -1,7 +1,33 @@
 {
   "updated": "2026-09-23",
-  "source": "Fantrax Sep 23 2026 ~9:09 AM PT post-waiver FAAB clear (18 paid + free moves)",
+  "source": "Fantrax Sep 23 2026 ~9:09 AM PT post-waiver FAAB clear (18 paid + free moves) | Brooks\u2194Sherwood trade Sep 23",
   "items": [
+    {
+      "date": "2026-09-23",
+      "type": "TRADE",
+      "team": "Saltese Slamm",
+      "summary": "Traded Jordyn Brooks (LB) to Eagle Ridge Eddies for Jamien Sherwood (LB)",
+      "time": "9:52 AM PDT",
+      "player": "Jordyn Brooks",
+      "playerMeta": "LB-MIA",
+      "counterparty": "Eagle Ridge Eddies",
+      "received": [
+        "Jamien Sherwood"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "type": "TRADE",
+      "team": "Eagle Ridge Eddies",
+      "summary": "Traded Jamien Sherwood (LB) to Saltese Slamm for Jordyn Brooks (LB)",
+      "time": "9:52 AM PDT",
+      "player": "Jamien Sherwood",
+      "playerMeta": "LB-NYJ",
+      "counterparty": "Saltese Slamm",
+      "received": [
+        "Jordyn Brooks"
+      ]
+    },
     {
       "date": "2026-09-23",
       "type": "ADD",
