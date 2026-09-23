@@ -1,8 +1,8 @@
 {
   "updated": "2026-09-23",
-  "source": "Fantrax Sep 23 2026 ~9:09 AM PT post-waiver clear \u2014 18 paid claims; Ultron \u2212$74 (Young/Turner/Ferguson\u2192$2); Saltese \u2212$57 (Boston/Gadsden\u2192$26); Dongers \u2212$45\u2192$48; Slumlords \u2212$41\u2192$72. Eddies lost Boston $11; still $91. No pending claims.",
+  "source": "Fantrax Sep 23 2026 ~9:09 AM PT post-waiver clear — 18 paid claims; Ultron −$74 (Young/Turner/Ferguson→$2); Saltese −$57 (Boston/Gadsden→$26); Dongers −$45→$48; Slumlords −$41→$72.",
   "startingBudget": 115,
-  "note": "All 14 remainings from Fantrax Team Info Sep 23 ~9:09 AM PT after week-3 FAAB clear. Settled claims only (no pending). Eddies FAAB remaining $91.",
+  "note": "All 14 remainings from Fantrax Team Info Sep 23 ~9:09 AM PT after week-3 FAAB clear. Settled claims only.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -803,7 +803,7 @@
         "Drake London (WR)",
         "Kevin Winston (DB)"
       ],
-      "summary": "Fantrax official \u2014 Ultron paid $20 FAAB to Substation with London+Winston for Barkley+Bigsby (Sep 22 8:46 PM PDT).",
+      "summary": "Fantrax official — Ultron paid $20 FAAB to Substation with London+Winston for Barkley+Bigsby (Sep 22 8:46 PM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -819,7 +819,7 @@
         "Chris Godwin (WR)",
         "James Cook (RB)"
       ],
-      "summary": "Fantrax official \u2014 Ultron paid $15 FAAB to Slumlords with Anzalone+Godwin+Cook for London+Campbell+Pickens (Sep 22 10:20 AM PDT).",
+      "summary": "Fantrax official — Ultron paid $15 FAAB to Slumlords with Anzalone+Godwin+Cook for London+Campbell+Pickens (Sep 22 10:20 AM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -833,7 +833,7 @@
       "for": [
         "Terry McLaurin (WR)"
       ],
-      "summary": "Fantrax official \u2014 Ultron paid $15 FAAB to Substation with Emmett Johnson for Terry McLaurin (Sep 16).",
+      "summary": "Fantrax official — Ultron paid $15 FAAB to Substation with Emmett Johnson for Terry McLaurin (Sep 16).",
       "official": true,
       "kind": "trade"
     },
@@ -848,7 +848,7 @@
         "Dallas Goedert (TE)",
         "Antoine Winfield (DB)"
       ],
-      "summary": "Fantrax official \u2014 Substation paid $8 FAAB to TTAB with Goedert+Winfield for Pollard+Edmunds (Sep 16).",
+      "summary": "Fantrax official — Substation paid $8 FAAB to TTAB with Goedert+Winfield for Pollard+Edmunds (Sep 16).",
       "official": true,
       "kind": "trade"
     },
@@ -862,7 +862,7 @@
       "for": [
         "Bo Nix (QB)"
       ],
-      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
+      "summary": "Fantrax official — Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
       "official": true,
       "kind": "trade"
     },
@@ -876,7 +876,7 @@
       "for": [
         "Kaleb Elarms-Orr (LB)"
       ],
-      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "summary": "Fantrax official #2 — Larry buys Elarms-Orr from Aga for $20 FAAB.",
       "official": true,
       "kind": "trade"
     },
@@ -891,7 +891,7 @@
         "Cameron Skattebo (RB)",
         "Caleb Downs (DB)"
       ],
-      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
+      "summary": "Fantrax official #3 — live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas −Evan Williams; Aga +Bryce Boettcher −Najee.",
       "official": true,
       "kind": "trade"
     },
@@ -905,7 +905,7 @@
       "for": [
         "R20 chair (Sadiq stays Jacob)"
       ],
-      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "summary": "Handshake — Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
       "official": false,
       "kind": "trade"
     },
