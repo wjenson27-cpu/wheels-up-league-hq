@@ -4,12 +4,12 @@
   "schemaVersion": 2,
   "schema": {
     "weeklyKitty": "Array of weekly high-score (kitty) winners. One entry per completed week.",
-    "survivor": "Lowest scoring team still alive that week is eliminated (off the bus). Last Ride (Weeks 3–10): eliminated teams battle head-to-head weekly; winner stays alive for a Week 11 re-entry shot.",
+    "survivor": "Lowest scoring team still alive that week is eliminated (off the bus). Last Ride (Weeks 3\u201310): eliminated teams battle head-to-head weekly; one loss on Last Ride and you're out for good. Winner stays alive for a Week 11 re-entry shot.",
     "yearly": "Season-long awards. Each category tracks live top 3 (leaders[]); status live until season end, then final."
   },
   "rules": {
     "kitty": "Each week, the highest final team score wins the kitty.",
-    "survivor": "Each week, the lowest final score among teams still alive is eliminated (off the bus). Everyone starts alive in Week 1. Last Ride (starts Week 3): teams already off the bus battle head-to-head each week through Week 10; the Last Ride winner gets a chance to re-enter the bus in Week 11.",
+    "survivor": "Each week, the lowest final score among teams still alive is eliminated (off the bus). Everyone starts alive in Week 1. Last Ride (starts Week 3): teams already off the bus battle head-to-head each week through Week 10 \u2014 lose once and you're out of Last Ride for good. Only the Last Ride winner gets a chance to re-enter the bus in Week 11.",
     "yearly": {
       "topRecord": "Best win-loss record at season end.",
       "topPoints": "Most fantasy points scored (PF) for the season.",
@@ -63,7 +63,7 @@
         "score": 176.5,
         "aliveBefore": 14,
         "aliveAfter": 13,
-        "note": "Lowest Week 1 final score (post-MNF 176.5) — off the bus"
+        "note": "Lowest Week 1 final score (post-MNF 176.5) \u2014 off the bus"
       },
       {
         "week": 2,
@@ -73,7 +73,7 @@
         "score": 158.5,
         "aliveBefore": 13,
         "aliveAfter": 12,
-        "note": "Lowest Week 2 final score among teams still alive — off the bus"
+        "note": "Lowest Week 2 final score among teams still alive \u2014 off the bus"
       }
     ],
     "lastRide": {
@@ -82,7 +82,7 @@
       "startsWeek": 3,
       "endsWeek": 10,
       "reentryWeek": 11,
-      "rules": "Teams off the bus battle each week to stay alive on Last Ride. Week 3: the two eliminated teams face off. Winner battles next week's lowest score through Week 10. Last Ride winner gets a chance to re-enter the bus in Week 11.",
+      "rules": "Teams off the bus battle head-to-head on Last Ride. Week 3: the two eliminated teams face off. Higher week score stays alive; loser is out of Last Ride for good. Winner then battles each week's lowest score through Week 10 (same rule: lose once, you're done). Only the Last Ride winner gets a Week 11 shot back on the bus.",
       "currentMatchup": {
         "week": 3,
         "status": "upcoming",
@@ -90,7 +90,7 @@
         "teamA": "Indian Trail Slumlords",
         "teamBId": "dongers",
         "teamB": "Drummond Dongers",
-        "note": "Week 3 Last Ride opener — higher week score stays alive"
+        "note": "Week 3 Last Ride opener \u2014 higher week score stays alive; loser is out for good"
       },
       "aliveTeamIds": [
         "slumlords",
@@ -115,7 +115,7 @@
           "team": "Saltese Slamm",
           "teamShort": "Saltese",
           "value": "2-0",
-          "valueLabel": "2-0 · 534 PF"
+          "valueLabel": "2-0 \u00b7 534 PF"
         },
         {
           "rank": 2,
@@ -123,7 +123,7 @@
           "team": "Valley Old Goats",
           "teamShort": "Goats",
           "value": "2-0",
-          "valueLabel": "2-0 · 528.5 PF"
+          "valueLabel": "2-0 \u00b7 528.5 PF"
         },
         {
           "rank": 3,
@@ -131,10 +131,10 @@
           "team": "Towner Top Aga Bottom",
           "teamShort": "TTAB",
           "value": "2-0",
-          "valueLabel": "2-0 · 503.5 PF"
+          "valueLabel": "2-0 \u00b7 503.5 PF"
         }
       ],
-      "note": "Live after Week 2 · locks at season end"
+      "note": "Live after Week 2 \u00b7 locks at season end"
     },
     "topPoints": {
       "key": "topPoints",
@@ -170,7 +170,7 @@
           "valueLabel": "531.5"
         }
       ],
-      "note": "Live season PF · locks at season end"
+      "note": "Live season PF \u00b7 locks at season end"
     },
     "topOffensivePlayer": {
       "key": "topOffensivePlayer",
@@ -214,7 +214,7 @@
           "valueLabel": "80"
         }
       ],
-      "note": "Live after Week 2 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end"
+      "note": "Live after Week 2 \u00b7 Fantrax YTD All Taken Players (excl. free agents) \u00b7 locks at season end"
     },
     "topDefensivePlayer": {
       "key": "topDefensivePlayer",
@@ -258,7 +258,7 @@
           "valueLabel": "74"
         }
       ],
-      "note": "Live after Week 2 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end"
+      "note": "Live after Week 2 \u00b7 Fantrax YTD All Taken Players (excl. free agents) \u00b7 locks at season end"
     }
   },
   "weekScores": {
