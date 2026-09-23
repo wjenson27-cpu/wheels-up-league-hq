@@ -15,7 +15,7 @@
     <header class="page-hero">
       <span class="eyebrow" id="awardsEyebrow">Season 2026</span>
       <h1>Awards &amp; Survivor</h1>
-      <p class="lede">Weekly kitty, League Survivor (off the bus), and season award trackers.</p>
+      <p class="lede">Weekly kitty, League Survivor (off the bus), Last Ride, and season award trackers.</p>
     </header>
 
     <section class="card awards-rules" style="margin-bottom:1.25rem">
@@ -23,6 +23,7 @@
       <ul class="awards-rules-list" id="rulesList">
         <li><strong>Weekly kitty</strong> — highest final score that week takes the pot.</li>
         <li><strong>League Survivor</strong> — lowest score among teams still alive is kicked off the bus.</li>
+        <li><strong>Last Ride</strong> — Weeks 3–10, teams already off the bus battle head-to-head each week; winner stays alive for a Week 11 re-entry shot.</li>
         <li><strong>Yearly awards</strong> — top record, top points, top offensive &amp; defensive players lock at season end.</li>
       </ul>
     </section>
@@ -49,6 +50,16 @@
       <p class="muted" style="margin:0 0 0.75rem" id="survivorLede">Lowest scoring team still alive — off the bus.</p>
       <div class="survivor-alive" id="survivorAlive"></div>
       <div class="trade-board" id="survivorBoard" style="margin-top:1rem"><p class="muted">Loading…</p></div>
+
+      <div id="lastRideBlock" style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.08)">
+        <h3 style="font-size:1rem;margin:0 0 0.5rem">Last Ride</h3>
+        <p class="muted" style="margin:0 0 0.75rem" id="lastRideRules">Teams off the bus battle each week to stay alive.</p>
+        <article class="card award-spotlight bus-spot" id="lastRideMatchup" style="margin-bottom:0.75rem">
+          <span class="eyebrow">Current matchup</span>
+          <p class="muted mb-0">Loading…</p>
+        </article>
+        <div class="trade-board" id="lastRideBoard"><p class="muted">No Last Ride results yet.</p></div>
+      </div>
     </section>
 
     <section class="card">
@@ -152,6 +163,55 @@
                 </tr>`).join("")}
             </tbody>
           </table>` : `<p class="muted">No eliminations yet — all 14 start alive.</p>`;
+
+        const lastRide = (data.survivor && data.survivor.lastRide) || null;
+        const lastRideBlock = document.getElementById("lastRideBlock");
+        if (lastRide && lastRide.enabled) {
+          document.getElementById("lastRideRules").textContent =
+            lastRide.rules || "Teams off the bus battle each week to stay alive on Last Ride.";
+          const m = lastRide.currentMatchup || null;
+          const matchEl = document.getElementById("lastRideMatchup");
+          if (m) {
+            const statusLabel = (m.status || "upcoming").replace(/_/g, " ");
+            matchEl.innerHTML = `
+              <span class="eyebrow">Week ${m.week} · Last Ride · ${WUC.escapeHtml(statusLabel)}</span>
+              <div class="award-hero" style="display:flex;flex-wrap:wrap;align-items:center;gap:0.75rem 1rem;margin-top:0.35rem">
+                <span class="team-inline">${WUC.teamMark(m.teamAId, { size: "lg" })}<span class="award-hero-name" style="font-size:1.05rem">${WUC.escapeHtml(m.teamA || "—")}</span></span>
+                <span class="muted" style="font-weight:700">vs</span>
+                <span class="team-inline">${WUC.teamMark(m.teamBId, { size: "lg" })}<span class="award-hero-name" style="font-size:1.05rem">${WUC.escapeHtml(m.teamB || "—")}</span></span>
+              </div>
+              ${m.note ? `<p class="muted mb-0" style="margin-top:0.65rem;font-size:0.85rem">${WUC.escapeHtml(m.note)}</p>` : ""}
+              ${(lastRide.aliveTeamIds && lastRide.aliveTeamIds.length) ? `<div class="survivor-chips" style="margin-top:0.75rem">${lastRide.aliveTeamIds.map((id) => {
+                const t = WUC.getTeam(id) || {};
+                return `<span class="survivor-chip team-inline" title="${WUC.escapeHtml(t.name || id)}">${WUC.teamMark(id, { size: "sm" })}<span>${WUC.escapeHtml(t.abbrev || id)}</span></span>`;
+              }).join("")}</div>` : ""}`;
+          } else {
+            matchEl.innerHTML = `<span class="eyebrow">Current matchup</span><p class="muted mb-0">No matchup set.</p>`;
+          }
+          const results = Array.isArray(lastRide.results) ? lastRide.results : [];
+          document.getElementById("lastRideBoard").innerHTML = results.length ? `
+            <table class="trade-table" aria-label="Last Ride results">
+              <thead>
+                <tr>
+                  <th class="col-rank">Week</th>
+                  <th class="col-team">Winner</th>
+                  <th class="col-trades">Score</th>
+                  <th class="col-owner">Loser</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${results.map((r) => `
+                  <tr>
+                    <td class="col-rank">${r.week}</td>
+                    <td class="col-team"><span class="team-inline">${WUC.teamMark(r.winnerTeamId, { size: "sm" })}<span>${WUC.escapeHtml(r.winner || "—")}</span></span></td>
+                    <td class="col-trades">${r.winnerScore != null ? Number(r.winnerScore).toLocaleString(undefined, { maximumFractionDigits: 1 }) : "—"}</td>
+                    <td class="col-owner"><span class="team-inline">${WUC.teamMark(r.loserTeamId, { size: "sm" })}<span>${WUC.escapeHtml(r.loser || "—")}</span></span></td>
+                  </tr>`).join("")}
+              </tbody>
+            </table>` : `<p class="muted mb-0">No Last Ride results yet — Week ${lastRide.startsWeek || 3} opener upcoming.</p>`;
+        } else if (lastRideBlock) {
+          lastRideBlock.hidden = true;
+        }
 
         const yearly = data.yearly || {};
         const order = ["topRecord", "topPoints", "topOffensivePlayer", "topDefensivePlayer"];
