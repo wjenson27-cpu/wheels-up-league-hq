@@ -10,7 +10,6 @@
       "Josh Allen"
     ],
     "RB": [
-      "Travis Etienne",
       "Ashton Jeanty",
       "Cameron Skattebo",
       "Javonte Williams",
@@ -28,6 +27,7 @@
       "Jake Ferguson"
     ],
     "LB": [
+      "Dorian Williams",
       "Divine Deablo",
       "Zack Baun",
       "Tremaine Edmunds",
@@ -38,6 +38,7 @@
       "Kwity Paye"
     ],
     "DB": [
+      "Andrew Wingard",
       "Cole Bishop",
       "Caleb Downs",
       "Jalen Thompson",
@@ -45,7 +46,7 @@
     ],
     "IR": []
   },
-  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (\u2212Nailor); +Kwity Paye $16 (\u2212Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/\u2212Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR)",
-  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
+  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (\u2212Nailor); +Kwity Paye $16 (\u2212Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/\u2212Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR) | Sep 23 trade: \u2212Etienne \u2212Winfield +Dorian +Wingard (from Eddies)",
+  "source": "Fantrax completed trade Sep 23 2026 \u2014 Eddies\u2194TTAB Etienne/Winfield",
   "fantraxTeamId": "4grk2ph6msb3ulv4"
 }

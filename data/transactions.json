@@ -1,7 +1,35 @@
 {
   "updated": "2026-09-23",
-  "source": "Fantrax Sep 23 2026 ~9:09 AM PT post-waiver FAAB clear (18 paid + free moves) | Brooks\u2194Sherwood trade Sep 23",
+  "source": "Fantrax Sep 23 2026 ~9:09 AM PT post-waiver FAAB clear (18 paid + free moves) | Brooks\u2194Sherwood trade Sep 23 | Eddies\u2194TTAB Etienne/Winfield Sep 23",
   "items": [
+    {
+      "date": "2026-09-23",
+      "type": "TRADE",
+      "team": "Eagle Ridge Eddies",
+      "summary": "Traded Dorian Williams (LB), Andrew Wingard (DB) to TTAB for Travis Etienne (RB), Antoine Winfield (DB)",
+      "time": "11:27 AM PDT",
+      "player": "Dorian Williams",
+      "playerMeta": "LB-BUF",
+      "counterparty": "Towner Top Aga Bottom",
+      "received": [
+        "Travis Etienne",
+        "Antoine Winfield"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "type": "TRADE",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Traded Travis Etienne (RB), Antoine Winfield (DB) to Eagle Ridge Eddies for Dorian Williams (LB), Andrew Wingard (DB)",
+      "time": "11:27 AM PDT",
+      "player": "Travis Etienne",
+      "playerMeta": "RB-NO",
+      "counterparty": "Eagle Ridge Eddies",
+      "received": [
+        "Dorian Williams",
+        "Andrew Wingard"
+      ]
+    },
     {
       "date": "2026-09-23",
       "type": "TRADE",

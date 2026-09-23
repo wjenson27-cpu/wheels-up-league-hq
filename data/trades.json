@@ -1,8 +1,25 @@
 {
-  "updated": "2026-09-23T09:52:00-07:00",
-  "source": "Fantrax Sep 23 2026 9:52 AM PDT \u2014 Eddies\u2194Saltese Brooks/Sherwood completed; pending 0.",
+  "updated": "2026-09-23T11:27:00-07:00",
+  "source": "Fantrax Sep 23 2026 11:27 AM PDT \u2014 Eddies\u2194TTAB Etienne/Winfield completed; pending 0.",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-09-23",
+      "time": "11:27 AM PDT",
+      "status": "completed",
+      "official": true,
+      "teamA": "Towner Top Aga Bottom (Chase)",
+      "teamB": "Eagle Ridge Eddies (Bill)",
+      "givesA": [
+        "Travis Etienne (RB)",
+        "Antoine Winfield (DB)"
+      ],
+      "givesB": [
+        "Dorian Williams (LB)",
+        "Andrew Wingard (DB)"
+      ],
+      "summary": "Fantrax official \u2014 TTAB traded Travis Etienne and Antoine Winfield to Eagle Ridge Eddies for Dorian Williams and Andrew Wingard (Sep 23 11:27 AM PDT; accepted by Bill)."
+    },
     {
       "date": "2026-09-23",
       "time": "9:52 AM PDT",
@@ -293,7 +310,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "No pending trades involving Eagle Ridge after Brooks/Sherwood completed Sep 23.",
+  "pending_note": "TTAB offer cleared after Eddies accept Sep 23 ~11:29 AM PDT.",
   "fantrax_completed_view": "Newest official: Substation\u2194Ultron Barkley+Bigsby for London+Winston+$20 (Sep 22 8:46 PM); Slumlords\u2194Ultron London+Campbell+Pickens for Anzalone+Godwin+Cook+$15 (Sep 22 10:20 AM). Prior: McLaurin\u2194Emmett+$15 Sep 16; Goedert/Winfield+$8\u2194Pollard/Edmunds Sep 16; LaPorta\u2194Campbell/Harvey Sep 15; Sanker\u2194$4 Sep 14; Nix\u2194$10 Sep 8.",
   "hqComplete": true
 }

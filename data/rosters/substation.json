@@ -38,7 +38,6 @@
     ],
     "DB": [
       "Antonio Johnson",
-      "Antoine Winfield",
       "Tyler Nubin",
       "Brian Branch",
       "DeShon Elliott",
@@ -50,7 +49,7 @@
       "Nick Emmanwori"
     ]
   },
-  "notes": "Sep 19 AM: +Trent McDuffie (\u2212Romeo Doubs); \u2212Avonte Maddox. Trade block: Tony Pollard, Bhayshul Tuten. FAAB $70. | Sep 23 clear: +Rashod Bateman (WR); +Skyy Moore (WR); +Keenan Allen (WR); -Trent McDuffie (DB); -Alec Pierce (WR)",
+  "notes": "Sep 19 AM: +Trent McDuffie (\u2212Romeo Doubs); \u2212Avonte Maddox. Trade block: Tony Pollard, Bhayshul Tuten. FAAB $70. | Sep 23 clear: +Rashod Bateman (WR); +Skyy Moore (WR); +Keenan Allen (WR); -Trent McDuffie (DB); -Alec Pierce (WR) | Removed stale Antoine Winfield (on TTAB then traded to Eddies Sep 23).",
   "injuryFlags": [
     "Malik Nabers",
     "Brian Branch",
