@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-23",
-  "source": "Fantrax Sep 23 2026 ~6:38\u20136:45 AM PT roster sync \u2014 Ultron \u2212$35 FAAB in two trades ($20\u2192Substation, $15\u2192Slumlords); no new >$0 executed claims; Eddies $91 (pending $11 Boston claim not yet charged).",
+  "source": "Fantrax Sep 23 2026 ~6:38\u20136:45 AM PT roster sync \u2014 Ultron \u2212$35 FAAB in two trades ($20\u2192Substation, $15\u2192Slumlords); no new >$0 executed claims; Eddies $91.",
   "startingBudget": 115,
   "note": "All 14 remainings from Fantrax standings Sep 23 ~6:45 AM PT. Ultron 111\u219276 after paying $20 to Substation and $15 to Slumlords. Substation 77\u219297. Slumlords 98\u2192113. Eddies Claim Budget Remaining $91 on roster; pending CLAIM Denzel Boston $11 \u2212Chimere Dike (not in claims[] until executed).",
   "excludeZeroBids": true,
