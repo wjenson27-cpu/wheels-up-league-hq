@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-23",
+  "asOf": "2026-09-24",
   "faabLeft": 91,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -38,7 +38,7 @@
       "Leonard Williams"
     ],
     "DB": [
-      "Antoine Winfield",
+      "Marques Sigle",
       "Quentin Lake",
       "Evan Williams",
       "Julian Love"
@@ -49,12 +49,12 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "W1 FINAL L 241\u2013255 at Saltese. Week 2 at Valley Old Goats (proj 183.8\u2013188.4). FAAB $91. Won Andrew Wingard $6 (\u2212James Williams); won Dorian Williams $8 (\u2212Henry To'oTo'o). Lost Hooker $7 to Ultron $18; lost Dart $5 to Hyper $16. No pending claims. Chimere Dike still rostered. Bonitto still FA. Coker + Bowers injured flags. | Sep 23 trade: \u2212Jamien Sherwood +Jordyn Brooks (from Saltese) | Sep 23 trade: \u2212Dorian \u2212Wingard +Etienne +Winfield (from TTAB)",
+  "notes": "W1 FINAL L 241\u2013255 at Saltese. Week 2 at Valley Old Goats (proj 183.8\u2013188.4). FAAB $91. Won Andrew Wingard $6 (\u2212James Williams); won Dorian Williams $8 (\u2212Henry To'oTo'o). Lost Hooker $7 to Ultron $18; lost Dart $5 to Hyper $16. No pending claims. Chimere Dike still rostered. Bonitto still FA. Coker + Bowers injured flags. | Sep 23 trade: \u2212Jamien Sherwood +Jordyn Brooks (from Saltese) | Sep 23 trade: \u2212Dorian \u2212Wingard +Etienne +Winfield (from TTAB) | Sep 23 12:05 PM FA: +Marques Sigle (DB)/\u2212Antoine Winfield (hours after TTAB trade).",
   "injuryFlags": [
     "Jalen Coker injured (active slot)",
     "Brock Bowers OUT"
   ],
-  "source": "Fantrax completed trade Sep 23 2026 \u2014 Eddies\u2194TTAB Etienne/Winfield",
+  "source": "Fantrax Sep 24 2026 ~6:22 AM PT Fantasy check \u2014 Wed Sep 23 free-agent Claim/Drops (Saltese White/\u2212Sanders; Hyper +Nix; TTAB Wilson+Miller/\u2212McGowan +Ji'Ayir/\u2212Bishop; Eddies Sigle/\u2212Winfield; Newman +Claiborne; Saltese Martin/\u2212Nixon; Substation Redmond/\u2212Verse). Pending trades/claims 0. Trade blocks refreshed.",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Jalen Coker injured in active slot",
@@ -66,5 +66,5 @@
     "Jalen Coker injured in active slot",
     "Brock Bowers OUT"
   ],
-  "updated": "2026-09-17"
+  "updated": "2026-09-24"
 }

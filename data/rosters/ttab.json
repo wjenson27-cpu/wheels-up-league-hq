@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-09-23",
+  "asOf": "2026-09-24",
   "faabLeft": 42,
   "startingQB": "Josh Allen",
   "roster": {
@@ -10,10 +10,11 @@
       "Josh Allen"
     ],
     "RB": [
+      "Emanuel Wilson",
+      "Kendre Miller",
       "Ashton Jeanty",
       "Cameron Skattebo",
       "Javonte Williams",
-      "Seth McGowan",
       "Tony Pollard"
     ],
     "WR": [
@@ -38,15 +39,16 @@
       "Kwity Paye"
     ],
     "DB": [
+      "Ji'Ayir Brown",
       "Andrew Wingard",
-      "Cole Bishop",
       "Caleb Downs",
       "Jalen Thompson",
       "Treydan Stukes"
     ],
     "IR": []
   },
-  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (\u2212Nailor); +Kwity Paye $16 (\u2212Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/\u2212Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR) | Sep 23 trade: \u2212Etienne \u2212Winfield +Dorian +Wingard (from Eddies)",
-  "source": "Fantrax completed trade Sep 23 2026 \u2014 Eddies\u2194TTAB Etienne/Winfield",
-  "fantraxTeamId": "4grk2ph6msb3ulv4"
+  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (\u2212Nailor); +Kwity Paye $16 (\u2212Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/\u2212Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR) | Sep 23 trade: \u2212Etienne \u2212Winfield +Dorian +Wingard (from Eddies) | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/\u2212Seth McGowan; +Ji'Ayir Brown/\u2212Cole Bishop.",
+  "source": "Fantrax Sep 24 2026 ~6:22 AM PT Fantasy check \u2014 Wed Sep 23 free-agent Claim/Drops (Saltese White/\u2212Sanders; Hyper +Nix; TTAB Wilson+Miller/\u2212McGowan +Ji'Ayir/\u2212Bishop; Eddies Sigle/\u2212Winfield; Newman +Claiborne; Saltese Martin/\u2212Nixon; Substation Redmond/\u2212Verse). Pending trades/claims 0. Trade blocks refreshed.",
+  "fantraxTeamId": "4grk2ph6msb3ulv4",
+  "updated": "2026-09-24"
 }

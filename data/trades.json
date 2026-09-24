@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-23T11:27:00-07:00",
-  "source": "Fantrax Sep 23 2026 11:27 AM PDT \u2014 Eddies\u2194TTAB Etienne/Winfield completed; pending 0.",
+  "updated": "2026-09-24T06:22:00-07:00",
+  "source": "Fantrax Sep 24 2026 ~6:22 AM PT Fantasy check \u2014 Wed Sep 23 free-agent Claim/Drops (Saltese White/\u2212Sanders; Hyper +Nix; TTAB Wilson+Miller/\u2212McGowan +Ji'Ayir/\u2212Bishop; Eddies Sigle/\u2212Winfield; Newman +Claiborne; Saltese Martin/\u2212Nixon; Substation Redmond/\u2212Verse). Pending trades/claims 0. Trade blocks refreshed. No new completed trades after Eddies\u2194TTAB.",
   "season": 2026,
   "trades": [
     {
@@ -261,6 +261,19 @@
   "pending": [],
   "blocks": [
     {
+      "team": "Eagle Ridge Eddies",
+      "player": null,
+      "players": [
+        "Jacory Croskey-Merritt",
+        "Tyjae Spears",
+        "Chimere Dike",
+        "Denzel Perryman",
+        "Julian Love"
+      ],
+      "lastUpdated": "2026-09-24 6:22 AM PDT",
+      "note": "On the block (Sep 24 AM scrape)."
+    },
+    {
       "team": "Newman Lake Sleep Paralysis Demons",
       "player": null,
       "players": [
@@ -281,6 +294,17 @@
       "note": "Block empty (Barton dropped Sep 14)."
     },
     {
+      "team": "Saltese Slamm",
+      "player": null,
+      "players": [
+        "Jonathon Brooks",
+        "Rhamondre Stevenson",
+        "Terrel Bernard"
+      ],
+      "lastUpdated": "2026-09-24 6:22 AM PDT",
+      "note": "On the block (Sep 24 AM scrape)."
+    },
+    {
       "team": "Substation",
       "player": null,
       "players": [
@@ -290,27 +314,20 @@
         "Emmett Johnson",
         "David Montgomery",
         "Tony Pollard",
-        "Bhayshul Tuten",
         "Malik Nabers",
-        "Alec Pierce",
-        "Tucker Kraft",
-        "Jared Verse",
-        "Jihaad Campbell",
         "Tremaine Edmunds",
         "Dre Greenlaw",
-        "Carson Schwesinger",
         "Brian Branch",
         "DeShon Elliott",
         "Nick Emmanwori",
-        "Antonio Johnson",
-        "Trent McDuffie"
+        "Antonio Johnson"
       ],
-      "lastUpdated": "2026-09-22 8:46 PM PDT",
-      "note": "Updated Sep 22 8:46 PM PDT \u2014 cleared Saquon Barkley and Tank Bigsby off the block (was 22 as of Sep 20 6:16 PM). Now 20 players."
+      "lastUpdated": "2026-09-24 6:22 AM PDT",
+      "note": "Sep 24 AM scrape \u2014 13 players (cleared Tuten/Pierce/Kraft/Verse/Campbell/Schwesinger/McDuffie vs prior 20)."
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "TTAB offer cleared after Eddies accept Sep 23 ~11:29 AM PDT.",
+  "pending_note": "No pending offers (Sep 24 ~6:22 AM PT scrape).",
   "fantrax_completed_view": "Newest official: Substation\u2194Ultron Barkley+Bigsby for London+Winston+$20 (Sep 22 8:46 PM); Slumlords\u2194Ultron London+Campbell+Pickens for Anzalone+Godwin+Cook+$15 (Sep 22 10:20 AM). Prior: McLaurin\u2194Emmett+$15 Sep 16; Goedert/Winfield+$8\u2194Pollard/Edmunds Sep 16; LaPorta\u2194Campbell/Harvey Sep 15; Sanker\u2194$4 Sep 14; Nix\u2194$10 Sep 8.",
   "hqComplete": true
 }

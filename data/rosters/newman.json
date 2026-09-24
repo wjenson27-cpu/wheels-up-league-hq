@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-09-23",
+  "asOf": "2026-09-24",
   "faabLeft": 110,
   "startingQB": "Jalen Hurts",
   "roster": {
@@ -10,6 +10,7 @@
       "Jalen Hurts"
     ],
     "RB": [
+      "Demond Claiborne",
       "Jonathan Taylor",
       "Aaron Jones",
       "Chris Johnson"
@@ -47,7 +48,8 @@
       "TreVeyon Henderson"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Malaki Starks $5; +L'Jarius Sneed (null); +Chris Johnson (null, pos uncertain\u2192RB). FAAB $110. | Sep 23 clear: +Leo Chenal (LB); -Chris Bell (WR)",
-  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
-  "fantraxTeamId": "kwaohsfwmsb3ulv4"
+  "notes": "Sep 16 post-waiver: +Malaki Starks $5; +L'Jarius Sneed (null); +Chris Johnson (null, pos uncertain\u2192RB). FAAB $110. | Sep 23 clear: +Leo Chenal (LB); -Chris Bell (WR) | Sep 23 FA: +Demond Claiborne (RB).",
+  "source": "Fantrax Sep 24 2026 ~6:22 AM PT Fantasy check \u2014 Wed Sep 23 free-agent Claim/Drops (Saltese White/\u2212Sanders; Hyper +Nix; TTAB Wilson+Miller/\u2212McGowan +Ji'Ayir/\u2212Bishop; Eddies Sigle/\u2212Winfield; Newman +Claiborne; Saltese Martin/\u2212Nixon; Substation Redmond/\u2212Verse). Pending trades/claims 0. Trade blocks refreshed.",
+  "fantraxTeamId": "kwaohsfwmsb3ulv4",
+  "updated": "2026-09-24"
 }
