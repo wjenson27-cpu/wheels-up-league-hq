@@ -2,18 +2,19 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-09-24",
-  "faabLeft": 83,
+  "asOf": "2026-09-25",
+  "faabLeft": 81,
   "startingQB": "Justin Herbert",
   "roster": {
     "QB": [
       "Bo Nix",
       "Justin Herbert",
-      "Sam Darnold"
+      "Baker Mayfield"
     ],
     "RB": [
       "Kenneth Walker III",
-      "MarShawn Lloyd"
+      "MarShawn Lloyd",
+      "J.K. Dobbins"
     ],
     "WR": [
       "Amon-Ra St. Brown",
@@ -40,17 +41,16 @@
     "DB": [
       "Travis Hunter",
       "Tykee Smith",
-      "Grant Delpit",
-      "Michael Taaffe"
+      "Grant Delpit"
     ],
     "IR": [
       "Jaylin Noel",
       "Nick Bosa"
     ]
   },
-  "notes": "Sep 19 AM: \u2212Dallas Turner. Sep 17: +Grant Delpit (\u2212Brandon Jones). Sep 16: +Jaxson Dart $16 (\u2212Keaton Mitchell). FAAB $92. | Sep 23 clear: +Sam Darnold (QB); +Michael Taaffe (DB); -Jaxson Dart (QB) | Sep 23 FA: +Bo Nix (QB).",
+  "notes": "Sep 19 AM: \u2212Dallas Turner. Sep 17: +Grant Delpit (\u2212Brandon Jones). Sep 16: +Jaxson Dart $16 (\u2212Keaton Mitchell). FAAB $92. | Sep 23 clear: +Sam Darnold (QB); +Michael Taaffe (DB); -Jaxson Dart (QB) | Sep 23 FA: +Bo Nix (QB). | Sep 24: +J.K. Dobbins $2 (\u2212Michael Taaffe); +Baker Mayfield; \u2212Sam Darnold. FAAB $81.",
   "injuryFlags": [],
-  "source": "Fantrax Sep 24 2026 ~6:22 AM PT Fantasy check \u2014 Wed Sep 23 free-agent Claim/Drops (Saltese White/\u2212Sanders; Hyper +Nix; TTAB Wilson+Miller/\u2212McGowan +Ji'Ayir/\u2212Bishop; Eddies Sigle/\u2212Winfield; Newman +Claiborne; Saltese Martin/\u2212Nixon; Substation Redmond/\u2212Verse). Pending trades/claims 0. Trade blocks refreshed.",
+  "source": "Fantrax Sep 25 2026 ~6:08 AM PT Fantasy check \u2014 Thu Sep 24 Claim/Drops: Hyper +Dobbins $2/\u2212Taaffe, +Mayfield, \u2212Darnold; Ultron +Taaffe/\u2212Haulcy; Substation +Keaton Mitchell/\u2212Keenan Allen. Pending trades/claims 0. Blocks unchanged.",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
-  "updated": "2026-09-24"
+  "updated": "2026-09-25"
 }

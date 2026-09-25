@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-09-24",
+  "asOf": "2026-09-25",
   "faabLeft": 79,
   "startingQB": "Jordan Love",
   "roster": {
@@ -15,14 +15,14 @@
       "David Montgomery",
       "Tank Bigsby",
       "Bhayshul Tuten",
-      "R.J. Harvey"
+      "R.J. Harvey",
+      "Keaton Mitchell"
     ],
     "WR": [
       "Terry McLaurin",
       "Malik Nabers",
       "Rashod Bateman",
-      "Skyy Moore",
-      "Keenan Allen"
+      "Skyy Moore"
     ],
     "TE": [
       "Dallas Goedert",
@@ -49,14 +49,14 @@
       "Nick Emmanwori"
     ]
   },
-  "notes": "Sep 19 AM: +Trent McDuffie (\u2212Romeo Doubs); \u2212Avonte Maddox. Trade block: Tony Pollard, Bhayshul Tuten. FAAB $70. | Sep 23 clear: +Rashod Bateman (WR); +Skyy Moore (WR); +Keenan Allen (WR); -Trent McDuffie (DB); -Alec Pierce (WR) | Removed stale Antoine Winfield (on TTAB then traded to Eddies Sep 23). | Sep 23 FA: +Jalen Redmond (DL)/\u2212Jared Verse.",
+  "notes": "Sep 19 AM: +Trent McDuffie (\u2212Romeo Doubs); \u2212Avonte Maddox. Trade block: Tony Pollard, Bhayshul Tuten. FAAB $70. | Sep 23 clear: +Rashod Bateman (WR); +Skyy Moore (WR); +Keenan Allen (WR); -Trent McDuffie (DB); -Alec Pierce (WR) | Removed stale Antoine Winfield (on TTAB then traded to Eddies Sep 23). | Sep 23 FA: +Jalen Redmond (DL)/\u2212Jared Verse. | Sep 24: +Keaton Mitchell (\u2212Keenan Allen).",
   "injuryFlags": [
     "Malik Nabers",
     "Brian Branch",
     "DeShon Elliott",
     "Nick Emmanwori OUT"
   ],
-  "source": "Fantrax Sep 24 2026 ~6:22 AM PT Fantasy check \u2014 Wed Sep 23 free-agent Claim/Drops (Saltese White/\u2212Sanders; Hyper +Nix; TTAB Wilson+Miller/\u2212McGowan +Ji'Ayir/\u2212Bishop; Eddies Sigle/\u2212Winfield; Newman +Claiborne; Saltese Martin/\u2212Nixon; Substation Redmond/\u2212Verse). Pending trades/claims 0. Trade blocks refreshed.",
+  "source": "Fantrax Sep 25 2026 ~6:08 AM PT Fantasy check \u2014 Thu Sep 24 Claim/Drops: Hyper +Dobbins $2/\u2212Taaffe, +Mayfield, \u2212Darnold; Ultron +Taaffe/\u2212Haulcy; Substation +Keaton Mitchell/\u2212Keenan Allen. Pending trades/claims 0. Blocks unchanged.",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "updated": "2026-09-24"
+  "updated": "2026-09-25"
 }
