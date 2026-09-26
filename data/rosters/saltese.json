@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-24",
+  "asOf": "2026-09-26",
   "faabLeft": 26,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -37,17 +37,17 @@
       "Mason Graham"
     ],
     "DB": [
-      "Jartavius Martin",
       "Jordan Battle",
-      "Jonas Sanker"
+      "Jonas Sanker",
+      "Chuck Clark"
     ],
     "IR": [
       "Jonathon Brooks",
       "Micah Parsons"
     ]
   },
-  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM). | Sep 23 clear: +Denzel Boston (WR); +Oronde Gadsden (TE); -Mike Gesicki (TE); +Mason Graham (DL) | Sep 23 trade: \u2212Jordyn Brooks +Jamien Sherwood (from Eddies) | Sep 23 PM/AM FA: +Rachaad White/\u2212Raheim Sanders; +Jartavius Martin/\u2212Keisean Nixon; Sigle claimed by Eddies.",
-  "source": "Fantrax Sep 24 2026 ~6:22 AM PT Fantasy check \u2014 Wed Sep 23 free-agent Claim/Drops (Saltese White/\u2212Sanders; Hyper +Nix; TTAB Wilson+Miller/\u2212McGowan +Ji'Ayir/\u2212Bishop; Eddies Sigle/\u2212Winfield; Newman +Claiborne; Saltese Martin/\u2212Nixon; Substation Redmond/\u2212Verse). Pending trades/claims 0. Trade blocks refreshed.",
+  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM). | Sep 23 clear: +Denzel Boston (WR); +Oronde Gadsden (TE); -Mike Gesicki (TE); +Mason Graham (DL) | Sep 23 trade: −Jordyn Brooks +Jamien Sherwood (from Eddies) | Sep 23 PM/AM FA: +Rachaad White/−Raheim Sanders; +Jartavius Martin/−Keisean Nixon; Sigle claimed by Eddies. | Sep 25: +Chuck Clark (−Jartavius Martin).",
+  "source": "Fantrax Sep 26 2026 ~6:07 AM PT Fantasy check — Fri Sep 25 Claim/Drops: Hyper +Jeremy Chinn $3/−Baker Mayfield; Valley +Tyrel Dodson; Pocket −Marvin Mims, +Brandon Jones/−SirVocea Dennis (Dennis add/drop churn); TTAB −Kendre Miller, +Cole Bishop, +Romeo Doubs/−Jalen Thompson; Newman −Demond Claiborne; Saltese +Chuck Clark/−Jartavius Martin. Pending trades/claims 0. Blocks unchanged.",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
-  "updated": "2026-09-24"
+  "updated": "2026-09-26"
 }

@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-09-24",
+  "asOf": "2026-09-26",
   "faabLeft": 42,
   "startingQB": "Josh Allen",
   "roster": {
@@ -11,7 +11,6 @@
     ],
     "RB": [
       "Emanuel Wilson",
-      "Kendre Miller",
       "Ashton Jeanty",
       "Cameron Skattebo",
       "Javonte Williams",
@@ -22,7 +21,8 @@
       "Mike Washington",
       "Jameson Williams",
       "Tre Tucker",
-      "Keon Coleman"
+      "Keon Coleman",
+      "Romeo Doubs"
     ],
     "TE": [
       "Jake Ferguson"
@@ -42,13 +42,13 @@
       "Ji'Ayir Brown",
       "Andrew Wingard",
       "Caleb Downs",
-      "Jalen Thompson",
-      "Treydan Stukes"
+      "Treydan Stukes",
+      "Cole Bishop"
     ],
     "IR": []
   },
-  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (\u2212Nailor); +Kwity Paye $16 (\u2212Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/\u2212Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR) | Sep 23 trade: \u2212Etienne \u2212Winfield +Dorian +Wingard (from Eddies) | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/\u2212Seth McGowan; +Ji'Ayir Brown/\u2212Cole Bishop.",
-  "source": "Fantrax Sep 24 2026 ~6:22 AM PT Fantasy check \u2014 Wed Sep 23 free-agent Claim/Drops (Saltese White/\u2212Sanders; Hyper +Nix; TTAB Wilson+Miller/\u2212McGowan +Ji'Ayir/\u2212Bishop; Eddies Sigle/\u2212Winfield; Newman +Claiborne; Saltese Martin/\u2212Nixon; Substation Redmond/\u2212Verse). Pending trades/claims 0. Trade blocks refreshed.",
+  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (−Nailor); +Kwity Paye $16 (−Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/−Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR) | Sep 23 trade: −Etienne −Winfield +Dorian +Wingard (from Eddies) | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/−Seth McGowan; +Ji'Ayir Brown/−Cole Bishop. | Sep 25: −Kendre Miller; +Cole Bishop; +Romeo Doubs/−Jalen Thompson.",
+  "source": "Fantrax Sep 26 2026 ~6:07 AM PT Fantasy check — Fri Sep 25 Claim/Drops: Hyper +Jeremy Chinn $3/−Baker Mayfield; Valley +Tyrel Dodson; Pocket −Marvin Mims, +Brandon Jones/−SirVocea Dennis (Dennis add/drop churn); TTAB −Kendre Miller, +Cole Bishop, +Romeo Doubs/−Jalen Thompson; Newman −Demond Claiborne; Saltese +Chuck Clark/−Jartavius Martin. Pending trades/claims 0. Blocks unchanged.",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
-  "updated": "2026-09-24"
+  "updated": "2026-09-26"
 }
