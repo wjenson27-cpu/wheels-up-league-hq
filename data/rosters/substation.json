@@ -2,8 +2,8 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-09-25",
-  "faabLeft": 79,
+  "asOf": "2026-09-27",
+  "faabLeft": 82,
   "startingQB": "Jordan Love",
   "roster": {
     "QB": [
@@ -31,13 +31,13 @@
     "LB": [
       "Carson Schwesinger",
       "Dre Greenlaw",
-      "Jihaad Campbell"
+      "Jihaad Campbell",
+      "CJ Allen"
     ],
     "DL": [
       "Jalen Redmond"
     ],
     "DB": [
-      "Antonio Johnson",
       "Tyler Nubin",
       "Brian Branch",
       "DeShon Elliott",
@@ -49,14 +49,14 @@
       "Nick Emmanwori"
     ]
   },
-  "notes": "Sep 19 AM: +Trent McDuffie (\u2212Romeo Doubs); \u2212Avonte Maddox. Trade block: Tony Pollard, Bhayshul Tuten. FAAB $70. | Sep 23 clear: +Rashod Bateman (WR); +Skyy Moore (WR); +Keenan Allen (WR); -Trent McDuffie (DB); -Alec Pierce (WR) | Removed stale Antoine Winfield (on TTAB then traded to Eddies Sep 23). | Sep 23 FA: +Jalen Redmond (DL)/\u2212Jared Verse. | Sep 24: +Keaton Mitchell (\u2212Keenan Allen).",
+  "notes": "Sep 19 AM: +Trent McDuffie (−Romeo Doubs); −Avonte Maddox. Trade block: Tony Pollard, Bhayshul Tuten. FAAB $70. | Sep 23 clear: +Rashod Bateman (WR); +Skyy Moore (WR); +Keenan Allen (WR); -Trent McDuffie (DB); -Alec Pierce (WR) | Removed stale Antoine Winfield (on TTAB then traded to Eddies Sep 23). | Sep 23 FA: +Jalen Redmond (DL)/−Jared Verse. | Sep 24: +Keaton Mitchell (−Keenan Allen). | Fantasy check Sep 28: −Antonio Johnson; −Tony Pollard (if listed); +CJ Allen (LB via trade). FAAB $82.",
   "injuryFlags": [
     "Malik Nabers",
     "Brian Branch",
     "DeShon Elliott",
     "Nick Emmanwori OUT"
   ],
-  "source": "Fantrax Sep 25 2026 ~6:08 AM PT Fantasy check \u2014 Thu Sep 24 Claim/Drops: Hyper +Dobbins $2/\u2212Taaffe, +Mayfield, \u2212Darnold; Ultron +Taaffe/\u2212Haulcy; Substation +Keaton Mitchell/\u2212Keenan Allen. Pending trades/claims 0. Blocks unchanged.",
+  "source": "Fantrax Sep 28 2026 ~6:15 AM PT Fantasy check — Sun Sep 27 Claim/Drops + Dongers↔Substation trade (CJ Allen+$3 FAAB for Tony Pollard). Pending trades/claims 0.",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "updated": "2026-09-25"
+  "updated": "2026-09-28"
 }

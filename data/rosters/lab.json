@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-09-23",
+  "asOf": "2026-09-27",
   "faabLeft": 93,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -20,7 +20,8 @@
       "Puka Nacua",
       "Mike Evans",
       "Caleb Douglas",
-      "Kendrick Bourne"
+      "Kendrick Bourne",
+      "Jakobi Meyers"
     ],
     "TE": [
       "Isaiah Likely"
@@ -45,7 +46,8 @@
       "Drue Tranquill"
     ]
   },
-  "notes": "Sep 17 AM: dropped Baker Mayfield. Sep 16 post-waiver: +Kendrick Bourne $11 (\u2212Tre Tucker). FAAB $104. | Sep 20: +Tutu Atwell. | Sep 22: dropped Tutu Atwell (5:47 AM). | Sep 23 clear: +C.J. Stroud (QB)",
-  "source": "Fantrax post-waiver clear Sep 23 2026 ~9:09 AM PT",
-  "fantraxTeamId": "a4q2ra3ymsb3ulv4"
+  "notes": "Sep 17 AM: dropped Baker Mayfield. Sep 16 post-waiver: +Kendrick Bourne $11 (−Tre Tucker). FAAB $104. | Sep 20: +Tutu Atwell. | Sep 22: dropped Tutu Atwell (5:47 AM). | Sep 23 clear: +C.J. Stroud (QB) | Fantasy check Sep 28: +Jakobi Meyers (WR).",
+  "source": "Fantrax Sep 28 2026 ~6:15 AM PT Fantasy check — Sun Sep 27 Claim/Drops + Dongers↔Substation trade (CJ Allen+$3 FAAB for Tony Pollard). Pending trades/claims 0.",
+  "fantraxTeamId": "a4q2ra3ymsb3ulv4",
+  "updated": "2026-09-28"
 }
