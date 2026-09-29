@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-29",
-  "source": "Fantrax Sep 29 2026 ~6:11 AM PT Fantasy check (confirmed 6:06 AM trade alert) \u2014 Saltese\u2194Substation (Boston for Montgomery) Sep 28 10:04 AM PDT; blocks unchanged vs trade alert; pending trades 0; league pending claims 3 (count only).",
+  "source": "Fantrax Sep 29 2026 ~6:40 AM PT roster sync \u2014 Week 3 finals; blocks unchanged vs morning trade alert (Eddies 11 / Newman 5 / Pocket empty / Saltese 3 / Substation 10); pending trades 0; league pending claims 3 (count only).",
   "season": 2026,
   "trades": [
     {
@@ -292,8 +292,9 @@
   "pending": [],
   "blocks": [
     {
+      "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "player": null,
+      "lastUpdated": "2026-09-28 9:27 AM PT",
       "players": [
         "Jacory Croskey-Merritt",
         "Travis Etienne",
@@ -307,12 +308,12 @@
         "Julian Love",
         "Marques Sigle"
       ],
-      "lastUpdated": "Sep 28 9:27 AM",
-      "note": "CHANGED vs Sep 28 morning HQ (was 5). Added Etienne, Hampton, Brian Thomas, Pitts, Mack Wilson, Sigle."
+      "note": null
     },
     {
+      "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "player": null,
+      "lastUpdated": "2026-09-15 12:35 PM PT",
       "players": [
         "TreVeyon Henderson",
         "Aaron Jones",
@@ -320,34 +321,34 @@
         "Matthew Golden",
         "Tee Higgins"
       ],
-      "lastUpdated": "Sep 15 12:35 PM",
-      "note": "On the block"
+      "note": null
     },
     {
+      "teamId": "pocket",
       "team": "Pocket Agents",
-      "player": null,
+      "lastUpdated": null,
       "players": [],
-      "lastUpdated": "Sep 14 2:11 PM",
-      "note": "Block empty (Barton dropped Sep 14)."
+      "note": null
     },
     {
+      "teamId": "saltese",
       "team": "Saltese Slamm",
-      "player": null,
+      "lastUpdated": "2026-09-21 11:30 AM PT",
       "players": [
-        "Jonathon Brooks",
+        "Jonathan Brooks",
         "Rhamondre Stevenson",
         "Terrel Bernard"
       ],
-      "lastUpdated": "Sep 23 11:30 AM",
-      "note": "Looking for FAAB or flex swaps."
+      "note": null
     },
     {
+      "teamId": "substation",
       "team": "Substation",
-      "player": null,
+      "lastUpdated": "2026-09-28 10:04 AM PT",
       "players": [
         "Jordan Love",
         "Brock Purdy",
-        "RJ Harvey",
+        "R.J. Harvey",
         "Emmett Johnson",
         "Malik Nabers",
         "Tremaine Edmunds",
@@ -356,8 +357,7 @@
         "DeShon Elliott",
         "Nick Emmanwori"
       ],
-      "lastUpdated": "Sep 28 10:04 AM",
-      "note": "CHANGED vs Sep 28 morning HQ. David Montgomery removed after Saltese deal."
+      "note": null
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",

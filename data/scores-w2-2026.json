@@ -1,0 +1,169 @@
+{
+  "updated": "2026-09-22",
+  "asOf": "2026-09-22",
+  "week": 2,
+  "weekStatus": "final",
+  "complete": true,
+  "source": "Fantrax",
+  "note": "Week 2 FINAL from Fantrax Matchups/Standings scrape Tue Sep 22 ~6:42 AM PT. All 7 games locked. Kitty Pocket 322.5; lowest Dongers 158.5.",
+  "kitty": {
+    "team": "Pocket",
+    "teamFull": "Pocket Agents",
+    "teamId": "pocket",
+    "score": 322.5
+  },
+  "survivorLowest": {
+    "team": "Drummond Dongers",
+    "teamId": "dongers",
+    "score": 158.5
+  },
+  "matchups": [
+    {
+      "home": "Valley Old Goats",
+      "away": "Eagle Ridge Eddies",
+      "homeScore": 274.5,
+      "awayScore": 251.5,
+      "status": "final",
+      "winner": "Valley Old Goats",
+      "topScorers": [
+        {
+          "team": "Valley Old Goats",
+          "player": "Devin Lloyd",
+          "pts": 66
+        },
+        {
+          "team": "Eagle Ridge Eddies",
+          "player": "Evan Williams",
+          "pts": 34
+        }
+      ],
+      "notes": "Fantrax Standings labels Eagle Ridge as away and Valley as home; all games final."
+    },
+    {
+      "home": "Towner Top Aga Bottom",
+      "away": "Drummond Dongers",
+      "homeScore": 188.5,
+      "awayScore": 158.5,
+      "status": "final",
+      "winner": "Towner Top Aga Bottom",
+      "topScorers": [
+        {
+          "team": "Towner Top Aga Bottom",
+          "player": "Josh Allen",
+          "pts": 47
+        },
+        {
+          "team": "Drummond Dongers",
+          "player": "Kyle Hamilton",
+          "pts": 32
+        }
+      ],
+      "notes": "Fantrax Standings labels Drummond as away and Towner as home; all games final."
+    },
+    {
+      "home": "Mrs. Doubtpfizer",
+      "away": "Newman Lake Sleep Paralysis Demons",
+      "homeScore": 213,
+      "awayScore": 261,
+      "status": "final",
+      "winner": "Newman Lake Sleep Paralysis Demons",
+      "topScorers": [
+        {
+          "team": "Newman Lake Sleep Paralysis Demons",
+          "player": "Davante Adams",
+          "pts": 47
+        },
+        {
+          "team": "Mrs. Doubtpfizer",
+          "player": "Dak Prescott",
+          "pts": 37
+        }
+      ],
+      "notes": "Fantrax Standings labels Newman as away and Mrs. Doubtpfizer as home; all games final."
+    },
+    {
+      "home": "Indian Trail Slumlords",
+      "away": "Pocket Agents",
+      "homeScore": 252,
+      "awayScore": 322.5,
+      "status": "final",
+      "winner": "Pocket Agents",
+      "topScorers": [
+        {
+          "team": "Pocket Agents",
+          "player": "Jared Goff",
+          "pts": 43
+        },
+        {
+          "team": "Indian Trail Slumlords",
+          "player": "Dalton Schultz",
+          "pts": 41
+        }
+      ],
+      "notes": "Fantrax Standings labels Pocket as away and Indian Trail as home; all games final."
+    },
+    {
+      "home": "The Hypersecretors",
+      "away": "Saltese Slamm",
+      "homeScore": 272,
+      "awayScore": 279,
+      "status": "final",
+      "winner": "Saltese Slamm",
+      "topScorers": [
+        {
+          "team": "Saltese Slamm",
+          "player": "Jaxon Smith-Njigba",
+          "pts": 54
+        },
+        {
+          "team": "The Hypersecretors",
+          "player": "Amon-Ra St. Brown",
+          "pts": 41
+        }
+      ],
+      "notes": "Fantrax Standings labels Saltese as away and Hypersecretors as home; all games final."
+    },
+    {
+      "home": "Morningside Muff Divers",
+      "away": "Substation",
+      "homeScore": 215,
+      "awayScore": 171,
+      "status": "final",
+      "winner": "Morningside Muff Divers",
+      "topScorers": [
+        {
+          "team": "Substation",
+          "player": "Brock Purdy",
+          "pts": 32
+        },
+        {
+          "team": "Morningside Muff Divers",
+          "player": "Travis Kelce",
+          "pts": 39
+        }
+      ],
+      "notes": "Fantrax Standings labels Substation as away and Morningside as home; all games final."
+    },
+    {
+      "home": "Little Ass Boys",
+      "away": "Ultron",
+      "homeScore": 182,
+      "awayScore": 200.5,
+      "status": "final",
+      "winner": "Ultron",
+      "topScorers": [
+        {
+          "team": "Ultron",
+          "player": "Amani Hooker",
+          "pts": 30
+        },
+        {
+          "team": "Little Ass Boys",
+          "player": "Akeem Davis-Gaither",
+          "pts": 32
+        }
+      ],
+      "notes": "Fantrax Standings labels Ultron as away and Little Ass Boys as home; all games final."
+    }
+  ]
+}
