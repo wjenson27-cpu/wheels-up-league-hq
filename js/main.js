@@ -20,7 +20,7 @@
 
   const PAGES = [...PRIMARY, ...MORE];
 
-  const BRAND_MARK = `<span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#001a33" d="M5.5 21.2c0-.9.7-1.6 1.6-1.6h7.2L25.8 10c.7-.55 1.7-.2 1.7.7v2.2l-7.2 5.6h6.8c1.1 0 1.9.55 2.2 1.45L31.5 25H8.2c-1.5 0-2.7-1.2-2.7-2.7v-1.1z"/><circle cx="14" cy="28.2" r="2.35" fill="#001a33"/><circle cx="22.5" cy="28.2" r="2.35" fill="#001a33"/><path stroke="#001a33" stroke-width="1.6" stroke-linecap="round" d="M14 28.2h8.5"/></svg></span>`;
+  const BRAND_MARK = `<span class="brand-mark" aria-hidden="true"><img src="img/wu-mark.png" width="36" height="36" alt=""></span>`;
 
   function currentPage() {
     const path = (location.pathname || "").split("/").pop() || "index.html";
