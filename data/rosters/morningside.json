@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-09-27",
+  "asOf": "2026-09-29",
   "faabLeft": 115,
   "startingQB": "Lamar Jackson",
   "roster": {
@@ -10,7 +10,6 @@
       "Lamar Jackson"
     ],
     "RB": [
-      "De'Von Achane",
       "Jordan Mason",
       "Jadarian Price"
     ],
@@ -43,8 +42,8 @@
       "Cedric Gray"
     ]
   },
-  "notes": "Sep 16 post-waiver: no claims. FAAB $115. −Josh Uche (Sep 15). | Fantasy check Sep 28: −Malik Davis (['IR']); −De'Zhaun Stribling (['IR']).",
-  "source": "Fantrax Sep 28 2026 ~6:15 AM PT Fantasy check — Sun Sep 27 Claim/Drops + Dongers↔Substation trade (CJ Allen+$3 FAAB for Tony Pollard). Pending trades/claims 0.",
+  "notes": "Sep 16 post-waiver: no claims. FAAB $115. \u2212Josh Uche (Sep 15). | Fantasy check Sep 28: \u2212Malik Davis (['IR']); \u2212De'Zhaun Stribling (['IR']). Fantasy check Sep 29: \u2212Devon Achane (Sep 28 9:45 AM).",
+  "source": "Fantasy check Sep 29 2026 ~6:11 AM PT \u2014 dropped Devon Achane, De'Von Achane, DeVon Achane.",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
-  "updated": "2026-09-28"
+  "updated": "2026-09-29"
 }

@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-09-27",
+  "asOf": "2026-09-29",
   "faabLeft": 110,
   "startingQB": "Jalen Hurts",
   "roster": {
@@ -29,8 +29,7 @@
       "Zaire Franklin",
       "Azeez Al-Shaair",
       "Kaden Elliss",
-      "Eric Wilson",
-      "Leo Chenal"
+      "Eric Wilson"
     ],
     "DL": [
       "Andrew Van Ginkel",
@@ -46,8 +45,8 @@
       "TreVeyon Henderson"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Malaki Starks $5; +L'Jarius Sneed (null); +Chris Johnson (null, pos uncertain→RB). FAAB $110. | Sep 23 clear: +Leo Chenal (LB); -Chris Bell (WR) | Sep 23 FA: +Demond Claiborne (RB). | Sep 25: −Demond Claiborne. | Fantasy check Sep 28: +Jevon Holland (DB); −Chris Johnson (['RB']); −Malaki Starks (['DB']).",
-  "source": "Fantrax Sep 28 2026 ~6:15 AM PT Fantasy check — Sun Sep 27 Claim/Drops + Dongers↔Substation trade (CJ Allen+$3 FAAB for Tony Pollard). Pending trades/claims 0.",
+  "notes": "Sep 16 post-waiver: +Malaki Starks $5; +L'Jarius Sneed (null); +Chris Johnson (null, pos uncertain\u2192RB). FAAB $110. | Sep 23 clear: +Leo Chenal (LB); -Chris Bell (WR) | Sep 23 FA: +Demond Claiborne (RB). | Sep 25: \u2212Demond Claiborne. | Fantasy check Sep 28: +Jevon Holland (DB); \u2212Chris Johnson (['RB']); \u2212Malaki Starks (['DB']). Fantasy check Sep 29: \u2212Leo Chenal (Sep 28 8:16 PM).",
+  "source": "Fantasy check Sep 29 2026 ~6:11 AM PT \u2014 dropped Leo Chenal.",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
-  "updated": "2026-09-28"
+  "updated": "2026-09-29"
 }

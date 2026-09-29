@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-29",
-  "source": "Fantrax Sep 29 2026 ~6:06 AM PT trade-offer alert \u2014 Saltese\u2194Substation (Boston for Montgomery) Sep 28 10:04 AM PDT; Eddies trade block expanded Sep 28 9:27 AM; Substation block cleared Montgomery. Pending trades 0; league pending claims 3.",
+  "source": "Fantrax Sep 29 2026 ~6:11 AM PT Fantasy check (confirmed 6:06 AM trade alert) \u2014 Saltese\u2194Substation (Boston for Montgomery) Sep 28 10:04 AM PDT; blocks unchanged vs trade alert; pending trades 0; league pending claims 3 (count only).",
   "season": 2026,
   "trades": [
     {
@@ -361,7 +361,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "No pending trades as of Sep 29 ~6:06 AM PDT Fantrax scrape.",
+  "pending_note": "Pending trades 0. League pending claims count 3 as of Sep 29 ~6:11 AM PT (not itemized).",
   "fantrax_completed_view": "Newest official: Saltese\u2194Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers\u2194Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM); TTAB\u2194Eddies Etienne+Winfield for Williams+Wingard (Sep 23); Saltese\u2194Eddies Brooks for Sherwood (Sep 23).",
   "hqComplete": true
 }

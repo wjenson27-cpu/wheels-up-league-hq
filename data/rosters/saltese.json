@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-26",
+  "asOf": "2026-09-29",
   "faabLeft": 26,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -13,15 +13,15 @@
       "Rachaad White",
       "Breece Hall",
       "Rico Dowdle",
-      "Rhamondre Stevenson"
+      "Rhamondre Stevenson",
+      "David Montgomery"
     ],
     "WR": [
       "Jaxon Smith-Njigba",
       "DeVonta Smith",
       "Ja'Kobi Lane",
       "Stefon Diggs",
-      "Carnell Tate",
-      "Denzel Boston"
+      "Carnell Tate"
     ],
     "TE": [
       "Oronde Gadsden"
@@ -46,8 +46,8 @@
       "Micah Parsons"
     ]
   },
-  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM). | Sep 23 clear: +Denzel Boston (WR); +Oronde Gadsden (TE); -Mike Gesicki (TE); +Mason Graham (DL) | Sep 23 trade: −Jordyn Brooks +Jamien Sherwood (from Eddies) | Sep 23 PM/AM FA: +Rachaad White/−Raheim Sanders; +Jartavius Martin/−Keisean Nixon; Sigle claimed by Eddies. | Sep 25: +Chuck Clark (−Jartavius Martin).",
-  "source": "Fantrax Sep 26 2026 ~6:07 AM PT Fantasy check — Fri Sep 25 Claim/Drops: Hyper +Jeremy Chinn $3/−Baker Mayfield; Valley +Tyrel Dodson; Pocket −Marvin Mims, +Brandon Jones/−SirVocea Dennis (Dennis add/drop churn); TTAB −Kendre Miller, +Cole Bishop, +Romeo Doubs/−Jalen Thompson; Newman −Demond Claiborne; Saltese +Chuck Clark/−Jartavius Martin. Pending trades/claims 0. Blocks unchanged.",
+  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM). | Sep 23 clear: +Denzel Boston (WR); +Oronde Gadsden (TE); -Mike Gesicki (TE); +Mason Graham (DL) | Sep 23 trade: \u2212Jordyn Brooks +Jamien Sherwood (from Eddies) | Sep 23 PM/AM FA: +Rachaad White/\u2212Raheim Sanders; +Jartavius Martin/\u2212Keisean Nixon; Sigle claimed by Eddies. | Sep 25: +Chuck Clark (\u2212Jartavius Martin). Sep 28 trade: +David Montgomery / \u2212Denzel Boston (vs Substation).",
+  "source": "Fantasy check Sep 29 2026 \u2014 Saltese received David Montgomery for Denzel Boston (Sep 28 trade).",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
-  "updated": "2026-09-26"
+  "updated": "2026-09-29"
 }

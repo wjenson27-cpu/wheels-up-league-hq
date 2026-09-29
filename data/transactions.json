@@ -1,7 +1,83 @@
 {
-  "updated": "2026-09-28",
-  "source": "Fantrax Sep 28 2026 ~6:15 AM PT Fantasy check — Sun Sep 27 Claim/Drops + Dongers↔Substation trade (CJ Allen+$3 FAAB for Tony Pollard). Pending trades/claims 0.",
+  "updated": "2026-09-29",
+  "source": "Fantrax Sep 29 2026 ~6:11 AM PT Fantasy check \u2014 Mon/Tue Claim/Drops (Slumlords \u2212Williams/\u2212Lane; Newman \u2212Chenal; TTAB \u2212Carter; Morningside \u2212Achane) + confirmed Saltese\u2194Substation Boston/Montgomery trade. Pending trades 0; league pending claims 3 (count only).",
   "items": [
+    {
+      "date": "2026-09-29",
+      "type": "DROP",
+      "team": "Indian Trail Slumlords",
+      "summary": "Dropped Isaiah Williams (WR) ($0/null bid)",
+      "time": "5:19 AM PDT",
+      "player": "Isaiah Williams",
+      "playerMeta": "WR-NYJ",
+      "bid": null
+    },
+    {
+      "date": "2026-09-29",
+      "type": "DROP",
+      "team": "Indian Trail Slumlords",
+      "summary": "Dropped Jaylin Lane (WR) ($0/null bid)",
+      "time": "5:15 AM PDT",
+      "player": "Jaylin Lane",
+      "playerMeta": "WR-WAS",
+      "bid": null
+    },
+    {
+      "date": "2026-09-28",
+      "type": "DROP",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Dropped Leo Chenal (LB) ($0/null bid)",
+      "time": "8:16 PM PDT",
+      "player": "Leo Chenal",
+      "playerMeta": "LB-WAS",
+      "bid": null
+    },
+    {
+      "date": "2026-09-28",
+      "type": "DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Dropped Abdul Carter (DL) ($0/null bid)",
+      "time": "10:07 AM PDT",
+      "player": "Abdul Carter",
+      "playerMeta": "DL/LB-NYG",
+      "bid": null
+    },
+    {
+      "date": "2026-09-28",
+      "type": "TRADE",
+      "team": "Saltese Slamm",
+      "summary": "Traded Denzel Boston (WR) to Substation for David Montgomery (RB)",
+      "time": "10:04 AM PDT",
+      "player": "Denzel Boston",
+      "playerMeta": "WR (R)-SEA",
+      "bid": null,
+      "tradePartner": "Substation",
+      "received": "David Montgomery",
+      "receivedMeta": "RB-DET"
+    },
+    {
+      "date": "2026-09-28",
+      "type": "TRADE",
+      "team": "Substation",
+      "summary": "Traded David Montgomery (RB) to Saltese Slamm for Denzel Boston (WR)",
+      "time": "10:04 AM PDT",
+      "player": "David Montgomery",
+      "playerMeta": "RB-DET",
+      "bid": null,
+      "tradePartner": "Saltese Slamm",
+      "received": "Denzel Boston",
+      "receivedMeta": "WR (R)-SEA"
+    },
+    {
+      "date": "2026-09-28",
+      "type": "DROP",
+      "team": "Morningside Muff Divers",
+      "summary": "Dropped Devon Achane (RB) ($0/null bid)",
+      "time": "9:45 AM PDT",
+      "player": "Devon Achane",
+      "playerMeta": "RB-MIA",
+      "bid": null
+    },
     {
       "date": "2026-09-27",
       "type": "DROP",
@@ -369,42 +445,6 @@
     },
     {
       "date": "2026-09-23",
-      "type": "ADD/DROP",
-      "team": "Towner Top Aga Bottom",
-      "summary": "Added Ji'Ayir Brown (DB); dropped Cole Bishop (DB) ($0/null bid)",
-      "time": "11:01 AM PDT",
-      "player": "Ji'Ayir Brown",
-      "playerMeta": "DB-SF",
-      "dropped": "Cole Bishop",
-      "droppedMeta": "DB-BUF",
-      "bid": null
-    },
-    {
-      "date": "2026-09-23",
-      "type": "ADD/DROP",
-      "team": "Saltese Slamm",
-      "summary": "Added Jartavius Martin (DB); dropped Keisean Nixon (DB) ($0/null bid)",
-      "time": "10:48 AM PDT",
-      "player": "Jartavius Martin",
-      "playerMeta": "DB-WAS",
-      "dropped": "Keisean Nixon",
-      "droppedMeta": "DB-GB",
-      "bid": null
-    },
-    {
-      "date": "2026-09-23",
-      "type": "ADD/DROP",
-      "team": "Substation",
-      "summary": "Added Jalen Redmond (DL); dropped Jared Verse (DL) ($0/null bid)",
-      "time": "9:24 AM PDT",
-      "player": "Jalen Redmond",
-      "playerMeta": "DL-MIN",
-      "dropped": "Jared Verse",
-      "droppedMeta": "DL",
-      "bid": null
-    },
-    {
-      "date": "2026-09-23",
       "type": "TRADE",
       "team": "Eagle Ridge Eddies",
       "summary": "Traded Dorian Williams (LB), Andrew Wingard (DB) to TTAB for Travis Etienne (RB), Antoine Winfield (DB)",
@@ -433,6 +473,30 @@
     },
     {
       "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Towner Top Aga Bottom",
+      "summary": "Added Ji'Ayir Brown (DB); dropped Cole Bishop (DB) ($0/null bid)",
+      "time": "11:01 AM PDT",
+      "player": "Ji'Ayir Brown",
+      "playerMeta": "DB-SF",
+      "dropped": "Cole Bishop",
+      "droppedMeta": "DB-BUF",
+      "bid": null
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Saltese Slamm",
+      "summary": "Added Jartavius Martin (DB); dropped Keisean Nixon (DB) ($0/null bid)",
+      "time": "10:48 AM PDT",
+      "player": "Jartavius Martin",
+      "playerMeta": "DB-WAS",
+      "dropped": "Keisean Nixon",
+      "droppedMeta": "DB-GB",
+      "bid": null
+    },
+    {
+      "date": "2026-09-23",
       "type": "TRADE",
       "team": "Saltese Slamm",
       "summary": "Traded Jordyn Brooks (LB) to Eagle Ridge Eddies for Jamien Sherwood (LB)",
@@ -456,6 +520,40 @@
       "received": [
         "Jordyn Brooks"
       ]
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Jalen Redmond (DL); dropped Jared Verse (DL) ($0/null bid)",
+      "time": "9:24 AM PDT",
+      "player": "Jalen Redmond",
+      "playerMeta": "DL-MIN",
+      "dropped": "Jared Verse",
+      "droppedMeta": "DL",
+      "bid": null
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "summary": "Added Leo Chenal (LB), dropped Chris Bell (WR) ($0/null bid)",
+      "time": "9:03 AM PDT",
+      "player": "Leo Chenal",
+      "playerMeta": "LB",
+      "dropped": "Chris Bell",
+      "droppedMeta": "WR"
+    },
+    {
+      "date": "2026-09-23",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Keenan Allen (WR), dropped Trent McDuffie (DB) ($0/null bid)",
+      "time": "9:01 AM PDT",
+      "player": "Keenan Allen",
+      "playerMeta": "WR",
+      "dropped": "Trent McDuffie",
+      "droppedMeta": "DB"
     },
     {
       "date": "2026-09-23",
@@ -640,28 +738,6 @@
       "player": "Christian Elliss",
       "playerMeta": "LB-NE",
       "bid": 27
-    },
-    {
-      "date": "2026-09-23",
-      "type": "ADD/DROP",
-      "team": "Newman Lake Sleep Paralysis Demons",
-      "summary": "Added Leo Chenal (LB), dropped Chris Bell (WR) ($0/null bid)",
-      "time": "9:03 AM PDT",
-      "player": "Leo Chenal",
-      "playerMeta": "LB",
-      "dropped": "Chris Bell",
-      "droppedMeta": "WR"
-    },
-    {
-      "date": "2026-09-23",
-      "type": "ADD/DROP",
-      "team": "Substation",
-      "summary": "Added Keenan Allen (WR), dropped Trent McDuffie (DB) ($0/null bid)",
-      "time": "9:01 AM PDT",
-      "player": "Keenan Allen",
-      "playerMeta": "WR",
-      "dropped": "Trent McDuffie",
-      "droppedMeta": "DB"
     },
     {
       "date": "2026-09-23",
@@ -1179,41 +1255,6 @@
       "summary": "Added Leo Chenal; dropped Jaelan Phillips ($0/null)"
     },
     {
-      "date": "2026-09-17",
-      "type": "ADD/DROP",
-      "team": "Drummond Dongers",
-      "summary": "Added T.J. Hockenson (TE); dropped Kayshon Boutte (6:17 AM PT)",
-      "time": "6:17 AM PT"
-    },
-    {
-      "date": "2026-09-16",
-      "type": "ADD",
-      "team": "The Hypersecretors",
-      "summary": "Added Dallas Turner (DL/LB) (8:16 PM PT)",
-      "time": "8:16 PM PT"
-    },
-    {
-      "date": "2026-09-16",
-      "type": "ADD/DROP",
-      "team": "Substation",
-      "summary": "Added Romeo Doubs (WR); dropped T.J. Hockenson (TE) (6:42 PM PT)",
-      "time": "6:42 PM PT"
-    },
-    {
-      "date": "2026-09-16",
-      "type": "ADD/DROP",
-      "team": "The Hypersecretors",
-      "summary": "Added Grant Delpit (DB); dropped Brandon Jones (DB) (5:59 PM PT)",
-      "time": "5:59 PM PT"
-    },
-    {
-      "date": "2026-09-16",
-      "type": "DROP",
-      "team": "Little Ass Boys",
-      "summary": "Dropped Baker Mayfield (QB) (5:56 PM PT)",
-      "time": "5:56 PM PT"
-    },
-    {
       "date": "2026-09-16",
       "type": "ADD/DROP",
       "team": "Ultron",
@@ -1298,7 +1339,7 @@
       "date": "2026-09-16",
       "type": "FAILED",
       "team": "Eagle Ridge Eddies",
-      "summary": "FAILED claim Amani Hooker $7 (Ultron won at $18); drop James Williams unused for Hooker — Wingard claim on same drop succeeded",
+      "summary": "FAILED claim Amani Hooker $7 (Ultron won at $18); drop James Williams unused for Hooker \u2014 Wingard claim on same drop succeeded",
       "attribution": "scrapeA-verified"
     },
     {
@@ -1444,7 +1485,7 @@
       "date": "2026-09-14",
       "type": "DROP",
       "team": "Pocket Agents",
-      "summary": "Dropped Cody Barton (2:11 PM PDT) — cleared trade block"
+      "summary": "Dropped Cody Barton (2:11 PM PDT) \u2014 cleared trade block"
     },
     {
       "date": "2026-09-13",
@@ -1480,7 +1521,7 @@
       "date": "2026-09-11",
       "type": "ADD/DROP",
       "team": "Morningside Muff Divers",
-      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) — Harris briefly added then dropped"
+      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) \u2014 Harris briefly added then dropped"
     },
     {
       "date": "2026-09-11",
@@ -1606,7 +1647,7 @@
       "date": "2026-09-08",
       "type": "TRADE",
       "team": "Pocket Agents / Substation",
-      "summary": "Bo Nix (Pocket) → Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
+      "summary": "Bo Nix (Pocket) \u2192 Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
     },
     {
       "date": "2026-09-08",
@@ -1696,7 +1737,7 @@
       "date": "2026-09-04",
       "type": "ADD/DROP",
       "team": "Substation",
-      "summary": "Churn: +Denzel Boston −Craig Woodson; +Craig Woodson −Brandon Jones; +Brandon Jones −Dante Trader"
+      "summary": "Churn: +Denzel Boston \u2212Craig Woodson; +Craig Woodson \u2212Brandon Jones; +Brandon Jones \u2212Dante Trader"
     },
     {
       "date": "2026-09-04",
@@ -1720,7 +1761,7 @@
       "date": "2026-09-03",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "Moves: +Emmett Johnson −Nadjee Harris; +Nadjee Harris −Justin Strnad; +Jaishawn Barham −Trenton Simpson; +Bryce Boettcher −Nadjee Harris"
+      "summary": "Moves: +Emmett Johnson \u2212Nadjee Harris; +Nadjee Harris \u2212Justin Strnad; +Jaishawn Barham \u2212Trenton Simpson; +Bryce Boettcher \u2212Nadjee Harris"
     },
     {
       "date": "2026-09-03",
@@ -1744,19 +1785,19 @@
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "The Hypersecretors",
-      "summary": "TE churn Helm/Barner; later +Gunnar Helm −Dylan Sampson"
+      "summary": "TE churn Helm/Barner; later +Gunnar Helm \u2212Dylan Sampson"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "+Nadjee Harris −George Holani; +George Holani −Keenan Allen; +Justin Strnad −Branson Combs"
+      "summary": "+Nadjee Harris \u2212George Holani; +George Holani \u2212Keenan Allen; +Justin Strnad \u2212Branson Combs"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Valley Old Goats",
-      "summary": "+Camryn Bynum −Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
+      "summary": "+Camryn Bynum \u2212Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
     },
     {
       "date": "2026-09-02",
@@ -1774,7 +1815,7 @@
       "date": "2026-09-02",
       "type": "FAAB",
       "team": "League",
-      "summary": "FAAB batch: notable — Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; −Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0–$2 IDP/depth adds"
+      "summary": "FAAB batch: notable \u2014 Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; \u2212Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0\u2013$2 IDP/depth adds"
     },
     {
       "date": "2026-09-01",
@@ -1792,9 +1833,44 @@
       "date": "2026-08-30",
       "type": "DRAFT",
       "team": "League",
-      "summary": "20-round snake complete — Wheels Up 2026 is locked"
+      "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
+    },
+    {
+      "date": "2026-09-17",
+      "type": "ADD/DROP",
+      "team": "Drummond Dongers",
+      "summary": "Added T.J. Hockenson (TE); dropped Kayshon Boutte (6:17 AM PT)",
+      "time": "6:17 AM PT"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD",
+      "team": "The Hypersecretors",
+      "summary": "Added Dallas Turner (DL/LB) (8:16 PM PT)",
+      "time": "8:16 PM PT"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "Substation",
+      "summary": "Added Romeo Doubs (WR); dropped T.J. Hockenson (TE) (6:42 PM PT)",
+      "time": "6:42 PM PT"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "ADD/DROP",
+      "team": "The Hypersecretors",
+      "summary": "Added Grant Delpit (DB); dropped Brandon Jones (DB) (5:59 PM PT)",
+      "time": "5:59 PM PT"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "DROP",
+      "team": "Little Ass Boys",
+      "summary": "Dropped Baker Mayfield (QB) (5:56 PM PT)",
+      "time": "5:56 PM PT"
     }
   ],
-  "note": "Week-3/4 claim-drop wave + Dongers-Substation trade. Settled claims only — no pending-bid language.",
+  "note": "Week-4 early drops after Week 3 finals. Settled claims/drops only \u2014 no pending-bid language. Boston\u2013Montgomery trade already in trades.json from 6:06 AM trade alert.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

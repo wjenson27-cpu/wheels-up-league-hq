@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-09-27",
+  "asOf": "2026-09-29",
   "faabLeft": 72,
   "startingQB": "Drake Maye",
   "roster": {
@@ -19,9 +19,7 @@
       "Wan'Dale Robinson",
       "Keenan Allen",
       "Michael Pittman",
-      "Kalif Raymond",
-      "Isaiah Williams",
-      "Jaylin Lane"
+      "Kalif Raymond"
     ],
     "TE": [
       "Harold Fannin",
@@ -48,8 +46,8 @@
       "Chamarri Conner"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98. | Sep 20: +Romeo Doubs −Denzel Boston (Boston was already absent from HQ roster). | Sep 23 clear: +Chris Moore (WR); +Isaiah Williams (WR); +Lukas Van Ness (DL); -Jeremy Chinn (DB); -Romeo Doubs (WR); -Jakobi Meyers (IR) | Fantasy check Sep 28: +Jaylin Lane (WR); −Chris Moore.",
-  "source": "Fantrax Sep 28 2026 ~6:15 AM PT Fantasy check — Sun Sep 27 Claim/Drops + Dongers↔Substation trade (CJ Allen+$3 FAAB for Tony Pollard). Pending trades/claims 0.",
+  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98. | Sep 20: +Romeo Doubs \u2212Denzel Boston (Boston was already absent from HQ roster). | Sep 23 clear: +Chris Moore (WR); +Isaiah Williams (WR); +Lukas Van Ness (DL); -Jeremy Chinn (DB); -Romeo Doubs (WR); -Jakobi Meyers (IR) | Fantasy check Sep 28: +Jaylin Lane (WR); \u2212Chris Moore. Fantasy check Sep 29: \u2212Isaiah Williams, \u2212Jaylin Lane.",
+  "source": "Fantasy check Sep 29 2026 ~6:11 AM PT \u2014 dropped Isaiah Williams, Jaylin Lane.",
   "fantraxTeamId": "59frnthimsb3ulv4",
-  "updated": "2026-09-28"
+  "updated": "2026-09-29"
 }
