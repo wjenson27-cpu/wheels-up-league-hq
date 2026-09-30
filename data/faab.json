@@ -1,8 +1,8 @@
 {
   "updated": "2026-09-30",
-  "source": "Fantrax Sep 30 2026 ~6:08 AM PT Fantasy check — FAAB remainings unchanged (Sep 29 evening/afternoon drops all $0/null). Pending claims count 4 (not itemized).",
+  "source": "Fantrax Team Info (Remaining WW Claim Budget) + Claim/Drop history, Sep 30 2026 ~9:20 AM PT — after Week 4 FAAB clear (9:00 AM PT). All 14 remainings reconcile to settled winning bids. Pending claims 0.",
   "startingBudget": 115,
-  "note": "Team Info remainings: Dongers 45 after $-3 FAAB trade-out to Substation (Sep 27 Pollard deal); Substation 82 after $+3 trade-in. Eddies still 91. Other Sep 27 claim/drops were $0/null. Sep 29 Fantasy check: five completed drops all $0/null; FAAB remainings unchanged vs Sep 28. Sep 30 Fantasy check: TTAB Bishop/Coleman + Doubtpfizer Burns drops all $0/null; FAAB remainings unchanged vs Sep 29.",
+  "note": "Week 4 FAAB clear (Wed Sep 30, 9:00 AM PT) — spend by team: Morningside $73 (Ollie Gordon $65, Raheim Sanders $4, A.J. Dillon $2, Roman Wilson $2); Substation $52 (Christian Izien $17, Keenan Allen $13, DeForest Buckner $13, Dante Trader $9); Little Ass Boys $26 (Jaylen Wright); Eagle Ridge Eddies $12 (Brian Robinson Jr. $6, Trenton Simpson $6); Hypersecretors $6 (Darren Waller); Newman $5 (Jake Hansen); Slumlords $4 (Marcus Harris); Mrs. Doubtpfizer $4 (Kain Medrano); Valley Old Goats $3 (Josh Metellus); Ultron $1 (Tyler Higbee). Dongers, Pocket, Saltese and TTAB spent $0. Earlier: Dongers $3 FAAB to Substation in the Sep 27 Pollard trade.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -11,12 +11,12 @@
       "owner": "Ryan Towner",
       "abbrev": "ITS",
       "starting": 115,
-      "remaining": 72,
-      "spentClaims": 58,
+      "remaining": 68,
+      "spentClaims": 62,
       "tradeOut": 0,
       "tradeIn": 15,
-      "spentKnown": 58,
-      "remainingKnown": 72
+      "spentKnown": 62,
+      "remainingKnown": 68
     },
     {
       "id": "newman",
@@ -24,12 +24,12 @@
       "owner": "Ryan McCallum",
       "abbrev": "NLS",
       "starting": 115,
-      "remaining": 110,
-      "spentClaims": 5,
+      "remaining": 105,
+      "spentClaims": 10,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 5,
-      "remainingKnown": 110
+      "spentKnown": 10,
+      "remainingKnown": 105
     },
     {
       "id": "saltese",
@@ -50,12 +50,12 @@
       "owner": "Jesse Nicholson",
       "abbrev": "LAB",
       "starting": 115,
-      "remaining": 93,
-      "spentClaims": 22,
+      "remaining": 67,
+      "spentClaims": 48,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 22,
-      "remainingKnown": 93
+      "spentKnown": 48,
+      "remainingKnown": 67
     },
     {
       "id": "doubtpfizer",
@@ -63,12 +63,12 @@
       "owner": "Kyle Weberg",
       "abbrev": "MDP",
       "starting": 115,
-      "remaining": 109,
-      "spentClaims": 6,
+      "remaining": 105,
+      "spentClaims": 10,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 6,
-      "remainingKnown": 109
+      "spentKnown": 10,
+      "remainingKnown": 105
     },
     {
       "id": "eddies",
@@ -76,12 +76,12 @@
       "owner": "Bill Jenson",
       "abbrev": "ERE",
       "starting": 115,
-      "remaining": 91,
-      "spentClaims": 24,
+      "remaining": 79,
+      "spentClaims": 36,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 24,
-      "remainingKnown": 91
+      "spentKnown": 36,
+      "remainingKnown": 79
     },
     {
       "id": "dongers",
@@ -115,12 +115,12 @@
       "owner": "Jacob Crisp",
       "abbrev": "HYP",
       "starting": 115,
-      "remaining": 78,
-      "spentClaims": 47,
+      "remaining": 72,
+      "spentClaims": 53,
       "tradeOut": 0,
       "tradeIn": 10,
-      "spentKnown": 47,
-      "remainingKnown": 78
+      "spentKnown": 53,
+      "remainingKnown": 72
     },
     {
       "id": "morningside",
@@ -128,12 +128,12 @@
       "owner": "Tim Brandle",
       "abbrev": "MMD",
       "starting": 115,
-      "remaining": 115,
-      "spentClaims": 0,
+      "remaining": 42,
+      "spentClaims": 73,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 0,
-      "remainingKnown": 115
+      "spentKnown": 73,
+      "remainingKnown": 42
     },
     {
       "id": "ultron",
@@ -141,12 +141,12 @@
       "owner": "Brian Aga",
       "abbrev": "ULT",
       "starting": 115,
-      "remaining": 2,
-      "spentClaims": 93,
+      "remaining": 1,
+      "spentClaims": 94,
       "tradeOut": 50,
       "tradeIn": 30,
-      "spentKnown": 143,
-      "remainingKnown": 2
+      "spentKnown": 144,
+      "remainingKnown": 1
     },
     {
       "id": "goats",
@@ -154,12 +154,12 @@
       "owner": "Mike Heff",
       "abbrev": "VOG",
       "starting": 115,
-      "remaining": 84,
-      "spentClaims": 16,
+      "remaining": 81,
+      "spentClaims": 19,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 16,
-      "remainingKnown": 84,
+      "spentKnown": 19,
+      "remainingKnown": 81,
       "note": " | Sep23 clear: scrape rem 84 vs formula 99"
     },
     {
@@ -181,15 +181,210 @@
       "owner": "Nathan Kelly",
       "abbrev": "SUB",
       "starting": 115,
-      "remaining": 82,
-      "spentClaims": 43,
+      "remaining": 30,
+      "spentClaims": 95,
       "tradeOut": 28,
       "tradeIn": 38,
-      "spentKnown": 71,
-      "remainingKnown": 82
+      "spentKnown": 123,
+      "remainingKnown": 30
     }
   ],
   "claims": [
+    {
+      "date": "2026-09-30",
+      "player": "Keenan Allen",
+      "amount": 13,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "pos": "WR",
+      "dropped": "Rashod Bateman",
+      "note": "Week 4 FAAB clear 9:00 AM PT; dropped Rashod Bateman",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Roman Wilson",
+      "amount": 2,
+      "team": "Morningside Muff Divers",
+      "kind": "claim",
+      "teamId": "morningside",
+      "pos": "WR",
+      "note": "Week 4 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "DeForest Buckner",
+      "amount": 13,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "pos": "DL",
+      "dropped": "Jalen Redmond",
+      "note": "Week 4 FAAB clear 9:00 AM PT; dropped Jalen Redmond",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "A.J. Dillon",
+      "amount": 2,
+      "team": "Morningside Muff Divers",
+      "kind": "claim",
+      "teamId": "morningside",
+      "pos": "RB",
+      "note": "Week 4 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Dante Trader",
+      "amount": 9,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "pos": "DB",
+      "dropped": "CJ Allen",
+      "note": "Week 4 FAAB clear 9:00 AM PT; dropped CJ Allen",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Tyler Higbee",
+      "amount": 1,
+      "team": "Ultron",
+      "kind": "claim",
+      "teamId": "ultron",
+      "pos": "TE",
+      "dropped": "Quentin Johnston",
+      "note": "Week 4 FAAB clear 9:00 AM PT; dropped Quentin Johnston",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Trenton Simpson",
+      "amount": 6,
+      "team": "Eagle Ridge Eddies",
+      "kind": "claim",
+      "teamId": "eddies",
+      "pos": "LB",
+      "dropped": "Marques Sigle",
+      "note": "Week 4 FAAB clear 9:00 AM PT; dropped Marques Sigle",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Josh Metellus",
+      "amount": 3,
+      "team": "Valley Old Goats",
+      "kind": "claim",
+      "teamId": "goats",
+      "pos": "DB",
+      "dropped": "Tyrel Dodson",
+      "note": "Week 4 FAAB clear 9:00 AM PT; dropped Tyrel Dodson",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Raheim Sanders",
+      "amount": 4,
+      "team": "Morningside Muff Divers",
+      "kind": "claim",
+      "teamId": "morningside",
+      "pos": "RB",
+      "note": "Week 4 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Darren Waller",
+      "amount": 6,
+      "team": "The Hypersecretors",
+      "kind": "claim",
+      "teamId": "hyper",
+      "pos": "TE",
+      "note": "Week 4 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Brian Robinson Jr.",
+      "amount": 6,
+      "team": "Eagle Ridge Eddies",
+      "kind": "claim",
+      "teamId": "eddies",
+      "pos": "RB",
+      "dropped": "Chimere Dike",
+      "note": "Week 4 FAAB clear 9:00 AM PT; dropped Chimere Dike",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Ollie Gordon",
+      "amount": 65,
+      "team": "Morningside Muff Divers",
+      "kind": "claim",
+      "teamId": "morningside",
+      "pos": "RB",
+      "note": "Week 4 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Christian Izien",
+      "amount": 17,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "pos": "DB",
+      "note": "Week 4 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Kain Medrano",
+      "amount": 4,
+      "team": "Mrs. Doubtpfizer",
+      "kind": "claim",
+      "teamId": "doubtpfizer",
+      "pos": "LB",
+      "note": "Week 4 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Jaylen Wright",
+      "amount": 26,
+      "team": "Little Ass Boys",
+      "kind": "claim",
+      "teamId": "lab",
+      "pos": "RB",
+      "dropped": "Kendrick Bourne",
+      "note": "Week 4 FAAB clear 9:00 AM PT; dropped Kendrick Bourne",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Marcus Harris",
+      "amount": 4,
+      "team": "Indian Trail Slumlords",
+      "kind": "claim",
+      "teamId": "slumlords",
+      "pos": "DB",
+      "note": "Week 4 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
+    {
+      "date": "2026-09-30",
+      "player": "Jake Hansen",
+      "amount": 5,
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "kind": "claim",
+      "teamId": "newman",
+      "pos": "LB",
+      "note": "Week 4 FAAB clear 9:00 AM PT",
+      "attribution": "fantrax-waivers-2026-09-30"
+    },
     {
       "date": "2026-09-25",
       "player": "Jeremy Chinn",

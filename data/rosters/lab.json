@@ -2,26 +2,27 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-09-27",
-  "faabLeft": 93,
-  "startingQB": "Jayden Daniels",
+  "asOf": "2026-09-30",
+  "faabLeft": 67,
+  "startingQB": "C.J. Stroud",
   "roster": {
     "QB": [
-      "Jayden Daniels",
-      "C.J. Stroud"
+      "C.J. Stroud",
+      "Jayden Daniels"
     ],
     "RB": [
-      "Kyren Williams",
       "Jeremiyah Love",
       "Jaylen Warren",
-      "Tyler Allgeier"
+      "Kyren Williams",
+      "Tyler Allgeier",
+      "Jaylen Wright"
     ],
     "WR": [
-      "Puka Nacua",
       "Mike Evans",
+      "Jakobi Meyers",
       "Caleb Douglas",
-      "Kendrick Bourne",
-      "Jakobi Meyers"
+      "Khalil Shakir",
+      "Puka Nacua"
     ],
     "TE": [
       "Isaiah Likely"
@@ -30,24 +31,34 @@
       "Roquan Smith",
       "Demario Davis",
       "Akeem Davis-Gaither",
-      "Quay Walker"
+      "Quay Walker",
+      "Drue Tranquill"
     ],
     "DL": [
       "Aidan Hutchinson"
     ],
     "DB": [
       "Kevin Byard",
+      "Ronnie Hickman",
       "Trevon Moehrig",
-      "Minkah Fitzpatrick",
-      "Ronnie Hickman"
+      "Minkah Fitzpatrick"
     ],
     "IR": [
-      "Khalil Shakir",
-      "Drue Tranquill"
+      "Jayden Daniels",
+      "Puka Nacua",
+      "Minkah Fitzpatrick"
     ]
   },
-  "notes": "Sep 17 AM: dropped Baker Mayfield. Sep 16 post-waiver: +Kendrick Bourne $11 (−Tre Tucker). FAAB $104. | Sep 20: +Tutu Atwell. | Sep 22: dropped Tutu Atwell (5:47 AM). | Sep 23 clear: +C.J. Stroud (QB) | Fantasy check Sep 28: +Jakobi Meyers (WR).",
-  "source": "Fantrax Sep 28 2026 ~6:15 AM PT Fantasy check — Sun Sep 27 Claim/Drops + Dongers↔Substation trade (CJ Allen+$3 FAAB for Tony Pollard). Pending trades/claims 0.",
+  "notes": "Sep 17 AM: dropped Baker Mayfield. Sep 16 post-waiver: +Kendrick Bourne $11 (−Tre Tucker). FAAB $104. | Sep 20: +Tutu Atwell. | Sep 22: dropped Tutu Atwell (5:47 AM). | Sep 23 clear: +C.J. Stroud (QB) | Fantasy check Sep 28: +Jakobi Meyers (WR). | Sep 30 W4 waivers/FA: +Jaylen Wright $26 (−Kendrick Bourne). FAAB $67.",
+  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
-  "updated": "2026-09-28"
+  "updated": "2026-09-30",
+  "injuryFlags": [
+    "Mike Evans — Ribs - Questionable (active slot)",
+    "Jaylen Wright — Foot - Questionable (reserve)",
+    "Caleb Douglas — Ankle - Questionable (reserve)",
+    "Jayden Daniels — Elbow - Questionable (IR slot)",
+    "Puka Nacua — Hip - Questionable (IR slot)",
+    "Minkah Fitzpatrick — Groin - Questionable (IR slot)"
+  ]
 }

@@ -2,8 +2,8 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-09-29",
-  "faabLeft": 72,
+  "asOf": "2026-09-30",
+  "faabLeft": 68,
   "startingQB": "Drake Maye",
   "roster": {
     "QB": [
@@ -11,43 +11,48 @@
     ],
     "RB": [
       "Jahmyr Gibbs",
-      "Quinshon Judkins"
+      "James Cook",
+      "Quinshon Judkins",
+      "Isiah Pacheco"
     ],
     "WR": [
-      "Drake London",
-      "George Pickens",
+      "Kalif Raymond",
       "Wan'Dale Robinson",
-      "Keenan Allen",
-      "Michael Pittman",
-      "Kalif Raymond"
+      "Chris Godwin",
+      "Michael Pittman"
     ],
     "TE": [
       "Harold Fannin",
       "Dalton Schultz"
     ],
     "LB": [
-      "Jack Campbell",
       "Anthony Hill",
-      "Cody Simon",
-      "Tyrel Dodson"
+      "Alex Anzalone"
     ],
     "DL": [
+      "Gregory Rousseau",
       "Maxx Crosby",
       "Jeffery Simmons",
       "Lukas Van Ness"
     ],
     "DB": [
       "Budda Baker",
+      "Talanoa Hufanga",
+      "Marcus Harris",
       "Devon Witherspoon",
-      "Talanoa Hufanga"
+      "Chamarri Conner"
     ],
     "IR": [
       "Isiah Pacheco",
       "Chamarri Conner"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98. | Sep 20: +Romeo Doubs \u2212Denzel Boston (Boston was already absent from HQ roster). | Sep 23 clear: +Chris Moore (WR); +Isaiah Williams (WR); +Lukas Van Ness (DL); -Jeremy Chinn (DB); -Romeo Doubs (WR); -Jakobi Meyers (IR) | Fantasy check Sep 28: +Jaylin Lane (WR); \u2212Chris Moore. Fantasy check Sep 29: \u2212Isaiah Williams, \u2212Jaylin Lane.",
-  "source": "Fantasy check Sep 29 2026 ~6:11 AM PT \u2014 dropped Isaiah Williams, Jaylin Lane.",
+  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98. | Sep 20: +Romeo Doubs \u2212Denzel Boston (Boston was already absent from HQ roster). | Sep 23 clear: +Chris Moore (WR); +Isaiah Williams (WR); +Lukas Van Ness (DL); -Jeremy Chinn (DB); -Romeo Doubs (WR); -Jakobi Meyers (IR) | Fantasy check Sep 28: +Jaylin Lane (WR); \u2212Chris Moore. Fantasy check Sep 29: \u2212Isaiah Williams, \u2212Jaylin Lane. | Sep 30 W4 waivers/FA: +Marcus Harris $4. FAAB $68.",
+  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "59frnthimsb3ulv4",
-  "updated": "2026-09-29"
+  "updated": "2026-09-30",
+  "injuryFlags": [
+    "Isiah Pacheco \u2014 Injured Reserve List - IR - Back (IR slot)",
+    "Chamarri Conner \u2014 Knee - Questionable (IR slot)"
+  ]
 }

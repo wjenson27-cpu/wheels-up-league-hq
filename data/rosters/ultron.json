@@ -2,58 +2,61 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-09-27",
-  "faabLeft": 2,
-  "startingQB": "Caleb Williams",
+  "asOf": "2026-09-30",
+  "faabLeft": 1,
+  "startingQB": "Bryce Young",
   "roster": {
     "QB": [
-      "Caleb Williams",
       "Bryce Young",
-      "Sam Darnold"
+      "Sam Darnold",
+      "Caleb Williams"
     ],
     "RB": [
-      "James Cook",
-      "Ray Davis",
-      "Emmett Johnson",
+      "Saquon Barkley",
+      "Tank Bigsby",
       "Kyle Monangai"
     ],
     "WR": [
       "Ja'Marr Chase",
-      "Chris Godwin",
-      "Quentin Johnston",
-      "Michael Wilson",
-      "Darnell Mooney"
+      "Terry McLaurin",
+      "George Pickens",
+      "Michael Wilson"
     ],
     "TE": [
       "Colston Loveland",
+      "Tyler Higbee",
       "Terrance Ferguson"
     ],
     "LB": [
-      "Robert Spillane",
-      "Alex Anzalone",
-      "Frankie Luvu",
+      "Jack Campbell",
       "Patrick Queen",
-      "Dallas Turner"
+      "Robert Spillane",
+      "Frankie Luvu"
     ],
     "DL": [
-      "Myles Garrett",
-      "Jaishawn Barham"
+      "Dallas Turner",
+      "Jaishawn Barham",
+      "Myles Garrett"
     ],
     "DB": [
-      "Dillon Thieneman",
-      "Kevin Winston",
       "Amani Hooker",
+      "Dillon Thieneman",
       "Michael Taaffe"
     ],
     "IR": [
-      "Kyle Monangai"
+      "Caleb Williams",
+      "Terrance Ferguson",
+      "Myles Garrett"
     ]
   },
-  "notes": "Sep 20 AM: Sat Sep 19 drop Jonah Coleman then +Coleman/\u2212Leo Chenal (null). Cleared stale Teddye Buchanan (now on Pocket). FAAB $111. | Sep 23 clear: +Terrance Ferguson (TE); +Dallas Turner (LB); +Bryce Young (QB) | Sep 24: +Michael Taaffe (\u2212A.J. Haulcy). Cleared stale J.K. Dobbins (dropped Sep 22; claimed by Hyper Sep 24). | Sep 26: +Sam Darnold/\u2212Jonah Coleman ($0/null).",
+  "notes": "Sep 20 AM: Sat Sep 19 drop Jonah Coleman then +Coleman/\u2212Leo Chenal (null). Cleared stale Teddye Buchanan (now on Pocket). FAAB $111. | Sep 23 clear: +Terrance Ferguson (TE); +Dallas Turner (LB); +Bryce Young (QB) | Sep 24: +Michael Taaffe (\u2212A.J. Haulcy). Cleared stale J.K. Dobbins (dropped Sep 22; claimed by Hyper Sep 24). | Sep 26: +Sam Darnold/\u2212Jonah Coleman ($0/null). | Sep 30 W4 waivers/FA: +Tyler Higbee $1 (\u2212Quentin Johnston). FAAB $1.",
   "injuryFlags": [
-    "Kyle Monangai"
+    "Caleb Williams \u2014 Hamstring - Doubtful that will play next game (IR slot)",
+    "Terrance Ferguson \u2014 Ankle - Doubtful that will play next game (IR slot)",
+    "Frankie Luvu \u2014 Groin - Questionable (reserve)",
+    "Myles Garrett \u2014 Injured Reserve List - IR - Knee (IR slot)"
   ],
-  "source": "Fantrax Sep 27 2026 ~6:07 AM PT Fantasy check \u2014 Sat Sep 26 Claim/Drop: Ultron +Sam Darnold/\u2212Jonah Coleman ($0/null). Pending trades/claims 0. Blocks unchanged. Eddies vs Dongers Week 3 live.",
+  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
-  "updated": "2026-09-27"
+  "updated": "2026-09-30"
 }

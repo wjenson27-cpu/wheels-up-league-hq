@@ -1,7 +1,347 @@
 {
   "updated": "2026-09-30",
-  "source": "Fantrax Sep 30 2026 ~6:08 AM PT Fantasy check — Tue evening/afternoon drops (TTAB −Bishop/−Coleman; Mrs. Doubtpfizer −Burns). Skipped duplicate Slumlords −Williams already live. Pending trades 0; league pending claims 4 (count only).",
+  "source": "Fantrax Sep 30 2026 ~9:15–9:28 AM PT post-waiver sync — Week 4 FAAB run (processed 9:00 AM PT) settled; also Wed 7:22–7:28 AM drops and 9:01–9:16 AM free-agent moves. Pending trades 0; pending claims 0.",
   "items": [
+    {
+      "date": "2026-09-30",
+      "team": "Drummond Dongers",
+      "type": "ADD/DROP",
+      "summary": "Added Jartavius Martin (DB); dropped Jeremy Reaves (DB) ($0/null bid)",
+      "time": "9:16 AM PDT",
+      "player": "Jartavius Martin",
+      "playerMeta": "DB-WAS",
+      "dropped": "Jeremy Reaves",
+      "droppedMeta": "DB-WAS",
+      "bid": null
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Drummond Dongers",
+      "type": "ADD/DROP",
+      "summary": "Added Jeremy Reaves (DB); dropped Jalen Pitre (DB) ($0/null bid)",
+      "time": "9:14 AM PDT",
+      "player": "Jeremy Reaves",
+      "playerMeta": "DB-WAS",
+      "dropped": "Jalen Pitre",
+      "droppedMeta": "DB-HOU",
+      "bid": null
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD",
+      "summary": "Added Andre Cisco (DB) ($0/null bid)",
+      "time": "9:04 AM PDT",
+      "player": "Andre Cisco",
+      "playerMeta": "DB-NYJ",
+      "bid": null
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD",
+      "summary": "Added Malaki Starks (DB) ($0/null bid)",
+      "time": "9:02 AM PDT",
+      "player": "Malaki Starks",
+      "playerMeta": "DB-BAL",
+      "bid": null
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD",
+      "summary": "Added Bradley Chubb (DL) ($0/null bid)",
+      "time": "9:02 AM PDT",
+      "player": "Bradley Chubb",
+      "playerMeta": "DL,LB,ID-BUF",
+      "bid": null
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD",
+      "summary": "Added Mack Hollins (WR) ($0/null bid)",
+      "time": "9:01 AM PDT",
+      "player": "Mack Hollins",
+      "playerMeta": "WR-NE",
+      "bid": null
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Substation",
+      "type": "ADD/DROP",
+      "summary": "Won Keenan Allen (WR) $13 FAAB; dropped Rashod Bateman (WR)",
+      "time": "9:00 AM PDT",
+      "player": "Keenan Allen",
+      "playerMeta": "WR-IND",
+      "dropped": "Rashod Bateman",
+      "droppedMeta": "WR-BAL",
+      "bid": 13
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Morningside Muff Divers",
+      "type": "ADD",
+      "summary": "Won Roman Wilson (WR) $2 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Roman Wilson",
+      "playerMeta": "WR-PIT",
+      "bid": 2
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Substation",
+      "type": "ADD/DROP",
+      "summary": "Won DeForest Buckner (DL) $13 FAAB; dropped Jalen Redmond (DL)",
+      "time": "9:00 AM PDT",
+      "player": "DeForest Buckner",
+      "playerMeta": "DL-IND",
+      "dropped": "Jalen Redmond",
+      "droppedMeta": "DL-MIN",
+      "bid": 13
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Mrs. Doubtpfizer",
+      "type": "ADD/DROP",
+      "summary": "Won Reed Blankenship (DB) $0 claim; dropped Jalen Ramsey (DB)",
+      "time": "9:00 AM PDT",
+      "player": "Reed Blankenship",
+      "playerMeta": "DB-HOU",
+      "dropped": "Jalen Ramsey",
+      "droppedMeta": "DB-PIT",
+      "bid": 0
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Pocket Agents",
+      "type": "ADD/DROP",
+      "summary": "Won Chris Johnson (DB) $0 claim; dropped Teddye Buchanan (LB)",
+      "time": "9:00 AM PDT",
+      "player": "Chris Johnson",
+      "playerMeta": "DB (R)-MIA",
+      "dropped": "Teddye Buchanan",
+      "droppedMeta": "LB-BAL",
+      "bid": 0
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Morningside Muff Divers",
+      "type": "ADD",
+      "summary": "Won A.J. Dillon (RB) $2 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "A.J. Dillon",
+      "playerMeta": "RB-CAR",
+      "bid": 2
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Substation",
+      "type": "ADD/DROP",
+      "summary": "Won Dante Trader (DB) $9 FAAB; dropped CJ Allen (LB)",
+      "time": "9:00 AM PDT",
+      "player": "Dante Trader",
+      "playerMeta": "DB-MIA",
+      "dropped": "CJ Allen",
+      "droppedMeta": "LB-IND",
+      "bid": 9
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Won Tyler Higbee (TE) $1 FAAB; dropped Quentin Johnston (WR)",
+      "time": "9:00 AM PDT",
+      "player": "Tyler Higbee",
+      "playerMeta": "TE-LAR",
+      "dropped": "Quentin Johnston",
+      "droppedMeta": "WR-LAC",
+      "bid": 1
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Eagle Ridge Eddies",
+      "type": "ADD/DROP",
+      "summary": "Won Trenton Simpson (LB) $6 FAAB; dropped Marques Sigle (DB)",
+      "time": "9:00 AM PDT",
+      "player": "Trenton Simpson",
+      "playerMeta": "LB-BAL",
+      "dropped": "Marques Sigle",
+      "droppedMeta": "DB-SF",
+      "bid": 6
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Pocket Agents",
+      "type": "ADD/DROP",
+      "summary": "Won Jonah Coleman (RB) $0 claim; dropped Ty Okada (DB)",
+      "time": "9:00 AM PDT",
+      "player": "Jonah Coleman",
+      "playerMeta": "RB (R)-DEN",
+      "dropped": "Ty Okada",
+      "droppedMeta": "DB-SEA",
+      "bid": 0
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Valley Old Goats",
+      "type": "ADD/DROP",
+      "summary": "Won Josh Metellus (DB) $3 FAAB; dropped Tyrel Dodson (LB)",
+      "time": "9:00 AM PDT",
+      "player": "Josh Metellus",
+      "playerMeta": "DB-MIN",
+      "dropped": "Tyrel Dodson",
+      "droppedMeta": "LB-CAR",
+      "bid": 3
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Morningside Muff Divers",
+      "type": "ADD",
+      "summary": "Won Raheim Sanders (RB) $4 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Raheim Sanders",
+      "playerMeta": "RB-CLE",
+      "bid": 4
+    },
+    {
+      "date": "2026-09-30",
+      "team": "The Hypersecretors",
+      "type": "ADD",
+      "summary": "Won Darren Waller (TE) $6 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Darren Waller",
+      "playerMeta": "TE-CAR",
+      "bid": 6
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Eagle Ridge Eddies",
+      "type": "ADD/DROP",
+      "summary": "Won Brian Robinson Jr. (RB) $6 FAAB; dropped Chimere Dike (WR)",
+      "time": "9:00 AM PDT",
+      "player": "Brian Robinson Jr.",
+      "playerMeta": "RB-ATL",
+      "dropped": "Chimere Dike",
+      "droppedMeta": "WR-TEN",
+      "bid": 6
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Morningside Muff Divers",
+      "type": "ADD",
+      "summary": "Won Ollie Gordon (RB) $65 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Ollie Gordon",
+      "playerMeta": "RB-MIA",
+      "bid": 65
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Substation",
+      "type": "ADD",
+      "summary": "Won Christian Izien (DB) $17 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Christian Izien",
+      "playerMeta": "DB-DET",
+      "bid": 17
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Mrs. Doubtpfizer",
+      "type": "ADD",
+      "summary": "Won Kain Medrano (LB) $4 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Kain Medrano",
+      "playerMeta": "LB-WAS",
+      "bid": 4
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Little Ass Boys",
+      "type": "ADD/DROP",
+      "summary": "Won Jaylen Wright (RB) $26 FAAB; dropped Kendrick Bourne (WR)",
+      "time": "9:00 AM PDT",
+      "player": "Jaylen Wright",
+      "playerMeta": "RB-MIA",
+      "dropped": "Kendrick Bourne",
+      "droppedMeta": "WR-ARI",
+      "bid": 26
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Drummond Dongers",
+      "type": "ADD/DROP",
+      "summary": "Won Donovan Ezeiruaku (DL) $0 claim; dropped Laiatu Latu (DL)",
+      "time": "9:00 AM PDT",
+      "player": "Donovan Ezeiruaku",
+      "playerMeta": "DL,LB-DAL",
+      "dropped": "Laiatu Latu",
+      "droppedMeta": "DL-IND",
+      "bid": 0
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Indian Trail Slumlords",
+      "type": "ADD",
+      "summary": "Won Marcus Harris (DB) $4 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Marcus Harris",
+      "playerMeta": "DB-TEN",
+      "bid": 4
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Saltese Slamm",
+      "type": "ADD/DROP",
+      "summary": "Won Nick Herbig (DL) $0 claim; dropped Kaleb Elarms-Orr (LB)",
+      "time": "9:00 AM PDT",
+      "player": "Nick Herbig",
+      "playerMeta": "DL,LB,ID-PIT",
+      "dropped": "Kaleb Elarms-Orr",
+      "droppedMeta": "LB-BUF",
+      "bid": 0
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "type": "ADD",
+      "summary": "Won Jake Hansen (LB) $5 FAAB",
+      "time": "9:00 AM PDT",
+      "player": "Jake Hansen",
+      "playerMeta": "LB-HOU",
+      "bid": 5
+    },
+    {
+      "date": "2026-09-30",
+      "team": "The Hypersecretors",
+      "type": "DROP",
+      "summary": "Dropped Grant Delpit (DB) ($0/null bid)",
+      "time": "7:28 AM PDT",
+      "player": "Grant Delpit",
+      "playerMeta": "DB-CLE",
+      "bid": null
+    },
+    {
+      "date": "2026-09-30",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Romeo Doubs (WR) ($0/null bid)",
+      "time": "7:28 AM PDT",
+      "player": "Romeo Doubs",
+      "playerMeta": "WR-NE",
+      "bid": null
+    },
+    {
+      "date": "2026-09-30",
+      "team": "The Hypersecretors",
+      "type": "DROP",
+      "summary": "Dropped MarShawn Lloyd (RB) ($0/null bid)",
+      "time": "7:22 AM PDT",
+      "player": "MarShawn Lloyd",
+      "playerMeta": "RB-GB",
+      "bid": null
+    },
     {
       "date": "2026-09-29",
       "type": "DROP",
@@ -1901,6 +2241,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Week-4 early drops after Week 3 finals. Settled claims/drops only — no pending-bid language. Boston–Montgomery trade already in trades.json from 6:06 AM trade alert.",
+  "note": "Week 4 FAAB run Wed Sep 30 9:00 AM PT: winning claims recorded as data (bid + drop). Settled claims/drops only.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

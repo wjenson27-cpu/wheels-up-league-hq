@@ -3,7 +3,7 @@
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
   "asOf": "2026-09-30",
-  "faabLeft": 109,
+  "faabLeft": 105,
   "startingQB": "Dak Prescott",
   "roster": {
     "QB": [
@@ -11,15 +11,18 @@
     ],
     "RB": [
       "Christian McCaffrey",
+      "Braelon Allen",
       "Chuba Hubbard",
       "D'Andre Swift",
-      "Braelon Allen",
+      "Kaelon Black",
       "Blake Corum"
     ],
     "WR": [
-      "Nico Collins",
       "Rashee Rice",
-      "Makai Lemon",
+      "Josh Downs",
+      "Rome Odunze",
+      "Dontayvion Wicks",
+      "Nico Collins",
       "Jayden Reed"
     ],
     "TE": [
@@ -27,25 +30,32 @@
     ],
     "LB": [
       "Nakobe Dean",
-      "DeMarvion Overshown",
+      "Kain Medrano",
       "Alex Singleton",
-      "Sonny Styles"
+      "Sonny Styles",
+      "DeMarvion Overshown"
     ],
     "DL": [
       "Jonathan Allen"
     ],
     "DB": [
+      "Reed Blankenship",
       "Kamari Lassiter",
-      "Jalen Ramsey",
       "Chauncey Gardner-Johnson"
     ],
     "IR": [
-      "Josh Downs",
-      "Rome Odunze"
+      "Nico Collins",
+      "Jayden Reed",
+      "DeMarvion Overshown"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Jalen Ramsey $2 (−Reed Blankenship); +Chauncey Gardner-Johnson $2. FAAB $109. | Sep 20: +Pat Freiermuth −Emari Demercado (Demercado was already absent from HQ roster). | Sep 23 clear: +Jonathan Allen (DL); -Pat Freiermuth (TE); -Kaelon Black (RB) | Cleared stale Rachaad White IR (now on Saltese). | Fantasy check Sep 30: −Brian Burns (Sep 29 1:32 PM).",
-  "source": "Fantasy check Sep 30 2026 ~6:08 AM PT — dropped Brian Burns.",
+  "notes": "Sep 16 post-waiver: +Jalen Ramsey $2 (−Reed Blankenship); +Chauncey Gardner-Johnson $2. FAAB $109. | Sep 20: +Pat Freiermuth −Emari Demercado (Demercado was already absent from HQ roster). | Sep 23 clear: +Jonathan Allen (DL); -Pat Freiermuth (TE); -Kaelon Black (RB) | Cleared stale Rachaad White IR (now on Saltese). | Fantasy check Sep 30: −Brian Burns (Sep 29 1:32 PM). | Sep 30 W4 waivers/FA: +Kain Medrano $4; +Reed Blankenship (−Jalen Ramsey). FAAB $105.",
+  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "injuryFlags": [
+    "Nico Collins — Hamstring - Questionable (IR slot)",
+    "Jayden Reed — Neck - Out Indefinitely (IR slot)",
+    "DeMarvion Overshown — Hamstring - Questionable (IR slot)"
+  ]
 }

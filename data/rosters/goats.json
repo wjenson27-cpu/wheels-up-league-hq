@@ -2,8 +2,8 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-09-26",
-  "faabLeft": 84,
+  "asOf": "2026-09-30",
+  "faabLeft": 81,
   "startingQB": "Patrick Mahomes",
   "roster": {
     "QB": [
@@ -19,21 +19,20 @@
       "Josh Jacobs"
     ],
     "WR": [
+      "Devaughn Vele",
       "DK Metcalf",
-      "Marvin Harrison",
-      "Devaughn Vele"
+      "Marvin Harrison"
     ],
     "TE": [
-      "Hunter Henry",
-      "George Kittle"
+      "George Kittle",
+      "Hunter Henry"
     ],
     "LB": [
-      "Devin Lloyd",
+      "Drake Thomas",
       "Devin Bush",
       "Arvell Reese",
       "Quincy Williams",
-      "Drake Thomas",
-      "Tyrel Dodson"
+      "Devin Lloyd"
     ],
     "DL": [
       "T.J. Watt",
@@ -41,20 +40,21 @@
     ],
     "DB": [
       "Camryn Bynum",
-      "Kamren Curl"
+      "Kamren Curl",
+      "Josh Metellus"
     ],
     "IR": [
       "Alvin Kamara",
-      "Josh Jacobs"
+      "Josh Jacobs",
+      "Devin Lloyd"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Devaughn Vele $16 (−Marvin Mims). FAAB $84. | DATA CONFLICT: Vele $16 −Mims is Scrape A; Scrape B had Valley +Ezeiruaku $16. FAAB $84 either way. | Sep 25: +Tyrel Dodson.",
+  "notes": "Sep 16 post-waiver: +Devaughn Vele $16 (−Marvin Mims). FAAB $84. | DATA CONFLICT: Vele $16 −Mims is Scrape A; Scrape B had Valley +Ezeiruaku $16. FAAB $84 either way. | Sep 25: +Tyrel Dodson. | Sep 30 W4 waivers/FA: +Josh Metellus $3 (−Tyrel Dodson). FAAB $81.",
   "injuryFlags": [
-    "Alvin Kamara",
-    "Josh Jacobs",
-    "Kamren Curl"
+    "Josh Jacobs — Personal - Reserve Commissioner Exempt List (IR slot)",
+    "Devin Lloyd — Calf - Questionable (IR slot)"
   ],
-  "source": "Fantrax Sep 26 2026 ~6:07 AM PT Fantasy check — Fri Sep 25 Claim/Drops: Hyper +Jeremy Chinn $3/−Baker Mayfield; Valley +Tyrel Dodson; Pocket −Marvin Mims, +Brandon Jones/−SirVocea Dennis (Dennis add/drop churn); TTAB −Kendre Miller, +Cole Bishop, +Romeo Doubs/−Jalen Thompson; Newman −Demond Claiborne; Saltese +Chuck Clark/−Jartavius Martin. Pending trades/claims 0. Blocks unchanged.",
+  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "81bbo25imsb3ulv5",
-  "updated": "2026-09-26"
+  "updated": "2026-09-30"
 }

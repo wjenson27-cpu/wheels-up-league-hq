@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-09-27",
+  "asOf": "2026-09-30",
   "faabLeft": 45,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -12,7 +12,6 @@
     ],
     "RB": [
       "Bijan Robinson",
-      "David Bailey",
       "Tony Pollard"
     ],
     "WR": [
@@ -28,23 +27,29 @@
       "T.J. Hockenson"
     ],
     "LB": [
-      "T.J. Edwards",
-      "Christian Elliss"
+      "Christian Elliss",
+      "T.J. Edwards"
     ],
     "DL": [
-      "Laiatu Latu"
+      "Donovan Ezeiruaku",
+      "David Bailey"
     ],
     "DB": [
-      "Nick Cross",
       "Kyle Hamilton",
       "Xavier McKinney",
-      "Jalen Pitre",
-      "Daxton Hill"
+      "Daxton Hill",
+      "Jartavius Martin",
+      "Nick Cross"
     ],
-    "IR": []
+    "IR": [
+      "Nick Cross"
+    ]
   },
-  "notes": "Sep 17 AM: +T.J. Hockenson (−Kayshon Boutte). Sep 16 post-waiver: +Donovan Ezeiruaku $14. FAAB $93. | Sep 20: −Aaron Donald (also +/−Michael Mayer churn, net Mayer zero). | Sep 23 clear: +David Bailey (RB); +Daxton Hill (DB); +Christian Elliss (LB); -Nick Scott (DB); -Chris Rodriguez Jr. (RB) | Fantasy check Sep 28: −CJ Allen (trade); −Donovan Ezeiruaku; +Tony Pollard (RB). FAAB $45.",
-  "source": "Fantrax Sep 28 2026 ~6:15 AM PT Fantasy check — Sun Sep 27 Claim/Drops + Dongers↔Substation trade (CJ Allen+$3 FAAB for Tony Pollard). Pending trades/claims 0.",
+  "notes": "Sep 17 AM: +T.J. Hockenson (−Kayshon Boutte). Sep 16 post-waiver: +Donovan Ezeiruaku $14. FAAB $93. | Sep 20: −Aaron Donald (also +/−Michael Mayer churn, net Mayer zero). | Sep 23 clear: +David Bailey (RB); +Daxton Hill (DB); +Christian Elliss (LB); -Nick Scott (DB); -Chris Rodriguez Jr. (RB) | Fantasy check Sep 28: −CJ Allen (trade); −Donovan Ezeiruaku; +Tony Pollard (RB). FAAB $45. | Sep 30 W4 waivers/FA: +Donovan Ezeiruaku (−Laiatu Latu); +Jeremy Reaves (−Jalen Pitre); +Jartavius Martin (−Jeremy Reaves). FAAB $45.",
+  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
-  "updated": "2026-09-28"
+  "updated": "2026-09-30",
+  "injuryFlags": [
+    "Nick Cross — Illness - Out Indefinitely (IR slot)"
+  ]
 }

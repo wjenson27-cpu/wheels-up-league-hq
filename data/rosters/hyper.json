@@ -2,9 +2,9 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-09-26",
-  "faabLeft": 78,
-  "startingQB": "Justin Herbert",
+  "asOf": "2026-09-30",
+  "faabLeft": 72,
+  "startingQB": "Bo Nix",
   "roster": {
     "QB": [
       "Bo Nix",
@@ -12,7 +12,6 @@
     ],
     "RB": [
       "Kenneth Walker III",
-      "MarShawn Lloyd",
       "J.K. Dobbins"
     ],
     "WR": [
@@ -23,14 +22,15 @@
       "Travis Hunter"
     ],
     "TE": [
+      "Sam LaPorta",
       "Kenyon Sadiq",
-      "Sam LaPorta"
+      "Darren Waller"
     ],
     "LB": [
       "Nick Bolton",
       "Blake Cashman",
-      "Jacob Rodriguez",
       "Jack Gibbens",
+      "Jacob Rodriguez",
       "Payton Wilson"
     ],
     "DL": [
@@ -38,19 +38,18 @@
       "Nick Bosa"
     ],
     "DB": [
-      "Travis Hunter",
-      "Tykee Smith",
-      "Grant Delpit",
-      "Jeremy Chinn"
+      "Jeremy Chinn",
+      "Tykee Smith"
     ],
     "IR": [
-      "Jaylin Noel",
       "Nick Bosa"
     ]
   },
-  "notes": "Sep 19 AM: −Dallas Turner. Sep 17: +Grant Delpit (−Brandon Jones). Sep 16: +Jaxson Dart $16 (−Keaton Mitchell). FAAB $92. | Sep 23 clear: +Sam Darnold (QB); +Michael Taaffe (DB); -Jaxson Dart (QB) | Sep 23 FA: +Bo Nix (QB). | Sep 24: +J.K. Dobbins $2 (−Michael Taaffe); +Baker Mayfield; −Sam Darnold. FAAB $81. | Sep 25: +Jeremy Chinn $3 (−Baker Mayfield). FAAB $78.",
-  "injuryFlags": [],
-  "source": "Fantrax Sep 26 2026 ~6:07 AM PT Fantasy check — Fri Sep 25 Claim/Drops: Hyper +Jeremy Chinn $3/−Baker Mayfield; Valley +Tyrel Dodson; Pocket −Marvin Mims, +Brandon Jones/−SirVocea Dennis (Dennis add/drop churn); TTAB −Kendre Miller, +Cole Bishop, +Romeo Doubs/−Jalen Thompson; Newman −Demond Claiborne; Saltese +Chuck Clark/−Jartavius Martin. Pending trades/claims 0. Blocks unchanged.",
+  "notes": "Sep 19 AM: −Dallas Turner. Sep 17: +Grant Delpit (−Brandon Jones). Sep 16: +Jaxson Dart $16 (−Keaton Mitchell). FAAB $92. | Sep 23 clear: +Sam Darnold (QB); +Michael Taaffe (DB); -Jaxson Dart (QB) | Sep 23 FA: +Bo Nix (QB). | Sep 24: +J.K. Dobbins $2 (−Michael Taaffe); +Baker Mayfield; −Sam Darnold. FAAB $81. | Sep 25: +Jeremy Chinn $3 (−Baker Mayfield). FAAB $78. | Sep 30 W4 waivers/FA: −MarShawn Lloyd; −Grant Delpit; +Darren Waller $6. FAAB $72.",
+  "injuryFlags": [
+    "Nick Bosa — Calf - Out Indefinitely (IR slot)"
+  ],
+  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
-  "updated": "2026-09-26"
+  "updated": "2026-09-30"
 }

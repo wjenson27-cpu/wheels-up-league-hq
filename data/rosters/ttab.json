@@ -4,47 +4,58 @@
   "owner": "Chase Anderson",
   "asOf": "2026-09-30",
   "faabLeft": 42,
-  "startingQB": "Josh Allen",
+  "startingQB": null,
   "roster": {
     "QB": [
       "Josh Allen"
     ],
     "RB": [
-      "Emanuel Wilson",
-      "Ashton Jeanty",
       "Cameron Skattebo",
+      "Ashton Jeanty",
       "Javonte Williams",
-      "Tony Pollard"
+      "Emanuel Wilson"
     ],
     "WR": [
       "Christian Watson",
-      "Mike Washington",
       "Jameson Williams",
-      "Tre Tucker",
-      "Romeo Doubs"
+      "Mack Hollins",
+      "Tre Tucker"
     ],
     "TE": [
-      "Jake Ferguson"
+      "Jake Ferguson",
+      "Dallas Goedert"
     ],
     "LB": [
-      "Dorian Williams",
-      "Divine Deablo",
       "Zack Baun",
-      "Tremaine Edmunds",
-      "Dee Winters",
-      "Del'Shawn Phillips"
+      "Divine Deablo",
+      "Dorian Williams",
+      "Del'Shawn Phillips",
+      "Dee Winters"
     ],
-    "DL": [],
+    "DL": [
+      "Bradley Chubb"
+    ],
     "DB": [
-      "Ji'Ayir Brown",
-      "Andrew Wingard",
       "Caleb Downs",
+      "Andrew Wingard",
+      "Ji'Ayir Brown",
+      "Andre Cisco",
+      "Malaki Starks",
       "Treydan Stukes"
     ],
-    "IR": []
+    "IR": [
+      "Josh Allen",
+      "Dallas Goedert",
+      "Treydan Stukes"
+    ]
   },
-  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (−Nailor); +Kwity Paye $16 (−Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/−Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR) | Sep 23 trade: −Etienne −Winfield +Dorian +Wingard (from Eddies) | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/−Seth McGowan; +Ji'Ayir Brown/−Cole Bishop. | Sep 25: −Kendre Miller; +Cole Bishop; +Romeo Doubs/−Jalen Thompson. | Fantasy check Sep 28: +Abdul Carter (DL); −Kwity Paye. Fantasy check Sep 29: −Abdul Carter (Sep 28 10:07 AM). | Fantasy check Sep 30: −Cole Bishop (Sep 29 8:19 PM); −Keon Coleman (Sep 29 8:13 PM).",
-  "source": "Fantasy check Sep 30 2026 ~6:08 AM PT — dropped Cole Bishop; dropped Keon Coleman.",
+  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (−Nailor); +Kwity Paye $16 (−Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/−Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR) | Sep 23 trade: −Etienne −Winfield +Dorian +Wingard (from Eddies) | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/−Seth McGowan; +Ji'Ayir Brown/−Cole Bishop. | Sep 25: −Kendre Miller; +Cole Bishop; +Romeo Doubs/−Jalen Thompson. | Fantasy check Sep 28: +Abdul Carter (DL); −Kwity Paye. Fantasy check Sep 29: −Abdul Carter (Sep 28 10:07 AM). | Fantasy check Sep 30: −Cole Bishop (Sep 29 8:19 PM); −Keon Coleman (Sep 29 8:13 PM). | Sep 30 W4 waivers/FA: −Romeo Doubs; +Mack Hollins; +Bradley Chubb; +Malaki Starks; +Andre Cisco. FAAB $42.",
+  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
-  "updated": "2026-09-30"
+  "updated": "2026-09-30",
+  "injuryFlags": [
+    "Josh Allen — Knee - Questionable (IR slot)",
+    "Dallas Goedert — Knee - mcl - Doubtful that will play next game (IR slot)",
+    "Treydan Stukes — Concussion - Questionable (IR slot)"
+  ]
 }

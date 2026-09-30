@@ -2,33 +2,38 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-09-29",
-  "faabLeft": 115,
+  "asOf": "2026-09-30",
+  "faabLeft": 42,
   "startingQB": "Lamar Jackson",
   "roster": {
     "QB": [
       "Lamar Jackson"
     ],
     "RB": [
-      "Jordan Mason",
-      "Jadarian Price"
+      "Ollie Gordon",
+      "Jadarian Price",
+      "A.J. Dillon",
+      "Raheim Sanders",
+      "Jordan Mason"
     ],
     "WR": [
-      "Justin Jefferson",
-      "Deebo Samuel",
+      "Xavier Worthy",
       "Jordan Addison",
+      "Deebo Samuel",
       "Malachi Fields",
-      "Xavier Worthy"
+      "Roman Wilson",
+      "Justin Jefferson"
     ],
     "TE": [
       "Travis Kelce"
     ],
     "LB": [
       "Bobby Okereke",
+      "Derrick Barnes",
       "Daiyan Henley",
       "Demetrius Knight",
+      "Cedric Gray",
       "Ventrell Miller",
-      "Derrick Barnes",
       "Pete Werner"
     ],
     "DL": [
@@ -39,11 +44,18 @@
       "Derwin James"
     ],
     "IR": [
-      "Cedric Gray"
+      "Justin Jefferson",
+      "Jordan Mason",
+      "Pete Werner"
     ]
   },
-  "notes": "Sep 16 post-waiver: no claims. FAAB $115. \u2212Josh Uche (Sep 15). | Fantasy check Sep 28: \u2212Malik Davis (['IR']); \u2212De'Zhaun Stribling (['IR']). Fantasy check Sep 29: \u2212Devon Achane (Sep 28 9:45 AM).",
-  "source": "Fantasy check Sep 29 2026 ~6:11 AM PT \u2014 dropped Devon Achane, De'Von Achane, DeVon Achane.",
+  "notes": "Sep 16 post-waiver: no claims. FAAB $115. \u2212Josh Uche (Sep 15). | Fantasy check Sep 28: \u2212Malik Davis (['IR']); \u2212De'Zhaun Stribling (['IR']). Fantasy check Sep 29: \u2212Devon Achane (Sep 28 9:45 AM). | Sep 30 W4 waivers/FA: +Ollie Gordon $65; +Raheim Sanders $4; +A.J. Dillon $2; +Roman Wilson $2. FAAB $42.",
+  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
-  "updated": "2026-09-29"
+  "updated": "2026-09-30",
+  "injuryFlags": [
+    "Justin Jefferson \u2014 Ankle - Questionable (IR slot)",
+    "Jordan Mason \u2014 Injured Reserve List - IR - Thumb (IR slot)",
+    "Pete Werner \u2014 Neck - Questionable (IR slot)"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-30",
-  "source": "Fantrax Sep 30 2026 ~6:18 AM PT roster sync \u2014 corrected Eddies trade block: Chimere Dike (Fantasy check 6:08 AM misread as Xavier Worthy; Fantrax still shows Dike, lastUpdated Sep 28 9:27 AM PT). Newman/Pocket/Saltese/Substation blocks unchanged; pending trades 0; league pending claims 4 (count only).",
+  "source": "Fantrax Sep 30 2026 ~9:25 AM PT post-waiver sync \u2014 Trade Block: Substation cleared its block (8:25 AM PT); Eddies block auto-trimmed to 9 after waiver drops (9:01 AM PT). Newman/Pocket/Saltese unchanged. No new completed trades since Sep 28; pending trades 0.",
   "season": 2026,
   "trades": [
     {
@@ -294,19 +294,17 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "2026-09-28 9:27 AM PT",
+      "lastUpdated": "2026-09-30 9:01 AM PT",
       "players": [
         "Jacory Croskey-Merritt",
         "Travis Etienne",
         "Omarion Hampton",
         "Tyjae Spears",
-        "Chimere Dike",
         "Brian Thomas",
         "Kyle Pitts",
         "Denzel Perryman",
         "Mack Wilson",
-        "Julian Love",
-        "Marques Sigle"
+        "Julian Love"
       ],
       "note": null
     },
@@ -344,24 +342,13 @@
     {
       "teamId": "substation",
       "team": "Substation",
-      "lastUpdated": "2026-09-28 10:04 AM PT",
-      "players": [
-        "Jordan Love",
-        "Brock Purdy",
-        "R.J. Harvey",
-        "Emmett Johnson",
-        "Malik Nabers",
-        "Tremaine Edmunds",
-        "Dre Greenlaw",
-        "Brian Branch",
-        "DeShon Elliott",
-        "Nick Emmanwori"
-      ],
+      "lastUpdated": "2026-09-30 8:25 AM PT",
+      "players": [],
       "note": null
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0. League pending claims count 4 as of Sep 30 ~6:18 AM PT (not itemized).",
+  "pending_note": "Pending trades 0. League pending claims 0 after the Week 4 FAAB clear (Sep 30 9:00 AM PT).",
   "fantrax_completed_view": "Newest official: Saltese\u2194Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers\u2194Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM); TTAB\u2194Eddies Etienne+Winfield for Williams+Wingard (Sep 23); Saltese\u2194Eddies Brooks for Sherwood (Sep 23).",
   "hqComplete": true
 }
