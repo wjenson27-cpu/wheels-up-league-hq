@@ -1628,14 +1628,14 @@
       "date": "2026-09-16",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "Won Amani Hooker (DB) $18 FAAB (Eddies lost at $7)",
+      "summary": "Won Amani Hooker (DB) $18 FAAB",
       "attribution": "scrapeA-verified"
     },
     {
       "date": "2026-09-16",
       "type": "ADD/DROP",
       "team": "The Hypersecretors",
-      "summary": "Added Jaxson Dart (QB) $16; dropped Keaton Mitchell (Eddies lost Dart at $5)"
+      "summary": "Added Jaxson Dart (QB) $16; dropped Keaton Mitchell"
     },
     {
       "date": "2026-09-16",
@@ -1704,19 +1704,6 @@
       "type": "ADD/DROP",
       "team": "Eagle Ridge Eddies",
       "summary": "Added Dorian Williams (LB) $8; dropped Henry To'oTo'o"
-    },
-    {
-      "date": "2026-09-16",
-      "type": "FAILED",
-      "team": "Eagle Ridge Eddies",
-      "summary": "FAILED claim Amani Hooker $7 (Ultron won at $18); drop James Williams unused for Hooker — Wingard claim on same drop succeeded",
-      "attribution": "scrapeA-verified"
-    },
-    {
-      "date": "2026-09-16",
-      "type": "FAILED",
-      "team": "Eagle Ridge Eddies",
-      "summary": "FAILED claim Jaxson Dart $5 (Hyper won at $16); Dart now owned by Hyper; Bonitto still FA"
     },
     {
       "date": "2026-09-16",
