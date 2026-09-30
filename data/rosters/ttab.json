@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-09-29",
+  "asOf": "2026-09-30",
   "faabLeft": 42,
   "startingQB": "Josh Allen",
   "roster": {
@@ -21,7 +21,6 @@
       "Mike Washington",
       "Jameson Williams",
       "Tre Tucker",
-      "Keon Coleman",
       "Romeo Doubs"
     ],
     "TE": [
@@ -40,13 +39,12 @@
       "Ji'Ayir Brown",
       "Andrew Wingard",
       "Caleb Downs",
-      "Treydan Stukes",
-      "Cole Bishop"
+      "Treydan Stukes"
     ],
     "IR": []
   },
-  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (\u2212Nailor); +Kwity Paye $16 (\u2212Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/\u2212Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR) | Sep 23 trade: \u2212Etienne \u2212Winfield +Dorian +Wingard (from Eddies) | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/\u2212Seth McGowan; +Ji'Ayir Brown/\u2212Cole Bishop. | Sep 25: \u2212Kendre Miller; +Cole Bishop; +Romeo Doubs/\u2212Jalen Thompson. | Fantasy check Sep 28: +Abdul Carter (DL); \u2212Kwity Paye. Fantasy check Sep 29: \u2212Abdul Carter (Sep 28 10:07 AM).",
-  "source": "Fantasy check Sep 29 2026 ~6:11 AM PT \u2014 dropped Abdul Carter.",
+  "notes": "Sep 16 post-waiver: +Treydan Stukes $18 (−Nailor); +Kwity Paye $16 (−Mesidor); +Del'Shawn Phillips $8. FAAB $51. Roster may still be stale vs mid-Sep trades. | Sep 20: +/−Christian Harris churn (net zero). | Sep 23 clear: +Tre Tucker (WR); +Keon Coleman (WR) | Sep 23 trade: −Etienne −Winfield +Dorian +Wingard (from Eddies) | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/−Seth McGowan; +Ji'Ayir Brown/−Cole Bishop. | Sep 25: −Kendre Miller; +Cole Bishop; +Romeo Doubs/−Jalen Thompson. | Fantasy check Sep 28: +Abdul Carter (DL); −Kwity Paye. Fantasy check Sep 29: −Abdul Carter (Sep 28 10:07 AM). | Fantasy check Sep 30: −Cole Bishop (Sep 29 8:19 PM); −Keon Coleman (Sep 29 8:13 PM).",
+  "source": "Fantasy check Sep 30 2026 ~6:08 AM PT — dropped Cole Bishop; dropped Keon Coleman.",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
-  "updated": "2026-09-29"
+  "updated": "2026-09-30"
 }

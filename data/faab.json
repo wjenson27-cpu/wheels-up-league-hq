@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-29",
-  "source": "Fantrax Sep 29 2026 ~6:40 AM PT roster sync \u2014 Week 3 finals locked; FAAB remainings unchanged vs morning Fantasy check. Pending claims count 3 (not itemized).",
+  "updated": "2026-09-30",
+  "source": "Fantrax Sep 30 2026 ~6:08 AM PT Fantasy check — FAAB remainings unchanged (Sep 29 evening/afternoon drops all $0/null). Pending claims count 4 (not itemized).",
   "startingBudget": 115,
-  "note": "Team Info remainings: Dongers 45 after $-3 FAAB trade-out to Substation (Sep 27 Pollard deal); Substation 82 after $+3 trade-in. Eddies still 91. Other Sep 27 claim/drops were $0/null. Sep 29 Fantasy check: five completed drops all $0/null; FAAB remainings unchanged vs Sep 28.",
+  "note": "Team Info remainings: Dongers 45 after $-3 FAAB trade-out to Substation (Sep 27 Pollard deal); Substation 82 after $+3 trade-in. Eddies still 91. Other Sep 27 claim/drops were $0/null. Sep 29 Fantasy check: five completed drops all $0/null; FAAB remainings unchanged vs Sep 28. Sep 30 Fantasy check: TTAB Bishop/Coleman + Doubtpfizer Burns drops all $0/null; FAAB remainings unchanged vs Sep 29.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -826,7 +826,7 @@
       "for": [
         "CJ Allen (LB)"
       ],
-      "summary": "Fantrax official \u2014 Dongers paid $3 FAAB to Substation with CJ Allen for Tony Pollard (Sep 27 8:58 AM PDT).",
+      "summary": "Fantrax official — Dongers paid $3 FAAB to Substation with CJ Allen for Tony Pollard (Sep 27 8:58 AM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -841,7 +841,7 @@
         "Drake London (WR)",
         "Kevin Winston (DB)"
       ],
-      "summary": "Fantrax official \u2014 Ultron paid $20 FAAB to Substation with London+Winston for Barkley+Bigsby (Sep 22 8:46 PM PDT).",
+      "summary": "Fantrax official — Ultron paid $20 FAAB to Substation with London+Winston for Barkley+Bigsby (Sep 22 8:46 PM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -857,7 +857,7 @@
         "Chris Godwin (WR)",
         "James Cook (RB)"
       ],
-      "summary": "Fantrax official \u2014 Ultron paid $15 FAAB to Slumlords with Anzalone+Godwin+Cook for London+Campbell+Pickens (Sep 22 10:20 AM PDT).",
+      "summary": "Fantrax official — Ultron paid $15 FAAB to Slumlords with Anzalone+Godwin+Cook for London+Campbell+Pickens (Sep 22 10:20 AM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -871,7 +871,7 @@
       "for": [
         "Terry McLaurin (WR)"
       ],
-      "summary": "Fantrax official \u2014 Ultron paid $15 FAAB to Substation with Emmett Johnson for Terry McLaurin (Sep 16).",
+      "summary": "Fantrax official — Ultron paid $15 FAAB to Substation with Emmett Johnson for Terry McLaurin (Sep 16).",
       "official": true,
       "kind": "trade"
     },
@@ -886,7 +886,7 @@
         "Dallas Goedert (TE)",
         "Antoine Winfield (DB)"
       ],
-      "summary": "Fantrax official \u2014 Substation paid $8 FAAB to TTAB with Goedert+Winfield for Pollard+Edmunds (Sep 16).",
+      "summary": "Fantrax official — Substation paid $8 FAAB to TTAB with Goedert+Winfield for Pollard+Edmunds (Sep 16).",
       "official": true,
       "kind": "trade"
     },
@@ -900,7 +900,7 @@
       "for": [
         "Bo Nix (QB)"
       ],
-      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
+      "summary": "Fantrax official — Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
       "official": true,
       "kind": "trade"
     },
@@ -914,7 +914,7 @@
       "for": [
         "Kaleb Elarms-Orr (LB)"
       ],
-      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "summary": "Fantrax official #2 — Larry buys Elarms-Orr from Aga for $20 FAAB.",
       "official": true,
       "kind": "trade"
     },
@@ -929,7 +929,7 @@
         "Cameron Skattebo (RB)",
         "Caleb Downs (DB)"
       ],
-      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
+      "summary": "Fantrax official #3 — live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas −Evan Williams; Aga +Bryce Boettcher −Najee.",
       "official": true,
       "kind": "trade"
     },
@@ -943,7 +943,7 @@
       "for": [
         "R20 chair (Sadiq stays Jacob)"
       ],
-      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "summary": "Handshake — Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
       "official": false,
       "kind": "trade"
     },

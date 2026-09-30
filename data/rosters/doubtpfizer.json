@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-09-24",
+  "asOf": "2026-09-30",
   "faabLeft": 109,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -32,7 +32,6 @@
       "Sonny Styles"
     ],
     "DL": [
-      "Brian Burns",
       "Jonathan Allen"
     ],
     "DB": [
@@ -45,8 +44,8 @@
       "Rome Odunze"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Jalen Ramsey $2 (\u2212Reed Blankenship); +Chauncey Gardner-Johnson $2. FAAB $109. | Sep 20: +Pat Freiermuth \u2212Emari Demercado (Demercado was already absent from HQ roster). | Sep 23 clear: +Jonathan Allen (DL); -Pat Freiermuth (TE); -Kaelon Black (RB) | Cleared stale Rachaad White IR (now on Saltese).",
-  "source": "Fantrax Sep 24 2026 ~6:22 AM PT Fantasy check \u2014 Wed Sep 23 free-agent Claim/Drops (Saltese White/\u2212Sanders; Hyper +Nix; TTAB Wilson+Miller/\u2212McGowan +Ji'Ayir/\u2212Bishop; Eddies Sigle/\u2212Winfield; Newman +Claiborne; Saltese Martin/\u2212Nixon; Substation Redmond/\u2212Verse). Pending trades/claims 0. Trade blocks refreshed.",
+  "notes": "Sep 16 post-waiver: +Jalen Ramsey $2 (−Reed Blankenship); +Chauncey Gardner-Johnson $2. FAAB $109. | Sep 20: +Pat Freiermuth −Emari Demercado (Demercado was already absent from HQ roster). | Sep 23 clear: +Jonathan Allen (DL); -Pat Freiermuth (TE); -Kaelon Black (RB) | Cleared stale Rachaad White IR (now on Saltese). | Fantasy check Sep 30: −Brian Burns (Sep 29 1:32 PM).",
+  "source": "Fantasy check Sep 30 2026 ~6:08 AM PT — dropped Brian Burns.",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
-  "updated": "2026-09-24"
+  "updated": "2026-09-30"
 }
