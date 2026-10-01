@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-30",
-  "source": "Fantrax Sep 30 2026 ~9:25 AM PT post-waiver sync \u2014 Trade Block: Substation cleared its block (8:25 AM PT); Eddies block auto-trimmed to 9 after waiver drops (9:01 AM PT). Newman/Pocket/Saltese unchanged. No new completed trades since Sep 28; pending trades 0.",
+  "updated": "2026-10-01",
+  "source": "Fantrax Oct 1 2026 ~6:05 AM PT trade-offer alert \u2014 Pending trades 0, pending claims 0, no Eagle Ridge offers. Trade Block: Saltese rebuilt (Hall/Stevenson/Diggs/Smith/Landman, Sep 30 6:25 PM PT, still FAAB/flex swaps); NEW Morningside block (Barnes/Gray/Okereke/Werner, Sep 30 10:26 AM PT, LB offer / RB need); Eddies 9 / Substation empty / Newman 5 / Pocket empty unchanged. No new completed trades since Sep 28 Boston/Montgomery.",
   "season": 2026,
   "trades": [
     {
@@ -309,6 +309,24 @@
       "note": null
     },
     {
+      "teamId": "morningside",
+      "team": "Morningside Muff Divers",
+      "lastUpdated": "2026-09-30 10:26 AM PT",
+      "players": [
+        "Derrick Barnes",
+        "Cedric Gray",
+        "Bobby Okereke",
+        "Pete Werner"
+      ],
+      "note": "Offering LB; needing RB.",
+      "positionsOffered": [
+        "LB"
+      ],
+      "positionsNeeded": [
+        "RB"
+      ]
+    },
+    {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
       "lastUpdated": "2026-09-15 12:35 PM PT",
@@ -324,20 +342,22 @@
     {
       "teamId": "pocket",
       "team": "Pocket Agents",
-      "lastUpdated": null,
+      "lastUpdated": "2026-09-14 2:11 PM PT",
       "players": [],
       "note": null
     },
     {
       "teamId": "saltese",
       "team": "Saltese Slamm",
-      "lastUpdated": "2026-09-23 11:30 AM PT",
+      "lastUpdated": "2026-09-30 6:25 PM PT",
       "players": [
-        "Jonathon Brooks",
+        "Breece Hall",
         "Rhamondre Stevenson",
-        "Terrel Bernard"
+        "Stefon Diggs",
+        "DeVonta Smith",
+        "Nathan Landman"
       ],
-      "note": null
+      "note": "Looking for FAAB or flex swaps."
     },
     {
       "teamId": "substation",
@@ -348,7 +368,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0. League pending claims 0 after the Week 4 FAAB clear (Sep 30 9:00 AM PT).",
+  "pending_note": "Pending trades 0. League pending claims 0 (Oct 1 6:05 AM PT trade-offer check).",
   "fantrax_completed_view": "Newest official: Saltese\u2194Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers\u2194Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM); TTAB\u2194Eddies Etienne+Winfield for Williams+Wingard (Sep 23); Saltese\u2194Eddies Brooks for Sherwood (Sep 23).",
   "hqComplete": true
 }
