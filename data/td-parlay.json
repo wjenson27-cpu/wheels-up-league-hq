@@ -1,11 +1,12 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-30",
   "season": 2026,
   "weeks": 17,
   "note": "Anytime TD. Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded).",
   "weekNotes": {
     "1": "Week 1 finals (Sun Sep 13 / MNF Sep 14 2026).",
-    "2": "Week 2 finals. Coon: Puka DNP \u2192 N/A (doesn't kill weekly HIT)."
+    "2": "Week 2 finals. Coon: Puka DNP → N/A (doesn't kill weekly HIT).",
+    "3": "Week 3 finals (TNF Sep 24 through MNF Sep 28 2026)."
   },
   "owners": [
     {
@@ -21,8 +22,8 @@
           "td": "Yes"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Tetairoa McMillan",
+          "td": "No"
         },
         "4": {
           "player": "",
@@ -95,8 +96,8 @@
           "td": "Yes"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Jaxon Smith-Njigba",
+          "td": "Yes"
         },
         "4": {
           "player": "",
@@ -169,8 +170,8 @@
           "td": "Yes"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Tucker Kraft",
+          "td": "No"
         },
         "4": {
           "player": "",
@@ -243,8 +244,8 @@
           "td": "Yes"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Jahmyr Gibbs",
+          "td": "Yes"
         },
         "4": {
           "player": "",
@@ -317,8 +318,8 @@
           "td": "No"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Jonathan Taylor",
+          "td": "No"
         },
         "4": {
           "player": "",
@@ -391,8 +392,8 @@
           "td": "No"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Josh Allen",
+          "td": "Yes"
         },
         "4": {
           "player": "",
@@ -465,8 +466,8 @@
           "td": "Yes"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "James Cook",
+          "td": "Yes"
         },
         "4": {
           "player": "",
@@ -539,8 +540,8 @@
           "td": "No"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Parker Washington",
+          "td": "Yes"
         },
         "4": {
           "player": "",
@@ -613,8 +614,8 @@
           "td": "No"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Derrick Henry",
+          "td": "Yes"
         },
         "4": {
           "player": "",
@@ -687,8 +688,8 @@
           "td": "No"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Ashton Jeanty",
+          "td": "No"
         },
         "4": {
           "player": "",
@@ -761,8 +762,8 @@
           "td": "N/A"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Christian McCaffrey",
+          "td": "Yes"
         },
         "4": {
           "player": "",
@@ -835,8 +836,8 @@
           "td": "No"
         },
         "3": {
-          "player": "",
-          "td": ""
+          "player": "Davante Adams",
+          "td": "No"
         },
         "4": {
           "player": "",
