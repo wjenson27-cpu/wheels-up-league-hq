@@ -1,12 +1,13 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-02",
   "season": 2026,
   "weeks": 17,
   "note": "Anytime TD. Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded).",
   "weekNotes": {
     "1": "Week 1 finals (Sun Sep 13 / MNF Sep 14 2026).",
     "2": "Week 2 finals. Coon: Puka DNP → N/A (doesn't kill weekly HIT).",
-    "3": "Week 3 finals (TNF Sep 24 through MNF Sep 28 2026)."
+    "3": "Week 3 finals (TNF Sep 24 through MNF Sep 28 2026).",
+    "4": "Week 4 picks locked Fri Oct 2; results pending."
   },
   "owners": [
     {
@@ -26,7 +27,7 @@
           "td": "No"
         },
         "4": {
-          "player": "",
+          "player": "James Cook",
           "td": ""
         },
         "5": {
@@ -100,7 +101,7 @@
           "td": "Yes"
         },
         "4": {
-          "player": "",
+          "player": "Jaxon Smith-Njigba",
           "td": ""
         },
         "5": {
@@ -174,7 +175,7 @@
           "td": "No"
         },
         "4": {
-          "player": "",
+          "player": "Tyler Tuten",
           "td": ""
         },
         "5": {
@@ -248,7 +249,7 @@
           "td": "Yes"
         },
         "4": {
-          "player": "",
+          "player": "Jahmyr Gibbs",
           "td": ""
         },
         "5": {
@@ -322,7 +323,7 @@
           "td": "No"
         },
         "4": {
-          "player": "",
+          "player": "Jonathan Taylor",
           "td": ""
         },
         "5": {
@@ -396,7 +397,7 @@
           "td": "Yes"
         },
         "4": {
-          "player": "",
+          "player": "Javonte Williams",
           "td": ""
         },
         "5": {
@@ -470,7 +471,7 @@
           "td": "Yes"
         },
         "4": {
-          "player": "",
+          "player": "Bijan Robinson",
           "td": ""
         },
         "5": {
@@ -544,7 +545,7 @@
           "td": "Yes"
         },
         "4": {
-          "player": "",
+          "player": "DJ Moore",
           "td": ""
         },
         "5": {
@@ -618,7 +619,7 @@
           "td": "Yes"
         },
         "4": {
-          "player": "",
+          "player": "Derrick Henry",
           "td": ""
         },
         "5": {
@@ -692,7 +693,7 @@
           "td": "No"
         },
         "4": {
-          "player": "",
+          "player": "Brock Bowers",
           "td": ""
         },
         "5": {
@@ -766,7 +767,7 @@
           "td": "Yes"
         },
         "4": {
-          "player": "",
+          "player": "Christian McCaffrey",
           "td": ""
         },
         "5": {
@@ -840,7 +841,7 @@
           "td": "No"
         },
         "4": {
-          "player": "",
+          "player": "Kenneth Walker III",
           "td": ""
         },
         "5": {
