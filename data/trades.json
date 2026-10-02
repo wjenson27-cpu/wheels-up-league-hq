@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-02",
-  "source": "Fantrax Fantasy check Oct 2 2026 ~6:06 AM PT \u2014 confirmed pending TTAB\u2192Eddies (Jameson Williams + $7 FAAB for Omarion Hampton, proposed Oct 1 11:20 PM PDT); blocks match trade-offer alert refresh (Eddies 7 after \u2212Spears/\u2212Perryman). No new completed trades. Pending claims 0.",
+  "source": "Fantrax trade-offer check Oct 2 2026 ~6 AM PT; trade blocks refreshed.",
   "season": 2026,
   "trades": [
     {
@@ -289,26 +289,7 @@
       "official": false
     }
   ],
-  "pending": [
-    {
-      "date": "2026-10-01",
-      "time": "11:20 PM PDT",
-      "status": "pending",
-      "official": false,
-      "proposingTeam": "Towner Top Aga Bottom (Chase)",
-      "receivingTeam": "Eagle Ridge Eddies (Bill)",
-      "teamA": "Towner Top Aga Bottom (Chase)",
-      "teamB": "Eagle Ridge Eddies (Bill)",
-      "givesA": [
-        "Jameson Williams (WR)",
-        "$7 FAAB"
-      ],
-      "givesB": [
-        "Omarion Hampton (RB)"
-      ],
-      "summary": "Pending \u2014 TTAB offers Jameson Williams and $7 FAAB to Eagle Ridge Eddies for Omarion Hampton (proposed Oct 1 11:20 PM PDT; awaiting Eddies acceptance)."
-    }
-  ],
+  "pending": [],
   "blocks": [
     {
       "teamId": "eddies",
@@ -385,7 +366,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 1 (TTAB \u2192 Eddies, awaiting Eddies). League pending claims 0 (Oct 2 ~6:06 AM PT Fantasy check).",
+  "pending_note": "Pending trades 0 listed. League pending claims 0 (Oct 2 ~6 AM PT check).",
   "fantrax_completed_view": "Newest official: Saltese\u2194Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers\u2194Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM); TTAB\u2194Eddies Etienne+Winfield for Williams+Wingard (Sep 23); Saltese\u2194Eddies Brooks for Sherwood (Sep 23).",
   "hqComplete": true
 }
