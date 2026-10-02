@@ -1,7 +1,83 @@
 {
-  "updated": "2026-10-01",
-  "source": "Fantrax Fantasy check Oct 1 2026 ~6:12 AM PT \u2014 16 executed Claim/Drops after Sep 30 9:16 AM PDT baseline (LAB Masses/Moehrig 10:50 PM; Slumlords Penix; Saltese Speights/Sanker; TTAB Trotter/Phillips/Harris-Starks; Doubtpfizer Reed drop + Lawrence/Allen; Dongers Tyreek; Newman Woodaz; Morningside Jacas/Young + Fields drop; Goats Banks/Henry; Hypersecretors Cousins + Pierce; Pocket Bell/Coleman). Pending claims 0.",
+  "updated": "2026-10-02",
+  "source": "Fantrax Fantasy check Oct 2 2026 ~6:06 AM PT \u2014 7 executed Claim/Drop groups (10 Fantrax rows) after Sep 30 10:50 PM PDT baseline: Eddies Holani; Pocket \u2212Chris Johnson; Substation Lemon/Mitchell; Eddies \u2212Perryman; Goats \u2212Curl; Eddies Miller/Spears; Ultron Rodriguez/Higbee. Pending trade TTAB\u2192Eddies already in trades.json (trade-offer alert).",
   "items": [
+    {
+      "date": "2026-10-01",
+      "team": "Eagle Ridge Eddies",
+      "type": "ADD",
+      "summary": "Added George Holani (RB-SEA) ($0/null bid)",
+      "time": "5:24 PM PDT",
+      "player": "George Holani",
+      "playerMeta": "RB-SEA",
+      "bid": null
+    },
+    {
+      "date": "2026-10-01",
+      "team": "Pocket Agents",
+      "type": "DROP",
+      "summary": "Dropped Chris Johnson (DB(R)-MIA) ($0/null bid)",
+      "time": "4:56 PM PDT",
+      "player": "Chris Johnson",
+      "playerMeta": "DB(R)-MIA",
+      "bid": null
+    },
+    {
+      "date": "2026-10-01",
+      "team": "Substation",
+      "type": "ADD/DROP",
+      "summary": "Added Makai Lemon (WR(R)-PHI); dropped Keaton Mitchell (RB-LAC) ($0/null bid)",
+      "time": "4:00 PM PDT",
+      "player": "Makai Lemon",
+      "playerMeta": "WR(R)-PHI",
+      "dropped": "Keaton Mitchell",
+      "droppedMeta": "RB-LAC",
+      "bid": null
+    },
+    {
+      "date": "2026-10-01",
+      "team": "Eagle Ridge Eddies",
+      "type": "DROP",
+      "summary": "Dropped Denzel Perryman (LB-LAC) ($0/null bid)",
+      "time": "2:03 PM PDT",
+      "player": "Denzel Perryman",
+      "playerMeta": "LB-LAC",
+      "bid": null
+    },
+    {
+      "date": "2026-10-01",
+      "team": "Valley Old Goats",
+      "type": "DROP",
+      "summary": "Dropped Kamren Curl (DB-LAR) ($0/null bid)",
+      "time": "10:46 AM PDT",
+      "player": "Kamren Curl",
+      "playerMeta": "DB-LAR",
+      "bid": null
+    },
+    {
+      "date": "2026-10-01",
+      "team": "Eagle Ridge Eddies",
+      "type": "ADD/DROP",
+      "summary": "Added Kendre Miller (RB-NO); dropped Tyjae Spears (RB-TEN) ($0/null bid)",
+      "time": "10:45 AM PDT",
+      "player": "Kendre Miller",
+      "playerMeta": "RB-NO",
+      "dropped": "Tyjae Spears",
+      "droppedMeta": "RB-TEN",
+      "bid": null
+    },
+    {
+      "date": "2026-10-01",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Chris Rodriguez Jr. (RB-JAX); dropped Tyler Higbee (TE-LAR) ($0/null bid)",
+      "time": "9:37 AM PDT",
+      "player": "Chris Rodriguez Jr.",
+      "playerMeta": "RB-JAX",
+      "dropped": "Tyler Higbee",
+      "droppedMeta": "TE-LAR",
+      "bid": null
+    },
     {
       "date": "2026-09-30",
       "team": "Little Ass Boys",
@@ -2402,6 +2478,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Week 4 FAAB run Wed Sep 30 9:00 AM PT: winning claims recorded as data (bid + drop). Settled claims/drops only.",
+  "note": "Settled $0/null FA Claim/Drops Thu Oct 1 only. Week 4 FAAB run Wed Sep 30 already recorded. Do not itemize pending claims.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }
