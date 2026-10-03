@@ -31,10 +31,10 @@
       "owner": "Ryan McCallum",
       "abbrev": "NLS",
       "record": "2-1-0",
-      "faab": 105,
+      "faab": 99,
       "projW1": 193.09,
       "powerRank": 2,
-      "note": "Ryan McCallum \u2014 2020 champ, 2024 Chump. +Malaki Starks $5; +Chris Johnson, +Sneed (null). FAAB $110. | Sep 23 FA: +Demond Claiborne. | Sep 25: \u2212Demond Claiborne. | Sep 28: \u2212Leo Chenal ($0/null). | Sep 30 W4 waivers/FA: +Jake Hansen $5. FAAB $105.",
+      "note": "Ryan McCallum \u2014 2020 champ, 2024 Chump. +Malaki Starks $5; +Chris Johnson, +Sneed (null). FAAB $110. | Sep 23 FA: +Demond Claiborne. | Sep 25: \u2212Demond Claiborne. | Sep 28: \u2212Leo Chenal ($0/null). | Sep 30 W4 waivers/FA: +Jake Hansen $5. FAAB $105. | Oct 2: +Quentin Johnston $6/\u2212Wade Woodaz; +Danny Stutsman. FAAB $99.",
       "standingsRank": 4,
       "color": "#22D3EE",
       "colorSecondary": "#A5F3FC",
@@ -340,7 +340,7 @@
       "pa": 652.5
     }
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-03",
   "ownerSource": "Bill confirmed Sep 6 2026 + League Archives",
   "standingsSource": "Fantrax Standings after Week 3 finals Tue Sep 29 ~6:40 AM PT",
   "week": 3,
