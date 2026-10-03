@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "source": "Fantrax trade-offer check Oct 2 2026 ~6 AM PT; trade blocks refreshed.",
   "season": 2026,
   "trades": [
@@ -327,10 +327,12 @@
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "2026-09-15 12:35 PM PT",
+      "lastUpdated": "2026-10-02 10:29 PM PT",
       "players": [
+        "Jalen Hurts",
         "TreVeyon Henderson",
         "Aaron Jones",
+        "Davante Adams",
         "A.J. Brown",
         "Matthew Golden",
         "Tee Higgins"
@@ -340,9 +342,12 @@
     {
       "teamId": "pocket",
       "team": "Pocket Agents",
-      "lastUpdated": "2026-09-14 2:11 PM PT",
-      "players": [],
-      "note": null
+      "lastUpdated": "2026-10-02 4:24 PM PT",
+      "players": [
+        "Jared Goff",
+        "Tyler Shough"
+      ],
+      "note": "Goff & Shough both top 5 QBs through 3 weeks. Looking to potentially trade 1 for a running back."
     },
     {
       "teamId": "saltese",
@@ -366,7 +371,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 listed. League pending claims 0 (Oct 2 ~6 AM PT check).",
+  "pending_note": "Pending trades 0 listed. League pending claims 0 (Oct 3 ~6 AM PT check).",
   "fantrax_completed_view": "Newest official: Saltese\u2194Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers\u2194Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM); TTAB\u2194Eddies Etienne+Winfield for Williams+Wingard (Sep 23); Saltese\u2194Eddies Brooks for Sherwood (Sep 23).",
   "hqComplete": true
 }
