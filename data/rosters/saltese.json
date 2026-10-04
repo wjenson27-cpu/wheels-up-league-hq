@@ -2,8 +2,8 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-09-30",
-  "faabLeft": 26,
+  "asOf": "2026-10-04",
+  "faabLeft": 31,
   "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
@@ -14,8 +14,8 @@
       "Breece Hall",
       "Rico Dowdle",
       "Rhamondre Stevenson",
-      "Rachaad White",
-      "Jonathon Brooks"
+      "Jonathon Brooks",
+      "Aaron Jones"
     ],
     "WR": [
       "Jaxon Smith-Njigba",
@@ -30,18 +30,17 @@
     "LB": [
       "Jamien Sherwood",
       "Terrel Bernard",
-      "Edgerrin Cooper",
-      "Nathan Landman"
+      "Edgerrin Cooper"
     ],
     "DL": [
       "Mason Graham",
-      "Nick Herbig",
       "Micah Parsons"
     ],
     "DB": [
       "Jordan Battle",
       "Chuck Clark",
-      "Jonas Sanker"
+      "Jonas Sanker",
+      "Quinyon Mitchell"
     ],
     "IR": [
       "Ja'Kobi Lane",
@@ -49,17 +48,17 @@
       "Micah Parsons"
     ]
   },
-  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM). | Sep 23 clear: +Denzel Boston (WR); +Oronde Gadsden (TE); -Mike Gesicki (TE); +Mason Graham (DL) | Sep 23 trade: \u2212Jordyn Brooks +Jamien Sherwood (from Eddies) | Sep 23 PM/AM FA: +Rachaad White/\u2212Raheim Sanders; +Jartavius Martin/\u2212Keisean Nixon; Sigle claimed by Eddies. | Sep 25: +Chuck Clark (\u2212Jartavius Martin). Sep 28 trade: +David Montgomery / \u2212Denzel Boston (vs Substation). | Sep 30 W4 waivers/FA: +Nick Herbig (\u2212Kaleb Elarms-Orr). FAAB $26.",
-  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
+  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM). | Sep 23 clear: +Denzel Boston (WR); +Oronde Gadsden (TE); -Mike Gesicki (TE); +Mason Graham (DL) | Sep 23 trade: −Jordyn Brooks +Jamien Sherwood (from Eddies) | Sep 23 PM/AM FA: +Rachaad White/−Raheim Sanders; +Jartavius Martin/−Keisean Nixon; Sigle claimed by Eddies. | Sep 25: +Chuck Clark (−Jartavius Martin). Sep 28 trade: +David Montgomery / −Denzel Boston (vs Substation). | Sep 30 W4 waivers/FA: +Nick Herbig (−Kaleb Elarms-Orr). FAAB $26. | Oct 3: +Aaron Jones (+$5 FAAB in) for Nathan Landman; −Rachaad White; −Nick Herbig; +Quinyon Mitchell (Phillips churn). FAAB $31.",
+  "source": "Fantrax Fantasy check Oct 4 2026 ~6:00 AM PT (incremental Oct 3 moves)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
-  "updated": "2026-09-30",
+  "updated": "2026-10-04",
   "injuryFlags": [
-    "Breece Hall \u2014 Thigh - Doubtful that will play next game (reserve)",
-    "Rico Dowdle \u2014 Toe - Questionable (reserve)",
-    "Rachaad White \u2014 Shoulder - Questionable (reserve)",
-    "Ja'Kobi Lane \u2014 Injured Reserve List - IR - Wrist (IR slot)",
-    "Jonathon Brooks \u2014 Injured Reserve List - IR - Abdomen (IR slot)",
-    "Edgerrin Cooper \u2014 Head - Questionable (active slot)",
-    "Micah Parsons \u2014 Injured Reserve List - PUP-R - Knee - acl (IR slot)"
+    "Breece Hall — Thigh - Doubtful that will play next game (reserve)",
+    "Rico Dowdle — Toe - Questionable (reserve)",
+    "Rachaad White — Shoulder - Questionable (reserve)",
+    "Ja'Kobi Lane — Injured Reserve List - IR - Wrist (IR slot)",
+    "Jonathon Brooks — Injured Reserve List - IR - Abdomen (IR slot)",
+    "Edgerrin Cooper — Head - Questionable (active slot)",
+    "Micah Parsons — Injured Reserve List - PUP-R - Knee - acl (IR slot)"
   ]
 }
