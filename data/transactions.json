@@ -1,7 +1,85 @@
 {
-  "updated": "2026-10-04",
-  "source": "Fantrax Fantasy check Oct 4 2026 ~6:00 AM PT — Sat Oct 3 Claim/Drops + Newman↔Saltese trade (Jones+$5 FAAB for Landman): Ultron Williams/Stalbird/Ferguson churn; Saltese Mitchell/Phillips/White/Herbig; TTAB Perkins/−Harris; Hyper Keaton Mitchell $8/−Cousins; Doubtpfizer −Medrano. Pending 0; blocks already live from 5:56 AM trade-offer check.",
+  "updated": "2026-10-05",
+  "source": "Fantrax roster sync Oct 5 2026 ~6:24 AM PT — Sun Oct 4 free-agent moves ($0/no bid): Hyper −Jaylin Noel; Slumlords +Michael Mayer/−Michael Penix Jr.; Morningside +C.J. Henderson/−A.J. Dillon; LAB −Kevin Byard; Saltese −Mason Graham/−Quinyon Mitchell/−Edgerrin Cooper. Pending trades 0; blocks and all 14 FAAB unchanged.",
   "items": [
+    {
+      "date": "2026-10-04",
+      "team": "Saltese Slamm",
+      "type": "DROP",
+      "summary": "Dropped Mason Graham (DL-CLE) ($0/null bid)",
+      "time": "11:13 PM PDT",
+      "player": "Mason Graham",
+      "playerMeta": "DL-CLE",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-04",
+      "team": "Saltese Slamm",
+      "type": "DROP",
+      "summary": "Dropped Quinyon Mitchell (DB-PHI) ($0/null bid)",
+      "time": "11:13 PM PDT",
+      "player": "Quinyon Mitchell",
+      "playerMeta": "DB-PHI",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-04",
+      "team": "Saltese Slamm",
+      "type": "DROP",
+      "summary": "Dropped Edgerrin Cooper (LB-GB) ($0/null bid)",
+      "time": "11:13 PM PDT",
+      "player": "Edgerrin Cooper",
+      "playerMeta": "LB-GB",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-04",
+      "team": "Little Ass Boys",
+      "type": "DROP",
+      "summary": "Dropped Kevin Byard (DB-NE) ($0/null bid)",
+      "time": "2:28 PM PDT",
+      "player": "Kevin Byard",
+      "playerMeta": "DB-NE",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-04",
+      "team": "Morningside Muff Divers",
+      "type": "ADD/DROP",
+      "summary": "Added C.J. Henderson (DB-ATL); dropped A.J. Dillon (RB-CAR) ($0/null bid)",
+      "time": "12:14 PM PDT",
+      "player": "C.J. Henderson",
+      "playerMeta": "DB-ATL",
+      "dropped": "A.J. Dillon",
+      "droppedMeta": "RB-CAR",
+      "bid": null
+    },
+    {
+      "date": "2026-10-04",
+      "team": "Indian Trail Slumlords",
+      "type": "ADD/DROP",
+      "summary": "Added Michael Mayer (TE-LV); dropped Michael Penix Jr. (QB-ATL) ($0/null bid)",
+      "time": "10:59 AM PDT",
+      "player": "Michael Mayer",
+      "playerMeta": "TE-LV",
+      "dropped": "Michael Penix Jr.",
+      "droppedMeta": "QB-ATL",
+      "bid": null
+    },
+    {
+      "date": "2026-10-04",
+      "team": "The Hypersecretors",
+      "type": "DROP",
+      "summary": "Dropped Jaylin Noel (WR-HOU) ($0/null bid)",
+      "time": "7:16 AM PDT",
+      "player": "Jaylin Noel",
+      "playerMeta": "WR-HOU",
+      "bid": null
+    },
     {
       "date": "2026-10-03",
       "team": "Ultron",
