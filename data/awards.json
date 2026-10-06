@@ -106,9 +106,9 @@
         "status": "upcoming",
         "teamAId": "slumlords",
         "teamA": "Indian Trail Slumlords",
-        "teamBId": null,
-        "teamB": "TBD \u2014 Week 4 survivor elimination",
-        "note": "Week 4 Last Ride \u2014 Slumlords vs this week's lowest score among teams still on the bus; loser out for good"
+        "teamBId": "morningside",
+        "teamB": "Morningside Muff Divers",
+        "note": "Week 4 Last Ride \u2014 Slumlords vs Morningside Muff Divers (off the bus Week 3); loser out for good"
       },
       "aliveTeamIds": [
         "slumlords"
