@@ -1,169 +1,92 @@
 {
-  "updated": "2026-09-29",
-  "asOf": "2026-09-29",
-  "week": 3,
+  "updated": "2026-10-06",
+  "asOf": "2026-10-06",
+  "week": 4,
   "weekStatus": "final",
   "complete": true,
   "source": "Fantrax",
-  "note": "Week 3 FINAL from Fantrax Matchups/Standings scrape Tue Sep 29 ~6:40 AM PT. All 7 games locked. Kitty Slumlords 299; survivor-low Morningside 144 (alive pool).",
+  "note": "Week 4 FINAL from Fantrax Matchups/Standings scrape Tue Oct 6 ~6:20 AM PT. All 7 games locked. Kitty Pocket 361; survivor-low Saltese 206.5 (alive pool).",
   "kitty": {
-    "team": "Slumlords",
-    "teamFull": "Indian Trail Slumlords",
-    "teamId": "slumlords",
-    "score": 299
+    "team": "Pocket",
+    "teamFull": "Pocket Agents",
+    "teamId": "pocket",
+    "score": 361
   },
   "survivorLowest": {
-    "team": "Morningside Muff Divers",
-    "teamId": "morningside",
-    "score": 144
+    "team": "Saltese Slamm",
+    "teamId": "saltese",
+    "score": 206.5
   },
   "matchups": [
     {
-      "home": "Eagle Ridge Eddies",
-      "away": "Drummond Dongers",
-      "homeScore": 263.5,
-      "awayScore": 224,
+      "home": "Substation",
+      "away": "Towner Top Aga Bottom",
+      "homeScore": 295.5,
+      "awayScore": 216,
       "status": "final",
-      "winner": "Eagle Ridge Eddies",
-      "topScorers": [
-        {
-          "team": "Drummond Dongers",
-          "player": "Bijan Robinson",
-          "pts": 44
-        },
-        {
-          "team": "Eagle Ridge Eddies",
-          "player": "Brock Bowers",
-          "pts": 41.5
-        }
-      ],
-      "notes": "Fantrax Week 3 final \u00b7 Tue Sep 29 ~6:40 AM PT roster sync."
+      "winner": "Substation",
+      "topScorers": [],
+      "notes": "Fantrax Week 4 final · Tue Oct 6 ~6:20 AM PT roster sync."
     },
     {
-      "home": "The Hypersecretors",
-      "away": "Indian Trail Slumlords",
-      "homeScore": 281.5,
-      "awayScore": 299,
-      "status": "final",
-      "winner": "Indian Trail Slumlords",
-      "topScorers": [
-        {
-          "team": "Indian Trail Slumlords",
-          "player": "Jahmyr Gibbs",
-          "pts": 42
-        },
-        {
-          "team": "The Hypersecretors",
-          "player": "Kenyon Sadiq",
-          "pts": 34.5
-        }
-      ],
-      "notes": "Fantrax Week 3 final \u00b7 Tue Sep 29 ~6:40 AM PT roster sync."
-    },
-    {
-      "home": "Ultron",
-      "away": "Mrs. Doubtpfizer",
-      "homeScore": 240,
-      "awayScore": 265,
-      "status": "final",
-      "winner": "Mrs. Doubtpfizer",
-      "topScorers": [
-        {
-          "team": "Mrs. Doubtpfizer",
-          "player": "Christian McCaffrey",
-          "pts": 23
-        },
-        {
-          "team": "Ultron",
-          "player": "Michael Wilson",
-          "pts": 25
-        }
-      ],
-      "notes": "Fantrax Week 3 final \u00b7 Tue Sep 29 ~6:40 AM PT roster sync."
-    },
-    {
-      "home": "Newman Lake Sleep Paralysis Demons",
-      "away": "Saltese Slamm",
-      "homeScore": 263.5,
-      "awayScore": 235,
+      "home": "Drummond Dongers",
+      "away": "Newman Lake Sleep Paralysis Demons",
+      "homeScore": 215,
+      "awayScore": 226.5,
       "status": "final",
       "winner": "Newman Lake Sleep Paralysis Demons",
-      "topScorers": [
-        {
-          "team": "Saltese Slamm",
-          "player": "Jaxon Smith-Njigba",
-          "pts": 40
-        },
-        {
-          "team": "Newman Lake Sleep Paralysis Demons",
-          "player": "Juwan Johnson",
-          "pts": 30.5
-        }
-      ],
-      "notes": "Fantrax Week 3 final \u00b7 Tue Sep 29 ~6:40 AM PT roster sync."
+      "topScorers": [],
+      "notes": "Fantrax Week 4 final · Tue Oct 6 ~6:20 AM PT roster sync."
     },
     {
       "home": "Pocket Agents",
-      "away": "Substation",
-      "homeScore": 256.5,
-      "awayScore": 219.5,
+      "away": "Mrs. Doubtpfizer",
+      "homeScore": 361,
+      "awayScore": 268.5,
       "status": "final",
       "winner": "Pocket Agents",
-      "topScorers": [
-        {
-          "team": "Substation",
-          "player": "Brock Purdy",
-          "pts": 44
-        },
-        {
-          "team": "Pocket Agents",
-          "player": "CeeDee Lamb",
-          "pts": 26
-        }
-      ],
-      "notes": "Fantrax Week 3 final \u00b7 Tue Sep 29 ~6:40 AM PT roster sync."
+      "topScorers": [],
+      "notes": "Fantrax Week 4 final · Tue Oct 6 ~6:20 AM PT roster sync."
+    },
+    {
+      "home": "Eagle Ridge Eddies",
+      "away": "Indian Trail Slumlords",
+      "homeScore": 226,
+      "awayScore": 218.5,
+      "status": "final",
+      "winner": "Eagle Ridge Eddies",
+      "topScorers": [],
+      "notes": "Fantrax Week 4 final · Tue Oct 6 ~6:20 AM PT roster sync."
+    },
+    {
+      "home": "Valley Old Goats",
+      "away": "Ultron",
+      "homeScore": 280.5,
+      "awayScore": 225,
+      "status": "final",
+      "winner": "Valley Old Goats",
+      "topScorers": [],
+      "notes": "Fantrax Week 4 final · Tue Oct 6 ~6:20 AM PT roster sync."
     },
     {
       "home": "Little Ass Boys",
-      "away": "Towner Top Aga Bottom",
-      "homeScore": 239.5,
-      "awayScore": 192,
+      "away": "The Hypersecretors",
+      "homeScore": 280,
+      "awayScore": 234.5,
       "status": "final",
       "winner": "Little Ass Boys",
-      "topScorers": [
-        {
-          "team": "Towner Top Aga Bottom",
-          "player": "Christian Watson",
-          "pts": 22
-        },
-        {
-          "team": "Little Ass Boys",
-          "player": "Jayden Warren",
-          "pts": 27
-        }
-      ],
-      "notes": "Fantrax Week 3 final \u00b7 Tue Sep 29 ~6:40 AM PT roster sync."
+      "topScorers": [],
+      "notes": "Fantrax Week 4 final · Tue Oct 6 ~6:20 AM PT roster sync."
     },
     {
-      "home": "Morningside Muff Divers",
-      "away": "Valley Old Goats",
-      "homeScore": 144,
-      "awayScore": 219,
+      "home": "Saltese Slamm",
+      "away": "Morningside Muff Divers",
+      "homeScore": 206.5,
+      "awayScore": 223.5,
       "status": "final",
-      "winner": "Valley Old Goats",
-      "topScorers": [
-        {
-          "team": "Valley Old Goats",
-          "player": "George Kittle",
-          "pts": 32
-        },
-        {
-          "team": "Morningside Muff Divers",
-          "player": "Deebo Samuel",
-          "pts": 28
-        }
-      ],
-      "notes": "Fantrax Week 3 final \u00b7 Tue Sep 29 ~6:40 AM PT roster sync."
+      "winner": "Morningside Muff Divers",
+      "topScorers": [],
+      "notes": "Fantrax Week 4 final · Tue Oct 6 ~6:20 AM PT roster sync."
     }
   ]
 }

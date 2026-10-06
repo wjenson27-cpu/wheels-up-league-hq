@@ -1,15 +1,15 @@
 {
   "season": 2026,
-  "updated": "2026-09-29",
+  "updated": "2026-10-06",
   "schemaVersion": 2,
   "schema": {
     "weeklyKitty": "Array of weekly high-score (kitty) winners. One entry per completed week.",
-    "survivor": "Lowest scoring team still alive that week is eliminated (off the bus). Last Ride (Weeks 3\u201310): eliminated teams battle head-to-head weekly; one loss on Last Ride and you're out for good. Winner stays alive for a Week 11 re-entry shot.",
+    "survivor": "Lowest scoring team still alive that week is eliminated (off the bus). Last Ride (Weeks 3–10): eliminated teams battle head-to-head weekly; one loss on Last Ride and you're out for good. Winner stays alive for a Week 11 re-entry shot.",
     "yearly": "Season-long awards. Each category tracks live top 3 (leaders[]); status live until season end, then final."
   },
   "rules": {
     "kitty": "Each week, the highest final team score wins the kitty.",
-    "survivor": "Each week, the lowest final score among teams still alive is eliminated (off the bus). Everyone starts alive in Week 1. Last Ride (starts Week 3): teams already off the bus battle head-to-head each week through Week 10 \u2014 lose once and you're out of Last Ride for good. Only the Last Ride winner gets a chance to re-enter the bus in Week 11.",
+    "survivor": "Each week, the lowest final score among teams still alive is eliminated (off the bus). Everyone starts alive in Week 1. Last Ride (starts Week 3): teams already off the bus battle head-to-head each week through Week 10 — lose once and you're out of Last Ride for good. Only the Last Ride winner gets a chance to re-enter the bus in Week 11.",
     "yearly": {
       "topRecord": "Best win-loss record at season end.",
       "topPoints": "Most fantasy points scored (PF) for the season.",
@@ -45,13 +45,21 @@
       "winnerShort": "Slumlords",
       "score": 299.0,
       "note": "Highest Week 3 final score"
+    },
+    {
+      "week": 4,
+      "status": "final",
+      "winnerTeamId": "pocket",
+      "winner": "Pocket Agents",
+      "winnerShort": "Pocket",
+      "score": 361.0,
+      "note": "Highest Week 4 final score"
     }
   ],
   "survivor": {
     "title": "League Survivor",
     "aliveTeamIds": [
       "newman",
-      "saltese",
       "lab",
       "doubtpfizer",
       "eddies",
@@ -71,7 +79,7 @@
         "score": 176.5,
         "aliveBefore": 14,
         "aliveAfter": 13,
-        "note": "Lowest Week 1 final score (post-MNF 176.5) \u2014 off the bus"
+        "note": "Lowest Week 1 final score (post-MNF 176.5) — off the bus"
       },
       {
         "week": 2,
@@ -81,7 +89,7 @@
         "score": 158.5,
         "aliveBefore": 13,
         "aliveAfter": 12,
-        "note": "Lowest Week 2 final score among teams still alive \u2014 off the bus"
+        "note": "Lowest Week 2 final score among teams still alive — off the bus"
       },
       {
         "week": 3,
@@ -91,7 +99,17 @@
         "score": 144,
         "aliveBefore": 12,
         "aliveAfter": 11,
-        "note": "Lowest Week 3 final score among teams still alive \u2014 off the bus"
+        "note": "Lowest Week 3 final score among teams still alive — off the bus"
+      },
+      {
+        "week": 4,
+        "status": "final",
+        "teamId": "saltese",
+        "team": "Saltese Slamm",
+        "score": 206.5,
+        "aliveBefore": 11,
+        "aliveAfter": 10,
+        "note": "Lowest Week 4 final score among teams still alive — off the bus"
       }
     ],
     "lastRide": {
@@ -102,16 +120,16 @@
       "reentryWeek": 11,
       "rules": "Teams off the bus battle head-to-head on Last Ride. Week 3: the two eliminated teams face off. Higher week score stays alive; loser is out of Last Ride for good. Winner then battles each week's lowest score through Week 10 (same rule: lose once, you're done). Only the Last Ride winner gets a Week 11 shot back on the bus.",
       "currentMatchup": {
-        "week": 4,
+        "week": 5,
         "status": "upcoming",
-        "teamAId": "slumlords",
-        "teamA": "Indian Trail Slumlords",
-        "teamBId": "morningside",
-        "teamB": "Morningside Muff Divers",
-        "note": "Week 4 Last Ride \u2014 Slumlords vs Morningside Muff Divers (off the bus Week 3); loser out for good"
+        "teamAId": "morningside",
+        "teamA": "Morningside Muff Divers",
+        "teamBId": "saltese",
+        "teamB": "Saltese Slamm",
+        "note": "Week 5 Last Ride — Morningside Muff Divers (Last Ride survivor) vs Saltese Slamm (off the bus Week 4); loser out for good"
       },
       "aliveTeamIds": [
-        "slumlords"
+        "morningside"
       ],
       "results": [
         {
@@ -123,7 +141,18 @@
           "loserTeamId": "dongers",
           "loser": "Drummond Dongers",
           "loserScore": 224,
-          "note": "Week 3 Last Ride opener \u2014 Slumlords stay alive; Dongers out of Last Ride for good"
+          "note": "Week 3 Last Ride opener — Slumlords stay alive; Dongers out of Last Ride for good"
+        },
+        {
+          "week": 4,
+          "status": "final",
+          "winnerTeamId": "morningside",
+          "winner": "Morningside Muff Divers",
+          "winnerScore": 223.5,
+          "loserTeamId": "slumlords",
+          "loser": "Indian Trail Slumlords",
+          "loserScore": 218.5,
+          "note": "Week 4 Last Ride — Morningside stay alive; Slumlords out of Last Ride for good"
         }
       ]
     }
@@ -136,114 +165,114 @@
       "trackTop": 3,
       "teamId": "goats",
       "team": "Valley Old Goats",
-      "value": "3-0",
+      "value": "4-0",
       "leaders": [
         {
           "rank": 1,
           "teamId": "goats",
           "team": "Valley Old Goats",
           "teamShort": "Goats",
-          "value": "3-0",
-          "valueLabel": "3-0 \u00b7 747.5 PF"
+          "value": "4-0",
+          "valueLabel": "4-0 · 1028 PF"
         },
         {
           "rank": 2,
           "teamId": "pocket",
           "team": "Pocket Agents",
           "teamShort": "Pocket",
-          "value": "2-1",
-          "valueLabel": "2-1 \u00b7 795.5 PF"
+          "value": "3-1",
+          "valueLabel": "3-1 · 1156.5 PF"
         },
         {
           "rank": 3,
-          "teamId": "saltese",
-          "team": "Saltese Slamm",
-          "teamShort": "Saltese",
-          "value": "2-1",
-          "valueLabel": "2-1 \u00b7 769 PF"
+          "teamId": "newman",
+          "team": "Newman Lake Sleep Paralysis Demons",
+          "teamShort": "Newman",
+          "value": "3-1",
+          "valueLabel": "3-1 · 972 PF"
         }
       ],
-      "note": "Live after Week 3 \u00b7 locks at season end"
+      "note": "Live after Week 4 · locks at season end"
     },
     "topPoints": {
       "key": "topPoints",
       "label": "Top Points",
       "status": "live",
       "trackTop": 3,
-      "teamId": "hyper",
-      "team": "The Hypersecretors",
-      "value": 813.0,
+      "teamId": "pocket",
+      "team": "Pocket Agents",
+      "value": 1156.5,
       "leaders": [
         {
           "rank": 1,
-          "teamId": "hyper",
-          "team": "The Hypersecretors",
-          "teamShort": "Hyper",
-          "value": 813.0,
-          "valueLabel": "813"
-        },
-        {
-          "rank": 2,
           "teamId": "pocket",
           "team": "Pocket Agents",
           "teamShort": "Pocket",
-          "value": 795.5,
-          "valueLabel": "795.5"
+          "value": 1156.5,
+          "valueLabel": "1156.5"
+        },
+        {
+          "rank": 2,
+          "teamId": "hyper",
+          "team": "The Hypersecretors",
+          "teamShort": "Hyper",
+          "value": 1047.5,
+          "valueLabel": "1047.5"
         },
         {
           "rank": 3,
-          "teamId": "saltese",
-          "team": "Saltese Slamm",
-          "teamShort": "Saltese",
-          "value": 769.0,
-          "valueLabel": "769"
+          "teamId": "goats",
+          "team": "Valley Old Goats",
+          "teamShort": "Goats",
+          "value": 1028.0,
+          "valueLabel": "1028"
         }
       ],
-      "note": "Live season PF \u00b7 locks at season end"
+      "note": "Live season PF · locks at season end"
     },
     "topOffensivePlayer": {
       "key": "topOffensivePlayer",
       "label": "Top Offensive Player",
       "status": "live",
       "trackTop": 3,
-      "player": "Jaxon Smith-Njigba",
-      "pos": "WR",
-      "teamId": "saltese",
-      "team": "Saltese Slamm",
-      "value": 126,
+      "player": "Kenneth Walker III",
+      "pos": "RB",
+      "teamId": "hyper",
+      "team": "The Hypersecretors",
+      "value": 142,
       "leaders": [
         {
           "rank": 1,
+          "player": "Kenneth Walker III",
+          "pos": "RB",
+          "teamId": "hyper",
+          "team": "The Hypersecretors",
+          "teamShort": "Hyper",
+          "value": 142,
+          "valueLabel": "142"
+        },
+        {
+          "rank": 2,
           "player": "Jaxon Smith-Njigba",
           "pos": "WR",
           "teamId": "saltese",
           "team": "Saltese Slamm",
           "teamShort": "Saltese",
-          "value": 126,
-          "valueLabel": "126"
-        },
-        {
-          "rank": 2,
-          "player": "Jahmyr Gibbs",
-          "pos": "RB",
-          "teamId": "slumlords",
-          "team": "Indian Trail Slumlords",
-          "teamShort": "Slumlords",
-          "value": 109,
-          "valueLabel": "109"
+          "value": 138,
+          "valueLabel": "138"
         },
         {
           "rank": 3,
-          "player": "Josh Allen",
-          "pos": "QB",
-          "teamId": "ttab",
-          "team": "Towner Top Aga Bottom",
-          "teamShort": "TTAB",
-          "value": 107,
-          "valueLabel": "107"
+          "player": "Bijan Robinson",
+          "pos": "RB",
+          "teamId": "dongers",
+          "team": "Drummond Dongers",
+          "teamShort": "Dongers",
+          "value": 131,
+          "valueLabel": "131"
         }
       ],
-      "note": "Live after Week 3 \u00b7 Fantrax YTD All Taken Players (excl. free agents) \u00b7 locks at season end"
+      "note": "Live after Week 4 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end"
     },
     "topDefensivePlayer": {
       "key": "topDefensivePlayer",
@@ -254,7 +283,7 @@
       "pos": "DL",
       "teamId": "slumlords",
       "team": "Indian Trail Slumlords",
-      "value": 118,
+      "value": 137,
       "leaders": [
         {
           "rank": 1,
@@ -263,18 +292,18 @@
           "teamId": "slumlords",
           "team": "Indian Trail Slumlords",
           "teamShort": "Slumlords",
-          "value": 118,
-          "valueLabel": "118"
+          "value": 137,
+          "valueLabel": "137"
         },
         {
           "rank": 2,
-          "player": "Nakobe Dean",
-          "pos": "LB",
-          "teamId": "doubtpfizer",
-          "team": "Mrs. Doubtpfizer",
-          "teamShort": "Doubtpfizer",
-          "value": 102,
-          "valueLabel": "102"
+          "player": "Will Anderson Jr.",
+          "pos": "DL",
+          "teamId": "pocket",
+          "team": "Pocket Agents",
+          "teamShort": "Pocket",
+          "value": 122,
+          "valueLabel": "122"
         },
         {
           "rank": 3,
@@ -283,11 +312,11 @@
           "teamId": "goats",
           "team": "Valley Old Goats",
           "teamShort": "Goats",
-          "value": 94,
-          "valueLabel": "94"
+          "value": 117,
+          "valueLabel": "117"
         }
       ],
-      "note": "Live after Week 3 \u00b7 Fantrax YTD All Taken Players (excl. free agents) \u00b7 locks at season end"
+      "note": "Live after Week 4 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end"
     }
   },
   "weekScores": {
@@ -505,6 +534,78 @@
         "teamId": "morningside",
         "team": "Morningside Muff Divers",
         "score": 144.0
+      }
+    ],
+    "4": [
+      {
+        "teamId": "pocket",
+        "team": "Pocket Agents",
+        "score": 361.0
+      },
+      {
+        "teamId": "substation",
+        "team": "Substation",
+        "score": 295.5
+      },
+      {
+        "teamId": "goats",
+        "team": "Valley Old Goats",
+        "score": 280.5
+      },
+      {
+        "teamId": "lab",
+        "team": "Little Ass Boys",
+        "score": 280.0
+      },
+      {
+        "teamId": "doubtpfizer",
+        "team": "Mrs. Doubtpfizer",
+        "score": 268.5
+      },
+      {
+        "teamId": "hyper",
+        "team": "The Hypersecretors",
+        "score": 234.5
+      },
+      {
+        "teamId": "newman",
+        "team": "Newman Lake Sleep Paralysis Demons",
+        "score": 226.5
+      },
+      {
+        "teamId": "eddies",
+        "team": "Eagle Ridge Eddies",
+        "score": 226.0
+      },
+      {
+        "teamId": "ultron",
+        "team": "Ultron",
+        "score": 225.0
+      },
+      {
+        "teamId": "morningside",
+        "team": "Morningside Muff Divers",
+        "score": 223.5
+      },
+      {
+        "teamId": "slumlords",
+        "team": "Indian Trail Slumlords",
+        "score": 218.5
+      },
+      {
+        "teamId": "ttab",
+        "team": "Towner Top Aga Bottom",
+        "score": 216.0
+      },
+      {
+        "teamId": "dongers",
+        "team": "Drummond Dongers",
+        "score": 215.0
+      },
+      {
+        "teamId": "saltese",
+        "team": "Saltese Slamm",
+        "score": 206.5
       }
     ]
   }

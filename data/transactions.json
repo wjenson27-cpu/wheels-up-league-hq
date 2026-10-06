@@ -1,7 +1,62 @@
 {
-  "updated": "2026-10-05",
-  "source": "Fantrax roster sync Oct 5 2026 ~6:24 AM PT — Sun Oct 4 free-agent moves ($0/no bid): Hyper −Jaylin Noel; Slumlords +Michael Mayer/−Michael Penix Jr.; Morningside +C.J. Henderson/−A.J. Dillon; LAB −Kevin Byard; Saltese −Mason Graham/−Quinyon Mitchell/−Edgerrin Cooper. Pending trades 0; blocks and all 14 FAAB unchanged.",
+  "updated": "2026-10-06",
+  "source": "Fantrax roster sync Oct 6 2026 ~6:20 AM PT — Mon Oct 5 free-agent drops ($0/no bid): Ultron −Antonio Williams, −Tank Bigsby; Eddies −George Holani; Pocket −Chris Bell; Newman −Quentin Johnston. No new trades; all 14 FAAB unchanged.",
   "items": [
+    {
+      "date": "2026-10-05",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "type": "DROP",
+      "summary": "Dropped Quentin Johnston (WR-LAC) ($0/null bid)",
+      "time": "8:50 PM PDT",
+      "player": "Quentin Johnston",
+      "playerMeta": "WR-LAC",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-05",
+      "team": "Ultron",
+      "type": "DROP",
+      "summary": "Dropped Tank Bigsby (RB-PHI) ($0/null bid)",
+      "time": "3:32 PM PDT",
+      "player": "Tank Bigsby",
+      "playerMeta": "RB-PHI",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-05",
+      "team": "Pocket Agents",
+      "type": "DROP",
+      "summary": "Dropped Chris Bell (WR-MIA) ($0/null bid)",
+      "time": "11:47 AM PDT",
+      "player": "Chris Bell",
+      "playerMeta": "WR-MIA",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-05",
+      "team": "Eagle Ridge Eddies",
+      "type": "DROP",
+      "summary": "Dropped George Holani (RB-SEA) ($0/null bid)",
+      "time": "9:59 AM PDT",
+      "player": "George Holani",
+      "playerMeta": "RB-SEA",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-05",
+      "team": "Ultron",
+      "type": "DROP",
+      "summary": "Dropped Antonio Williams (WR-WAS) ($0/null bid)",
+      "time": "7:24 AM PDT",
+      "player": "Antonio Williams",
+      "playerMeta": "WR-WAS",
+      "bid": null,
+      "period": "Week 5"
+    },
     {
       "date": "2026-10-04",
       "team": "Saltese Slamm",
