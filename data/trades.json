@@ -1,8 +1,42 @@
 {
-  "updated": "2026-10-04",
-  "source": "Fantrax Fantasy check Oct 4 2026 ~6:00 AM PT (trade+blocks confirmed); prior trade-offer check ~5:56 AM PT — Newman↔Saltese Jones+$5 FAAB for Landman; blocks refreshed.",
+  "updated": "2026-10-06",
+  "source": "Fantrax completed trades Oct 6 2026 (Eddies↔Saltese Hall/Stevenson for Hampton/Mack Wilson; Doubtpfizer↔Ultron Swift for Loveland).",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-10-06",
+      "time": "7:59 AM PDT",
+      "week": 5,
+      "status": "completed",
+      "official": true,
+      "teamA": "Mrs. Doubtpfizer",
+      "teamB": "Ultron",
+      "givesA": [
+        "D'Andre Swift (RB)"
+      ],
+      "givesB": [
+        "Colston Loveland (TE)"
+      ],
+      "summary": "Week 5 — Doubtpfizer sent D'Andre Swift to Ultron for Colston Loveland (Oct 6 7:59 AM PDT)."
+    },
+    {
+      "date": "2026-10-06",
+      "time": "11:31 AM PDT",
+      "week": 5,
+      "status": "completed",
+      "official": true,
+      "teamA": "Eagle Ridge Eddies (Bill)",
+      "teamB": "Saltese Slamm (Luke)",
+      "givesA": [
+        "Omarion Hampton (RB)",
+        "Mack Wilson (LB)"
+      ],
+      "givesB": [
+        "Breece Hall (RB)",
+        "Rhamondre Stevenson (RB)"
+      ],
+      "summary": "Week 5 — Eddies sent Omarion Hampton and Mack Wilson to Saltese for Breece Hall and Rhamondre Stevenson (Oct 6 11:31 AM PDT)."
+    },
     {
       "date": "2026-10-03",
       "time": "12:22 PM PDT",
@@ -385,7 +419,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 listed. League pending claims 0 (Oct 4 ~5:56 AM PT check).",
+  "pending_note": "Pending trades 0. League pending claims 0 (Oct 6 PM check).",
   "fantrax_completed_view": "Newest official: Newman↔Saltese Aaron Jones+$5 FAAB for Nathan Landman (Oct 3 12:22 PM); Saltese↔Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers↔Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM).",
   "hqComplete": true
 }
