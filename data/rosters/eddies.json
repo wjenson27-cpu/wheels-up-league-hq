@@ -2,8 +2,8 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-30",
-  "faabLeft": 79,
+  "asOf": "2026-10-07",
+  "faabLeft": 71,
   "startingQB": "Trevor Lawrence",
   "roster": {
     "QB": [
@@ -21,7 +21,8 @@
       "Garrett Wilson",
       "Jalen Coker",
       "Brian Thomas",
-      "Jordyn Tyson"
+      "Jordyn Tyson",
+      "Chimere Dike"
     ],
     "TE": [
       "Tyler Warren",
@@ -36,7 +37,8 @@
       "Denzel Perryman"
     ],
     "DL": [
-      "Leonard Williams"
+      "Leonard Williams",
+      "Tuli Tuipulotu"
     ],
     "DB": [
       "Quentin Lake",
@@ -49,30 +51,30 @@
       "Denzel Perryman"
     ]
   },
-  "notes": "W1 FINAL L 241\u2013255 at Saltese. Week 2 at Valley Old Goats (proj 183.8\u2013188.4). FAAB $91. Won Andrew Wingard $6 (\u2212James Williams); won Dorian Williams $8 (\u2212Henry To'oTo'o). No pending claims. Chimere Dike still rostered. Bonitto still FA. Coker + Bowers injured flags. | Sep 23 trade: \u2212Jamien Sherwood +Jordyn Brooks (from Saltese) | Sep 23 trade: \u2212Dorian \u2212Wingard +Etienne +Winfield (from TTAB) | Sep 23 12:05 PM FA: +Marques Sigle (DB)/\u2212Antoine Winfield (hours after TTAB trade). | Sep 30 W4 waivers/FA: +Brian Robinson Jr. $6 (\u2212Chimere Dike); +Trenton Simpson $6 (\u2212Marques Sigle). FAAB $79.",
+  "notes": "W1 FINAL L 241–255 at Saltese. Week 2 at Valley Old Goats (proj 183.8–188.4). FAAB $91. Won Andrew Wingard $6 (−James Williams); won Dorian Williams $8 (−Henry To'oTo'o). No pending claims. Chimere Dike still rostered. Bonitto still FA. Coker + Bowers injured flags. | Sep 23 trade: −Jamien Sherwood +Jordyn Brooks (from Saltese) | Sep 23 trade: −Dorian −Wingard +Etienne +Winfield (from TTAB) | Sep 23 12:05 PM FA: +Marques Sigle (DB)/−Antoine Winfield (hours after TTAB trade). | Sep 30 W4 waivers/FA: +Brian Robinson Jr. $6 (−Chimere Dike); +Trenton Simpson $6 (−Marques Sigle). FAAB $79. | Oct 7 W5 waivers/FA: +Chimere Dike $2 (−Kendre Miller); +Tuli Tuipulotu $6. FAAB $71.",
   "injuryFlags": [
-    "Jalen Coker \u2014 Quadriceps - Questionable (active slot)",
-    "Travis Etienne \u2014 Hamstring - Out Indefinitely (reserve)",
-    "Zach Charbonnet \u2014 Injured Reserve List - PUP-R - Knee - acl (IR slot)",
-    "Jordyn Tyson \u2014 Injured Reserve List - IR-R - Hamstring (IR slot)",
-    "Julian Love \u2014 Calf - Questionable (active slot)",
-    "Denzel Perryman \u2014 Injured Reserve List - IR - Undisclosed (IR slot)"
+    "Jalen Coker — Quadriceps - Questionable (active slot)",
+    "Travis Etienne — Hamstring - Out Indefinitely (reserve)",
+    "Zach Charbonnet — Injured Reserve List - PUP-R - Knee - acl (IR slot)",
+    "Jordyn Tyson — Injured Reserve List - IR-R - Hamstring (IR slot)",
+    "Julian Love — Calf - Questionable (active slot)",
+    "Denzel Perryman — Injured Reserve List - IR - Undisclosed (IR slot)"
   ],
-  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
+  "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
-    "Jalen Coker \u2014 Quadriceps - Questionable (active slot)",
-    "Julian Love \u2014 Calf - Questionable (active slot)"
+    "Jalen Coker — Quadriceps - Questionable (active slot)",
+    "Julian Love — Calf - Questionable (active slot)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Jalen Coker \u2014 Quadriceps - Questionable (active slot)",
-    "Travis Etienne \u2014 Hamstring - Out Indefinitely (reserve)",
-    "Zach Charbonnet \u2014 Injured Reserve List - PUP-R - Knee - acl (IR slot)",
-    "Jordyn Tyson \u2014 Injured Reserve List - IR-R - Hamstring (IR slot)",
-    "Julian Love \u2014 Calf - Questionable (active slot)",
-    "Denzel Perryman \u2014 Injured Reserve List - IR - Undisclosed (IR slot)"
+    "Jalen Coker — Quadriceps - Questionable (active slot)",
+    "Travis Etienne — Hamstring - Out Indefinitely (reserve)",
+    "Zach Charbonnet — Injured Reserve List - PUP-R - Knee - acl (IR slot)",
+    "Jordyn Tyson — Injured Reserve List - IR-R - Hamstring (IR slot)",
+    "Julian Love — Calf - Questionable (active slot)",
+    "Denzel Perryman — Injured Reserve List - IR - Undisclosed (IR slot)"
   ],
-  "updated": "2026-09-30"
+  "updated": "2026-10-07"
 }

@@ -2,14 +2,14 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-04",
-  "faabLeft": 1,
+  "asOf": "2026-10-07",
+  "faabLeft": 0,
   "startingQB": "Bryce Young",
   "roster": {
     "QB": [
       "Bryce Young",
-      "Sam Darnold",
-      "Caleb Williams"
+      "Caleb Williams",
+      "Jacoby Brissett"
     ],
     "RB": [
       "Saquon Barkley",
@@ -25,7 +25,9 @@
     ],
     "TE": [
       "Colston Loveland",
-      "Tyler Higbee"
+      "Tyler Higbee",
+      "Mike Gesicki",
+      "Mark Andrews"
     ],
     "LB": [
       "Jack Campbell",
@@ -48,14 +50,14 @@
       "Myles Garrett"
     ]
   },
-  "notes": "Sep 20 AM: Sat Sep 19 drop Jonah Coleman then +Coleman/−Leo Chenal (null). Cleared stale Teddye Buchanan (now on Pocket). FAAB $111. | Sep 23 clear: +Terrance Ferguson (TE); +Dallas Turner (LB); +Bryce Young (QB) | Sep 24: +Michael Taaffe (−A.J. Haulcy). Cleared stale J.K. Dobbins (dropped Sep 22; claimed by Hyper Sep 24). | Sep 26: +Sam Darnold/−Jonah Coleman ($0/null). | Sep 30 W4 waivers/FA: +Tyler Higbee $1 (−Quentin Johnston). FAAB $1. | Oct 3: −Terrance Ferguson; net +Antonio Williams (Stalbird churn).",
+  "notes": "Sep 20 AM: Sat Sep 19 drop Jonah Coleman then +Coleman/−Leo Chenal (null). Cleared stale Teddye Buchanan (now on Pocket). FAAB $111. | Sep 23 clear: +Terrance Ferguson (TE); +Dallas Turner (LB); +Bryce Young (QB) | Sep 24: +Michael Taaffe (−A.J. Haulcy). Cleared stale J.K. Dobbins (dropped Sep 22; claimed by Hyper Sep 24). | Sep 26: +Sam Darnold/−Jonah Coleman ($0/null). | Sep 30 W4 waivers/FA: +Tyler Higbee $1 (−Quentin Johnston). FAAB $1. | Oct 3: −Terrance Ferguson; net +Antonio Williams (Stalbird churn). | Oct 7 W5 waivers/FA: +Mike Gesicki; +Mark Andrews; +Jacoby Brissett $1 (−Sam Darnold). FAAB $0.",
   "injuryFlags": [
     "Caleb Williams — Hamstring - Doubtful that will play next game (IR slot)",
     "Terrance Ferguson — Ankle - Doubtful that will play next game (IR slot)",
     "Frankie Luvu — Groin - Questionable (reserve)",
     "Myles Garrett — Injured Reserve List - IR - Knee (IR slot)"
   ],
-  "source": "Fantrax Fantasy check Oct 4 2026 ~6:00 AM PT (incremental Oct 3 moves)",
+  "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
-  "updated": "2026-10-04"
+  "updated": "2026-10-07"
 }

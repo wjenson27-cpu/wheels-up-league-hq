@@ -2,8 +2,8 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-04",
-  "faabLeft": 31,
+  "asOf": "2026-10-07",
+  "faabLeft": 11,
   "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
@@ -22,7 +22,8 @@
       "Stefon Diggs",
       "DeVonta Smith",
       "Carnell Tate",
-      "Ja'Kobi Lane"
+      "Ja'Kobi Lane",
+      "Dohnte Meyers"
     ],
     "TE": [
       "Oronde Gadsden"
@@ -30,16 +31,19 @@
     "LB": [
       "Jamien Sherwood",
       "Terrel Bernard",
-      "Edgerrin Cooper"
+      "Edgerrin Cooper",
+      "Teddye Buchanan"
     ],
     "DL": [
-      "Micah Parsons"
+      "Micah Parsons",
+      "Chase Young"
     ],
     "DB": [
-      "Jordan Battle",
       "Chuck Clark",
       "Jonas Sanker",
-      "Quinyon Mitchell"
+      "Quinyon Mitchell",
+      "Alontae Taylor",
+      "Cole Bishop"
     ],
     "IR": [
       "Ja'Kobi Lane",
@@ -47,8 +51,8 @@
       "Micah Parsons"
     ]
   },
-  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM). | Sep 23 clear: +Denzel Boston (WR); +Oronde Gadsden (TE); -Mike Gesicki (TE); +Mason Graham (DL) | Sep 23 trade: −Jordyn Brooks +Jamien Sherwood (from Eddies) | Sep 23 PM/AM FA: +Rachaad White/−Raheim Sanders; +Jartavius Martin/−Keisean Nixon; Sigle claimed by Eddies. | Sep 25: +Chuck Clark (−Jartavius Martin). Sep 28 trade: +David Montgomery / −Denzel Boston (vs Substation). | Sep 30 W4 waivers/FA: +Nick Herbig (−Kaleb Elarms-Orr). FAAB $26. | Oct 3: +Aaron Jones (+$5 FAAB in) for Nathan Landman; −Rachaad White; −Nick Herbig; +Quinyon Mitchell (Phillips churn). FAAB $31. | Cleared stale Mason Graham (dropped Oct 4; now on Mrs. Doubtpfizer).",
-  "source": "Fantrax Fantasy check Oct 4 2026 ~6:00 AM PT (incremental Oct 3 moves)",
+  "notes": "Sep 20 AM: dropped Shaun Dolac (Sat Sep 19 6:39 PM, null). Removed stale Jonah Coleman (on Ultron). FAAB $83. | Sep 21: dropped Zach Allen (9:00 PM). | Sep 23 clear: +Denzel Boston (WR); +Oronde Gadsden (TE); -Mike Gesicki (TE); +Mason Graham (DL) | Sep 23 trade: −Jordyn Brooks +Jamien Sherwood (from Eddies) | Sep 23 PM/AM FA: +Rachaad White/−Raheim Sanders; +Jartavius Martin/−Keisean Nixon; Sigle claimed by Eddies. | Sep 25: +Chuck Clark (−Jartavius Martin). Sep 28 trade: +David Montgomery / −Denzel Boston (vs Substation). | Sep 30 W4 waivers/FA: +Nick Herbig (−Kaleb Elarms-Orr). FAAB $26. | Oct 3: +Aaron Jones (+$5 FAAB in) for Nathan Landman; −Rachaad White; −Nick Herbig; +Quinyon Mitchell (Phillips churn). FAAB $31. | Cleared stale Mason Graham (dropped Oct 4; now on Mrs. Doubtpfizer). | Oct 7 W5 waivers/FA: +Teddye Buchanan (−Jordan Battle); +Dohnte Meyers $17; +Chase Young $1; +Alontae Taylor $1; +Cole Bishop $1. FAAB $11.",
+  "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "updated": "2026-10-07",
   "injuryFlags": [
