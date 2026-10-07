@@ -1,7 +1,40 @@
 {
-  "updated": "2026-10-06",
-  "source": "Fantrax roster sync Oct 6 2026 ~6:20 AM PT — Mon Oct 5 free-agent drops ($0/no bid): Ultron −Antonio Williams, −Tank Bigsby; Eddies −George Holani; Pocket −Chris Bell; Newman −Quentin Johnston. No new trades; all 14 FAAB unchanged.",
+  "updated": "2026-10-07",
+  "source": "Fantrax roster sync Oct 7 2026 ~6:30 AM PT — Tue Oct 6: Mrs. Doubtpfizer +Mason Graham ($6); Slumlords −Michael Pittman, −Marcus Harris. Oct 6 Eddies↔Saltese and Doubtpfizer↔Ultron trades on Trades board.",
   "items": [
+    {
+      "date": "2026-10-06",
+      "team": "Mrs. Doubtpfizer",
+      "type": "ADD",
+      "summary": "Added Mason Graham (DL-CLE) ($6 FAAB claim)",
+      "time": "11:13 PM PDT",
+      "player": "Mason Graham",
+      "playerMeta": "DL-CLE",
+      "bid": 6,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-06",
+      "team": "Indian Trail Slumlords",
+      "type": "DROP",
+      "summary": "Dropped Michael Pittman (WR-PIT) ($0/null bid)",
+      "time": "12:38 PM PDT",
+      "player": "Michael Pittman",
+      "playerMeta": "WR-PIT",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-06",
+      "team": "Indian Trail Slumlords",
+      "type": "DROP",
+      "summary": "Dropped Marcus Harris (DB-TEN) ($0/null bid)",
+      "time": "12:36 PM PDT",
+      "player": "Marcus Harris",
+      "playerMeta": "DB-TEN",
+      "bid": null,
+      "period": "Week 5"
+    },
     {
       "date": "2026-10-05",
       "team": "Newman Lake Sleep Paralysis Demons",

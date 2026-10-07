@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-09-30",
+  "asOf": "2026-10-07",
   "faabLeft": 68,
   "startingQB": "Drake Maye",
   "roster": {
@@ -18,8 +18,7 @@
     "WR": [
       "Kalif Raymond",
       "Wan'Dale Robinson",
-      "Chris Godwin",
-      "Michael Pittman"
+      "Chris Godwin"
     ],
     "TE": [
       "Harold Fannin",
@@ -38,7 +37,6 @@
     "DB": [
       "Budda Baker",
       "Talanoa Hufanga",
-      "Marcus Harris",
       "Devon Witherspoon",
       "Chamarri Conner"
     ],
@@ -47,12 +45,12 @@
       "Chamarri Conner"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98. | Sep 20: +Romeo Doubs \u2212Denzel Boston (Boston was already absent from HQ roster). | Sep 23 clear: +Chris Moore (WR); +Isaiah Williams (WR); +Lukas Van Ness (DL); -Jeremy Chinn (DB); -Romeo Doubs (WR); -Jakobi Meyers (IR) | Fantasy check Sep 28: +Jaylin Lane (WR); \u2212Chris Moore. Fantasy check Sep 29: \u2212Isaiah Williams, \u2212Jaylin Lane. | Sep 30 W4 waivers/FA: +Marcus Harris $4. FAAB $68.",
+  "notes": "Sep 16 post-waiver: +Kalif Raymond $15. FAAB $98. | Sep 20: +Romeo Doubs −Denzel Boston (Boston was already absent from HQ roster). | Sep 23 clear: +Chris Moore (WR); +Isaiah Williams (WR); +Lukas Van Ness (DL); -Jeremy Chinn (DB); -Romeo Doubs (WR); -Jakobi Meyers (IR) | Fantasy check Sep 28: +Jaylin Lane (WR); −Chris Moore. Fantasy check Sep 29: −Isaiah Williams, −Jaylin Lane. | Sep 30 W4 waivers/FA: +Marcus Harris $4. FAAB $68. | Oct 6: −Michael Pittman, −Marcus Harris ($0/null).",
   "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "59frnthimsb3ulv4",
-  "updated": "2026-09-30",
+  "updated": "2026-10-07",
   "injuryFlags": [
-    "Isiah Pacheco \u2014 Injured Reserve List - IR - Back (IR slot)",
-    "Chamarri Conner \u2014 Knee - Questionable (IR slot)"
+    "Isiah Pacheco — Injured Reserve List - IR - Back (IR slot)",
+    "Chamarri Conner — Knee - Questionable (IR slot)"
   ]
 }

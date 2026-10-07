@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "source": "Fantrax completed trades Oct 6 2026 (Eddies↔Saltese Hall/Stevenson for Hampton/Mack Wilson; Doubtpfizer↔Ultron Swift for Loveland).",
   "season": 2026,
   "trades": [
@@ -344,14 +344,12 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "2026-10-01 2:03 PM PT",
+      "lastUpdated": "2026-10-06 11:31 AM PT",
       "players": [
         "Jacory Croskey-Merritt",
         "Travis Etienne",
-        "Omarion Hampton",
         "Brian Thomas",
         "Kyle Pitts",
-        "Mack Wilson",
         "Julian Love"
       ],
       "note": null
@@ -401,10 +399,8 @@
     {
       "teamId": "saltese",
       "team": "Saltese Slamm",
-      "lastUpdated": "2026-10-03 12:22 PM PT",
+      "lastUpdated": "2026-10-06 11:31 AM PT",
       "players": [
-        "Breece Hall",
-        "Rhamondre Stevenson",
         "Stefon Diggs",
         "DeVonta Smith"
       ],
@@ -419,7 +415,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0. League pending claims 0 (Oct 6 PM check).",
+  "pending_note": "Pending trades 0 (Fantrax Oct 7 2026 ~6 AM PT check).",
   "fantrax_completed_view": "Newest official: Newman↔Saltese Aaron Jones+$5 FAAB for Nathan Landman (Oct 3 12:22 PM); Saltese↔Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers↔Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM).",
   "hqComplete": true
 }

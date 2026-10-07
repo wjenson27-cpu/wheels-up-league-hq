@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-04",
-  "source": "Fantrax Fantasy check Oct 4 2026 ~6:00 AM PT — Hypersecretors Keaton Mitchell $8 (remaining $64); prior 5:56 AM trade-offer check Newman $5 FAAB to Saltese (Newman $94 / Saltese $31).",
+  "updated": "2026-10-07",
+  "source": "Fantrax roster sync Oct 7 2026 ~6:30 AM PT — Mrs. Doubtpfizer Mason Graham $6 (remaining $99); all other 13 balances unchanged.",
   "startingBudget": 115,
   "note": "Week 4 FAAB clear (Wed Sep 30, 9:00 AM PT) — spend by team: Morningside $73 (Ollie Gordon $65, Raheim Sanders $4, A.J. Dillon $2, Roman Wilson $2); Substation $52 (Christian Izien $17, Keenan Allen $13, DeForest Buckner $13, Dante Trader $9); Little Ass Boys $26 (Jaylen Wright); Eagle Ridge Eddies $12 (Brian Robinson Jr. $6, Trenton Simpson $6); Hypersecretors $6 (Darren Waller); Newman $5 (Jake Hansen); Slumlords $4 (Marcus Harris); Mrs. Doubtpfizer $4 (Kain Medrano); Valley Old Goats $3 (Josh Metellus); Ultron $1 (Tyler Higbee). Dongers, Pocket, Saltese and TTAB spent $0. Earlier: Dongers $3 FAAB to Substation in the Sep 27 Pollard trade.",
   "excludeZeroBids": true,
@@ -63,12 +63,12 @@
       "owner": "Kyle Weberg",
       "abbrev": "MDP",
       "starting": 115,
-      "remaining": 105,
-      "spentClaims": 10,
+      "remaining": 99,
+      "spentClaims": 16,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 10,
-      "remainingKnown": 105
+      "spentKnown": 16,
+      "remainingKnown": 99
     },
     {
       "id": "eddies",
@@ -190,6 +190,19 @@
     }
   ],
   "claims": [
+    {
+      "date": "2026-10-06",
+      "time": "11:13 PM PDT",
+      "player": "Mason Graham",
+      "amount": 6,
+      "team": "Mrs. Doubtpfizer",
+      "kind": "claim",
+      "teamId": "doubtpfizer",
+      "pos": "DL",
+      "dropped": null,
+      "note": "Tue Oct 6 11:13 PM PDT Week 5 claim (DL-CLE; Saltese dropped Oct 4)",
+      "attribution": "fantrax-roster-sync-2026-10-07-6am"
+    },
     {
       "date": "2026-10-03",
       "player": "Keaton Mitchell",
