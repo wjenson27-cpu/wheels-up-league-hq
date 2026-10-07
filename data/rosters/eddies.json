@@ -10,35 +10,33 @@
       "Trevor Lawrence"
     ],
     "RB": [
-      "Omarion Hampton",
+      "Rhamondre Stevenson",
       "Jacory Croskey-Merritt",
+      "Breece Hall",
       "Brian Robinson Jr.",
-      "Tyjae Spears",
-      "Travis Etienne",
-      "Zach Charbonnet"
+      "Zach Charbonnet",
+      "Travis Etienne"
     ],
     "WR": [
       "Garrett Wilson",
+      "Chimere Dike",
       "Jalen Coker",
       "Brian Thomas",
-      "Jordyn Tyson",
-      "Chimere Dike"
+      "Jordyn Tyson"
     ],
     "TE": [
-      "Tyler Warren",
       "Brock Bowers",
+      "Tyler Warren",
       "Kyle Pitts"
     ],
     "LB": [
       "Fred Warner",
       "Jordyn Brooks",
-      "Mack Wilson",
-      "Trenton Simpson",
-      "Denzel Perryman"
+      "Trenton Simpson"
     ],
     "DL": [
-      "Leonard Williams",
-      "Tuli Tuipulotu"
+      "Tuli Tuipulotu",
+      "Leonard Williams"
     ],
     "DB": [
       "Quentin Lake",
@@ -48,19 +46,19 @@
     "IR": [
       "Zach Charbonnet",
       "Jordyn Tyson",
-      "Denzel Perryman"
+      "Travis Etienne",
+      "Leonard Williams"
     ]
   },
-  "notes": "W1 FINAL L 241–255 at Saltese. Week 2 at Valley Old Goats (proj 183.8–188.4). FAAB $91. Won Andrew Wingard $6 (−James Williams); won Dorian Williams $8 (−Henry To'oTo'o). No pending claims. Chimere Dike still rostered. Bonitto still FA. Coker + Bowers injured flags. | Sep 23 trade: −Jamien Sherwood +Jordyn Brooks (from Saltese) | Sep 23 trade: −Dorian −Wingard +Etienne +Winfield (from TTAB) | Sep 23 12:05 PM FA: +Marques Sigle (DB)/−Antoine Winfield (hours after TTAB trade). | Sep 30 W4 waivers/FA: +Brian Robinson Jr. $6 (−Chimere Dike); +Trenton Simpson $6 (−Marques Sigle). FAAB $79. | Oct 7 W5 waivers/FA: +Chimere Dike $2 (−Kendre Miller); +Tuli Tuipulotu $6. FAAB $71.",
+  "notes": "W1 FINAL L 241–255 at Saltese. Week 2 at Valley Old Goats (proj 183.8–188.4). FAAB $91. Won Andrew Wingard $6 (−James Williams); won Dorian Williams $8 (−Henry To'oTo'o). No pending claims. Chimere Dike still rostered. Bonitto still FA. Coker + Bowers injured flags. | Sep 23 trade: −Jamien Sherwood +Jordyn Brooks (from Saltese) | Sep 23 trade: −Dorian −Wingard +Etienne +Winfield (from TTAB) | Sep 23 12:05 PM FA: +Marques Sigle (DB)/−Antoine Winfield (hours after TTAB trade). | Sep 30 W4 waivers/FA: +Brian Robinson Jr. $6 (−Chimere Dike); +Trenton Simpson $6 (−Marques Sigle). FAAB $79. | Oct 7 W5 waivers/FA: +Chimere Dike $2 (−Kendre Miller); +Tuli Tuipulotu $6. FAAB $71. | Oct 6 trade: −Omarion Hampton −Mack Wilson +Breece Hall +Rhamondre Stevenson (from Saltese). | Oct 7 rebuild from live Fantrax roster: Tyjae Spears, Denzel Perryman, Kendre Miller no longer rostered; +Chimere Dike $2, +Tuli Tuipulotu $6. FAAB $71.",
   "injuryFlags": [
     "Jalen Coker — Quadriceps - Questionable (active slot)",
     "Travis Etienne — Hamstring - Out Indefinitely (reserve)",
     "Zach Charbonnet — Injured Reserve List - PUP-R - Knee - acl (IR slot)",
     "Jordyn Tyson — Injured Reserve List - IR-R - Hamstring (IR slot)",
-    "Julian Love — Calf - Questionable (active slot)",
-    "Denzel Perryman — Injured Reserve List - IR - Undisclosed (IR slot)"
+    "Julian Love — Calf - Questionable (active slot)"
   ],
-  "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
+  "source": "Fantrax Oct 7 2026 ~9:20 AM PT live Eddies roster (post Week 5 FAAB clear; Oct 6 Saltese trade applied).",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Jalen Coker — Quadriceps - Questionable (active slot)",
@@ -73,8 +71,7 @@
     "Travis Etienne — Hamstring - Out Indefinitely (reserve)",
     "Zach Charbonnet — Injured Reserve List - PUP-R - Knee - acl (IR slot)",
     "Jordyn Tyson — Injured Reserve List - IR-R - Hamstring (IR slot)",
-    "Julian Love — Calf - Questionable (active slot)",
-    "Denzel Perryman — Injured Reserve List - IR - Undisclosed (IR slot)"
+    "Julian Love — Calf - Questionable (active slot)"
   ],
   "updated": "2026-10-07"
 }

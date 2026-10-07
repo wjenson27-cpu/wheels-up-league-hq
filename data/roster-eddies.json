@@ -2,39 +2,39 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-09-30",
-  "faabLeft": 79,
+  "asOf": "2026-10-07",
+  "faabLeft": 71,
   "roster": {
     "QB": [
       "Trevor Lawrence"
     ],
     "RB": [
-      "Omarion Hampton",
+      "Rhamondre Stevenson",
       "Jacory Croskey-Merritt",
+      "Breece Hall",
       "Brian Robinson Jr.",
-      "Tyjae Spears",
-      "Travis Etienne",
-      "Zach Charbonnet"
+      "Zach Charbonnet",
+      "Travis Etienne"
     ],
     "WR": [
       "Garrett Wilson",
+      "Chimere Dike",
       "Jalen Coker",
       "Brian Thomas",
       "Jordyn Tyson"
     ],
     "TE": [
-      "Tyler Warren",
       "Brock Bowers",
+      "Tyler Warren",
       "Kyle Pitts"
     ],
     "LB": [
       "Fred Warner",
       "Jordyn Brooks",
-      "Mack Wilson",
-      "Trenton Simpson",
-      "Denzel Perryman"
+      "Trenton Simpson"
     ],
     "DL": [
+      "Tuli Tuipulotu",
       "Leonard Williams"
     ],
     "DB": [
@@ -45,39 +45,32 @@
     "IR": [
       "Zach Charbonnet",
       "Jordyn Tyson",
-      "Denzel Perryman"
+      "Travis Etienne",
+      "Leonard Williams"
     ]
   },
-  "notes": "Sep 20 6:27 AM sync: no Eddies roster/FAAB change; FAAB $91; 0 pending. W2 vs Valley 21\u20130 (TNF Dorian Williams only); slate not live at scrape. Recommend leave lineup. | Sep 23 trade: \u2212Jamien Sherwood +Jordyn Brooks (from Saltese) | Sep 23 trade: \u2212Dorian \u2212Wingard +Etienne +Winfield | Sep 23 12:05 PM FA: +Marques Sigle (DB)/\u2212Antoine Winfield (hours after TTAB trade). | Sep 30 W4 waivers: +Brian Robinson Jr. $6 (\u2212Chimere Dike); +Trenton Simpson $6 (\u2212Marques Sigle). FAAB $79.",
+  "notes": "Sep 20 6:27 AM sync: no Eddies roster/FAAB change; FAAB $91; 0 pending. W2 vs Valley 21–0 (TNF Dorian Williams only); slate not live at scrape. Recommend leave lineup. | Sep 23 trade: −Jamien Sherwood +Jordyn Brooks (from Saltese) | Sep 23 trade: −Dorian −Wingard +Etienne +Winfield | Sep 23 12:05 PM FA: +Marques Sigle (DB)/−Antoine Winfield (hours after TTAB trade). | Sep 30 W4 waivers: +Brian Robinson Jr. $6 (−Chimere Dike); +Trenton Simpson $6 (−Marques Sigle). FAAB $79. | Oct 6 trade: −Omarion Hampton −Mack Wilson +Breece Hall +Rhamondre Stevenson (from Saltese). | Oct 7 rebuild from live Fantrax roster: Tyjae Spears, Denzel Perryman, Kendre Miller no longer rostered; +Chimere Dike $2, +Tuli Tuipulotu $6. FAAB $71.",
   "pendingClaims": [],
   "pendingClaim": null,
-  "week2": {
-    "opponent": "Valley Old Goats",
-    "homeAway": "away",
-    "projEddies": 183.8,
-    "projOpp": 188.4
-  },
   "flags": [
-    "Jalen Coker \u2014 Quadriceps - Questionable (active slot)",
-    "Travis Etienne \u2014 Hamstring - Out Indefinitely (reserve)",
-    "Zach Charbonnet \u2014 Injured Reserve List - PUP-R - Knee - acl (IR slot)",
-    "Jordyn Tyson \u2014 Injured Reserve List - IR-R - Hamstring (IR slot)",
-    "Julian Love \u2014 Calf - Questionable (active slot)",
-    "Denzel Perryman \u2014 Injured Reserve List - IR - Undisclosed (IR slot)"
+    "Jalen Coker — Quadriceps - Questionable (active slot)",
+    "Travis Etienne — Hamstring - Out Indefinitely (reserve)",
+    "Zach Charbonnet — Injured Reserve List - PUP-R - Knee - acl (IR slot)",
+    "Jordyn Tyson — Injured Reserve List - IR-R - Hamstring (IR slot)",
+    "Julian Love — Calf - Questionable (active slot)"
   ],
-  "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
+  "source": "Fantrax Oct 7 2026 ~9:20 AM PT live Eddies roster (post Week 5 FAAB clear; Oct 6 Saltese trade applied).",
   "injuryFlags": [
-    "Jalen Coker \u2014 Quadriceps - Questionable (active slot)",
-    "Travis Etienne \u2014 Hamstring - Out Indefinitely (reserve)",
-    "Zach Charbonnet \u2014 Injured Reserve List - PUP-R - Knee - acl (IR slot)",
-    "Jordyn Tyson \u2014 Injured Reserve List - IR-R - Hamstring (IR slot)",
-    "Julian Love \u2014 Calf - Questionable (active slot)",
-    "Denzel Perryman \u2014 Injured Reserve List - IR - Undisclosed (IR slot)"
+    "Jalen Coker — Quadriceps - Questionable (active slot)",
+    "Travis Etienne — Hamstring - Out Indefinitely (reserve)",
+    "Zach Charbonnet — Injured Reserve List - PUP-R - Knee - acl (IR slot)",
+    "Jordyn Tyson — Injured Reserve List - IR-R - Hamstring (IR slot)",
+    "Julian Love — Calf - Questionable (active slot)"
   ],
   "lineupFlags": [
-    "Jalen Coker \u2014 Quadriceps - Questionable (active slot)",
-    "Julian Love \u2014 Calf - Questionable (active slot)"
+    "Jalen Coker — Quadriceps - Questionable (active slot)",
+    "Julian Love — Calf - Questionable (active slot)"
   ],
-  "updated": "2026-09-30",
+  "updated": "2026-10-07",
   "startingQB": "Trevor Lawrence"
 }
