@@ -15,6 +15,20 @@
       color: var(--text-muted);
       font-variant-numeric: tabular-nums;
     }
+    .rank-record {
+      display: inline-block;
+      margin-left: 0.45rem;
+      padding: 0.05rem 0.45rem;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      vertical-align: 0.15em;
+      color: var(--text-muted);
+      border: 1px solid var(--team-color, var(--border-glow));
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -71,7 +85,7 @@
             ${WUC.teamMark(r.teamId, { size: "md" })}
             <div>
               <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
-              <h2 class="rank-team">${WUC.escapeHtml(r.team)}</h2>
+              <h2 class="rank-team">${WUC.escapeHtml(r.team)}${r.record ? ` <span class="rank-record">${WUC.escapeHtml(r.record)}</span>` : ""}</h2>
               <div class="rank-line">${WUC.escapeHtml(line)}</div>
               <p class="rank-blurb">${formatBlurb(r.blurb)}</p>
             </div>
