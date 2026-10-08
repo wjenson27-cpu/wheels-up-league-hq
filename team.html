@@ -144,14 +144,28 @@
         chart.innerHTML = WUC.scoreChart(games, team.color);
         const log = document.getElementById("scoreLog");
         if (games.length) {
-          log.innerHTML = `<div class="table-scroll"><table class="trade-table" aria-label="Weekly results">
-            <thead><tr><th class="col-rank">Wk</th><th class="col-team">Opponent</th><th class="col-num">Score</th><th class="col-record">Result</th></tr></thead>
-            <tbody>${games.map((g) => `<tr>
+          log.innerHTML = `<div class="table-scroll week-log-scroll"><table class="trade-table week-log" aria-label="Weekly results">
+            <thead><tr><th class="col-rank">Wk</th><th class="col-team">Opp</th><th class="col-num">Score</th><th class="col-record">W/L</th></tr></thead>
+            <tbody>${games.map((g) => {
+              const opp = g.oppId ? WUC.teamById(g.oppId) : {};
+              const full = WUC.officialName(g.oppId || g.oppName);
+              const shortName = (opp && opp.abbrev) || full;
+              const mark = WUC.teamMark(g.oppId || g.oppName, { size: "sm" });
+              const inner = `<span class="team-inline">${mark}<span class="opp-full">${WUC.escapeHtml(full)}</span><span class="opp-short">${WUC.escapeHtml(shortName)}</span></span>`;
+              const at = g.side === "away" ? `<span class="opp-at">@</span>` : "";
+              const who = g.oppId
+                ? `<a class="team-link" href="${WUC.teamHref(g.oppId)}">${inner}</a>`
+                : inner;
+              const badge = g.result === "W" || g.result === "L" || g.result === "T"
+                ? `<span class="wl-badge is-${g.result.toLowerCase()}">${g.result}</span>`
+                : WUC.escapeHtml(String(g.status || "—"));
+              return `<tr>
               <td class="col-rank">${g.week}</td>
-              <td class="col-team"><span class="opp-line">${g.side === "away" ? "<span class=\"opp-at\">@</span>" : ""}${WUC.teamLinkHtml(g.oppId || g.oppName, { size: "sm" })}</span></td>
+              <td class="col-team"><span class="opp-line">${at}${who}</span></td>
               <td class="col-num">${WUC.formatPts(g.score)}–${WUC.formatPts(g.oppScore)}</td>
-              <td class="col-record">${g.result ? WUC.escapeHtml(g.result) : WUC.escapeHtml(String(g.status || "—"))}</td>
-            </tr>`).join("")}</tbody>
+              <td class="col-record">${badge}</td>
+            </tr>`;
+            }).join("")}</tbody>
           </table></div>`;
         }
 

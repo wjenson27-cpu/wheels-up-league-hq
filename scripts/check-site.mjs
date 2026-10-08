@@ -254,11 +254,28 @@ async function checkPages() {
               const rows = document.querySelectorAll("table.standings-table tbody tr").length;
               const text = document.body.innerText || "";
               const playoff = document.querySelectorAll(".col-playoff").length;
-              return { rows, playoff, hasFoot: /10,000 simulated seasons/.test(text), hasCol: /Playoff %/.test(text) };
+              const hits = (a, b) => a.right > b.left + 0.5 && a.left < b.right - 0.5 && a.bottom > b.top + 0.5 && a.top < b.bottom - 0.5;
+              const overlaps = [];
+              document.querySelectorAll(".standings-table tbody tr").forEach((row) => {
+                const nameEl = row.querySelector(".col-team .team-inline > span:last-child");
+                const cell = row.querySelector("td.col-team");
+                const rec = row.querySelector("td.col-record");
+                const pf = row.querySelector("td.col-num");
+                if (!nameEl || !cell || !rec) return;
+                const nb = nameEl.getBoundingClientRect();
+                const cb = cell.getBoundingClientRect();
+                const rb = rec.getBoundingClientRect();
+                const label = nameEl.textContent.trim();
+                if (nb.right > cb.right + 1 || hits(nb, rb) || (pf && hits(nb, pf.getBoundingClientRect()))) {
+                  overlaps.push(label);
+                }
+              });
+              return { rows, playoff, hasFoot: /10,000 simulated seasons/.test(text), hasCol: /Playoff %/.test(text), overlaps };
             });
             if (info.rows < 14) errors.push(`standings table has ${info.rows} rows`);
             if (!info.hasCol || info.playoff < 14) errors.push("standings missing Playoff %");
             if (!info.hasFoot) errors.push("standings missing playoff footnote");
+            if (info.overlaps.length) errors.push(`team names overlap columns: ${info.overlaps.slice(0, 3).join(", ")}`);
           }
           if (name === "team-eddies") {
             const info = await page.evaluate(() => {
@@ -278,6 +295,25 @@ async function checkPages() {
             if (info.chars !== 1 || info.etienne !== 1) errors.push(`IR dupes charbonnet=${info.chars} etienne=${info.etienne}`);
             if (info.raw) errors.push("raw roster note is visible");
             if (info.larry || info.lukeNick) errors.push("trade still uses a nickname owner");
+            if (viewport.name === "mobile") {
+              const log = await page.evaluate(() => {
+                const table = document.querySelector(".week-log");
+                const wrap = document.querySelector(".week-log-scroll");
+                if (!table || !wrap) return { missing: true };
+                const header = table.querySelector("th.col-record");
+                const hb = header.getBoundingClientRect();
+                const wb = wrap.getBoundingClientRect();
+                return {
+                  missing: false,
+                  header: header.textContent.trim(),
+                  overflow: table.scrollWidth - wrap.clientWidth,
+                  cut: hb.right > wb.right + 1
+                };
+              });
+              if (log.missing) errors.push("weekly results table missing");
+              else if (log.overflow > 1 || log.cut) errors.push(`weekly results overflow ${Math.round(log.overflow)}px`);
+              else if (log.header !== "W/L") errors.push(`weekly results header is ${log.header}`);
+            }
           }
           if (name === "index.html") {
             const info = await page.evaluate(() => {

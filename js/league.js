@@ -518,32 +518,57 @@
     return { mean, sd: Math.sqrt(variance), n: values.length };
   }
 
-  function randn() {
-    let u = 0;
-    let v = 0;
-    while (u === 0) u = Math.random();
-    while (v === 0) v = Math.random();
-    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+  function hashString(str) {
+    let h = 2166136261;
+    for (let i = 0; i < str.length; i += 1) {
+      h ^= str.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return h >>> 0;
   }
 
-  function sampleScore(mean, sd) {
+  function mulberry32(seed) {
+    let a = seed >>> 0;
+    return function rng() {
+      a |= 0;
+      a = (a + 0x6D2B79F5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function makeRandn(rng) {
+    return function randn() {
+      let u = 0;
+      let v = 0;
+      while (u === 0) u = rng();
+      while (v === 0) v = rng();
+      return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+    };
+  }
+
+  function sampleScore(mean, sd, randn) {
     const x = mean + sd * randn();
     return Math.max(0, Math.round(x * 10) / 10);
   }
 
+  /* schedule.weeks is the matchup list the sim reads.
+     A week key that is present and not yet final is played as written.
+     Any regular-season week that is not in that object is paired at random. */
   function scheduleRemaining(schedule, weeks, teams) {
     const finalWeeks = new Set((weeks || []).filter(weekIsFinal).map((w) => Number(w.week)));
     const idSet = new Set(teams.map((t) => t.id));
     const fixed = [];
-    let maxScheduled = 0;
     const weekMap = (schedule && schedule.weeks) || {};
+    const scheduledWeeks = new Set();
     Object.keys(weekMap).forEach((key) => {
       const week = Number(key);
-      if (!week) return;
-      maxScheduled = Math.max(maxScheduled, week);
-      if (finalWeeks.has(week) || week > PLAYOFF_ODDS.regularSeasonWeeks) return;
+      if (!week || week > PLAYOFF_ODDS.regularSeasonWeeks) return;
       const pairs = weekMap[key];
-      if (!Array.isArray(pairs)) return;
+      if (!Array.isArray(pairs) || !pairs.length) return;
+      scheduledWeeks.add(week);
+      if (finalWeeks.has(week)) return;
       pairs.forEach((pair) => {
         if (!Array.isArray(pair) || pair.length < 2) return;
         const a = resolveTeamId(pair[0]);
@@ -552,11 +577,12 @@
       });
     });
     const openWeeks = [];
-    const start = Math.max(maxScheduled, ...[...finalWeeks, 0]) + 1;
+    const start = (finalWeeks.size ? Math.max(...finalWeeks) : 0) + 1;
     for (let week = start; week <= PLAYOFF_ODDS.regularSeasonWeeks; week += 1) {
-      if (!finalWeeks.has(week)) openWeeks.push(week);
+      if (!finalWeeks.has(week) && !scheduledWeeks.has(week)) openWeeks.push(week);
     }
-    return { fixed, openWeeks, maxScheduled };
+    const publishedFuture = [...scheduledWeeks].filter((week) => !finalWeeks.has(week) && week >= start).sort((a, b) => a - b);
+    return { fixed, openWeeks, publishedFuture };
   }
 
   function copyStandings(teams) {
@@ -572,9 +598,9 @@
     return state;
   }
 
-  function playGame(state, model, a, b) {
-    const sa = sampleScore(model[a].mu, model[a].sd);
-    const sb = sampleScore(model[b].mu, model[b].sd);
+  function playGame(state, model, a, b, randn) {
+    const sa = sampleScore(model[a].mu, model[a].sd, randn);
+    const sb = sampleScore(model[b].mu, model[b].sd, randn);
     state[a].pf += sa;
     state[b].pf += sb;
     if (sa > sb) {
@@ -601,15 +627,34 @@
     });
   }
 
-  function shuffleIds(ids) {
+  function shuffleIds(ids, rng) {
     const list = [...ids];
     for (let i = list.length - 1; i > 0; i -= 1) {
-      const j = Math.floor(Math.random() * (i + 1));
+      const j = Math.floor(rng() * (i + 1));
       const swap = list[i];
       list[i] = list[j];
       list[j] = swap;
     }
     return list;
+  }
+
+  function formatWeekSpan(weeks) {
+    const nums = [...weeks].sort((a, b) => a - b);
+    if (!nums.length) return "";
+    const parts = [];
+    let start = nums[0];
+    let prev = nums[0];
+    for (let i = 1; i <= nums.length; i += 1) {
+      const n = nums[i];
+      if (n === prev + 1) {
+        prev = n;
+        continue;
+      }
+      parts.push(start === prev ? String(start) : `${start}–${prev}`);
+      start = n;
+      prev = n;
+    }
+    return parts.join(", ");
   }
 
   function formatPlayoffLabel(row) {
@@ -651,20 +696,31 @@
       const sd = Math.max(8, n ? weight * teamSd + (1 - weight) * leagueSd : leagueSd);
       model[t.id] = { mu, sd };
     });
-    const { fixed, openWeeks, maxScheduled } = scheduleRemaining(schedule, weeks, list);
+    const { fixed, openWeeks, publishedFuture } = scheduleRemaining(schedule, weeks, list);
     const remainingFor = {};
     ids.forEach((id) => {
       remainingFor[id] = fixed.filter((g) => g.a === id || g.b === id).length + openWeeks.length;
     });
     const base = copyStandings(list);
+    const standKey = [...list]
+      .sort((a, b) => String(a.id).localeCompare(String(b.id)))
+      .map((t) => [t.id, Number(t.wins) || 0, Number(t.losses) || 0, Number(t.ties) || 0, pointsFor(t) || 0].join(":"))
+      .join("|");
+    const scoreKey = [...ids].sort().map((id) => `${id}:${(byTeamScores[id] || []).join(",")}`).join("|");
+    const schedKey = fixed.map((g) => `${g.week}:${g.a}<${g.b}`).sort().join("|");
+    const finals = (weeks || []).filter(weekIsFinal).map((w) => Number(w.week));
+    const through = finals.length ? Math.max(...finals) : 0;
+    const seed = hashString([through, standKey, scoreKey, schedKey, openWeeks.join(",")].join("#"));
+    const rng = mulberry32(seed);
+    const randn = makeRandn(rng);
     const made = Object.fromEntries(ids.map((id) => [id, 0]));
     for (let sim = 0; sim < sims; sim += 1) {
       const state = copyStandings(list);
-      fixed.forEach((g) => playGame(state, model, g.a, g.b));
+      fixed.forEach((g) => playGame(state, model, g.a, g.b, randn));
       openWeeks.forEach(() => {
-        const order = shuffleIds(ids);
+        const order = shuffleIds(ids, rng);
         for (let i = 0; i + 1 < order.length; i += 2) {
-          playGame(state, model, order[i], order[i + 1]);
+          playGame(state, model, order[i], order[i + 1], randn);
         }
       });
       rankIds(state, ids).slice(0, spots).forEach((id) => { made[id] += 1; });
@@ -690,12 +746,19 @@
         : alreadyAhead >= spots;
       byId[id] = { rate: made[id] / sims, clinched, eliminated };
     });
-    const finals = (weeks || []).filter(weekIsFinal).map((w) => Number(w.week));
-    const through = finals.length ? Math.max(...finals) : 0;
-    const schedNote = maxScheduled
-      ? `The schedule file only lists weeks 1–${maxScheduled}, so later weeks are random matchups.`
-      : "No future matchups are in the schedule file, so the rest of the season is random matchups.";
-    const footnote = `Playoff % is the share of ${sims.toLocaleString("en-US")} simulated seasons where that club finishes in the top ${spots}. Each club’s weekly score is based on what it has posted so far, pulled toward the league average while the sample is small. Tiebreak is wins, then losses, then points for. This uses an ${spots}-team playoff and a ${PLAYOFF_ODDS.regularSeasonWeeks}-week regular season, with no divisions and no byes — from the 2024–2025 results in the league history, not from a 2026 rules line. ${schedNote} Computed in your browser${through ? ` from scores through week ${through}` : ""}.`;
+    let schedNote = "Every remaining week uses a published matchup from the schedule file.";
+    const openLabel = openWeeks.length === 1
+      ? `Week ${openWeeks[0]} is not in the schedule file yet, so that week is a random matchup.`
+      : `Weeks ${formatWeekSpan(openWeeks)} are not in the schedule file yet, so those weeks are random matchups.`;
+    if (openWeeks.length && publishedFuture.length) {
+      const pubLabel = publishedFuture.length === 1
+        ? `week ${publishedFuture[0]}`
+        : `weeks ${formatWeekSpan(publishedFuture)}`;
+      schedNote = `Published matchups cover ${pubLabel}. ${openLabel}`;
+    } else if (openWeeks.length) {
+      schedNote = `No remaining weeks are in the schedule file yet. ${openLabel}`;
+    }
+    const footnote = `Playoff % is the share of ${sims.toLocaleString("en-US")} simulated seasons where that club finishes in the top ${spots}. Each club’s weekly score is based on what it has posted so far, pulled toward the league average while the sample is small. Tiebreak is wins, then losses, then points for. This uses an ${spots}-team playoff and a ${PLAYOFF_ODDS.regularSeasonWeeks}-week regular season, with no divisions and no byes — from the 2024–2025 results in the league history, not from a 2026 rules line. ${schedNote} The same posted scores and schedule always give the same percentages. Computed in your browser${through ? ` from scores through week ${through}` : ""}.`;
     return { byId, footnote, spots, simulations: sims };
   }
 
@@ -797,6 +860,7 @@
     renderRoster,
     renderStandingsRows,
     playoffOdds,
+    scheduleRemaining,
     formatPlayoffLabel,
     PLAYOFF_ODDS,
     skeleton,

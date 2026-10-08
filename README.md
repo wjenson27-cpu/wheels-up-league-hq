@@ -46,7 +46,7 @@ Automated jobs write these files and push them to `main` several times a day. **
 | `data/teams.json` | 14 clubs: names, owners, records, points, FAAB, colors. |
 | `data/scores.json` | Latest week’s matchups. |
 | `data/scores-wN-2026.json` | Older weeks, when those files exist (`scores-w1-2026.json`, and so on). |
-| `data/schedule.json` | Season matchup pairings. |
+| `data/schedule.json` | Season matchup pairings. The playoff sim reads `weeks`. |
 | `data/rosters/*.json` | Depth chart for each club. |
 | `data/roster-eddies.json` | Older Eddies roster file. Used only if `data/rosters/eddies.json` is missing. |
 | `data/transactions.json` | League wire. |
@@ -68,7 +68,20 @@ Automated jobs write these files and push them to `main` several times a day. **
 - `js/main.js` — header, footer, menu
 - `js/league.js` — standings, team pages, score charts, playoff odds, and the “settled only” filters
 
-Playoff % on the standings page is calculated in the browser (10,000 simulated seasons). It assumes an **8-team playoff** and a **14-week regular season**, with no divisions and no byes. That comes from the 2024–2025 notes in `data/history.json` (2024 says “8-team playoffs”; 2025’s champion was a 5-seed and the 1-seed played in round 1; records such as 12-2 and 11-3 are 14 games). `data/schedule.json` currently only lists weeks 1–5, so weeks 6–14 are random matchups in the sim. The constant is `PLAYOFF_ODDS` at the top of `js/league.js` if those rules change.
+Playoff % on the standings page is calculated in the browser (10,000 simulated seasons). It assumes an **8-team playoff** and a **14-week regular season**, with no divisions and no byes. That comes from the 2024–2025 notes in `data/history.json` (2024 says “8-team playoffs”; 2025’s champion was a 5-seed and the 1-seed played in round 1; records such as 12-2 and 11-3 are 14 games). The constant is `PLAYOFF_ODDS` at the top of `js/league.js` if those rules change. The same scores and schedule always produce the same percentages.
+
+The sim reads **`data/schedule.json` → `weeks`**, the same list weeks 1–5 already use. Each key is the week number as a string. Each value is an array of games, and each game is two club names:
+
+```json
+"weeks": {
+  "6": [
+    ["Eagle Ridge Eddies", "Mrs. Doubtpfizer"],
+    ["Pocket Agents", "Ultron"]
+  ]
+}
+```
+
+Use the club’s `name` from `teams.json` (for example `Towner Top Aga Bottom`, not `TTAB`). When a data job adds weeks 6–14 in that shape, those real matchups are used automatically. A week that is missing from `weeks` is still simulated, but the pairing is random. The per-team arrays elsewhere in the file are not what the sim reads.
 
 Podcast link, if it ever changes:
 

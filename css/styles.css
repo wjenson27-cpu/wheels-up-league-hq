@@ -1745,6 +1745,68 @@ summary:focus-visible {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.opp-short { display: none; }
+.wl-badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.4rem;
+  height: 1.4rem;
+  padding: 0 0.28rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.wl-badge.is-w { color: #04140a; background: var(--sea-green); }
+.wl-badge.is-l { color: #fff; background: #e11d48; }
+.wl-badge.is-t { color: #041018; background: var(--gold, #e8c547); }
+
+@media (max-width: 700px) {
+  .standings-table td.col-team,
+  .standings-table th.col-team {
+    overflow: hidden;
+  }
+  .standings-table td.col-team .team-link,
+  .standings-table td.col-team .team-inline {
+    display: flex;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .standings-table td.col-team .team-inline > span:last-child {
+    display: block;
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .week-log-scroll { overflow: hidden; }
+  .week-log {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .week-log .col-rank { width: 1.7rem; }
+  .week-log .col-record { width: 2.3rem; }
+  .week-log .col-num { width: 5.5rem; }
+  .week-log .col-team { min-width: 0; overflow: hidden; }
+  .week-log .opp-full { display: none; }
+  .week-log .opp-short { display: inline; }
+  .week-log .opp-line,
+  .week-log .team-link,
+  .week-log .team-inline {
+    display: flex;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .week-log .team-inline > .opp-short {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+  }
+  .week-log thead th,
+  .week-log tbody td { padding: 0.4rem 0.22rem; }
+}
 
 @media (max-width: 700px) {
   .standings-table .col-owner,
@@ -1763,14 +1825,6 @@ summary:focus-visible {
   .standings-table thead th { letter-spacing: 0.02em; font-size: 0.6rem; }
   .standings-table thead th.col-playoff { white-space: normal; line-height: 1.15; }
   .standings-table .team-mark-sm .team-logo { width: 22px; height: 22px; }
-  .standings-table .col-team .team-inline > span:last-child {
-    display: inline-block;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    vertical-align: bottom;
-  }
   .bar-row { grid-template-columns: minmax(3.4rem, 5.2rem) 1fr auto; }
   .vbar-pts { font-size: 0.62rem; }
   .pulse-banner { padding: 1.35rem 1.1rem 1.5rem; }
