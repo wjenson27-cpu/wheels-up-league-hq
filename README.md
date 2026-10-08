@@ -23,6 +23,7 @@ python3 -m http.server 8080
 | `index.html` | Home pulse — CTA, tx snippet, Eddies snapshot |
 | `rosters.html` | Team cards + Eddies depth chart + tx feed |
 | `trades.html` | Trade scoreboard (empty + sample placeholder) |
+| `trade-calculator.html` | What-if trade calculator (rest-of-season values) |
 | `rankings.html` | Week 1 power rankings 1–14 |
 | `history.html` | League history placeholders |
 | `podcast.html` | Big CTA + Spotify embed |
@@ -40,6 +41,18 @@ python3 -m http.server 8080
 | `data/history.json` | Champions, lore, commissioner eras |
 
 Other teams’ names/blurbs in rankings are **SAMPLE** until you replace them with real Fantrax data.
+
+## Trade calculator values
+
+`trade-calculator.html` reads `data/player-values.json`. It does not call any stats API. The league is a **redraft** (full 20-round snake each year, new draft Aug 30 2026, no keeper or dynasty language in the history, scoring page, or archives), so the number is rest-of-season value only.
+
+Refresh the file after each week's games lock. From the repo root:
+
+```bash
+python3 scripts/build_player_values.py
+```
+
+The script pulls 2026 weekly stats from the public Sleeper API, scores them with this league's Fantrax rules (PPR, TE premium, carry bonus, IDP), and writes the JSON. If Sleeper cannot be reached it stops and leaves the old file alone. Players on a roster who do not match a stat line are listed in the script output and in `unmatchedRostered` inside the JSON.
 
 ## Podcast URL
 

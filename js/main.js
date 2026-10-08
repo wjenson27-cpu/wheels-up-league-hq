@@ -5,6 +5,7 @@
     { href: "rankings.html", label: "Rankings" },
     { href: "faab.html", label: "FAAB" },
     { href: "trades.html", label: "Trades" },
+    { href: "trade-calculator.html", label: "Calc" },
     { href: "awards.html", label: "Awards" },
     { href: "rosters.html", label: "Rosters" }
   ];

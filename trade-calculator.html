@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trade calculator — Wheels Up Collective</title>
+  <link rel="icon" href="img/wu-mark.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div id="site-nav"></div>
+  <main class="wrap" id="main-content">
+    <header class="page-hero">
+      <span class="eyebrow">What-if desk</span>
+      <h1>Trade calculator</h1>
+      <p class="lede">Pick two clubs, add the players (and FAAB, if any), and see who comes out ahead for the rest of this season. Nothing here is sent to Fantrax. It is a hypothetical only.</p>
+      <p class="muted mb-0" id="tcAsOf">Loading values…</p>
+    </header>
+
+    <p class="tc-error" id="tcError" hidden></p>
+
+    <div class="tc-sides" id="tcSides" hidden>
+      <section class="card tc-card" id="tcSideA" aria-label="Team A"></section>
+      <section class="card tc-card" id="tcSideB" aria-label="Team B"></section>
+    </div>
+
+    <section class="card tc-card tc-verdict" id="tcVerdict" hidden aria-live="polite"></section>
+
+    <section class="card tc-card" id="tcRosters" hidden></section>
+
+    <details class="card tc-card tc-how">
+      <summary>How the numbers work</summary>
+      <div id="tcHow"></div>
+    </details>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/trade-calculator.js"></script>
+</body>
+</html>
