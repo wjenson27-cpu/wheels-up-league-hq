@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-07",
+  "asOf": "2026-10-08",
   "faabLeft": 42,
   "startingQB": "Lamar Jackson",
   "roster": {
@@ -26,14 +26,14 @@
       "Justin Jefferson"
     ],
     "TE": [
-      "Travis Kelce"
+      "Travis Kelce",
+      "Tyler Higbee"
     ],
     "LB": [
       "Bobby Okereke",
       "Derrick Barnes",
       "Daiyan Henley",
       "Demetrius Knight",
-      "Cedric Gray",
       "Ventrell Miller",
       "Pete Werner"
     ],
@@ -50,10 +50,10 @@
       "Pete Werner"
     ]
   },
-  "notes": "Sep 16 post-waiver: no claims. FAAB $115. −Josh Uche (Sep 15). | Fantasy check Sep 28: −Malik Davis (['IR']); −De'Zhaun Stribling (['IR']). Fantasy check Sep 29: −Devon Achane (Sep 28 9:45 AM). | Sep 30 W4 waivers/FA: +Ollie Gordon $65; +Raheim Sanders $4; +A.J. Dillon $2; +Roman Wilson $2. FAAB $42. | Oct 7 W5 waivers/FA: +Aaron Rodgers (−Gabe Jacas). FAAB $42.",
+  "notes": "Sep 16 post-waiver: no claims. FAAB $115. −Josh Uche (Sep 15). | Fantasy check Sep 28: −Malik Davis (['IR']); −De'Zhaun Stribling (['IR']). Fantasy check Sep 29: −Devon Achane (Sep 28 9:45 AM). | Sep 30 W4 waivers/FA: +Ollie Gordon $65; +Raheim Sanders $4; +A.J. Dillon $2; +Roman Wilson $2. FAAB $42. | Oct 7 W5 waivers/FA: +Aaron Rodgers (−Gabe Jacas). FAAB $42. | Oct 7 FA: +Tyler Higbee; −Cedric Gray.",
   "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "injuryFlags": [
     "Justin Jefferson — Ankle - Questionable (IR slot)",
     "Jordan Mason — Injured Reserve List - IR - Thumb (IR slot)",

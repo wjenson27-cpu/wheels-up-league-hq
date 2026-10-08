@@ -1,7 +1,70 @@
 {
   "updated": "2026-10-07",
-  "source": "Fantrax Week 5 waivers processed Wed Oct 7 2026 9:00 AM PT (25 claims) + TTAB free-agent moves 9:07–9:12 AM PT (+Khalil Mack/−Bradley Chubb; +Mansoor Delane/−Treydan Stukes; +Dane Belton/−Andre Cisco).",
+  "source": "Fantrax Week 5 waivers processed Wed Oct 7 2026 9:00 AM PT (25 claims) + Oct 7 free-agent moves through 3:34 PM PT (TTAB, Morningside, Dongers, Ultron). Fantrax check Thu Oct 8 ~6:05 AM PT: no Oct 8 moves yet.",
   "items": [
+    {
+      "date": "2026-10-07",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD/DROP",
+      "summary": "Added Najee Harris (RB-NYG); dropped Mack Hollins (WR-NE) ($0/null bid)",
+      "time": "3:34 PM PDT",
+      "player": "Najee Harris",
+      "playerMeta": "RB-NYG",
+      "dropped": "Mack Hollins",
+      "droppedMeta": "WR-NE",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-07",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Antonio Williams (WR(R)-WAS); dropped Chris Rodriguez Jr. (RB-JAX) ($0/null bid)",
+      "time": "11:47 AM PDT",
+      "player": "Antonio Williams",
+      "playerMeta": "WR(R)-WAS",
+      "dropped": "Chris Rodriguez Jr.",
+      "droppedMeta": "RB-JAX",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-07",
+      "team": "Drummond Dongers",
+      "type": "ADD/DROP",
+      "summary": "Added Jameis Winston (QB-NYG); dropped Kyler Murray (QB-MIN) ($0/null bid)",
+      "time": "10:05 AM PDT",
+      "player": "Jameis Winston",
+      "playerMeta": "QB-NYG",
+      "dropped": "Kyler Murray",
+      "droppedMeta": "QB-MIN",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-07",
+      "team": "Morningside Muff Divers",
+      "type": "ADD/DROP",
+      "summary": "Added Tyler Higbee (TE-LAR); dropped Cedric Gray (LB-TEN) ($0/null bid)",
+      "time": "9:30 AM PDT",
+      "player": "Tyler Higbee",
+      "playerMeta": "TE-LAR",
+      "dropped": "Cedric Gray",
+      "droppedMeta": "LB-TEN",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-07",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Mansoor Delane (DB(R)-KC)",
+      "time": "9:13 AM PDT",
+      "player": "Mansoor Delane",
+      "playerMeta": "DB(R)-KC",
+      "bid": null,
+      "period": "Week 5"
+    },
     {
       "date": "2026-10-07",
       "team": "Towner Top Aga Bottom",
@@ -3142,6 +3205,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Settled Wed Oct 7 Week 5 FAAB clear and AM free-agent moves. Do not itemize pending claims.",
+  "note": "Settled Wed Oct 7 Week 5 FAAB clear and Oct 7 free-agent moves. Do not itemize pending claims.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "source": "Fantrax completed trades Oct 6 2026 (Eddies↔Saltese Hall/Stevenson for Hampton/Mack Wilson; Doubtpfizer↔Ultron Swift for Loveland).",
   "season": 2026,
   "trades": [
@@ -344,12 +344,18 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "2026-10-06 11:31 AM PT",
+      "lastUpdated": "2026-10-07 12:36 PM PT",
       "players": [
         "Jacory Croskey-Merritt",
         "Travis Etienne",
+        "Brian Robinson Jr.",
+        "Rhamondre Stevenson",
+        "Chimere Dike",
         "Brian Thomas",
+        "Jordyn Tyson",
         "Kyle Pitts",
+        "Leonard Williams",
+        "Trenton Simpson",
         "Julian Love"
       ],
       "note": null
@@ -357,10 +363,9 @@
     {
       "teamId": "morningside",
       "team": "Morningside Muff Divers",
-      "lastUpdated": "2026-09-30 10:26 AM PT",
+      "lastUpdated": "2026-10-07 9:30 AM PT",
       "players": [
         "Derrick Barnes",
-        "Cedric Gray",
         "Bobby Okereke",
         "Pete Werner"
       ],
@@ -412,10 +417,36 @@
       "lastUpdated": "2026-09-30 8:25 AM PT",
       "players": [],
       "note": null
+    },
+    {
+      "teamId": "ttab",
+      "team": "Towner Top Aga Bottom",
+      "lastUpdated": "2026-10-07 3:34 PM PT",
+      "players": [
+        "Ashton Jeanty",
+        "Cameron Skattebo",
+        "Javonte Williams",
+        "Emanuel Wilson",
+        "Tre Tucker",
+        "Christian Watson",
+        "Jameson Williams",
+        "Jake Ferguson",
+        "Dallas Goedert",
+        "Khalil Mack",
+        "Zack Baun",
+        "Divine Deablo",
+        "Harold Perkins",
+        "Jeremiah Trotter",
+        "Dorian Williams",
+        "Dee Winters",
+        "Dane Belton",
+        "Ji'Ayir Brown"
+      ],
+      "note": null
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax Oct 7 2026 ~6 AM PT check).",
+  "pending_note": "Pending trades 0 (Fantrax Oct 8 2026 ~6:05 AM PT check).",
   "fantrax_completed_view": "Newest official: Newman↔Saltese Aaron Jones+$5 FAAB for Nathan Landman (Oct 3 12:22 PM); Saltese↔Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers↔Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM).",
   "hqComplete": true
 }
