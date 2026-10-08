@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Season Power Rankings — Wheels Up Collective</title>
+  <link rel="icon" href="img/wu-mark.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
@@ -85,7 +86,7 @@
             ${WUC.teamMark(r.teamId, { size: "md" })}
             <div>
               <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
-              <h2 class="rank-team">${WUC.escapeHtml(r.team)}${r.record ? ` <span class="rank-record">${WUC.escapeHtml(r.record)}</span>` : ""}</h2>
+              <h2 class="rank-team">${r.teamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(r.teamId)}">${WUC.escapeHtml(r.team)}</a>` : WUC.escapeHtml(r.team)}${r.record ? ` <span class="rank-record">${WUC.escapeHtml(r.record)}</span>` : ""}</h2>
               <div class="rank-line">${WUC.escapeHtml(line)}</div>
               <p class="rank-blurb">${formatBlurb(r.blurb)}</p>
             </div>

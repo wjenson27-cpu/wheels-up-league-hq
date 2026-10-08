@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="img/wu-mark.png" type="image/png" />
   <title>Awards &amp; Survivor — Wheels Up Collective</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -127,7 +128,7 @@
               ${kitty.map((w) => `
                 <tr class="hot">
                   <td class="col-rank">${w.week}</td>
-                  <td class="col-team"><span class="team-inline">${WUC.teamMark(w.winnerTeamId, { size: "sm" })}<span>${WUC.escapeHtml(w.winner || "—")}</span></span></td>
+                  <td class="col-team"><span class="team-inline">${WUC.teamMark(w.winnerTeamId, { size: "sm" })}<span>${w.winnerTeamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(w.winnerTeamId)}">${WUC.escapeHtml(w.winner || "—")}</a>` : WUC.escapeHtml(w.winner || "—")}</span></span></td>
                   <td class="col-trades">${Number(w.score).toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
                 </tr>`).join("")}
             </tbody>
@@ -157,7 +158,7 @@
               ${elim.map((e) => `
                 <tr>
                   <td class="col-rank">${e.week}</td>
-                  <td class="col-team"><span class="team-inline">${WUC.teamMark(e.teamId, { size: "sm" })}<span>${WUC.escapeHtml(e.team || "—")}</span></span></td>
+                  <td class="col-team"><span class="team-inline">${WUC.teamMark(e.teamId, { size: "sm" })}<span>${e.teamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(e.teamId)}">${WUC.escapeHtml(e.team || "—")}</a>` : WUC.escapeHtml(e.team || "—")}</span></span></td>
                   <td class="col-trades">${Number(e.score).toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
                   <td class="col-owner">${e.aliveAfter != null ? e.aliveAfter : "—"}</td>
                 </tr>`).join("")}

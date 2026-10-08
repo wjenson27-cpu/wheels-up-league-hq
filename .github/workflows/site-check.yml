@@ -1,0 +1,36 @@
+name: Site check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  json:
+    name: Data files parse
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate JSON and page files
+        run: node scripts/check-site.mjs --json
+
+  pages:
+    name: Pages load cleanly
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: browser-actions/setup-chrome@v1
+        id: chrome
+      - name: Install browser driver
+        run: npm install --no-save puppeteer-core
+      - name: Open every page
+        env:
+          CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: node scripts/check-site.mjs --pages

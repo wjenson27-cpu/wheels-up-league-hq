@@ -2,14 +2,15 @@
 (function () {
   const PRIMARY = [
     { href: "index.html", label: "Home" },
+    { href: "standings.html", label: "Standings" },
     { href: "rankings.html", label: "Rankings" },
-    { href: "faab.html", label: "FAAB" },
+    { href: "rosters.html", label: "Rosters" },
     { href: "trades.html", label: "Trades" },
-    { href: "awards.html", label: "Awards" },
-    { href: "rosters.html", label: "Rosters" }
+    { href: "faab.html", label: "FAAB" }
   ];
 
   const MORE = [
+    { href: "awards.html", label: "Awards" },
     { href: "recap.html", label: "Recap" },
     { href: "history.html", label: "Archives" },
     { href: "archives.html", label: "2014–2025" },
@@ -24,19 +25,20 @@
 
   function currentPage() {
     const path = (location.pathname || "").split("/").pop() || "index.html";
-    return path === "" ? "index.html" : path;
+    const file = path === "" ? "index.html" : path;
+    return file === "team.html" ? "rosters.html" : file;
   }
 
   function buildNav() {
     const cur = currentPage();
     const primaryLinks = PRIMARY.map(
       (p) =>
-        `<li><a href="${p.href}" class="${p.href === cur ? "active" : ""}">${p.label}</a></li>`
+        `<li><a href="${p.href}" class="${p.href === cur ? "active" : ""}"${p.href === cur ? ' aria-current="page"' : ""}>${p.label}</a></li>`
     ).join("");
     const moreActive = MORE.some((p) => p.href === cur);
     const moreLinks = MORE.map(
       (p) =>
-        `<li><a href="${p.href}" class="${p.href === cur ? "active" : ""}">${p.label}</a></li>`
+        `<li><a href="${p.href}" class="${p.href === cur ? "active" : ""}"${p.href === cur ? ' aria-current="page"' : ""}>${p.label}</a></li>`
     ).join("");
 
     return `
@@ -65,6 +67,7 @@
 <footer class="site-footer">
   <p><strong>Wheels Up Collective</strong> · 14-team IDP · TE premium · Fantrax · WWJDD</p>
   <p><a href="${fan}" target="_blank" rel="noopener">Open league on Fantrax</a>
+    · <a href="standings.html">Standings</a>
     · <a href="scoring.html">Scoring</a>
     · <a href="podcast.html">Podcast</a></p>
   <p class="dim">Commish: ${cfg.commissioner || (cfg.commissioners || [])[0] || "—"}</p>
@@ -72,7 +75,29 @@
 </footer>`;
   }
 
+  function ensureA11y() {
+    if (!document.querySelector(".skip-link")) {
+      const skip = document.createElement("a");
+      skip.className = "skip-link";
+      skip.href = "#main-content";
+      skip.textContent = "Skip to content";
+      document.body.insertBefore(skip, document.body.firstChild);
+    }
+    const main = document.querySelector("main");
+    if (main && !main.id) main.id = "main-content";
+    const skip = document.querySelector(".skip-link");
+    if (skip && main && main.id) skip.href = "#" + main.id;
+    if (!document.querySelector('link[rel="icon"]')) {
+      const icon = document.createElement("link");
+      icon.rel = "icon";
+      icon.href = "img/wu-mark.png";
+      icon.type = "image/png";
+      document.head.appendChild(icon);
+    }
+  }
+
   function mountChrome() {
+    ensureA11y();
     const navHost = document.getElementById("site-nav");
     const footHost = document.getElementById("site-footer");
     if (navHost) navHost.innerHTML = buildNav();
@@ -94,6 +119,12 @@
         const open = links.classList.toggle("open");
         toggle.setAttribute("aria-expanded", open ? "true" : "false");
       });
+      links.addEventListener("click", (ev) => {
+        if (ev.target.closest("a")) {
+          links.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+      });
     }
     const moreBtn = document.getElementById("navMoreBtn");
     const moreItem = moreBtn && moreBtn.closest(".nav-more");
@@ -113,6 +144,8 @@
         if (ev.key === "Escape") {
           moreItem.classList.remove("open");
           moreBtn.setAttribute("aria-expanded", "false");
+          if (links) links.classList.remove("open");
+          if (toggle) toggle.setAttribute("aria-expanded", "false");
         }
       });
     }

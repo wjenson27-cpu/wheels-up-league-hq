@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Standings — Wheels Up Collective</title>
+  <link rel="icon" href="img/wu-mark.png" type="image/png" />
+  <meta name="description" content="Wheels Up Collective standings, points for, and week-by-week scores." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow" id="standEyebrow">Season</span>
+      <h1>Standings</h1>
+      <p class="lede" id="standLede">Record, points for, and points against from the team file. Week scores come from the posted score files.</p>
+    </header>
+
+    <div class="stat-row" id="highlightRow" hidden></div>
+
+    <section class="card" style="margin-bottom:1rem">
+      <div class="section-head">
+        <h2>League table</h2>
+        <div class="seg" role="group" aria-label="Sort standings">
+          <button type="button" class="seg-btn" data-sort="official" aria-pressed="true">Record</button>
+          <button type="button" class="seg-btn" data-sort="pf" aria-pressed="false">Points for</button>
+          <button type="button" class="seg-btn" data-sort="pa" aria-pressed="false">Points against</button>
+        </div>
+      </div>
+      <p class="muted" id="sortNote">Order follows the rank in the team file.</p>
+      <div id="standTable" aria-busy="true">
+        <div class="skeleton-stack" aria-hidden="true">
+          <div class="skeleton-bar"></div>
+          <div class="skeleton-bar med"></div>
+          <div class="skeleton-bar short"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid grid-2">
+      <section class="card">
+        <h2>Points for</h2>
+        <p class="muted">Season total from the team file.</p>
+        <div id="pfChart" aria-busy="true">
+          <div class="skeleton-stack" aria-hidden="true"><div class="skeleton-bar"></div><div class="skeleton-bar med"></div></div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="section-head">
+          <h2>Head to head</h2>
+        </div>
+        <div class="seg week-tabs" id="weekTabs" role="tablist" aria-label="Week"></div>
+        <div id="weekMatchups" aria-busy="true">
+          <div class="skeleton-stack" aria-hidden="true"><div class="skeleton-bar"></div><div class="skeleton-bar short"></div></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const tableEl = document.getElementById("standTable");
+      const chartEl = document.getElementById("pfChart");
+      const weeksEl = document.getElementById("weekMatchups");
+      const tabsEl = document.getElementById("weekTabs");
+      let teams = [];
+      let weeks = [];
+      let mode = "official";
+
+      function paintTable() {
+        tableEl.removeAttribute("aria-busy");
+        tableEl.innerHTML = WUC.renderStandingsRows(teams, mode, { weeks });
+        const note = document.getElementById("sortNote");
+        if (note) {
+          note.textContent = mode === "pf"
+            ? "Sorted by points for."
+            : mode === "pa"
+              ? "Sorted by points against, lowest first."
+              : "Order follows the rank in the team file.";
+        }
+        document.querySelectorAll("[data-sort]").forEach((btn) => {
+          const on = btn.getAttribute("data-sort") === mode;
+          btn.setAttribute("aria-pressed", on ? "true" : "false");
+          btn.classList.toggle("is-on", on);
+        });
+      }
+
+      function paintWeek(weekNum) {
+        const week = weeks.find((w) => Number(w.week) === Number(weekNum));
+        weeksEl.removeAttribute("aria-busy");
+        if (!week) {
+          weeksEl.innerHTML = WUC.emptyState("No score file for that week yet.");
+          return;
+        }
+        weeksEl.innerHTML = WUC.renderMatchups(week.matchups, WUC.weekIsFinal(week));
+        tabsEl.querySelectorAll("[data-week]").forEach((btn) => {
+          const on = Number(btn.getAttribute("data-week")) === Number(weekNum);
+          btn.setAttribute("aria-pressed", on ? "true" : "false");
+          btn.classList.toggle("is-on", on);
+        });
+      }
+
+      try {
+        await WUC.loadTeamColors();
+        const [teamsData, loadedWeeks] = await Promise.all([
+          WUC.loadJSON("data/teams.json"),
+          WUC.loadSeasonWeeks()
+        ]);
+        teams = (teamsData && teamsData.teams) || [];
+        WUC.indexTeams(teams);
+        weeks = loadedWeeks || [];
+        const season = (teamsData && teamsData.season) || (window.WUC_CONFIG && WUC_CONFIG.season) || "";
+        document.getElementById("standEyebrow").textContent = season ? `Season ${season}` : "Season";
+
+        if (!teams.length) {
+          tableEl.removeAttribute("aria-busy");
+          tableEl.innerHTML = WUC.emptyState("No clubs in the team file yet.");
+        } else {
+          paintTable();
+        }
+
+        chartEl.removeAttribute("aria-busy");
+        chartEl.innerHTML = WUC.pfChart(teams);
+
+        const highlights = WUC.seasonHighlights(weeks);
+        const row = document.getElementById("highlightRow");
+        const cards = [];
+        if (highlights.high) {
+          cards.push(`<article class="stat-card"><span class="eyebrow">High score</span><p class="stat-card-value">${WUC.formatPts(highlights.high.score)}</p><p class="mb-0">${WUC.teamLinkHtml(highlights.high.id || highlights.high.name, { size: "sm", text: highlights.high.name })} <span class="muted">· Week ${highlights.high.week}</span></p></article>`);
+        }
+        if (highlights.low) {
+          cards.push(`<article class="stat-card"><span class="eyebrow">Low score</span><p class="stat-card-value">${WUC.formatPts(highlights.low.score)}</p><p class="mb-0">${WUC.teamLinkHtml(highlights.low.id || highlights.low.name, { size: "sm", text: highlights.low.name })} <span class="muted">· Week ${highlights.low.week}</span></p></article>`);
+        }
+        if (highlights.margin && highlights.margin.winner) {
+          cards.push(`<article class="stat-card"><span class="eyebrow">Widest margin</span><p class="stat-card-value">${WUC.formatPts(highlights.margin.margin)}</p><p class="mb-0">${WUC.teamLinkHtml(highlights.margin.winner.id || highlights.margin.winner.name, { size: "sm", text: highlights.margin.winner.name })} <span class="muted">· Week ${highlights.margin.week}</span></p></article>`);
+        }
+        if (cards.length) {
+          row.hidden = false;
+          const label = highlights.cover.ok
+            ? `From posted finals through week ${highlights.cover.max}.`
+            : "From the final weeks posted on the site.";
+          row.innerHTML = cards.join("") + `<p class="highlight-note muted">${label}</p>`;
+        }
+
+        const finalWeeks = weeks.filter(WUC.weekIsFinal);
+        if (!finalWeeks.length) {
+          tabsEl.innerHTML = "";
+          weeksEl.removeAttribute("aria-busy");
+          weeksEl.innerHTML = WUC.emptyState("Week scores aren’t posted yet.");
+        } else {
+          tabsEl.innerHTML = finalWeeks.map((w) =>
+            `<button type="button" class="seg-btn" role="tab" data-week="${w.week}" aria-pressed="false">W${w.week}</button>`
+          ).join("");
+          paintWeek(finalWeeks[finalWeeks.length - 1].week);
+          tabsEl.addEventListener("click", (ev) => {
+            const btn = ev.target.closest("[data-week]");
+            if (btn) paintWeek(btn.getAttribute("data-week"));
+          });
+        }
+
+        document.querySelectorAll("[data-sort]").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            mode = btn.getAttribute("data-sort") || "official";
+            paintTable();
+          });
+        });
+      } catch (e) {
+        tableEl.removeAttribute("aria-busy");
+        tableEl.innerHTML = WUC.softError("Standings didn’t load. Try Refresh.");
+        chartEl.removeAttribute("aria-busy");
+        chartEl.innerHTML = "";
+        weeksEl.removeAttribute("aria-busy");
+        weeksEl.innerHTML = "";
+      }
+    });
+  </script>
+</body>
+</html>

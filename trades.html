@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Trades — Wheels Up Collective</title>
+  <link rel="icon" href="img/wu-mark.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
@@ -15,14 +16,11 @@
     <header class="page-hero">
       <span class="eyebrow">Deal sheet</span>
       <h1>Trade scoreboard</h1>
-      <p class="lede">League-wide completed deals, pending offers, and trade-block noise. <span class="muted" id="updatedLabel"></span></p>
+      <p class="lede">Completed deals only. <span class="muted" id="updatedLabel"></span></p>
     </header>
 
     <h2 style="font-size:1.05rem;margin:0 0 0.75rem">Completed</h2>
-    <div id="tradeCompleted"><p class="muted">Loading…</p></div>
-
-    <h2 style="font-size:1.05rem;margin:2rem 0 0.75rem">Pending offers</h2>
-    <div id="tradePending"><p class="muted">Loading…</p></div>
+    <div id="tradeCompleted" aria-busy="true"><p class="muted">Loading…</p></div>
 
     <h2 style="font-size:1.05rem;margin:2rem 0 0.75rem">On the block</h2>
     <div id="tradeBlocks"><p class="muted">Loading…</p></div>
@@ -30,33 +28,10 @@
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
   <script>
-    function resolveTeamId(label) {
-      const bare = String(label || "").split("(")[0].trim();
-      const teams = Object.values(WUC.teamColors || {});
-      const hit = teams.find(tm => tm.name === bare || bare.includes(tm.name) || (tm.name && tm.name.includes(bare)));
-      if (hit) return hit.id;
-      const aliases = [
-        ["Greenacres Goblins", "hyper"], ["Hypersecretors", "hyper"],
-        ["Towner Top Aga Bottom", "ttab"], ["Pocket Agents", "pocket"],
-        ["Substation", "substation"], ["Ultron", "ultron"],
-        ["Saltese Slamm", "saltese"], ["Eagle Ridge Eddies", "eddies"],
-        ["Slumlords", "slumlords"], ["Doubtpfizer", "doubtpfizer"],
-        ["Dongers", "dongers"], ["Divers", "morningside"],
-        ["Demons", "newman"], ["LAB", "lab"], ["Little Ass", "lab"],
-        ["Goats", "goats"], ["TTAB", "ttab"]
-      ];
-      for (const [key, id] of aliases) {
-        if (bare.includes(key) || key.includes(bare)) return id;
-      }
-      return null;
-    }
-
     function teamLabel(label) {
-      const id = resolveTeamId(label);
-      const text = WUC.escapeHtml(label || "Team");
-      if (!id) return text;
-      return `<span class="team-inline">${WUC.teamMark(id, { size: "sm" })}<span>${text}</span></span>`;
+      return WUC.teamLinkHtml(label, { size: "sm", text: label || "Team" });
     }
 
     function card(t) {
@@ -68,13 +43,14 @@
       const teamB = teamLabel(rawB);
       const teamAText = WUC.escapeHtml(rawA);
       const teamBText = WUC.escapeHtml(rawB);
-      const status = WUC.escapeHtml(t.status || "completed");
+      const badge = t.official === false ? `<span class="sample-badge">handshake</span>` : "";
       const date = t.date ? WUC.formatDate(t.date) : "—";
+      const week = t.week ? ` · Week ${WUC.escapeHtml(t.week)}` : "";
       return `
         <article class="card" style="margin-bottom:0.75rem">
           <h3 style="margin:0 0 0.35rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.5rem">${teamA} <span aria-hidden="true">↔</span> ${teamB}
-            <span class="sample-badge">${status}</span></h3>
-          <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">${date}</p>
+            ${badge}</h3>
+          <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">${date}${week}</p>
           <p><strong>${teamAText} sends:</strong> ${a || "—"}</p>
           <p><strong>${teamBText} sends:</strong> ${b || "—"}</p>
           <p class="muted mb-0">${WUC.escapeHtml(t.summary || t.notes || "")}</p>
@@ -82,11 +58,14 @@
     }
 
     function blockCard(b) {
+      const listed = Array.isArray(b.players) && b.players.length
+        ? b.players.map((p) => WUC.escapeHtml(p)).join(", ")
+        : WUC.escapeHtml(b.player || b.assets || "—");
       return `
         <article class="card" style="margin-bottom:0.75rem">
-          <h3 style="margin:0 0 0.35rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.5rem">${teamLabel(b.team || "Team")}
+          <h3 style="margin:0 0 0.35rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.5rem">${teamLabel(b.team || b.teamId || "Team")}
             <span class="sample-badge">block</span></h3>
-          <p class="mb-0"><strong>Listed:</strong> ${WUC.escapeHtml(b.player || b.assets || "—")}
+          <p class="mb-0"><strong>Listed:</strong> ${listed}
             ${(b.note || b.notes) ? ` — <span class="muted">${WUC.escapeHtml(b.note || b.notes)}</span>` : ""}</p>
         </article>`;
     }
@@ -98,23 +77,22 @@
         if (data.updated) {
           document.getElementById("updatedLabel").textContent = "Updated " + data.updated;
         }
-        const completed = (data.trades || []).filter(t => !t.status || t.status === "completed");
-        const pending = (data.pending || data.trades || []).filter(t => t.status === "pending");
+        const completed = WUC.completedTrades(data);
         const blocks = data.blocks || [];
 
         const empty = `<div class="card trade-empty"><div class="big">🤝</div>
           <h2 style="margin:0 0 0.35rem">Nothing here yet</h2>
-          <p class="mb-0">Nothing on the board yet — check back after the next wave of deals.</p></div>`;
+          <p class="mb-0">No completed deals in the trade file yet.</p></div>`;
 
-        document.getElementById("tradeCompleted").innerHTML =
-          completed.length ? completed.map(card).join("") : empty;
-        document.getElementById("tradePending").innerHTML =
-          pending.length ? pending.map(card).join("") : `<p class="muted">No pending offers on file.</p>`;
+        const done = document.getElementById("tradeCompleted");
+        done.removeAttribute("aria-busy");
+        done.innerHTML = completed.length ? completed.map(card).join("") : empty;
         document.getElementById("tradeBlocks").innerHTML =
           blocks.length ? blocks.map(blockCard).join("") : `<p class="muted">No trade-block listings on file.</p>`;
       } catch (e) {
-        console.error(e);
-        document.getElementById("tradeCompleted").innerHTML = `<p class="muted">Couldn’t load trades.</p>`;
+        const done = document.getElementById("tradeCompleted");
+        done.removeAttribute("aria-busy");
+        done.innerHTML = WUC.softError("Trades didn’t load. Try Refresh.");
       }
     });
   </script>
