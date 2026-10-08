@@ -594,6 +594,18 @@ document.querySelectorAll("nav button").forEach(function(b){
   };
 });
 </script>
-<!-- Cloudflare Web Analytics --><script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}'></script><!-- End Cloudflare Web Analytics -->
+<script>
+(function () {
+  var h = location.hostname;
+  if (h === "localhost" || h === "127.0.0.1" || h === "[::1]" || h === "") return;
+  var s = document.createElement("script");
+  s.type = "module";
+  s.defer = true;
+  s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  s.setAttribute("data-cf-beacon", '{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}');
+  document.body.appendChild(s);
+})();
+</script>
+
 </body>
 </html>

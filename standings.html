@@ -29,6 +29,7 @@
           <button type="button" class="seg-btn" data-sort="official" aria-pressed="true">Record</button>
           <button type="button" class="seg-btn" data-sort="pf" aria-pressed="false">Points for</button>
           <button type="button" class="seg-btn" data-sort="pa" aria-pressed="false">Points against</button>
+          <button type="button" class="seg-btn" data-sort="playoff" aria-pressed="false">Playoff %</button>
         </div>
       </div>
       <p class="muted" id="sortNote">Order follows the rank in the team file.</p>
@@ -72,18 +73,25 @@
       const tabsEl = document.getElementById("weekTabs");
       let teams = [];
       let weeks = [];
+      let playoff = null;
       let mode = "official";
 
       function paintTable() {
         tableEl.removeAttribute("aria-busy");
-        tableEl.innerHTML = WUC.renderStandingsRows(teams, mode, { weeks });
+        const table = WUC.renderStandingsRows(teams, mode, { weeks, playoff });
+        const noteHtml = playoff && playoff.footnote
+          ? `<p class="playoff-note muted">${WUC.escapeHtml(playoff.footnote)}</p>`
+          : "";
+        tableEl.innerHTML = table + noteHtml;
         const note = document.getElementById("sortNote");
         if (note) {
           note.textContent = mode === "pf"
             ? "Sorted by points for."
             : mode === "pa"
               ? "Sorted by points against, lowest first."
-              : "Order follows the rank in the team file.";
+              : mode === "playoff"
+                ? "Sorted by playoff odds, highest first."
+                : "Order follows the rank in the team file.";
         }
         document.querySelectorAll("[data-sort]").forEach((btn) => {
           const on = btn.getAttribute("data-sort") === mode;
@@ -109,13 +117,19 @@
 
       try {
         await WUC.loadTeamColors();
-        const [teamsData, loadedWeeks] = await Promise.all([
+        const [teamsData, loadedWeeks, schedule] = await Promise.all([
           WUC.loadJSON("data/teams.json"),
-          WUC.loadSeasonWeeks()
+          WUC.loadSeasonWeeks(),
+          WUC.loadOptional("data/schedule.json")
         ]);
         teams = (teamsData && teamsData.teams) || [];
         WUC.indexTeams(teams);
         weeks = loadedWeeks || [];
+        try {
+          playoff = WUC.playoffOdds(teams, weeks, schedule);
+        } catch (err) {
+          playoff = null;
+        }
         const season = (teamsData && teamsData.season) || (window.WUC_CONFIG && WUC_CONFIG.season) || "";
         document.getElementById("standEyebrow").textContent = season ? `Season ${season}` : "Season";
 
@@ -133,13 +147,13 @@
         const row = document.getElementById("highlightRow");
         const cards = [];
         if (highlights.high) {
-          cards.push(`<article class="stat-card"><span class="eyebrow">High score</span><p class="stat-card-value">${WUC.formatPts(highlights.high.score)}</p><p class="mb-0">${WUC.teamLinkHtml(highlights.high.id || highlights.high.name, { size: "sm", text: highlights.high.name })} <span class="muted">· Week ${highlights.high.week}</span></p></article>`);
+          cards.push(`<article class="stat-card"><span class="eyebrow">High score</span><p class="stat-card-value">${WUC.formatPts(highlights.high.score)}</p><p class="mb-0">${WUC.teamLinkHtml(highlights.high.id || highlights.high.name, { size: "sm" })} <span class="muted">· Week ${highlights.high.week}</span></p></article>`);
         }
         if (highlights.low) {
-          cards.push(`<article class="stat-card"><span class="eyebrow">Low score</span><p class="stat-card-value">${WUC.formatPts(highlights.low.score)}</p><p class="mb-0">${WUC.teamLinkHtml(highlights.low.id || highlights.low.name, { size: "sm", text: highlights.low.name })} <span class="muted">· Week ${highlights.low.week}</span></p></article>`);
+          cards.push(`<article class="stat-card"><span class="eyebrow">Low score</span><p class="stat-card-value">${WUC.formatPts(highlights.low.score)}</p><p class="mb-0">${WUC.teamLinkHtml(highlights.low.id || highlights.low.name, { size: "sm" })} <span class="muted">· Week ${highlights.low.week}</span></p></article>`);
         }
         if (highlights.margin && highlights.margin.winner) {
-          cards.push(`<article class="stat-card"><span class="eyebrow">Widest margin</span><p class="stat-card-value">${WUC.formatPts(highlights.margin.margin)}</p><p class="mb-0">${WUC.teamLinkHtml(highlights.margin.winner.id || highlights.margin.winner.name, { size: "sm", text: highlights.margin.winner.name })} <span class="muted">· Week ${highlights.margin.week}</span></p></article>`);
+          cards.push(`<article class="stat-card"><span class="eyebrow">Widest margin</span><p class="stat-card-value">${WUC.formatPts(highlights.margin.margin)}</p><p class="mb-0">${WUC.teamLinkHtml(highlights.margin.winner.id || highlights.margin.winner.name, { size: "sm" })} <span class="muted">· Week ${highlights.margin.week}</span></p></article>`);
         }
         if (cards.length) {
           row.hidden = false;

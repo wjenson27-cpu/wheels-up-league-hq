@@ -250,16 +250,81 @@ async function checkPages() {
             if (leaked) errors.push("pending trade offers are visible");
           }
           if (name === "standings.html") {
-            const rows = await page.$$("table.standings-table tbody tr");
-            if (rows.length < 14) errors.push(`standings table has ${rows.length} rows`);
+            const info = await page.evaluate(() => {
+              const rows = document.querySelectorAll("table.standings-table tbody tr").length;
+              const text = document.body.innerText || "";
+              const playoff = document.querySelectorAll(".col-playoff").length;
+              return { rows, playoff, hasFoot: /10,000 simulated seasons/.test(text), hasCol: /Playoff %/.test(text) };
+            });
+            if (info.rows < 14) errors.push(`standings table has ${info.rows} rows`);
+            if (!info.hasCol || info.playoff < 14) errors.push("standings missing Playoff %");
+            if (!info.hasFoot) errors.push("standings missing playoff footnote");
           }
           if (name === "team-eddies") {
-            const ok = await page.evaluate(() => /Eagle Ridge Eddies/.test(document.body.innerText) && Boolean(document.getElementById("roster")));
-            if (!ok) errors.push("Eddies team page did not render");
+            const info = await page.evaluate(() => {
+              const text = document.body.innerText || "";
+              const chips = [...document.querySelectorAll("#roster .chip")].map((el) => el.textContent.trim());
+              const count = (name) => chips.filter((n) => n === name).length;
+              return {
+                ok: /Eagle Ridge Eddies/.test(text) && Boolean(document.getElementById("roster")),
+                chars: count("Zach Charbonnet"),
+                etienne: count("Travis Etienne"),
+                raw: /W1 FINAL/.test(text),
+                larry: /Saltese Slamm \(Larry\)/.test(text),
+                lukeNick: /Saltese Slamm \(Luke\)/.test(text)
+              };
+            });
+            if (!info.ok) errors.push("Eddies team page did not render");
+            if (info.chars !== 1 || info.etienne !== 1) errors.push(`IR dupes charbonnet=${info.chars} etienne=${info.etienne}`);
+            if (info.raw) errors.push("raw roster note is visible");
+            if (info.larry || info.lukeNick) errors.push("trade still uses a nickname owner");
           }
           if (name === "index.html") {
-            const rows = await page.$$("#standingsSnap tbody tr");
-            if (rows.length < 5) errors.push(`home standings snapshot has ${rows.length} rows`);
+            const info = await page.evaluate(() => {
+              const rows = document.querySelectorAll("#standingsSnap tbody tr").length;
+              const text = document.body.innerText || "";
+              const ranks = [...document.querySelectorAll("#topBoard .board-rank")].map((el) => el.textContent.trim());
+              return {
+                rows,
+                eddiesCard: Boolean(document.getElementById("eddiesCard")),
+                eddiesHeading: [...document.querySelectorAll("h1,h2")].some((el) => /Eagle Ridge Eddies/.test(el.textContent)),
+                ranks
+              };
+            });
+            if (info.rows < 5) errors.push(`home standings snapshot has ${info.rows} rows`);
+            if (info.eddiesCard || info.eddiesHeading) errors.push("home still features the Eddies");
+            if (info.ranks.join(",") !== "1,2,3,4,5") errors.push(`top board ranks ${info.ranks.join(",")}`);
+          }
+          if (name === "trades.html") {
+            const info = await page.evaluate(() => {
+              const text = document.body.innerText || "";
+              const imgs = [...document.querySelectorAll("#tradeBlocks img.team-logo")].map((img) => img.getAttribute("src"));
+              return {
+                green: /Greenacres/i.test(text),
+                listedEmpty: /Listed:\s*—/.test(text),
+                larry: /\(Larry\)/.test(text),
+                imgs,
+                sub: /Substation/.test(text) && /Listed:\s*—/.test(text)
+              };
+            });
+            if (info.green) errors.push("trades still show Greenacres");
+            if (info.listedEmpty) errors.push("empty trade block is visible");
+            if (info.larry) errors.push("trades still say Larry");
+            if (!info.imgs.some((src) => src && src.includes("morningside"))) errors.push("morningside logo missing on the block");
+          }
+          if (name === "rosters.html") {
+            const raw = await page.evaluate(() => /W1 FINAL/.test(document.body.innerText || ""));
+            if (raw) errors.push("roster cards show a raw internal note");
+          }
+          if (viewport.name === "desktop" && name === "index.html") {
+            const local = await page.evaluate(() => {
+              const host = location.hostname;
+              const visit = (document.getElementById("visit-count") || {}).textContent || "";
+              const beacon = Boolean(document.querySelector("script[src*='cloudflareinsights']"));
+              return { host, visit, beacon };
+            });
+            if (local.beacon) errors.push("Cloudflare beacon loaded on localhost");
+            if (local.visit.trim() !== "—") errors.push(`visit counter is ${local.visit}`);
           }
         } catch (err) {
           errors.push(err.message || String(err));

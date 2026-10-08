@@ -54,8 +54,7 @@
           const faab = t.faab != null ? ` · FAAB $${t.faab}` : "";
           const pf = WUC.pointsFor(t);
           const pfBit = pf != null ? ` · ${WUC.formatPts(pf)} PF` : "";
-          const note = (rosterFile && rosterFile.notes) || t.note || "";
-          const open = t.id === "eddies" ? " open" : "";
+          const note = WUC.publicNote((rosterFile && rosterFile.notes) || t.note || "");
           return `
           <article class="card team-card" id="team-${WUC.escapeHtml(t.id)}" style="--team-color:${WUC.escapeHtml(t.color || "#69BE28")}">
             <div class="team-head">
@@ -66,8 +65,8 @@
               ${WUC.teamMark(t.id, { size: "lg" })}
             </div>
             <p class="mb-0"><a href="${WUC.teamHref(t.id)}">Clubhouse →</a></p>
-            <details class="club-details"${open}>
-              <summary>Depth chart${note ? " and note" : ""}</summary>
+            <details class="club-details">
+              <summary>Depth chart</summary>
               ${note ? `<p>${WUC.escapeHtml(note)}</p>` : ""}
               ${depth || `<p class="muted mb-0">Depth chart isn’t in the files yet.</p>`}
             </details>
@@ -82,7 +81,7 @@
           <div class="feed-item">
             <div class="feed-date">${WUC.formatDate(t.date)}</div>
             <div class="feed-body"><span class="type-tag">${WUC.escapeHtml(t.type || "Move")}</span>
-              ${WUC.teamLinkHtml(t.teamId || t.team, { size: "sm", text: t.team || "Team" })} — ${WUC.escapeHtml(t.summary || "")}</div>
+              ${WUC.teamLinkHtml(t.teamId || t.team, { size: "sm" })} — ${WUC.escapeHtml(WUC.displayText(t.summary || ""))}</div>
           </div>`).join("");
         if (!items.length) {
           txHost.innerHTML = `<p class="muted mb-0">No transactions loaded yet.</p>`;
@@ -101,6 +100,6 @@
       }
     });
   </script>
-<!-- Cloudflare Web Analytics --><script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}'></script><!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>

@@ -96,6 +96,22 @@
     }
   }
 
+  function isLocalPreview() {
+    const host = String(location.hostname || "");
+    return host === "localhost" || host === "127.0.0.1" || host === "[::1]" || host === "";
+  }
+
+  function mountAnalytics() {
+    if (isLocalPreview()) return;
+    if (document.querySelector("script[data-cf-beacon]")) return;
+    const beacon = document.createElement("script");
+    beacon.type = "module";
+    beacon.defer = true;
+    beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+    beacon.setAttribute("data-cf-beacon", '{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}');
+    document.body.appendChild(beacon);
+  }
+
   function mountChrome() {
     ensureA11y();
     const navHost = document.getElementById("site-nav");
@@ -104,13 +120,18 @@
     if (footHost) footHost.innerHTML = buildFooter();
     const visitEl = document.getElementById("visit-count");
     if (visitEl) {
-      fetch("https://abacus.jasoncameron.dev/hit/wheels-up-league-hq/visits")
-        .then((r) => r.json())
-        .then((d) => {
-          visitEl.textContent = Number(d && d.value != null ? d.value : 0).toLocaleString("en-US");
-        })
-        .catch(() => { visitEl.textContent = "—"; });
+      if (isLocalPreview()) {
+        visitEl.textContent = "—";
+      } else {
+        fetch("https://abacus.jasoncameron.dev/hit/wheels-up-league-hq/visits")
+          .then((r) => r.json())
+          .then((d) => {
+            visitEl.textContent = Number(d && d.value != null ? d.value : 0).toLocaleString("en-US");
+          })
+          .catch(() => { visitEl.textContent = "—"; });
+      }
     }
+    mountAnalytics();
 
     const toggle = document.getElementById("navToggle");
     const links = document.getElementById("navLinks");
@@ -177,18 +198,24 @@
     return `<span class="team-chip team-chip-${size}" style="--team-color:${color}" title="${title}"><span class="team-chip-mark">${abbrev}</span></span>`;
   }
 
-  /** Logo img when team.logo exists, else color chip. Accepts team object or teamId. */
+  /** Logo img when the club resolves, else color chip. Accepts a team object or an id/name. */
   function teamMark(teamOrId, opts = {}) {
-    const t = typeof teamOrId === "string"
-      ? ((teamColors || {})[teamOrId] || { id: teamOrId })
-      : (teamOrId || {});
-    const id = t.id || (typeof teamOrId === "string" ? teamOrId : "");
+    let key = typeof teamOrId === "string" ? teamOrId : ((teamOrId && teamOrId.id) || "");
+    if (typeof teamOrId === "string" && !(teamColors && teamColors[key]) && window.WUC && typeof WUC.resolveTeamId === "function") {
+      const resolved = WUC.resolveTeamId(key);
+      if (resolved) key = resolved;
+    }
+    const fromColors = (teamColors || {})[key] || null;
+    const t = fromColors || (typeof teamOrId === "object" && teamOrId ? teamOrId : { id: key });
+    const id = t.id || key;
     const size = opts.size || "md";
     const color = t.color || "#69BE28";
     const title = escapeHtml(t.name || id || "");
     const alt = escapeHtml(t.name || t.abbrev || id || "team");
-    if (t.logo) {
-      return `<span class="team-mark team-mark-${size}" style="--team-color:${color}" title="${title}"><img class="team-logo" src="${escapeHtml(t.logo)}" alt="${alt}" loading="lazy" width="44" height="44" /></span>`;
+    const safeId = /^[a-z0-9-]{1,40}$/.test(String(id || "")) ? String(id) : "";
+    const logo = t.logo || (safeId ? `img/logos/${safeId}.jpg` : "");
+    if (logo) {
+      return `<span class="team-mark team-mark-${size}" data-team="${escapeHtml(safeId || id)}" data-size="${escapeHtml(size)}" style="--team-color:${color}" title="${title}"><img class="team-logo" src="${escapeHtml(logo)}" alt="${alt}" loading="lazy" width="44" height="44" /></span>`;
     }
     return teamChip(id, opts);
   }

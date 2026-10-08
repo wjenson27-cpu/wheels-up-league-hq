@@ -72,6 +72,7 @@
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       try {
@@ -92,7 +93,7 @@
             <div class="award-hero team-inline">
               ${WUC.teamMark(latest.winnerTeamId, { size: "lg" })}
               <div>
-                <h2 class="award-hero-name">${WUC.escapeHtml((latest.winnerTeamId === "ttab" || (latest.winner || "").includes("Towner Top")) ? "TTAB" : (latest.winner || "—"))}</h2>
+                <h2 class="award-hero-name">${WUC.escapeHtml(WUC.officialName(latest.winnerTeamId, latest.winner || "—"))}</h2>
                 <p class="award-hero-score hot">${Number(latest.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</p>
               </div>
             </div>`;
@@ -107,7 +108,7 @@
             <div class="award-hero team-inline">
               ${WUC.teamMark(latestElim.teamId, { size: "lg" })}
               <div>
-                <h2 class="award-hero-name">${WUC.escapeHtml(latestElim.team || "—")}</h2>
+                <h2 class="award-hero-name">${WUC.escapeHtml(WUC.officialName(latestElim.teamId, latestElim.team || "—"))}</h2>
                 <p class="award-hero-score bus-score">${Number(latestElim.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</p>
               </div>
             </div>`;
@@ -128,7 +129,7 @@
               ${kitty.map((w) => `
                 <tr class="hot">
                   <td class="col-rank">${w.week}</td>
-                  <td class="col-team"><span class="team-inline">${WUC.teamMark(w.winnerTeamId, { size: "sm" })}<span>${w.winnerTeamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(w.winnerTeamId)}">${WUC.escapeHtml(w.winner || "—")}</a>` : WUC.escapeHtml(w.winner || "—")}</span></span></td>
+                  <td class="col-team"><span class="team-inline">${WUC.teamMark(w.winnerTeamId, { size: "sm" })}<span>${w.winnerTeamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(w.winnerTeamId)}">${WUC.escapeHtml(WUC.officialName(w.winnerTeamId, w.winner || "—"))}</a>` : WUC.escapeHtml(w.winner || "—")}</span></span></td>
                   <td class="col-trades">${Number(w.score).toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
                 </tr>`).join("")}
             </tbody>
@@ -158,7 +159,7 @@
               ${elim.map((e) => `
                 <tr>
                   <td class="col-rank">${e.week}</td>
-                  <td class="col-team"><span class="team-inline">${WUC.teamMark(e.teamId, { size: "sm" })}<span>${e.teamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(e.teamId)}">${WUC.escapeHtml(e.team || "—")}</a>` : WUC.escapeHtml(e.team || "—")}</span></span></td>
+                  <td class="col-team"><span class="team-inline">${WUC.teamMark(e.teamId, { size: "sm" })}<span>${e.teamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(e.teamId)}">${WUC.escapeHtml(WUC.officialName(e.teamId, e.team || "—"))}</a>` : WUC.escapeHtml(e.team || "—")}</span></span></td>
                   <td class="col-trades">${Number(e.score).toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
                   <td class="col-owner">${e.aliveAfter != null ? e.aliveAfter : "—"}</td>
                 </tr>`).join("")}
@@ -177,9 +178,9 @@
             matchEl.innerHTML = `
               <span class="eyebrow">Week ${m.week} · Last Ride · ${WUC.escapeHtml(statusLabel)}</span>
               <div class="award-hero" style="display:flex;flex-wrap:wrap;align-items:center;gap:0.75rem 1rem;margin-top:0.35rem">
-                <span class="team-inline">${WUC.teamMark(m.teamAId, { size: "lg" })}<span class="award-hero-name" style="font-size:1.05rem">${WUC.escapeHtml(m.teamA || "—")}</span></span>
+                <span class="team-inline">${WUC.teamMark(m.teamAId, { size: "lg" })}<span class="award-hero-name" style="font-size:1.05rem">${WUC.escapeHtml(WUC.officialName(m.teamAId, m.teamA || "—"))}</span></span>
                 <span class="muted" style="font-weight:700">vs</span>
-                <span class="team-inline">${WUC.teamMark(m.teamBId, { size: "lg" })}<span class="award-hero-name" style="font-size:1.05rem">${WUC.escapeHtml(m.teamB || "—")}</span></span>
+                <span class="team-inline">${WUC.teamMark(m.teamBId, { size: "lg" })}<span class="award-hero-name" style="font-size:1.05rem">${WUC.escapeHtml(WUC.officialName(m.teamBId, m.teamB || "—"))}</span></span>
               </div>
               ${m.note ? `<p class="muted mb-0" style="margin-top:0.65rem;font-size:0.85rem">${WUC.escapeHtml(m.note)}</p>` : ""}
               ${(lastRide.aliveTeamIds && lastRide.aliveTeamIds.length) ? `<div class="survivor-chips" style="margin-top:0.75rem">${lastRide.aliveTeamIds.map((id) => {
@@ -224,7 +225,7 @@
           let body;
           if (leaders.length) {
             body = `<ol class="award-podium">` + leaders.map((L) => {
-              const name = isPlayer ? (L.player || L.teamShort || L.team || "—") : (L.teamShort || (L.teamId === "ttab" ? "TTAB" : (L.team || "—")));
+              const name = isPlayer ? (L.player || L.teamShort || L.team || "—") : WUC.officialName(L.teamId, L.team || L.teamShort || "—");
               const meta = L.valueLabel || (L.value != null ? String(L.value) : "");
               return `<li class="podium-row rank-${L.rank || ""}">
                 <span class="podium-rank">${L.rank || ""}</span>
@@ -232,7 +233,7 @@
                 <div class="podium-meta">
                   <div class="podium-name">${WUC.escapeHtml(name)}</div>
                   ${meta ? `<div class="podium-val">${WUC.escapeHtml(meta)}</div>` : ""}
-                  ${isPlayer && L.team ? `<div class="muted" style="font-size:0.75rem">${WUC.escapeHtml(L.team)}</div>` : ""}
+                  ${isPlayer && L.team ? `<div class="muted" style="font-size:0.75rem">${WUC.escapeHtml(WUC.officialName(L.teamId, L.team))}</div>` : ""}
                 </div>
               </li>`;
             }).join("") + `</ol>
@@ -252,6 +253,6 @@
       }
     });
   </script>
-<!-- Cloudflare Web Analytics --><script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}'></script><!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>

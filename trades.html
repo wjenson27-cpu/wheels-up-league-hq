@@ -31,7 +31,7 @@
   <script src="js/league.js"></script>
   <script>
     function teamLabel(label) {
-      return WUC.teamLinkHtml(label, { size: "sm", text: label || "Team" });
+      return WUC.teamLinkHtml(label, { size: "sm" });
     }
 
     function card(t) {
@@ -41,8 +41,8 @@
       const rawB = t.teamB || (t.teams && t.teams[1]) || "Team B";
       const teamA = teamLabel(rawA);
       const teamB = teamLabel(rawB);
-      const teamAText = WUC.escapeHtml(rawA);
-      const teamBText = WUC.escapeHtml(rawB);
+      const teamAText = WUC.escapeHtml(WUC.officialName(rawA));
+      const teamBText = WUC.escapeHtml(WUC.officialName(rawB));
       const badge = t.official === false ? `<span class="sample-badge">handshake</span>` : "";
       const date = t.date ? WUC.formatDate(t.date) : "—";
       const week = t.week ? ` · Week ${WUC.escapeHtml(t.week)}` : "";
@@ -53,32 +53,37 @@
           <p class="muted" style="margin:0 0 0.5rem;font-size:0.8rem">${date}${week}</p>
           <p><strong>${teamAText} sends:</strong> ${a || "—"}</p>
           <p><strong>${teamBText} sends:</strong> ${b || "—"}</p>
-          <p class="muted mb-0">${WUC.escapeHtml(t.summary || t.notes || "")}</p>
+          <p class="muted mb-0">${WUC.escapeHtml(WUC.displayText(t.summary || t.notes || ""))}</p>
         </article>`;
     }
 
     function blockCard(b) {
-      const listed = Array.isArray(b.players) && b.players.length
-        ? b.players.map((p) => WUC.escapeHtml(p)).join(", ")
-        : WUC.escapeHtml(b.player || b.assets || "—");
+      const players = Array.isArray(b.players) ? b.players.filter(Boolean) : [];
+      const note = b.note || b.notes || "";
+      if (!players.length && !b.player && !b.assets && !note) return "";
+      const listed = players.length
+        ? players.map((p) => WUC.escapeHtml(p)).join(", ")
+        : WUC.escapeHtml(b.player || b.assets || "");
       return `
         <article class="card" style="margin-bottom:0.75rem">
-          <h3 style="margin:0 0 0.35rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.5rem">${teamLabel(b.team || b.teamId || "Team")}
+          <h3 style="margin:0 0 0.35rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.35rem 0.5rem">${teamLabel(b.teamId || b.team || "Team")}
             <span class="sample-badge">block</span></h3>
-          <p class="mb-0"><strong>Listed:</strong> ${listed}
-            ${(b.note || b.notes) ? ` — <span class="muted">${WUC.escapeHtml(b.note || b.notes)}</span>` : ""}</p>
+          <p class="mb-0">${listed ? `<strong>Listed:</strong> ${listed}` : ""}
+            ${note ? `${listed ? " — " : ""}<span class="muted">${WUC.escapeHtml(note)}</span>` : ""}</p>
         </article>`;
     }
 
     document.addEventListener("DOMContentLoaded", async () => {
       try {
         await WUC.loadTeamColors();
+        const teamsFile = await WUC.loadJSON("data/teams.json");
+        WUC.indexTeams((teamsFile && teamsFile.teams) || []);
         const data = await WUC.loadJSON("data/trades.json?v=" + Date.now());
         if (data.updated) {
           document.getElementById("updatedLabel").textContent = "Updated " + data.updated;
         }
         const completed = WUC.completedTrades(data);
-        const blocks = data.blocks || [];
+        const blocks = (data.blocks || []).map(blockCard).filter(Boolean);
 
         const empty = `<div class="card trade-empty"><div class="big">🤝</div>
           <h2 style="margin:0 0 0.35rem">Nothing here yet</h2>
@@ -88,7 +93,7 @@
         done.removeAttribute("aria-busy");
         done.innerHTML = completed.length ? completed.map(card).join("") : empty;
         document.getElementById("tradeBlocks").innerHTML =
-          blocks.length ? blocks.map(blockCard).join("") : `<p class="muted">No trade-block listings on file.</p>`;
+          blocks.length ? blocks.join("") : `<p class="muted">No trade-block listings on file.</p>`;
       } catch (e) {
         const done = document.getElementById("tradeCompleted");
         done.removeAttribute("aria-busy");
@@ -96,6 +101,6 @@
       }
     });
   </script>
-<!-- Cloudflare Web Analytics --><script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}'></script><!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>

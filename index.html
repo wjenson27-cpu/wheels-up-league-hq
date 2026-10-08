@@ -39,30 +39,18 @@
     </div>
     <p class="last-sync" id="lastSync" hidden></p>
 
-    <div class="grid grid-2" style="margin-bottom:1rem">
-      <article class="card">
-        <h2>Standings</h2>
-        <p class="muted mb-0">From the team file. Tap a club for the full page.</p>
-        <div id="standingsSnap" aria-busy="true">
-          <div class="skeleton-stack" aria-hidden="true">
-            <div class="skeleton-bar"></div>
-            <div class="skeleton-bar med"></div>
-            <div class="skeleton-bar short"></div>
-          </div>
+    <article class="card" style="margin-bottom:1rem">
+      <h2>Standings</h2>
+      <p class="muted mb-0">From the team file. Tap a club for the full page.</p>
+      <div id="standingsSnap" aria-busy="true">
+        <div class="skeleton-stack" aria-hidden="true">
+          <div class="skeleton-bar"></div>
+          <div class="skeleton-bar med"></div>
+          <div class="skeleton-bar short"></div>
         </div>
-        <p class="mt-1"><a href="standings.html">Full standings →</a></p>
-      </article>
-      <article class="card" id="eddiesCard">
-        <h2>Eagle Ridge Eddies</h2>
-        <div id="eddiesSnap" aria-busy="true">
-          <div class="skeleton-stack" aria-hidden="true">
-            <div class="skeleton-bar"></div>
-            <div class="skeleton-bar short"></div>
-          </div>
-        </div>
-        <p class="mt-1"><a href="team.html?id=eddies">Eddies clubhouse →</a></p>
-      </article>
-    </div>
+      </div>
+      <p class="mt-1"><a href="standings.html">Full standings →</a></p>
+    </article>
 
     <div class="grid grid-2">
       <article class="card">
@@ -96,7 +84,7 @@
     <section class="card mt-1" style="margin-top:1rem">
       <h2>Top of the board</h2>
         <p class="muted mb-0">Power board from the rankings file. Full writeups live on the rankings page.</p>
-      <ol id="topBoard" style="margin:0.75rem 0 0;padding-left:1.2rem;color:var(--text-muted)"></ol>
+      <ul class="board-list" id="topBoard"></ul>
       <p class="mt-1"><a href="rankings.html">See all 14 →</a></p>
     </section>
   </main>
@@ -182,32 +170,13 @@
           board.innerHTML = softError("Trade board unavailable — try Refresh.", "trades");
         } else {
           const teams = teamsData.teams || [];
+          WUC.indexTeams(teams);
           const completed = (trades.trades || []).filter(t => t.status === "completed");
           const counts = Object.fromEntries(teams.map(t => [t.id, 0]));
 
-          function resolveTeamId(label) {
-            const bare = String(label || "").split("(")[0].trim();
-            const hit = teams.find(t => t.name === bare || bare.includes(t.name) || t.name.includes(bare));
-            if (hit) return hit.id;
-            const aliases = [
-              ["Greenacres Goblins", "hyper"],
-              ["Hypersecretors", "hyper"],
-              ["Towner Top Aga Bottom", "ttab"],
-              ["Pocket Agents", "pocket"],
-              ["Substation", "substation"],
-              ["Ultron", "ultron"],
-              ["Saltese Slamm", "saltese"],
-              ["Eagle Ridge Eddies", "eddies"]
-            ];
-            for (const [key, id] of aliases) {
-              if (bare.includes(key) || key.includes(bare)) return id;
-            }
-            return null;
-          }
-
           for (const tr of completed) {
             for (const side of ["teamA", "teamB"]) {
-              const id = resolveTeamId(tr[side]);
+              const id = WUC.resolveTeamId(tr[side]);
               if (id && id in counts) counts[id] += 1;
             }
           }
@@ -266,7 +235,7 @@
               if (r.record) bits.push(r.record);
               if (r.pf != null) bits.push(`${Number(r.pf).toLocaleString("en-US", { maximumFractionDigits: 1 })} PF`);
               if (r.opponent) bits.push(r.opponent);
-              return `<li style="margin-bottom:0.45rem">${WUC.teamLinkHtml(r.teamId, { size: "sm", text: "#" + r.rank + " " + (r.team || "") })}<div class="muted" style="margin:0.1rem 0 0 2rem">${WUC.escapeHtml(bits.join(" · "))}</div></li>`;
+              return `<li class="board-row"><span class="board-rank">${WUC.escapeHtml(r.rank)}</span><div>${WUC.teamLinkHtml(r.teamId, { size: "sm" })}<div class="muted board-meta">${WUC.escapeHtml(WUC.displayText(bits.join(" · ")))}</div></div></li>`;
             }).join("");
           }
         }
@@ -308,37 +277,6 @@
           if (snap) {
             snap.removeAttribute("aria-busy");
             snap.innerHTML = WUC.renderStandingsRows(teamsData.teams, "official", { compact: true, limit: 5 });
-          }
-          const eddies = teamsData.teams.find((t) => t.id === "eddies")
-            || teamsData.teams.find((t) => t.name === (window.WUC_CONFIG && WUC_CONFIG.billTeam));
-          const eddiesEl = document.getElementById("eddiesSnap");
-          if (eddiesEl) {
-            eddiesEl.removeAttribute("aria-busy");
-            if (!eddies) {
-              eddiesEl.innerHTML = WUC.emptyState("Eddies aren’t in the team file.");
-            } else {
-              const pf = WUC.pointsFor(eddies);
-              const pa = WUC.pointsAgainst(eddies);
-              let lastWeek = "";
-              if (scores && Array.isArray(scores.matchups)) {
-                const m = scores.matchups.find((row) => WUC.resolveTeamId(row.home) === eddies.id || WUC.resolveTeamId(row.away) === eddies.id);
-                if (m) {
-                  const home = WUC.resolveTeamId(m.home) === eddies.id;
-                  const us = Number(home ? m.homeScore : m.awayScore);
-                  const them = Number(home ? m.awayScore : m.homeScore);
-                  const opp = home ? m.away : m.home;
-                  const result = us > them ? "W" : us < them ? "L" : "T";
-                  lastWeek = `<p class="mb-0" style="margin-top:0.45rem">Week ${WUC.escapeHtml(scores.week)}: <strong>${result} ${WUC.formatPts(us)}–${WUC.formatPts(them)}</strong> vs ${WUC.escapeHtml(opp)}</p>`;
-                }
-              }
-              eddiesEl.innerHTML = `
-                <p class="mb-0"><strong>${WUC.escapeHtml(WUC.recordLabel(eddies))}</strong>
-                  ${pf != null ? ` · ${WUC.formatPts(pf)} PF` : ""}
-                  ${pa != null ? ` · ${WUC.formatPts(pa)} PA` : ""}
-                  ${eddies.faab != null ? ` · FAAB $${WUC.escapeHtml(eddies.faab)}` : ""}</p>
-                <p class="muted mb-0" style="margin-top:0.45rem">${eddies.standingsRank != null ? `Standings #${WUC.escapeHtml(eddies.standingsRank)}` : ""}${eddies.powerRank != null ? ` · Power #${WUC.escapeHtml(eddies.powerRank)}` : ""}</p>
-                ${lastWeek}`;
-            }
           }
         }
       } catch (e) {
@@ -435,7 +373,7 @@
             <div class="week-recap-hero team-inline">
               ${WUC.teamMark(kitty.winnerTeamId, { size: "lg" })}
               <div>
-                <div class="week-recap-name">${WUC.escapeHtml((kitty.winnerTeamId === "ttab" || (kitty.winner || "").includes("Towner Top")) ? "TTAB" : (kitty.winner || "—"))}</div>
+                <div class="week-recap-name">${WUC.escapeHtml(WUC.officialName(kitty.winnerTeamId, kitty.winner || "—"))}</div>
                 <div class="week-recap-score hot">${Number(kitty.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</div>
               </div>
             </div>
@@ -457,7 +395,7 @@
             <h2 class="week-recap-title bus-title">Off the bus</h2>
             <div class="week-recap-hero team-inline week-recap-bus">
               <div>
-                <div class="week-recap-name">${WUC.escapeHtml((bus.teamId === "ttab" || (bus.team || "").includes("Towner Top")) ? "TTAB" : (bus.team || "—"))}</div>
+                <div class="week-recap-name">${WUC.escapeHtml(WUC.officialName(bus.teamId, bus.team || "—"))}</div>
                 <div class="week-recap-score bus-score">${Number(bus.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</div>
               </div>
             </div>
@@ -532,6 +470,6 @@
       });
     }
   </script>
-<!-- Cloudflare Web Analytics --><script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}'></script><!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>

@@ -2,6 +2,21 @@
    Pending FAAB bids and pending trade offers are never rendered. */
 (function () {
   const POS_ORDER = ["QB", "RB", "WR", "TE", "K", "LB", "DL", "DB", "FLEX", "IDP", "IR"];
+
+  /* Playoff odds. Confirm with Bill if the league changes this.
+     spots: 8 — data/history.json (2024 “8-team playoffs”; 2025 champ was a 5-seed
+       and the 1-seed played round 1, so no bye).
+     regularSeasonWeeks: 14 — 2024 best record was 11-3; 2025 records include 12-2 and 2-12.
+     No divisions are described anywhere in the repo.
+     schedule.json only lists weeks 1–5. Later weeks are random pairings in the sim.
+     Tiebreak matches the site table: wins, then losses, then ties, then points for
+     (history.json: regular-season order by record then PF). */
+  const PLAYOFF_ODDS = {
+    spots: 8,
+    regularSeasonWeeks: 14,
+    simulations: 10000,
+    shrinkGames: 4
+  };
   const ALIAS_TO_ID = {
     "greenacres goblins": "hyper",
     hypersecretors: "hyper",
@@ -72,6 +87,11 @@
     const n = norm(raw);
     if (!n) return null;
     if (ALIAS_TO_ID[n]) return ALIAS_TO_ID[n];
+    const aliasKeys = Object.keys(ALIAS_TO_ID).sort((a, b) => b.length - a.length);
+    for (const key of aliasKeys) {
+      if (key.length < 4) continue;
+      if (n.includes(key)) return ALIAS_TO_ID[key];
+    }
     for (const t of teams) {
       if (norm(t.name) === n) return t.id;
       if (t.shortName && norm(t.shortName) === n) return t.id;
@@ -93,11 +113,49 @@
     return "team.html?id=" + encodeURIComponent(id);
   }
 
+  function officialName(labelOrId, fallback) {
+    const id = resolveTeamId(labelOrId);
+    const team = id ? teamById(id) : null;
+    if (team && team.name) return team.name;
+    if (fallback) return String(fallback);
+    return labelOrId ? String(labelOrId) : "—";
+  }
+
+  function officialOwner(labelOrId) {
+    const id = resolveTeamId(labelOrId);
+    const team = id ? teamById(id) : null;
+    return (team && team.owner) || "";
+  }
+
+  /* One display pass for free text that still uses an old club name. */
+  function displayText(text) {
+    let s = String(text || "");
+    if (!s) return s;
+    const hyper = officialName("hyper");
+    const ttab = officialName("ttab");
+    s = s.replace(/Greenacres Goblins\s*\/\s*Hypersecretors/gi, hyper);
+    s = s.replace(/\bHypersecretors\b/g, (match, offset, str) => {
+      return str.slice(Math.max(0, offset - 4), offset) === "The " ? match : hyper;
+    });
+    if (ttab && ttab !== "ttab") s = s.replace(/\bTTAB\b/g, ttab);
+    return s;
+  }
+
+  function publicNote(text) {
+    const s = String(text || "").replace(/\s+/g, " ").trim();
+    if (!s) return "";
+    if (s.includes("|")) return "";
+    if (/FAAB\s*\$/i.test(s)) return "";
+    if (/\bW\d+\s+FINAL\b/i.test(s)) return "";
+    if (s.length > 180) return "";
+    return s;
+  }
+
   function teamLinkHtml(labelOrId, opts) {
     const optsSafe = opts || {};
     const id = resolveTeamId(labelOrId);
     const team = id ? teamById(id) : {};
-    const text = optsSafe.text != null ? optsSafe.text : (team.shortName || team.name || labelOrId || "—");
+    const text = optsSafe.text != null ? optsSafe.text : officialName(id || labelOrId);
     const mark = window.WUC && WUC.teamMark
       ? WUC.teamMark(id || labelOrId, { size: optsSafe.size || "sm" })
       : "";
@@ -155,8 +213,18 @@
     return raw.endsWith("-0") ? raw.slice(0, -2) : raw;
   }
 
-  function sortStandings(teams, mode) {
+  function sortStandings(teams, mode, extra) {
     const list = [...(teams || [])];
+    if (mode === "playoff") {
+      const byId = (extra && extra.byId) || {};
+      list.sort((a, b) => {
+        const ar = byId[a.id] ? byId[a.id].rate : -1;
+        const br = byId[b.id] ? byId[b.id].rate : -1;
+        if (br !== ar) return br - ar;
+        return String(a.name).localeCompare(String(b.name));
+      });
+      return list;
+    }
     if (mode === "pf") {
       list.sort((a, b) => (pointsFor(b) || 0) - (pointsFor(a) || 0) || String(a.name).localeCompare(String(b.name)));
       return list;
@@ -416,25 +484,226 @@
     }).join("")}</ul>`;
   }
 
+  function playerKey(name) {
+    return String(name || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  }
+
   function renderRoster(roster) {
     if (!roster || typeof roster !== "object") return "";
+    const ir = new Set((Array.isArray(roster.IR) ? roster.IR : []).map(playerKey).filter(Boolean));
     const known = POS_ORDER.filter((p) => Array.isArray(roster[p]) && roster[p].length);
     const extra = Object.keys(roster).filter((k) => !POS_ORDER.includes(k) && Array.isArray(roster[k]) && roster[k].length && !/pending/i.test(k));
     const keys = [...known, ...extra];
-    if (!keys.length) return `<p class="muted mb-0">No players listed in this depth chart.</p>`;
-    return keys.map((pos) => `
+    const blocks = keys.map((pos) => {
+      const onIr = String(pos).toUpperCase() === "IR";
+      const names = roster[pos].filter((n) => onIr || !ir.has(playerKey(n)));
+      if (!names.length) return "";
+      return `
       <div class="pos-block">
         <div class="pos-label">${WUC.escapeHtml(pos)}</div>
         <div class="player-chips">
-          ${roster[pos].map((n) => `<span class="chip${String(pos).toUpperCase() === "IR" ? " ir" : ""}">${WUC.escapeHtml(n)}</span>`).join("")}
+          ${names.map((n) => `<span class="chip${onIr ? " ir" : ""}">${WUC.escapeHtml(n)}</span>`).join("")}
         </div>
-      </div>`).join("");
+      </div>`;
+    }).filter(Boolean);
+    if (!blocks.length) return `<p class="muted mb-0">No players listed in this depth chart.</p>`;
+    return blocks.join("");
+  }
+
+  function meanSd(values) {
+    if (!values.length) return { mean: null, sd: null, n: 0 };
+    const mean = values.reduce((sum, n) => sum + n, 0) / values.length;
+    if (values.length < 2) return { mean, sd: null, n: values.length };
+    const variance = values.reduce((sum, n) => sum + (n - mean) ** 2, 0) / (values.length - 1);
+    return { mean, sd: Math.sqrt(variance), n: values.length };
+  }
+
+  function randn() {
+    let u = 0;
+    let v = 0;
+    while (u === 0) u = Math.random();
+    while (v === 0) v = Math.random();
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+  }
+
+  function sampleScore(mean, sd) {
+    const x = mean + sd * randn();
+    return Math.max(0, Math.round(x * 10) / 10);
+  }
+
+  function scheduleRemaining(schedule, weeks, teams) {
+    const finalWeeks = new Set((weeks || []).filter(weekIsFinal).map((w) => Number(w.week)));
+    const idSet = new Set(teams.map((t) => t.id));
+    const fixed = [];
+    let maxScheduled = 0;
+    const weekMap = (schedule && schedule.weeks) || {};
+    Object.keys(weekMap).forEach((key) => {
+      const week = Number(key);
+      if (!week) return;
+      maxScheduled = Math.max(maxScheduled, week);
+      if (finalWeeks.has(week) || week > PLAYOFF_ODDS.regularSeasonWeeks) return;
+      const pairs = weekMap[key];
+      if (!Array.isArray(pairs)) return;
+      pairs.forEach((pair) => {
+        if (!Array.isArray(pair) || pair.length < 2) return;
+        const a = resolveTeamId(pair[0]);
+        const b = resolveTeamId(pair[1]);
+        if (a && b && a !== b && idSet.has(a) && idSet.has(b)) fixed.push({ week, a, b });
+      });
+    });
+    const openWeeks = [];
+    const start = Math.max(maxScheduled, ...[...finalWeeks, 0]) + 1;
+    for (let week = start; week <= PLAYOFF_ODDS.regularSeasonWeeks; week += 1) {
+      if (!finalWeeks.has(week)) openWeeks.push(week);
+    }
+    return { fixed, openWeeks, maxScheduled };
+  }
+
+  function copyStandings(teams) {
+    const state = {};
+    teams.forEach((t) => {
+      state[t.id] = {
+        wins: Number(t.wins) || 0,
+        losses: Number(t.losses) || 0,
+        ties: Number(t.ties) || 0,
+        pf: pointsFor(t) || 0
+      };
+    });
+    return state;
+  }
+
+  function playGame(state, model, a, b) {
+    const sa = sampleScore(model[a].mu, model[a].sd);
+    const sb = sampleScore(model[b].mu, model[b].sd);
+    state[a].pf += sa;
+    state[b].pf += sb;
+    if (sa > sb) {
+      state[a].wins += 1;
+      state[b].losses += 1;
+    } else if (sb > sa) {
+      state[b].wins += 1;
+      state[a].losses += 1;
+    } else {
+      state[a].ties += 1;
+      state[b].ties += 1;
+    }
+  }
+
+  function rankIds(state, ids) {
+    return [...ids].sort((a, b) => {
+      const A = state[a];
+      const B = state[b];
+      if (B.wins !== A.wins) return B.wins - A.wins;
+      if (A.losses !== B.losses) return A.losses - B.losses;
+      if (B.ties !== A.ties) return B.ties - A.ties;
+      if (B.pf !== A.pf) return B.pf - A.pf;
+      return String(a).localeCompare(String(b));
+    });
+  }
+
+  function shuffleIds(ids) {
+    const list = [...ids];
+    for (let i = list.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const swap = list[i];
+      list[i] = list[j];
+      list[j] = swap;
+    }
+    return list;
+  }
+
+  function formatPlayoffLabel(row) {
+    if (!row || row.rate == null) return "—";
+    if (row.clinched) return "100%";
+    if (row.eliminated) return "0%";
+    const pct = row.rate * 100;
+    if (pct >= 99.5) return ">99%";
+    if (pct <= 0.5) return "<1%";
+    return `${Math.round(pct)}%`;
+  }
+
+  function playoffOdds(teams, weeks, schedule) {
+    const list = (teams || []).filter((t) => t && t.id);
+    const spots = PLAYOFF_ODDS.spots;
+    const sims = PLAYOFF_ODDS.simulations;
+    if (list.length < spots) return null;
+    const ids = list.map((t) => t.id);
+    const byTeamScores = {};
+    const allScores = [];
+    list.forEach((t) => {
+      const scores = gamesForTeam(t.id, weeks)
+        .filter((g) => g.final && Number.isFinite(g.score))
+        .map((g) => g.score);
+      byTeamScores[t.id] = scores;
+      allScores.push(...scores);
+    });
+    const league = meanSd(allScores);
+    const leagueMean = league.mean != null ? league.mean : 120;
+    const leagueSd = league.sd != null ? league.sd : 30;
+    const shrink = PLAYOFF_ODDS.shrinkGames;
+    const model = {};
+    list.forEach((t) => {
+      const stats = meanSd(byTeamScores[t.id] || []);
+      const n = stats.n;
+      const weight = n / (n + shrink);
+      const mu = n ? weight * stats.mean + (1 - weight) * leagueMean : leagueMean;
+      const teamSd = stats.sd != null ? stats.sd : leagueSd;
+      const sd = Math.max(8, n ? weight * teamSd + (1 - weight) * leagueSd : leagueSd);
+      model[t.id] = { mu, sd };
+    });
+    const { fixed, openWeeks, maxScheduled } = scheduleRemaining(schedule, weeks, list);
+    const remainingFor = {};
+    ids.forEach((id) => {
+      remainingFor[id] = fixed.filter((g) => g.a === id || g.b === id).length + openWeeks.length;
+    });
+    const base = copyStandings(list);
+    const made = Object.fromEntries(ids.map((id) => [id, 0]));
+    for (let sim = 0; sim < sims; sim += 1) {
+      const state = copyStandings(list);
+      fixed.forEach((g) => playGame(state, model, g.a, g.b));
+      openWeeks.forEach(() => {
+        const order = shuffleIds(ids);
+        for (let i = 0; i + 1 < order.length; i += 2) {
+          playGame(state, model, order[i], order[i + 1]);
+        }
+      });
+      rankIds(state, ids).slice(0, spots).forEach((id) => { made[id] += 1; });
+    }
+    const byId = {};
+    ids.forEach((id) => {
+      const mine = base[id];
+      const maxWins = mine.wins + remainingFor[id];
+      let canPass = 0;
+      let alreadyAhead = 0;
+      ids.forEach((other) => {
+        if (other === id) return;
+        const theirMax = base[other].wins + remainingFor[other];
+        if (theirMax >= mine.wins) canPass += 1;
+        if (base[other].wins > maxWins) alreadyAhead += 1;
+      });
+      const noGamesLeft = ids.every((teamId) => remainingFor[teamId] === 0);
+      const clinched = noGamesLeft
+        ? rankIds(base, ids).indexOf(id) < spots
+        : canPass < spots;
+      const eliminated = noGamesLeft
+        ? rankIds(base, ids).indexOf(id) >= spots
+        : alreadyAhead >= spots;
+      byId[id] = { rate: made[id] / sims, clinched, eliminated };
+    });
+    const finals = (weeks || []).filter(weekIsFinal).map((w) => Number(w.week));
+    const through = finals.length ? Math.max(...finals) : 0;
+    const schedNote = maxScheduled
+      ? `The schedule file only lists weeks 1–${maxScheduled}, so later weeks are random matchups.`
+      : "No future matchups are in the schedule file, so the rest of the season is random matchups.";
+    const footnote = `Playoff % is the share of ${sims.toLocaleString("en-US")} simulated seasons where that club finishes in the top ${spots}. Each club’s weekly score is based on what it has posted so far, pulled toward the league average while the sample is small. Tiebreak is wins, then losses, then points for. This uses an ${spots}-team playoff and a ${PLAYOFF_ODDS.regularSeasonWeeks}-week regular season, with no divisions and no byes — from the 2024–2025 results in the league history, not from a 2026 rules line. ${schedNote} Computed in your browser${through ? ` from scores through week ${through}` : ""}.`;
+    return { byId, footnote, spots, simulations: sims };
   }
 
   function renderStandingsRows(teams, mode, opts) {
     const options = opts || {};
     const weeks = options.weeks || [];
-    const ranked = sortStandings(teams, mode);
+    const playoff = options.playoff || null;
+    const ranked = sortStandings(teams, mode, playoff);
     const sliced = options.limit ? ranked.slice(0, options.limit) : ranked;
     if (!sliced.length) return `<p class="muted mb-0">No clubs in the team file yet.</p>`;
     const compact = Boolean(options.compact);
@@ -446,21 +715,27 @@
       const streak = weeks.length ? streakFromLog(games, t) : null;
       const faab = t.faab != null ? `$${t.faab}` : "—";
       const diffCls = diff == null ? "" : diff > 0 ? " diff-pos" : diff < 0 ? " diff-neg" : "";
+      const odds = playoff && playoff.byId ? playoff.byId[t.id] : null;
+      const oddsLabel = formatPlayoffLabel(odds);
+      const oddsTitle = odds && odds.rate != null
+        ? `${(odds.rate * 100).toFixed(1)}% of ${PLAYOFF_ODDS.simulations.toLocaleString("en-US")} seasons`
+        : "";
       return `<tr style="--team-color:${WUC.escapeHtml(t.color || "#69BE28")}">
         <td class="col-rank">${i + 1}</td>
         <td class="col-team">${teamLinkHtml(t.id, { size: "sm" })}</td>
         <td class="col-record">${WUC.escapeHtml(recordLabel(t))}</td>
         ${compact ? "" : `<td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>`}
         <td class="col-num">${pf == null ? "—" : formatPts(pf)}</td>
-        ${compact ? "" : `<td class="col-num">${pa == null ? "—" : formatPts(pa)}</td>`}
-        ${compact ? "" : `<td class="col-num${diffCls}">${formatDiff(diff)}</td>`}
+        ${compact ? "" : `<td class="col-num col-phone-hide">${pa == null ? "—" : formatPts(pa)}</td>`}
+        ${compact ? "" : `<td class="col-num col-phone-hide${diffCls}">${formatDiff(diff)}</td>`}
         ${compact ? "" : `<td class="col-optional">${faab}</td>`}
         ${compact ? "" : `<td class="col-optional">${streak ? WUC.escapeHtml(streak) : "—"}</td>`}
+        ${compact ? "" : `<td class="col-playoff" title="${WUC.escapeHtml(oddsTitle)}">${WUC.escapeHtml(oddsLabel)}</td>`}
       </tr>`;
     }).join("");
     const head = compact
       ? `<tr><th class="col-rank">#</th><th class="col-team">Team</th><th class="col-record">W-L</th><th class="col-num">PF</th></tr>`
-      : `<tr><th class="col-rank">#</th><th class="col-team">Team</th><th class="col-record">W-L</th><th class="col-owner">Owner</th><th class="col-num">PF</th><th class="col-num">PA</th><th class="col-num">+/−</th><th class="col-optional">FAAB</th><th class="col-optional">Streak</th></tr>`;
+      : `<tr><th class="col-rank">#</th><th class="col-team">Team</th><th class="col-record">W-L</th><th class="col-owner">Owner</th><th class="col-num">PF</th><th class="col-num col-phone-hide">PA</th><th class="col-num col-phone-hide">+/−</th><th class="col-optional">FAAB</th><th class="col-optional">Streak</th><th class="col-playoff">Playoff %</th></tr>`;
     return `<div class="table-scroll"><table class="trade-table standings-table" aria-label="League standings">
       <thead>${head}</thead>
       <tbody>${body}</tbody>
@@ -492,6 +767,10 @@
     resolveTeamId,
     teamById,
     teamHref,
+    officialName,
+    officialOwner,
+    displayText,
+    publicNote,
     teamLinkHtml,
     loadOptional,
     formatPts,
@@ -517,6 +796,9 @@
     renderMatchups,
     renderRoster,
     renderStandingsRows,
+    playoffOdds,
+    formatPlayoffLabel,
+    PLAYOFF_ODDS,
     skeleton,
     softError,
     emptyState,

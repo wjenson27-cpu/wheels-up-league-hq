@@ -22,8 +22,8 @@ Then open <http://localhost:8080>.
 
 | Page | What it shows |
 |------|----------------|
-| `index.html` | Home. Current week scores, a standings snapshot, Eddies, and the trade count board. |
-| `standings.html` | Full standings, points-for chart, and each week’s head-to-head scores. |
+| `index.html` | Home. Current week scores, a standings snapshot, and the trade count board. |
+| `standings.html` | Full standings (including playoff odds), points-for chart, and each week’s head-to-head scores. |
 | `team.html?id=eddies` | One club: record, weekly scores, roster, settled FAAB, completed trades, transactions. Every team id works the same way. |
 | `rosters.html` | All 14 clubs. Open a card for the depth chart. Names link to the team page. |
 | `trades.html` | Completed trades, plus who is on the trade block. Pending offers are not shown. |
@@ -66,7 +66,9 @@ Automated jobs write these files and push them to `main` several times a day. **
 - `css/styles.css` — dark green-and-navy theme
 - `js/config.js` — league name, Fantrax link, season, podcast URL
 - `js/main.js` — header, footer, menu
-- `js/league.js` — standings, team pages, score charts, and the “settled only” filters
+- `js/league.js` — standings, team pages, score charts, playoff odds, and the “settled only” filters
+
+Playoff % on the standings page is calculated in the browser (10,000 simulated seasons). It assumes an **8-team playoff** and a **14-week regular season**, with no divisions and no byes. That comes from the 2024–2025 notes in `data/history.json` (2024 says “8-team playoffs”; 2025’s champion was a 5-seed and the 1-seed played in round 1; records such as 12-2 and 11-3 are 14 games). `data/schedule.json` currently only lists weeks 1–5, so weeks 6–14 are random matchups in the sim. The constant is `PLAYOFF_ODDS` at the top of `js/league.js` if those rules change.
 
 Podcast link, if it ever changes:
 

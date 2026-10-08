@@ -136,7 +136,7 @@
 
         if (upcoming) {
           const lede = document.getElementById("teamLede");
-          lede.innerHTML = `${WUC.escapeHtml(team.owner || "Owner TBD")} · Week ${upcoming.week} vs ${WUC.teamLinkHtml(upcoming.oppId || upcoming.oppName, { size: "sm", text: upcoming.oppName })}`;
+          lede.innerHTML = `${WUC.escapeHtml(team.owner || "Owner TBD")} · Week ${upcoming.week} vs ${WUC.teamLinkHtml(upcoming.oppId || upcoming.oppName, { size: "sm" })}`;
         }
 
         const chart = document.getElementById("scoreChart");
@@ -148,7 +148,7 @@
             <thead><tr><th class="col-rank">Wk</th><th class="col-team">Opponent</th><th class="col-num">Score</th><th class="col-record">Result</th></tr></thead>
             <tbody>${games.map((g) => `<tr>
               <td class="col-rank">${g.week}</td>
-              <td class="col-team">${g.side === "away" ? "<span class=\"muted\">@ </span>" : ""}${WUC.teamLinkHtml(g.oppId || g.oppName, { size: "sm", text: g.oppName })}</td>
+              <td class="col-team"><span class="opp-line">${g.side === "away" ? "<span class=\"opp-at\">@</span>" : ""}${WUC.teamLinkHtml(g.oppId || g.oppName, { size: "sm" })}</span></td>
               <td class="col-num">${WUC.formatPts(g.score)}–${WUC.formatPts(g.oppScore)}</td>
               <td class="col-record">${g.result ? WUC.escapeHtml(g.result) : WUC.escapeHtml(String(g.status || "—"))}</td>
             </tr>`).join("")}</tbody>
@@ -158,11 +158,11 @@
         const rosterBody = document.getElementById("rosterBody");
         rosterBody.removeAttribute("aria-busy");
         const flags = Array.isArray(rosterMeta.injuryFlags) ? rosterMeta.injuryFlags : [];
-        const note = rosterMeta.notes || team.note || "";
+        const note = WUC.publicNote(rosterMeta.notes || team.note || "");
         rosterBody.innerHTML = `
           ${roster ? WUC.renderRoster(roster) : WUC.emptyState("Depth chart isn’t in the league files yet.")}
-          ${flags.length ? `<details class="club-details"><summary>Injury flags</summary><ul class="plain-list">${flags.map((f) => `<li>${WUC.escapeHtml(f)}</li>`).join("")}</ul></details>` : ""}
-          ${note ? `<details class="club-details"><summary>Club note</summary><p class="mb-0">${WUC.escapeHtml(note)}</p></details>` : ""}`;
+          ${flags.length ? `<details class="club-details" open><summary>Injury flags</summary><ul class="plain-list">${flags.map((f) => `<li>${WUC.escapeHtml(f)}</li>`).join("")}</ul></details>` : ""}
+          ${note ? `<details class="club-details" open><summary>Club note</summary><p class="mb-0">${WUC.escapeHtml(note)}</p></details>` : ""}`;
 
         const trades = WUC.completedTrades(tradesFile).filter((tr) => {
           return WUC.resolveTeamId(tr.teamA) === team.id || WUC.resolveTeamId(tr.teamB) === team.id;
@@ -176,7 +176,7 @@
           const list = (arr) => (Array.isArray(arr) && arr.length) ? arr.map((x) => WUC.escapeHtml(x)).join(", ") : "—";
           return `<article class="move-card">
             <p class="move-meta">${tr.date ? WUC.formatDate(tr.date) : "—"}${tr.week ? ` · Week ${WUC.escapeHtml(tr.week)}` : ""}</p>
-            <p class="mb-0"><strong>With</strong> ${WUC.teamLinkHtml(other, { size: "sm", text: other })}</p>
+            <p class="mb-0"><strong>With</strong> ${WUC.teamLinkHtml(other, { size: "sm" })}</p>
             <p class="mb-0"><strong>Sent</strong> ${list(sends)}</p>
             <p class="mb-0"><strong>Received</strong> ${list(gets)}</p>
           </article>`;
@@ -198,7 +198,7 @@
           const other = outgoing ? (t.toTeam || "—") : (t.fromTeam || "—");
           const otherId = outgoing ? (t.toTeamId || WUC.resolveTeamId(t.toTeam)) : (t.fromTeamId || WUC.resolveTeamId(t.fromTeam));
           const verb = outgoing ? "Paid" : "Received";
-          return `<li>${verb} <strong>$${WUC.escapeHtml(t.amount)}</strong> ${outgoing ? "to" : "from"} ${WUC.teamLinkHtml(otherId || other, { size: "sm", text: other })}</li>`;
+          return `<li>${verb} <strong>$${WUC.escapeHtml(t.amount)}</strong> ${outgoing ? "to" : "from"} ${WUC.teamLinkHtml(otherId || other, { size: "sm" })}</li>`;
         }).join("")}</ul>` : "";
         faabBody.innerHTML = claimHtml + tradeFaabHtml;
 
@@ -213,7 +213,7 @@
           const renderItems = (list) => list.map((t) => `
             <div class="feed-item">
               <div class="feed-date">${WUC.formatDate(t.date)}</div>
-              <div class="feed-body"><span class="type-tag">${WUC.escapeHtml(t.type || "Move")}</span> ${WUC.escapeHtml(t.summary || "")}</div>
+              <div class="feed-body"><span class="type-tag">${WUC.escapeHtml(t.type || "Move")}</span> ${WUC.escapeHtml(WUC.displayText(t.summary || ""))}</div>
             </div>`).join("");
           const first = tx.slice(0, 12);
           txBody.innerHTML = renderItems(first) + (tx.length > 12
