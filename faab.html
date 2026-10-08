@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FAAB — Wheels Up Collective</title>
+  <link rel="icon" href="img/wu-mark.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
@@ -15,7 +16,7 @@
     <header class="page-hero">
       <span class="eyebrow">Waiver bank</span>
       <h1>FAAB board</h1>
-      <p class="lede">Team budgets up top. Waiver claims ($1+) and trade FAAB below. Starting bank <strong>$<span id="startBudget">115</span></strong>. <span class="muted" id="updatedLabel"></span></p>
+      <p class="lede">Team budgets up top. Settled waiver claims ($1+) and trade FAAB below. Starting bank <strong>$<span id="startBudget">115</span></strong>. <span class="muted" id="updatedLabel"></span></p>
       <p class="muted" id="faabNote"></p>
     </header>
 
@@ -37,6 +38,7 @@
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       try {
@@ -80,7 +82,7 @@
                 const leftLabel = t.remaining != null ? left : `${left}*`;
                 return `<tr class="${i < 3 ? "hot" : ""}">
                   <td class="col-rank">${i + 1}</td>
-                  <td class="col-team"><span class="team-inline">${t.id ? WUC.teamMark(t.id, { size: "sm" }) : ""}${WUC.escapeHtml(t.name || "—")}</span></td>
+                  <td class="col-team">${t.id ? WUC.teamLinkHtml(t.id, { size: "sm" }) : WUC.escapeHtml(WUC.displayText(t.name || "—"))}</td>
                   <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
                   <td class="col-trades">$${claims}</td>
                   <td class="col-trades">${tradeLabel}</td>
@@ -91,7 +93,7 @@
           </table>
           <p class="muted" style="margin:0.75rem 0 0;font-size:0.8rem">* Left estimated when Fantrax remaining is unknown. $0 waiver bids omitted.</p>`;
 
-        const claims = [...(data.claims || [])]
+        const claims = WUC.publicClaims(data.claims)
           .filter((c) => (c.amount || 0) > 0)
           .sort((a, b) => {
             if (b.amount !== a.amount) return b.amount - a.amount;
@@ -112,7 +114,7 @@
                 const team = c.team || "Unassigned";
                 const drop = c.dropped ? ` <span class="muted">(−${WUC.escapeHtml(c.dropped)})</span>` : "";
                 const teamLine = c.teamId
-                  ? `<span class="team-inline">${WUC.teamMark(c.teamId, { size: "sm" })}<span>${WUC.escapeHtml(team)}</span></span>`
+                  ? WUC.teamLinkHtml(c.teamId, { size: "sm" })
                   : WUC.escapeHtml(team);
                 const when = c.date ? WUC.formatDate(c.date) : "";
                 const meta = when ? `${teamLine} <span class="muted">· ${when}</span>` : teamLine;
@@ -128,7 +130,7 @@
             </tbody>
           </table>` : `<p class="muted">No FAAB claims loaded yet.</p>`;
 
-        const trades = [...(data.trades || [])]
+        const trades = WUC.publicFaabTrades(data.trades)
           .filter((t) => (t.amount || 0) > 0)
           .sort((a, b) => {
             if (b.amount !== a.amount) return b.amount - a.amount;
@@ -169,6 +171,6 @@
       }
     });
   </script>
-<!-- Cloudflare Web Analytics --><script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}'></script><!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>

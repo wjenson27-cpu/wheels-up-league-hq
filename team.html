@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team — Wheels Up Collective</title>
+  <link rel="icon" href="img/wu-mark.png" type="image/png" />
+  <meta name="description" content="Wheels Up Collective team page — record, scores, roster, FAAB, and completed trades." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main class="wrap" id="teamMain">
+    <p class="muted">Loading club…</p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const main = document.getElementById("teamMain");
+      const params = new URLSearchParams(location.search);
+      const requested = WUC.safeId(params.get("id"));
+
+      function picker(teams, message) {
+        const cards = (teams || []).map((t) => `
+          <a class="card team-card team-pick" href="${WUC.teamHref(t.id)}" style="--team-color:${WUC.escapeHtml(t.color || "#69BE28")}">
+            <div class="team-head">
+              <div>
+                <h3 style="margin:0">${WUC.escapeHtml(t.name)}</h3>
+                <p class="muted mb-0">${WUC.escapeHtml(t.owner || "Owner TBD")} · ${WUC.escapeHtml(WUC.recordLabel(t))}</p>
+              </div>
+              ${WUC.teamMark(t.id, { size: "lg" })}
+            </div>
+          </a>`).join("");
+        main.innerHTML = `
+          <header class="page-hero">
+            <span class="eyebrow">14 clubs</span>
+            <h1>Team pages</h1>
+            <p class="lede">${WUC.escapeHtml(message || "Pick a club for the record, week scores, roster, and settled moves.")}</p>
+          </header>
+          <div class="grid grid-2">${cards || WUC.emptyState("No clubs in the team file yet.")}</div>`;
+      }
+
+      try {
+        await WUC.loadTeamColors();
+        const teamsData = await WUC.loadJSON("data/teams.json");
+        const teams = (teamsData && teamsData.teams) || [];
+        WUC.indexTeams(teams);
+        if (!requested) {
+          picker(teams);
+          return;
+        }
+        const team = teams.find((t) => t.id === requested);
+        if (!team) {
+          picker(teams, "That club isn’t in the team file.");
+          return;
+        }
+
+        main.innerHTML = `
+          <header class="page-hero team-hero">
+            <div class="team-hero-main">
+              ${WUC.teamMark(team.id, { size: "lg" })}
+              <div>
+                <span class="eyebrow" id="teamEyebrow">${WUC.escapeHtml(team.abbrev || "")}</span>
+                <h1 id="teamTitle">${WUC.escapeHtml(team.name)}</h1>
+                <p class="lede" id="teamLede">${WUC.escapeHtml(team.owner || "Owner TBD")}</p>
+              </div>
+            </div>
+          </header>
+          <div class="stat-row" id="teamStats" aria-busy="true">${WUC.skeleton(3)}</div>
+          <section class="card" id="scores" style="margin-bottom:1rem">
+            <h2>Weekly scores</h2>
+            <div id="scoreChart" aria-busy="true">${WUC.skeleton(2)}</div>
+            <div id="scoreLog" style="margin-top:1rem"></div>
+          </section>
+          <div class="grid grid-2">
+            <section class="card" id="roster">
+              <h2>Roster</h2>
+              <div id="rosterBody" aria-busy="true">${WUC.skeleton(3)}</div>
+            </section>
+            <section class="card" id="moves">
+              <h2>Completed trades</h2>
+              <div id="tradeBody" aria-busy="true">${WUC.skeleton(2)}</div>
+              <h2 style="margin-top:1.25rem">Settled FAAB</h2>
+              <div id="faabBody" aria-busy="true">${WUC.skeleton(2)}</div>
+            </section>
+          </div>
+          <section class="card" id="wire" style="margin-top:1rem">
+            <h2>Transaction wire</h2>
+            <div id="txBody" aria-busy="true">${WUC.skeleton(3)}</div>
+          </section>`;
+
+        document.title = `${team.name} — Wheels Up Collective`;
+
+        const [weeks, rosterFile, eddiesFallback, tradesFile, faabFile, txFile, schedule] = await Promise.all([
+          WUC.loadSeasonWeeks(),
+          WUC.loadOptional(`data/rosters/${team.id}.json`),
+          team.id === "eddies" ? WUC.loadOptional("data/roster-eddies.json") : Promise.resolve(null),
+          WUC.loadOptional("data/trades.json"),
+          WUC.loadOptional("data/faab.json"),
+          WUC.loadOptional("data/transactions.json"),
+          WUC.loadOptional("data/schedule.json")
+        ]);
+
+        const roster = (rosterFile && rosterFile.roster) || (eddiesFallback && eddiesFallback.roster) || null;
+        const rosterMeta = rosterFile || eddiesFallback || {};
+        const games = WUC.gamesForTeam(team.id, weeks);
+        const pf = WUC.pointsFor(team);
+        const pa = WUC.pointsAgainst(team);
+        const faabLeft = (() => {
+          const row = ((faabFile && faabFile.teamBalances) || []).find((b) => b.id === team.id);
+          if (row && row.remaining != null) return row.remaining;
+          if (team.faab != null) return team.faab;
+          return null;
+        })();
+        const streak = WUC.streakFromLog(games, team);
+        const upcoming = WUC.nextMatchup(schedule, team.id, weeks);
+
+        const pills = [
+          `<span class="stat-pill">Record <strong>${WUC.escapeHtml(WUC.recordLabel(team))}</strong></span>`,
+          pf != null ? `<span class="stat-pill">PF <strong>${WUC.formatPts(pf)}</strong></span>` : "",
+          pa != null ? `<span class="stat-pill">PA <strong>${WUC.formatPts(pa)}</strong></span>` : "",
+          faabLeft != null ? `<span class="stat-pill">FAAB <strong>$${WUC.escapeHtml(faabLeft)}</strong></span>` : "",
+          team.standingsRank != null ? `<span class="stat-pill">Standings <strong>#${WUC.escapeHtml(team.standingsRank)}</strong></span>` : "",
+          team.powerRank != null ? `<span class="stat-pill">Power <strong>#${WUC.escapeHtml(team.powerRank)}</strong></span>` : "",
+          streak ? `<span class="stat-pill">Streak <strong>${WUC.escapeHtml(streak)}</strong></span>` : ""
+        ].filter(Boolean);
+        const stats = document.getElementById("teamStats");
+        stats.removeAttribute("aria-busy");
+        stats.innerHTML = pills.join("") || WUC.emptyState("Record isn’t in the team file yet.");
+
+        if (upcoming) {
+          const lede = document.getElementById("teamLede");
+          lede.innerHTML = `${WUC.escapeHtml(team.owner || "Owner TBD")} · Week ${upcoming.week} vs ${WUC.teamLinkHtml(upcoming.oppId || upcoming.oppName, { size: "sm" })}`;
+        }
+
+        const chart = document.getElementById("scoreChart");
+        chart.removeAttribute("aria-busy");
+        chart.innerHTML = WUC.scoreChart(games, team.color);
+        const log = document.getElementById("scoreLog");
+        if (games.length) {
+          log.innerHTML = `<div class="table-scroll week-log-scroll"><table class="trade-table week-log" aria-label="Weekly results">
+            <thead><tr><th class="col-rank">Wk</th><th class="col-team">Opp</th><th class="col-num">Score</th><th class="col-record">W/L</th></tr></thead>
+            <tbody>${games.map((g) => {
+              const opp = g.oppId ? WUC.teamById(g.oppId) : {};
+              const full = WUC.officialName(g.oppId || g.oppName);
+              const shortName = (opp && opp.abbrev) || full;
+              const mark = WUC.teamMark(g.oppId || g.oppName, { size: "sm" });
+              const inner = `<span class="team-inline">${mark}<span class="opp-full">${WUC.escapeHtml(full)}</span><span class="opp-short">${WUC.escapeHtml(shortName)}</span></span>`;
+              const at = g.side === "away" ? `<span class="opp-at">@</span>` : "";
+              const who = g.oppId
+                ? `<a class="team-link" href="${WUC.teamHref(g.oppId)}">${inner}</a>`
+                : inner;
+              const badge = g.result === "W" || g.result === "L" || g.result === "T"
+                ? `<span class="wl-badge is-${g.result.toLowerCase()}">${g.result}</span>`
+                : WUC.escapeHtml(String(g.status || "—"));
+              return `<tr>
+              <td class="col-rank">${g.week}</td>
+              <td class="col-team"><span class="opp-line">${at}${who}</span></td>
+              <td class="col-num">${WUC.formatPts(g.score)}–${WUC.formatPts(g.oppScore)}</td>
+              <td class="col-record">${badge}</td>
+            </tr>`;
+            }).join("")}</tbody>
+          </table></div>`;
+        }
+
+        const rosterBody = document.getElementById("rosterBody");
+        rosterBody.removeAttribute("aria-busy");
+        const flags = Array.isArray(rosterMeta.injuryFlags) ? rosterMeta.injuryFlags : [];
+        const note = WUC.publicNote(rosterMeta.notes || team.note || "");
+        rosterBody.innerHTML = `
+          ${roster ? WUC.renderRoster(roster) : WUC.emptyState("Depth chart isn’t in the league files yet.")}
+          ${flags.length ? `<details class="club-details" open><summary>Injury flags</summary><ul class="plain-list">${flags.map((f) => `<li>${WUC.escapeHtml(f)}</li>`).join("")}</ul></details>` : ""}
+          ${note ? `<details class="club-details" open><summary>Club note</summary><p class="mb-0">${WUC.escapeHtml(note)}</p></details>` : ""}`;
+
+        const trades = WUC.completedTrades(tradesFile).filter((tr) => {
+          return WUC.resolveTeamId(tr.teamA) === team.id || WUC.resolveTeamId(tr.teamB) === team.id;
+        });
+        const tradeBody = document.getElementById("tradeBody");
+        tradeBody.removeAttribute("aria-busy");
+        tradeBody.innerHTML = trades.length ? trades.map((tr) => {
+          const sends = WUC.resolveTeamId(tr.teamA) === team.id ? (tr.givesA || tr.aSends || []) : (tr.givesB || tr.bSends || []);
+          const gets = WUC.resolveTeamId(tr.teamA) === team.id ? (tr.givesB || tr.bSends || []) : (tr.givesA || tr.aSends || []);
+          const other = WUC.resolveTeamId(tr.teamA) === team.id ? tr.teamB : tr.teamA;
+          const list = (arr) => (Array.isArray(arr) && arr.length) ? arr.map((x) => WUC.escapeHtml(x)).join(", ") : "—";
+          return `<article class="move-card">
+            <p class="move-meta">${tr.date ? WUC.formatDate(tr.date) : "—"}${tr.week ? ` · Week ${WUC.escapeHtml(tr.week)}` : ""}</p>
+            <p class="mb-0"><strong>With</strong> ${WUC.teamLinkHtml(other, { size: "sm" })}</p>
+            <p class="mb-0"><strong>Sent</strong> ${list(sends)}</p>
+            <p class="mb-0"><strong>Received</strong> ${list(gets)}</p>
+          </article>`;
+        }).join("") : WUC.emptyState("No completed trades for this club yet.");
+
+        const claims = WUC.publicClaims(faabFile && faabFile.claims).filter((c) => {
+          const id = c.teamId || WUC.resolveTeamId(c.team);
+          return id === team.id && Number(c.amount) > 0;
+        });
+        const faabMoves = WUC.publicFaabTrades(faabFile && faabFile.trades).filter((t) => t.fromTeamId === team.id || t.toTeamId === team.id || WUC.resolveTeamId(t.fromTeam) === team.id || WUC.resolveTeamId(t.toTeam) === team.id);
+        const faabBody = document.getElementById("faabBody");
+        faabBody.removeAttribute("aria-busy");
+        const claimHtml = claims.length ? `<ul class="plain-list">${claims.map((c) => {
+          const drop = c.dropped ? ` <span class="muted">(−${WUC.escapeHtml(c.dropped)})</span>` : "";
+          return `<li><strong>$${WUC.escapeHtml(c.amount)}</strong> ${WUC.escapeHtml(c.player || "—")}${drop} <span class="muted">${c.date ? WUC.formatDate(c.date) : ""}</span></li>`;
+        }).join("")}</ul>` : WUC.emptyState("No settled FAAB claims over $0 yet.");
+        const tradeFaabHtml = faabMoves.length ? `<h3 class="subhead">FAAB in completed trades</h3><ul class="plain-list">${faabMoves.map((t) => {
+          const outgoing = (t.fromTeamId || WUC.resolveTeamId(t.fromTeam)) === team.id;
+          const other = outgoing ? (t.toTeam || "—") : (t.fromTeam || "—");
+          const otherId = outgoing ? (t.toTeamId || WUC.resolveTeamId(t.toTeam)) : (t.fromTeamId || WUC.resolveTeamId(t.fromTeam));
+          const verb = outgoing ? "Paid" : "Received";
+          return `<li>${verb} <strong>$${WUC.escapeHtml(t.amount)}</strong> ${outgoing ? "to" : "from"} ${WUC.teamLinkHtml(otherId || other, { size: "sm" })}</li>`;
+        }).join("")}</ul>` : "";
+        faabBody.innerHTML = claimHtml + tradeFaabHtml;
+
+        const tx = WUC.publicTransactions(txFile && txFile.items).filter((item) => {
+          return (item.teamId && item.teamId === team.id) || WUC.resolveTeamId(item.team) === team.id;
+        });
+        const txBody = document.getElementById("txBody");
+        txBody.removeAttribute("aria-busy");
+        if (!tx.length) {
+          txBody.innerHTML = WUC.emptyState("No transactions for this club yet.");
+        } else {
+          const renderItems = (list) => list.map((t) => `
+            <div class="feed-item">
+              <div class="feed-date">${WUC.formatDate(t.date)}</div>
+              <div class="feed-body"><span class="type-tag">${WUC.escapeHtml(t.type || "Move")}</span> ${WUC.escapeHtml(WUC.displayText(t.summary || ""))}</div>
+            </div>`).join("");
+          const first = tx.slice(0, 12);
+          txBody.innerHTML = renderItems(first) + (tx.length > 12
+            ? `<p class="mt-1 mb-0"><button type="button" class="btn btn-ghost" id="showAllTx">Show all ${tx.length}</button></p>`
+            : "");
+          const more = document.getElementById("showAllTx");
+          if (more) more.addEventListener("click", () => { txBody.innerHTML = renderItems(tx); });
+        }
+      } catch (e) {
+        main.innerHTML = `<header class="page-hero"><h1>Team</h1></header>${WUC.softError("This club page didn’t load. Try Refresh.")}`;
+      }
+    });
+  </script>
+</body>
+</html>

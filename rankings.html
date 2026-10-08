@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Season Power Rankings — Wheels Up Collective</title>
+  <link rel="icon" href="img/wu-mark.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
@@ -45,10 +46,13 @@
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       try {
         await WUC.loadTeamColors();
+        const teamsFile = await WUC.loadJSON("data/teams.json");
+        WUC.indexTeams((teamsFile && teamsFile.teams) || []);
         const data = await WUC.loadJSON("data/rankings.json");
         const week = data.week || 1;
         document.getElementById("rankEyebrow").textContent = `Week ${week} · ${data.season || ""}`.trim();
@@ -69,7 +73,7 @@
         }
 
         document.getElementById("rankList").innerHTML = (data.rankings || []).map((r) => {
-          const opp = r.opponent || "—";
+          const opp = WUC.displayText(r.opponent || "—");
           const hasLive = r.liveScore != null && r.oppLiveScore != null
             && (Number(r.liveScore) > 0 || Number(r.oppLiveScore) > 0);
           const bits = [];
@@ -85,7 +89,7 @@
             ${WUC.teamMark(r.teamId, { size: "md" })}
             <div>
               <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
-              <h2 class="rank-team">${WUC.escapeHtml(r.team)}${r.record ? ` <span class="rank-record">${WUC.escapeHtml(r.record)}</span>` : ""}</h2>
+              <h2 class="rank-team">${r.teamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(r.teamId)}">${WUC.escapeHtml(WUC.officialName(r.teamId, r.team))}</a>` : WUC.escapeHtml(WUC.displayText(r.team))}${r.record ? ` <span class="rank-record">${WUC.escapeHtml(r.record)}</span>` : ""}</h2>
               <div class="rank-line">${WUC.escapeHtml(line)}</div>
               <p class="rank-blurb">${formatBlurb(r.blurb)}</p>
             </div>
@@ -97,6 +101,6 @@
       }
     });
   </script>
-<!-- Cloudflare Web Analytics --><script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}'></script><!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>

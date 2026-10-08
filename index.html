@@ -17,14 +17,14 @@
   <div id="site-nav"></div>
   <main class="wrap" id="main-content">
     <section class="pulse-banner">
-      <span class="eyebrow">Season 2026 · Week 1 final</span>
+      <span class="eyebrow" id="homeEyebrow">Season 2026</span>
       <h1>Wheels Up Collective</h1>
       <p class="tagline">14-team <strong>IDP</strong> on Fantrax · Full PPR + <strong>TE premium</strong>. Draft locked Aug 30. Commish: <strong>Luke Sahlberg (ThiccSwede)</strong>. <strong>WWJDD</strong>.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://www.fantrax.com/fantasy/league/hms8onqvmsb3ulsx/home" target="_blank" rel="noopener">Open Fantrax</a>
+        <a class="btn btn-ghost" href="standings.html">Standings</a>
         <a class="btn btn-ghost" href="rankings.html">Power rankings</a>
         <a class="btn btn-ghost" href="awards.html">Awards</a>
-        <a class="btn btn-ghost" href="recap.html">Recap</a>
       </div>
     </section>
 
@@ -34,9 +34,23 @@
       <span class="stat-pill"><strong>TE premium</strong></span>
       <span class="stat-pill"><strong>WWJDD</strong></span>
       <span class="stat-pill">Draft <strong class="hot">Aug 30, 2026</strong></span>
-      <span class="stat-pill">All clubs <strong>0–0</strong></span>
+      <span class="stat-pill" id="recordPill">Leader <strong>—</strong></span>
+      <span class="stat-pill" id="weekPill">Week <strong>—</strong></span>
     </div>
     <p class="last-sync" id="lastSync" hidden></p>
+
+    <article class="card" style="margin-bottom:1rem">
+      <h2>Standings</h2>
+      <p class="muted mb-0">From the team file. Tap a club for the full page.</p>
+      <div id="standingsSnap" aria-busy="true">
+        <div class="skeleton-stack" aria-hidden="true">
+          <div class="skeleton-bar"></div>
+          <div class="skeleton-bar med"></div>
+          <div class="skeleton-bar short"></div>
+        </div>
+      </div>
+      <p class="mt-1"><a href="standings.html">Full standings →</a></p>
+    </article>
 
     <div class="grid grid-2">
       <article class="card">
@@ -69,8 +83,8 @@
 
     <section class="card mt-1" style="margin-top:1rem">
       <h2>Top of the board</h2>
-      <p class="muted mb-0">Season power board — HQ scale, FAAB, SOS. Not final standings.</p>
-      <ol id="topBoard" style="margin:0.75rem 0 0;padding-left:1.2rem;color:var(--text-muted)"></ol>
+        <p class="muted mb-0">Power board from the rankings file. Full writeups live on the rankings page.</p>
+      <ul class="board-list" id="topBoard"></ul>
       <p class="mt-1"><a href="rankings.html">See all 14 →</a></p>
     </section>
   </main>
@@ -91,6 +105,7 @@
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       const softError = (msg, retryId) =>
@@ -155,32 +170,13 @@
           board.innerHTML = softError("Trade board unavailable — try Refresh.", "trades");
         } else {
           const teams = teamsData.teams || [];
+          WUC.indexTeams(teams);
           const completed = (trades.trades || []).filter(t => t.status === "completed");
           const counts = Object.fromEntries(teams.map(t => [t.id, 0]));
 
-          function resolveTeamId(label) {
-            const bare = String(label || "").split("(")[0].trim();
-            const hit = teams.find(t => t.name === bare || bare.includes(t.name) || t.name.includes(bare));
-            if (hit) return hit.id;
-            const aliases = [
-              ["Greenacres Goblins", "hyper"],
-              ["Hypersecretors", "hyper"],
-              ["Towner Top Aga Bottom", "ttab"],
-              ["Pocket Agents", "pocket"],
-              ["Substation", "substation"],
-              ["Ultron", "ultron"],
-              ["Saltese Slamm", "saltese"],
-              ["Eagle Ridge Eddies", "eddies"]
-            ];
-            for (const [key, id] of aliases) {
-              if (bare.includes(key) || key.includes(bare)) return id;
-            }
-            return null;
-          }
-
           for (const tr of completed) {
             for (const side of ["teamA", "teamB"]) {
-              const id = resolveTeamId(tr[side]);
+              const id = WUC.resolveTeamId(tr[side]);
               if (id && id in counts) counts[id] += 1;
             }
           }
@@ -200,7 +196,7 @@
               const hot = place <= 3 && n > 0 ? " hot" : "";
               return `<tr class="${hot.trim()}">
                 <td class="col-rank">${place}</td>
-                <td class="col-team"><span class="team-inline">${WUC.teamMark(t, { size: "sm" })}<span>${WUC.escapeHtml(t.name)}</span></span></td>
+                <td class="col-team">${WUC.teamLinkHtml(t.id, { size: "sm" })}</td>
                 <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
                 <td class="col-trades">${n}</td>
               </tr>`;
@@ -234,9 +230,13 @@
 
           if (ranks) {
             const top = (ranks.rankings || []).slice(0, 5);
-            document.getElementById("topBoard").innerHTML = top.map(r =>
-              `<li class="team-inline" style="margin-bottom:0.35rem">${WUC.teamMark(r.teamId, { size: "sm" })}<span><strong style="color:var(--text)">#${r.rank} ${WUC.escapeHtml(r.team)}</strong> — ${WUC.escapeHtml(r.blurb)}</span></li>`
-            ).join("");
+            document.getElementById("topBoard").innerHTML = top.map(r => {
+              const bits = [];
+              if (r.record) bits.push(r.record);
+              if (r.pf != null) bits.push(`${Number(r.pf).toLocaleString("en-US", { maximumFractionDigits: 1 })} PF`);
+              if (r.opponent) bits.push(r.opponent);
+              return `<li class="board-row"><span class="board-rank">${WUC.escapeHtml(r.rank)}</span><div>${WUC.teamLinkHtml(r.teamId, { size: "sm" })}<div class="muted board-meta">${WUC.escapeHtml(WUC.displayText(bits.join(" · ")))}</div></div></li>`;
+            }).join("");
           }
         }
 
@@ -249,21 +249,35 @@
           const slateTitle = muLive?.closest("article")?.querySelector("h2");
           if (slateTitle) slateTitle.textContent = weekDone ? `Week ${weekNum} final` : `Week ${weekNum} slate`;
           muLive.removeAttribute("aria-busy");
-          muLive.innerHTML = `<ul class="home-matchups">${scores.matchups.map((m) => {
-            const hs = Number(m.homeScore);
-            const as = Number(m.awayScore);
-            const st = String(m.status || "").toLowerCase();
-            const tag = st === "final" ? "FINAL" : (st === "live" ? "LIVE" : st.toUpperCase() || "");
-            return `<li><span class="mu-line"><strong>${WUC.escapeHtml(m.away)}</strong> ${as.toLocaleString(undefined,{maximumFractionDigits:1})} @ <strong>${WUC.escapeHtml(m.home)}</strong> ${hs.toLocaleString(undefined,{maximumFractionDigits:1})}</span>${tag ? ` <span class="mu-tag">${tag}</span>` : ""}</li>`;
-          }).join("")}</ul>`;
+          muLive.innerHTML = WUC.renderMatchups(scores.matchups, weekDone);
 
-          const pills = document.getElementById("homeStats");
-          if (pills && weekDone) {
-            const last = pills.querySelector(".stat-pill:last-child");
-            if (last) last.innerHTML = `Week ${weekNum} <strong class="hot">FINAL</strong>`;
+          const weekPill = document.getElementById("weekPill");
+          if (weekPill) {
+            weekPill.innerHTML = weekDone
+              ? `Week ${weekNum} <strong class="hot">FINAL</strong>`
+              : `Week ${weekNum} <strong>${WUC.escapeHtml(String(scores.weekStatus || "live"))}</strong>`;
+          }
+          const eyebrow = document.getElementById("homeEyebrow");
+          if (eyebrow) {
+            const season = (window.WUC_CONFIG && WUC_CONFIG.season) || "";
+            eyebrow.textContent = `Season ${season} · Week ${weekNum} ${weekDone ? "final" : (scores.weekStatus || "")}`.replace(/\s+/g, " ").trim();
           }
 
           runWeekRecapOverlay(scores, awards, weekNum, weekDone);
+        }
+
+        if (teamsData && teamsData.teams) {
+          WUC.indexTeams(teamsData.teams);
+          const leader = WUC.sortStandings(teamsData.teams, "official")[0];
+          const recordPill = document.getElementById("recordPill");
+          if (recordPill && leader) {
+            recordPill.innerHTML = `Leader ${WUC.teamLinkHtml(leader.id, { size: "sm", text: leader.abbrev || leader.name })} <strong>${WUC.escapeHtml(WUC.recordLabel(leader))}</strong>`;
+          }
+          const snap = document.getElementById("standingsSnap");
+          if (snap) {
+            snap.removeAttribute("aria-busy");
+            snap.innerHTML = WUC.renderStandingsRows(teamsData.teams, "official", { compact: true, limit: 5 });
+          }
         }
       } catch (e) {
         console.error(e);
@@ -359,7 +373,7 @@
             <div class="week-recap-hero team-inline">
               ${WUC.teamMark(kitty.winnerTeamId, { size: "lg" })}
               <div>
-                <div class="week-recap-name">${WUC.escapeHtml((kitty.winnerTeamId === "ttab" || (kitty.winner || "").includes("Towner Top")) ? "TTAB" : (kitty.winner || "—"))}</div>
+                <div class="week-recap-name">${WUC.escapeHtml(WUC.officialName(kitty.winnerTeamId, kitty.winner || "—"))}</div>
                 <div class="week-recap-score hot">${Number(kitty.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</div>
               </div>
             </div>
@@ -381,7 +395,7 @@
             <h2 class="week-recap-title bus-title">Off the bus</h2>
             <div class="week-recap-hero team-inline week-recap-bus">
               <div>
-                <div class="week-recap-name">${WUC.escapeHtml((bus.teamId === "ttab" || (bus.team || "").includes("Towner Top")) ? "TTAB" : (bus.team || "—"))}</div>
+                <div class="week-recap-name">${WUC.escapeHtml(WUC.officialName(bus.teamId, bus.team || "—"))}</div>
                 <div class="week-recap-score bus-score">${Number(bus.score).toLocaleString(undefined, { maximumFractionDigits: 1 })} pts</div>
               </div>
             </div>
@@ -456,7 +470,6 @@
       });
     }
   </script>
-  </script>
-<!-- Cloudflare Web Analytics --><script type="module" defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "979ed6d735ee4ae1a6fe313fb2ae3b53"}'></script><!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>
