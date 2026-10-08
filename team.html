@@ -32,7 +32,7 @@
             <div class="team-head">
               <div>
                 <h3 style="margin:0">${WUC.escapeHtml(t.name)}</h3>
-                <p class="muted mb-0">${WUC.escapeHtml(t.owner || "Owner TBD")} · ${WUC.escapeHtml(WUC.recordLabel(t))}</p>
+                <p class="muted mb-0">${WUC.escapeHtml(t.owner || "Owner TBD")}${t.record ? ` · ${WUC.escapeHtml(WUC.recordLabel(t))}` : ""}</p>
               </div>
               ${WUC.teamMark(t.id, { size: "lg" })}
             </div>
@@ -48,8 +48,16 @@
 
       try {
         await WUC.loadTeamColors();
-        const teamsData = await WUC.loadJSON("data/teams.json");
-        const teams = (teamsData && teamsData.teams) || [];
+        const [teamsData, seasonWeeks, rankingsFile, faabFile] = await Promise.all([
+          WUC.loadJSON("data/teams.json"),
+          WUC.loadSeasonWeeks(),
+          WUC.loadOptional("data/rankings.json"),
+          WUC.loadOptional("data/faab.json")
+        ]);
+        const rawTeams = (teamsData && teamsData.teams) || [];
+        WUC.indexTeams(rawTeams);
+        const teams = WUC.applyFaab(WUC.liveStandings(rawTeams, seasonWeeks), faabFile);
+        const power = WUC.publishedPowerRanks(rankingsFile);
         WUC.indexTeams(teams);
         if (!requested) {
           picker(teams);
@@ -97,42 +105,37 @@
 
         document.title = `${team.name} — Wheels Up Collective`;
 
-        const [weeks, rosterFile, eddiesFallback, tradesFile, faabFile, txFile, schedule] = await Promise.all([
-          WUC.loadSeasonWeeks(),
+        const [rosterFile, eddiesFallback, tradesFile, txFile, schedule] = await Promise.all([
           WUC.loadOptional(`data/rosters/${team.id}.json`),
           team.id === "eddies" ? WUC.loadOptional("data/roster-eddies.json") : Promise.resolve(null),
           WUC.loadOptional("data/trades.json"),
-          WUC.loadOptional("data/faab.json"),
           WUC.loadOptional("data/transactions.json"),
           WUC.loadOptional("data/schedule.json")
         ]);
+        const weeks = seasonWeeks;
 
         const roster = (rosterFile && rosterFile.roster) || (eddiesFallback && eddiesFallback.roster) || null;
         const rosterMeta = rosterFile || eddiesFallback || {};
         const games = WUC.gamesForTeam(team.id, weeks);
         const pf = WUC.pointsFor(team);
         const pa = WUC.pointsAgainst(team);
-        const faabLeft = (() => {
-          const row = ((faabFile && faabFile.teamBalances) || []).find((b) => b.id === team.id);
-          if (row && row.remaining != null) return row.remaining;
-          if (team.faab != null) return team.faab;
-          return null;
-        })();
+        const faabLeft = team.faab != null ? team.faab : null;
         const streak = WUC.streakFromLog(games, team);
         const upcoming = WUC.nextMatchup(schedule, team.id, weeks);
+        const powerEntry = power.byId[team.id];
 
         const pills = [
-          `<span class="stat-pill">Record <strong>${WUC.escapeHtml(WUC.recordLabel(team))}</strong></span>`,
-          pf != null ? `<span class="stat-pill">PF <strong>${WUC.formatPts(pf)}</strong></span>` : "",
-          pa != null ? `<span class="stat-pill">PA <strong>${WUC.formatPts(pa)}</strong></span>` : "",
-          faabLeft != null ? `<span class="stat-pill">FAAB <strong>$${WUC.escapeHtml(faabLeft)}</strong></span>` : "",
-          team.standingsRank != null ? `<span class="stat-pill">Standings <strong>#${WUC.escapeHtml(team.standingsRank)}</strong></span>` : "",
-          team.powerRank != null ? `<span class="stat-pill">Power <strong>#${WUC.escapeHtml(team.powerRank)}</strong></span>` : "",
-          streak ? `<span class="stat-pill">Streak <strong>${WUC.escapeHtml(streak)}</strong></span>` : ""
+          team.record ? `<span class="stat-pill" data-kind="record">Record <strong>${WUC.escapeHtml(WUC.recordLabel(team))}</strong></span>` : "",
+          pf != null ? `<span class="stat-pill" data-kind="pf">PF <strong>${WUC.formatPts(pf)}</strong></span>` : "",
+          pa != null ? `<span class="stat-pill" data-kind="pa">PA <strong>${WUC.formatPts(pa)}</strong></span>` : "",
+          faabLeft != null ? `<span class="stat-pill" data-kind="faab">FAAB <strong>$${WUC.escapeHtml(faabLeft)}</strong></span>` : "",
+          team.standingsRank != null ? `<span class="stat-pill" data-kind="standings">Standings <strong>#${WUC.escapeHtml(team.standingsRank)}</strong></span>` : "",
+          powerEntry ? `<span class="stat-pill" data-kind="power">Power <strong>#${WUC.escapeHtml(powerEntry.rank)}</strong>${powerEntry.week ? ` (Wk ${WUC.escapeHtml(powerEntry.week)})` : ""}</span>` : "",
+          streak ? `<span class="stat-pill" data-kind="streak">Streak <strong>${WUC.escapeHtml(streak)}</strong></span>` : ""
         ].filter(Boolean);
         const stats = document.getElementById("teamStats");
         stats.removeAttribute("aria-busy");
-        stats.innerHTML = pills.join("") || WUC.emptyState("Record isn’t in the team file yet.");
+        stats.innerHTML = pills.join("") || WUC.emptyState("No posted scores for this club yet.");
 
         if (upcoming) {
           const lede = document.getElementById("teamLede");

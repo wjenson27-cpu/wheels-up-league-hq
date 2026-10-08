@@ -51,9 +51,23 @@
     document.addEventListener("DOMContentLoaded", async () => {
       try {
         await WUC.loadTeamColors();
-        const teamsFile = await WUC.loadJSON("data/teams.json");
-        WUC.indexTeams((teamsFile && teamsFile.teams) || []);
-        const data = await WUC.loadJSON("data/rankings.json");
+        const [teamsFile, data, weeks, faabFile] = await Promise.all([
+          WUC.loadJSON("data/teams.json"),
+          WUC.loadJSON("data/rankings.json"),
+          WUC.loadSeasonWeeks(),
+          WUC.loadOptional("data/faab.json")
+        ]);
+        const rawTeams = (teamsFile && teamsFile.teams) || [];
+        WUC.indexTeams(rawTeams);
+        const live = WUC.applyFaab(WUC.liveStandings(rawTeams, weeks), faabFile);
+        const liveById = Object.fromEntries(live.map((t) => [t.id, t]));
+        WUC.indexTeams(live);
+        if (data.pendingPublish === true) {
+          document.getElementById("rankEyebrow").textContent = "Not published";
+          document.getElementById("rankLede").textContent = "This week’s power rankings aren’t published yet.";
+          document.getElementById("rankList").innerHTML = `<li class="muted">Check back after the board is posted.</li>`;
+          return;
+        }
         const week = data.week || 1;
         document.getElementById("rankEyebrow").textContent = `Week ${week} · ${data.season || ""}`.trim();
         const lede = data.subtitle || "1–14 with blurbs.";
@@ -72,12 +86,16 @@
           }).join("");
         }
 
-        document.getElementById("rankList").innerHTML = (data.rankings || []).map((r) => {
+        document.getElementById("rankList").innerHTML = (data.rankings || []).filter((r) => r && r.pendingPublish !== true).map((r) => {
+          const liveTeam = liveById[r.teamId];
+          const recordHtml = liveTeam && liveTeam.record
+            ? ` <span class="rank-record">${WUC.escapeHtml(WUC.recordLabel(liveTeam))}</span>`
+            : "";
           const opp = WUC.displayText(r.opponent || "—");
           const hasLive = r.liveScore != null && r.oppLiveScore != null
             && (Number(r.liveScore) > 0 || Number(r.oppLiveScore) > 0);
           const bits = [];
-          if (r.faabLeft != null) bits.push(`FAAB $${r.faabLeft}`);
+          if (liveTeam && liveTeam.faab != null) bits.push(`FAAB $${liveTeam.faab}`);
           bits.push(opp);
           if (hasLive) bits.push(`live ${Number(r.liveScore).toFixed(0)}–${Number(r.oppLiveScore).toFixed(0)}`);
           if (r.playersLeft != null) bits.push(`${r.playersLeft} left`);
@@ -89,7 +107,7 @@
             ${WUC.teamMark(r.teamId, { size: "md" })}
             <div>
               <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
-              <h2 class="rank-team">${r.teamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(r.teamId)}">${WUC.escapeHtml(WUC.officialName(r.teamId, r.team))}</a>` : WUC.escapeHtml(WUC.displayText(r.team))}${r.record ? ` <span class="rank-record">${WUC.escapeHtml(r.record)}</span>` : ""}</h2>
+              <h2 class="rank-team">${r.teamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(r.teamId)}">${WUC.escapeHtml(WUC.officialName(r.teamId, r.team))}</a>` : WUC.escapeHtml(WUC.displayText(r.team))}${recordHtml}</h2>
               <div class="rank-line">${WUC.escapeHtml(line)}</div>
               <p class="rank-blurb">${formatBlurb(r.blurb)}</p>
             </div>

@@ -17,7 +17,7 @@
     <header class="page-hero">
       <span class="eyebrow" id="standEyebrow">Season</span>
       <h1>Standings</h1>
-      <p class="lede" id="standLede">Record, points for, and points against from the team file. Week scores come from the posted score files.</p>
+      <p class="lede" id="standLede">Record, points for, and points against are added up from the posted week scores.</p>
     </header>
 
     <div class="stat-row" id="highlightRow" hidden></div>
@@ -32,7 +32,7 @@
           <button type="button" class="seg-btn" data-sort="playoff" aria-pressed="false">Playoff %</button>
         </div>
       </div>
-      <p class="muted" id="sortNote">Order follows the rank in the team file.</p>
+      <p class="muted" id="sortNote">Sorted by wins, then losses, then ties, then points for.</p>
       <div id="standTable" aria-busy="true">
         <div class="skeleton-stack" aria-hidden="true">
           <div class="skeleton-bar"></div>
@@ -45,7 +45,7 @@
     <div class="grid grid-2">
       <section class="card">
         <h2>Points for</h2>
-        <p class="muted">Season total from the team file.</p>
+        <p class="muted">Season total from the posted week scores.</p>
         <div id="pfChart" aria-busy="true">
           <div class="skeleton-stack" aria-hidden="true"><div class="skeleton-bar"></div><div class="skeleton-bar med"></div></div>
         </div>
@@ -91,7 +91,7 @@
               ? "Sorted by points against, lowest first."
               : mode === "playoff"
                 ? "Sorted by playoff odds, highest first."
-                : "Order follows the rank in the team file.";
+                : "Sorted by wins, then losses, then ties, then points for.";
         }
         document.querySelectorAll("[data-sort]").forEach((btn) => {
           const on = btn.getAttribute("data-sort") === mode;
@@ -117,12 +117,15 @@
 
       try {
         await WUC.loadTeamColors();
-        const [teamsData, loadedWeeks, schedule] = await Promise.all([
+        const [teamsData, loadedWeeks, schedule, faabFile] = await Promise.all([
           WUC.loadJSON("data/teams.json"),
           WUC.loadSeasonWeeks(),
-          WUC.loadOptional("data/schedule.json")
+          WUC.loadOptional("data/schedule.json"),
+          WUC.loadOptional("data/faab.json")
         ]);
-        teams = (teamsData && teamsData.teams) || [];
+        const rawTeams = (teamsData && teamsData.teams) || [];
+        WUC.indexTeams(rawTeams);
+        teams = WUC.applyFaab(WUC.liveStandings(rawTeams, loadedWeeks), faabFile);
         WUC.indexTeams(teams);
         weeks = loadedWeeks || [];
         try {
