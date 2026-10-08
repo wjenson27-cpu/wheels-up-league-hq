@@ -374,10 +374,84 @@ async function checkPages() {
           console.log(`page ok ${name} @ ${viewport.name}`);
         }
       }
+      await checkRankAgreement(page, port, viewport.name);
     }
   } finally {
     await browser.close();
     server.close();
+  }
+}
+
+async function checkRankAgreement(page, port, viewportName) {
+  const ids = ["eddies", "goats", "slumlords", "newman"];
+  await page.goto(`http://127.0.0.1:${port}/standings.html`, { waitUntil: "networkidle0", timeout: 30000 });
+  const table = await page.evaluate(() => {
+    const out = {};
+    document.querySelectorAll(".standings-table tbody tr").forEach((row) => {
+      const href = (row.querySelector("a.team-link") || {}).getAttribute?.("href") || "";
+      const id = new URLSearchParams((href.split("?")[1] || "")).get("id");
+      if (!id) return;
+      out[id] = {
+        rank: (row.querySelector(".col-rank") || {}).textContent.trim(),
+        record: (row.querySelector(".col-record") || {}).textContent.trim(),
+        pf: (row.querySelector("td.col-num") || {}).textContent.trim()
+      };
+    });
+    return out;
+  });
+  await page.goto(`http://127.0.0.1:${port}/rankings.html`, { waitUntil: "networkidle0", timeout: 30000 });
+  const power = await page.evaluate(() => {
+    const week = ((document.getElementById("rankEyebrow") || {}).textContent || "").match(/Week\s+(\d+)/);
+    const out = {};
+    document.querySelectorAll("li.rank-row").forEach((row) => {
+      const href = (row.querySelector("a.team-link") || {}).getAttribute?.("href") || "";
+      const id = new URLSearchParams((href.split("?")[1] || "")).get("id");
+      if (!id) return;
+      out[id] = {
+        rank: (row.querySelector(".rank-num") || {}).textContent.trim(),
+        week: week ? week[1] : "",
+        record: (row.querySelector(".rank-record") || {}).textContent.trim()
+      };
+    });
+    return out;
+  });
+  for (const id of ids) {
+    await page.goto(`http://127.0.0.1:${port}/team.html?id=${id}`, { waitUntil: "networkidle0", timeout: 30000 });
+    const info = await page.evaluate(() => {
+      const text = (kind) => {
+        const el = document.querySelector(`#teamStats [data-kind="${kind}"]`);
+        return el ? el.textContent.replace(/\s+/g, " ").trim() : "";
+      };
+      const pill = document.querySelector('#teamStats [data-kind="power"]');
+      const main = document.querySelector("main.wrap");
+      const pb = pill ? pill.getBoundingClientRect() : null;
+      const mb = main ? main.getBoundingClientRect() : null;
+      return {
+        power: text("power"),
+        standings: text("standings"),
+        record: text("record"),
+        pf: text("pf"),
+        overflow: pb && mb ? pb.right > mb.right + 1 || pb.left < mb.left - 1 : false
+      };
+    });
+    const stand = table[id];
+    const board = power[id];
+    if (!stand) {
+      fail(`${id} missing from standings @ ${viewportName}`);
+      continue;
+    }
+    if (!board) {
+      fail(`${id} missing from rankings @ ${viewportName}`);
+      continue;
+    }
+    const expectPower = `Power #${board.rank} (Wk ${board.week})`;
+    const expectStand = `Standings #${stand.rank}`;
+    if (info.power !== expectPower) fail(`${id} power pill "${info.power}" != "${expectPower}" @ ${viewportName}`);
+    if (info.standings !== expectStand) fail(`${id} standings pill "${info.standings}" != "${expectStand}" @ ${viewportName}`);
+    if (info.record !== `Record ${stand.record}`) fail(`${id} record pill "${info.record}" != standings ${stand.record} @ ${viewportName}`);
+    if (info.pf !== `PF ${stand.pf}`) fail(`${id} PF pill "${info.pf}" != standings ${stand.pf} @ ${viewportName}`);
+    if (board.record !== stand.record) fail(`${id} rankings record ${board.record} != standings ${stand.record} @ ${viewportName}`);
+    if (info.overflow) fail(`${id} power pill overflows the page @ ${viewportName}`);
   }
 }
 

@@ -8,9 +8,10 @@
        and the 1-seed played round 1, so no bye).
      regularSeasonWeeks: 14 — 2024 best record was 11-3; 2025 records include 12-2 and 2-12.
      No divisions are described anywhere in the repo.
-     schedule.json only lists weeks 1–5. Later weeks are random pairings in the sim.
+     The sim reads schedule.weeks. A week that is missing there is a random pairing.
      Tiebreak matches the site table: wins, then losses, then ties, then points for
-     (history.json: regular-season order by record then PF). */
+     (history.json: regular-season order by record then PF).
+     Those records come from posted final scores, not teams.json. */
   const PLAYOFF_ODDS = {
     spots: 8,
     regularSeasonWeeks: 14,
@@ -213,6 +214,18 @@
     return raw.endsWith("-0") ? raw.slice(0, -2) : raw;
   }
 
+  function compareRecord(a, b) {
+    const bw = (Number(b.wins) || 0) - (Number(a.wins) || 0);
+    if (bw) return bw;
+    const losses = (Number(a.losses) || 0) - (Number(b.losses) || 0);
+    if (losses) return losses;
+    const ties = (Number(b.ties) || 0) - (Number(a.ties) || 0);
+    if (ties) return ties;
+    const pf = (pointsFor(b) || 0) - (pointsFor(a) || 0);
+    if (pf) return pf;
+    return String(a.name || "").localeCompare(String(b.name || ""));
+  }
+
   function sortStandings(teams, mode, extra) {
     const list = [...(teams || [])];
     if (mode === "playoff") {
@@ -233,23 +246,90 @@
       list.sort((a, b) => (pointsAgainst(a) || 0) - (pointsAgainst(b) || 0) || String(a.name).localeCompare(String(b.name)));
       return list;
     }
-    const ranked = list.length > 0 && list.every((t) => t.standingsRank != null && t.standingsRank !== "");
-    if (ranked) {
-      list.sort((a, b) => Number(a.standingsRank) - Number(b.standingsRank));
-      return list;
-    }
-    list.sort((a, b) => {
-      const bw = (Number(b.wins) || 0) - (Number(a.wins) || 0);
-      if (bw) return bw;
-      const losses = (Number(a.losses) || 0) - (Number(b.losses) || 0);
-      if (losses) return losses;
-      const ties = (Number(b.ties) || 0) - (Number(a.ties) || 0);
-      if (ties) return ties;
-      const pf = (pointsFor(b) || 0) - (pointsFor(a) || 0);
-      if (pf) return pf;
-      return String(a.name).localeCompare(String(b.name));
+    list.sort(compareRecord);
+    return list;
+  }
+
+  /* Wins, losses, ties, and points from posted final score files only.
+     teams.json standingsRank / record / pointsFor are not used. */
+  function recordFromGames(teamId, weeks) {
+    const games = gamesForTeam(teamId, weeks).filter((g) => g.final && Number.isFinite(g.score) && Number.isFinite(g.oppScore));
+    let wins = 0;
+    let losses = 0;
+    let ties = 0;
+    let pf = 0;
+    let pa = 0;
+    games.forEach((g) => {
+      pf += Number(g.score);
+      pa += Number(g.oppScore);
+      if (g.result === "W") wins += 1;
+      else if (g.result === "L") losses += 1;
+      else ties += 1;
+    });
+    const round = (n) => Math.round(n * 10) / 10;
+    return {
+      wins,
+      losses,
+      ties,
+      pointsFor: games.length ? round(pf) : null,
+      pointsAgainst: games.length ? round(pa) : null,
+      played: games.length
+    };
+  }
+
+  function liveStandings(teams, weeks) {
+    const anyFinal = (weeks || []).some(weekIsFinal);
+    const list = (teams || []).filter((t) => t && t.id).map((t) => {
+      const rec = anyFinal
+        ? recordFromGames(t.id, weeks)
+        : { wins: 0, losses: 0, ties: 0, pointsFor: null, pointsAgainst: null, played: 0 };
+      const record = rec.played
+        ? (rec.ties ? `${rec.wins}-${rec.losses}-${rec.ties}` : `${rec.wins}-${rec.losses}`)
+        : null;
+      return Object.assign({}, t, {
+        wins: rec.played ? rec.wins : null,
+        losses: rec.played ? rec.losses : null,
+        ties: rec.played ? rec.ties : null,
+        pointsFor: rec.pointsFor,
+        pointsAgainst: rec.pointsAgainst,
+        pf: rec.pointsFor,
+        pa: rec.pointsAgainst,
+        record,
+        played: rec.played,
+        standingsRank: null
+      });
+    });
+    sortStandings(list, "official").forEach((t, i) => {
+      if (t.played) t.standingsRank = i + 1;
     });
     return list;
+  }
+
+  /* Latest published power board. pendingPublish hides the whole file, or one row. */
+  function publishedPowerRanks(data) {
+    const byId = {};
+    if (!data || data.pendingPublish === true) return { week: null, byId, published: false };
+    const week = Number(data.week) || null;
+    (data.rankings || []).forEach((row) => {
+      if (!row || row.pendingPublish === true || !row.teamId) return;
+      const rank = Number(row.rank);
+      if (!Number.isFinite(rank)) return;
+      byId[row.teamId] = { rank, week };
+    });
+    return { week, byId, published: true };
+  }
+
+  /* FAAB left comes from faab.json balances. teams.json faab is ignored. */
+  function applyFaab(teams, faabFile) {
+    const byId = {};
+    const balances = faabFile && Array.isArray(faabFile.teamBalances) ? faabFile.teamBalances : null;
+    (balances || []).forEach((b) => {
+      if (b && b.id) byId[b.id] = b.remaining;
+    });
+    return (teams || []).map((t) => {
+      const known = balances && Object.prototype.hasOwnProperty.call(byId, t.id) && byId[t.id] != null && byId[t.id] !== "";
+      return Object.assign({}, t, { faab: known ? byId[t.id] : null });
+    });
   }
 
   function pendingBag(obj) {
@@ -585,14 +665,15 @@
     return { fixed, openWeeks, publishedFuture };
   }
 
-  function copyStandings(teams) {
+  function copyStandings(teams, weeks) {
     const state = {};
-    teams.forEach((t) => {
+    (teams || []).forEach((t) => {
+      const rec = recordFromGames(t.id, weeks);
       state[t.id] = {
-        wins: Number(t.wins) || 0,
-        losses: Number(t.losses) || 0,
-        ties: Number(t.ties) || 0,
-        pf: pointsFor(t) || 0
+        wins: rec.wins,
+        losses: rec.losses,
+        ties: rec.ties,
+        pf: rec.pointsFor || 0
       };
     });
     return state;
@@ -701,10 +782,13 @@
     ids.forEach((id) => {
       remainingFor[id] = fixed.filter((g) => g.a === id || g.b === id).length + openWeeks.length;
     });
-    const base = copyStandings(list);
-    const standKey = [...list]
-      .sort((a, b) => String(a.id).localeCompare(String(b.id)))
-      .map((t) => [t.id, Number(t.wins) || 0, Number(t.losses) || 0, Number(t.ties) || 0, pointsFor(t) || 0].join(":"))
+    const base = copyStandings(list, weeks);
+    const standKey = [...ids]
+      .sort()
+      .map((id) => {
+        const row = base[id];
+        return [id, row.wins, row.losses, row.ties, row.pf].join(":");
+      })
       .join("|");
     const scoreKey = [...ids].sort().map((id) => `${id}:${(byTeamScores[id] || []).join(",")}`).join("|");
     const schedKey = fixed.map((g) => `${g.week}:${g.a}<${g.b}`).sort().join("|");
@@ -842,6 +926,9 @@
     pointsAgainst,
     recordLabel,
     sortStandings,
+    liveStandings,
+    publishedPowerRanks,
+    applyFaab,
     isPublicClaim,
     publicClaims,
     completedTrades,

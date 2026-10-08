@@ -41,7 +41,7 @@
 
     <article class="card" style="margin-bottom:1rem">
       <h2>Standings</h2>
-      <p class="muted mb-0">From the team file. Tap a club for the full page.</p>
+      <p class="muted mb-0">From posted week scores. Tap a club for the full page.</p>
       <div id="standingsSnap" aria-busy="true">
         <div class="skeleton-stack" aria-hidden="true">
           <div class="skeleton-bar"></div>
@@ -83,7 +83,7 @@
 
     <section class="card mt-1" style="margin-top:1rem">
       <h2>Top of the board</h2>
-        <p class="muted mb-0">Power board from the rankings file. Full writeups live on the rankings page.</p>
+        <p class="muted mb-0">Power order from the latest published rankings. Records are from posted scores.</p>
       <ul class="board-list" id="topBoard"></ul>
       <p class="mt-1"><a href="rankings.html">See all 14 →</a></p>
     </section>
@@ -125,7 +125,8 @@
           WUC.loadJSON("data/scores.json"),
           WUC.loadJSON("data/awards.json"),
           WUC.loadJSON("data/faab.json").catch(() => null),
-          WUC.loadJSON("data/transactions.json").catch(() => null)
+          WUC.loadJSON("data/transactions.json").catch(() => null),
+          WUC.loadSeasonWeeks()
         ]);
 
         const val = (i) => (results[i].status === "fulfilled" ? results[i].value : null);
@@ -136,6 +137,12 @@
         const awards = val(4);
         const faab = val(5);
         const tx = val(6);
+        const seasonWeeks = val(7) || [];
+        if (teamsData) WUC.indexTeams(teamsData.teams || []);
+        const liveTeams = teamsData
+          ? WUC.applyFaab(WUC.liveStandings(teamsData.teams || [], seasonWeeks), faab)
+          : [];
+        if (liveTeams.length) WUC.indexTeams(liveTeams);
 
         // Last sync from newest data file dates
         const syncDates = [];
@@ -169,8 +176,7 @@
           board.removeAttribute("aria-busy");
           board.innerHTML = softError("Trade board unavailable — try Refresh.", "trades");
         } else {
-          const teams = teamsData.teams || [];
-          WUC.indexTeams(teams);
+          const teams = liveTeams.length ? liveTeams : (teamsData.teams || []);
           const completed = (trades.trades || []).filter(t => t.status === "completed");
           const counts = Object.fromEntries(teams.map(t => [t.id, 0]));
 
@@ -228,12 +234,15 @@
             ? `<ul style="margin:0;padding-left:1.1rem;color:var(--text-muted)">${matchups.map(m => `<li>${WUC.escapeHtml(m)}</li>`).join("")}</ul>`
             : `<p class="muted">Matchups TBD.</p>`;
 
-          if (ranks) {
-            const top = (ranks.rankings || []).slice(0, 5);
+          const powerBoard = WUC.publishedPowerRanks(ranks);
+          if (powerBoard.published) {
+            const liveById = Object.fromEntries(liveTeams.map((t) => [t.id, t]));
+            const top = (ranks.rankings || []).filter((r) => r && r.pendingPublish !== true && powerBoard.byId[r.teamId]).slice(0, 5);
             document.getElementById("topBoard").innerHTML = top.map(r => {
+              const live = liveById[r.teamId];
               const bits = [];
-              if (r.record) bits.push(r.record);
-              if (r.pf != null) bits.push(`${Number(r.pf).toLocaleString("en-US", { maximumFractionDigits: 1 })} PF`);
+              if (live && live.record) bits.push(WUC.recordLabel(live));
+              if (live && WUC.pointsFor(live) != null) bits.push(`${WUC.formatPts(WUC.pointsFor(live))} PF`);
               if (r.opponent) bits.push(r.opponent);
               return `<li class="board-row"><span class="board-rank">${WUC.escapeHtml(r.rank)}</span><div>${WUC.teamLinkHtml(r.teamId, { size: "sm" })}<div class="muted board-meta">${WUC.escapeHtml(WUC.displayText(bits.join(" · ")))}</div></div></li>`;
             }).join("");
@@ -266,17 +275,16 @@
           runWeekRecapOverlay(scores, awards, weekNum, weekDone);
         }
 
-        if (teamsData && teamsData.teams) {
-          WUC.indexTeams(teamsData.teams);
-          const leader = WUC.sortStandings(teamsData.teams, "official")[0];
+        if (liveTeams.length) {
+          const leader = WUC.sortStandings(liveTeams.filter((t) => t.played), "official")[0];
           const recordPill = document.getElementById("recordPill");
-          if (recordPill && leader) {
+          if (recordPill && leader && leader.record) {
             recordPill.innerHTML = `Leader ${WUC.teamLinkHtml(leader.id, { size: "sm", text: leader.abbrev || leader.name })} <strong>${WUC.escapeHtml(WUC.recordLabel(leader))}</strong>`;
           }
           const snap = document.getElementById("standingsSnap");
           if (snap) {
             snap.removeAttribute("aria-busy");
-            snap.innerHTML = WUC.renderStandingsRows(teamsData.teams, "official", { compact: true, limit: 5 });
+            snap.innerHTML = WUC.renderStandingsRows(liveTeams.filter((t) => t.played), "official", { compact: true, limit: 5 });
           }
         }
       } catch (e) {

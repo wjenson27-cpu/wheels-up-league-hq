@@ -43,7 +43,7 @@ Automated jobs write these files and push them to `main` several times a day. **
 
 | File | What it is |
 |------|------------|
-| `data/teams.json` | 14 clubs: names, owners, records, points, FAAB, colors. |
+| `data/teams.json` | 14 clubs: names, owners, colors, logos. The site does not use `powerRank`, `standingsRank`, `record`, or points from this file. |
 | `data/scores.json` | Latest week’s matchups. |
 | `data/scores-wN-2026.json` | Older weeks, when those files exist (`scores-w1-2026.json`, and so on). |
 | `data/schedule.json` | Season matchup pairings. The playoff sim reads `weeks`. |
@@ -52,7 +52,7 @@ Automated jobs write these files and push them to `main` several times a day. **
 | `data/transactions.json` | League wire. |
 | `data/trades.json` | Completed trades and trade-block lists. The site ignores `pending`. |
 | `data/faab.json` | Balances and settled claims. Pending bids are not shown. |
-| `data/rankings.json` | Power rankings. |
+| `data/rankings.json` | Power rankings. A file or row with `pendingPublish: true` is hidden. |
 | `data/awards.json` | Kitty, Survivor, Last Ride, yearly awards. |
 | `data/recaps.json` | Week recap writeups. |
 | `data/history.json` | History page source. |
@@ -82,6 +82,10 @@ The sim reads **`data/schedule.json` → `weeks`**, the same list weeks 1–5 al
 ```
 
 Use the club’s `name` from `teams.json` (for example `Towner Top Aga Bottom`, not `TTAB`). When a data job adds weeks 6–14 in that shape, those real matchups are used automatically. A week that is missing from `weeks` is still simulated, but the pairing is random. The per-team arrays elsewhere in the file are not what the sim reads.
+
+Power rank (the pill that says `Power #3 (Wk 5)`) comes from `data/rankings.json`: the `rankings` array, matched on `teamId`, and the file’s `week`. If the file or that row has `pendingPublish: true`, or the club is not in the array, the pill is hidden. `teams.json` `powerRank` is never shown.
+
+Standings rank, win-loss record, and points on the home page, standings, team pages, the power rankings record badge, and roster cards are added up from posted final scores (`data/scores.json` and `data/scores-wN-2026.json`). Order is wins, then losses, then ties, then points for. FAAB left comes from `data/faab.json` `teamBalances`. Awards and history keep their own files.
 
 Podcast link, if it ever changes:
 
