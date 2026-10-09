@@ -24,7 +24,7 @@ Then open <http://localhost:8080>.
 |------|----------------|
 | `index.html` | Home. Current week scores, a standings snapshot, and the trade count board. |
 | `standings.html` | Full standings (including playoff odds), points-for chart, and each week’s head-to-head scores. |
-| `team.html?id=eddies` | One club: record, weekly scores, roster, settled FAAB, completed trades, transactions. Every team id works the same way. |
+| `team.html?id=eddies` | One club: record, weekly scores, all-time head-to-head (Fantrax era), roster, settled FAAB, completed trades, transactions. Every team id works the same way. |
 | `rosters.html` | All 14 clubs. Open a card for the depth chart. Names link to the team page. |
 | `trades.html` | Completed trades, plus who is on the trade block. Pending offers are not shown. |
 | `faab.html` | Budgets, settled claims of $1 or more, and FAAB that moved in completed trades. |
@@ -58,8 +58,26 @@ Automated jobs write these files and push them to `main` several times a day. **
 | `data/history.json` | History page source. |
 | `data/td-parlay.json` | Parlay grid. |
 | `data/espn-seasons.json` | Older ESPN seasons used by history. |
+| `data/h2h-history.json` | 2024–2025 Fantrax head-to-head games for the team-page all-time table. Written by hand, not by a data job. |
 
 `data/schedule-scratch.json` and `data/scores-scratch.json` are already in the repo. Leave them. New files whose names contain `PREVIEW`, or files named `*.DRAFT.json`, are ignored by git.
+
+### `data/h2h-history.json`
+
+The 2024 and 2025 Fantrax games behind the team-page table **All-time vs. each team**. Each game has these fields:
+
+```json
+{ "season": 2025, "week": 15, "round": "playoff", "bracket": "Playoffs R1",
+  "teamA": "eddies", "nameA": "Eagle Ridge Eddies", "scoreA": 408,
+  "teamB": "saltese", "nameB": "Saltese Slamm", "scoreB": 181 }
+```
+
+- `teamA` and `teamB` are current `teams.json` ids. History follows the chair, so an old team counts under the club that holds that chair now.
+- `nameA` and `nameB` are the names used in that season.
+- `round` is `regular` or `playoff` (winners bracket, including the 2025 3rd/4th game).
+- Consolation games are not in the file. `excludedConsolationGames` gives the count per season.
+- `chairs` lists the former names, and the footnote is built from it.
+- 2026 is not stored here. The table reads 2026 from the posted final score files (weeks 1–14), so it updates every week. A 2026 game after week 14 counts only if its score row is tagged as a winners-bracket playoff game.
 
 ## Shared code
 

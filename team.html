@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Team — Wheels Up Collective</title>
   <link rel="icon" href="img/wu-mark.png" type="image/png" />
-  <meta name="description" content="Wheels Up Collective team page — record, scores, roster, FAAB, and completed trades." />
+  <meta name="description" content="Wheels Up Collective team page — record, scores, all-time head-to-head, roster, FAAB, and completed trades." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
@@ -86,6 +86,10 @@
             <div id="scoreChart" aria-busy="true">${WUC.skeleton(2)}</div>
             <div id="scoreLog" style="margin-top:1rem"></div>
           </section>
+          <section class="card" id="h2h" style="margin-bottom:1rem">
+            <h2>All-time vs. each team (Fantrax era, 2024–present)</h2>
+            <div id="h2hBody" aria-busy="true">${WUC.skeleton(3)}</div>
+          </section>
           <div class="grid grid-2">
             <section class="card" id="roster">
               <h2>Roster</h2>
@@ -105,12 +109,13 @@
 
         document.title = `${team.name} — Wheels Up Collective`;
 
-        const [rosterFile, eddiesFallback, tradesFile, txFile, schedule] = await Promise.all([
+        const [rosterFile, eddiesFallback, tradesFile, txFile, schedule, h2hFile] = await Promise.all([
           WUC.loadOptional(`data/rosters/${team.id}.json`),
           team.id === "eddies" ? WUC.loadOptional("data/roster-eddies.json") : Promise.resolve(null),
           WUC.loadOptional("data/trades.json"),
           WUC.loadOptional("data/transactions.json"),
-          WUC.loadOptional("data/schedule.json")
+          WUC.loadOptional("data/schedule.json"),
+          WUC.loadOptional("data/h2h-history.json")
         ]);
         const weeks = seasonWeeks;
 
@@ -170,6 +175,16 @@
             </tr>`;
             }).join("")}</tbody>
           </table></div>`;
+        }
+
+        const h2hBody = document.getElementById("h2hBody");
+        h2hBody.removeAttribute("aria-busy");
+        try {
+          h2hBody.innerHTML = h2hFile
+            ? WUC.renderH2H(team.id, h2hFile, weeks)
+            : WUC.emptyState("Head-to-head history isn’t in the league files yet.");
+        } catch (err) {
+          h2hBody.innerHTML = WUC.emptyState("Head-to-head history didn’t load.");
         }
 
         const rosterBody = document.getElementById("rosterBody");
