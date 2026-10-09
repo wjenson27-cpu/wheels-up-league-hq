@@ -983,7 +983,9 @@
 
   function renderH2H(teamId, history, weeks) {
     const rec = h2hRecords(teamId, history, weeks);
-    const opps = allTeams().filter((t) => t && t.id && t.id !== teamId);
+    const pastOwners = ((history && history.pastOwners) || []).filter((p) => p && p.id && p.id !== teamId)
+      .map((p) => Object.assign({ past: true }, p));
+    const opps = allTeams().filter((t) => t && t.id && t.id !== teamId).concat(pastOwners);
     const rows = opps.map((t) => ({ team: t, r: rec.byOpp[t.id] || null }));
     rows.sort((x, y) => ((y.r ? y.r.all.gp : 0) - (x.r ? x.r.all.gp : 0)) || String(x.team.name).localeCompare(String(y.team.name)));
     const seasons = rec.seasons;
@@ -1013,11 +1015,21 @@
       return `<span class="h2h-rec${cls}">${label}</span>`;
     };
     const body = rows.map(({ team, r }) => {
-      const full = team.name || team.id;
-      const short = team.abbrev || full;
-      const inner = `<span class="team-inline">${WUC.teamMark(team.id, { size: "sm" })}<span class="opp-full">${WUC.escapeHtml(full)}</span><span class="opp-short">${WUC.escapeHtml(short)}</span></span>`;
-      return `<tr style="--team-color:${WUC.escapeHtml(team.color || "transparent")}">
-        <td class="col-team"><a class="team-link" href="${teamHref(team.id)}" title="${WUC.escapeHtml(full)}">${inner}</a><div class="h2h-detail">${detail(r)}</div></td>
+      let who;
+      if (team.past) {
+        /* An owner who has left the league: no team page and no logo file. */
+        const full = team.label || team.name || team.id;
+        const short = `${team.abbrev || team.name} ${team.seasons && team.seasons.length ? `’${String(team.seasons[0]).slice(-2)}–${String(team.seasons[team.seasons.length - 1]).slice(-2)}` : ""}`.trim();
+        const chip = `<span class="team-mark team-mark-sm h2h-past-chip" aria-hidden="true">${WUC.escapeHtml(String(team.abbrev || team.name || "?").slice(0, 3))}</span>`;
+        who = `<span class="team-inline h2h-past" title="${WUC.escapeHtml(full)}">${chip}<span class="opp-full">${WUC.escapeHtml(full)}</span><span class="opp-short">${WUC.escapeHtml(short)}</span></span>`;
+      } else {
+        const full = team.name || team.id;
+        const short = team.abbrev || full;
+        const inner = `<span class="team-inline">${WUC.teamMark(team.id, { size: "sm" })}<span class="opp-full">${WUC.escapeHtml(full)}</span><span class="opp-short">${WUC.escapeHtml(short)}</span></span>`;
+        who = `<a class="team-link" href="${teamHref(team.id)}" title="${WUC.escapeHtml(full)}">${inner}</a>`;
+      }
+      return `<tr class="${team.past ? "h2h-row-past" : ""}" style="--team-color:${WUC.escapeHtml(team.color || "transparent")}">
+        <td class="col-team">${who}<div class="h2h-detail">${detail(r)}</div></td>
         <td class="col-record">${recCell(r)}</td>
         ${seasons.map((s) => `<td class="col-num col-season">${r ? lineLabel(r.bySeason[s]) : "—"}</td>`).join("")}
         <td class="col-num col-po">${r && r.playoff.gp ? lineLabel(r.playoff) : "—"}</td>
@@ -1039,19 +1051,42 @@
         <td class="col-last"><span class="muted">${t.all.gp} games</span></td>
       </tr>`;
     const head = `<tr><th class="col-team">Opponent</th><th class="col-record">W-L</th>${seasons.map((s) => `<th class="col-num col-season">${s}</th>`).join("")}<th class="col-num col-po">Playoffs</th><th class="col-num col-pts">PF</th><th class="col-num col-pts">PA</th><th class="col-num col-margin">Avg ±</th><th class="col-last">Last meeting</th></tr>`;
-    const chairs = ((history && history.chairs) || []).map((c) => {
-      const now = H2H_PROSE_NAME[c.teamId] || officialName(c.teamId);
-      const old = (c.formerNames || []).map((f) => {
-        const ss = (f.seasons || []);
-        const span = ss.length > 1 ? `${ss[0]}–${String(ss[ss.length - 1]).slice(-2)}` : String(ss[0] || "");
-        return `${WUC.escapeHtml(f.name)} (${span})`;
-      }).join(" and ");
-      return old ? `${WUC.escapeHtml(now)} includes ${old}` : "";
+    const span = (ss) => {
+      const list = (ss || []).map(Number).filter(Number.isFinite);
+      if (!list.length) return "";
+      return list.length > 1 ? `${list[0]}–${String(list[list.length - 1]).slice(-2)}` : String(list[0]);
+    };
+    const prose = (id) => H2H_PROSE_NAME[id] || officialName(id);
+    const renamed = ((history && history.formerNames) || []).map((c) => {
+      const old = (c.formerNames || []).map((f) => `${WUC.escapeHtml(f.name)} (${span(f.seasons)})`).join(" and ");
+      return old ? `${WUC.escapeHtml(prose(c.teamId))} includes ${old}` : "";
     }).filter(Boolean);
+    const leftLeague = ((history && history.pastOwners) || []).map((p) => {
+      const who = p.nickname || p.owner || "a past owner";
+      const next = p.successor ? ` and does not roll into ${WUC.escapeHtml(prose(p.successor))}${p.successorFrom ? `, who start in ${WUC.escapeHtml(p.successorFrom)}` : ""}` : "";
+      return `${WUC.escapeHtml(who)}’s ${WUC.escapeHtml(p.name)} (${span(p.seasons)}) is shown as its own row${next}`;
+    });
+    const curSeason = seasons[seasons.length - 1];
+    const histSeasons = ((history && history.seasons) || []).map(Number);
+    const self = teamById(teamId) || {};
+    const histGames = histSeasons.reduce((n, s) => n + ((t.bySeason[s] && t.bySeason[s].gp) || 0), 0);
+    const newOwner = histSeasons.length && !histGames;
+    const ownerName = self.owner ? `${self.owner}’s` : "this owner’s";
+    const startNote = newOwner
+      ? `${WUC.escapeHtml(prose(teamId))} joined in ${curSeason}, so this table starts with ${WUC.escapeHtml(ownerName)} ${curSeason} games.`
+      : "";
     const notes = [
-      `History follows the chair, not the owner or the name.${chairs.length ? ` ${chairs.join("; ")}.` : ""}`,
-      `Counts regular-season and winners-bracket playoff games (PO). Consolation games are not counted. The 2024 Fantrax bracket has no 3rd-place or placement games. ${seasons[seasons.length - 1]} updates from posted final scores each week.`
+      `History follows the owner, not the chair or the team name.${renamed.length ? ` ${renamed.join("; ")}.` : ""}${leftLeague.length ? ` ${leftLeague.join("; ")}.` : ""}`,
+      `Counts regular-season and winners-bracket playoff games (PO). Consolation games are not counted. The 2024 Fantrax bracket has no 3rd-place or placement games. ${curSeason} updates from posted final scores each week.`
     ];
+    if (!t.all.gp) {
+      const msg = newOwner
+        ? `No results yet. ${WUC.escapeHtml(prose(teamId))} joined in ${curSeason}, and the head-to-head table fills in as ${WUC.escapeHtml(ownerName)} ${curSeason} games go final.`
+        : "No head-to-head results posted yet.";
+      return `<p class="h2h-empty">${msg}</p>
+        <div class="h2h-notes">${notes.map((n) => `<p class="playoff-note muted">${n}</p>`).join("")}</div>`;
+    }
+    if (startNote) notes.unshift(startNote);
     return `<div class="table-scroll h2h-scroll"><table class="trade-table h2h-table" aria-label="All-time record against each team">
         <thead>${head}</thead>
         <tbody>${body}</tbody>

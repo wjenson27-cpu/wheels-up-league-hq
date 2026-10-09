@@ -1895,3 +1895,22 @@ summary:focus-visible {
 /* Long club names in the team hero wrap instead of pushing the page wide on phones. */
 .team-hero-main > div { min-width: 0; }
 .team-hero h1 { overflow-wrap: anywhere; }
+
+/* Past owners (left the league) in the head-to-head table */
+.h2h-past-chip {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background: rgba(100, 116, 139, 0.35);
+  border: 1px dashed var(--team-color, #64748B);
+  flex-shrink: 0;
+}
+.h2h-row-past .opp-full,
+.h2h-row-past .opp-short { color: var(--text-muted); font-style: italic; }
+.h2h-empty { color: var(--text-muted); margin: 0.25rem 0 0.5rem; }

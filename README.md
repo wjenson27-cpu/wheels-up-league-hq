@@ -72,11 +72,12 @@ The 2024 and 2025 Fantrax games behind the team-page table **All-time vs. each t
   "teamB": "saltese", "nameB": "Saltese Slamm", "scoreB": 181 }
 ```
 
-- `teamA` and `teamB` are current `teams.json` ids. History follows the chair, so an old team counts under the club that holds that chair now.
+- `teamA` and `teamB` are current `teams.json` ids. History follows the **owner**, so an old team name counts under the current club only when the same owner ran it (Agatron → Ultron, Otis Orchards IT Dept → SPD’s, Riverbend Overbois and Abuse of Power → Substation; Riverbend’s co-manager Vikingdan68 is ignored).
+- An owner who has left the league keeps his own id, listed in `pastOwners`. `sak` is Mike Sakurada’s We Will Sak You (2024–25); `successor` names the club that took the spot (`hyper`, from 2026). It shows as its own row on every team page and does not roll into The Hypersecretors, who start in 2026.
 - `nameA` and `nameB` are the names used in that season.
 - `round` is `regular` or `playoff` (winners bracket, including the 2025 3rd/4th game).
 - Consolation games are not in the file. `excludedConsolationGames` gives the count per season.
-- `chairs` lists the former names, and the footnote is built from it.
+- `formerNames` lists the old names by current club, and the footnote is built from it with `pastOwners`.
 - 2026 is not stored here. The table reads 2026 from the posted final score files (weeks 1–14), so it updates every week. A 2026 game after week 14 counts only if its score row is tagged as a winners-bracket playoff game.
 
 ## Shared code

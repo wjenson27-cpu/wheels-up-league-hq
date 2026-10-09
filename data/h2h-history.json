@@ -1,6 +1,7 @@
 {
  "updated": "2026-10-08",
- "source": "Fantrax league history scrape (2024, 2025) by Eddie; normalized to data/teams.json ids by chair (franchise).",
+ "source": "Fantrax league history scrape (2024, 2025) by Eddie, normalized to data/teams.json ids by owner.",
+ "rule": "History follows the owner. A former team name rolls into a current club only when the same owner ran it. Owners who have left the league keep their own id, listed in pastOwners.",
  "seasons": [
   2024,
   2025
@@ -10,19 +11,7 @@
   "2024": 1,
   "2025": 12
  },
- "chairs": [
-  {
-   "teamId": "hyper",
-   "formerNames": [
-    {
-     "name": "We Will Sak You",
-     "seasons": [
-      2024,
-      2025
-     ]
-    }
-   ]
-  },
+ "formerNames": [
   {
    "teamId": "newman",
    "formerNames": [
@@ -64,9 +53,28 @@
    ]
   }
  ],
+ "pastOwners": [
+  {
+   "id": "sak",
+   "name": "We Will Sak You",
+   "owner": "Mike Sakurada",
+   "nickname": "Sak",
+   "abbrev": "SAK",
+   "label": "We Will Sak You (Sak, 2024–25)",
+   "seasons": [
+    2024,
+    2025
+   ],
+   "color": "#64748B",
+   "successor": "hyper",
+   "successorFrom": 2026,
+   "note": "Sak left after 2025. The Hypersecretors (Jacob Crisp) start in 2026 and do not inherit these games."
+  }
+ ],
  "caveats": [
   "2024: the Fantrax bracket has the 8-team winners bracket only; no 3rd-place or placement games were recorded.",
   "2024: Indian Trail Slumlords, Mrs. Doubtpfizer, Morningside Muff Divers, and Pocket Agents have no games after week 14.",
+  "2024: Riverbend Overbois listed two managers (Vikingdan68 and PPNK). It is counted for PPNK (Nate Kelly), who owns Substation.",
   "2025: the 3rd/4th game is counted as a playoff game (winners bracket)."
  ],
  "games": [
@@ -81,18 +89,6 @@
    "teamB": "pocket",
    "nameB": "Pocket Agents",
    "scoreB": 205.5
-  },
-  {
-   "season": 2024,
-   "week": 1,
-   "round": "regular",
-   "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 219.5,
-   "teamB": "ultron",
-   "nameB": "Agatron",
-   "scoreB": 264.5
   },
   {
    "season": 2024,
@@ -129,6 +125,18 @@
    "teamB": "dongers",
    "nameB": "Drummond Dongers",
    "scoreB": 247.5
+  },
+  {
+   "season": 2024,
+   "week": 1,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 219.5,
+   "teamB": "ultron",
+   "nameB": "Agatron",
+   "scoreB": 264.5
   },
   {
    "season": 2024,
@@ -186,7 +194,7 @@
    "teamA": "morningside",
    "nameA": "Morningside Muff Divers",
    "scoreA": 210.5,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 273.5
   },
@@ -279,18 +287,6 @@
    "week": 3,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 259.5,
-   "teamB": "ttab",
-   "nameB": "Towner Top Aga Bottom",
-   "scoreB": 212.5
-  },
-  {
-   "season": 2024,
-   "week": 3,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "lab",
    "nameA": "Little Ass Boys",
    "scoreA": 198.5,
@@ -309,6 +305,18 @@
    "teamB": "saltese",
    "nameB": "Saltese Slamm",
    "scoreB": 276.5
+  },
+  {
+   "season": 2024,
+   "week": 3,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 259.5,
+   "teamB": "ttab",
+   "nameB": "Towner Top Aga Bottom",
+   "scoreB": 212.5
   },
   {
    "season": 2024,
@@ -354,7 +362,7 @@
    "teamA": "newman",
    "nameA": "Otis Orchards IT Dept",
    "scoreA": 244.5,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 238.0
   },
@@ -447,24 +455,24 @@
    "week": 5,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 293.0,
-   "teamB": "dongers",
-   "nameB": "Drummond Dongers",
-   "scoreB": 291.5
-  },
-  {
-   "season": 2024,
-   "week": 5,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "lab",
    "nameA": "Little Ass Boys",
    "scoreA": 286.5,
    "teamB": "pocket",
    "nameB": "Pocket Agents",
    "scoreB": 200.5
+  },
+  {
+   "season": 2024,
+   "week": 5,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 293.0,
+   "teamB": "dongers",
+   "nameB": "Drummond Dongers",
+   "scoreB": 291.5
   },
   {
    "season": 2024,
@@ -510,7 +518,7 @@
    "teamA": "eddies",
    "nameA": "Eagle Ridge Eddies",
    "scoreA": 186.5,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 241.0
   },
@@ -603,18 +611,6 @@
    "week": 7,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 267.0,
-   "teamB": "saltese",
-   "nameB": "Saltese Slamm",
-   "scoreB": 177.5
-  },
-  {
-   "season": 2024,
-   "week": 7,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "lab",
    "nameA": "Little Ass Boys",
    "scoreA": 217.5,
@@ -633,6 +629,18 @@
    "teamB": "morningside",
    "nameB": "Morningside Muff Divers",
    "scoreB": 243.0
+  },
+  {
+   "season": 2024,
+   "week": 7,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 267.0,
+   "teamB": "saltese",
+   "nameB": "Saltese Slamm",
+   "scoreB": 177.5
   },
   {
    "season": 2024,
@@ -687,18 +695,6 @@
    "week": 8,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 272.0,
-   "teamB": "lab",
-   "nameB": "Little Ass Boys",
-   "scoreB": 247.5
-  },
-  {
-   "season": 2024,
-   "week": 8,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "morningside",
    "nameA": "Morningside Muff Divers",
    "scoreA": 206.5,
@@ -717,6 +713,18 @@
    "teamB": "substation",
    "nameB": "Riverbend Overbois",
    "scoreB": 257.5
+  },
+  {
+   "season": 2024,
+   "week": 8,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 272.0,
+   "teamB": "lab",
+   "nameB": "Little Ass Boys",
+   "scoreB": 247.5
   },
   {
    "season": 2024,
@@ -762,7 +770,7 @@
    "teamA": "goats",
    "nameA": "Valley Old Goats",
    "scoreA": 234.5,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 275.0
   },
@@ -867,24 +875,24 @@
    "week": 10,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 343.5,
-   "teamB": "slumlords",
-   "nameB": "Indian Trail Slumlords",
-   "scoreB": 235.0
-  },
-  {
-   "season": 2024,
-   "week": 10,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "newman",
    "nameA": "Otis Orchards IT Dept",
    "scoreA": 263.5,
    "teamB": "ultron",
    "nameB": "Agatron",
    "scoreB": 239.5
+  },
+  {
+   "season": 2024,
+   "week": 10,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 343.5,
+   "teamB": "slumlords",
+   "nameB": "Indian Trail Slumlords",
+   "scoreB": 235.0
   },
   {
    "season": 2024,
@@ -918,7 +926,7 @@
    "teamA": "doubtpfizer",
    "nameA": "Mrs. Doubtpfizer",
    "scoreA": 168.0,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 229.0
   },
@@ -1035,24 +1043,24 @@
    "week": 12,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 224.0,
-   "teamB": "substation",
-   "nameB": "Riverbend Overbois",
-   "scoreB": 237.0
-  },
-  {
-   "season": 2024,
-   "week": 12,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "newman",
    "nameA": "Otis Orchards IT Dept",
    "scoreA": 219.5,
    "teamB": "ttab",
    "nameB": "Towner Top Aga Bottom",
    "scoreB": 297.5
+  },
+  {
+   "season": 2024,
+   "week": 12,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 224.0,
+   "teamB": "substation",
+   "nameB": "Riverbend Overbois",
+   "scoreB": 237.0
   },
   {
    "season": 2024,
@@ -1122,7 +1130,7 @@
    "teamA": "pocket",
    "nameA": "Pocket Agents",
    "scoreA": 225.5,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 240.0
   },
@@ -1203,24 +1211,24 @@
    "week": 14,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 353.0,
-   "teamB": "dongers",
-   "nameB": "Drummond Dongers",
-   "scoreB": 268.0
-  },
-  {
-   "season": 2024,
-   "week": 14,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "lab",
    "nameA": "Little Ass Boys",
    "scoreA": 244.0,
    "teamB": "pocket",
    "nameB": "Pocket Agents",
    "scoreB": 214.5
+  },
+  {
+   "season": 2024,
+   "week": 14,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 353.0,
+   "teamB": "dongers",
+   "nameB": "Drummond Dongers",
+   "scoreB": 268.0
   },
   {
    "season": 2024,
@@ -1278,7 +1286,7 @@
    "teamA": "ttab",
    "nameA": "Towner Top Aga Bottom",
    "scoreA": 270.0,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 242.5
   },
@@ -1347,18 +1355,6 @@
    "week": 1,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 231.0,
-   "teamB": "dongers",
-   "nameB": "Drummond Dongers",
-   "scoreB": 246.0
-  },
-  {
-   "season": 2025,
-   "week": 1,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "morningside",
    "nameA": "Morningside Muff Divers",
    "scoreA": 220.5,
@@ -1389,6 +1385,18 @@
    "teamB": "lab",
    "nameB": "Little Ass Boys",
    "scoreB": 170.5
+  },
+  {
+   "season": 2025,
+   "week": 1,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 231.0,
+   "teamB": "dongers",
+   "nameB": "Drummond Dongers",
+   "scoreB": 246.0
   },
   {
    "season": 2025,
@@ -1470,7 +1478,7 @@
    "teamA": "saltese",
    "nameA": "Saltese Slamm",
    "scoreA": 160.0,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 223.0
   },
@@ -1554,7 +1562,7 @@
    "teamA": "slumlords",
    "nameA": "Indian Trail Slumlords",
    "scoreA": 222.5,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 179.5
   },
@@ -1599,18 +1607,6 @@
    "week": 4,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 304.0,
-   "teamB": "lab",
-   "nameB": "Little Ass Boys",
-   "scoreB": 295.0
-  },
-  {
-   "season": 2025,
-   "week": 4,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "morningside",
    "nameA": "Morningside Muff Divers",
    "scoreA": 223.5,
@@ -1629,6 +1625,18 @@
    "teamB": "dongers",
    "nameB": "Drummond Dongers",
    "scoreB": 235.0
+  },
+  {
+   "season": 2025,
+   "week": 4,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 304.0,
+   "teamB": "lab",
+   "nameB": "Little Ass Boys",
+   "scoreB": 295.0
   },
   {
    "season": 2025,
@@ -1698,7 +1706,7 @@
    "teamA": "goats",
    "nameA": "Valley Old Goats",
    "scoreA": 338.5,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 217.0
   },
@@ -1779,18 +1787,6 @@
    "week": 6,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 272.5,
-   "teamB": "doubtpfizer",
-   "nameB": "Mrs. Doubtpfizer",
-   "scoreB": 193.0
-  },
-  {
-   "season": 2025,
-   "week": 6,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "newman",
    "nameA": "Newman Lake Sleep Paralysis Demons",
    "scoreA": 214.5,
@@ -1809,6 +1805,18 @@
    "teamB": "saltese",
    "nameB": "Saltese Slamm",
    "scoreB": 174.5
+  },
+  {
+   "season": 2025,
+   "week": 6,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 272.5,
+   "teamB": "doubtpfizer",
+   "nameB": "Mrs. Doubtpfizer",
+   "scoreB": 193.0
   },
   {
    "season": 2025,
@@ -1875,24 +1883,24 @@
    "week": 7,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 221.5,
-   "teamB": "pocket",
-   "nameB": "Pocket Agents",
-   "scoreB": 234.0
-  },
-  {
-   "season": 2025,
-   "week": 7,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "newman",
    "nameA": "Newman Lake Sleep Paralysis Demons",
    "scoreA": 217.5,
    "teamB": "ultron",
    "nameB": "Agatron",
    "scoreB": 245.0
+  },
+  {
+   "season": 2025,
+   "week": 7,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 221.5,
+   "teamB": "pocket",
+   "nameB": "Pocket Agents",
+   "scoreB": 234.0
   },
   {
    "season": 2025,
@@ -1947,18 +1955,6 @@
    "week": 8,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 201.5,
-   "teamB": "substation",
-   "nameB": "Abuse of Power",
-   "scoreB": 230.0
-  },
-  {
-   "season": 2025,
-   "week": 8,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "lab",
    "nameA": "Little Ass Boys",
    "scoreA": 187.5,
@@ -1989,6 +1985,18 @@
    "teamB": "newman",
    "nameB": "Newman Lake Sleep Paralysis Demons",
    "scoreB": 224.5
+  },
+  {
+   "season": 2025,
+   "week": 8,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 201.5,
+   "teamB": "substation",
+   "nameB": "Abuse of Power",
+   "scoreB": 230.0
   },
   {
    "season": 2025,
@@ -2034,7 +2042,7 @@
    "teamA": "newman",
    "nameA": "Newman Lake Sleep Paralysis Demons",
    "scoreA": 276.0,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 270.0
   },
@@ -2115,18 +2123,6 @@
    "week": 10,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 217.0,
-   "teamB": "ultron",
-   "nameB": "Agatron",
-   "scoreB": 228.0
-  },
-  {
-   "season": 2025,
-   "week": 10,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "lab",
    "nameA": "Little Ass Boys",
    "scoreA": 221.0,
@@ -2145,6 +2141,18 @@
    "teamB": "newman",
    "nameB": "Newman Lake Sleep Paralysis Demons",
    "scoreB": 176.0
+  },
+  {
+   "season": 2025,
+   "week": 10,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 217.0,
+   "teamB": "ultron",
+   "nameB": "Agatron",
+   "scoreB": 228.0
   },
   {
    "season": 2025,
@@ -2238,7 +2246,7 @@
    "teamA": "ttab",
    "nameA": "Towner Top Aga Bottom",
    "scoreA": 160.0,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 220.0
   },
@@ -2286,7 +2294,7 @@
    "teamA": "morningside",
    "nameA": "Morningside Muff Divers",
    "scoreA": 228.5,
-   "teamB": "hyper",
+   "teamB": "sak",
    "nameB": "We Will Sak You",
    "scoreB": 181.5
   },
@@ -2355,18 +2363,6 @@
    "week": 13,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 215.0,
-   "teamB": "eddies",
-   "nameB": "Eagle Ridge Eddies",
-   "scoreB": 240.5
-  },
-  {
-   "season": 2025,
-   "week": 13,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "lab",
    "nameA": "Little Ass Boys",
    "scoreA": 277.5,
@@ -2397,6 +2393,18 @@
    "teamB": "ttab",
    "nameB": "Towner Top Aga Bottom",
    "scoreB": 206.5
+  },
+  {
+   "season": 2025,
+   "week": 13,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 215.0,
+   "teamB": "eddies",
+   "nameB": "Eagle Ridge Eddies",
+   "scoreB": 240.5
   },
   {
    "season": 2025,
@@ -2439,18 +2447,6 @@
    "week": 14,
    "round": "regular",
    "bracket": "Regular Season",
-   "teamA": "hyper",
-   "nameA": "We Will Sak You",
-   "scoreA": 164.5,
-   "teamB": "dongers",
-   "nameB": "Drummond Dongers",
-   "scoreB": 265.0
-  },
-  {
-   "season": 2025,
-   "week": 14,
-   "round": "regular",
-   "bracket": "Regular Season",
    "teamA": "morningside",
    "nameA": "Morningside Muff Divers",
    "scoreA": 187.0,
@@ -2481,6 +2477,18 @@
    "teamB": "lab",
    "nameB": "Little Ass Boys",
    "scoreB": 155.0
+  },
+  {
+   "season": 2025,
+   "week": 14,
+   "round": "regular",
+   "bracket": "Regular Season",
+   "teamA": "sak",
+   "nameA": "We Will Sak You",
+   "scoreA": 164.5,
+   "teamB": "dongers",
+   "nameB": "Drummond Dongers",
+   "scoreB": 265.0
   },
   {
    "season": 2025,
