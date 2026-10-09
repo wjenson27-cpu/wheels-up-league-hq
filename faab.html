@@ -90,8 +90,7 @@
                 </tr>`;
               }).join("")}
             </tbody>
-          </table>
-          <p class="muted" style="margin:0.75rem 0 0;font-size:0.8rem">* Left estimated when Fantrax remaining is unknown. $0 waiver bids omitted.</p>`;
+          </table>`;
 
         const claims = WUC.publicClaims(data.claims)
           .filter((c) => (c.amount || 0) > 0)

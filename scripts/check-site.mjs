@@ -270,11 +270,11 @@ async function checkPages() {
                   overlaps.push(label);
                 }
               });
-              return { rows, playoff, hasFoot: /10,000 simulated seasons/.test(text), hasCol: /Playoff %/.test(text), overlaps };
+              return { rows, playoff, devNote: /simulated seasons|Computed in your browser|schedule file/i.test(text), hasCol: /Playoff %/i.test(text), overlaps };
             });
             if (info.rows < 14) errors.push(`standings table has ${info.rows} rows`);
             if (!info.hasCol || info.playoff < 14) errors.push("standings missing Playoff %");
-            if (!info.hasFoot) errors.push("standings missing playoff footnote");
+            if (info.devNote) errors.push("standings shows the old playoff methodology note");
             if (info.overlaps.length) errors.push(`team names overlap columns: ${info.overlaps.slice(0, 3).join(", ")}`);
           }
           if (name === "team-eddies") {

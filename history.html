@@ -32,7 +32,7 @@
     <header class="page-hero">
       <span class="eyebrow">Archive</span>
       <h1>League history</h1>
-      <p class="lede">ESPN 2014–2023 · Fantrax 2024–present. Compiled from the League Archives (Sep 6, 2026).</p>
+      <p class="lede">ESPN 2014–2023 · Fantrax 2024–present.</p>
       <p><a href="archives.html" style="color:var(--accent);font-weight:700">Open full Archives (Trophies / Board / Fantrax / ESPN / Chairs) →</a></p>
     </header>
 
@@ -109,9 +109,10 @@
           `<p class="mb-0" style="margin-bottom:0.5rem"><strong>${WUC.escapeHtml(c.name)}</strong><br><span class="muted">${WUC.escapeHtml(c.era || "")}</span></p>`
         ).join("");
         document.getElementById("ringsLine").textContent = data.ringsThrough2025 || "";
-        document.getElementById("loreList").innerHTML = (data.lore || []).map(l =>
-          `<li>${WUC.escapeHtml(l)}</li>`
-        ).join("");
+        document.getElementById("loreList").innerHTML = (data.lore || [])
+          .filter(l => !/\b(Bill confirmed|confirmed Bill)\b/i.test(String(l)))
+          .map(l => `<li>${WUC.escapeHtml(l)}</li>`)
+          .join("");
 
         const champBody = document.querySelector("#champTable tbody");
         champBody.innerHTML = (data.champions || []).slice().reverse().map(r => `
@@ -159,7 +160,7 @@
             <p class="mb-0"><strong>${WUC.escapeHtml(c.owner)}</strong> → ${WUC.escapeHtml(c.team || "")}</p>
             <p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(c.years || "")} · ${WUC.escapeHtml(c.overall || "")}</p>
             <p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(c.hardware || "")}</p>
-            <p class="cut">${WUC.escapeHtml(c.cut || "")}</p>
+            <p class="cut">${WUC.escapeHtml(String(c.cut || "").replace(/\s*\((?:confirmed Bill|Bill confirmed)\)/gi, ""))}</p>
           </article>`).join("");
 
         document.getElementById("alumniList").innerHTML = (data.alumni || []).map(a => `

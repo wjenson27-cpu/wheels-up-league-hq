@@ -21,14 +21,10 @@
       <div id="podcastEmbed"></div>
     </section>
 
-    <div class="grid grid-2">
+    <div class="grid">
       <article class="card">
         <h2>What to expect</h2>
         <p>Week-ahead previews, IDP sleepers, FAAB autopsy, and whoever talked the most smack getting put on blast.</p>
-      </article>
-      <article class="card">
-        <h2>Change the link</h2>
-        <p>Edit <code>PODCAST_URL</code> / <code>podcastUrl</code> in <code>js/config.js</code>. This page picks up the Spotify show embed automatically.</p>
       </article>
     </div>
   </main>
@@ -41,7 +37,7 @@
       const cta = document.getElementById("podcastCta");
       const emb = document.getElementById("podcastEmbed");
       if (!url) {
-        cta.innerHTML = `<span class="muted">Set <code>PODCAST_URL</code> in js/config.js</span>`;
+        cta.innerHTML = `<span class="muted">Podcast link coming soon.</span>`;
         return;
       }
       cta.innerHTML = `<a class="btn btn-primary" href="${WUC.escapeHtml(url)}" target="_blank" rel="noopener">Open on Spotify</a>

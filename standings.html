@@ -17,7 +17,7 @@
     <header class="page-hero">
       <span class="eyebrow" id="standEyebrow">Season</span>
       <h1>Standings</h1>
-      <p class="lede" id="standLede">Record, points for, and points against are added up from the posted week scores.</p>
+      <p class="lede" id="standLede">Record, points for, and points against for all 14 clubs.</p>
     </header>
 
     <div class="stat-row" id="highlightRow" hidden></div>
@@ -45,7 +45,7 @@
     <div class="grid grid-2">
       <section class="card">
         <h2>Points for</h2>
-        <p class="muted">Season total from the posted week scores.</p>
+        <p class="muted">Season total.</p>
         <div id="pfChart" aria-busy="true">
           <div class="skeleton-stack" aria-hidden="true"><div class="skeleton-bar"></div><div class="skeleton-bar med"></div></div>
         </div>
@@ -79,10 +79,7 @@
       function paintTable() {
         tableEl.removeAttribute("aria-busy");
         const table = WUC.renderStandingsRows(teams, mode, { weeks, playoff });
-        const noteHtml = playoff && playoff.footnote
-          ? `<p class="playoff-note muted">${WUC.escapeHtml(playoff.footnote)}</p>`
-          : "";
-        tableEl.innerHTML = table + noteHtml;
+        tableEl.innerHTML = table;
         const note = document.getElementById("sortNote");
         if (note) {
           note.textContent = mode === "pf"
@@ -160,10 +157,8 @@
         }
         if (cards.length) {
           row.hidden = false;
-          const label = highlights.cover.ok
-            ? `From posted finals through week ${highlights.cover.max}.`
-            : "From the final weeks posted on the site.";
-          row.innerHTML = cards.join("") + `<p class="highlight-note muted">${label}</p>`;
+          const label = highlights.cover.ok ? `Through week ${highlights.cover.max}.` : "";
+          row.innerHTML = cards.join("") + (label ? `<p class="highlight-note muted">${label}</p>` : "");
         }
 
         const finalWeeks = weeks.filter(WUC.weekIsFinal);

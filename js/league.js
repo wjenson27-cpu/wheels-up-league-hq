@@ -830,20 +830,7 @@
         : alreadyAhead >= spots;
       byId[id] = { rate: made[id] / sims, clinched, eliminated };
     });
-    let schedNote = "Every remaining week uses a published matchup from the schedule file.";
-    const openLabel = openWeeks.length === 1
-      ? `Week ${openWeeks[0]} is not in the schedule file yet, so that week is a random matchup.`
-      : `Weeks ${formatWeekSpan(openWeeks)} are not in the schedule file yet, so those weeks are random matchups.`;
-    if (openWeeks.length && publishedFuture.length) {
-      const pubLabel = publishedFuture.length === 1
-        ? `week ${publishedFuture[0]}`
-        : `weeks ${formatWeekSpan(publishedFuture)}`;
-      schedNote = `Published matchups cover ${pubLabel}. ${openLabel}`;
-    } else if (openWeeks.length) {
-      schedNote = `No remaining weeks are in the schedule file yet. ${openLabel}`;
-    }
-    const footnote = `Playoff % is the share of ${sims.toLocaleString("en-US")} simulated seasons where that club finishes in the top ${spots}. Each club’s weekly score is based on what it has posted so far, pulled toward the league average while the sample is small. Tiebreak is wins, then losses, then points for. This uses an ${spots}-team playoff and a ${PLAYOFF_ODDS.regularSeasonWeeks}-week regular season, with no divisions and no byes — from the 2024–2025 results in the league history, not from a 2026 rules line. ${schedNote} The same posted scores and schedule always give the same percentages. Computed in your browser${through ? ` from scores through week ${through}` : ""}.`;
-    return { byId, footnote, spots, simulations: sims };
+    return { byId, spots, simulations: sims };
   }
 
   function renderStandingsRows(teams, mode, opts) {
@@ -865,7 +852,7 @@
       const odds = playoff && playoff.byId ? playoff.byId[t.id] : null;
       const oddsLabel = formatPlayoffLabel(odds);
       const oddsTitle = odds && odds.rate != null
-        ? `${(odds.rate * 100).toFixed(1)}% of ${PLAYOFF_ODDS.simulations.toLocaleString("en-US")} seasons`
+        ? `${(odds.rate * 100).toFixed(1)}%`
         : "";
       return `<tr style="--team-color:${WUC.escapeHtml(t.color || "#69BE28")}">
         <td class="col-rank">${i + 1}</td>
@@ -1051,48 +1038,16 @@
         <td class="col-last"><span class="muted">${t.all.gp} games</span></td>
       </tr>`;
     const head = `<tr><th class="col-team">Opponent</th><th class="col-record">W-L</th>${seasons.map((s) => `<th class="col-num col-season">${s}</th>`).join("")}<th class="col-num col-po">Playoffs</th><th class="col-num col-pts">PF</th><th class="col-num col-pts">PA</th><th class="col-num col-margin">Avg ±</th><th class="col-last">Last meeting</th></tr>`;
-    const span = (ss) => {
-      const list = (ss || []).map(Number).filter(Number.isFinite);
-      if (!list.length) return "";
-      return list.length > 1 ? `${list[0]}–${String(list[list.length - 1]).slice(-2)}` : String(list[0]);
-    };
-    const prose = (id) => H2H_PROSE_NAME[id] || officialName(id);
-    const renamed = ((history && history.formerNames) || []).map((c) => {
-      const old = (c.formerNames || []).map((f) => `${WUC.escapeHtml(f.name)} (${span(f.seasons)})`).join(" and ");
-      return old ? `${WUC.escapeHtml(prose(c.teamId))} includes ${old}` : "";
-    }).filter(Boolean);
-    const leftLeague = ((history && history.pastOwners) || []).map((p) => {
-      const who = p.nickname || p.owner || "a past owner";
-      const next = p.successor ? ` and does not roll into ${WUC.escapeHtml(prose(p.successor))}${p.successorFrom ? `, who start in ${WUC.escapeHtml(p.successorFrom)}` : ""}` : "";
-      return `${WUC.escapeHtml(who)}’s ${WUC.escapeHtml(p.name)} (${span(p.seasons)}) is shown as its own row${next}`;
-    });
-    const curSeason = seasons[seasons.length - 1];
-    const histSeasons = ((history && history.seasons) || []).map(Number);
-    const self = teamById(teamId) || {};
-    const histGames = histSeasons.reduce((n, s) => n + ((t.bySeason[s] && t.bySeason[s].gp) || 0), 0);
-    const newOwner = histSeasons.length && !histGames;
-    const ownerName = self.owner ? `${self.owner}’s` : "this owner’s";
-    const startNote = newOwner
-      ? `${WUC.escapeHtml(prose(teamId))} joined in ${curSeason}, so this table starts with ${WUC.escapeHtml(ownerName)} ${curSeason} games.`
-      : "";
-    const notes = [
-      `History follows the owner, not the chair or the team name.${renamed.length ? ` ${renamed.join("; ")}.` : ""}${leftLeague.length ? ` ${leftLeague.join("; ")}.` : ""}`,
-      `Counts regular-season and winners-bracket playoff games (PO). Consolation games are not counted. The 2024 Fantrax bracket has no 3rd-place or placement games. ${curSeason} updates from posted final scores each week.`
-    ];
+    const legend = `<div class="h2h-notes"><p class="playoff-note muted">PO = playoff game.</p></div>`;
     if (!t.all.gp) {
-      const msg = newOwner
-        ? `No results yet. ${WUC.escapeHtml(prose(teamId))} joined in ${curSeason}, and the head-to-head table fills in as ${WUC.escapeHtml(ownerName)} ${curSeason} games go final.`
-        : "No head-to-head results posted yet.";
-      return `<p class="h2h-empty">${msg}</p>
-        <div class="h2h-notes">${notes.map((n) => `<p class="playoff-note muted">${n}</p>`).join("")}</div>`;
+      return `<p class="h2h-empty">No head-to-head results yet.</p>`;
     }
-    if (startNote) notes.unshift(startNote);
     return `<div class="table-scroll h2h-scroll"><table class="trade-table h2h-table" aria-label="All-time record against each team">
         <thead>${head}</thead>
         <tbody>${body}</tbody>
         <tfoot>${foot}</tfoot>
       </table></div>
-      <div class="h2h-notes">${notes.map((n) => `<p class="playoff-note muted">${n}</p>`).join("")}</div>`;
+      ${legend}`;
   }
 
   function skeleton(rows) {

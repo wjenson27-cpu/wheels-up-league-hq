@@ -237,7 +237,7 @@
                 </div>
               </li>`;
             }).join("") + `</ol>
-            <p class="muted mb-0" style="font-size:0.8rem;margin-top:0.65rem">${WUC.escapeHtml(a.note || (status === "final" ? "Final" : "Live · locks at season end"))}</p>`;
+            <p class="muted mb-0" style="font-size:0.8rem;margin-top:0.65rem">${WUC.escapeHtml(String(a.note || (status === "final" ? "Final" : "Live · locks at season end")).split(" · ").filter((part) => !/YTD|Taken Players|free agents/i.test(part)).join(" · "))}</p>`;
           } else {
             body = `<div class="yearly-tbd">TBD · top 3</div><p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(a.note || "Season still in progress")}</p>`;
           }
