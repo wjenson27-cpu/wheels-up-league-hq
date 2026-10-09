@@ -889,6 +889,212 @@
     </table></div>`;
   }
 
+  /* All-time head-to-head, Fantrax era. 2024–25 from data/h2h-history.json
+     (consolation games are not in that file). 2026 is read live from the posted
+     final score files, regular season (weeks 1–14) only, plus any later game that is
+     explicitly tagged as a winners-bracket playoff. */
+  const H2H_PROSE_NAME = { newman: "SPD’s" };
+
+  function h2hGames(history, weeks) {
+    const out = [];
+    ((history && history.games) || []).forEach((g) => {
+      if (!g || g.round === "consolation") return;
+      const sa = Number(g.scoreA);
+      const sb = Number(g.scoreB);
+      if (!g.teamA || !g.teamB || !Number.isFinite(sa) || !Number.isFinite(sb)) return;
+      out.push({ season: Number(g.season), week: Number(g.week), round: g.round === "playoff" ? "playoff" : "regular", bracket: g.bracket || "", a: g.teamA, b: g.teamB, sa, sb });
+    });
+    const histSeasons = new Set(out.map((g) => g.season));
+    const season = Number((window.WUC_CONFIG && WUC_CONFIG.season) || 2026);
+    if (!histSeasons.has(season)) {
+      (weeks || []).filter(weekIsFinal).forEach((week) => {
+        const wk = Number(week.week);
+        (week.matchups || []).forEach((m) => {
+          const tag = String(m.round || m.bracket || "").toLowerCase();
+          let round = "regular";
+          if (wk > PLAYOFF_ODDS.regularSeasonWeeks) {
+            if (!/playoff|championship|semi|quarter|3rd/.test(tag) || /consol|loser|chump|toilet|placement|5th|7th|9th|11th|13th/.test(tag)) return;
+            round = "playoff";
+          }
+          const a = resolveTeamId(m.home);
+          const b = resolveTeamId(m.away);
+          const sa = Number(m.homeScore);
+          const sb = Number(m.awayScore);
+          if (!a || !b || a === b || !Number.isFinite(sa) || !Number.isFinite(sb)) return;
+          out.push({ season, week: wk, round, bracket: m.bracket || "", a, b, sa, sb, live: true });
+        });
+      });
+    }
+    out.sort((x, y) => x.season - y.season || x.week - y.week);
+    return out;
+  }
+
+  function emptyLine() {
+    return { w: 0, l: 0, t: 0, pf: 0, pa: 0, gp: 0 };
+  }
+
+  function addResult(line, mine, theirs) {
+    line.gp += 1;
+    line.pf += mine;
+    line.pa += theirs;
+    if (mine > theirs) line.w += 1;
+    else if (mine < theirs) line.l += 1;
+    else line.t += 1;
+  }
+
+  function h2hRecords(teamId, history, weeks) {
+    const games = h2hGames(history, weeks);
+    const seasons = [...new Set([...((history && history.seasons) || []), ...games.map((g) => g.season), Number((window.WUC_CONFIG && WUC_CONFIG.season) || 2026)])].map(Number).sort((a, b) => a - b);
+    const mk = () => ({ all: emptyLine(), playoff: emptyLine(), bySeason: Object.fromEntries(seasons.map((s) => [s, emptyLine()])), last: null });
+    const byOpp = {};
+    const total = mk();
+    games.forEach((g) => {
+      let mine;
+      let theirs;
+      let opp;
+      if (g.a === teamId) { mine = g.sa; theirs = g.sb; opp = g.b; }
+      else if (g.b === teamId) { mine = g.sb; theirs = g.sa; opp = g.a; }
+      else return;
+      const row = byOpp[opp] || (byOpp[opp] = mk());
+      [row, total].forEach((r) => {
+        addResult(r.all, mine, theirs);
+        addResult(r.bySeason[g.season] || (r.bySeason[g.season] = emptyLine()), mine, theirs);
+        if (g.round === "playoff") addResult(r.playoff, mine, theirs);
+      });
+      row.last = { season: g.season, week: g.week, round: g.round, mine, theirs, result: mine > theirs ? "W" : mine < theirs ? "L" : "T" };
+    });
+    return { seasons, byOpp, total, games };
+  }
+
+  function lineLabel(line) {
+    if (!line || !line.gp) return "—";
+    return line.t ? `${line.w}-${line.l}-${line.t}` : `${line.w}-${line.l}`;
+  }
+
+  function lineMargin(line) {
+    if (!line || !line.gp) return null;
+    return Math.round(((line.pf - line.pa) / line.gp) * 10) / 10;
+  }
+
+  function linePct(line) {
+    if (!line || !line.gp) return null;
+    return (line.w + line.t / 2) / line.gp;
+  }
+
+  function renderH2H(teamId, history, weeks) {
+    const rec = h2hRecords(teamId, history, weeks);
+    const pastOwners = ((history && history.pastOwners) || []).filter((p) => p && p.id && p.id !== teamId)
+      .map((p) => Object.assign({ past: true }, p));
+    const opps = allTeams().filter((t) => t && t.id && t.id !== teamId).concat(pastOwners);
+    const rows = opps.map((t) => ({ team: t, r: rec.byOpp[t.id] || null }));
+    rows.sort((x, y) => ((y.r ? y.r.all.gp : 0) - (x.r ? x.r.all.gp : 0)) || String(x.team.name).localeCompare(String(y.team.name)));
+    const seasons = rec.seasons;
+    const yy = (s) => `’${String(s).slice(-2)}`;
+    const diffCls = (n) => n == null ? "" : n > 0 ? "diff-pos" : n < 0 ? "diff-neg" : "";
+    const marginCell = (line) => {
+      const m = lineMargin(line);
+      return `<span class="${diffCls(m)}">${m == null ? "—" : formatDiff(m)}</span>`;
+    };
+    const lastCell = (last) => {
+      if (!last) return `<span class="muted">—</span>`;
+      const tag = `${yy(last.season)} Wk ${last.week}${last.round === "playoff" ? " · PO" : ""}`;
+      return `<span class="h2h-last"><span class="h2h-last-res"><span class="wl-badge is-${last.result.toLowerCase()}">${last.result}</span> <span class="h2h-last-score">${formatPts(last.mine)}–${formatPts(last.theirs)}</span></span> <span class="h2h-last-when">${WUC.escapeHtml(tag)}</span></span>`;
+    };
+    const detail = (r) => {
+      if (!r) return `<span class="muted">No meetings yet</span>`;
+      const parts = seasons.map((s) => `${yy(s)} ${lineLabel(r.bySeason[s])}`);
+      if (r.playoff.gp) parts.push(`PO ${lineLabel(r.playoff)}`);
+      const m = lineMargin(r.all);
+      parts.push(`<span class="${diffCls(m)}">${m == null ? "—" : formatDiff(m)}/g</span>`);
+      return parts.join(" · ");
+    };
+    const recCell = (r) => {
+      const label = r ? lineLabel(r.all) : "—";
+      const pct = r ? linePct(r.all) : null;
+      const cls = pct == null ? "" : pct > 0.5 ? " is-up" : pct < 0.5 ? " is-down" : "";
+      return `<span class="h2h-rec${cls}">${label}</span>`;
+    };
+    const body = rows.map(({ team, r }) => {
+      let who;
+      if (team.past) {
+        /* An owner who has left the league: no team page and no logo file. */
+        const full = team.label || team.name || team.id;
+        const short = `${team.abbrev || team.name} ${team.seasons && team.seasons.length ? `’${String(team.seasons[0]).slice(-2)}–${String(team.seasons[team.seasons.length - 1]).slice(-2)}` : ""}`.trim();
+        const chip = `<span class="team-mark team-mark-sm h2h-past-chip" aria-hidden="true">${WUC.escapeHtml(String(team.abbrev || team.name || "?").slice(0, 3))}</span>`;
+        who = `<span class="team-inline h2h-past" title="${WUC.escapeHtml(full)}">${chip}<span class="opp-full">${WUC.escapeHtml(full)}</span><span class="opp-short">${WUC.escapeHtml(short)}</span></span>`;
+      } else {
+        const full = team.name || team.id;
+        const short = team.abbrev || full;
+        const inner = `<span class="team-inline">${WUC.teamMark(team.id, { size: "sm" })}<span class="opp-full">${WUC.escapeHtml(full)}</span><span class="opp-short">${WUC.escapeHtml(short)}</span></span>`;
+        who = `<a class="team-link" href="${teamHref(team.id)}" title="${WUC.escapeHtml(full)}">${inner}</a>`;
+      }
+      return `<tr class="${team.past ? "h2h-row-past" : ""}" style="--team-color:${WUC.escapeHtml(team.color || "transparent")}">
+        <td class="col-team">${who}<div class="h2h-detail">${detail(r)}</div></td>
+        <td class="col-record">${recCell(r)}</td>
+        ${seasons.map((s) => `<td class="col-num col-season">${r ? lineLabel(r.bySeason[s]) : "—"}</td>`).join("")}
+        <td class="col-num col-po">${r && r.playoff.gp ? lineLabel(r.playoff) : "—"}</td>
+        <td class="col-num col-pts">${r ? formatPts(r.all.pf) : "—"}</td>
+        <td class="col-num col-pts">${r ? formatPts(r.all.pa) : "—"}</td>
+        <td class="col-num col-margin">${r ? marginCell(r.all) : "—"}</td>
+        <td class="col-last">${lastCell(r && r.last)}</td>
+      </tr>`;
+    }).join("");
+    const t = rec.total;
+    const foot = `<tr class="h2h-total">
+        <td class="col-team"><strong>All-time</strong><div class="h2h-detail">${detail(t.all.gp ? t : null)}</div></td>
+        <td class="col-record">${recCell(t.all.gp ? t : null)}</td>
+        ${seasons.map((s) => `<td class="col-num col-season">${lineLabel(t.bySeason[s])}</td>`).join("")}
+        <td class="col-num col-po">${t.playoff.gp ? lineLabel(t.playoff) : "—"}</td>
+        <td class="col-num col-pts">${t.all.gp ? formatPts(Math.round(t.all.pf * 10) / 10) : "—"}</td>
+        <td class="col-num col-pts">${t.all.gp ? formatPts(Math.round(t.all.pa * 10) / 10) : "—"}</td>
+        <td class="col-num col-margin">${t.all.gp ? marginCell(t.all) : "—"}</td>
+        <td class="col-last"><span class="muted">${t.all.gp} games</span></td>
+      </tr>`;
+    const head = `<tr><th class="col-team">Opponent</th><th class="col-record">W-L</th>${seasons.map((s) => `<th class="col-num col-season">${s}</th>`).join("")}<th class="col-num col-po">Playoffs</th><th class="col-num col-pts">PF</th><th class="col-num col-pts">PA</th><th class="col-num col-margin">Avg ±</th><th class="col-last">Last meeting</th></tr>`;
+    const span = (ss) => {
+      const list = (ss || []).map(Number).filter(Number.isFinite);
+      if (!list.length) return "";
+      return list.length > 1 ? `${list[0]}–${String(list[list.length - 1]).slice(-2)}` : String(list[0]);
+    };
+    const prose = (id) => H2H_PROSE_NAME[id] || officialName(id);
+    const renamed = ((history && history.formerNames) || []).map((c) => {
+      const old = (c.formerNames || []).map((f) => `${WUC.escapeHtml(f.name)} (${span(f.seasons)})`).join(" and ");
+      return old ? `${WUC.escapeHtml(prose(c.teamId))} includes ${old}` : "";
+    }).filter(Boolean);
+    const leftLeague = ((history && history.pastOwners) || []).map((p) => {
+      const who = p.nickname || p.owner || "a past owner";
+      const next = p.successor ? ` and does not roll into ${WUC.escapeHtml(prose(p.successor))}${p.successorFrom ? `, who start in ${WUC.escapeHtml(p.successorFrom)}` : ""}` : "";
+      return `${WUC.escapeHtml(who)}’s ${WUC.escapeHtml(p.name)} (${span(p.seasons)}) is shown as its own row${next}`;
+    });
+    const curSeason = seasons[seasons.length - 1];
+    const histSeasons = ((history && history.seasons) || []).map(Number);
+    const self = teamById(teamId) || {};
+    const histGames = histSeasons.reduce((n, s) => n + ((t.bySeason[s] && t.bySeason[s].gp) || 0), 0);
+    const newOwner = histSeasons.length && !histGames;
+    const ownerName = self.owner ? `${self.owner}’s` : "this owner’s";
+    const startNote = newOwner
+      ? `${WUC.escapeHtml(prose(teamId))} joined in ${curSeason}, so this table starts with ${WUC.escapeHtml(ownerName)} ${curSeason} games.`
+      : "";
+    const notes = [
+      `History follows the owner, not the chair or the team name.${renamed.length ? ` ${renamed.join("; ")}.` : ""}${leftLeague.length ? ` ${leftLeague.join("; ")}.` : ""}`,
+      `Counts regular-season and winners-bracket playoff games (PO). Consolation games are not counted. The 2024 Fantrax bracket has no 3rd-place or placement games. ${curSeason} updates from posted final scores each week.`
+    ];
+    if (!t.all.gp) {
+      const msg = newOwner
+        ? `No results yet. ${WUC.escapeHtml(prose(teamId))} joined in ${curSeason}, and the head-to-head table fills in as ${WUC.escapeHtml(ownerName)} ${curSeason} games go final.`
+        : "No head-to-head results posted yet.";
+      return `<p class="h2h-empty">${msg}</p>
+        <div class="h2h-notes">${notes.map((n) => `<p class="playoff-note muted">${n}</p>`).join("")}</div>`;
+    }
+    if (startNote) notes.unshift(startNote);
+    return `<div class="table-scroll h2h-scroll"><table class="trade-table h2h-table" aria-label="All-time record against each team">
+        <thead>${head}</thead>
+        <tbody>${body}</tbody>
+        <tfoot>${foot}</tfoot>
+      </table></div>
+      <div class="h2h-notes">${notes.map((n) => `<p class="playoff-note muted">${n}</p>`).join("")}</div>`;
+  }
+
   function skeleton(rows) {
     const n = rows || 3;
     const bars = Array.from({ length: n }, (_, i) => `<div class="skeleton-bar${i === 1 ? " med" : i === 2 ? " short" : ""}"></div>`).join("");
@@ -947,6 +1153,9 @@
     renderRoster,
     renderStandingsRows,
     playoffOdds,
+    h2hGames,
+    h2hRecords,
+    renderH2H,
     scheduleRemaining,
     formatPlayoffLabel,
     PLAYOFF_ODDS,

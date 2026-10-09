@@ -1834,3 +1834,83 @@ summary:focus-visible {
 @media (hover: none) {
   .card:hover { transform: none; }
 }
+
+/* —— All-time head-to-head (team page) —— */
+.h2h-table { width: 100%; }
+.h2h-table .col-record,
+.h2h-table .col-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.h2h-table .col-record { font-weight: 800; }
+.h2h-table .col-last { white-space: nowrap; padding-left: 1rem; }
+.h2h-last-res { display: inline-flex; align-items: center; gap: 0.3rem; white-space: nowrap; }
+.h2h-table tbody td:first-child { box-shadow: inset 3px 0 0 var(--team-color, transparent); }
+.h2h-table .opp-full { white-space: nowrap; }
+.h2h-rec.is-up { color: var(--accent-hot); }
+.h2h-rec.is-down { color: #fb7185; }
+.h2h-last { display: inline-flex; align-items: center; gap: 0.3rem; }
+.h2h-last-score { font-variant-numeric: tabular-nums; }
+.h2h-last-when { color: var(--text-dim); font-size: 0.78rem; }
+.h2h-detail { display: none; }
+.h2h-total td {
+  border-top: 2px solid var(--border-glow);
+  font-weight: 700;
+}
+.h2h-notes { margin-top: 0.5rem; }
+.h2h-notes .playoff-note { margin-top: 0.35rem; }
+
+@media (max-width: 700px) {
+  .h2h-scroll { overflow: hidden; }
+  .h2h-table { table-layout: fixed; font-size: 0.82rem; }
+  .h2h-table .col-season,
+  .h2h-table .col-po,
+  .h2h-table .col-pts,
+  .h2h-table .col-margin { display: none; }
+  .h2h-table .col-record { width: 3.1rem; }
+  .h2h-table .col-last { width: 7.1rem; white-space: normal; padding-left: 0.3rem; }
+  .h2h-last-res { gap: 0.2rem; }
+  .h2h-last-score { font-size: 0.76rem; }
+  .h2h-table thead th,
+  .h2h-table tbody td,
+  .h2h-table tfoot td { padding: 0.45rem 0.22rem; vertical-align: top; }
+  .h2h-table .col-team { overflow: hidden; }
+  .h2h-table .opp-full { display: none; }
+  .h2h-table .opp-short { display: inline; }
+  .h2h-table .team-link,
+  .h2h-table .team-inline { display: flex; min-width: 0; max-width: 100%; }
+  .h2h-detail {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
+    line-height: 1.35;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+    white-space: normal;
+  }
+  .h2h-last { flex-wrap: wrap; gap: 0.15rem 0.3rem; }
+  .h2h-last-when { flex-basis: 100%; font-size: 0.68rem; }
+}
+/* Long club names in the team hero wrap instead of pushing the page wide on phones. */
+.team-hero-main > div { min-width: 0; }
+.team-hero h1 { overflow-wrap: anywhere; }
+
+/* Past owners (left the league) in the head-to-head table */
+.h2h-past-chip {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background: rgba(100, 116, 139, 0.35);
+  border: 1px dashed var(--team-color, #64748B);
+  flex-shrink: 0;
+}
+.h2h-row-past .opp-full,
+.h2h-row-past .opp-short { color: var(--text-muted); font-style: italic; }
+.h2h-empty { color: var(--text-muted); margin: 0.25rem 0 0.5rem; }
