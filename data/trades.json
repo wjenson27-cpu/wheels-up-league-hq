@@ -1,8 +1,42 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "source": "Fantrax completed trades Oct 6 2026 (Eddies↔Saltese Hall/Stevenson for Hampton/Mack Wilson; Doubtpfizer↔Ultron Swift for Loveland).",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-10-08",
+      "time": "4:34 PM PDT",
+      "week": 5,
+      "status": "completed",
+      "official": true,
+      "teamA": "Pocket Agents",
+      "teamB": "Ultron",
+      "givesA": [
+        "Foyesade Oluokun (LB)",
+        "$10 FAAB"
+      ],
+      "givesB": [
+        "Amani Hooker (DB)",
+        "Saquon Barkley (RB)"
+      ],
+      "summary": "Week 5 — Pocket Agents sent Foyesade Oluokun and $10 FAAB to Ultron for Amani Hooker and Saquon Barkley (Oct 8 4:34 PM PDT)."
+    },
+    {
+      "date": "2026-10-08",
+      "time": "11:39 AM PDT",
+      "week": 5,
+      "status": "completed",
+      "official": true,
+      "teamA": "Substation",
+      "teamB": "Ultron",
+      "givesA": [
+        "Bhayshul Tuten (RB)"
+      ],
+      "givesB": [
+        "George Pickens (WR)"
+      ],
+      "summary": "Week 5 — Substation sent Bhayshul Tuten to Ultron for George Pickens (Oct 8 11:39 AM PDT)."
+    },
     {
       "date": "2026-10-06",
       "time": "7:59 AM PDT",

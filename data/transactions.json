@@ -1,7 +1,126 @@
 {
-  "updated": "2026-10-07",
-  "source": "Fantrax Week 5 waivers processed Wed Oct 7 2026 9:00 AM PT (25 claims) + Oct 7 free-agent moves through 3:34 PM PT (TTAB, Morningside, Dongers, Ultron). Fantrax check Thu Oct 8 ~6:05 AM PT: no Oct 8 moves yet.",
+  "updated": "2026-10-09",
+  "source": "Fantrax Fantasy check Fri Oct 9 ~6:20 AM PT: Oct 8 FA/Claim-Drops (9) + 2 completed trades (Pocket↔Ultron, Substation↔Ultron). Pending claims not itemized.",
   "items": [
+    {
+      "date": "2026-10-08",
+      "team": "Morningside Muff Divers",
+      "type": "DROP",
+      "summary": "Dropped Jordan Mason (RB-MIN)",
+      "time": "9:28 PM PDT",
+      "player": "Jordan Mason",
+      "playerMeta": "RB-MIN",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "The Hypersecretors",
+      "type": "ADD",
+      "summary": "Added Laiatu Latu (DL-IND) ($0/null bid)",
+      "time": "7:37 PM PDT",
+      "player": "Laiatu Latu",
+      "playerMeta": "DL-IND",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "The Hypersecretors",
+      "type": "DROP",
+      "summary": "Dropped Alec Pierce (WR-IND)",
+      "time": "7:26 PM PDT",
+      "player": "Alec Pierce",
+      "playerMeta": "WR-IND",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "Ultron",
+      "type": "ADD",
+      "summary": "Added A.J. Haulcy (DB(R)-IND) ($0/null bid)",
+      "time": "4:36 PM PDT",
+      "player": "A.J. Haulcy",
+      "playerMeta": "DB(R)-IND",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "Pocket Agents",
+      "type": "DROP",
+      "summary": "Dropped Kenneth Gainwell (RB-TB)",
+      "time": "4:35 PM PDT",
+      "player": "Kenneth Gainwell",
+      "playerMeta": "RB-TB",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "Pocket Agents / Ultron",
+      "type": "TRADE",
+      "summary": "Pocket Agents sent Foyesade Oluokun (LB) and $10 FAAB to Ultron for Amani Hooker (DB) and Saquon Barkley (RB)",
+      "time": "4:34 PM PDT",
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "Valley Old Goats",
+      "type": "ADD/DROP",
+      "summary": "Added Deshaun Watson (QB-CLE); dropped Justice Hill (RB-BAL) ($0/null bid)",
+      "time": "12:44 PM PDT",
+      "player": "Deshaun Watson",
+      "playerMeta": "QB-CLE",
+      "dropped": "Justice Hill",
+      "droppedMeta": "RB-BAL",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "Substation / Ultron",
+      "type": "TRADE",
+      "summary": "Substation sent Bhayshul Tuten (RB) to Ultron for George Pickens (WR)",
+      "time": "11:39 AM PDT",
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "Drummond Dongers",
+      "type": "ADD/DROP",
+      "summary": "Added Zach Allen (DL-DEN); dropped Donovan Ezeiruaku (DL,LB-DAL) ($0/null bid)",
+      "time": "10:15 AM PDT",
+      "player": "Zach Allen",
+      "playerMeta": "DL-DEN",
+      "dropped": "Donovan Ezeiruaku",
+      "droppedMeta": "DL,LB-DAL",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "Drummond Dongers",
+      "type": "DROP",
+      "summary": "Dropped Jartavius Martin (DB-WAS)",
+      "time": "10:11 AM PDT",
+      "player": "Jartavius Martin",
+      "playerMeta": "DB-WAS",
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-08",
+      "team": "The Hypersecretors",
+      "type": "ADD",
+      "summary": "Added Rachaad White (RB-WAS) ($0/null bid)",
+      "time": "9:45 AM PDT",
+      "player": "Rachaad White",
+      "playerMeta": "RB-WAS",
+      "bid": null,
+      "period": "Week 5"
+    },
     {
       "date": "2026-10-07",
       "team": "Towner Top Aga Bottom",
@@ -3205,6 +3324,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Settled Wed Oct 7 Week 5 FAAB clear and Oct 7 free-agent moves. Do not itemize pending claims.",
+  "note": "Settled Oct 8 free-agent moves and completed trades. Do not itemize pending claims.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }
