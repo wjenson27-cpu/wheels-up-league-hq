@@ -1,8 +1,25 @@
 {
-  "updated": "2026-10-09",
-  "source": "Fantrax completed trades Oct 6 2026 (Eddies↔Saltese Hall/Stevenson for Hampton/Mack Wilson; Doubtpfizer↔Ultron Swift for Loveland).",
+  "updated": "2026-10-10",
+  "source": "Fantrax Oct 10 2026 AM: +Saltese\u2194Substation Tate for Greenlaw+Boston (Oct 9 9:58 AM); Eddies block re-saved Oct 9 9:31 AM (Pitts removed). Pocket\u2194Ultron + Substation\u2194Ultron Oct 8 already logged.",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-10-09",
+      "time": "9:58 AM PDT",
+      "week": 5,
+      "status": "completed",
+      "official": true,
+      "teamA": "Saltese Slamm",
+      "teamB": "Substation",
+      "givesA": [
+        "Carnell Tate (WR)"
+      ],
+      "givesB": [
+        "Dre Greenlaw (LB)",
+        "Denzel Boston (WR)"
+      ],
+      "summary": "Week 5 \u2014 Saltese sent Carnell Tate to Substation for Dre Greenlaw and Denzel Boston (Oct 9 9:58 AM PDT)."
+    },
     {
       "date": "2026-10-08",
       "time": "4:34 PM PDT",
@@ -19,7 +36,7 @@
         "Amani Hooker (DB)",
         "Saquon Barkley (RB)"
       ],
-      "summary": "Week 5 — Pocket Agents sent Foyesade Oluokun and $10 FAAB to Ultron for Amani Hooker and Saquon Barkley (Oct 8 4:34 PM PDT)."
+      "summary": "Week 5 \u2014 Pocket Agents sent Foyesade Oluokun and $10 FAAB to Ultron for Amani Hooker and Saquon Barkley (Oct 8 4:34 PM PDT)."
     },
     {
       "date": "2026-10-08",
@@ -35,7 +52,7 @@
       "givesB": [
         "George Pickens (WR)"
       ],
-      "summary": "Week 5 — Substation sent Bhayshul Tuten to Ultron for George Pickens (Oct 8 11:39 AM PDT)."
+      "summary": "Week 5 \u2014 Substation sent Bhayshul Tuten to Ultron for George Pickens (Oct 8 11:39 AM PDT)."
     },
     {
       "date": "2026-10-06",
@@ -51,7 +68,7 @@
       "givesB": [
         "Colston Loveland (TE)"
       ],
-      "summary": "Week 5 — Doubtpfizer sent D'Andre Swift to Ultron for Colston Loveland (Oct 6 7:59 AM PDT)."
+      "summary": "Week 5 \u2014 Doubtpfizer sent D'Andre Swift to Ultron for Colston Loveland (Oct 6 7:59 AM PDT)."
     },
     {
       "date": "2026-10-06",
@@ -69,7 +86,7 @@
         "Breece Hall (RB)",
         "Rhamondre Stevenson (RB)"
       ],
-      "summary": "Week 5 — Eddies sent Omarion Hampton and Mack Wilson to Saltese for Breece Hall and Rhamondre Stevenson (Oct 6 11:31 AM PDT)."
+      "summary": "Week 5 \u2014 Eddies sent Omarion Hampton and Mack Wilson to Saltese for Breece Hall and Rhamondre Stevenson (Oct 6 11:31 AM PDT)."
     },
     {
       "date": "2026-10-03",
@@ -85,7 +102,7 @@
       "givesB": [
         "Nathan Landman (LB)"
       ],
-      "summary": "Fantrax official — Newman traded Aaron Jones and $5 FAAB to Saltese for Nathan Landman (Oct 3 12:22 PM PDT, Week 4)."
+      "summary": "Fantrax official \u2014 Newman traded Aaron Jones and $5 FAAB to Saltese for Nathan Landman (Oct 3 12:22 PM PDT, Week 4)."
     },
     {
       "date": "2026-09-28",
@@ -100,7 +117,7 @@
       "givesB": [
         "David Montgomery (RB)"
       ],
-      "summary": "Fantrax official — Saltese traded Denzel Boston to Substation for David Montgomery (Sep 28 10:04 AM PDT)."
+      "summary": "Fantrax official \u2014 Saltese traded Denzel Boston to Substation for David Montgomery (Sep 28 10:04 AM PDT)."
     },
     {
       "date": "2026-09-27",
@@ -116,7 +133,7 @@
       "givesB": [
         "Tony Pollard (RB)"
       ],
-      "summary": "Fantrax official — Dongers traded CJ Allen and $3 FAAB to Substation for Tony Pollard (Sep 27 8:58 AM PDT)."
+      "summary": "Fantrax official \u2014 Dongers traded CJ Allen and $3 FAAB to Substation for Tony Pollard (Sep 27 8:58 AM PDT)."
     },
     {
       "date": "2026-09-23",
@@ -133,7 +150,7 @@
         "Dorian Williams (LB)",
         "Andrew Wingard (DB)"
       ],
-      "summary": "Fantrax official — TTAB traded Travis Etienne and Antoine Winfield to Eagle Ridge Eddies for Dorian Williams and Andrew Wingard (Sep 23 11:27 AM PDT; accepted by Bill)."
+      "summary": "Fantrax official \u2014 TTAB traded Travis Etienne and Antoine Winfield to Eagle Ridge Eddies for Dorian Williams and Andrew Wingard (Sep 23 11:27 AM PDT; accepted by Bill)."
     },
     {
       "date": "2026-09-23",
@@ -148,7 +165,7 @@
       "givesB": [
         "Jamien Sherwood (LB)"
       ],
-      "summary": "Fantrax official — Saltese traded Jordyn Brooks to Eagle Ridge Eddies for Jamien Sherwood (Sep 23 9:52 AM PDT; accepted by Bill)."
+      "summary": "Fantrax official \u2014 Saltese traded Jordyn Brooks to Eagle Ridge Eddies for Jamien Sherwood (Sep 23 9:52 AM PDT; accepted by Bill)."
     },
     {
       "date": "2026-09-22",
@@ -166,7 +183,7 @@
         "Kevin Winston (DB)",
         "$20 FAAB"
       ],
-      "summary": "Fantrax official — Substation traded Saquon Barkley and Tank Bigsby to Ultron for Drake London, Kevin Winston, and $20 FAAB (Sep 22 8:46 PM PDT)."
+      "summary": "Fantrax official \u2014 Substation traded Saquon Barkley and Tank Bigsby to Ultron for Drake London, Kevin Winston, and $20 FAAB (Sep 22 8:46 PM PDT)."
     },
     {
       "date": "2026-09-22",
@@ -186,7 +203,7 @@
         "James Cook (RB)",
         "$15 FAAB"
       ],
-      "summary": "Fantrax official — Slumlords traded Drake London, Jack Campbell, and George Pickens to Ultron for Alex Anzalone, Chris Godwin, James Cook, and $15 FAAB (Sep 22 10:20 AM PDT)."
+      "summary": "Fantrax official \u2014 Slumlords traded Drake London, Jack Campbell, and George Pickens to Ultron for Alex Anzalone, Chris Godwin, James Cook, and $15 FAAB (Sep 22 10:20 AM PDT)."
     },
     {
       "date": "2026-09-16",
@@ -202,7 +219,7 @@
         "Emmett Johnson",
         "$15 FAAB"
       ],
-      "summary": "Fantrax official — Substation traded Terry McLaurin to Ultron for Emmett Johnson and $15 FAAB (Sep 16 12:13 PM PDT)."
+      "summary": "Fantrax official \u2014 Substation traded Terry McLaurin to Ultron for Emmett Johnson and $15 FAAB (Sep 16 12:13 PM PDT)."
     },
     {
       "date": "2026-09-16",
@@ -220,7 +237,7 @@
         "Tony Pollard (RB)",
         "Tremaine Edmunds (LB)"
       ],
-      "summary": "Fantrax official — Substation traded Dallas Goedert, Antoine Winfield, and $8 FAAB to TTAB for Tony Pollard and Tremaine Edmunds (Sep 16 11:40 AM PDT)."
+      "summary": "Fantrax official \u2014 Substation traded Dallas Goedert, Antoine Winfield, and $8 FAAB to TTAB for Tony Pollard and Tremaine Edmunds (Sep 16 11:40 AM PDT)."
     },
     {
       "date": "2026-09-15",
@@ -236,7 +253,7 @@
         "Jihaad Campbell (LB)",
         "R.J. Harvey (RB)"
       ],
-      "summary": "Fantrax official — Substation traded Sam LaPorta to Hypersecretors for Jihaad Campbell and R.J. Harvey (Sep 15 6:39 PM PDT)."
+      "summary": "Fantrax official \u2014 Substation traded Sam LaPorta to Hypersecretors for Jihaad Campbell and R.J. Harvey (Sep 15 6:39 PM PDT)."
     },
     {
       "date": "2026-09-14",
@@ -251,7 +268,7 @@
       "givesB": [
         "$4 FAAB"
       ],
-      "summary": "Fantrax official — Pocket Agents traded Jonas Sanker to Saltese for $4 FAAB."
+      "summary": "Fantrax official \u2014 Pocket Agents traded Jonas Sanker to Saltese for $4 FAAB."
     },
     {
       "date": "2026-09-08",
@@ -265,7 +282,7 @@
       "givesB": [
         "$10 FAAB"
       ],
-      "summary": "Fantrax official — Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8 6:04 PM PDT). Jordan Love was dropped by Substation in the same transaction (not sent to Pocket). Corrected Sep 11 per Bill + Fantrax re-verify.",
+      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8 6:04 PM PDT). Jordan Love was dropped by Substation in the same transaction (not sent to Pocket). Corrected Sep 11 per Bill + Fantrax re-verify.",
       "official": true,
       "corrected": true
     },
@@ -280,7 +297,7 @@
       "givesB": [
         "5 draft picks (swap package)"
       ],
-      "summary": "Fantrax official #1 — draft 5-for-5 pick swap (Aug 28).",
+      "summary": "Fantrax official #1 \u2014 draft 5-for-5 pick swap (Aug 28).",
       "official": true
     },
     {
@@ -294,7 +311,7 @@
       "givesB": [
         "Kaleb Elarms-Orr (LB)"
       ],
-      "summary": "Fantrax official #2 — Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
       "official": true
     },
     {
@@ -311,7 +328,7 @@
         "Cameron Skattebo (RB)",
         "Caleb Downs (DB)"
       ],
-      "summary": "Fantrax official #3 — live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas −Evan Williams; Aga +Bryce Boettcher −Najee.",
+      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
       "official": true
     },
     {
@@ -320,12 +337,12 @@
       "teamA": "Saltese Slamm (Larry)",
       "teamB": "Substation (Nate)",
       "givesA": [
-        "draft pick(s) — handshake"
+        "draft pick(s) \u2014 handshake"
       ],
       "givesB": [
-        "draft pick(s) — handshake"
+        "draft pick(s) \u2014 handshake"
       ],
-      "summary": "Handshake only — Fantrax chairs unchanged (Larry↔Nate pick swap).",
+      "summary": "Handshake only \u2014 Fantrax chairs unchanged (Larry\u2194Nate pick swap).",
       "official": false
     },
     {
@@ -339,7 +356,7 @@
       "givesB": [
         "R2 / R3 / R8 chairs (handshake)"
       ],
-      "summary": "Handshake only — Bill↔Nate R2/R3/R8; Eddies still sat 10/19/38/103 on Fantrax.",
+      "summary": "Handshake only \u2014 Bill\u2194Nate R2/R3/R8; Eddies still sat 10/19/38/103 on Fantrax.",
       "official": false
     },
     {
@@ -354,7 +371,7 @@
         "4.08",
         "4.12"
       ],
-      "summary": "Handshake — Nate 3.04 for Chase 4.08+4.12; Schwesinger still Nate on Fantrax.",
+      "summary": "Handshake \u2014 Nate 3.04 for Chase 4.08+4.12; Schwesinger still Nate on Fantrax.",
       "official": false
     },
     {
@@ -369,7 +386,7 @@
       "givesB": [
         "R20 chair (Sadiq stays Jacob)"
       ],
-      "summary": "Handshake — Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
       "official": false
     }
   ],
@@ -378,7 +395,7 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "2026-10-07 12:36 PM PT",
+      "lastUpdated": "Oct 9 9:31 AM",
       "players": [
         "Jacory Croskey-Merritt",
         "Travis Etienne",
@@ -387,7 +404,6 @@
         "Chimere Dike",
         "Brian Thomas",
         "Jordyn Tyson",
-        "Kyle Pitts",
         "Leonard Williams",
         "Trenton Simpson",
         "Julian Love"
@@ -397,13 +413,13 @@
     {
       "teamId": "morningside",
       "team": "Morningside Muff Divers",
-      "lastUpdated": "2026-10-07 9:30 AM PT",
+      "lastUpdated": "Oct 7 9:30 AM",
       "players": [
         "Derrick Barnes",
         "Bobby Okereke",
         "Pete Werner"
       ],
-      "note": "Offering LB; needing RB.",
+      "note": null,
       "positionsOffered": [
         "LB"
       ],
@@ -414,7 +430,7 @@
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "2026-10-03 12:22 PM PT",
+      "lastUpdated": "Oct 3 12:22 PM",
       "players": [
         "Jalen Hurts",
         "TreVeyon Henderson",
@@ -428,7 +444,7 @@
     {
       "teamId": "pocket",
       "team": "Pocket Agents",
-      "lastUpdated": "2026-10-02 4:24 PM PT",
+      "lastUpdated": "Oct 2 4:24 PM",
       "players": [
         "Jared Goff",
         "Tyler Shough"
@@ -438,7 +454,7 @@
     {
       "teamId": "saltese",
       "team": "Saltese Slamm",
-      "lastUpdated": "2026-10-06 11:31 AM PT",
+      "lastUpdated": "Oct 6 11:31 AM",
       "players": [
         "Stefon Diggs",
         "DeVonta Smith"
@@ -448,14 +464,14 @@
     {
       "teamId": "substation",
       "team": "Substation",
-      "lastUpdated": "2026-09-30 8:25 AM PT",
+      "lastUpdated": "Sep 30 8:25 AM",
       "players": [],
       "note": null
     },
     {
       "teamId": "ttab",
-      "team": "Towner Top Aga Bottom",
-      "lastUpdated": "2026-10-07 3:34 PM PT",
+      "team": "Towner Top Aga Bottom (TTAB)",
+      "lastUpdated": "Oct 7 3:34 PM",
       "players": [
         "Ashton Jeanty",
         "Cameron Skattebo",
@@ -480,7 +496,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax Oct 8 2026 ~6:05 AM PT check).",
-  "fantrax_completed_view": "Newest official: Newman↔Saltese Aaron Jones+$5 FAAB for Nathan Landman (Oct 3 12:22 PM); Saltese↔Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers↔Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM).",
+  "pending_note": "Pending trades 0 (Fantrax Oct 10 2026 ~6:05\u20136:25 AM PT checks).",
+  "fantrax_completed_view": "Newest official: Newman\u2194Saltese Aaron Jones+$5 FAAB for Nathan Landman (Oct 3 12:22 PM); Saltese\u2194Substation Boston for Montgomery (Sep 28 10:04 AM); Dongers\u2194Substation CJ Allen+$3 FAAB for Pollard (Sep 27 8:58 AM).",
   "hqComplete": true
 }

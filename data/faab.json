@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-09",
-  "source": "Fantrax Eddies roster Fri Oct 9 2026 ~5:22 PM PT (faab_remaining $68) + earlier Oct 9 AM all-14 roster sync. Eddies -$3 Cedric Gray claim cleared 9:30 AM PT.",
+  "updated": "2026-10-10",
+  "source": "Fantrax roster sync Sat Oct 10 2026 ~6:11 AM PT. Goats $70->$69 (Sam Darnold $1 / -Deshaun Watson); Morningside $42->$40 (Lukas Van Ness $2). Eddies $68 unchanged. Other 12 balances match prior HQ.",
   "startingBudget": 115,
-  "note": "Oct 9 PM: Eagle Ridge Eddies FAAB $71->$68 (-$3 Cedric Gray / -Kyle Pitts; claim cleared Fri Oct 9 9:30 AM PT, confirmed by 6am pending scrape + PM roster $68). Prior Oct 9 AM ledger: Pocket Agents $111->$101 (-$10) and Ultron $0->$10 (+$10) from Oct 8 completed trade. Week 5 FAAB clear (Wed Oct 7, 9:00 AM PT) spend unchanged for other teams.",
+  "note": "Oct 10 AM: Valley Old Goats FAAB $70->$69 (\u2212$1 Darnold) and Morningside $42->$40 (\u2212$2 Van Ness) from Fri Oct 9 9:00 AM PT waiver clear. Eddies $68 after Oct 9 Gray $3 claim. Pocket $101 / Ultron $10 from Oct 8 $10 FAAB trade unchanged.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -128,12 +128,12 @@
       "owner": "Tim Brandle",
       "abbrev": "MMD",
       "starting": 115,
-      "remaining": 42,
-      "spentClaims": 73,
+      "remaining": 40,
+      "spentClaims": 75,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 73,
-      "remainingKnown": 42
+      "spentKnown": 75,
+      "remainingKnown": 40
     },
     {
       "id": "ultron",
@@ -154,12 +154,12 @@
       "owner": "Mike Heff",
       "abbrev": "VOG",
       "starting": 115,
-      "remaining": 70,
-      "spentClaims": 30,
+      "remaining": 69,
+      "spentClaims": 31,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 30,
-      "remainingKnown": 70,
+      "spentKnown": 31,
+      "remainingKnown": 69,
       "note": " | Sep23 clear: scrape rem 84 vs formula 99"
     },
     {
@@ -190,6 +190,32 @@
     }
   ],
   "claims": [
+    {
+      "date": "2026-10-09",
+      "time": "9:00 AM PDT",
+      "player": "Lukas Van Ness",
+      "amount": 2,
+      "team": "Morningside Muff Divers",
+      "kind": "claim",
+      "teamId": "morningside",
+      "pos": "DL",
+      "dropped": null,
+      "note": "Week 5 midweek claim clear Fri Oct 9 9:00 AM PT",
+      "attribution": "fantrax-scrape-2026-10-10-roster-sync"
+    },
+    {
+      "date": "2026-10-09",
+      "time": "9:00 AM PDT",
+      "player": "Sam Darnold",
+      "amount": 1,
+      "team": "Valley Old Goats",
+      "kind": "claim",
+      "teamId": "goats",
+      "pos": "QB",
+      "dropped": "Deshaun Watson",
+      "note": "Week 5 midweek claim clear Fri Oct 9 9:00 AM PT; dropped Deshaun Watson",
+      "attribution": "fantrax-scrape-2026-10-10-roster-sync"
+    },
     {
       "date": "2026-10-09",
       "time": "9:30 AM PDT",
