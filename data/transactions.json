@@ -3,6 +3,19 @@
   "source": "Fantrax Fantasy check Fri Oct 9 ~6:20 AM PT: Oct 8 FA/Claim-Drops (9) + 2 completed trades (Pocket↔Ultron, Substation↔Ultron). Pending claims not itemized.",
   "items": [
     {
+      "date": "2026-10-09",
+      "team": "Eagle Ridge Eddies",
+      "type": "ADD/DROP",
+      "summary": "Won Cedric Gray (LB) $3 FAAB; dropped Kyle Pitts (TE)",
+      "time": "9:30 AM PDT",
+      "player": "Cedric Gray",
+      "playerMeta": "LB-TEN",
+      "dropped": "Kyle Pitts",
+      "droppedMeta": "TE-ATL",
+      "bid": 3,
+      "period": "Week 5"
+    },
+    {
       "date": "2026-10-08",
       "team": "Morningside Muff Divers",
       "type": "DROP",
@@ -3324,6 +3337,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Settled Oct 8 free-agent moves and completed trades. Do not itemize pending claims.",
+  "note": "Settled Oct 9 Eddies claim (Cedric Gray $3 / −Kyle Pitts) plus prior Oct 8 free-agent moves and completed trades. Do not itemize pending claims.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

@@ -2,75 +2,75 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-07",
-  "faabLeft": 71,
+  "asOf": "2026-10-09 5:22 PM PT",
+  "faabLeft": 68,
   "roster": {
     "QB": [
       "Trevor Lawrence"
     ],
     "RB": [
+      "Brian Robinson Jr.",
       "Rhamondre Stevenson",
       "Jacory Croskey-Merritt",
-      "Breece Hall",
-      "Brian Robinson Jr.",
-      "Zach Charbonnet",
-      "Travis Etienne"
+      "Breece Hall"
     ],
     "WR": [
       "Garrett Wilson",
       "Chimere Dike",
       "Jalen Coker",
-      "Brian Thomas",
-      "Jordyn Tyson"
+      "Brian Thomas"
     ],
     "TE": [
       "Brock Bowers",
-      "Tyler Warren",
-      "Kyle Pitts"
+      "Tyler Warren"
     ],
     "LB": [
       "Fred Warner",
       "Jordyn Brooks",
-      "Trenton Simpson"
+      "Trenton Simpson",
+      "Cedric Gray"
     ],
     "DL": [
       "Tuli Tuipulotu",
       "Leonard Williams"
     ],
     "DB": [
-      "Quentin Lake",
+      "Julian Love",
       "Evan Williams",
-      "Julian Love"
+      "Quentin Lake"
     ],
     "IR": [
       "Zach Charbonnet",
       "Jordyn Tyson",
-      "Travis Etienne",
-      "Leonard Williams"
+      "Travis Etienne"
     ]
   },
-  "notes": "Sep 20 6:27 AM sync: no Eddies roster/FAAB change; FAAB $91; 0 pending. W2 vs Valley 21–0 (TNF Dorian Williams only); slate not live at scrape. Recommend leave lineup. | Sep 23 trade: −Jamien Sherwood +Jordyn Brooks (from Saltese) | Sep 23 trade: −Dorian −Wingard +Etienne +Winfield | Sep 23 12:05 PM FA: +Marques Sigle (DB)/−Antoine Winfield (hours after TTAB trade). | Sep 30 W4 waivers: +Brian Robinson Jr. $6 (−Chimere Dike); +Trenton Simpson $6 (−Marques Sigle). FAAB $79. | Oct 6 trade: −Omarion Hampton −Mack Wilson +Breece Hall +Rhamondre Stevenson (from Saltese). | Oct 7 rebuild from live Fantrax roster: Tyjae Spears, Denzel Perryman, Kendre Miller no longer rostered; +Chimere Dike $2, +Tuli Tuipulotu $6. FAAB $71.",
+  "notes": "Oct 9 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. +Cedric Gray $3 (−Kyle Pitts). FAAB $68. Hall Reserve (O), not IR. IR: Charbonnet, Jordyn Tyson, Etienne.",
   "pendingClaims": [],
   "pendingClaim": null,
   "flags": [
-    "Jalen Coker — Quadriceps - Questionable (active slot)",
-    "Travis Etienne — Hamstring - Out Indefinitely (reserve)",
-    "Zach Charbonnet — Injured Reserve List - PUP-R - Knee - acl (IR slot)",
-    "Jordyn Tyson — Injured Reserve List - IR-R - Hamstring (IR slot)",
-    "Julian Love — Calf - Questionable (active slot)"
+    "Rhamondre Stevenson — Q (Knee - Questionable) (active)",
+    "Quentin Lake — Q (Hip - Questionable) (active)",
+    "Jalen Coker — Q (Quadriceps - Questionable) (reserve; bye W5)",
+    "Breece Hall — O (Quadriceps - Out Indefinitely) (reserve)",
+    "Zach Charbonnet — IR (PUP-R - Knee - acl) (IR slot)",
+    "Jordyn Tyson — IR (IR-R - Hamstring) (IR slot)",
+    "Travis Etienne — IR (IR - Hamstring) (IR slot)"
   ],
-  "source": "Fantrax Oct 7 2026 ~9:20 AM PT live Eddies roster (post Week 5 FAAB clear; Oct 6 Saltese trade applied).",
+  "source": "Fantrax Oct 9 2026 ~5:22 PM PT live Eddies roster scrape (/workspace/fantrax-eddies-roster-2026-10-09-pm.json).",
   "injuryFlags": [
-    "Jalen Coker — Quadriceps - Questionable (active slot)",
-    "Travis Etienne — Hamstring - Out Indefinitely (reserve)",
-    "Zach Charbonnet — Injured Reserve List - PUP-R - Knee - acl (IR slot)",
-    "Jordyn Tyson — Injured Reserve List - IR-R - Hamstring (IR slot)",
-    "Julian Love — Calf - Questionable (active slot)"
+    "Rhamondre Stevenson — Q (Knee - Questionable) (active)",
+    "Quentin Lake — Q (Hip - Questionable) (active)",
+    "Jalen Coker — Q (Quadriceps - Questionable) (reserve; bye W5)",
+    "Breece Hall — O (Quadriceps - Out Indefinitely) (reserve)",
+    "Zach Charbonnet — IR (PUP-R - Knee - acl) (IR slot)",
+    "Jordyn Tyson — IR (IR-R - Hamstring) (IR slot)",
+    "Travis Etienne — IR (IR - Hamstring) (IR slot)"
   ],
   "lineupFlags": [
-    "Jalen Coker — Quadriceps - Questionable (active slot)",
-    "Julian Love — Calf - Questionable (active slot)"
+    "Rhamondre Stevenson — Q (Knee - Questionable) (active)",
+    "Quentin Lake — Q (Hip - Questionable) (active)"
   ],
-  "updated": "2026-10-07",
+  "updated": "2026-10-09",
   "startingQB": "Trevor Lawrence"
 }

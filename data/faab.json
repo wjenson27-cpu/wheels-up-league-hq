@@ -1,8 +1,8 @@
 {
   "updated": "2026-10-09",
-  "source": "Fantrax roster sync Fri Oct 9 2026 ~6:50 AM PT \u2014 all 14 Claim Budget Remaining verified on team roster pages. Pocket 101 / Ultron 10 after Oct 8 $10 FAAB in Pocket\u2194Ultron trade (Oluokun for Hooker+Barkley). No new waiver spends since Wed Oct 7 clear; claims next process Fri Oct 9 9:30 AM PDT.",
+  "source": "Fantrax Eddies roster Fri Oct 9 2026 ~5:22 PM PT (faab_remaining $68) + earlier Oct 9 AM all-14 roster sync. Eddies -$3 Cedric Gray claim cleared 9:30 AM PT.",
   "startingBudget": 115,
-  "note": "Ledger catch-up Oct 9 AM: Pocket Agents $111\u2192$101 (\u2212$10) and Ultron $0\u2192$10 (+$10) from Oct 8 completed trade. Other 12 remainings unchanged vs Oct 7 clear. Week 5 FAAB clear (Wed Oct 7, 9:00 AM PT) \u2014 spend by team: Dongers $42 (Isaiah McDuffie); Slumlords $37 (Will Shipley $30, Romeo Doubs $7); Saltese $20 (Dohnte Meyers $17, Chase Young $1, Alontae Taylor $1, Cole Bishop $1); Newman $17 (Kirk Cousins $16, Seth McGowan $1); Hypersecretors $11 (Jaylin Noel); Valley Old Goats $11 (Amik Robertson); Eagle Ridge Eddies $8 (Tuli Tuipulotu $6, Chimere Dike $2); Mrs. Doubtpfizer $8 (Byron Young $4, Tre Harris $4); Ultron $1 (Jacoby Brissett). $0 claims: Saltese Teddye Buchanan, Doubtpfizer Keisean Nixon, Ultron Mike Gesicki and Mark Andrews, Pocket Jonah Coleman and Jalen Pitre, Morningside Aaron Rodgers. LAB, Substation and TTAB made no claims. Earlier Week 5: Doubtpfizer Mason Graham $6 (Oct 6).",
+  "note": "Oct 9 PM: Eagle Ridge Eddies FAAB $71->$68 (-$3 Cedric Gray / -Kyle Pitts; claim cleared Fri Oct 9 9:30 AM PT, confirmed by 6am pending scrape + PM roster $68). Prior Oct 9 AM ledger: Pocket Agents $111->$101 (-$10) and Ultron $0->$10 (+$10) from Oct 8 completed trade. Week 5 FAAB clear (Wed Oct 7, 9:00 AM PT) spend unchanged for other teams.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -76,12 +76,12 @@
       "owner": "Bill Jenson",
       "abbrev": "ERE",
       "starting": 115,
-      "remaining": 71,
-      "spentClaims": 44,
+      "remaining": 68,
+      "spentClaims": 47,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 44,
-      "remainingKnown": 71
+      "spentKnown": 47,
+      "remainingKnown": 68
     },
     {
       "id": "dongers",
@@ -190,6 +190,19 @@
     }
   ],
   "claims": [
+    {
+      "date": "2026-10-09",
+      "time": "9:30 AM PDT",
+      "player": "Cedric Gray",
+      "amount": 3,
+      "team": "Eagle Ridge Eddies",
+      "kind": "claim",
+      "teamId": "eddies",
+      "pos": "LB",
+      "dropped": "Kyle Pitts",
+      "note": "Week 5 midweek claim clear Fri Oct 9 9:30 AM PT; dropped Kyle Pitts",
+      "attribution": "fantrax-scrape-2026-10-09-6am pending + fantrax-eddies-roster-2026-10-09-pm"
+    },
     {
       "date": "2026-10-07",
       "time": "9:00 AM PDT",
