@@ -8,7 +8,7 @@
   "roster": {
     "QB": [
       "Patrick Mahomes",
-      "Deshaun Watson"
+      "Sam Darnold"
     ],
     "RB": [
       "Chase Brown",
@@ -24,8 +24,7 @@
       "Marvin Harrison"
     ],
     "TE": [
-      "George Kittle",
-      "Hunter Henry"
+      "George Kittle"
     ],
     "LB": [
       "Drake Thomas",
@@ -39,9 +38,9 @@
       "Danielle Hunter"
     ],
     "DB": [
-      "Kamren Curl",
       "Josh Metellus",
-      "Amik Robertson"
+      "Amik Robertson",
+      "Deonte Banks"
     ],
     "IR": [
       "Alvin Kamara",
@@ -49,12 +48,12 @@
       "Devin Lloyd"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Devaughn Vele $16 (−Marvin Mims). FAAB $84. | DATA CONFLICT: Vele $16 −Mims is Scrape A; Scrape B had Valley +Ezeiruaku $16. FAAB $84 either way. | Sep 25: +Tyrel Dodson. | Sep 30 W4 waivers/FA: +Josh Metellus $3 (−Tyrel Dodson). FAAB $81. | Oct 7 W5 waivers/FA: +Amik Robertson $11 (−Camryn Bynum). FAAB $70. | Oct 8: +Deshaun Watson/−Justice Hill.",
+  "notes": "Sep 16 post-waiver: +Devaughn Vele $16 (−Marvin Mims). FAAB $84. | DATA CONFLICT: Vele $16 −Mims is Scrape A; Scrape B had Valley +Ezeiruaku $16. FAAB $84 either way. | Sep 25: +Tyrel Dodson. | Sep 30 W4 waivers/FA: +Josh Metellus $3 (−Tyrel Dodson). FAAB $81. | Oct 7 W5 waivers/FA: +Amik Robertson $11 (−Camryn Bynum). FAAB $70. | Oct 8: +Deshaun Watson/−Justice Hill. | Oct 10 audit: +Deonte Banks/−Hunter Henry (Sep 30); −Kamren Curl (dropped Oct 1); +Sam Darnold $1/−Deshaun Watson (Oct 9 waivers). FAAB $69.",
   "injuryFlags": [
     "Josh Jacobs — Personal - Reserve Commissioner Exempt List (IR slot)",
     "Devin Lloyd — Calf - Questionable (IR slot)"
   ],
   "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
-  "updated": "2026-10-09"
+  "updated": "2026-10-10"
 }

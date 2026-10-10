@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "teams": [
     "dongers",
     "doubtpfizer",
@@ -17,6 +17,6 @@
     "ultron"
   ],
   "count": 14,
-  "note": "Fantasy check Oct 9 ~6:20 AM PT: Oct 8 FA moves + Pocket↔Ultron and Substation↔Ultron trades applied to rosters.",
+  "note": "Oct 10 AM: Saltese↔Substation Oct 9 trade applied; 12-roster audit vs transactions.json/trades.json applied missed post–Sep 30 9:31 AM moves (incl. Oct 6 Doubtpfizer↔Ultron Swift/Loveland). Eddies untouched.",
   "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync — all 14 rosters rebuilt from Fantrax after Week 4 FAAB clear."
 }

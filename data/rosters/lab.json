@@ -38,10 +38,9 @@
       "Aidan Hutchinson"
     ],
     "DB": [
-      "Kevin Byard",
       "Ronnie Hickman",
-      "Trevon Moehrig",
-      "Minkah Fitzpatrick"
+      "Minkah Fitzpatrick",
+      "Hezekiah Masses"
     ],
     "IR": [
       "Jayden Daniels",
@@ -49,10 +48,10 @@
       "Minkah Fitzpatrick"
     ]
   },
-  "notes": "Sep 17 AM: dropped Baker Mayfield. Sep 16 post-waiver: +Kendrick Bourne $11 (−Tre Tucker). FAAB $104. | Sep 20: +Tutu Atwell. | Sep 22: dropped Tutu Atwell (5:47 AM). | Sep 23 clear: +C.J. Stroud (QB) | Fantasy check Sep 28: +Jakobi Meyers (WR). | Sep 30 W4 waivers/FA: +Jaylen Wright $26 (−Kendrick Bourne). FAAB $67.",
+  "notes": "Sep 17 AM: dropped Baker Mayfield. Sep 16 post-waiver: +Kendrick Bourne $11 (−Tre Tucker). FAAB $104. | Sep 20: +Tutu Atwell. | Sep 22: dropped Tutu Atwell (5:47 AM). | Sep 23 clear: +C.J. Stroud (QB) | Fantasy check Sep 28: +Jakobi Meyers (WR). | Sep 30 W4 waivers/FA: +Jaylen Wright $26 (−Kendrick Bourne). FAAB $67. | Oct 10 audit: +Hezekiah Masses/−Trevon Moehrig (Sep 30 10:50 PM); −Kevin Byard (dropped Oct 4).",
   "source": "Fantrax Sep 30 2026 ~9:20 AM PT post-waiver roster sync (all 14 teams, after Week 4 FAAB clear).",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
-  "updated": "2026-09-30",
+  "updated": "2026-10-10",
   "injuryFlags": [
     "Mike Evans — Ribs - Questionable (active slot)",
     "Jaylen Wright — Foot - Questionable (reserve)",
