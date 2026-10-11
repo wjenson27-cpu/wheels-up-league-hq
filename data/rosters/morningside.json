@@ -2,59 +2,59 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-09",
-  "faabLeft": 42,
-  "startingQB": "Lamar Jackson",
+  "asOf": "2026-10-11 6:25 AM PT",
+  "faabLeft": 40,
+  "startingQB": "Aaron Rodgers",
   "roster": {
     "QB": [
-      "Lamar Jackson",
       "Aaron Rodgers"
     ],
     "RB": [
       "Ollie Gordon",
-      "Jadarian Price",
       "Raheim Sanders"
     ],
     "WR": [
-      "Xavier Worthy",
-      "Jordan Addison",
+      "Isaiah Williams",
+      "Justin Jefferson",
       "Deebo Samuel",
       "Roman Wilson",
-      "Justin Jefferson",
-      "Isaiah Williams"
+      "Jordan Addison",
+      "Xavier Worthy"
     ],
     "TE": [
-      "Travis Kelce",
-      "Tyler Higbee"
-    ],
-    "LB": [
-      "Bobby Okereke",
-      "Derrick Barnes",
-      "Daiyan Henley",
-      "Demetrius Knight",
-      "Ventrell Miller",
-      "Pete Werner"
+      "Tyler Higbee",
+      "Travis Kelce"
     ],
     "DL": [
       "Lukas Van Ness"
     ],
+    "LB": [
+      "Derrick Barnes",
+      "Daiyan Henley",
+      "Demetrius Knight",
+      "Ventrell Miller",
+      "Bobby Okereke",
+      "Pete Werner"
+    ],
     "DB": [
       "Jessie Bates",
-      "Derwin James",
       "C.J. Henderson"
     ],
     "IR": [
-      "Justin Jefferson",
-      "Pete Werner"
+      "Lamar Jackson",
+      "Jadarian Price",
+      "Derwin James"
     ]
   },
-  "notes": "Sep 16 post-waiver: no claims. FAAB $115. −Josh Uche (Sep 15). | Fantasy check Sep 28: −Malik Davis (['IR']); −De'Zhaun Stribling (['IR']). Fantasy check Sep 29: −Devon Achane (Sep 28 9:45 AM). | Sep 30 W4 waivers/FA: +Ollie Gordon $65; +Raheim Sanders $4; +A.J. Dillon $2; +Roman Wilson $2. FAAB $42. | Oct 7 W5 waivers/FA: +Aaron Rodgers (−Gabe Jacas). FAAB $42. | Oct 7 FA: +Tyler Higbee; −Cedric Gray. | Oct 8: −Jordan Mason. | Oct 10 audit vs transactions ledger: −Byron Young (dropped Sep 30 10:15 AM; now Doubtpfizer); −Malachi Fields (dropped Sep 30); +Isaiah Williams (Oct 2); +C.J. Henderson/−A.J. Dillon (Oct 4); +Lukas Van Ness $2 (Oct 9 waivers). FAAB $40.",
-  "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
-  "fantraxTeamId": "3hpc63ermsb3ulv5",
-  "updated": "2026-10-10",
+  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $40. Injuries: Justin Jefferson Q; Jordan Addison Q; Lamar Jackson IR; Jadarian Price IR; Derwin James IR.",
   "injuryFlags": [
-    "Justin Jefferson — Ankle - Questionable (IR slot)",
-    "Jordan Mason — Injured Reserve List - IR - Thumb (IR slot)",
-    "Pete Werner — Neck - Questionable (IR slot)"
-  ]
+    "Justin Jefferson — Q (Ankle - Questionable) (active)",
+    "Jordan Addison — Q (Hamstring - Questionable) (reserve)",
+    "Lamar Jackson — O (Ankle - Out Indefinitely) (IR slot)",
+    "Jadarian Price — IR (IR - Chest) (IR slot)",
+    "Derwin James — O (Hamstring - Out Indefinitely) (IR slot)"
+  ],
+  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "fantraxTeamId": "3hpc63ermsb3ulv5",
+  "updated": "2026-10-11"
 }

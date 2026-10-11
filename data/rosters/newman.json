@@ -2,13 +2,13 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-07",
-  "faabLeft": 77,
-  "startingQB": "Jalen Hurts",
+  "asOf": "2026-10-11 6:25 AM PT",
+  "faabLeft": 65,
+  "startingQB": "Kirk Cousins",
   "roster": {
     "QB": [
-      "Jalen Hurts",
-      "Kirk Cousins"
+      "Kirk Cousins",
+      "Jalen Hurts"
     ],
     "RB": [
       "Jonathan Taylor",
@@ -16,42 +16,45 @@
       "Seth McGowan"
     ],
     "WR": [
-      "Matthew Golden",
-      "Davante Adams",
       "Zay Flowers",
+      "Davante Adams",
+      "Matthew Golden",
       "Tee Higgins",
-      "Myles Price",
-      "A.J. Brown"
+      "Myles Price"
     ],
     "TE": [
       "Juwan Johnson"
     ],
-    "LB": [
-      "Kaden Elliss",
-      "Azeez Al-Shaair",
-      "Zaire Franklin",
-      "Eric Wilson",
-      "Jake Hansen",
-      "Nathan Landman",
-      "Danny Stutsman"
-    ],
     "DL": [
       "Andrew Van Ginkel"
     ],
+    "LB": [
+      "Azeez Al-Shaair",
+      "Zaire Franklin",
+      "Nathan Landman",
+      "Eric Wilson",
+      "Jake Hansen"
+    ],
     "DB": [
-      "L'Jarius Sneed",
+      "Jevon Holland",
       "Xavier Watts",
-      "Jevon Holland"
+      "L'Jarius Sneed"
     ],
     "IR": [
-      "A.J. Brown"
+      "Jordan Mason",
+      "A.J. Brown",
+      "Kaden Elliss"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Malaki Starks $5; +L'Jarius Sneed (null); +Chris Johnson (null, pos uncertain→RB). FAAB $110. | Sep 23 clear: +Leo Chenal (LB); -Chris Bell (WR) | Sep 23 FA: +Demond Claiborne (RB). | Sep 25: −Demond Claiborne. | Fantasy check Sep 28: +Jevon Holland (DB); −Chris Johnson (['RB']); −Malaki Starks (['DB']). Fantasy check Sep 29: −Leo Chenal (Sep 28 8:16 PM). | Sep 30 W4 waivers/FA: +Jake Hansen $5. FAAB $105. | Oct 2: +Quentin Johnston $6/−Wade Woodaz; +Danny Stutsman. | Oct 3: traded Aaron Jones +$5 FAAB for Nathan Landman. FAAB $94. | Oct 7 W5 waivers/FA: +Seth McGowan $1 (−Courtland Sutton); +Kirk Cousins $16. FAAB $77. | Oct 10 audit: −Quentin Johnston (dropped Oct 5 8:50 PM).",
-  "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
-  "fantraxTeamId": "kwaohsfwmsb3ulv4",
-  "updated": "2026-10-10",
+  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $65. Injuries: Zay Flowers Q; Tee Higgins Q; Jordan Mason IR; A.J. Brown IR; Kaden Elliss IR.",
   "injuryFlags": [
-    "A.J. Brown — Injured Reserve List - IR - Ankle (IR slot)"
-  ]
+    "Zay Flowers — Q (Foot - Questionable) (active)",
+    "Tee Higgins — Q (Groin - Questionable) (reserve)",
+    "Jordan Mason — IR (IR - Thumb) (IR slot)",
+    "A.J. Brown — IR (IR - Ankle) (IR slot)",
+    "Kaden Elliss — O (Calf - Out Indefinitely) (IR slot)"
+  ],
+  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "fantraxTeamId": "kwaohsfwmsb3ulv4",
+  "updated": "2026-10-11"
 }

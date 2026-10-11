@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-10",
-  "source": "Fantrax roster sync Sat Oct 10 2026 ~6:11 AM PT. Goats $70->$69 (Sam Darnold $1 / -Deshaun Watson); Morningside $42->$40 (Lukas Van Ness $2). Eddies $68 unchanged. Other 12 balances match prior HQ.",
+  "updated": "2026-10-11",
+  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT. Newman $77→$65 (Jordan Mason $12 / −Danny Stutsman); Substation $30→$29 (Alec Pierce $1 / −Keenan Allen). Other 12 balances match prior HQ.",
   "startingBudget": 115,
-  "note": "Oct 10 AM: Valley Old Goats FAAB $70->$69 (\u2212$1 Darnold) and Morningside $42->$40 (\u2212$2 Van Ness) from Fri Oct 9 9:00 AM PT waiver clear. Eddies $68 after Oct 9 Gray $3 claim. Pocket $101 / Ultron $10 from Oct 8 $10 FAAB trade unchanged.",
+  "note": "Oct 11 AM: Newman Lake Sleep Paralysis Demons FAAB $77→$65 (−$12 Mason) and Substation $30→$29 (−$1 Pierce) from Sat Oct 10 claims. Zero-bid FA moves (Eddies Bourne, TTAB Bullard) excluded per excludeZeroBids.",
   "excludeZeroBids": true,
   "teamBalances": [
     {
@@ -24,12 +24,12 @@
       "owner": "Ryan McCallum",
       "abbrev": "NLS",
       "starting": 115,
-      "remaining": 77,
-      "spentClaims": 33,
+      "remaining": 65,
+      "spentClaims": 45,
       "tradeOut": 5,
       "tradeIn": 0,
-      "spentKnown": 38,
-      "remainingKnown": 77
+      "spentKnown": 50,
+      "remainingKnown": 65
     },
     {
       "id": "saltese",
@@ -181,15 +181,41 @@
       "owner": "Nathan Kelly",
       "abbrev": "SUB",
       "starting": 115,
-      "remaining": 30,
-      "spentClaims": 95,
+      "remaining": 29,
+      "spentClaims": 96,
       "tradeOut": 28,
       "tradeIn": 38,
-      "spentKnown": 123,
-      "remainingKnown": 30
+      "spentKnown": 124,
+      "remainingKnown": 29
     }
   ],
   "claims": [
+    {
+      "date": "2026-10-10",
+      "time": "7:26 PM PDT",
+      "player": "Alec Pierce",
+      "amount": 1,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "pos": "WR",
+      "dropped": "Keenan Allen",
+      "note": "Week 5 claim Sat Oct 10 7:26 PM PT; dropped Keenan Allen; Substation FAAB $30→$29",
+      "attribution": "fantrax-scrape-2026-10-11-roster-sync"
+    },
+    {
+      "date": "2026-10-10",
+      "time": "9:28 PM PDT",
+      "player": "Jordan Mason",
+      "amount": 12,
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "kind": "claim",
+      "teamId": "newman",
+      "pos": "RB",
+      "dropped": "Danny Stutsman",
+      "note": "Week 5 claim Sat Oct 10 9:28 PM PT; dropped Danny Stutsman; Newman FAAB $77→$65",
+      "attribution": "fantrax-scrape-2026-10-11-roster-sync"
+    },
     {
       "date": "2026-10-09",
       "time": "9:00 AM PDT",
@@ -1304,7 +1330,7 @@
         "Amani Hooker (DB)",
         "Saquon Barkley (RB)"
       ],
-      "summary": "Fantrax official \u2014 Pocket Agents paid $10 FAAB to Ultron with Foyesade Oluokun for Amani Hooker and Saquon Barkley (Oct 8 4:34 PM PDT).",
+      "summary": "Fantrax official — Pocket Agents paid $10 FAAB to Ultron with Foyesade Oluokun for Amani Hooker and Saquon Barkley (Oct 8 4:34 PM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -1318,7 +1344,7 @@
       "for": [
         "Aaron Jones (RB)"
       ],
-      "summary": "Fantrax official \u2014 Newman paid $5 FAAB to Saltese with Aaron Jones for Nathan Landman (Oct 3 12:22 PM PDT).",
+      "summary": "Fantrax official — Newman paid $5 FAAB to Saltese with Aaron Jones for Nathan Landman (Oct 3 12:22 PM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -1332,7 +1358,7 @@
       "for": [
         "CJ Allen (LB)"
       ],
-      "summary": "Fantrax official \u2014 Dongers paid $3 FAAB to Substation with CJ Allen for Tony Pollard (Sep 27 8:58 AM PDT).",
+      "summary": "Fantrax official — Dongers paid $3 FAAB to Substation with CJ Allen for Tony Pollard (Sep 27 8:58 AM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -1347,7 +1373,7 @@
         "Drake London (WR)",
         "Kevin Winston (DB)"
       ],
-      "summary": "Fantrax official \u2014 Ultron paid $20 FAAB to Substation with London+Winston for Barkley+Bigsby (Sep 22 8:46 PM PDT).",
+      "summary": "Fantrax official — Ultron paid $20 FAAB to Substation with London+Winston for Barkley+Bigsby (Sep 22 8:46 PM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -1363,7 +1389,7 @@
         "Chris Godwin (WR)",
         "James Cook (RB)"
       ],
-      "summary": "Fantrax official \u2014 Ultron paid $15 FAAB to Slumlords with Anzalone+Godwin+Cook for London+Campbell+Pickens (Sep 22 10:20 AM PDT).",
+      "summary": "Fantrax official — Ultron paid $15 FAAB to Slumlords with Anzalone+Godwin+Cook for London+Campbell+Pickens (Sep 22 10:20 AM PDT).",
       "official": true,
       "kind": "trade"
     },
@@ -1377,7 +1403,7 @@
       "for": [
         "Terry McLaurin (WR)"
       ],
-      "summary": "Fantrax official \u2014 Ultron paid $15 FAAB to Substation with Emmett Johnson for Terry McLaurin (Sep 16).",
+      "summary": "Fantrax official — Ultron paid $15 FAAB to Substation with Emmett Johnson for Terry McLaurin (Sep 16).",
       "official": true,
       "kind": "trade"
     },
@@ -1392,7 +1418,7 @@
         "Dallas Goedert (TE)",
         "Antoine Winfield (DB)"
       ],
-      "summary": "Fantrax official \u2014 Substation paid $8 FAAB to TTAB with Goedert+Winfield for Pollard+Edmunds (Sep 16).",
+      "summary": "Fantrax official — Substation paid $8 FAAB to TTAB with Goedert+Winfield for Pollard+Edmunds (Sep 16).",
       "official": true,
       "kind": "trade"
     },
@@ -1406,7 +1432,7 @@
       "for": [
         "Bo Nix (QB)"
       ],
-      "summary": "Fantrax official \u2014 Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
+      "summary": "Fantrax official — Pocket Agents traded Bo Nix to Substation for $10 FAAB (Sep 8). Jordan Love was not in the deal.",
       "official": true,
       "kind": "trade"
     },
@@ -1420,7 +1446,7 @@
       "for": [
         "Kaleb Elarms-Orr (LB)"
       ],
-      "summary": "Fantrax official #2 \u2014 Larry buys Elarms-Orr from Aga for $20 FAAB.",
+      "summary": "Fantrax official #2 — Larry buys Elarms-Orr from Aga for $20 FAAB.",
       "official": true,
       "kind": "trade"
     },
@@ -1435,7 +1461,7 @@
         "Cameron Skattebo (RB)",
         "Caleb Downs (DB)"
       ],
-      "summary": "Fantrax official #3 \u2014 live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas \u2212Evan Williams; Aga +Bryce Boettcher \u2212Najee.",
+      "summary": "Fantrax official #3 — live Sep 3 player trade; Chase sends $10 FAAB to Aga. Related: Chase +Zavion Thomas −Evan Williams; Aga +Bryce Boettcher −Najee.",
       "official": true,
       "kind": "trade"
     },
@@ -1449,7 +1475,7 @@
       "for": [
         "R20 chair (Sadiq stays Jacob)"
       ],
-      "summary": "Handshake \u2014 Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
+      "summary": "Handshake — Nate $10 FAAB to Jacob for R20 chairs; Branch stays Nate, Sadiq stays Jacob.",
       "official": false,
       "kind": "trade"
     },

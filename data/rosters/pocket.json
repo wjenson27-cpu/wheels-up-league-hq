@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-09",
+  "asOf": "2026-10-11 6:25 AM PT",
   "faabLeft": 101,
   "startingQB": "Jared Goff",
   "roster": {
@@ -12,51 +12,49 @@
     ],
     "RB": [
       "Woody Marks",
-      "Mike Washington",
-      "Jonah Coleman",
-      "Saquon Barkley"
+      "Mike Washington"
     ],
     "WR": [
       "CeeDee Lamb",
-      "Tetairoa McMillan",
       "Jaylen Waddle",
-      "Rashid Shaheed",
       "Malik Washington",
-      "Adonai Mitchell"
+      "Tetairoa McMillan",
+      "Rashid Shaheed"
     ],
     "TE": [
       "Dalton Kincaid",
       "Trey McBride"
     ],
-    "LB": [
-      "Ernest Jones",
-      "Barrett Carter",
-      "Josiah Trotter"
-    ],
     "DL": [
       "Will Anderson Jr."
+    ],
+    "LB": [
+      "Josiah Trotter",
+      "Barrett Carter",
+      "Ernest Jones"
     ],
     "DB": [
       "Jaquan Brisker",
       "Cooper DeJean",
       "Brandon Jones",
-      "Jalen Pitre",
-      "Amani Hooker"
+      "Amani Hooker",
+      "Jalen Pitre"
     ],
     "IR": [
+      "Saquon Barkley",
       "Jonah Coleman",
-      "Adonai Mitchell",
-      "Josiah Trotter"
+      "Adonai Mitchell"
     ]
   },
-  "notes": "Sep 20 AM: +Teddye Buchanan (−Jake Hansen, null bid, Sat Sep 19 ~10:25–10:28 PM). Prior: +Marvin Mims $0 (−Kyler Gordon). FAAB $111. | Sep 23 clear: +Mike Washington (WR); -Zachariah Branch (IR) | Sep 25: −Marvin Mims; +Brandon Jones (Dennis add/drop churn). | Sep 30 W4 waivers/FA: +Jonah Coleman (−Ty Okada); +Chris Johnson (−Teddye Buchanan). FAAB $111. | Oct 7 W5 waivers/FA: +Jonah Coleman; +Jalen Pitre. FAAB $111. | Oct 8: traded Oluokun+$10 to Ultron for Hooker+Barkley; −Gainwell. FAAB $101. | Oct 10 audit: −Chris Johnson (dropped Oct 1 4:56 PM).",
-  "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
-  "fantraxTeamId": "20zozmjgmsb3ulv4",
-  "updated": "2026-10-10",
+  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $101. Injuries: CeeDee Lamb Q; Saquon Barkley IR; Jonah Coleman IR; Adonai Mitchell IR; Amani Hooker O.",
   "injuryFlags": [
-    "Jaylen Waddle — Leg - Questionable (active slot)",
-    "Jonah Coleman — Injured Reserve List - IR - Ankle (IR slot)",
-    "Adonai Mitchell — Finger - Questionable (IR slot)",
-    "Josiah Trotter — Shoulder - Questionable (IR slot)"
-  ]
+    "CeeDee Lamb — Q (Quadriceps - Questionable) (active)",
+    "Saquon Barkley — Hamstring - Inactive (IR slot)",
+    "Jonah Coleman — IR (IR - Ankle) (IR slot)",
+    "Adonai Mitchell — O (Finger - Out Indefinitely) (IR slot)",
+    "Amani Hooker — O (Concussion - Out Indefinitely) (reserve)"
+  ],
+  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "fantraxTeamId": "20zozmjgmsb3ulv4",
+  "updated": "2026-10-11"
 }

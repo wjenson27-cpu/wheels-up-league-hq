@@ -2,58 +2,57 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-10-09",
-  "faabLeft": 70,
-  "startingQB": "Patrick Mahomes",
+  "asOf": "2026-10-11 6:25 AM PT",
+  "faabLeft": 69,
+  "startingQB": "Sam Darnold",
   "roster": {
     "QB": [
-      "Patrick Mahomes",
-      "Sam Darnold"
+      "Sam Darnold",
+      "Patrick Mahomes"
     ],
     "RB": [
+      "Bucky Irving",
       "Chase Brown",
       "Derrick Henry",
-      "Bucky Irving",
-      "Samaje Perine",
-      "Alvin Kamara",
-      "Josh Jacobs"
+      "Samaje Perine"
     ],
     "WR": [
-      "Devaughn Vele",
       "DK Metcalf",
+      "Devaughn Vele",
       "Marvin Harrison"
     ],
     "TE": [
       "George Kittle"
     ],
-    "LB": [
-      "Drake Thomas",
-      "Devin Bush",
-      "Arvell Reese",
-      "Quincy Williams",
-      "Devin Lloyd"
-    ],
     "DL": [
       "T.J. Watt",
       "Danielle Hunter"
     ],
+    "LB": [
+      "Drake Thomas",
+      "Devin Bush",
+      "Arvell Reese",
+      "Devin Lloyd",
+      "Quincy Williams"
+    ],
     "DB": [
       "Josh Metellus",
-      "Amik Robertson",
-      "Deonte Banks"
+      "Amik Robertson"
     ],
     "IR": [
       "Alvin Kamara",
       "Josh Jacobs",
-      "Devin Lloyd"
+      "Deonte Banks"
     ]
   },
-  "notes": "Sep 16 post-waiver: +Devaughn Vele $16 (−Marvin Mims). FAAB $84. | DATA CONFLICT: Vele $16 −Mims is Scrape A; Scrape B had Valley +Ezeiruaku $16. FAAB $84 either way. | Sep 25: +Tyrel Dodson. | Sep 30 W4 waivers/FA: +Josh Metellus $3 (−Tyrel Dodson). FAAB $81. | Oct 7 W5 waivers/FA: +Amik Robertson $11 (−Camryn Bynum). FAAB $70. | Oct 8: +Deshaun Watson/−Justice Hill. | Oct 10 audit: +Deonte Banks/−Hunter Henry (Sep 30); −Kamren Curl (dropped Oct 1); +Sam Darnold $1/−Deshaun Watson (Oct 9 waivers). FAAB $69.",
+  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 5 / IR 3. FAAB $69. Injuries: Marvin Harrison O; Alvin Kamara IR; Josh Jacobs IR.",
   "injuryFlags": [
+    "Marvin Harrison — O (Coach's decision - Out Indefinitely) (reserve)",
+    "Alvin Kamara — Q (Back - Questionable) (IR slot)",
     "Josh Jacobs — Personal - Reserve Commissioner Exempt List (IR slot)",
-    "Devin Lloyd — Calf - Questionable (IR slot)"
+    "Deonte Banks — IR (IR slot)"
   ],
-  "source": "Fantrax Oct 7 2026 ~9:20 AM PT post-waiver sync (Week 5 FAAB clear 9:00 AM PT)",
+  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
-  "updated": "2026-10-10"
+  "updated": "2026-10-11"
 }
