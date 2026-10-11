@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-11",
   "season": 2026,
   "weeks": 17,
   "note": "Anytime TD. Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded).",
@@ -7,7 +7,8 @@
     "1": "Week 1 finals (Sun Sep 13 / MNF Sep 14 2026).",
     "2": "Week 2 finals. Coon: Puka DNP → N/A (doesn't kill weekly HIT).",
     "3": "Week 3 finals (TNF Sep 24 through MNF Sep 28 2026).",
-    "4": "Week 4 picks locked Fri Oct 2; results pending."
+    "4": "Week 4 finals (TNF Oct 1 through MNF Oct 5 2026).",
+    "5": "Week 5 picks locked Sun Oct 11; results pending."
   },
   "owners": [
     {
@@ -28,10 +29,10 @@
         },
         "4": {
           "player": "James Cook",
-          "td": ""
+          "td": "Yes"
         },
         "5": {
-          "player": "",
+          "player": "Bijan Robinson",
           "td": ""
         },
         "6": {
@@ -102,10 +103,10 @@
         },
         "4": {
           "player": "Jaxon Smith-Njigba",
-          "td": ""
+          "td": "No"
         },
         "5": {
-          "player": "",
+          "player": "Bhayshul Tuten",
           "td": ""
         },
         "6": {
@@ -176,10 +177,10 @@
         },
         "4": {
           "player": "Bhayshul Tuten",
-          "td": ""
+          "td": "No"
         },
         "5": {
-          "player": "",
+          "player": "Ollie Gordon II",
           "td": ""
         },
         "6": {
@@ -250,10 +251,10 @@
         },
         "4": {
           "player": "Jahmyr Gibbs",
-          "td": ""
+          "td": "Yes"
         },
         "5": {
-          "player": "",
+          "player": "Jahmyr Gibbs",
           "td": ""
         },
         "6": {
@@ -324,10 +325,10 @@
         },
         "4": {
           "player": "Jonathan Taylor",
-          "td": ""
+          "td": "Yes"
         },
         "5": {
-          "player": "",
+          "player": "Jonathan Taylor",
           "td": ""
         },
         "6": {
@@ -398,10 +399,10 @@
         },
         "4": {
           "player": "Javonte Williams",
-          "td": ""
+          "td": "Yes"
         },
         "5": {
-          "player": "",
+          "player": "Christian Watson",
           "td": ""
         },
         "6": {
@@ -472,10 +473,10 @@
         },
         "4": {
           "player": "Bijan Robinson",
-          "td": ""
+          "td": "Yes"
         },
         "5": {
-          "player": "",
+          "player": "James Cook",
           "td": ""
         },
         "6": {
@@ -546,10 +547,10 @@
         },
         "4": {
           "player": "DJ Moore",
-          "td": ""
+          "td": "No"
         },
         "5": {
-          "player": "",
+          "player": "Chris Olave",
           "td": ""
         },
         "6": {
@@ -620,10 +621,10 @@
         },
         "4": {
           "player": "Derrick Henry",
-          "td": ""
+          "td": "Yes"
         },
         "5": {
-          "player": "",
+          "player": "Derrick Henry",
           "td": ""
         },
         "6": {
@@ -694,10 +695,10 @@
         },
         "4": {
           "player": "Brock Bowers",
-          "td": ""
+          "td": "Yes"
         },
         "5": {
-          "player": "",
+          "player": "Kyren Williams",
           "td": ""
         },
         "6": {
@@ -768,10 +769,10 @@
         },
         "4": {
           "player": "Christian McCaffrey",
-          "td": ""
+          "td": "Yes"
         },
         "5": {
-          "player": "",
+          "player": "Christian McCaffrey",
           "td": ""
         },
         "6": {
@@ -842,10 +843,10 @@
         },
         "4": {
           "player": "Kenneth Walker III",
-          "td": ""
+          "td": "Yes"
         },
         "5": {
-          "player": "",
+          "player": "Tetairoa McMillan",
           "td": ""
         },
         "6": {
