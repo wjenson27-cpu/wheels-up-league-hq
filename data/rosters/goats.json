@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-10-11 6:25 AM PT",
+  "asOf": "2026-10-12 6:50 AM PT",
   "faabLeft": 69,
   "startingQB": "Sam Darnold",
   "roster": {
@@ -14,12 +14,13 @@
       "Bucky Irving",
       "Chase Brown",
       "Derrick Henry",
+      "Alvin Kamara",
       "Samaje Perine"
     ],
     "WR": [
       "DK Metcalf",
-      "Devaughn Vele",
-      "Marvin Harrison"
+      "Marvin Harrison",
+      "Devaughn Vele"
     ],
     "TE": [
       "George Kittle"
@@ -40,19 +41,27 @@
       "Amik Robertson"
     ],
     "IR": [
-      "Alvin Kamara",
       "Josh Jacobs",
       "Deonte Banks"
     ]
   },
-  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 5 / IR 3. FAAB $69. Injuries: Marvin Harrison O; Alvin Kamara IR; Josh Jacobs IR.",
+  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 2. FAAB $69. IR: Josh Jacobs, Deonte Banks.",
   "injuryFlags": [
     "Marvin Harrison — O (Coach's decision - Out Indefinitely) (reserve)",
-    "Alvin Kamara — Q (Back - Questionable) (IR slot)",
-    "Josh Jacobs — Personal - Reserve Commissioner Exempt List (IR slot)",
-    "Deonte Banks — IR (IR slot)"
+    "Josh Jacobs — INJ (IR slot)",
+    "Drake Thomas — INJ (active)"
   ],
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
-  "updated": "2026-10-11"
+  "lineupFlags": [
+    "Drake Thomas — INJ (active)"
+  ],
+  "pendingClaim": null,
+  "pendingClaims": [],
+  "flags": [
+    "Marvin Harrison — O (Coach's decision - Out Indefinitely) (reserve)",
+    "Josh Jacobs — INJ (IR slot)",
+    "Drake Thomas — INJ (active)"
+  ],
+  "updated": "2026-10-12"
 }

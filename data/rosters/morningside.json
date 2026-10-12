@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-11 6:25 AM PT",
+  "asOf": "2026-10-12 6:50 AM PT",
   "faabLeft": 40,
   "startingQB": "Aaron Rodgers",
   "roster": {
@@ -46,15 +46,35 @@
       "Derwin James"
     ]
   },
-  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $40. Injuries: Justin Jefferson Q; Jordan Addison Q; Lamar Jackson IR; Jadarian Price IR; Derwin James IR.",
+  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $40. IR: Lamar Jackson, Jadarian Price, Derwin James.",
   "injuryFlags": [
-    "Justin Jefferson — Q (Ankle - Questionable) (active)",
-    "Jordan Addison — Q (Hamstring - Questionable) (reserve)",
+    "Deebo Samuel — INJ (active)",
+    "Roman Wilson — INJ (active)",
+    "Jordan Addison — O (Out) (reserve)",
+    "Raheim Sanders — INJ (reserve)",
     "Lamar Jackson — O (Ankle - Out Indefinitely) (IR slot)",
     "Jadarian Price — IR (IR - Chest) (IR slot)",
+    "C.J. Henderson — INJ (active)",
     "Derwin James — O (Hamstring - Out Indefinitely) (IR slot)"
   ],
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
-  "updated": "2026-10-11"
+  "lineupFlags": [
+    "Deebo Samuel — INJ (active)",
+    "Roman Wilson — INJ (active)",
+    "C.J. Henderson — INJ (active)"
+  ],
+  "pendingClaim": null,
+  "pendingClaims": [],
+  "flags": [
+    "Deebo Samuel — INJ (active)",
+    "Roman Wilson — INJ (active)",
+    "Jordan Addison — O (Out) (reserve)",
+    "Raheim Sanders — INJ (reserve)",
+    "Lamar Jackson — O (Ankle - Out Indefinitely) (IR slot)",
+    "Jadarian Price — IR (IR - Chest) (IR slot)",
+    "C.J. Henderson — INJ (active)",
+    "Derwin James — O (Hamstring - Out Indefinitely) (IR slot)"
+  ],
+  "updated": "2026-10-12"
 }

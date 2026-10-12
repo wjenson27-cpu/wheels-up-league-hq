@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-11 6:25 AM PT",
+  "asOf": "2026-10-12 6:50 AM PT",
   "faabLeft": 29,
   "startingQB": "Jordan Love",
   "roster": {
@@ -46,15 +46,32 @@
       "DeShon Elliott"
     ]
   },
-  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $29. Injuries: Carnell Tate Q; Alec Pierce IR; Terrance Ferguson IR; Brian Branch IR; DeShon Elliott IR.",
+  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $29. IR: Terrance Ferguson, Brian Branch, DeShon Elliott.",
   "injuryFlags": [
-    "Carnell Tate — Q (Back - Questionable) (active)",
     "Alec Pierce — IR (Injured Reserve List - IR - Heel) (reserve)",
+    "Skyy Moore — INJ (reserve)",
     "Terrance Ferguson — IR (IR - Ankle) (IR slot)",
+    "Carson Schwesinger — INJ (active)",
+    "Kevin Winston — INJ (active)",
     "Brian Branch — IR (PUP-R - Achilles) (IR slot)",
     "DeShon Elliott — IR (IR-R - Knee) (IR slot)"
   ],
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "updated": "2026-10-11"
+  "lineupFlags": [
+    "Carson Schwesinger — INJ (active)",
+    "Kevin Winston — INJ (active)"
+  ],
+  "pendingClaim": null,
+  "pendingClaims": [],
+  "flags": [
+    "Alec Pierce — IR (Injured Reserve List - IR - Heel) (reserve)",
+    "Skyy Moore — INJ (reserve)",
+    "Terrance Ferguson — IR (IR - Ankle) (IR slot)",
+    "Carson Schwesinger — INJ (active)",
+    "Kevin Winston — INJ (active)",
+    "Brian Branch — IR (PUP-R - Achilles) (IR slot)",
+    "DeShon Elliott — IR (IR-R - Knee) (IR slot)"
+  ],
+  "updated": "2026-10-12"
 }

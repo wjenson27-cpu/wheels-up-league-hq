@@ -1,7 +1,33 @@
 {
-  "updated": "2026-10-11",
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json). Prepended 6 Oct 10 txns (TTAB Bullard, Newman Mason $12, Substation Pierce $1, Hyper Latu/Waller drops, Eddies Bourne).",
+  "updated": "2026-10-12",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json). Prepended 2 Sun Oct 11 txns (Doubtpfizer +Kyle Pitts; TTAB −Ji'Ayir Brown).",
   "items": [
+    {
+      "date": "2026-10-11",
+      "team": "Mrs. Doubtpfizer",
+      "type": "ADD",
+      "summary": "Added Kyle Pitts (TE ATL) ($0/null bid)",
+      "time": "9:58 AM PDT",
+      "player": "Kyle Pitts",
+      "playerMeta": "TE-ATL",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 5"
+    },
+    {
+      "date": "2026-10-11",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Ji'Ayir Brown (DB SF)",
+      "time": "9:56 AM PDT",
+      "player": "Ji'Ayir Brown",
+      "playerMeta": "DB-SF",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 5"
+    },
     {
       "date": "2026-10-10",
       "team": "Towner Top Aga Bottom",
@@ -3550,6 +3576,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 11 AM: +6 txn rows from Oct 10 (Newman Mason $12, Substation Pierce $1, Hyper drops, TTAB Bullard, Eddies Bourne/Thomas). No pending claims.",
+  "note": "Oct 12 AM: +2 txn rows from Sun Oct 11 (Mrs. Doubtpfizer +Kyle Pitts, no drop; TTAB −Ji'Ayir Brown). No pending claims.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

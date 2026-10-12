@@ -106,7 +106,7 @@
       "faab": 91,
       "projW1": 188.76,
       "powerRank": 5,
-      "note": "Kyle Weberg — 2023 + 2025 champ. +Ramsey $2 (−Blankenship), +CGJ $2. FAAB $109. Sep 20: +Pat Freiermuth/−Emari Demercado ($0/null). | Sep 30 W4 waivers/FA: +Kain Medrano $4; +Reed Blankenship (−Jalen Ramsey). FAAB $105. | Oct 3: −Kain Medrano ($0/null). | Oct 6: +Mason Graham $6. FAAB $99. | Oct 7 W5 waivers/FA: +Keisean Nixon (−Chauncey Gardner-Johnson); +Byron Young $4 (−Dexter Lawrence); +Tre Harris $4 (−Dontayvion Wicks). FAAB $91.",
+      "note": "Kyle Weberg — 2023 + 2025 champ. +Ramsey $2 (−Blankenship), +CGJ $2. FAAB $109. Sep 20: +Pat Freiermuth/−Emari Demercado ($0/null). | Sep 30 W4 waivers/FA: +Kain Medrano $4; +Reed Blankenship (−Jalen Ramsey). FAAB $105. | Oct 3: −Kain Medrano ($0/null). | Oct 6: +Mason Graham $6. FAAB $99. | Oct 7 W5 waivers/FA: +Keisean Nixon (−Chauncey Gardner-Johnson); +Byron Young $4 (−Dexter Lawrence); +Tre Harris $4 (−Dontayvion Wicks). FAAB $91. | Oct 11: +Kyle Pitts (no drop, $0/null).",
       "standingsRank": 11,
       "color": "#EC4899",
       "colorSecondary": "#F9A8D4",
@@ -130,7 +130,7 @@
       "faab": 68,
       "projW1": 187.31,
       "powerRank": 6,
-      "note": "Bill Jenson — record 2-2-0, Week 5 vs Mrs. Doubtpfizer (live early 0–18). Oct 9: +Cedric Gray $3 (−Kyle Pitts). FAAB $68. No pending claims. | Oct 10: +Kendrick Bourne (−Brian Thomas) FA $0. FAAB $68.",
+      "note": "Bill Jenson — record 2-2-0, Week 5 vs Mrs. Doubtpfizer (live Mon AM 285–222.5, Lake MNF left). Oct 9: +Cedric Gray $3 (−Kyle Pitts). FAAB $68. No pending claims. | Oct 10: +Kendrick Bourne (−Brian Thomas) FA $0. FAAB $68.",
       "standingsRank": 6,
       "color": "#69BE28",
       "colorSecondary": "#A3E635",
@@ -178,7 +178,7 @@
       "faab": 42,
       "projW1": 185.52,
       "powerRank": 8,
-      "note": "Chase Anderson — TTAB. Sep 16: +Goedert+Winfield+$8 FAAB (−Pollard/−Edmunds) vs Substation. FAAB $59. Sep 20: Christian Harris add/drop churn (net zero). | Sep 23: acquired Dorian Williams + Wingard for Etienne + Winfield (Eddies). | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/−McGowan; +Ji'Ayir Brown/−Bishop. | Sep 25: −Kendre Miller; +Cole Bishop; +Romeo Doubs/−Jalen Thompson. | Sep 28: −Abdul Carter ($0/null). | Sep 30 W4 waivers/FA: −Romeo Doubs; +Mack Hollins; +Bradley Chubb; +Malaki Starks; +Andre Cisco. FAAB $42. | Oct 3: +Harold Perkins/−Tre Harris ($0/null). | Oct 7 W5 waivers/FA: +Khalil Mack (−Bradley Chubb) [FA 09:07 AM]; +Mansoor Delane (−Treydan Stukes) [FA 09:08 AM]; +Dane Belton (−Andre Cisco) [FA 09:12 AM]. FAAB $42. | Oct 7 FA: −Mansoor Delane; +Najee Harris/−Mack Hollins. | Oct 10: +Javon Bullard (−Jeremiah Trotter).",
+      "note": "Chase Anderson — TTAB. Sep 16: +Goedert+Winfield+$8 FAAB (−Pollard/−Edmunds) vs Substation. FAAB $59. Sep 20: Christian Harris add/drop churn (net zero). | Sep 23: acquired Dorian Williams + Wingard for Etienne + Winfield (Eddies). | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/−McGowan; +Ji'Ayir Brown/−Bishop. | Sep 25: −Kendre Miller; +Cole Bishop; +Romeo Doubs/−Jalen Thompson. | Sep 28: −Abdul Carter ($0/null). | Sep 30 W4 waivers/FA: −Romeo Doubs; +Mack Hollins; +Bradley Chubb; +Malaki Starks; +Andre Cisco. FAAB $42. | Oct 3: +Harold Perkins/−Tre Harris ($0/null). | Oct 7 W5 waivers/FA: +Khalil Mack (−Bradley Chubb) [FA 09:07 AM]; +Mansoor Delane (−Treydan Stukes) [FA 09:08 AM]; +Dane Belton (−Andre Cisco) [FA 09:12 AM]. FAAB $42. | Oct 7 FA: −Mansoor Delane; +Najee Harris/−Mack Hollins. | Oct 10: +Javon Bullard (−Jeremiah Trotter). | Oct 11: −Ji'Ayir Brown; Jeanty IR→Active.",
       "standingsRank": 8,
       "color": "#A78BFA",
       "colorSecondary": "#DDD6FE",
@@ -340,10 +340,10 @@
       "pa": 868.5
     }
   ],
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "ownerSource": "Bill confirmed Sep 6 2026 + League Archives",
   "standingsSource": "Fantrax Standings after Week 4 finals Tue Oct 6 ~6:20 AM PT",
   "week": 5,
-  "hqNote": "Week 4 FINAL: Eddies beat Slumlords 226–218.5. Kitty Pocket 361; survivor Saltese 206.5 off the bus. Last Ride: Morningside beat Slumlords 223.5–218.5 (Slumlords out). Goats lone unbeaten at 4-0. OMVP Kenneth Walker III 142 / DMVP Rousseau 137. Week 5 in progress (Eddies vs Doubtpfizer).",
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (records through Week 4 final; Week 5 live)."
+  "hqNote": "Week 4 FINAL: Eddies beat Slumlords 226–218.5. Kitty Pocket 361; survivor Saltese 206.5 off the bus. Last Ride: Morningside beat Slumlords 223.5–218.5 (Slumlords out). Goats lone unbeaten at 4-0. OMVP Kenneth Walker III 142 / DMVP Rousseau 137. Week 5 live Mon AM: Eddies lead Doubtpfizer 285–222.5 with Lake (MNF) left.",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (records through Week 4 final; Week 5 live)."
 }

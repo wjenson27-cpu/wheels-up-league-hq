@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-11 6:25 AM PT",
+  "asOf": "2026-10-12 6:50 AM PT",
   "faabLeft": 53,
   "startingQB": "Justin Herbert",
   "roster": {
@@ -11,9 +11,9 @@
     ],
     "RB": [
       "Keaton Mitchell",
+      "J.K. Dobbins",
       "Kenneth Walker III",
-      "Rachaad White",
-      "J.K. Dobbins"
+      "Rachaad White"
     ],
     "WR": [
       "Amon-Ra St. Brown",
@@ -44,11 +44,19 @@
       "Nick Bosa"
     ]
   },
-  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $53. Injuries: Nick Bosa IR.",
+  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $53. IR: Nick Bosa.",
   "injuryFlags": [
+    "Kenyon Sadiq — INJ (reserve)",
     "Nick Bosa — O (Calf - Out Indefinitely) (IR slot)"
   ],
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
-  "updated": "2026-10-11"
+  "lineupFlags": [],
+  "pendingClaim": null,
+  "pendingClaims": [],
+  "flags": [
+    "Kenyon Sadiq — INJ (reserve)",
+    "Nick Bosa — O (Calf - Out Indefinitely) (IR slot)"
+  ],
+  "updated": "2026-10-12"
 }

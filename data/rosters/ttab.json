@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-11 6:25 AM PT",
+  "asOf": "2026-10-12 6:50 AM PT",
   "faabLeft": 42,
   "startingQB": "Josh Allen",
   "roster": {
@@ -11,14 +11,15 @@
     ],
     "RB": [
       "Javonte Williams",
+      "Ashton Jeanty",
       "Cameron Skattebo",
       "Emanuel Wilson",
       "Najee Harris"
     ],
     "WR": [
       "Christian Watson",
-      "Jameson Williams",
-      "Tre Tucker"
+      "Tre Tucker",
+      "Jameson Williams"
     ],
     "TE": [
       "Jake Ferguson",
@@ -36,22 +37,24 @@
     "DB": [
       "Dane Belton",
       "Caleb Downs",
-      "Javon Bullard",
-      "Ji'Ayir Brown"
+      "Javon Bullard"
     ],
     "IR": [
-      "Ashton Jeanty",
       "Divine Deablo",
       "Andrew Wingard"
     ]
   },
-  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 5 / IR 3. FAAB $42. Injuries: Ashton Jeanty IR; Divine Deablo IR; Andrew Wingard IR.",
+  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 5 / IR 2. FAAB $42. IR: Divine Deablo, Andrew Wingard. −Ji'Ayir Brown (DB SF) Sun Oct 11 9:56 AM; Ashton Jeanty moved IR→Active (RB).",
   "injuryFlags": [
-    "Ashton Jeanty — Q (Ankle - Questionable) (IR slot)",
-    "Divine Deablo — Q (Hamstring - Questionable) (IR slot)",
     "Andrew Wingard — O (Knee - Out Indefinitely) (IR slot)"
   ],
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
-  "updated": "2026-10-11"
+  "lineupFlags": [],
+  "pendingClaim": null,
+  "pendingClaims": [],
+  "flags": [
+    "Andrew Wingard — O (Knee - Out Indefinitely) (IR slot)"
+  ],
+  "updated": "2026-10-12"
 }

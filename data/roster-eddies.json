@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-11 6:25 AM PT",
+  "asOf": "2026-10-12 6:50 AM PT",
   "faabLeft": 68,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -46,9 +46,8 @@
       "Travis Etienne"
     ]
   },
-  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $68. Hall Reserve (O), not IR. IR: Zach Charbonnet, Jordyn Tyson, Travis Etienne. +Kendrick Bourne / −Brian Thomas (Oct 10).",
+  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $68. IR: Zach Charbonnet, Jordyn Tyson, Travis Etienne. Hall Reserve (O), not IR. Lake (Q hip) active ID for MNF.",
   "injuryFlags": [
-    "Rhamondre Stevenson — Q (Knee - Questionable) (active)",
     "Jalen Coker — Q (Quadriceps - Questionable) (reserve; bye W5)",
     "Breece Hall — O (Quadriceps - Out Indefinitely) (reserve)",
     "Zach Charbonnet — IR (PUP-R - Knee - acl) (IR slot)",
@@ -56,16 +55,14 @@
     "Travis Etienne — IR (IR - Hamstring) (IR slot)",
     "Quentin Lake — Q (Hip - Questionable) (active)"
   ],
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
-    "Rhamondre Stevenson — Q (Knee - Questionable) (active)",
     "Quentin Lake — Q (Hip - Questionable) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Rhamondre Stevenson — Q (Knee - Questionable) (active)",
     "Jalen Coker — Q (Quadriceps - Questionable) (reserve; bye W5)",
     "Breece Hall — O (Quadriceps - Out Indefinitely) (reserve)",
     "Zach Charbonnet — IR (PUP-R - Knee - acl) (IR slot)",
@@ -73,5 +70,5 @@
     "Travis Etienne — IR (IR - Hamstring) (IR slot)",
     "Quentin Lake — Q (Hip - Questionable) (active)"
   ],
-  "updated": "2026-10-11"
+  "updated": "2026-10-12"
 }

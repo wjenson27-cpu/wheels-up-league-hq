@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-11",
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT. Newman $77→$65 (Jordan Mason $12 / −Danny Stutsman); Substation $30→$29 (Alec Pierce $1 / −Keenan Allen). Other 12 balances match prior HQ.",
+  "updated": "2026-10-12",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT. All 14 balances verified unchanged vs prior HQ (ITS $31, NLS $65, SAL $11, LAB $67, MDP $91, ERE $68, DDG $3, TTA $42, HYP $53, MMD $40, ULT $10, VOG $69, PKT $101, SUB $29).",
   "startingBudget": 115,
-  "note": "Oct 11 AM: Newman Lake Sleep Paralysis Demons FAAB $77→$65 (−$12 Mason) and Substation $30→$29 (−$1 Pierce) from Sat Oct 10 claims. Zero-bid FA moves (Eddies Bourne, TTAB Bullard) excluded per excludeZeroBids.",
+  "note": "Oct 12 AM: all 14 FAAB balances verified against live Fantrax — no changes since Oct 11. Sun Oct 11 moves (Doubtpfizer +Kyle Pitts, TTAB −Ji'Ayir Brown) were $0/null FA moves, excluded per excludeZeroBids.",
   "excludeZeroBids": true,
   "teamBalances": [
     {

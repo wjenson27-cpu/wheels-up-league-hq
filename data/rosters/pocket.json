@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-11 6:25 AM PT",
+  "asOf": "2026-10-12 6:50 AM PT",
   "faabLeft": 101,
   "startingQB": "Jared Goff",
   "roster": {
@@ -16,10 +16,10 @@
     ],
     "WR": [
       "CeeDee Lamb",
+      "Rashid Shaheed",
       "Jaylen Waddle",
-      "Malik Washington",
       "Tetairoa McMillan",
-      "Rashid Shaheed"
+      "Malik Washington"
     ],
     "TE": [
       "Dalton Kincaid",
@@ -46,15 +46,29 @@
       "Adonai Mitchell"
     ]
   },
-  "notes": "Oct 11 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $101. Injuries: CeeDee Lamb Q; Saquon Barkley IR; Jonah Coleman IR; Adonai Mitchell IR; Amani Hooker O.",
+  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $101. IR: Saquon Barkley, Jonah Coleman, Adonai Mitchell.",
   "injuryFlags": [
     "CeeDee Lamb — Q (Quadriceps - Questionable) (active)",
-    "Saquon Barkley — Hamstring - Inactive (IR slot)",
+    "Saquon Barkley — O (Out) (IR slot)",
     "Jonah Coleman — IR (IR - Ankle) (IR slot)",
     "Adonai Mitchell — O (Finger - Out Indefinitely) (IR slot)",
-    "Amani Hooker — O (Concussion - Out Indefinitely) (reserve)"
+    "Amani Hooker — O (Concussion - Out Indefinitely) (reserve)",
+    "Jalen Pitre — INJ (reserve)"
   ],
-  "source": "Fantrax roster sync Sun Oct 11 2026 ~6:25 AM PT (/workspace/fantrax-scrape-2026-10-11-roster-sync.json)",
+  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
-  "updated": "2026-10-11"
+  "lineupFlags": [
+    "CeeDee Lamb — Q (Quadriceps - Questionable) (active)"
+  ],
+  "pendingClaim": null,
+  "pendingClaims": [],
+  "flags": [
+    "CeeDee Lamb — Q (Quadriceps - Questionable) (active)",
+    "Saquon Barkley — O (Out) (IR slot)",
+    "Jonah Coleman — IR (IR - Ankle) (IR slot)",
+    "Adonai Mitchell — O (Finger - Out Indefinitely) (IR slot)",
+    "Amani Hooker — O (Concussion - Out Indefinitely) (reserve)",
+    "Jalen Pitre — INJ (reserve)"
+  ],
+  "updated": "2026-10-12"
 }
