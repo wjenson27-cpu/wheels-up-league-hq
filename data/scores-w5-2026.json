@@ -1,0 +1,92 @@
+{
+  "updated": "2026-10-13",
+  "asOf": "2026-10-13",
+  "week": 5,
+  "weekStatus": "final",
+  "complete": true,
+  "source": "Fantrax",
+  "note": "Week 5 FINAL from Fantrax Matchups scrape Tue Oct 13 ~7:20 AM PT (MNF complete). All 7 games locked. Kitty LAB 299.5; survivor-low Ultron 207 (alive pool).",
+  "kitty": {
+    "team": "LAB",
+    "teamFull": "Little Ass Boys",
+    "teamId": "lab",
+    "score": 299.5
+  },
+  "survivorLowest": {
+    "team": "Ultron",
+    "teamId": "ultron",
+    "score": 207
+  },
+  "matchups": [
+    {
+      "home": "Morningside Muff Divers",
+      "away": "Little Ass Boys",
+      "homeScore": 203,
+      "awayScore": 299.5,
+      "winner": "Little Ass Boys",
+      "status": "final",
+      "topScorers": [],
+      "notes": "Fantrax Week 5 final \u00b7 Tue Oct 13 roster sync + MNF complete."
+    },
+    {
+      "home": "Towner Top Aga Bottom",
+      "away": "Saltese Slamm",
+      "homeScore": 242,
+      "awayScore": 209,
+      "winner": "Towner Top Aga Bottom",
+      "status": "final",
+      "topScorers": [],
+      "notes": "Fantrax Week 5 final \u00b7 Tue Oct 13 roster sync + MNF complete."
+    },
+    {
+      "home": "Newman Lake Sleep Paralysis Demons",
+      "away": "Substation",
+      "homeScore": 246.5,
+      "awayScore": 257,
+      "winner": "Substation",
+      "status": "final",
+      "topScorers": [],
+      "notes": "Fantrax Week 5 final \u00b7 Tue Oct 13 roster sync + MNF complete."
+    },
+    {
+      "home": "Pocket Agents",
+      "away": "Drummond Dongers",
+      "homeScore": 287,
+      "awayScore": 280,
+      "winner": "Pocket Agents",
+      "status": "final",
+      "topScorers": [],
+      "notes": "Fantrax Week 5 final \u00b7 Tue Oct 13 roster sync + MNF complete."
+    },
+    {
+      "home": "Mrs. Doubtpfizer",
+      "away": "Eagle Ridge Eddies",
+      "homeScore": 231.5,
+      "awayScore": 298,
+      "winner": "Eagle Ridge Eddies",
+      "status": "final",
+      "topScorers": [],
+      "notes": "Fantrax Week 5 final \u00b7 Tue Oct 13 roster sync + MNF complete."
+    },
+    {
+      "home": "Ultron",
+      "away": "Indian Trail Slumlords",
+      "homeScore": 207,
+      "awayScore": 243.5,
+      "winner": "Indian Trail Slumlords",
+      "status": "final",
+      "topScorers": [],
+      "notes": "Fantrax Week 5 final \u00b7 Tue Oct 13 roster sync + MNF complete."
+    },
+    {
+      "home": "The Hypersecretors",
+      "away": "Valley Old Goats",
+      "homeScore": 235,
+      "awayScore": 213,
+      "winner": "The Hypersecretors",
+      "status": "final",
+      "topScorers": [],
+      "notes": "Fantrax Week 5 final \u00b7 Tue Oct 13 roster sync + MNF complete."
+    }
+  ]
+}
