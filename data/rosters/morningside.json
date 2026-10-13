@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-12 6:50 AM PT",
+  "asOf": "2026-10-13 8:20 AM PT",
   "faabLeft": 40,
   "startingQB": "Aaron Rodgers",
   "roster": {
@@ -15,11 +15,11 @@
     ],
     "WR": [
       "Isaiah Williams",
-      "Justin Jefferson",
       "Deebo Samuel",
-      "Roman Wilson",
+      "Xavier Worthy",
       "Jordan Addison",
-      "Xavier Worthy"
+      "Justin Jefferson",
+      "Roman Wilson"
     ],
     "TE": [
       "Tyler Higbee",
@@ -29,12 +29,12 @@
       "Lukas Van Ness"
     ],
     "LB": [
-      "Derrick Barnes",
+      "Pete Werner",
       "Daiyan Henley",
-      "Demetrius Knight",
       "Ventrell Miller",
       "Bobby Okereke",
-      "Pete Werner"
+      "Derrick Barnes",
+      "Demetrius Knight"
     ],
     "DB": [
       "Jessie Bates",
@@ -46,35 +46,34 @@
       "Derwin James"
     ]
   },
-  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $40. IR: Lamar Jackson, Jadarian Price, Derwin James.",
+  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $40. IR: Lamar Jackson, Jadarian Price, Derwin James.",
   "injuryFlags": [
     "Deebo Samuel — INJ (active)",
-    "Roman Wilson — INJ (active)",
     "Jordan Addison — O (Out) (reserve)",
     "Raheim Sanders — INJ (reserve)",
+    "Roman Wilson — INJ (reserve)",
     "Lamar Jackson — O (Ankle - Out Indefinitely) (IR slot)",
     "Jadarian Price — IR (IR - Chest) (IR slot)",
     "C.J. Henderson — INJ (active)",
     "Derwin James — O (Hamstring - Out Indefinitely) (IR slot)"
   ],
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
     "Deebo Samuel — INJ (active)",
-    "Roman Wilson — INJ (active)",
     "C.J. Henderson — INJ (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Deebo Samuel — INJ (active)",
-    "Roman Wilson — INJ (active)",
     "Jordan Addison — O (Out) (reserve)",
     "Raheim Sanders — INJ (reserve)",
+    "Roman Wilson — INJ (reserve)",
     "Lamar Jackson — O (Ankle - Out Indefinitely) (IR slot)",
     "Jadarian Price — IR (IR - Chest) (IR slot)",
     "C.J. Henderson — INJ (active)",
     "Derwin James — O (Hamstring - Out Indefinitely) (IR slot)"
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-10-13"
 }

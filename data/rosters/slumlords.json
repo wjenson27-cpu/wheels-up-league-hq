@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-12 6:50 AM PT",
+  "asOf": "2026-10-13 8:20 AM PT",
   "faabLeft": 31,
   "startingQB": "Drake Maye",
   "roster": {
@@ -44,14 +44,14 @@
       "Isiah Pacheco"
     ]
   },
-  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $31. IR: Isiah Pacheco.",
+  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $31. IR: Isiah Pacheco.",
   "injuryFlags": [
     "Quinshon Judkins — INJ (active)",
     "Will Shipley — INJ (active)",
     "Isiah Pacheco — IR (IR - Back) (IR slot)",
     "Talanoa Hufanga — INJ (active)"
   ],
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
     "Quinshon Judkins — INJ (active)",
@@ -66,5 +66,5 @@
     "Isiah Pacheco — IR (IR - Back) (IR slot)",
     "Talanoa Hufanga — INJ (active)"
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-10-13"
 }

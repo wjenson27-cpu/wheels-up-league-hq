@@ -1,7 +1,85 @@
 {
-  "updated": "2026-10-12",
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json). Prepended 2 Sun Oct 11 txns (Doubtpfizer +Kyle Pitts; TTAB −Ji'Ayir Brown).",
+  "updated": "2026-10-13",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json) Prepended 6 drop txns Oct 12–13 (Ultron −Brissett/−Gesicki/−Taaffe; Substation −Izien/−Skyy Moore; LAB −Masses).",
   "items": [
+    {
+      "date": "2026-10-13",
+      "team": "Ultron",
+      "type": "DROP",
+      "summary": "Dropped Michael Taaffe (DB MIA)",
+      "time": "7:42 AM PDT",
+      "player": "Michael Taaffe",
+      "playerMeta": "DB-MIA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-12",
+      "team": "Little Ass Boys",
+      "type": "DROP",
+      "summary": "Dropped Hezekiah Masses (DB LV)",
+      "time": "3:02 PM PDT",
+      "player": "Hezekiah Masses",
+      "playerMeta": "DB-LV",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-12",
+      "team": "Substation",
+      "type": "DROP",
+      "summary": "Dropped Skyy Moore (WR GB)",
+      "time": "11:02 AM PDT",
+      "player": "Skyy Moore",
+      "playerMeta": "WR-GB",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-12",
+      "team": "Ultron",
+      "type": "DROP",
+      "summary": "Dropped Jacoby Brissett (QB ARI)",
+      "time": "9:01 AM PDT",
+      "player": "Jacoby Brissett",
+      "playerMeta": "QB-ARI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-12",
+      "team": "Ultron",
+      "type": "DROP",
+      "summary": "Dropped Mike Gesicki (TE CIN)",
+      "time": "9:01 AM PDT",
+      "player": "Mike Gesicki",
+      "playerMeta": "TE-CIN",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-12",
+      "team": "Substation",
+      "type": "DROP",
+      "summary": "Dropped Christian Izien (DB DET)",
+      "time": "8:22 AM PDT",
+      "player": "Christian Izien",
+      "playerMeta": "DB-DET",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
     {
       "date": "2026-10-11",
       "team": "Mrs. Doubtpfizer",
@@ -3576,6 +3654,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 12 AM: +2 txn rows from Sun Oct 11 (Mrs. Doubtpfizer +Kyle Pitts, no drop; TTAB −Ji'Ayir Brown). No pending claims.",
+  "note": "Oct 13 AM: +6 drop rows (Mon Oct 12 8:22 AM–Tue Oct 13 7:42 AM PT). All $0/null FA drops; no pending claims. No new $ FAAB claims.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

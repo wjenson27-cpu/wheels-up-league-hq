@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-10-12 6:50 AM PT",
+  "asOf": "2026-10-13 8:20 AM PT",
   "faabLeft": 91,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -12,19 +12,19 @@
     "RB": [
       "Christian McCaffrey",
       "Braelon Allen",
+      "Chuba Hubbard",
       "Kaelon Black",
-      "Blake Corum",
-      "Chuba Hubbard"
+      "Blake Corum"
     ],
     "WR": [
       "Nico Collins",
-      "Tre Harris",
       "Josh Downs",
+      "Tre Harris",
       "Rome Odunze"
     ],
     "TE": [
-      "Hunter Henry",
       "Colston Loveland",
+      "Hunter Henry",
       "Kyle Pitts"
     ],
     "DL": [
@@ -46,25 +46,23 @@
       "DeMarvion Overshown"
     ]
   },
-  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $91. IR: Rashee Rice, Mason Graham, DeMarvion Overshown. +Kyle Pitts (TE ATL, Reserve, no drop) Sun Oct 11 9:58 AM.",
+  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $91. IR: Rashee Rice, Mason Graham, DeMarvion Overshown.",
   "injuryFlags": [
-    "Tre Harris — INJ (active)",
+    "Tre Harris — INJ (reserve)",
     "Rashee Rice — Q (Hamstring - Questionable) (IR slot)",
     "Mason Graham — O (Knee - mcl - Out Indefinitely) (IR slot)",
     "DeMarvion Overshown — O (Out) (IR slot)"
   ],
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
-  "lineupFlags": [
-    "Tre Harris — INJ (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Tre Harris — INJ (active)",
+    "Tre Harris — INJ (reserve)",
     "Rashee Rice — Q (Hamstring - Questionable) (IR slot)",
     "Mason Graham — O (Knee - mcl - Out Indefinitely) (IR slot)",
     "DeMarvion Overshown — O (Out) (IR slot)"
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-10-13"
 }

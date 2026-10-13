@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-10-12 6:50 AM PT",
+  "asOf": "2026-10-13 8:20 AM PT",
   "faabLeft": 69,
   "startingQB": "Sam Darnold",
   "roster": {
@@ -45,13 +45,13 @@
       "Deonte Banks"
     ]
   },
-  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 2. FAAB $69. IR: Josh Jacobs, Deonte Banks.",
+  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 2. FAAB $69. IR: Josh Jacobs, Deonte Banks.",
   "injuryFlags": [
     "Marvin Harrison — O (Coach's decision - Out Indefinitely) (reserve)",
     "Josh Jacobs — INJ (IR slot)",
     "Drake Thomas — INJ (active)"
   ],
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [
     "Drake Thomas — INJ (active)"
@@ -63,5 +63,5 @@
     "Josh Jacobs — INJ (IR slot)",
     "Drake Thomas — INJ (active)"
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-10-13"
 }

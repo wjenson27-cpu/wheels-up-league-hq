@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-12 6:50 AM PT",
+  "asOf": "2026-10-13 8:20 AM PT",
   "faabLeft": 11,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -10,17 +10,17 @@
       "Matthew Stafford"
     ],
     "RB": [
-      "Aaron Jones",
       "Omarion Hampton",
       "David Montgomery",
-      "Rico Dowdle"
+      "Rico Dowdle",
+      "Aaron Jones"
     ],
     "WR": [
       "Jaxon Smith-Njigba",
       "Denzel Boston",
+      "DeVonta Smith",
       "Stefon Diggs",
-      "Dohnte Meyers",
-      "DeVonta Smith"
+      "Dohnte Meyers"
     ],
     "TE": [
       "Oronde Gadsden"
@@ -46,31 +46,32 @@
       "Micah Parsons"
     ]
   },
-  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $11. IR: Ja'Kobi Lane, Jonathon Brooks, Micah Parsons.",
+  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $11. IR: Ja'Kobi Lane, Jonathon Brooks, Micah Parsons.",
   "injuryFlags": [
     "David Montgomery — INJ (active)",
+    "DeVonta Smith — O (Out) (active)",
     "Stefon Diggs — O (Hamstring - Out Indefinitely) (reserve)",
     "Rico Dowdle — O (Out) (reserve)",
-    "DeVonta Smith — O (Out) (reserve)",
     "Ja'Kobi Lane — IR (IR - Wrist) (IR slot)",
     "Jonathon Brooks — IR (IR - Abdomen) (IR slot)",
     "Micah Parsons — IR (PUP-R - Knee - acl) (IR slot)"
   ],
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
-    "David Montgomery — INJ (active)"
+    "David Montgomery — INJ (active)",
+    "DeVonta Smith — O (Out) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "David Montgomery — INJ (active)",
+    "DeVonta Smith — O (Out) (active)",
     "Stefon Diggs — O (Hamstring - Out Indefinitely) (reserve)",
     "Rico Dowdle — O (Out) (reserve)",
-    "DeVonta Smith — O (Out) (reserve)",
     "Ja'Kobi Lane — IR (IR - Wrist) (IR slot)",
     "Jonathon Brooks — IR (IR - Abdomen) (IR slot)",
     "Micah Parsons — IR (PUP-R - Knee - acl) (IR slot)"
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-10-13"
 }

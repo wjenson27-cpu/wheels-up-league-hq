@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "teams": [
     "dongers",
     "doubtpfizer",
@@ -17,6 +17,6 @@
     "ultron"
   ],
   "count": 14,
-  "note": "Oct 12 AM: all 14 rosters rebuilt from live Fantrax scrape. Applied Sun Oct 11 moves HQ was missing: Mrs. Doubtpfizer +Kyle Pitts (Reserve, no drop); TTAB −Ji'Ayir Brown; TTAB Ashton Jeanty IR→Active.",
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)"
+  "note": "Oct 13 AM: all 14 rosters rebuilt from live Fantrax scrape. Window drops: Ultron −Brissett/−Gesicki/−Taaffe; Substation −Izien/−Skyy Moore; LAB −Hezekiah Masses. No $ FAAB claims.",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)"
 }

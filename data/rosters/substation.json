@@ -2,25 +2,24 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-12 6:50 AM PT",
+  "asOf": "2026-10-13 8:20 AM PT",
   "faabLeft": 29,
-  "startingQB": "Jordan Love",
+  "startingQB": "Brock Purdy",
   "roster": {
     "QB": [
-      "Jordan Love",
-      "Brock Purdy"
+      "Brock Purdy",
+      "Jordan Love"
     ],
     "RB": [
-      "RJ Harvey",
-      "Emmett Johnson"
+      "Emmett Johnson",
+      "RJ Harvey"
     ],
     "WR": [
       "Drake London",
       "Malik Nabers",
       "George Pickens",
       "Carnell Tate",
-      "Alec Pierce",
-      "Skyy Moore"
+      "Alec Pierce"
     ],
     "TE": [
       "Tucker Kraft"
@@ -35,9 +34,8 @@
     ],
     "DB": [
       "Nick Emmanwori",
-      "Christian Izien",
-      "Kevin Winston",
       "Malik Mustapha",
+      "Kevin Winston",
       "Dante Trader"
     ],
     "IR": [
@@ -46,17 +44,16 @@
       "DeShon Elliott"
     ]
   },
-  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $29. IR: Terrance Ferguson, Brian Branch, DeShon Elliott.",
+  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 4 / IR 3. FAAB $29. IR: Terrance Ferguson, Brian Branch, DeShon Elliott. −Christian Izien (DB DET) Mon Oct 12 8:22 AM; −Skyy Moore (WR GB) Mon Oct 12 11:02 AM.",
   "injuryFlags": [
     "Alec Pierce — IR (Injured Reserve List - IR - Heel) (reserve)",
-    "Skyy Moore — INJ (reserve)",
     "Terrance Ferguson — IR (IR - Ankle) (IR slot)",
     "Carson Schwesinger — INJ (active)",
     "Kevin Winston — INJ (active)",
     "Brian Branch — IR (PUP-R - Achilles) (IR slot)",
     "DeShon Elliott — IR (IR-R - Knee) (IR slot)"
   ],
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
     "Carson Schwesinger — INJ (active)",
@@ -66,12 +63,11 @@
   "pendingClaims": [],
   "flags": [
     "Alec Pierce — IR (Injured Reserve List - IR - Heel) (reserve)",
-    "Skyy Moore — INJ (reserve)",
     "Terrance Ferguson — IR (IR - Ankle) (IR slot)",
     "Carson Schwesinger — INJ (active)",
     "Kevin Winston — INJ (active)",
     "Brian Branch — IR (PUP-R - Achilles) (IR slot)",
     "DeShon Elliott — IR (IR-R - Knee) (IR slot)"
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-10-13"
 }

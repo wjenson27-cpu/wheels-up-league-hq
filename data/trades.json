@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-12",
-  "source": "Fantrax Oct 12 2026 ~6:20 AM PT trade-alert (/workspace/fantrax-trade-alert-2026-10-12-6am.json): blocks refresh (TTAB 16 — Ji'Ayir Brown removed, updated Oct 11 9:56 AM; others unchanged, Eddies 9) + Mon Oct 12 ~6:50 AM PT roster sync. No new completed trades. Pending 0.",
+  "updated": "2026-10-13",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json): date refresh only. No new completed trades. Pending 0. Trade blocks unchanged from prior sync.",
   "season": 2026,
   "trades": [
     {
@@ -493,7 +493,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax Oct 12 2026 ~6:20 AM PT trade-alert + ~6:50 AM roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax Oct 13 2026 ~8:20 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Saltese↔Substation Carnell Tate for Dre Greenlaw+Denzel Boston (Oct 9 9:58 AM); Newman↔Saltese Aaron Jones+$5 FAAB for Nathan Landman (Oct 3 12:22 PM); Saltese↔Substation Boston for Montgomery (Sep 28 10:04 AM).",
   "hqComplete": true
 }

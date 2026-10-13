@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-12 6:50 AM PT",
+  "asOf": "2026-10-13 8:20 AM PT",
   "faabLeft": 65,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -12,14 +12,14 @@
     ],
     "RB": [
       "Jonathan Taylor",
-      "Seth McGowan",
-      "TreVeyon Henderson"
+      "Seth McGowan"
     ],
     "WR": [
       "Zay Flowers",
       "Davante Adams",
       "Matthew Golden",
       "Tee Higgins",
+      "A.J. Brown",
       "Myles Price"
     ],
     "TE": [
@@ -31,38 +31,38 @@
     "LB": [
       "Azeez Al-Shaair",
       "Zaire Franklin",
+      "Jake Hansen",
       "Nathan Landman",
-      "Eric Wilson",
-      "Jake Hansen"
+      "Eric Wilson"
     ],
     "DB": [
-      "Jevon Holland",
+      "L'Jarius Sneed",
       "Xavier Watts",
-      "L'Jarius Sneed"
+      "Jevon Holland"
     ],
     "IR": [
       "Jordan Mason",
-      "A.J. Brown",
+      "TreVeyon Henderson",
       "Kaden Elliss"
     ]
   },
-  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $65. IR: Jordan Mason, A.J. Brown, Kaden Elliss.",
+  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $65. IR: Jordan Mason, TreVeyon Henderson, Kaden Elliss.",
   "injuryFlags": [
-    "TreVeyon Henderson — INJ (reserve)",
+    "A.J. Brown — IR (IR - Ankle) (reserve)",
     "Jordan Mason — IR (IR - Thumb) (IR slot)",
-    "A.J. Brown — IR (IR - Ankle) (IR slot)",
+    "TreVeyon Henderson — INJ (IR slot)",
     "Kaden Elliss — O (Calf - Out Indefinitely) (IR slot)"
   ],
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "TreVeyon Henderson — INJ (reserve)",
+    "A.J. Brown — IR (IR - Ankle) (reserve)",
     "Jordan Mason — IR (IR - Thumb) (IR slot)",
-    "A.J. Brown — IR (IR - Ankle) (IR slot)",
+    "TreVeyon Henderson — INJ (IR slot)",
     "Kaden Elliss — O (Calf - Out Indefinitely) (IR slot)"
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-10-13"
 }

@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-12",
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT. All 14 balances verified unchanged vs prior HQ (ITS $31, NLS $65, SAL $11, LAB $67, MDP $91, ERE $68, DDG $3, TTA $42, HYP $53, MMD $40, ULT $10, VOG $69, PKT $101, SUB $29).",
+  "updated": "2026-10-13",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT. All 14 balances verified unchanged vs prior HQ (ITS $31, NLS $65, SAL $11, LAB $67, MDP $91, ERE $68, DDG $3, TTA $42, HYP $53, MMD $40, ULT $10, VOG $69, PKT $101, SUB $29).",
   "startingBudget": 115,
-  "note": "Oct 12 AM: all 14 FAAB balances verified against live Fantrax — no changes since Oct 11. Sun Oct 11 moves (Doubtpfizer +Kyle Pitts, TTAB −Ji'Ayir Brown) were $0/null FA moves, excluded per excludeZeroBids.",
+  "note": "Oct 13 AM: all 14 FAAB balances verified against live Fantrax — no changes since Oct 12. Six window drops were $0/null FA moves (no $ claims), excluded per excludeZeroBids. Claims unchanged.",
   "excludeZeroBids": true,
   "teamBalances": [
     {

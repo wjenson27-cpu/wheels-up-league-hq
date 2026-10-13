@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-12 6:50 AM PT",
+  "asOf": "2026-10-13 8:20 AM PT",
   "faabLeft": 67,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -14,7 +14,8 @@
       "Jeremiyah Love",
       "Jaylen Warren",
       "Kyren Williams",
-      "Tyler Allgeier"
+      "Tyler Allgeier",
+      "Jaylen Wright"
     ],
     "WR": [
       "Puka Nacua",
@@ -37,19 +38,17 @@
     ],
     "DB": [
       "Minkah Fitzpatrick",
-      "Hezekiah Masses",
       "Ronnie Hickman"
     ],
     "IR": [
-      "Jaylen Wright",
       "Caleb Douglas"
     ]
   },
-  "notes": "Oct 12 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 2. FAAB $67. IR: Jaylen Wright, Caleb Douglas.",
+  "notes": "Oct 13 rebuild from live Fantrax: Active 13 / Reserve 7 / IR 1. FAAB $67. IR: Caleb Douglas. −Hezekiah Masses (DB LV) Mon Oct 12 3:02 PM.",
   "injuryFlags": [
     "Caleb Douglas — O (Ankle - Out Indefinitely) (IR slot)"
   ],
-  "source": "Fantrax roster sync Mon Oct 12 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-12-roster-sync.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -57,5 +56,5 @@
   "flags": [
     "Caleb Douglas — O (Ankle - Out Indefinitely) (IR slot)"
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-10-13"
 }
