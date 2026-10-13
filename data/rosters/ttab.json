@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-13 8:20 AM PT",
+  "asOf": "2026-10-13 4:15 PM PT",
   "faabLeft": 42,
   "startingQB": "Josh Allen",
   "roster": {
@@ -44,17 +44,17 @@
       "Andrew Wingard"
     ]
   },
-  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 5 / IR 2. FAAB $42. IR: Divine Deablo, Andrew Wingard.",
+  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 5 / IR 2. FAAB $42.",
   "injuryFlags": [
-    "Andrew Wingard — O (Knee - Out Indefinitely) (IR slot)"
+    "Andrew Wingard \u2014 Q (Knee) (IR slot)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Andrew Wingard — O (Knee - Out Indefinitely) (IR slot)"
+    "Andrew Wingard \u2014 Q (Knee) (IR slot)"
   ],
   "updated": "2026-10-13"
 }

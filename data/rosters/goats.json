@@ -2,25 +2,24 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-10-13 8:20 AM PT",
+  "asOf": "2026-10-13 4:15 PM PT",
   "faabLeft": 69,
-  "startingQB": "Sam Darnold",
+  "startingQB": "Patrick Mahomes",
   "roster": {
     "QB": [
-      "Sam Darnold",
       "Patrick Mahomes"
     ],
     "RB": [
       "Bucky Irving",
-      "Chase Brown",
       "Derrick Henry",
       "Alvin Kamara",
-      "Samaje Perine"
+      "Samaje Perine",
+      "Chase Brown"
     ],
     "WR": [
       "DK Metcalf",
-      "Marvin Harrison",
-      "Devaughn Vele"
+      "Devaughn Vele",
+      "Marvin Harrison"
     ],
     "TE": [
       "George Kittle"
@@ -31,37 +30,35 @@
     ],
     "LB": [
       "Drake Thomas",
-      "Devin Bush",
-      "Arvell Reese",
       "Devin Lloyd",
+      "Arvell Reese",
+      "Devin Bush",
       "Quincy Williams"
     ],
     "DB": [
-      "Josh Metellus",
-      "Amik Robertson"
+      "Deonte Banks",
+      "Amik Robertson",
+      "Josh Metellus"
     ],
     "IR": [
-      "Josh Jacobs",
-      "Deonte Banks"
+      "Josh Jacobs"
     ]
   },
-  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 2. FAAB $69. IR: Josh Jacobs, Deonte Banks.",
+  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $69.",
   "injuryFlags": [
-    "Marvin Harrison — O (Coach's decision - Out Indefinitely) (reserve)",
-    "Josh Jacobs — INJ (IR slot)",
-    "Drake Thomas — INJ (active)"
+    "Josh Jacobs \u2014 CEL (Personal - Reserve Commissioner Exempt List) (IR slot)",
+    "Drake Thomas \u2014 Q (Ankle) (active)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [
-    "Drake Thomas — INJ (active)"
+    "Drake Thomas \u2014 Q (Ankle) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Marvin Harrison — O (Coach's decision - Out Indefinitely) (reserve)",
-    "Josh Jacobs — INJ (IR slot)",
-    "Drake Thomas — INJ (active)"
+    "Josh Jacobs \u2014 CEL (Personal - Reserve Commissioner Exempt List) (IR slot)",
+    "Drake Thomas \u2014 Q (Ankle) (active)"
   ],
   "updated": "2026-10-13"
 }

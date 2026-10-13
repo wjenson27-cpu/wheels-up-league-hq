@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-13 8:20 AM PT",
+  "asOf": "2026-10-13 4:15 PM PT",
   "faabLeft": 65,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -46,23 +46,25 @@
       "Kaden Elliss"
     ]
   },
-  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $65. IR: Jordan Mason, TreVeyon Henderson, Kaden Elliss.",
+  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $65.",
   "injuryFlags": [
-    "A.J. Brown — IR (IR - Ankle) (reserve)",
-    "Jordan Mason — IR (IR - Thumb) (IR slot)",
-    "TreVeyon Henderson — INJ (IR slot)",
-    "Kaden Elliss — O (Calf - Out Indefinitely) (IR slot)"
+    "A.J. Brown \u2014 IR (Ankle) (reserve)",
+    "Jordan Mason \u2014 IR (Thumb) (IR slot)",
+    "TreVeyon Henderson \u2014 DOUBTFUL (Ankle) (IR slot)",
+    "Kaden Elliss \u2014 Q (Calf) (IR slot)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "A.J. Brown \u2014 IR (Ankle) (reserve)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "A.J. Brown — IR (IR - Ankle) (reserve)",
-    "Jordan Mason — IR (IR - Thumb) (IR slot)",
-    "TreVeyon Henderson — INJ (IR slot)",
-    "Kaden Elliss — O (Calf - Out Indefinitely) (IR slot)"
+    "A.J. Brown \u2014 IR (Ankle) (reserve)",
+    "Jordan Mason \u2014 IR (Thumb) (IR slot)",
+    "TreVeyon Henderson \u2014 DOUBTFUL (Ankle) (IR slot)",
+    "Kaden Elliss \u2014 Q (Calf) (IR slot)"
   ],
   "updated": "2026-10-13"
 }

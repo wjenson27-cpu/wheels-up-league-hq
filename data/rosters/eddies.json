@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-13 8:20 AM PT",
+  "asOf": "2026-10-13 4:15 PM PT",
   "faabLeft": 68,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -46,31 +46,31 @@
       "Travis Etienne"
     ]
   },
-  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $68. IR: Zach Charbonnet, Jordyn Tyson, Travis Etienne. Hall Active. Lake Active.",
+  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $68.",
   "injuryFlags": [
-    "Breece Hall — O (Quadriceps - Out Indefinitely) (active)",
-    "Jalen Coker — Q (Quadriceps - Questionable) (active; bye W5)",
-    "Zach Charbonnet — IR (PUP-R - Knee - acl) (IR slot)",
-    "Jordyn Tyson — IR (IR-R - Hamstring) (IR slot)",
-    "Travis Etienne — IR (IR - Hamstring) (IR slot)",
-    "Quentin Lake — Q (Hip - Questionable) (active)"
+    "Breece Hall \u2014 Q (Quadriceps) (active)",
+    "Jalen Coker \u2014 Q (Quadriceps) (active)",
+    "Zach Charbonnet \u2014 PUP (Knee - acl) (IR slot)",
+    "Jordyn Tyson \u2014 IR (Hamstring) (IR slot)",
+    "Travis Etienne \u2014 IR (Hamstring) (IR slot)",
+    "Leonard Williams \u2014 Q (Ankle) (reserve)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
-    "Breece Hall — O (Quadriceps - Out Indefinitely) (active)",
-    "Jalen Coker — Q (Quadriceps - Questionable) (active; bye W5)",
-    "Quentin Lake — Q (Hip - Questionable) (active)"
+    "Breece Hall \u2014 Q (Quadriceps) (active)",
+    "Jalen Coker \u2014 Q (Quadriceps) (active)",
+    "Leonard Williams \u2014 Q (Ankle) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Breece Hall — O (Quadriceps - Out Indefinitely) (active)",
-    "Jalen Coker — Q (Quadriceps - Questionable) (active; bye W5)",
-    "Zach Charbonnet — IR (PUP-R - Knee - acl) (IR slot)",
-    "Jordyn Tyson — IR (IR-R - Hamstring) (IR slot)",
-    "Travis Etienne — IR (IR - Hamstring) (IR slot)",
-    "Quentin Lake — Q (Hip - Questionable) (active)"
+    "Breece Hall \u2014 Q (Quadriceps) (active)",
+    "Jalen Coker \u2014 Q (Quadriceps) (active)",
+    "Zach Charbonnet \u2014 PUP (Knee - acl) (IR slot)",
+    "Jordyn Tyson \u2014 IR (Hamstring) (IR slot)",
+    "Travis Etienne \u2014 IR (Hamstring) (IR slot)",
+    "Leonard Williams \u2014 Q (Ankle) (reserve)"
   ],
   "updated": "2026-10-13"
 }

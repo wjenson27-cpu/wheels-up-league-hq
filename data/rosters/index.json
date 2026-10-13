@@ -1,5 +1,6 @@
 {
   "updated": "2026-10-13",
+  "asOf": "2026-10-13 4:15 PM PT",
   "teams": [
     "dongers",
     "doubtpfizer",
@@ -16,7 +17,5 @@
     "ttab",
     "ultron"
   ],
-  "count": 14,
-  "note": "Oct 13 AM: all 14 rosters rebuilt from live Fantrax scrape. Window drops: Ultron −Brissett/−Gesicki/−Taaffe; Substation −Izien/−Skyy Moore; LAB −Hezekiah Masses. No $ FAAB claims.",
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)"
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT"
 }

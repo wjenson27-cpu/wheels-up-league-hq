@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-13 8:20 AM PT",
+  "asOf": "2026-10-13 4:15 PM PT",
   "faabLeft": 11,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -11,15 +11,15 @@
     ],
     "RB": [
       "Omarion Hampton",
-      "David Montgomery",
       "Rico Dowdle",
-      "Aaron Jones"
+      "Aaron Jones",
+      "David Montgomery"
     ],
     "WR": [
       "Jaxon Smith-Njigba",
       "Denzel Boston",
-      "DeVonta Smith",
       "Stefon Diggs",
+      "DeVonta Smith",
       "Dohnte Meyers"
     ],
     "TE": [
@@ -46,32 +46,37 @@
       "Micah Parsons"
     ]
   },
-  "notes": "Oct 13 rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $11. IR: Ja'Kobi Lane, Jonathon Brooks, Micah Parsons.",
+  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $11.",
   "injuryFlags": [
-    "David Montgomery — INJ (active)",
-    "DeVonta Smith — O (Out) (active)",
-    "Stefon Diggs — O (Hamstring - Out Indefinitely) (reserve)",
-    "Rico Dowdle — O (Out) (reserve)",
-    "Ja'Kobi Lane — IR (IR - Wrist) (IR slot)",
-    "Jonathon Brooks — IR (IR - Abdomen) (IR slot)",
-    "Micah Parsons — IR (PUP-R - Knee - acl) (IR slot)"
+    "Jaxon Smith-Njigba \u2014 Q (Ankle) (active)",
+    "Stefon Diggs \u2014 Q (Hamstring) (active)",
+    "DeVonta Smith \u2014 Q (Hamstring) (active)",
+    "Rico Dowdle \u2014 Q (Toe) (reserve)",
+    "David Montgomery \u2014 DOUBTFUL (Groin) (reserve)",
+    "Ja'Kobi Lane \u2014 IR (Wrist) (IR slot)",
+    "Jonathon Brooks \u2014 IR (Abdomen) (IR slot)",
+    "Micah Parsons \u2014 PUP (Knee - acl) (IR slot)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~8:20 AM PT (/workspace/fantrax-sync-2026-10-13.json)",
+  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
-    "David Montgomery — INJ (active)",
-    "DeVonta Smith — O (Out) (active)"
+    "Jaxon Smith-Njigba \u2014 Q (Ankle) (active)",
+    "Stefon Diggs \u2014 Q (Hamstring) (active)",
+    "DeVonta Smith \u2014 Q (Hamstring) (active)",
+    "Rico Dowdle \u2014 Q (Toe) (reserve)",
+    "David Montgomery \u2014 DOUBTFUL (Groin) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "David Montgomery — INJ (active)",
-    "DeVonta Smith — O (Out) (active)",
-    "Stefon Diggs — O (Hamstring - Out Indefinitely) (reserve)",
-    "Rico Dowdle — O (Out) (reserve)",
-    "Ja'Kobi Lane — IR (IR - Wrist) (IR slot)",
-    "Jonathon Brooks — IR (IR - Abdomen) (IR slot)",
-    "Micah Parsons — IR (PUP-R - Knee - acl) (IR slot)"
+    "Jaxon Smith-Njigba \u2014 Q (Ankle) (active)",
+    "Stefon Diggs \u2014 Q (Hamstring) (active)",
+    "DeVonta Smith \u2014 Q (Hamstring) (active)",
+    "Rico Dowdle \u2014 Q (Toe) (reserve)",
+    "David Montgomery \u2014 DOUBTFUL (Groin) (reserve)",
+    "Ja'Kobi Lane \u2014 IR (Wrist) (IR slot)",
+    "Jonathon Brooks \u2014 IR (Abdomen) (IR slot)",
+    "Micah Parsons \u2014 PUP (Knee - acl) (IR slot)"
   ],
   "updated": "2026-10-13"
 }
