@@ -1,8 +1,64 @@
 {
-  "updated": "2026-10-06",
-  "note": "Week 4 recap approved by Bill Oct 6 2026; published.",
+  "updated": "2026-10-13",
+  "note": "Week 5 recap DRAFT pending Bill approval; do not publish prose until yes/go/push.",
   "pendingPublish": false,
   "recaps": [
+    {
+      "week": 5,
+      "season": 2026,
+      "sample": false,
+      "title": "Week 5 Recap: LAB Prints 299.5, Eddies Hit 298, Goats Finally Blink",
+      "dateLabel": "Tuesday drop · Week 5 finals locked",
+      "coldOpen": "Week 5 in WU country: Jesse’s Little Ass Boys dropped a 299.5 kitty built on a 231.5 offense, Bill’s Eddies punched in a 298 for a third straight W, and Mike Heff’s Goats finally lost — Hyper took them 235–213 with T.J. Watt on the board for a clean zero. Pocket survived Gavin’s Dongers 287–280 in the week’s street fight, Ultron’s 207 was the low among the alive and walked them off the bus, and on Last Ride Luke’s Saltese (209) edged Tim’s Divers (203) so Morningside is out for good. Three teams sit at 4-1 (Pocket, LAB, Goats). Dongers are still looking for a first win at 0-5. Hero of the week: LAB at 299.5 (Warren 56 / Puka 42 / Likely 40.5 / Daniels 38). Goat of the week: Watt’s goose egg in the Goats’ first L, and Ultron’s ticket off the bus.",
+      "matchups": [
+        {
+          "scoreline": "Little Ass Boys 299.5, Morningside Muff Divers 203",
+          "blurb": "Jesse’s LAB didn’t just win the kitty — they printed an **offense** that hit **231.5** by itself. **Jaylen Warren’s 56**, **Puka Nacua’s 42**, **Isaiah Likely’s 40.5**, **Jayden Daniels’ 38** and **Mike Evans’ 32** turned the skill group into a road grader, and the defense only needed **68**. Tim’s Divers got **Aaron Rodgers’ 33**, **Jessie Bates’ 25** and **Demetrius Knight’s 24**, and still finished at **203**, the week’s floor. Same 203 lost Last Ride to Saltese by 6, so the Divers are out of re-entry for good. Juice: Warren/Puka/Likely/Daniels; LAB to **4-1** with the week’s high mark. Junk: **Roman Wilson’s 0**; Morningside taking two L’s off one scoreboard."
+        },
+        {
+          "scoreline": "Eagle Ridge Eddies 298, Mrs. Doubtpfizer 231.5",
+          "blurb": "Bill’s Eddies made it three straight the loud way. The offense finally showed up for **170** behind **Trevor Lawrence’s 36**, **Brock Bowers’ 34.5**, **Garrett Wilson’s 29** and **Tyler Warren’s 26.5**, and the IDP unit still added **128** with **Evan Williams 28**, **Fred Warner 25** and **Trenton Simpson 25**. That’s **298**, second-best score of the week, and a move to **3-2**. Kyle’s Doubtpfizer won the defense (**136** to 128) behind **Sonny Styles’ 31**, **Nakobe Dean’s 23** and **Reed Blankenship’s 22**, plus **Braelon Allen’s 27** on offense — and still lost by **66.5** because the skill room only managed **95.5**. Juice: Lawrence/Bowers/G.Wilson; Eddies’ third straight. Junk: Doubtpfizer’s 95.5 offense; **Tre Harris’ 3**; Kyle to **1-4**."
+        },
+        {
+          "scoreline": "Pocket Agents 287, Drummond Dongers 280",
+          "blurb": "Kellen “the Host” Olson almost got cooked. Gavin’s Dongers threw **David Bailey’s 47** and **Parker Washington’s 43** (from a 1 last week) plus **Joe Burrow’s 32** at a **280** that would have won most weeks — and still lost by **7**. Pocket’s offense was quiet (**99**) with **CeeDee Lamb at 2** and **Jaylen Waddle at 3**, but the IDP unit went nuclear for **188**: **Will Anderson Jr. 37**, **Barrett Carter 34**, **Cooper DeJean 30**, **Ernest Jones 30**. Goff’s **34** and **Trey McBride’s 27.5** kept the lights on. Pocket to **4-1** with the league’s top PF (**1443.5**). Dongers are **0-5** with another quality loss. Juice: Pocket’s 188 defense; Anderson’s 37. Junk: CeeDee’s 2; another Dongers smash that still ends in an L."
+        },
+        {
+          "scoreline": "Substation 257, Newman Lake Sleep Paralysis Demons 246.5",
+          "blurb": "Nate’s Substation took down Rymo’s SPD’s in a skill-stack fight. **Jordan Love’s 40**, **Malik Nabers’ 35**, **George Pickens’ 34** and **Drake London’s 26** built a **149** offense, and **Carson Schwesinger 32 / Tremaine Edmunds 29** kept the defense honest for a **257**. Rymo’s board actually won the IDP half (**144**) behind **Nathan Landman’s 40**, **Zaire Franklin’s 29** and **Azeez Al-Shaair’s 26**, plus **Matthew Golden’s 28** — and fell **10.5** short. Substation moves to **3-2**; SPD’s drop to **3-2**. Juice: Love/Nabers/Pickens; Landman’s 40 in an L. Junk: **RJ Harvey 0 / Kevin Winston 0 / Carnell Tate 1 / Christian Izien 1** — four Substation starters combining for 2."
+        },
+        {
+          "scoreline": "Indian Trail Slumlords 243.5, Ultron 207",
+          "blurb": "Ryan Towner’s Slumlords bounced back with a QB-RB nuke. **Drake Maye’s 53** and **Jahmyr Gibbs’ 46** (now the OMVP leader at **174** YTD) plus **James Cook’s 30** and **Budda Baker’s 33** carried a **243.5** that put Brian Aga’s Ultron on the bus exit ramp. Ultron’s **207** was the lowest score among teams still alive — off the bus. **Jacoby Brissett’s 28**, **Foyesade Oluokun’s 25** and **Ja’Marr Chase’s 21** weren’t enough when **Dallas Turner** turned in a **1**. Slumlords to **2-3**; Ultron to **1-4**. Juice: Maye 53 / Gibbs 46; Gibbs takes the OMVP crown. Junk: Ultron’s 207 week floor among the alive; Turner’s 1."
+        },
+        {
+          "scoreline": "Towner Top Aga Bottom 242, Saltese Slamm 209",
+          "blurb": "Chase’s TTAB snapped the skid behind **Christian Watson’s 44** and **Josh Allen’s 38**, with **Zack Baun 32 / Dane Belton 26 / Dee Winters 25** padding the IDP. That’s **242** and a move to **3-2**. Luke’s Saltese got **Matthew Stafford’s 39**, **JSN’s 30** and **Aaron Jones’ 26**, then the TE/flex room mailed it in: **Oronde Gadsden 0**, **David Montgomery 1**. Saltese drops to **2-3** on the board — but the same **209** beat Morningside’s **203** on Last Ride, so Luke stays alive for re-entry and Tim is done. Juice: Watson/Allen; Saltese’s Last Ride stay-alive. Junk: Gadsden’s goose egg; Montgomery’s 1; **Khalil Mack’s 1** for TTAB."
+        },
+        {
+          "scoreline": "The Hypersecretors 235, Valley Old Goats 213",
+          "blurb": "Jacob Crisp’s Hyper finally knocked off the unbeaten. It wasn’t pretty on offense (**101**), but the IDP unit hit **134** behind **Payton Wilson’s 36**, **Josh Hines-Allen’s 22**, **Blake Cashman’s 22** and **Jacob Rodriguez’s 21**, plus **Sam LaPorta’s 23**. Mike Heff’s Goats got **Bucky Irving’s 40** and **Derrick Henry’s 29** and still lost their first game of 2026 — because **T.J. Watt put up a 0** and the skill leftovers (Kamara 3 / DK 5 / Chase Brown 6 / Darnold 7) never woke up. Hyper to **2-3**; Goats fall into a three-way **4-1** tie with Pocket and LAB. Juice: Hyper’s first signature W; Payton Wilson’s 36. Junk: Watt’s 0 in the Goats’ first L; the undefeated club is closed."
+        }
+      ],
+      "heroes": [
+        "LAB 299.5: Warren 56 / Puka 42 / Likely 40.5 / Daniels 38; week kitty, offense 231.5",
+        "Eddies 298: Lawrence 36 / Bowers 34.5 / G.Wilson 29; third straight W, up to 3-2",
+        "Pocket’s 188 defense: Will Anderson 37 / Carter 34 / DeJean 30 / Ernest Jones 30; survives 280",
+        "Drake Maye 53 / Jahmyr Gibbs 46: Slumlords bounce; Gibbs takes OMVP at 174 YTD",
+        "Will Anderson Jr. 37: takes the DMVP lead at 159 YTD",
+        "Saltese’s Last Ride stay-alive: 209 beats Morningside 203"
+      ],
+      "goats": [
+        "T.J. Watt 0: Goats’ first loss of 2026",
+        "Ultron 207: week floor among the alive — off the bus",
+        "Morningside: lost to LAB and out of Last Ride on the same 203",
+        "Dongers 280 in an L: Bailey 47 / Washington 43 still leave them 0-5",
+        "CeeDee 2 / Waddle 3 (Pocket); Gadsden 0 / Montgomery 1 (Saltese); Harvey 0 / Winston 0 (Sub)"
+      ],
+      "closer": "Kitty to LAB at 299.5. Eddies hit 298 for a third straight. Pocket stays perfect on the defense and sits alone atop PF at 1443.5. Ultron is off the bus; nine teams remain. Last Ride: Saltese stays alive and Morningside is done; Week 6 is Saltese vs Ultron. Pocket, LAB and Goats share 4-1, and the Dongers are still looking for win one. WWJDD: start your studs, don’t zero out your edge rusher, and remember a 280 can still be a loss in this league.",
+      "pendingPublish": true,
+      "approvedForPush": false
+    },
     {
       "week": 4,
       "season": 2026,
