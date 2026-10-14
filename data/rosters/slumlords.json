@@ -2,8 +2,8 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-14 6:45 AM PT",
-  "faabLeft": 31,
+  "asOf": "2026-10-14 9:30 AM PT",
+  "faabLeft": 1,
   "startingQB": "Drake Maye",
   "roster": {
     "QB": [
@@ -13,13 +13,15 @@
       "Jahmyr Gibbs",
       "James Cook",
       "Quinshon Judkins",
-      "Will Shipley"
+      "Will Shipley",
+      "Dameon Pierce"
     ],
     "WR": [
       "Romeo Doubs",
       "Chris Godwin",
       "Kalif Raymond",
-      "Wan'Dale Robinson"
+      "Wan'Dale Robinson",
+      "Darius Cooper"
     ],
     "TE": [
       "Harold Fannin",
@@ -32,7 +34,8 @@
     ],
     "LB": [
       "Anthony Hill",
-      "Alex Anzalone"
+      "Alex Anzalone",
+      "Jaden Dugger"
     ],
     "DB": [
       "Budda Baker",
@@ -44,27 +47,27 @@
       "Isiah Pacheco"
     ]
   },
-  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $31.",
+  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $31. | Oct 14 W6 waivers/FA: +Jaden Dugger $10; +Dameon Pierce $10; +Darius Cooper $10. FAAB $1.",
   "injuryFlags": [
-    "Quinshon Judkins — Q (Foot) (active)",
-    "Will Shipley — D (Foot) (active)",
-    "Isiah Pacheco — IR (Back) (IR slot)",
-    "Talanoa Hufanga — Q (Ankle) (active)"
+    "Quinshon Judkins \u2014 Q (Foot) (active)",
+    "Will Shipley \u2014 D (Foot) (active)",
+    "Isiah Pacheco \u2014 IR (Back) (IR slot)",
+    "Talanoa Hufanga \u2014 Q (Ankle) (active)"
   ],
-  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
+  "source": "Fantrax Week 6 waivers Wed Oct 14 2026 9:00 AM PT + FA 9:03\u20139:17 (/workspace/fantrax-waivers-standings-2026-10-14.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
-    "Quinshon Judkins — Q (Foot) (active)",
-    "Will Shipley — D (Foot) (active)",
-    "Talanoa Hufanga — Q (Ankle) (active)"
+    "Quinshon Judkins \u2014 Q (Foot) (active)",
+    "Will Shipley \u2014 D (Foot) (active)",
+    "Talanoa Hufanga \u2014 Q (Ankle) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Quinshon Judkins — Q (Foot) (active)",
-    "Will Shipley — D (Foot) (active)",
-    "Isiah Pacheco — IR (Back) (IR slot)",
-    "Talanoa Hufanga — Q (Ankle) (active)"
+    "Quinshon Judkins \u2014 Q (Foot) (active)",
+    "Will Shipley \u2014 D (Foot) (active)",
+    "Isiah Pacheco \u2014 IR (Back) (IR slot)",
+    "Talanoa Hufanga \u2014 Q (Ankle) (active)"
   ],
   "updated": "2026-10-14"
 }

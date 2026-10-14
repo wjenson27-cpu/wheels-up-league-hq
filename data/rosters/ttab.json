@@ -2,8 +2,8 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-14 6:45 AM PT",
-  "faabLeft": 42,
+  "asOf": "2026-10-14 9:30 AM PT",
+  "faabLeft": 39,
   "startingQB": "Josh Allen",
   "roster": {
     "QB": [
@@ -18,7 +18,6 @@
     ],
     "WR": [
       "Christian Watson",
-      "Tre Tucker",
       "Jameson Williams"
     ],
     "TE": [
@@ -26,7 +25,8 @@
       "Jake Ferguson"
     ],
     "DL": [
-      "Khalil Mack"
+      "Khalil Mack",
+      "Akheem Mesidor"
     ],
     "LB": [
       "Dorian Williams",
@@ -37,24 +37,25 @@
     "DB": [
       "Dane Belton",
       "Caleb Downs",
-      "Javon Bullard"
+      "Javon Bullard",
+      "Jordan Battle"
     ],
     "IR": [
       "Divine Deablo",
       "Andrew Wingard"
     ]
   },
-  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 5 / IR 2. FAAB $42.",
+  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 5 / IR 2. FAAB $42. | Oct 14 W6 waivers/FA: +Akheem Mesidor $3 (\u2212Tre Tucker); +Jordan Battle. FAAB $39.",
   "injuryFlags": [
-    "Andrew Wingard — Q (Knee) (IR slot)"
+    "Andrew Wingard \u2014 Q (Knee) (IR slot)"
   ],
-  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
+  "source": "Fantrax Week 6 waivers Wed Oct 14 2026 9:00 AM PT + FA 9:03\u20139:17 (/workspace/fantrax-waivers-standings-2026-10-14.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Andrew Wingard — Q (Knee) (IR slot)"
+    "Andrew Wingard \u2014 Q (Knee) (IR slot)"
   ],
   "updated": "2026-10-14"
 }

@@ -2,8 +2,8 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-14 6:45 AM PT",
-  "faabLeft": 53,
+  "asOf": "2026-10-14 9:30 AM PT",
+  "faabLeft": 50,
   "startingQB": "Justin Herbert",
   "roster": {
     "QB": [
@@ -23,7 +23,8 @@
       "Travis Hunter"
     ],
     "TE": [
-      "Sam LaPorta"
+      "Sam LaPorta",
+      "Darren Waller"
     ],
     "DL": [
       "Josh Hines-Allen"
@@ -44,19 +45,19 @@
       "Nick Bosa"
     ]
   },
-  "notes": "Oct 14 AM rebuild from live Fantrax: Active 13 / Reserve 6 / IR 2. FAAB $53.",
+  "notes": "Oct 14 AM rebuild from live Fantrax: Active 13 / Reserve 6 / IR 2. FAAB $53. | Oct 14 W6 waivers/FA: +Darren Waller $3. FAAB $50.",
   "injuryFlags": [
-    "Kenyon Sadiq — Q (Concussion) (IR slot)",
-    "Nick Bosa — Q (Calf) (IR slot)"
+    "Kenyon Sadiq \u2014 Q (Concussion) (IR slot)",
+    "Nick Bosa \u2014 Q (Calf) (IR slot)"
   ],
-  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
+  "source": "Fantrax Week 6 waivers Wed Oct 14 2026 9:00 AM PT + FA 9:03\u20139:17 (/workspace/fantrax-waivers-standings-2026-10-14.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Kenyon Sadiq — Q (Concussion) (IR slot)",
-    "Nick Bosa — Q (Calf) (IR slot)"
+    "Kenyon Sadiq \u2014 Q (Concussion) (IR slot)",
+    "Nick Bosa \u2014 Q (Calf) (IR slot)"
   ],
   "updated": "2026-10-14"
 }

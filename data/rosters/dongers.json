@@ -2,8 +2,8 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-10-14 6:45 AM PT",
-  "faabLeft": 3,
+  "asOf": "2026-10-14 9:30 AM PT",
+  "faabLeft": 2,
   "startingQB": "Joe Burrow",
   "roster": {
     "QB": [
@@ -38,7 +38,7 @@
       "Kyle Hamilton",
       "Xavier McKinney",
       "Kamren Kinchens",
-      "Daxton Hill"
+      "Jonas Sanker"
     ],
     "IR": [
       "Tyreek Hill",
@@ -46,34 +46,34 @@
       "Nick Cross"
     ]
   },
-  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $3.",
+  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $3. | Oct 14 W6 waivers/FA: +Jonas Sanker $1 (\u2212Daxton Hill). FAAB $2.",
   "injuryFlags": [
-    "T.J. Hockenson — Q (Concussion) (active)",
-    "KC Concepcion — Q (Concussion) (reserve)",
-    "Ladd McConkey — Q (Foot) (reserve)",
-    "Tyreek Hill — O (Knee - acl) (IR slot)",
-    "D.J. Moore — Q (Shoulder - ac joint) (IR slot)",
-    "T.J. Edwards — Q (Hamstring) (reserve)",
-    "Nick Cross — Q (Illness) (IR slot)"
+    "T.J. Hockenson \u2014 Q (Concussion) (active)",
+    "KC Concepcion \u2014 Q (Concussion) (reserve)",
+    "Ladd McConkey \u2014 Q (Foot) (reserve)",
+    "Tyreek Hill \u2014 O (Knee - acl) (IR slot)",
+    "D.J. Moore \u2014 Q (Shoulder - ac joint) (IR slot)",
+    "T.J. Edwards \u2014 Q (Hamstring) (reserve)",
+    "Nick Cross \u2014 Q (Illness) (IR slot)"
   ],
-  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
+  "source": "Fantrax Week 6 waivers Wed Oct 14 2026 9:00 AM PT + FA 9:03\u20139:17 (/workspace/fantrax-waivers-standings-2026-10-14.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
-    "T.J. Hockenson — Q (Concussion) (active)",
-    "KC Concepcion — Q (Concussion) (reserve)",
-    "Ladd McConkey — Q (Foot) (reserve)",
-    "T.J. Edwards — Q (Hamstring) (reserve)"
+    "T.J. Hockenson \u2014 Q (Concussion) (active)",
+    "KC Concepcion \u2014 Q (Concussion) (reserve)",
+    "Ladd McConkey \u2014 Q (Foot) (reserve)",
+    "T.J. Edwards \u2014 Q (Hamstring) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "T.J. Hockenson — Q (Concussion) (active)",
-    "KC Concepcion — Q (Concussion) (reserve)",
-    "Ladd McConkey — Q (Foot) (reserve)",
-    "Tyreek Hill — O (Knee - acl) (IR slot)",
-    "D.J. Moore — Q (Shoulder - ac joint) (IR slot)",
-    "T.J. Edwards — Q (Hamstring) (reserve)",
-    "Nick Cross — Q (Illness) (IR slot)"
+    "T.J. Hockenson \u2014 Q (Concussion) (active)",
+    "KC Concepcion \u2014 Q (Concussion) (reserve)",
+    "Ladd McConkey \u2014 Q (Foot) (reserve)",
+    "Tyreek Hill \u2014 O (Knee - acl) (IR slot)",
+    "D.J. Moore \u2014 Q (Shoulder - ac joint) (IR slot)",
+    "T.J. Edwards \u2014 Q (Hamstring) (reserve)",
+    "Nick Cross \u2014 Q (Illness) (IR slot)"
   ],
   "updated": "2026-10-14"
 }
