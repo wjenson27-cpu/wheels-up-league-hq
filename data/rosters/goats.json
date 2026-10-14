@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-10-13 4:15 PM PT",
+  "asOf": "2026-10-14 6:45 AM PT",
   "faabLeft": 69,
   "startingQB": "Patrick Mahomes",
   "roster": {
@@ -44,21 +44,21 @@
       "Josh Jacobs"
     ]
   },
-  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $69.",
+  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $69.",
   "injuryFlags": [
-    "Josh Jacobs \u2014 CEL (Personal - Reserve Commissioner Exempt List) (IR slot)",
-    "Drake Thomas \u2014 Q (Ankle) (active)"
+    "Josh Jacobs — Q (Personal - Reserve Commissioner Exempt List) (IR slot)",
+    "Drake Thomas — Q (Ankle) (active)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [
-    "Drake Thomas \u2014 Q (Ankle) (active)"
+    "Drake Thomas — Q (Ankle) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Josh Jacobs \u2014 CEL (Personal - Reserve Commissioner Exempt List) (IR slot)",
-    "Drake Thomas \u2014 Q (Ankle) (active)"
+    "Josh Jacobs — Q (Personal - Reserve Commissioner Exempt List) (IR slot)",
+    "Drake Thomas — Q (Ankle) (active)"
   ],
-  "updated": "2026-10-13"
+  "updated": "2026-10-14"
 }

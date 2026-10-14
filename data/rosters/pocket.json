@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-13 4:15 PM PT",
+  "asOf": "2026-10-14 6:45 AM PT",
   "faabLeft": 101,
   "startingQB": "Tyler Shough",
   "roster": {
@@ -30,14 +30,14 @@
     ],
     "LB": [
       "Josiah Trotter",
-      "Barrett Carter",
-      "Ernest Jones"
+      "Ernest Jones",
+      "Barrett Carter"
     ],
     "DB": [
       "Jaquan Brisker",
       "Cooper DeJean",
-      "Brandon Jones",
       "Amani Hooker",
+      "Brandon Jones",
       "Jalen Pitre"
     ],
     "IR": [
@@ -46,31 +46,31 @@
       "Adonai Mitchell"
     ]
   },
-  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $101.",
+  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $101.",
   "injuryFlags": [
-    "CeeDee Lamb \u2014 Q (Quadriceps) (active)",
-    "Saquon Barkley \u2014 Q (Hamstring) (IR slot)",
-    "Jonah Coleman \u2014 IR (Ankle) (IR slot)",
-    "Adonai Mitchell \u2014 Q (Finger) (IR slot)",
-    "Amani Hooker \u2014 Q (Concussion) (reserve)",
-    "Jalen Pitre \u2014 DOUBTFUL (Shoulder - ac joint) (reserve)"
+    "CeeDee Lamb — Q (Quadriceps) (active)",
+    "Saquon Barkley — Q (Hamstring) (IR slot)",
+    "Jonah Coleman — IR (Ankle) (IR slot)",
+    "Adonai Mitchell — Q (Finger) (IR slot)",
+    "Amani Hooker — Q (Concussion) (active)",
+    "Jalen Pitre — D (Shoulder - ac joint) (reserve)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "CeeDee Lamb \u2014 Q (Quadriceps) (active)",
-    "Amani Hooker \u2014 Q (Concussion) (reserve)",
-    "Jalen Pitre \u2014 DOUBTFUL (Shoulder - ac joint) (reserve)"
+    "CeeDee Lamb — Q (Quadriceps) (active)",
+    "Amani Hooker — Q (Concussion) (active)",
+    "Jalen Pitre — D (Shoulder - ac joint) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "CeeDee Lamb \u2014 Q (Quadriceps) (active)",
-    "Saquon Barkley \u2014 Q (Hamstring) (IR slot)",
-    "Jonah Coleman \u2014 IR (Ankle) (IR slot)",
-    "Adonai Mitchell \u2014 Q (Finger) (IR slot)",
-    "Amani Hooker \u2014 Q (Concussion) (reserve)",
-    "Jalen Pitre \u2014 DOUBTFUL (Shoulder - ac joint) (reserve)"
+    "CeeDee Lamb — Q (Quadriceps) (active)",
+    "Saquon Barkley — Q (Hamstring) (IR slot)",
+    "Jonah Coleman — IR (Ankle) (IR slot)",
+    "Adonai Mitchell — Q (Finger) (IR slot)",
+    "Amani Hooker — Q (Concussion) (active)",
+    "Jalen Pitre — D (Shoulder - ac joint) (reserve)"
   ],
-  "updated": "2026-10-13"
+  "updated": "2026-10-14"
 }

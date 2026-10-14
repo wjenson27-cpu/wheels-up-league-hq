@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-13",
-  "asOf": "2026-10-13 4:15 PM PT",
+  "updated": "2026-10-14",
+  "asOf": "2026-10-14 6:45 AM PT",
   "teams": [
     "dongers",
     "doubtpfizer",
@@ -17,5 +17,5 @@
     "ttab",
     "ultron"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT"
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)"
 }

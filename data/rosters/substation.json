@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-13 4:15 PM PT",
+  "asOf": "2026-10-14 6:45 AM PT",
   "faabLeft": 29,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -44,31 +44,31 @@
       "DeShon Elliott"
     ]
   },
-  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 4 / IR 3. FAAB $29.",
+  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 4 / IR 3. FAAB $29.",
   "injuryFlags": [
-    "Alec Pierce \u2014 IR (Heel) (reserve)",
-    "Terrance Ferguson \u2014 IR (Ankle) (IR slot)",
-    "Carson Schwesinger \u2014 Q (Ankle) (active)",
-    "Kevin Winston \u2014 Q (Quadriceps) (active)",
-    "Brian Branch \u2014 PUP (Achilles) (IR slot)",
-    "DeShon Elliott \u2014 IR (Knee) (IR slot)"
+    "Alec Pierce — IR (Heel) (reserve)",
+    "Terrance Ferguson — IR (Ankle) (IR slot)",
+    "Carson Schwesinger — Q (Ankle) (active)",
+    "Kevin Winston — Q (Quadriceps) (active)",
+    "Brian Branch — PUP (Achilles) (IR slot)",
+    "DeShon Elliott — IR (Knee) (IR slot)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
-    "Alec Pierce \u2014 IR (Heel) (reserve)",
-    "Carson Schwesinger \u2014 Q (Ankle) (active)",
-    "Kevin Winston \u2014 Q (Quadriceps) (active)"
+    "Alec Pierce — IR (Heel) (reserve)",
+    "Carson Schwesinger — Q (Ankle) (active)",
+    "Kevin Winston — Q (Quadriceps) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Alec Pierce \u2014 IR (Heel) (reserve)",
-    "Terrance Ferguson \u2014 IR (Ankle) (IR slot)",
-    "Carson Schwesinger \u2014 Q (Ankle) (active)",
-    "Kevin Winston \u2014 Q (Quadriceps) (active)",
-    "Brian Branch \u2014 PUP (Achilles) (IR slot)",
-    "DeShon Elliott \u2014 IR (Knee) (IR slot)"
+    "Alec Pierce — IR (Heel) (reserve)",
+    "Terrance Ferguson — IR (Ankle) (IR slot)",
+    "Carson Schwesinger — Q (Ankle) (active)",
+    "Kevin Winston — Q (Quadriceps) (active)",
+    "Brian Branch — PUP (Achilles) (IR slot)",
+    "DeShon Elliott — IR (Knee) (IR slot)"
   ],
-  "updated": "2026-10-13"
+  "updated": "2026-10-14"
 }

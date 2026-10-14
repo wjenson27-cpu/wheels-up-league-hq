@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-10-13 4:15 PM PT",
+  "asOf": "2026-10-14 6:45 AM PT",
   "faabLeft": 91,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -46,25 +46,25 @@
       "DeMarvion Overshown"
     ]
   },
-  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $91.",
+  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $91.",
   "injuryFlags": [
-    "Tre Harris \u2014 DOUBTFUL (Hamstring) (reserve)",
-    "Rashee Rice \u2014 Q (Hamstring) (IR slot)",
-    "Mason Graham \u2014 Q (Knee - mcl) (IR slot)",
-    "DeMarvion Overshown \u2014 Q (Hamstring) (IR slot)"
+    "Tre Harris — D (Hamstring) (reserve)",
+    "Rashee Rice — Q (Hamstring) (IR slot)",
+    "Mason Graham — Q (Knee - mcl) (IR slot)",
+    "DeMarvion Overshown — Q (Hamstring) (IR slot)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
   "lineupFlags": [
-    "Tre Harris \u2014 DOUBTFUL (Hamstring) (reserve)"
+    "Tre Harris — D (Hamstring) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Tre Harris \u2014 DOUBTFUL (Hamstring) (reserve)",
-    "Rashee Rice \u2014 Q (Hamstring) (IR slot)",
-    "Mason Graham \u2014 Q (Knee - mcl) (IR slot)",
-    "DeMarvion Overshown \u2014 Q (Hamstring) (IR slot)"
+    "Tre Harris — D (Hamstring) (reserve)",
+    "Rashee Rice — Q (Hamstring) (IR slot)",
+    "Mason Graham — Q (Knee - mcl) (IR slot)",
+    "DeMarvion Overshown — Q (Hamstring) (IR slot)"
   ],
-  "updated": "2026-10-13"
+  "updated": "2026-10-14"
 }

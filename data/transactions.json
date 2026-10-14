@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-13",
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT",
+  "updated": "2026-10-14",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
   "items": [
     {
       "date": "2026-10-13",
@@ -3281,7 +3281,7 @@
       "date": "2026-09-14",
       "type": "DROP",
       "team": "Pocket Agents",
-      "summary": "Dropped Cody Barton (2:11 PM PDT) \u2014 cleared trade block"
+      "summary": "Dropped Cody Barton (2:11 PM PDT) — cleared trade block"
     },
     {
       "date": "2026-09-13",
@@ -3317,7 +3317,7 @@
       "date": "2026-09-11",
       "type": "ADD/DROP",
       "team": "Morningside Muff Divers",
-      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) \u2014 Harris briefly added then dropped"
+      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) — Harris briefly added then dropped"
     },
     {
       "date": "2026-09-11",
@@ -3443,7 +3443,7 @@
       "date": "2026-09-08",
       "type": "TRADE",
       "team": "Pocket Agents / Substation",
-      "summary": "Bo Nix (Pocket) \u2192 Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
+      "summary": "Bo Nix (Pocket) → Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
     },
     {
       "date": "2026-09-08",
@@ -3533,7 +3533,7 @@
       "date": "2026-09-04",
       "type": "ADD/DROP",
       "team": "Substation",
-      "summary": "Churn: +Denzel Boston \u2212Craig Woodson; +Craig Woodson \u2212Brandon Jones; +Brandon Jones \u2212Dante Trader"
+      "summary": "Churn: +Denzel Boston −Craig Woodson; +Craig Woodson −Brandon Jones; +Brandon Jones −Dante Trader"
     },
     {
       "date": "2026-09-04",
@@ -3557,7 +3557,7 @@
       "date": "2026-09-03",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "Moves: +Emmett Johnson \u2212Nadjee Harris; +Nadjee Harris \u2212Justin Strnad; +Jaishawn Barham \u2212Trenton Simpson; +Bryce Boettcher \u2212Nadjee Harris"
+      "summary": "Moves: +Emmett Johnson −Nadjee Harris; +Nadjee Harris −Justin Strnad; +Jaishawn Barham −Trenton Simpson; +Bryce Boettcher −Nadjee Harris"
     },
     {
       "date": "2026-09-03",
@@ -3581,19 +3581,19 @@
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "The Hypersecretors",
-      "summary": "TE churn Helm/Barner; later +Gunnar Helm \u2212Dylan Sampson"
+      "summary": "TE churn Helm/Barner; later +Gunnar Helm −Dylan Sampson"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "+Nadjee Harris \u2212George Holani; +George Holani \u2212Keenan Allen; +Justin Strnad \u2212Branson Combs"
+      "summary": "+Nadjee Harris −George Holani; +George Holani −Keenan Allen; +Justin Strnad −Branson Combs"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Valley Old Goats",
-      "summary": "+Camryn Bynum \u2212Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
+      "summary": "+Camryn Bynum −Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
     },
     {
       "date": "2026-09-02",
@@ -3611,7 +3611,7 @@
       "date": "2026-09-02",
       "type": "FAAB",
       "team": "League",
-      "summary": "FAAB batch: notable \u2014 Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; \u2212Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0\u2013$2 IDP/depth adds"
+      "summary": "FAAB batch: notable — Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; −Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0–$2 IDP/depth adds"
     },
     {
       "date": "2026-09-01",
@@ -3629,7 +3629,7 @@
       "date": "2026-08-30",
       "type": "DRAFT",
       "team": "League",
-      "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
+      "summary": "20-round snake complete — Wheels Up 2026 is locked"
     },
     {
       "date": "2026-09-17",
@@ -3667,6 +3667,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 13 PM: +1 txn row(s) since AM sync. Oct 13 AM: +6 drop rows (Mon Oct 12 8:22 AM\u2013Tue Oct 13 7:42 AM PT). All $0/null FA drops; no pending claims. No new $ FAAB claims.",
+  "note": "Oct 14 AM sync: no new Claim/Drop/Trade rows after Valley Old Goats −Sam Darnold Tue Oct 13 11:06 AM PDT.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

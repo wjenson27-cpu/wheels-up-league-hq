@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-13 4:15 PM PT",
+  "asOf": "2026-10-14 6:45 AM PT",
   "faabLeft": 31,
   "startingQB": "Drake Maye",
   "roster": {
@@ -44,27 +44,27 @@
       "Isiah Pacheco"
     ]
   },
-  "notes": "Oct 13 PM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $31.",
+  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 1. FAAB $31.",
   "injuryFlags": [
-    "Quinshon Judkins \u2014 Q (Foot) (active)",
-    "Will Shipley \u2014 DOUBTFUL (Foot) (active)",
-    "Isiah Pacheco \u2014 IR (Back) (IR slot)",
-    "Talanoa Hufanga \u2014 Q (Ankle) (active)"
+    "Quinshon Judkins — Q (Foot) (active)",
+    "Will Shipley — D (Foot) (active)",
+    "Isiah Pacheco — IR (Back) (IR slot)",
+    "Talanoa Hufanga — Q (Ankle) (active)"
   ],
-  "source": "Fantrax roster sync Tue Oct 13 2026 ~4 PM PT (/workspace/fantrax-scrape-2026-10-13-pm-roster-sync.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
-    "Quinshon Judkins \u2014 Q (Foot) (active)",
-    "Will Shipley \u2014 DOUBTFUL (Foot) (active)",
-    "Talanoa Hufanga \u2014 Q (Ankle) (active)"
+    "Quinshon Judkins — Q (Foot) (active)",
+    "Will Shipley — D (Foot) (active)",
+    "Talanoa Hufanga — Q (Ankle) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Quinshon Judkins \u2014 Q (Foot) (active)",
-    "Will Shipley \u2014 DOUBTFUL (Foot) (active)",
-    "Isiah Pacheco \u2014 IR (Back) (IR slot)",
-    "Talanoa Hufanga \u2014 Q (Ankle) (active)"
+    "Quinshon Judkins — Q (Foot) (active)",
+    "Will Shipley — D (Foot) (active)",
+    "Isiah Pacheco — IR (Back) (IR slot)",
+    "Talanoa Hufanga — Q (Ankle) (active)"
   ],
-  "updated": "2026-10-13"
+  "updated": "2026-10-14"
 }
