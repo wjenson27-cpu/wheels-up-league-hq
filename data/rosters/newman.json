@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-14 9:30 AM PT",
+  "asOf": "2026-10-14 4:25 PM PT",
   "faabLeft": 64,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -17,8 +17,8 @@
     "WR": [
       "Zay Flowers",
       "Davante Adams",
-      "Matthew Golden",
       "A.J. Brown",
+      "Matthew Golden",
       "Tee Higgins",
       "Myles Price"
     ],
@@ -26,8 +26,8 @@
       "Juwan Johnson"
     ],
     "DL": [
-      "Andrew Van Ginkel",
-      "Carl Granderson"
+      "Carl Granderson",
+      "Andrew Van Ginkel"
     ],
     "LB": [
       "Azeez Al-Shaair",
@@ -46,25 +46,28 @@
       "Kaden Elliss"
     ]
   },
-  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $65. | Oct 14 W6 waivers/FA: +Carl Granderson $1 (\u2212Jevon Holland). FAAB $64.",
+  "notes": "Oct 14 4:25 PM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "A.J. Brown \u2014 IR (Ankle) (reserve)",
-    "Jordan Mason \u2014 IR (Thumb) (IR slot)",
-    "TreVeyon Henderson \u2014 D (Ankle) (IR slot)",
-    "Kaden Elliss \u2014 Q (Calf) (IR slot)"
+    "A.J. Brown — IR (Ankle) (active)",
+    "Jordan Mason — IR (Thumb) (IR slot)",
+    "TreVeyon Henderson — Q (Ankle) (IR slot)",
+    "L'Jarius Sneed — Q (Knee) (active)",
+    "Kaden Elliss — Q (Calf) (IR slot)"
   ],
-  "source": "Fantrax Week 6 waivers Wed Oct 14 2026 9:00 AM PT + FA 9:03\u20139:17 (/workspace/fantrax-waivers-standings-2026-10-14.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
   "lineupFlags": [
-    "A.J. Brown \u2014 IR (Ankle) (reserve)"
+    "A.J. Brown — IR (Ankle) (active)",
+    "L'Jarius Sneed — Q (Knee) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "A.J. Brown \u2014 IR (Ankle) (reserve)",
-    "Jordan Mason \u2014 IR (Thumb) (IR slot)",
-    "TreVeyon Henderson \u2014 D (Ankle) (IR slot)",
-    "Kaden Elliss \u2014 Q (Calf) (IR slot)"
+    "A.J. Brown — IR (Ankle) (active)",
+    "Jordan Mason — IR (Thumb) (IR slot)",
+    "TreVeyon Henderson — Q (Ankle) (IR slot)",
+    "L'Jarius Sneed — Q (Knee) (active)",
+    "Kaden Elliss — Q (Calf) (IR slot)"
   ],
   "updated": "2026-10-14"
 }

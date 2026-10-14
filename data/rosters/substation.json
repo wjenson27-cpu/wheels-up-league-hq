@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-14 9:30 AM PT",
+  "asOf": "2026-10-14 4:25 PM PT",
   "faabLeft": 15,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -11,17 +11,16 @@
       "Jordan Love"
     ],
     "RB": [
-      "Emmett Johnson",
-      "RJ Harvey",
       "Kenneth Gainwell",
+      "RJ Harvey",
+      "Emmett Johnson",
       "Tyjae Spears"
     ],
     "WR": [
       "Drake London",
       "Malik Nabers",
       "George Pickens",
-      "Carnell Tate",
-      "Alec Pierce"
+      "Carnell Tate"
     ],
     "TE": [
       "Tucker Kraft"
@@ -37,40 +36,41 @@
     "DB": [
       "Nick Emmanwori",
       "Malik Mustapha",
-      "Kevin Winston",
-      "Dante Trader",
-      "A.J. Haulcy"
+      "A.J. Haulcy",
+      "DeShon Elliott",
+      "Dante Trader"
     ],
     "IR": [
+      "Alec Pierce",
       "Brian Branch",
-      "DeShon Elliott"
+      "Kevin Winston"
     ]
   },
-  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 4 / IR 3. FAAB $29. | Oct 14 W6 waivers/FA: +Kenneth Gainwell $11; +A.J. Haulcy $3; +Tyjae Spears (\u2212Terrance Ferguson). FAAB $15.",
+  "notes": "Oct 14 4:25 PM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Alec Pierce \u2014 IR (Heel) (reserve)",
-    "Terrance Ferguson \u2014 IR (Ankle) (IR slot)",
-    "Carson Schwesinger \u2014 Q (Ankle) (active)",
-    "Kevin Winston \u2014 Q (Quadriceps) (active)",
-    "Brian Branch \u2014 PUP (Achilles) (IR slot)",
-    "DeShon Elliott \u2014 IR (Knee) (IR slot)"
+    "Tyjae Spears — Q (Knee) (reserve)",
+    "Alec Pierce — IR (Heel) (IR slot)",
+    "Carson Schwesinger — Q (Ankle) (active)",
+    "DeShon Elliott — IR (Knee) (reserve)",
+    "Brian Branch — PUP (Achilles) (IR slot)",
+    "Kevin Winston — D (Quadriceps) (IR slot)"
   ],
-  "source": "Fantrax Week 6 waivers Wed Oct 14 2026 9:00 AM PT + FA 9:03\u20139:17 (/workspace/fantrax-waivers-standings-2026-10-14.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
-    "Alec Pierce \u2014 IR (Heel) (reserve)",
-    "Carson Schwesinger \u2014 Q (Ankle) (active)",
-    "Kevin Winston \u2014 Q (Quadriceps) (active)"
+    "Tyjae Spears — Q (Knee) (reserve)",
+    "Carson Schwesinger — Q (Ankle) (active)",
+    "DeShon Elliott — IR (Knee) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Alec Pierce \u2014 IR (Heel) (reserve)",
-    "Terrance Ferguson \u2014 IR (Ankle) (IR slot)",
-    "Carson Schwesinger \u2014 Q (Ankle) (active)",
-    "Kevin Winston \u2014 Q (Quadriceps) (active)",
-    "Brian Branch \u2014 PUP (Achilles) (IR slot)",
-    "DeShon Elliott \u2014 IR (Knee) (IR slot)"
+    "Tyjae Spears — Q (Knee) (reserve)",
+    "Alec Pierce — IR (Heel) (IR slot)",
+    "Carson Schwesinger — Q (Ankle) (active)",
+    "DeShon Elliott — IR (Knee) (reserve)",
+    "Brian Branch — PUP (Achilles) (IR slot)",
+    "Kevin Winston — D (Quadriceps) (IR slot)"
   ],
   "updated": "2026-10-14"
 }

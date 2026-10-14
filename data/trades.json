@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-14",
-  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
   "season": 2026,
   "trades": [
     {
@@ -395,7 +395,7 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "Oct 12 1:59 PM",
+      "lastUpdated": "Oct 14 9:00 AM",
       "players": [
         "Zach Charbonnet",
         "Jacory Croskey-Merritt",
@@ -406,7 +406,6 @@
         "Chimere Dike",
         "Jordyn Tyson",
         "Tuli Tuipulotu",
-        "Leonard Williams",
         "Cedric Gray",
         "Trenton Simpson",
         "Julian Love"
@@ -433,7 +432,7 @@
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "Oct 13 10:31 AM",
+      "lastUpdated": "Oct 14 9:00 AM",
       "players": [
         "Jalen Hurts",
         "TreVeyon Henderson",
@@ -442,8 +441,7 @@
         "Matthew Golden",
         "Tee Higgins",
         "Jake Hansen",
-        "Eric Wilson",
-        "Jevon Holland"
+        "Eric Wilson"
       ],
       "note": null
     },
@@ -477,18 +475,16 @@
     {
       "teamId": "ttab",
       "team": "TTAB",
-      "lastUpdated": "Oct 11 9:56 AM",
+      "lastUpdated": "Oct 14 9:00 AM",
       "players": [
         "Ashton Jeanty",
         "Cameron Skattebo",
         "Javonte Williams",
         "Emanuel Wilson",
-        "Tre Tucker",
         "Christian Watson",
         "Jameson Williams",
         "Jake Ferguson",
         "Dallas Goedert",
-        "Khalil Mack",
         "Zack Baun",
         "Divine Deablo",
         "Harold Perkins",
@@ -500,7 +496,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax Oct 14 2026 ~6:45 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax Oct 14 2026 ~4:25 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Saltese↔Substation Carnell Tate for Dre Greenlaw+Denzel Boston (Oct 9 9:58 AM); Newman↔Saltese Aaron Jones+$5 FAAB for Nathan Landman (Oct 3 12:22 PM); Saltese↔Substation Boston for Montgomery (Sep 28 10:04 AM).",
   "hqComplete": true
 }

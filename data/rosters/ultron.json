@@ -2,7 +2,7 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-14 9:30 AM PT",
+  "asOf": "2026-10-14 4:25 PM PT",
   "faabLeft": 0,
   "startingQB": "Bryce Young",
   "roster": {
@@ -12,14 +12,14 @@
     "RB": [
       "Bhayshul Tuten",
       "D'Andre Swift",
+      "Roschon Johnson",
       "Chris Rodriguez Jr."
     ],
     "WR": [
       "Michael Wilson",
-      "Terry McLaurin",
-      "Ja'Marr Chase",
       "Germie Bernard",
-      "Keenan Allen"
+      "Terry McLaurin",
+      "Ja'Marr Chase"
     ],
     "TE": [
       "Pat Freiermuth"
@@ -36,8 +36,8 @@
       "Jack Campbell"
     ],
     "DB": [
-      "Dillon Thieneman",
       "Trevon Moehrig",
+      "Dillon Thieneman",
       "Grant Delpit"
     ],
     "IR": [
@@ -46,21 +46,25 @@
       "Myles Garrett"
     ]
   },
-  "notes": "Oct 14 AM rebuild from live Fantrax: Active 13 / Reserve 4 / IR 3. FAAB $10. | Oct 14 W6 waivers/FA: +Germie Bernard $9 (\u2212Antonio Williams); +Pat Freiermuth $1 (\u2212Mark Andrews); +Trevon Moehrig; +Keenan Allen; +Malaki Starks; +Grant Delpit (\u2212Malaki Starks). FAAB $0.",
+  "notes": "Oct 14 4:25 PM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Caleb Williams \u2014 Q (Hamstring) (IR slot)",
-    "Kyle Monangai \u2014 Q (Toe) (IR slot)",
-    "Myles Garrett \u2014 IR (Knee) (IR slot)"
+    "Caleb Williams — Q (Hamstring) (IR slot)",
+    "Kyle Monangai — Q (Toe) (IR slot)",
+    "Grant Delpit — Q (Shoulder) (reserve)",
+    "Myles Garrett — IR (Knee) (IR slot)"
   ],
-  "source": "Fantrax Week 6 waivers Wed Oct 14 2026 9:00 AM PT + FA 9:03\u20139:17 (/workspace/fantrax-waivers-standings-2026-10-14.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Grant Delpit — Q (Shoulder) (reserve)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Caleb Williams \u2014 Q (Hamstring) (IR slot)",
-    "Kyle Monangai \u2014 Q (Toe) (IR slot)",
-    "Myles Garrett \u2014 IR (Knee) (IR slot)"
+    "Caleb Williams — Q (Hamstring) (IR slot)",
+    "Kyle Monangai — Q (Toe) (IR slot)",
+    "Grant Delpit — Q (Shoulder) (reserve)",
+    "Myles Garrett — IR (Knee) (IR slot)"
   ],
   "updated": "2026-10-14"
 }

@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-14 9:30 AM PT",
+  "asOf": "2026-10-14 4:25 PM PT",
   "faabLeft": 67,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -11,10 +11,9 @@
       "C.J. Stroud"
     ],
     "RB": [
-      "Jeremiyah Love",
+      "Tyler Allgeier",
       "Jaylen Warren",
       "Kyren Williams",
-      "Tyler Allgeier",
       "Jaylen Wright"
     ],
     "WR": [
@@ -27,6 +26,7 @@
       "Isaiah Likely"
     ],
     "DL": [
+      "Austin Booker",
       "Aidan Hutchinson"
     ],
     "LB": [
@@ -41,20 +41,23 @@
       "Ronnie Hickman"
     ],
     "IR": [
+      "Jeremiyah Love",
       "Caleb Douglas"
     ]
   },
-  "notes": "Oct 14 AM rebuild from live Fantrax: Active 13 / Reserve 7 / IR 1. FAAB $67.",
+  "notes": "Oct 14 4:25 PM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Caleb Douglas \u2014 Q (Ankle) (IR slot)"
+    "Jeremiyah Love — Q (Ankle) (IR slot)",
+    "Caleb Douglas — Q (Ankle) (IR slot)"
   ],
-  "source": "Fantrax roster sync Wed Oct 14 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-14-am-roster-sync.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Caleb Douglas \u2014 Q (Ankle) (IR slot)"
+    "Jeremiyah Love — Q (Ankle) (IR slot)",
+    "Caleb Douglas — Q (Ankle) (IR slot)"
   ],
   "updated": "2026-10-14"
 }

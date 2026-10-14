@@ -1,7 +1,85 @@
 {
   "updated": "2026-10-14",
-  "source": "Fantrax Week 6 waivers Wed Oct 14 2026 9:00 AM PT + FA adds 9:03\u20139:17 AM PT (/workspace/fantrax-waivers-standings-2026-10-14.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
   "items": [
+    {
+      "date": "2026-10-14",
+      "team": "Valley Old Goats",
+      "type": "ADD",
+      "summary": "Added Kendre Miller (RB-NO) ($0/null bid)",
+      "time": "2:50 PM PDT",
+      "player": "Kendre Miller",
+      "playerMeta": "RB-NO",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-14",
+      "team": "Little Ass Boys",
+      "type": "ADD",
+      "summary": "Added Austin Booker (DL-CHI) ($0/null bid)",
+      "time": "2:04 PM PDT",
+      "player": "Austin Booker",
+      "playerMeta": "DL-CHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-14",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Roschon Johnson (RB-CHI); dropped Keenan Allen (WR-IND)",
+      "time": "11:55 AM PDT",
+      "player": "Roschon Johnson",
+      "playerMeta": "RB-CHI",
+      "dropped": "Keenan Allen",
+      "droppedMeta": "WR-IND",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-14",
+      "team": "Saltese Slamm",
+      "type": "ADD/DROP",
+      "summary": "Added Chauncey Gardner-Johnson (DB-BUF); dropped Omar Speights (LB-LAR)",
+      "time": "11:28 AM PDT",
+      "player": "Chauncey Gardner-Johnson",
+      "playerMeta": "DB-BUF",
+      "dropped": "Omar Speights",
+      "droppedMeta": "LB-LAR",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-14",
+      "team": "The Hypersecretors",
+      "type": "ADD/DROP",
+      "summary": "Added Kamren Curl (DB-LAR); dropped Tykee Smith (DB-TB)",
+      "time": "10:23 AM PDT",
+      "player": "Kamren Curl",
+      "playerMeta": "DB-LAR",
+      "dropped": "Tykee Smith",
+      "droppedMeta": "DB-TB",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-14",
+      "team": "Pocket Agents",
+      "type": "ADD/DROP",
+      "summary": "Added Omar Cooper Jr. (WR-NYJ); dropped Kyle Williams (WR-NE)",
+      "time": "10:10 AM PDT",
+      "player": "Omar Cooper Jr.",
+      "playerMeta": "WR-NYJ",
+      "dropped": "Kyle Williams",
+      "droppedMeta": "WR-NE",
+      "bid": null,
+      "period": "Week 6"
+    },
     {
       "date": "2026-10-14",
       "team": "Substation",
@@ -3606,7 +3684,7 @@
       "date": "2026-09-14",
       "type": "DROP",
       "team": "Pocket Agents",
-      "summary": "Dropped Cody Barton (2:11 PM PDT) \u2014 cleared trade block"
+      "summary": "Dropped Cody Barton (2:11 PM PDT) — cleared trade block"
     },
     {
       "date": "2026-09-13",
@@ -3642,7 +3720,7 @@
       "date": "2026-09-11",
       "type": "ADD/DROP",
       "team": "Morningside Muff Divers",
-      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) \u2014 Harris briefly added then dropped"
+      "summary": "Added Josh Uche; dropped Christian Harris (3:55 PM PDT) — Harris briefly added then dropped"
     },
     {
       "date": "2026-09-11",
@@ -3768,7 +3846,7 @@
       "date": "2026-09-08",
       "type": "TRADE",
       "team": "Pocket Agents / Substation",
-      "summary": "Bo Nix (Pocket) \u2192 Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
+      "summary": "Bo Nix (Pocket) → Substation for $10 FAAB; Substation dropped Jordan Love (not traded to Pocket). Corrected Sep 11."
     },
     {
       "date": "2026-09-08",
@@ -3858,7 +3936,7 @@
       "date": "2026-09-04",
       "type": "ADD/DROP",
       "team": "Substation",
-      "summary": "Churn: +Denzel Boston \u2212Craig Woodson; +Craig Woodson \u2212Brandon Jones; +Brandon Jones \u2212Dante Trader"
+      "summary": "Churn: +Denzel Boston −Craig Woodson; +Craig Woodson −Brandon Jones; +Brandon Jones −Dante Trader"
     },
     {
       "date": "2026-09-04",
@@ -3882,7 +3960,7 @@
       "date": "2026-09-03",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "Moves: +Emmett Johnson \u2212Nadjee Harris; +Nadjee Harris \u2212Justin Strnad; +Jaishawn Barham \u2212Trenton Simpson; +Bryce Boettcher \u2212Nadjee Harris"
+      "summary": "Moves: +Emmett Johnson −Nadjee Harris; +Nadjee Harris −Justin Strnad; +Jaishawn Barham −Trenton Simpson; +Bryce Boettcher −Nadjee Harris"
     },
     {
       "date": "2026-09-03",
@@ -3906,19 +3984,19 @@
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "The Hypersecretors",
-      "summary": "TE churn Helm/Barner; later +Gunnar Helm \u2212Dylan Sampson"
+      "summary": "TE churn Helm/Barner; later +Gunnar Helm −Dylan Sampson"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Ultron",
-      "summary": "+Nadjee Harris \u2212George Holani; +George Holani \u2212Keenan Allen; +Justin Strnad \u2212Branson Combs"
+      "summary": "+Nadjee Harris −George Holani; +George Holani −Keenan Allen; +Justin Strnad −Branson Combs"
     },
     {
       "date": "2026-09-02",
       "type": "ADD/DROP",
       "team": "Valley Old Goats",
-      "summary": "+Camryn Bynum \u2212Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
+      "summary": "+Camryn Bynum −Tyler Nubin; +Brian Robinson Jr.; +Justice Hill (Kamara roster moves)"
     },
     {
       "date": "2026-09-02",
@@ -3936,7 +4014,7 @@
       "date": "2026-09-02",
       "type": "FAAB",
       "team": "League",
-      "summary": "FAAB batch: notable \u2014 Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; \u2212Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0\u2013$2 IDP/depth adds"
+      "summary": "FAAB batch: notable — Kendal Daniels $11, Cole Bishop $6, Evan Williams $6, Chris Rodriguez Jr. $5, Josh Metellus $5, Jack Gibbens $4, Jordan Love $3, Henry To'oTo'o $7 (Eddies; −Christian Harris), Troy Dye $3 (Eddies), Jalen Coker $0 (Eddies); many $0–$2 IDP/depth adds"
     },
     {
       "date": "2026-09-01",
@@ -3954,7 +4032,7 @@
       "date": "2026-08-30",
       "type": "DRAFT",
       "team": "League",
-      "summary": "20-round snake complete \u2014 Wheels Up 2026 is locked"
+      "summary": "20-round snake complete — Wheels Up 2026 is locked"
     },
     {
       "date": "2026-09-17",
@@ -3992,6 +4070,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 14 PM: +6 FA add/drop rows (10:10 AM–2:50 PM PT) after morning waivers/FA. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-14 9:30 AM PT",
+  "asOf": "2026-10-14 4:25 PM PT",
   "faabLeft": 10,
   "startingQB": "Aaron Rodgers",
   "roster": {
@@ -10,16 +10,16 @@
       "Aaron Rodgers"
     ],
     "RB": [
-      "Ollie Gordon",
+      "MarShawn Lloyd",
       "Kimani Vidal",
-      "MarShawn Lloyd"
+      "Ollie Gordon"
     ],
     "WR": [
       "Isaiah Williams",
-      "Deebo Samuel",
       "Xavier Worthy",
       "Jordan Addison",
-      "Justin Jefferson"
+      "Justin Jefferson",
+      "Deebo Samuel"
     ],
     "TE": [
       "Tyler Higbee",
@@ -46,37 +46,31 @@
       "Derwin James"
     ]
   },
-  "notes": "Oct 14 AM rebuild from live Fantrax: Active 14 / Reserve 6 / IR 3. FAAB $40. | Oct 14 W6 waivers/FA: +Kimani Vidal $12 (\u2212Roman Wilson); +MarShawn Lloyd $18 (\u2212Raheim Sanders); +Malaki Starks (\u2212C.J. Henderson). FAAB $10.",
+  "notes": "Oct 14 4:25 PM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Deebo Samuel \u2014 O (Hamstring) (active)",
-    "Jordan Addison \u2014 Q (Hamstring) (reserve)",
-    "Raheim Sanders \u2014 IR (Hip) (reserve)",
-    "Roman Wilson \u2014 O (Finger) (reserve)",
-    "Lamar Jackson \u2014 Q (Ankle) (IR slot)",
-    "Jadarian Price \u2014 IR (Chest) (IR slot)",
-    "C.J. Henderson \u2014 Q (Groin) (active)",
-    "Derwin James \u2014 Q (Hamstring) (IR slot)"
+    "Jordan Addison — Q (Hamstring) (reserve)",
+    "Deebo Samuel — O (Hamstring) (reserve)",
+    "Lamar Jackson — Q (Ankle) (IR slot)",
+    "Jadarian Price — IR (Chest) (IR slot)",
+    "Daiyan Henley — Q (Knee) (active)",
+    "Derwin James — Q (Hamstring) (IR slot)"
   ],
-  "source": "Fantrax Week 6 waivers Wed Oct 14 2026 9:00 AM PT + FA 9:03\u20139:17 (/workspace/fantrax-waivers-standings-2026-10-14.json)",
+  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
-    "Deebo Samuel \u2014 O (Hamstring) (active)",
-    "Jordan Addison \u2014 Q (Hamstring) (reserve)",
-    "Raheim Sanders \u2014 IR (Hip) (reserve)",
-    "Roman Wilson \u2014 O (Finger) (reserve)",
-    "C.J. Henderson \u2014 Q (Groin) (active)"
+    "Jordan Addison — Q (Hamstring) (reserve)",
+    "Deebo Samuel — O (Hamstring) (reserve)",
+    "Daiyan Henley — Q (Knee) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Deebo Samuel \u2014 O (Hamstring) (active)",
-    "Jordan Addison \u2014 Q (Hamstring) (reserve)",
-    "Raheim Sanders \u2014 IR (Hip) (reserve)",
-    "Roman Wilson \u2014 O (Finger) (reserve)",
-    "Lamar Jackson \u2014 Q (Ankle) (IR slot)",
-    "Jadarian Price \u2014 IR (Chest) (IR slot)",
-    "C.J. Henderson \u2014 Q (Groin) (active)",
-    "Derwin James \u2014 Q (Hamstring) (IR slot)"
+    "Jordan Addison — Q (Hamstring) (reserve)",
+    "Deebo Samuel — O (Hamstring) (reserve)",
+    "Lamar Jackson — Q (Ankle) (IR slot)",
+    "Jadarian Price — IR (Chest) (IR slot)",
+    "Daiyan Henley — Q (Knee) (active)",
+    "Derwin James — Q (Hamstring) (IR slot)"
   ],
   "updated": "2026-10-14"
 }
