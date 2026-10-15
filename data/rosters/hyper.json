@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-14 4:25 PM PT",
+  "asOf": "2026-10-15 6:45 AM PT",
   "faabLeft": 50,
   "startingQB": "Justin Herbert",
   "roster": {
@@ -18,12 +18,12 @@
     "WR": [
       "Luther Burden",
       "Jaylin Noel",
+      "Makai Lemon",
       "Emeka Egbuka",
       "Amon-Ra St. Brown",
       "Travis Hunter"
     ],
     "TE": [
-      "Darren Waller",
       "Sam LaPorta"
     ],
     "DL": [
@@ -42,26 +42,25 @@
     ],
     "IR": [
       "Kenyon Sadiq",
+      "Darren Waller",
       "Nick Bosa"
     ]
   },
-  "notes": "Oct 14 4:25 PM PT rebuild from live Fantrax.",
+  "notes": "Oct 15 6:45 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Darren Waller — Q (Toe) (active)",
     "Kenyon Sadiq — Q (Concussion) (IR slot)",
+    "Darren Waller — Q (Toe) (IR slot)",
     "Nick Bosa — Q (Calf) (IR slot)"
   ],
-  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
+  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
-  "lineupFlags": [
-    "Darren Waller — Q (Toe) (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Darren Waller — Q (Toe) (active)",
     "Kenyon Sadiq — Q (Concussion) (IR slot)",
+    "Darren Waller — Q (Toe) (IR slot)",
     "Nick Bosa — Q (Calf) (IR slot)"
   ],
-  "updated": "2026-10-14"
+  "updated": "2026-10-15"
 }

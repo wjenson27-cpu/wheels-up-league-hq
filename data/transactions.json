@@ -1,7 +1,59 @@
 {
-  "updated": "2026-10-14",
-  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
+  "updated": "2026-10-15",
+  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
   "items": [
+    {
+      "date": "2026-10-14",
+      "team": "Eagle Ridge Eddies",
+      "type": "ADD/DROP",
+      "summary": "Added Tyrice Knight (LB-SEA); dropped Julian Love (DB-SEA)",
+      "time": "8:51 PM PDT",
+      "player": "Tyrice Knight",
+      "playerMeta": "LB-SEA",
+      "dropped": "Julian Love",
+      "droppedMeta": "DB-SEA",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-14",
+      "team": "Morningside Muff Divers",
+      "type": "ADD/DROP",
+      "summary": "Added Keenan Allen (WR-IND); dropped Tyler Higbee (TE-LAR)",
+      "time": "8:30 PM PDT",
+      "player": "Keenan Allen",
+      "playerMeta": "WR-IND",
+      "dropped": "Tyler Higbee",
+      "droppedMeta": "TE-LAR",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-14",
+      "team": "The Hypersecretors",
+      "type": "ADD",
+      "summary": "Added Makai Lemon (WR-PHI) ($0/null bid)",
+      "time": "6:35 PM PDT",
+      "player": "Makai Lemon",
+      "playerMeta": "WR-PHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-14",
+      "team": "Pocket Agents",
+      "type": "ADD/DROP",
+      "summary": "Added Andru Phillips (DB-NYG); dropped Omar Cooper Jr. (WR-NYJ)",
+      "time": "4:43 PM PDT",
+      "player": "Andru Phillips",
+      "playerMeta": "DB-NYG",
+      "dropped": "Omar Cooper Jr.",
+      "droppedMeta": "WR-NYJ",
+      "bid": null,
+      "period": "Week 6"
+    },
     {
       "date": "2026-10-14",
       "team": "Valley Old Goats",
@@ -4070,6 +4122,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 14 PM: +6 FA add/drop rows (10:10 AM–2:50 PM PT) after morning waivers/FA. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 15 AM: +4 FA rows (4:43–8:51 PM PT Oct 14) after Oct 14 PM sync. Oct 14 PM: +6 FA add/drop rows (10:10 AM–2:50 PM PT) after morning waivers/FA. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

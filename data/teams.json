@@ -340,11 +340,11 @@
       "pa": 1115
     }
   ],
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "ownerSource": "Bill confirmed Sep 6 2026 + League Archives",
   "standingsSource": "Fantrax Standings after Week 4 finals Tue Oct 6 ~6:20 AM PT",
   "week": 6,
   "hqNote": "Week 4 FINAL: Eddies beat Slumlords 226–218.5. Kitty Pocket 361; survivor Saltese 206.5 off the bus. Last Ride: Morningside beat Slumlords 223.5–218.5 (Slumlords out). Goats lone unbeaten at 4-0. OMVP Kenneth Walker III 142 / DMVP Rousseau 137. Week 5 live Mon AM: Eddies lead Doubtpfizer 285–222.5 with Lake (MNF) left.",
-  "source": "Fantrax roster sync Wed Oct 14 2026 ~4:25 PM PT (/workspace/fantrax-scrape-2026-10-14-pm-roster-sync.json)",
-  "note": "Week 5 finals applied Tue Oct 13 · records/PF/PA from Fantrax finals. Oct 14 4:25 PM PT roster sync: FAAB verified unchanged; afternoon FA adds in transactions."
+  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "note": "Week 5 finals applied Tue Oct 13 · records/PF/PA from Fantrax finals. Oct 15 6:45 AM PT roster sync: FAAB verified unchanged; +4 FA rows after Oct 14 PM."
 }
