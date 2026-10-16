@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-15 6:45 AM PT",
+  "asOf": "2026-10-16 6:50 AM PT",
   "faabLeft": 50,
   "startingQB": "Justin Herbert",
   "roster": {
@@ -46,21 +46,19 @@
       "Nick Bosa"
     ]
   },
-  "notes": "Oct 15 6:45 AM PT rebuild from live Fantrax.",
+  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Kenyon Sadiq — Q (Concussion) (IR slot)",
-    "Darren Waller — Q (Toe) (IR slot)",
-    "Nick Bosa — Q (Calf) (IR slot)"
+    "Darren Waller — Q (Toe) (IR slot)"
   ],
-  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Kenyon Sadiq — Q (Concussion) (IR slot)",
-    "Darren Waller — Q (Toe) (IR slot)",
-    "Nick Bosa — Q (Calf) (IR slot)"
+    "Darren Waller — Q (Toe) (IR slot)"
   ],
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }

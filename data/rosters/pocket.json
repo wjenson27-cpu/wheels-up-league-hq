@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-15 6:45 AM PT",
+  "asOf": "2026-10-16 6:50 AM PT",
   "faabLeft": 101,
   "startingQB": "Tyler Shough",
   "roster": {
@@ -46,14 +46,14 @@
       "Adonai Mitchell"
     ]
   },
-  "notes": "Oct 15 6:45 AM PT rebuild from live Fantrax.",
+  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Saquon Barkley — Q (Hamstring) (IR slot)",
     "Jonah Coleman — IR (Ankle) (IR slot)",
     "Adonai Mitchell — D (Finger) (IR slot)",
     "Amani Hooker — Q (Concussion) (active)"
   ],
-  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
     "Amani Hooker — Q (Concussion) (active)"
@@ -66,5 +66,5 @@
     "Adonai Mitchell — D (Finger) (IR slot)",
     "Amani Hooker — Q (Concussion) (active)"
   ],
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }

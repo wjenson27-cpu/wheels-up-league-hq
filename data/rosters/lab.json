@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-15 6:45 AM PT",
+  "asOf": "2026-10-16 6:50 AM PT",
   "faabLeft": 67,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -38,26 +38,30 @@
     ],
     "DB": [
       "Minkah Fitzpatrick",
-      "Ronnie Hickman"
+      "Jacob Parrish"
     ],
     "IR": [
       "Jeremiyah Love",
       "Caleb Douglas"
     ]
   },
-  "notes": "Oct 15 6:45 AM PT rebuild from live Fantrax.",
+  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
+    "Mike Evans — Q (Ribs) (active)",
     "Jeremiyah Love — Q (Ankle) (IR slot)",
     "Caleb Douglas — Q (Ankle) (IR slot)"
   ],
-  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Mike Evans — Q (Ribs) (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Mike Evans — Q (Ribs) (active)",
     "Jeremiyah Love — Q (Ankle) (IR slot)",
     "Caleb Douglas — Q (Ankle) (IR slot)"
   ],
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }

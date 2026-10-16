@@ -2,17 +2,17 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-15 6:45 AM PT",
+  "asOf": "2026-10-16 6:50 AM PT",
   "faabLeft": 0,
-  "startingQB": "Bryce Young",
+  "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
+      "Caleb Williams",
       "Bryce Young"
     ],
     "RB": [
       "Bhayshul Tuten",
       "D'Andre Swift",
-      "Roschon Johnson",
       "Chris Rodriguez Jr."
     ],
     "WR": [
@@ -41,30 +41,33 @@
       "Grant Delpit"
     ],
     "IR": [
-      "Caleb Williams",
       "Kyle Monangai",
       "Myles Garrett"
     ]
   },
-  "notes": "Oct 15 6:45 AM PT rebuild from live Fantrax.",
+  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Caleb Williams — Q (Hamstring) (IR slot)",
+    "Caleb Williams — Q (Hamstring) (active)",
+    "Terry McLaurin — Q (Hamstring) (active)",
     "Kyle Monangai — Q (Toe) (IR slot)",
     "Grant Delpit — Q (Shoulder) (reserve)",
     "Myles Garrett — IR (Knee) (IR slot)"
   ],
-  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [
+    "Caleb Williams — Q (Hamstring) (active)",
+    "Terry McLaurin — Q (Hamstring) (active)",
     "Grant Delpit — Q (Shoulder) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Caleb Williams — Q (Hamstring) (IR slot)",
+    "Caleb Williams — Q (Hamstring) (active)",
+    "Terry McLaurin — Q (Hamstring) (active)",
     "Kyle Monangai — Q (Toe) (IR slot)",
     "Grant Delpit — Q (Shoulder) (reserve)",
     "Myles Garrett — IR (Knee) (IR slot)"
   ],
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }

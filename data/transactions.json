@@ -1,7 +1,111 @@
 {
-  "updated": "2026-10-15",
-  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "updated": "2026-10-16",
+  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
   "items": [
+    {
+      "date": "2026-10-15",
+      "team": "Little Ass Boys",
+      "type": "ADD/DROP",
+      "summary": "Added Jacob Parrish (DB-TB); dropped Justin Walley (DB-IND)",
+      "time": "6:04 PM PDT",
+      "player": "Jacob Parrish",
+      "playerMeta": "DB-TB",
+      "dropped": "Justin Walley",
+      "droppedMeta": "DB-IND",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-15",
+      "team": "Little Ass Boys",
+      "type": "ADD/DROP",
+      "summary": "Added Justin Walley (DB-IND); dropped Ronnie Hickman (DB-CLE)",
+      "time": "5:58 PM PDT",
+      "player": "Justin Walley",
+      "playerMeta": "DB-IND",
+      "dropped": "Ronnie Hickman",
+      "droppedMeta": "DB-CLE",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-15",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD",
+      "summary": "Added Ryan Flournoy (WR-DAL) ($0/null bid)",
+      "time": "5:03 PM PDT",
+      "player": "Ryan Flournoy",
+      "playerMeta": "WR-DAL",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-15",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Devon Key (DB-DEN)",
+      "time": "5:02 PM PDT",
+      "player": "Devon Key",
+      "playerMeta": "DB-DEN",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-15",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD",
+      "summary": "Added Devon Key (DB-DEN) ($0/null bid)",
+      "time": "4:58 PM PDT",
+      "player": "Devon Key",
+      "playerMeta": "DB-DEN",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-15",
+      "team": "Substation",
+      "type": "ADD/DROP",
+      "summary": "Added Easton Mascarenas-Arnold (LB-CLE); dropped Dante Trader (DB-MIA)",
+      "time": "3:22 PM PDT",
+      "player": "Easton Mascarenas-Arnold",
+      "playerMeta": "LB-CLE",
+      "dropped": "Dante Trader",
+      "droppedMeta": "DB-MIA",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-15",
+      "team": "Ultron",
+      "type": "DROP",
+      "summary": "Dropped Roschon Johnson (RB-CHI)",
+      "time": "12:40 PM PDT",
+      "player": "Roschon Johnson",
+      "playerMeta": "RB-CHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-15",
+      "team": "Indian Trail Slumlords",
+      "type": "ADD",
+      "summary": "Added Kyle Williams (WR-NE) ($0/null bid)",
+      "time": "11:13 AM PDT",
+      "player": "Kyle Williams",
+      "playerMeta": "WR-NE",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
     {
       "date": "2026-10-14",
       "team": "Eagle Ridge Eddies",
@@ -4122,6 +4226,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 15 AM: +4 FA rows (4:43–8:51 PM PT Oct 14) after Oct 14 PM sync. Oct 14 PM: +6 FA add/drop rows (10:10 AM–2:50 PM PT) after morning waivers/FA. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 16 AM: +8 FA rows (11:13 AM–6:04 PM PT Oct 15) after Oct 15 AM sync. Oct 15 AM: +4 FA rows (4:43–8:51 PM PT Oct 14) after Oct 14 PM sync. Oct 14 PM: +6 FA add/drop rows (10:10 AM–2:50 PM PT) after morning waivers/FA. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

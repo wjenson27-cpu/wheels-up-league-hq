@@ -2,12 +2,13 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-15 6:45 AM PT",
+  "asOf": "2026-10-16 6:50 AM PT",
   "faabLeft": 10,
   "startingQB": "Aaron Rodgers",
   "roster": {
     "QB": [
-      "Aaron Rodgers"
+      "Aaron Rodgers",
+      "Lamar Jackson"
     ],
     "RB": [
       "MarShawn Lloyd",
@@ -19,8 +20,7 @@
       "Keenan Allen",
       "Xavier Worthy",
       "Jordan Addison",
-      "Justin Jefferson",
-      "Deebo Samuel"
+      "Justin Jefferson"
     ],
     "TE": [
       "Travis Kelce"
@@ -41,33 +41,34 @@
       "Malaki Starks"
     ],
     "IR": [
-      "Lamar Jackson",
       "Jadarian Price",
+      "Deebo Samuel",
       "Derwin James"
     ]
   },
-  "notes": "Oct 15 6:45 AM PT rebuild from live Fantrax.",
+  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
+    "Lamar Jackson — Q (Ankle) (reserve)",
     "Jordan Addison — Q (Hamstring) (reserve)",
-    "Lamar Jackson — Q (Ankle) (IR slot)",
     "Jadarian Price — IR (Chest) (IR slot)",
     "Daiyan Henley — Q (Knee) (active)",
     "Derwin James — Q (Hamstring) (IR slot)"
   ],
-  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
+    "Lamar Jackson — Q (Ankle) (reserve)",
     "Jordan Addison — Q (Hamstring) (reserve)",
     "Daiyan Henley — Q (Knee) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Lamar Jackson — Q (Ankle) (reserve)",
     "Jordan Addison — Q (Hamstring) (reserve)",
-    "Lamar Jackson — Q (Ankle) (IR slot)",
     "Jadarian Price — IR (Chest) (IR slot)",
     "Daiyan Henley — Q (Knee) (active)",
     "Derwin James — Q (Hamstring) (IR slot)"
   ],
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }

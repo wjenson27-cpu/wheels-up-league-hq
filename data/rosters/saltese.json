@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-15 6:45 AM PT",
+  "asOf": "2026-10-16 6:50 AM PT",
   "faabLeft": 10,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -12,14 +12,14 @@
     "RB": [
       "Omarion Hampton",
       "Rico Dowdle",
-      "Aaron Jones",
-      "David Montgomery"
+      "Aaron Jones"
     ],
     "WR": [
       "Jaxon Smith-Njigba",
       "Denzel Boston",
       "Stefon Diggs",
       "DeVonta Smith",
+      "Ja'Kobi Lane",
       "Dohnte Meyers"
     ],
     "TE": [
@@ -41,31 +41,28 @@
       "Chauncey Gardner-Johnson"
     ],
     "IR": [
-      "Ja'Kobi Lane",
       "Jonathon Brooks",
+      "David Montgomery",
       "Micah Parsons"
     ]
   },
-  "notes": "Oct 15 6:45 AM PT rebuild from live Fantrax.",
+  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Denzel Boston — Q (Foot) (active)",
     "Stefon Diggs — Q (Hamstring) (active)",
     "DeVonta Smith — Q (Hamstring) (active)",
-    "Rico Dowdle — Q (Toe) (reserve)",
-    "David Montgomery — D (Groin) (reserve)",
-    "Ja'Kobi Lane — IR (Wrist) (IR slot)",
+    "Ja'Kobi Lane — IR (Wrist) (reserve)",
     "Jonathon Brooks — IR (Abdomen) (IR slot)",
     "Teddye Buchanan — Q (Groin) (reserve)",
     "Micah Parsons — PUP (Knee - acl) (IR slot)"
   ],
-  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "Denzel Boston — Q (Foot) (active)",
     "Stefon Diggs — Q (Hamstring) (active)",
     "DeVonta Smith — Q (Hamstring) (active)",
-    "Rico Dowdle — Q (Toe) (reserve)",
-    "David Montgomery — D (Groin) (reserve)",
+    "Ja'Kobi Lane — IR (Wrist) (reserve)",
     "Teddye Buchanan — Q (Groin) (reserve)"
   ],
   "pendingClaim": null,
@@ -74,12 +71,10 @@
     "Denzel Boston — Q (Foot) (active)",
     "Stefon Diggs — Q (Hamstring) (active)",
     "DeVonta Smith — Q (Hamstring) (active)",
-    "Rico Dowdle — Q (Toe) (reserve)",
-    "David Montgomery — D (Groin) (reserve)",
-    "Ja'Kobi Lane — IR (Wrist) (IR slot)",
+    "Ja'Kobi Lane — IR (Wrist) (reserve)",
     "Jonathon Brooks — IR (Abdomen) (IR slot)",
     "Teddye Buchanan — Q (Groin) (reserve)",
     "Micah Parsons — PUP (Knee - acl) (IR slot)"
   ],
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }

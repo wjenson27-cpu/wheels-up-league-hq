@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-15 6:45 AM PT",
+  "asOf": "2026-10-16 6:50 AM PT",
   "faabLeft": 60,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -11,15 +11,15 @@
     ],
     "RB": [
       "Rhamondre Stevenson",
-      "Jacory Croskey-Merritt",
       "Brian Robinson Jr.",
+      "Jacory Croskey-Merritt",
       "Breece Hall"
     ],
     "WR": [
       "Garrett Wilson",
       "Jalen Coker",
-      "Kendrick Bourne",
-      "Chimere Dike"
+      "Chimere Dike",
+      "Kendrick Bourne"
     ],
     "TE": [
       "Brock Bowers",
@@ -46,34 +46,31 @@
       "Travis Etienne"
     ]
   },
-  "notes": "Oct 15 6:45 AM PT rebuild from live Fantrax.",
+  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Brock Bowers — Q (Knee) (active)",
+    "Jacory Croskey-Merritt — Q (Groin) (reserve)",
     "Breece Hall — D (Quadriceps) (reserve)",
     "Zach Charbonnet — PUP (Knee - acl) (IR slot)",
     "Jordyn Tyson — IR (Hamstring) (IR slot)",
     "Travis Etienne — IR (Hamstring) (IR slot)",
-    "Evan Williams — Q (Illness) (active)",
     "Trenton Simpson — Q (Hamstring) (active)"
   ],
-  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
-    "Brock Bowers — Q (Knee) (active)",
+    "Jacory Croskey-Merritt — Q (Groin) (reserve)",
     "Breece Hall — D (Quadriceps) (reserve)",
-    "Evan Williams — Q (Illness) (active)",
     "Trenton Simpson — Q (Hamstring) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Brock Bowers — Q (Knee) (active)",
+    "Jacory Croskey-Merritt — Q (Groin) (reserve)",
     "Breece Hall — D (Quadriceps) (reserve)",
     "Zach Charbonnet — PUP (Knee - acl) (IR slot)",
     "Jordyn Tyson — IR (Hamstring) (IR slot)",
     "Travis Etienne — IR (Hamstring) (IR slot)",
-    "Evan Williams — Q (Illness) (active)",
     "Trenton Simpson — Q (Hamstring) (active)"
   ],
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }

@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-15 6:45 AM PT",
+  "asOf": "2026-10-16 6:50 AM PT",
   "faabLeft": 15,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -29,38 +29,38 @@
       "DeForest Buckner"
     ],
     "LB": [
-      "Carson Schwesinger",
+      "Tremaine Edmunds",
       "Jihaad Campbell",
-      "Tremaine Edmunds"
+      "Carson Schwesinger",
+      "Easton Mascarenas-Arnold"
     ],
     "DB": [
       "Nick Emmanwori",
       "Malik Mustapha",
       "A.J. Haulcy",
-      "DeShon Elliott",
-      "Dante Trader"
+      "Kevin Winston"
     ],
     "IR": [
       "Alec Pierce",
       "Brian Branch",
-      "Kevin Winston"
+      "DeShon Elliott"
     ]
   },
-  "notes": "Oct 15 6:45 AM PT rebuild from live Fantrax.",
+  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Tyjae Spears — Q (Knee) (reserve)",
     "Alec Pierce — IR (Heel) (IR slot)",
     "Carson Schwesinger — Q (Ankle) (active)",
-    "DeShon Elliott — IR (Knee) (reserve)",
+    "Kevin Winston — D (Quadriceps) (reserve)",
     "Brian Branch — PUP (Achilles) (IR slot)",
-    "Kevin Winston — D (Quadriceps) (IR slot)"
+    "DeShon Elliott — IR (Knee) (IR slot)"
   ],
-  "source": "Fantrax roster sync Thu Oct 15 2026 ~6:45 AM PT (/workspace/fantrax-scrape-2026-10-15-am-roster-sync.json)",
+  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
     "Tyjae Spears — Q (Knee) (reserve)",
     "Carson Schwesinger — Q (Ankle) (active)",
-    "DeShon Elliott — IR (Knee) (reserve)"
+    "Kevin Winston — D (Quadriceps) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -68,9 +68,9 @@
     "Tyjae Spears — Q (Knee) (reserve)",
     "Alec Pierce — IR (Heel) (IR slot)",
     "Carson Schwesinger — Q (Ankle) (active)",
-    "DeShon Elliott — IR (Knee) (reserve)",
+    "Kevin Winston — D (Quadriceps) (reserve)",
     "Brian Branch — PUP (Achilles) (IR slot)",
-    "Kevin Winston — D (Quadriceps) (IR slot)"
+    "DeShon Elliott — IR (Knee) (IR slot)"
   ],
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }
