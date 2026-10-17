@@ -2,8 +2,8 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-16 6:50 AM PT",
-  "faabLeft": 0,
+  "asOf": "2026-10-17 6:40 AM PT",
+  "faabLeft": 7,
   "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
@@ -16,10 +16,9 @@
       "Chris Rodriguez Jr."
     ],
     "WR": [
-      "Michael Wilson",
-      "Germie Bernard",
+      "Drake London",
       "Terry McLaurin",
-      "Ja'Marr Chase"
+      "Michael Wilson"
     ],
     "TE": [
       "Pat Freiermuth"
@@ -30,44 +29,45 @@
     ],
     "LB": [
       "Foyesade Oluokun",
-      "Frankie Luvu",
-      "Patrick Queen",
+      "Tremaine Edmunds",
+      "Carson Schwesinger",
       "Robert Spillane",
-      "Jack Campbell"
+      "Patrick Queen"
     ],
     "DB": [
-      "Trevon Moehrig",
+      "Grant Delpit",
       "Dillon Thieneman",
-      "Grant Delpit"
+      "A.J. Haulcy",
+      "Trevon Moehrig"
     ],
     "IR": [
       "Kyle Monangai",
       "Myles Garrett"
     ]
   },
-  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Caleb Williams — Q (Hamstring) (active)",
     "Terry McLaurin — Q (Hamstring) (active)",
-    "Kyle Monangai — Q (Toe) (IR slot)",
-    "Grant Delpit — Q (Shoulder) (reserve)",
-    "Myles Garrett — IR (Knee) (IR slot)"
+    "Kyle Monangai — O (Toe) (IR slot)",
+    "Carson Schwesinger — Q (Ankle) (active)",
+    "Myles Garrett — IR (Knee - Expected return Oct 25) (IR slot)"
   ],
-  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [
     "Caleb Williams — Q (Hamstring) (active)",
     "Terry McLaurin — Q (Hamstring) (active)",
-    "Grant Delpit — Q (Shoulder) (reserve)"
+    "Carson Schwesinger — Q (Ankle) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Caleb Williams — Q (Hamstring) (active)",
     "Terry McLaurin — Q (Hamstring) (active)",
-    "Kyle Monangai — Q (Toe) (IR slot)",
-    "Grant Delpit — Q (Shoulder) (reserve)",
-    "Myles Garrett — IR (Knee) (IR slot)"
+    "Kyle Monangai — O (Toe) (IR slot)",
+    "Carson Schwesinger — Q (Ankle) (active)",
+    "Myles Garrett — IR (Knee - Expected return Oct 25) (IR slot)"
   ],
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }

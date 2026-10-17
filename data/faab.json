@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-16",
-  "source": "Fantrax Claim Budget Remaining verified Fri Oct 16 2026 ~6:50 AM PT roster sync (unchanged vs Oct 15 AM balances).",
+  "updated": "2026-10-17",
+  "source": "Fantrax Claim Budget Remaining verified live, all 14 teams, 2026-10-17 6:40 AM PT roster sync.",
   "startingBudget": 115,
   "note": "Week 6 FAAB clear (Wed Oct 14, 9:00 AM PT) — spend by team: Slumlords $30 (Darius Cooper $10, Dameon Pierce $10, Jaden Dugger $10); Morningside $30 (MarShawn Lloyd $18, Kimani Vidal $12); Substation $14 (A.J. Haulcy $3, Kenneth Gainwell $11); Ultron $10 (Pat Freiermuth $1, Germie Bernard $9); Eagle Ridge Eddies $8 (Mansoor Delane $8); Mrs. Doubtpfizer $5 (D'Marco Jackson $4, Dylan Sampson $1); Hypersecretors $3 (Darren Waller $3); TTAB $3 (Akheem Mesidor $3); Saltese $1 (Nik Bonitto $1); Dongers $1 (Jonas Sanker $1); Newman $1 (Carl Granderson $1). $0 executed claims excluded from claims[] (Pocket Kyle Williams; Ultron Trevon Moehrig). No $ spend: Pocket, Goats, LAB. Balances set to Fantrax Claim Budget Remaining ~9:30 AM PT.",
   "excludeZeroBids": true,
@@ -24,12 +24,12 @@
       "owner": "Ryan McCallum",
       "abbrev": "NLS",
       "starting": 115,
-      "remaining": 64,
+      "remaining": 59,
       "spentClaims": 46,
-      "tradeOut": 5,
+      "tradeOut": 10,
       "tradeIn": 0,
-      "spentKnown": 51,
-      "remainingKnown": 64
+      "spentKnown": 56,
+      "remainingKnown": 59
     },
     {
       "id": "saltese",
@@ -37,12 +37,12 @@
       "owner": "Luke Sahlberg",
       "abbrev": "SAL",
       "starting": 115,
-      "remaining": 10,
-      "spentClaims": 86,
+      "remaining": 8,
+      "spentClaims": 88,
       "tradeOut": 24,
       "tradeIn": 5,
-      "spentKnown": 110,
-      "remainingKnown": 10
+      "spentKnown": 112,
+      "remainingKnown": 8
     },
     {
       "id": "lab",
@@ -141,12 +141,12 @@
       "owner": "Brian Aga",
       "abbrev": "ULT",
       "starting": 115,
-      "remaining": 0,
+      "remaining": 7,
       "spentClaims": 105,
       "tradeOut": 50,
-      "tradeIn": 40,
+      "tradeIn": 47,
       "spentKnown": 155,
-      "remainingKnown": 0
+      "remainingKnown": 7
     },
     {
       "id": "goats",
@@ -154,12 +154,12 @@
       "owner": "Mike Heff",
       "abbrev": "VOG",
       "starting": 115,
-      "remaining": 69,
-      "spentClaims": 31,
+      "remaining": 64,
+      "spentClaims": 36,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 31,
-      "remainingKnown": 69,
+      "spentKnown": 36,
+      "remainingKnown": 64,
       "note": " | Sep23 clear: scrape rem 84 vs formula 99"
     },
     {
@@ -181,15 +181,54 @@
       "owner": "Nathan Kelly",
       "abbrev": "SUB",
       "starting": 115,
-      "remaining": 15,
-      "spentClaims": 110,
-      "tradeOut": 28,
-      "tradeIn": 38,
-      "spentKnown": 138,
-      "remainingKnown": 15
+      "remaining": 10,
+      "spentClaims": 113,
+      "tradeOut": 35,
+      "tradeIn": 43,
+      "spentKnown": 148,
+      "remainingKnown": 10
     }
   ],
   "claims": [
+    {
+      "date": "2026-10-16",
+      "time": "9:00 AM PDT",
+      "player": "Keisean Nixon",
+      "amount": 5,
+      "team": "Valley Old Goats",
+      "kind": "claim",
+      "teamId": "goats",
+      "pos": "DB",
+      "dropped": "Josh Metellus",
+      "note": "Week 6 midweek claim; dropped Josh Metellus",
+      "attribution": "fantrax-roster-sync-2026-10-17-am"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "10:23 AM PDT",
+      "player": "Tykee Smith",
+      "amount": 3,
+      "team": "Substation",
+      "kind": "claim",
+      "teamId": "substation",
+      "pos": "DB",
+      "dropped": "Kevin Winston",
+      "note": "Week 6 midweek claim; dropped Kevin Winston",
+      "attribution": "fantrax-roster-sync-2026-10-17-am"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "8:30 PM PDT",
+      "player": "Tyler Higbee",
+      "amount": 2,
+      "team": "Saltese Slamm",
+      "kind": "claim",
+      "teamId": "saltese",
+      "pos": "TE",
+      "dropped": "Oronde Gadsden",
+      "note": "Week 6 midweek claim; dropped Oronde Gadsden",
+      "attribution": "fantrax-roster-sync-2026-10-17-am"
+    },
     {
       "date": "2026-10-14",
       "time": "9:00 AM PDT",
@@ -1540,6 +1579,37 @@
     }
   ],
   "trades": [
+    {
+      "date": "2026-10-16",
+      "amount": 5,
+      "fromTeam": "Newman Lake Sleep Paralysis Demons",
+      "fromTeamId": "newman",
+      "toTeam": "Substation",
+      "toTeamId": "substation",
+      "for": [
+        "Jordan Love (QB)"
+      ],
+      "summary": "Fantrax official — Newman Lake Sleep Paralysis Demons paid $5 FAAB to Substation in Week 6 trade (Oct 16 10:20 AM PDT).",
+      "official": true,
+      "kind": "trade"
+    },
+    {
+      "date": "2026-10-16",
+      "amount": 7,
+      "fromTeam": "Substation",
+      "fromTeamId": "substation",
+      "toTeam": "Ultron",
+      "toTeamId": "ultron",
+      "for": [
+        "Jack Campbell (LB)",
+        "Frankie Luvu (LB)",
+        "Ja'Marr Chase (WR)",
+        "Germie Bernard (WR)"
+      ],
+      "summary": "Fantrax official — Substation paid $7 FAAB to Ultron in Week 6 trade (Oct 16 6:29 PM PDT).",
+      "official": true,
+      "kind": "trade"
+    },
     {
       "date": "2026-10-08",
       "amount": 10,

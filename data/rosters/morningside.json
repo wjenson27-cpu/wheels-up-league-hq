@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-16 6:50 AM PT",
+  "asOf": "2026-10-17 6:40 AM PT",
   "faabLeft": 10,
   "startingQB": "Aaron Rodgers",
   "roster": {
@@ -46,29 +46,31 @@
       "Derwin James"
     ]
   },
-  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Lamar Jackson — Q (Ankle) (reserve)",
+    "Lamar Jackson — O (Ankle) (reserve)",
     "Jordan Addison — Q (Hamstring) (reserve)",
-    "Jadarian Price — IR (Chest) (IR slot)",
+    "Jadarian Price — IR (Chest - Expected return Nov 2) (IR slot)",
+    "Deebo Samuel — O (Hamstring) (IR slot)",
     "Daiyan Henley — Q (Knee) (active)",
-    "Derwin James — Q (Hamstring) (IR slot)"
+    "Derwin James — O (Hamstring) (IR slot)"
   ],
-  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
-    "Lamar Jackson — Q (Ankle) (reserve)",
+    "Lamar Jackson — O (Ankle) (reserve)",
     "Jordan Addison — Q (Hamstring) (reserve)",
     "Daiyan Henley — Q (Knee) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Lamar Jackson — Q (Ankle) (reserve)",
+    "Lamar Jackson — O (Ankle) (reserve)",
     "Jordan Addison — Q (Hamstring) (reserve)",
-    "Jadarian Price — IR (Chest) (IR slot)",
+    "Jadarian Price — IR (Chest - Expected return Nov 2) (IR slot)",
+    "Deebo Samuel — O (Hamstring) (IR slot)",
     "Daiyan Henley — Q (Knee) (active)",
-    "Derwin James — Q (Hamstring) (IR slot)"
+    "Derwin James — O (Hamstring) (IR slot)"
   ],
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }

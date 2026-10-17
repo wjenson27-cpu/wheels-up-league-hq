@@ -2,13 +2,12 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-16 6:50 AM PT",
-  "faabLeft": 15,
+  "asOf": "2026-10-17 6:40 AM PT",
+  "faabLeft": 10,
   "startingQB": "Brock Purdy",
   "roster": {
     "QB": [
-      "Brock Purdy",
-      "Jordan Love"
+      "Brock Purdy"
     ],
     "RB": [
       "Kenneth Gainwell",
@@ -17,10 +16,11 @@
       "Tyjae Spears"
     ],
     "WR": [
-      "Drake London",
+      "Germie Bernard",
       "Malik Nabers",
       "George Pickens",
-      "Carnell Tate"
+      "Carnell Tate",
+      "Ja'Marr Chase"
     ],
     "TE": [
       "Tucker Kraft"
@@ -29,48 +29,45 @@
       "DeForest Buckner"
     ],
     "LB": [
-      "Tremaine Edmunds",
+      "Frankie Luvu",
       "Jihaad Campbell",
-      "Carson Schwesinger",
-      "Easton Mascarenas-Arnold"
+      "Danny Stutsman",
+      "Jack Campbell"
     ],
     "DB": [
       "Nick Emmanwori",
       "Malik Mustapha",
-      "A.J. Haulcy",
-      "Kevin Winston"
+      "Tykee Smith",
+      "DeShon Elliott"
     ],
     "IR": [
       "Alec Pierce",
-      "Brian Branch",
-      "DeShon Elliott"
+      "Kaden Elliss",
+      "Brian Branch"
     ]
   },
-  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Tyjae Spears — Q (Knee) (reserve)",
-    "Alec Pierce — IR (Heel) (IR slot)",
-    "Carson Schwesinger — Q (Ankle) (active)",
-    "Kevin Winston — D (Quadriceps) (reserve)",
-    "Brian Branch — PUP (Achilles) (IR slot)",
-    "DeShon Elliott — IR (Knee) (IR slot)"
+    "Alec Pierce — IR (Heel - Expected return Oct 25) (IR slot)",
+    "DeShon Elliott — IR (Knee - Expected return Oct 25) (reserve)",
+    "Kaden Elliss — O (Calf) (IR slot)",
+    "Brian Branch — PUP (Achilles - Expected return Oct 25) (IR slot)"
   ],
-  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
     "Tyjae Spears — Q (Knee) (reserve)",
-    "Carson Schwesinger — Q (Ankle) (active)",
-    "Kevin Winston — D (Quadriceps) (reserve)"
+    "DeShon Elliott — IR (Knee - Expected return Oct 25) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Tyjae Spears — Q (Knee) (reserve)",
-    "Alec Pierce — IR (Heel) (IR slot)",
-    "Carson Schwesinger — Q (Ankle) (active)",
-    "Kevin Winston — D (Quadriceps) (reserve)",
-    "Brian Branch — PUP (Achilles) (IR slot)",
-    "DeShon Elliott — IR (Knee) (IR slot)"
+    "Alec Pierce — IR (Heel - Expected return Oct 25) (IR slot)",
+    "DeShon Elliott — IR (Knee - Expected return Oct 25) (reserve)",
+    "Kaden Elliss — O (Calf) (IR slot)",
+    "Brian Branch — PUP (Achilles - Expected return Oct 25) (IR slot)"
   ],
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }

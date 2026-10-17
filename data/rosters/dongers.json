@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-10-16 6:50 AM PT",
+  "asOf": "2026-10-17 6:40 AM PT",
   "faabLeft": 2,
   "startingQB": "Jameis Winston",
   "roster": {
@@ -46,23 +46,19 @@
       "T.J. Edwards"
     ]
   },
-  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Chris Olave — Q (Illness) (active)",
-    "KC Concepcion — Q (Concussion) (reserve)",
-    "Ladd McConkey — Q (Foot) (reserve)",
     "D.J. Moore — Q (Shoulder) (reserve)",
     "Tyreek Hill — Q (Knee) (IR slot)",
     "T.J. Hockenson — Q (Concussion) (IR slot)",
     "Christian Elliss — Q (Chest) (reserve)",
-    "T.J. Edwards — D (Hamstring) (IR slot)"
+    "T.J. Edwards — O (Hamstring) (IR slot)"
   ],
-  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
     "Chris Olave — Q (Illness) (active)",
-    "KC Concepcion — Q (Concussion) (reserve)",
-    "Ladd McConkey — Q (Foot) (reserve)",
     "D.J. Moore — Q (Shoulder) (reserve)",
     "Christian Elliss — Q (Chest) (reserve)"
   ],
@@ -70,13 +66,11 @@
   "pendingClaims": [],
   "flags": [
     "Chris Olave — Q (Illness) (active)",
-    "KC Concepcion — Q (Concussion) (reserve)",
-    "Ladd McConkey — Q (Foot) (reserve)",
     "D.J. Moore — Q (Shoulder) (reserve)",
     "Tyreek Hill — Q (Knee) (IR slot)",
     "T.J. Hockenson — Q (Concussion) (IR slot)",
     "Christian Elliss — Q (Chest) (reserve)",
-    "T.J. Edwards — D (Hamstring) (IR slot)"
+    "T.J. Edwards — O (Hamstring) (IR slot)"
   ],
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }

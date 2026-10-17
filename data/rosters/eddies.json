@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-16 6:50 AM PT",
+  "asOf": "2026-10-17 6:40 AM PT",
   "faabLeft": 60,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -26,7 +26,7 @@
       "Tyler Warren"
     ],
     "DL": [
-      "Tuli Tuipulotu"
+      "George Karlaftis"
     ],
     "LB": [
       "Fred Warner",
@@ -46,31 +46,31 @@
       "Travis Etienne"
     ]
   },
-  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
+    "Tyler Warren — Q (Groin) (active)",
     "Jacory Croskey-Merritt — Q (Groin) (reserve)",
-    "Breece Hall — D (Quadriceps) (reserve)",
-    "Zach Charbonnet — PUP (Knee - acl) (IR slot)",
-    "Jordyn Tyson — IR (Hamstring) (IR slot)",
-    "Travis Etienne — IR (Hamstring) (IR slot)",
-    "Trenton Simpson — Q (Hamstring) (active)"
+    "Breece Hall — O (Quadriceps) (reserve)",
+    "Zach Charbonnet — PUP (Knee - acl - Expected return Oct 25) (IR slot)",
+    "Jordyn Tyson — IR (Hamstring - Expected return Nov 8) (IR slot)",
+    "Travis Etienne — IR (Hamstring - Expected return Nov 8) (IR slot)"
   ],
-  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
+    "Tyler Warren — Q (Groin) (active)",
     "Jacory Croskey-Merritt — Q (Groin) (reserve)",
-    "Breece Hall — D (Quadriceps) (reserve)",
-    "Trenton Simpson — Q (Hamstring) (active)"
+    "Breece Hall — O (Quadriceps) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Tyler Warren — Q (Groin) (active)",
     "Jacory Croskey-Merritt — Q (Groin) (reserve)",
-    "Breece Hall — D (Quadriceps) (reserve)",
-    "Zach Charbonnet — PUP (Knee - acl) (IR slot)",
-    "Jordyn Tyson — IR (Hamstring) (IR slot)",
-    "Travis Etienne — IR (Hamstring) (IR slot)",
-    "Trenton Simpson — Q (Hamstring) (active)"
+    "Breece Hall — O (Quadriceps) (reserve)",
+    "Zach Charbonnet — PUP (Knee - acl - Expected return Oct 25) (IR slot)",
+    "Jordyn Tyson — IR (Hamstring - Expected return Nov 8) (IR slot)",
+    "Travis Etienne — IR (Hamstring - Expected return Nov 8) (IR slot)"
   ],
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }

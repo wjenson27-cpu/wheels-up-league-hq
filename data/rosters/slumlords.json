@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-16 6:50 AM PT",
+  "asOf": "2026-10-17 6:40 AM PT",
   "faabLeft": 1,
   "startingQB": "Drake Maye",
   "roster": {
@@ -46,19 +46,25 @@
       "Talanoa Hufanga"
     ]
   },
-  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Isiah Pacheco — IR (Back) (IR slot)",
-    "Quinshon Judkins — Q (Foot) (IR slot)"
+    "Isiah Pacheco — IR (Back - Expected return Dec 6) (IR slot)",
+    "Quinshon Judkins — Q (Foot) (IR slot)",
+    "Budda Baker — Q (Groin) (active)",
+    "Talanoa Hufanga — INJ (Ankle - Inactive - Expected return Oct 25) (IR slot)"
   ],
-  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Budda Baker — Q (Groin) (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Isiah Pacheco — IR (Back) (IR slot)",
-    "Quinshon Judkins — Q (Foot) (IR slot)"
+    "Isiah Pacheco — IR (Back - Expected return Dec 6) (IR slot)",
+    "Quinshon Judkins — Q (Foot) (IR slot)",
+    "Budda Baker — Q (Groin) (active)",
+    "Talanoa Hufanga — INJ (Ankle - Inactive - Expected return Oct 25) (IR slot)"
   ],
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }

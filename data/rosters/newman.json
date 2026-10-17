@@ -2,15 +2,16 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-16 6:50 AM PT",
-  "faabLeft": 64,
-  "startingQB": "Kirk Cousins",
+  "asOf": "2026-10-17 6:40 AM PT",
+  "faabLeft": 59,
+  "startingQB": "Jordan Love",
   "roster": {
     "QB": [
-      "Kirk Cousins"
+      "Jordan Love"
     ],
     "RB": [
       "Jonathan Taylor",
+      "TreVeyon Henderson",
       "Seth McGowan"
     ],
     "WR": [
@@ -33,7 +34,6 @@
       "Zaire Franklin",
       "Jake Hansen",
       "Nathan Landman",
-      "Kaden Elliss",
       "Eric Wilson"
     ],
     "DB": [
@@ -43,44 +43,34 @@
     "IR": [
       "Jalen Hurts",
       "Jordan Mason",
-      "TreVeyon Henderson"
+      "Henry To'oTo'o"
     ]
   },
-  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Zay Flowers — Q (Toe) (active)",
-    "A.J. Brown — IR (Ankle) (active)",
-    "Jordan Mason — IR (Thumb) (IR slot)",
-    "TreVeyon Henderson — Q (Ankle) (IR slot)",
-    "Azeez Al-Shaair — Q (Groin) (active)",
+    "A.J. Brown — IR (Ankle - Expected return Oct 18) (active)",
+    "TreVeyon Henderson — Q (Ankle) (reserve)",
+    "Jalen Hurts — O (Calf) (IR slot)",
+    "Jordan Mason — IR (Thumb - Expected return Oct 25) (IR slot)",
     "L'Jarius Sneed — Q (Knee) (active)",
-    "Jake Hansen — Q (Illness) (active)",
-    "Nathan Landman — Q (Wrist) (active)",
-    "Kaden Elliss — Q (Calf) (reserve)"
+    "Henry To'oTo'o — IR (Shoulder - Expected return Oct 18) (IR slot)"
   ],
-  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
   "lineupFlags": [
-    "Zay Flowers — Q (Toe) (active)",
-    "A.J. Brown — IR (Ankle) (active)",
-    "Azeez Al-Shaair — Q (Groin) (active)",
-    "L'Jarius Sneed — Q (Knee) (active)",
-    "Jake Hansen — Q (Illness) (active)",
-    "Nathan Landman — Q (Wrist) (active)",
-    "Kaden Elliss — Q (Calf) (reserve)"
+    "A.J. Brown — IR (Ankle - Expected return Oct 18) (active)",
+    "TreVeyon Henderson — Q (Ankle) (reserve)",
+    "L'Jarius Sneed — Q (Knee) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Zay Flowers — Q (Toe) (active)",
-    "A.J. Brown — IR (Ankle) (active)",
-    "Jordan Mason — IR (Thumb) (IR slot)",
-    "TreVeyon Henderson — Q (Ankle) (IR slot)",
-    "Azeez Al-Shaair — Q (Groin) (active)",
+    "A.J. Brown — IR (Ankle - Expected return Oct 18) (active)",
+    "TreVeyon Henderson — Q (Ankle) (reserve)",
+    "Jalen Hurts — O (Calf) (IR slot)",
+    "Jordan Mason — IR (Thumb - Expected return Oct 25) (IR slot)",
     "L'Jarius Sneed — Q (Knee) (active)",
-    "Jake Hansen — Q (Illness) (active)",
-    "Nathan Landman — Q (Wrist) (active)",
-    "Kaden Elliss — Q (Calf) (reserve)"
+    "Henry To'oTo'o — IR (Shoulder - Expected return Oct 18) (IR slot)"
   ],
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }

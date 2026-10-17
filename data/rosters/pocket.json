@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-16 6:50 AM PT",
+  "asOf": "2026-10-17 6:40 AM PT",
   "faabLeft": 101,
   "startingQB": "Tyler Shough",
   "roster": {
@@ -46,25 +46,25 @@
       "Adonai Mitchell"
     ]
   },
-  "notes": "Oct 16 6:50 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Saquon Barkley — Q (Hamstring) (IR slot)",
-    "Jonah Coleman — IR (Ankle) (IR slot)",
-    "Adonai Mitchell — D (Finger) (IR slot)",
-    "Amani Hooker — Q (Concussion) (active)"
+    "Saquon Barkley — O (Hamstring) (IR slot)",
+    "Jonah Coleman — IR (Ankle - Expected return Oct 25) (IR slot)",
+    "Adonai Mitchell — O (Finger) (IR slot)",
+    "Josiah Trotter — Q (Knee) (active)"
   ],
-  "source": "Fantrax roster sync Fri Oct 16 2026 ~6:50 AM PT (/workspace/fantrax-scrape-2026-10-16-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Amani Hooker — Q (Concussion) (active)"
+    "Josiah Trotter — Q (Knee) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Saquon Barkley — Q (Hamstring) (IR slot)",
-    "Jonah Coleman — IR (Ankle) (IR slot)",
-    "Adonai Mitchell — D (Finger) (IR slot)",
-    "Amani Hooker — Q (Concussion) (active)"
+    "Saquon Barkley — O (Hamstring) (IR slot)",
+    "Jonah Coleman — IR (Ankle - Expected return Oct 25) (IR slot)",
+    "Adonai Mitchell — O (Finger) (IR slot)",
+    "Josiah Trotter — Q (Knee) (active)"
   ],
-  "updated": "2026-10-16"
+  "updated": "2026-10-17"
 }
