@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-17 6:40 AM PT",
+  "asOf": "2026-10-18 6:16 AM PT",
   "faabLeft": 8,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -17,9 +17,10 @@
     "WR": [
       "Jaxon Smith-Njigba",
       "Denzel Boston",
-      "Stefon Diggs",
       "DeVonta Smith",
+      "Tre Tucker",
       "Ja'Kobi Lane",
+      "Stefon Diggs",
       "Dohnte Meyers"
     ],
     "TE": [
@@ -33,7 +34,6 @@
       "Jamien Sherwood",
       "Terrel Bernard",
       "Mack Wilson",
-      "Teddye Buchanan",
       "Dre Greenlaw"
     ],
     "DB": [
@@ -46,34 +46,31 @@
       "Micah Parsons"
     ]
   },
-  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Stefon Diggs — Q (Hamstring) (active)",
-    "Ja'Kobi Lane — IR (Wrist - Expected return Oct 18) (reserve)",
+    "Ja'Kobi Lane — Q (Wrist) (reserve)",
+    "Stefon Diggs — Q (Hamstring) (reserve)",
     "Rico Dowdle — Q (Toe) (reserve)",
     "Jonathon Brooks — IR (Abdomen - Expected return Nov 8) (IR slot)",
-    "David Montgomery — O (Groin) (IR slot)",
-    "Dre Greenlaw — SUSPENDED (reserve)",
+    "David Montgomery — INJ (Groin - Inactive - Expected return Oct 25) (IR slot)",
     "Micah Parsons — PUP (Knee - acl - Expected return Oct 25) (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
-    "Stefon Diggs — Q (Hamstring) (active)",
-    "Ja'Kobi Lane — IR (Wrist - Expected return Oct 18) (reserve)",
-    "Rico Dowdle — Q (Toe) (reserve)",
-    "Dre Greenlaw — SUSPENDED (reserve)"
+    "Ja'Kobi Lane — Q (Wrist) (reserve)",
+    "Stefon Diggs — Q (Hamstring) (reserve)",
+    "Rico Dowdle — Q (Toe) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Stefon Diggs — Q (Hamstring) (active)",
-    "Ja'Kobi Lane — IR (Wrist - Expected return Oct 18) (reserve)",
+    "Ja'Kobi Lane — Q (Wrist) (reserve)",
+    "Stefon Diggs — Q (Hamstring) (reserve)",
     "Rico Dowdle — Q (Toe) (reserve)",
     "Jonathon Brooks — IR (Abdomen - Expected return Nov 8) (IR slot)",
-    "David Montgomery — O (Groin) (IR slot)",
-    "Dre Greenlaw — SUSPENDED (reserve)",
+    "David Montgomery — INJ (Groin - Inactive - Expected return Oct 25) (IR slot)",
     "Micah Parsons — PUP (Knee - acl - Expected return Oct 25) (IR slot)"
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }

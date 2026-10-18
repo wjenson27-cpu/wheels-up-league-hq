@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-17 6:40 AM PT",
+  "asOf": "2026-10-18 6:16 AM PT",
   "faabLeft": 10,
   "startingQB": "Aaron Rodgers",
   "roster": {
@@ -46,7 +46,7 @@
       "Derwin James"
     ]
   },
-  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Lamar Jackson — O (Ankle) (reserve)",
     "Jordan Addison — Q (Hamstring) (reserve)",
@@ -55,7 +55,7 @@
     "Daiyan Henley — Q (Knee) (active)",
     "Derwin James — O (Hamstring) (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
     "Lamar Jackson — O (Ankle) (reserve)",
@@ -72,5 +72,5 @@
     "Daiyan Henley — Q (Knee) (active)",
     "Derwin James — O (Hamstring) (IR slot)"
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }

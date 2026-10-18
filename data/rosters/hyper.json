@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-17 6:40 AM PT",
+  "asOf": "2026-10-18 6:16 AM PT",
   "faabLeft": 50,
   "startingQB": "Justin Herbert",
   "roster": {
@@ -18,16 +18,17 @@
     "WR": [
       "Luther Burden",
       "Jaylin Noel",
-      "Makai Lemon",
       "Emeka Egbuka",
       "Amon-Ra St. Brown",
       "Travis Hunter"
     ],
     "TE": [
+      "Darren Waller",
       "Sam LaPorta"
     ],
     "DL": [
-      "Josh Hines-Allen"
+      "Josh Hines-Allen",
+      "Abdul Carter"
     ],
     "LB": [
       "Nick Bolton",
@@ -37,35 +38,33 @@
       "Blake Cashman"
     ],
     "DB": [
-      "Jeremy Chinn",
-      "Kamren Curl"
+      "Jeremy Chinn"
     ],
     "IR": [
       "Kenyon Sadiq",
-      "Darren Waller",
-      "Nick Bosa"
+      "Nick Bosa",
+      "Kamren Curl"
     ]
   },
-  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
-    "Rachaad White — Q (Shoulder) (active)",
     "Kenyon Sadiq — Q (Concussion) (IR slot)",
-    "Kamren Curl — Q (Ankle) (active)",
-    "Nick Bosa — Q (Calf) (IR slot)"
+    "Abdul Carter — Q (Calf) (active)",
+    "Nick Bosa — O (Calf) (IR slot)",
+    "Kamren Curl — Q (Ankle) (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
-    "Rachaad White — Q (Shoulder) (active)",
-    "Kamren Curl — Q (Ankle) (active)"
+    "Abdul Carter — Q (Calf) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Rachaad White — Q (Shoulder) (active)",
     "Kenyon Sadiq — Q (Concussion) (IR slot)",
-    "Kamren Curl — Q (Ankle) (active)",
-    "Nick Bosa — Q (Calf) (IR slot)"
+    "Abdul Carter — Q (Calf) (active)",
+    "Nick Bosa — O (Calf) (IR slot)",
+    "Kamren Curl — Q (Ankle) (IR slot)"
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }

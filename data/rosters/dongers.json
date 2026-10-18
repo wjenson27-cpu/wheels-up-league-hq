@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-10-17 6:40 AM PT",
+  "asOf": "2026-10-18 6:16 AM PT",
   "faabLeft": 2,
   "startingQB": "Jameis Winston",
   "roster": {
@@ -46,20 +46,22 @@
       "T.J. Edwards"
     ]
   },
-  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Chris Olave — Q (Illness) (active)",
     "D.J. Moore — Q (Shoulder) (reserve)",
     "Tyreek Hill — Q (Knee) (IR slot)",
     "T.J. Hockenson — Q (Concussion) (IR slot)",
+    "Nick Cross — Q (Illness) (active)",
     "Christian Elliss — Q (Chest) (reserve)",
     "T.J. Edwards — O (Hamstring) (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
     "Chris Olave — Q (Illness) (active)",
     "D.J. Moore — Q (Shoulder) (reserve)",
+    "Nick Cross — Q (Illness) (active)",
     "Christian Elliss — Q (Chest) (reserve)"
   ],
   "pendingClaim": null,
@@ -69,8 +71,9 @@
     "D.J. Moore — Q (Shoulder) (reserve)",
     "Tyreek Hill — Q (Knee) (IR slot)",
     "T.J. Hockenson — Q (Concussion) (IR slot)",
+    "Nick Cross — Q (Illness) (active)",
     "Christian Elliss — Q (Chest) (reserve)",
     "T.J. Edwards — O (Hamstring) (IR slot)"
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }

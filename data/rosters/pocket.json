@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-17 6:40 AM PT",
+  "asOf": "2026-10-18 6:16 AM PT",
   "faabLeft": 101,
   "startingQB": "Tyler Shough",
   "roster": {
@@ -30,15 +30,15 @@
     ],
     "LB": [
       "Ernest Jones",
-      "Josiah Trotter",
-      "Barrett Carter"
+      "Barrett Carter",
+      "Josiah Trotter"
     ],
     "DB": [
       "Cooper DeJean",
       "Brandon Jones",
+      "Jaquan Brisker",
       "Amani Hooker",
-      "Andru Phillips",
-      "Jaquan Brisker"
+      "Andru Phillips"
     ],
     "IR": [
       "Saquon Barkley",
@@ -46,17 +46,17 @@
       "Adonai Mitchell"
     ]
   },
-  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Saquon Barkley — O (Hamstring) (IR slot)",
     "Jonah Coleman — IR (Ankle - Expected return Oct 25) (IR slot)",
     "Adonai Mitchell — O (Finger) (IR slot)",
-    "Josiah Trotter — Q (Knee) (active)"
+    "Josiah Trotter — Q (Knee) (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Josiah Trotter — Q (Knee) (active)"
+    "Josiah Trotter — Q (Knee) (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -64,7 +64,7 @@
     "Saquon Barkley — O (Hamstring) (IR slot)",
     "Jonah Coleman — IR (Ankle - Expected return Oct 25) (IR slot)",
     "Adonai Mitchell — O (Finger) (IR slot)",
-    "Josiah Trotter — Q (Knee) (active)"
+    "Josiah Trotter — Q (Knee) (reserve)"
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }

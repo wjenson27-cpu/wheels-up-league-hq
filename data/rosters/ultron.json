@@ -2,7 +2,7 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-17 6:40 AM PT",
+  "asOf": "2026-10-18 6:16 AM PT",
   "faabLeft": 7,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -21,7 +21,7 @@
       "Michael Wilson"
     ],
     "TE": [
-      "Pat Freiermuth"
+      "Chigoziem Okonkwo"
     ],
     "DL": [
       "Jaishawn Barham",
@@ -32,42 +32,42 @@
       "Tremaine Edmunds",
       "Carson Schwesinger",
       "Robert Spillane",
+      "Kendal Daniels",
       "Patrick Queen"
     ],
     "DB": [
       "Grant Delpit",
       "Dillon Thieneman",
-      "A.J. Haulcy",
-      "Trevon Moehrig"
+      "A.J. Haulcy"
     ],
     "IR": [
+      "Pat Freiermuth",
       "Kyle Monangai",
       "Myles Garrett"
     ]
   },
-  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Caleb Williams — Q (Hamstring) (active)",
-    "Terry McLaurin — Q (Hamstring) (active)",
+    "Pat Freiermuth — Q (Calf) (IR slot)",
     "Kyle Monangai — O (Toe) (IR slot)",
     "Carson Schwesinger — Q (Ankle) (active)",
     "Myles Garrett — IR (Knee - Expected return Oct 25) (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [
     "Caleb Williams — Q (Hamstring) (active)",
-    "Terry McLaurin — Q (Hamstring) (active)",
     "Carson Schwesinger — Q (Ankle) (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Caleb Williams — Q (Hamstring) (active)",
-    "Terry McLaurin — Q (Hamstring) (active)",
+    "Pat Freiermuth — Q (Calf) (IR slot)",
     "Kyle Monangai — O (Toe) (IR slot)",
     "Carson Schwesinger — Q (Ankle) (active)",
     "Myles Garrett — IR (Knee - Expected return Oct 25) (IR slot)"
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }

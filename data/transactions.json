@@ -1,7 +1,72 @@
 {
-  "updated": "2026-10-17",
-  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
+  "updated": "2026-10-18",
+  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
   "items": [
+    {
+      "date": "2026-10-17",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Kendal Daniels (LB-ATL); dropped Trevon Moehrig (DB-CAR)",
+      "time": "8:47 PM PDT",
+      "player": "Kendal Daniels",
+      "playerMeta": "LB-ATL",
+      "dropped": "Trevon Moehrig",
+      "droppedMeta": "DB-CAR",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-17",
+      "team": "Saltese Slamm",
+      "type": "ADD/DROP",
+      "summary": "Added Tre Tucker (WR-LV); dropped Teddye Buchanan (LB-BAL)",
+      "time": "2:55 PM PDT",
+      "player": "Tre Tucker",
+      "playerMeta": "WR-LV",
+      "dropped": "Teddye Buchanan",
+      "droppedMeta": "LB-BAL",
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-17",
+      "team": "Ultron",
+      "type": "ADD",
+      "summary": "Added Chigoziem Okonkwo (TE-WAS) ($0/null bid)",
+      "time": "9:27 AM PDT",
+      "player": "Chigoziem Okonkwo",
+      "playerMeta": "TE-WAS",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-17",
+      "team": "The Hypersecretors",
+      "type": "ADD",
+      "summary": "Added Abdul Carter (DL-NYG) ($0/null bid)",
+      "time": "8:17 AM PDT",
+      "player": "Abdul Carter",
+      "playerMeta": "DL-NYG",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-17",
+      "team": "The Hypersecretors",
+      "type": "DROP",
+      "summary": "Dropped Makai Lemon (WR-PHI)",
+      "time": "8:13 AM PDT",
+      "player": "Makai Lemon",
+      "playerMeta": "WR-PHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
     {
       "date": "2026-10-16",
       "team": "Ultron",
@@ -4419,6 +4484,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 17 AM: +12 claim/FA rows and 2 trades (Oct 16 7:18 AM–10:44 PM PT) after Oct 16 AM sync. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 18 AM: +5 FA rows (Oct 17 8:13 AM–8:47 PM PT), no bids, no new trades, after Oct 17 AM sync. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

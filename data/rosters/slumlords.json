@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-17 6:40 AM PT",
+  "asOf": "2026-10-18 6:16 AM PT",
   "faabLeft": 1,
   "startingQB": "Drake Maye",
   "roster": {
@@ -27,8 +27,8 @@
     ],
     "DL": [
       "Gregory Rousseau",
-      "Maxx Crosby",
-      "Jeffery Simmons"
+      "Jeffery Simmons",
+      "Maxx Crosby"
     ],
     "LB": [
       "Anthony Hill",
@@ -46,14 +46,14 @@
       "Talanoa Hufanga"
     ]
   },
-  "notes": "2026-10-17 6:40 AM PT rebuild from live Fantrax.",
+  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
   "injuryFlags": [
     "Isiah Pacheco — IR (Back - Expected return Dec 6) (IR slot)",
     "Quinshon Judkins — Q (Foot) (IR slot)",
     "Budda Baker — Q (Groin) (active)",
     "Talanoa Hufanga — INJ (Ankle - Inactive - Expected return Oct 25) (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-17 6:40 AM PT (/workspace/fantrax-scrape-2026-10-17-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
     "Budda Baker — Q (Groin) (active)"
@@ -66,5 +66,5 @@
     "Budda Baker — Q (Groin) (active)",
     "Talanoa Hufanga — INJ (Ankle - Inactive - Expected return Oct 25) (IR slot)"
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }
