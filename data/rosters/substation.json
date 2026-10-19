@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-18 6:16 AM PT",
+  "asOf": "2026-10-19 7:45 AM PT",
   "faabLeft": 10,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -30,44 +30,37 @@
     ],
     "LB": [
       "Frankie Luvu",
-      "Jihaad Campbell",
       "Danny Stutsman",
-      "Jack Campbell"
+      "Jack Campbell",
+      "Jihaad Campbell"
     ],
     "DB": [
       "Nick Emmanwori",
       "Malik Mustapha",
-      "Tykee Smith",
-      "DeShon Elliott"
+      "Chauncey Gardner-Johnson",
+      "Tykee Smith"
     ],
     "IR": [
-      "Alec Pierce",
       "Kaden Elliss",
-      "Brian Branch"
+      "Brian Branch",
+      "DeShon Elliott"
     ]
   },
-  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
+  "notes": "",
   "injuryFlags": [
-    "Tyjae Spears — Q (Knee) (reserve)",
-    "Alec Pierce — IR (Heel - Expected return Oct 25) (IR slot)",
-    "DeShon Elliott — IR (Knee - Expected return Oct 25) (reserve)",
-    "Kaden Elliss — O (Calf) (IR slot)",
-    "Brian Branch — PUP (Achilles - Expected return Oct 25) (IR slot)"
+    "Kaden Elliss — O (IR slot)",
+    "Brian Branch — IR (IR slot)",
+    "DeShon Elliott — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "lineupFlags": [
-    "Tyjae Spears — Q (Knee) (reserve)",
-    "DeShon Elliott — IR (Knee - Expected return Oct 25) (reserve)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Tyjae Spears — Q (Knee) (reserve)",
-    "Alec Pierce — IR (Heel - Expected return Oct 25) (IR slot)",
-    "DeShon Elliott — IR (Knee - Expected return Oct 25) (reserve)",
-    "Kaden Elliss — O (Calf) (IR slot)",
-    "Brian Branch — PUP (Achilles - Expected return Oct 25) (IR slot)"
+    "Kaden Elliss — O (IR slot)",
+    "Brian Branch — IR (IR slot)",
+    "DeShon Elliott — IR (IR slot)"
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
 }

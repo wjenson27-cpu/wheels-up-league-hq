@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-10-18 6:16 AM PT",
+  "asOf": "2026-10-19 7:45 AM PT",
   "faabLeft": 64,
   "startingQB": "Patrick Mahomes",
   "roster": {
@@ -46,21 +46,19 @@
       "Drake Thomas"
     ]
   },
-  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
+  "notes": "",
   "injuryFlags": [
-    "Josh Jacobs — CEL (Reserve Commissioner Exempt List - Expected return Oct 25) (IR slot)",
-    "Alvin Kamara — Q (Back) (IR slot)",
-    "Drake Thomas — INJ (Ankle - Inactive - Expected return Oct 25) (IR slot)"
+    "Josh Jacobs — Q (IR slot)",
+    "Drake Thomas — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Josh Jacobs — CEL (Reserve Commissioner Exempt List - Expected return Oct 25) (IR slot)",
-    "Alvin Kamara — Q (Back) (IR slot)",
-    "Drake Thomas — INJ (Ankle - Inactive - Expected return Oct 25) (IR slot)"
+    "Josh Jacobs — Q (IR slot)",
+    "Drake Thomas — O (IR slot)"
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
 }

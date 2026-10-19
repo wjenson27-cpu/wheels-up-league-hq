@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-18 6:16 AM PT",
+  "asOf": "2026-10-19 7:45 AM PT",
   "faabLeft": 59,
   "startingQB": "Jordan Love",
   "roster": {
@@ -11,7 +11,7 @@
     ],
     "RB": [
       "Jonathan Taylor",
-      "Seth McGowan"
+      "TreVeyon Henderson"
     ],
     "WR": [
       "Zay Flowers",
@@ -42,32 +42,22 @@
     ],
     "IR": [
       "Jalen Hurts",
-      "Jordan Mason",
-      "TreVeyon Henderson"
+      "Jordan Mason"
     ]
   },
-  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
+  "notes": "",
   "injuryFlags": [
-    "A.J. Brown — Q (Ankle) (active)",
-    "Jalen Hurts — IR (Calf - Expected return Nov 22) (IR slot)",
-    "Jordan Mason — IR (Thumb - Expected return Oct 25) (IR slot)",
-    "TreVeyon Henderson — Q (Ankle) (IR slot)",
-    "L'Jarius Sneed — Q (Knee) (active)"
+    "Jalen Hurts — IR (IR slot)",
+    "Jordan Mason — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
-  "lineupFlags": [
-    "A.J. Brown — Q (Ankle) (active)",
-    "L'Jarius Sneed — Q (Knee) (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "A.J. Brown — Q (Ankle) (active)",
-    "Jalen Hurts — IR (Calf - Expected return Nov 22) (IR slot)",
-    "Jordan Mason — IR (Thumb - Expected return Oct 25) (IR slot)",
-    "TreVeyon Henderson — Q (Ankle) (IR slot)",
-    "L'Jarius Sneed — Q (Knee) (active)"
+    "Jalen Hurts — IR (IR slot)",
+    "Jordan Mason — IR (IR slot)"
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
 }

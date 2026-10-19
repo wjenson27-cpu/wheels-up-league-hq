@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-18 6:16 AM PT",
+  "asOf": "2026-10-19 7:45 AM PT",
   "faabLeft": 50,
   "startingQB": "Justin Herbert",
   "roster": {
@@ -32,39 +32,30 @@
     ],
     "LB": [
       "Nick Bolton",
-      "Jack Gibbens",
       "Payton Wilson",
       "Jacob Rodriguez",
       "Blake Cashman"
     ],
     "DB": [
-      "Jeremy Chinn"
+      "Jeremy Chinn",
+      "Kamren Curl"
     ],
     "IR": [
       "Kenyon Sadiq",
-      "Nick Bosa",
-      "Kamren Curl"
+      "Nick Bosa"
     ]
   },
-  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
+  "notes": "",
   "injuryFlags": [
-    "Kenyon Sadiq — Q (Concussion) (IR slot)",
-    "Abdul Carter — Q (Calf) (active)",
-    "Nick Bosa — O (Calf) (IR slot)",
-    "Kamren Curl — Q (Ankle) (IR slot)"
+    "Nick Bosa — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
-  "lineupFlags": [
-    "Abdul Carter — Q (Calf) (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Kenyon Sadiq — Q (Concussion) (IR slot)",
-    "Abdul Carter — Q (Calf) (active)",
-    "Nick Bosa — O (Calf) (IR slot)",
-    "Kamren Curl — Q (Ankle) (IR slot)"
+    "Nick Bosa — O (IR slot)"
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
 }

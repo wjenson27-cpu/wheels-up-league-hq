@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-10-18 6:16 AM PT",
+  "asOf": "2026-10-19 7:45 AM PT",
   "faabLeft": 2,
   "startingQB": "Jameis Winston",
   "roster": {
@@ -26,12 +26,12 @@
       "Brenton Strange"
     ],
     "DL": [
-      "Zach Allen",
-      "David Bailey"
+      "Zach Allen"
     ],
     "LB": [
-      "Isaiah McDuffie",
-      "Christian Elliss"
+      "Christian Elliss",
+      "David Bailey",
+      "Isaiah McDuffie"
     ],
     "DB": [
       "Kyle Hamilton",
@@ -46,34 +46,34 @@
       "T.J. Edwards"
     ]
   },
-  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
+  "notes": "",
   "injuryFlags": [
-    "Chris Olave — Q (Illness) (active)",
-    "D.J. Moore — Q (Shoulder) (reserve)",
-    "Tyreek Hill — Q (Knee) (IR slot)",
-    "T.J. Hockenson — Q (Concussion) (IR slot)",
-    "Nick Cross — Q (Illness) (active)",
-    "Christian Elliss — Q (Chest) (reserve)",
-    "T.J. Edwards — O (Hamstring) (IR slot)"
+    "KaVontae Turpin — Q (active)",
+    "Ladd McConkey — Q (reserve)",
+    "D.J. Moore — O (reserve)",
+    "Tyreek Hill — INACTIVE (IR slot)",
+    "T.J. Hockenson — Q (IR slot)",
+    "Nick Cross — Q (active)",
+    "T.J. Edwards — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
-    "Chris Olave — Q (Illness) (active)",
-    "D.J. Moore — Q (Shoulder) (reserve)",
-    "Nick Cross — Q (Illness) (active)",
-    "Christian Elliss — Q (Chest) (reserve)"
+    "KaVontae Turpin — Q (active)",
+    "Ladd McConkey — Q (reserve)",
+    "D.J. Moore — O (reserve)",
+    "Nick Cross — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Chris Olave — Q (Illness) (active)",
-    "D.J. Moore — Q (Shoulder) (reserve)",
-    "Tyreek Hill — Q (Knee) (IR slot)",
-    "T.J. Hockenson — Q (Concussion) (IR slot)",
-    "Nick Cross — Q (Illness) (active)",
-    "Christian Elliss — Q (Chest) (reserve)",
-    "T.J. Edwards — O (Hamstring) (IR slot)"
+    "KaVontae Turpin — Q (active)",
+    "Ladd McConkey — Q (reserve)",
+    "D.J. Moore — O (reserve)",
+    "Tyreek Hill — INACTIVE (IR slot)",
+    "T.J. Hockenson — Q (IR slot)",
+    "Nick Cross — Q (active)",
+    "T.J. Edwards — O (IR slot)"
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
 }

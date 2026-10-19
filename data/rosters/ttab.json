@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-18 6:16 AM PT",
+  "asOf": "2026-10-19 7:45 AM PT",
   "faabLeft": 39,
   "startingQB": "Josh Allen",
   "roster": {
@@ -25,10 +25,9 @@
       "Dallas Goedert",
       "Jake Ferguson"
     ],
-    "DL": [
-      "Akheem Mesidor"
-    ],
+    "DL": [],
     "LB": [
+      "Akheem Mesidor",
       "Dorian Williams",
       "Zack Baun",
       "Divine Deablo",
@@ -38,26 +37,30 @@
     "DB": [
       "Javon Bullard",
       "Caleb Downs",
-      "Jordan Battle"
+      "Dane Belton"
     ],
     "IR": [
-      "Dane Belton",
       "Andrew Wingard"
     ]
   },
-  "notes": "2026-10-18 6:16 AM PT rebuild from live Fantrax.",
+  "notes": "",
   "injuryFlags": [
-    "Dane Belton — Q (Knee) (IR slot)",
-    "Andrew Wingard — O (Knee) (IR slot)"
+    "Divine Deablo — Q (active)",
+    "Dee Winters — Q (active)",
+    "Andrew Wingard — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-18 6:16 AM PT (/workspace/fantrax-scrape-2026-10-18-am-roster-sync.json)",
+  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Divine Deablo — Q (active)",
+    "Dee Winters — Q (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Dane Belton — Q (Knee) (IR slot)",
-    "Andrew Wingard — O (Knee) (IR slot)"
+    "Divine Deablo — Q (active)",
+    "Dee Winters — Q (active)",
+    "Andrew Wingard — O (IR slot)"
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
 }
