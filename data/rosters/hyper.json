@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-20 6:45 AM PT",
+  "asOf": "2026-10-20 4:40 PM PT",
   "faabLeft": 50,
   "startingQB": "Justin Herbert",
   "roster": {
@@ -46,15 +46,15 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Nick Bosa — O (IR slot)"
+    "Nick Bosa — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
+  "source": "Fantrax roster sync 2026-10-20 4:40 PM PT (fantrax-raw-2026-10-20-pm.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Nick Bosa — O (IR slot)"
+    "Nick Bosa — Q (IR slot)"
   ],
   "updated": "2026-10-20"
 }

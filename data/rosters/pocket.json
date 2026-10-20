@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-20 6:45 AM PT",
+  "asOf": "2026-10-20 4:40 PM PT",
   "faabLeft": 101,
   "startingQB": "Jared Goff",
   "roster": {
@@ -37,8 +37,7 @@
       "Cooper DeJean",
       "Brandon Jones",
       "Amani Hooker",
-      "Jaquan Brisker",
-      "Andru Phillips"
+      "Jaquan Brisker"
     ],
     "IR": [
       "Jonah Coleman",
@@ -52,7 +51,7 @@
     "Jonah Coleman — IR (IR slot)",
     "Adonai Mitchell — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
+  "source": "Fantrax roster sync 2026-10-20 4:40 PM PT (fantrax-raw-2026-10-20-pm.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
     "Saquon Barkley — Q (reserve)"

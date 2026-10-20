@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-20",
-  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
+  "source": "Fantrax roster sync 2026-10-20 4:40 PM PT (fantrax-raw-2026-10-20-pm.json)",
   "items": [
     {
       "date": "2026-10-19",
@@ -4683,6 +4683,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 20 AM: +5 FA drops (Oct 19 8:36 AM–9:04 PM PT), no bids; +1 completed trade Eddies/Ultron (Stevenson for Bryce Young, Oct 19 8:54 PM PT). Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 20 AM: no new rows. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }
