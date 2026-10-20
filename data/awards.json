@@ -64,6 +64,15 @@
       "winnerShort": "LAB",
       "score": 299.5,
       "note": "Highest Week 5 final score"
+    },
+    {
+      "week": 6,
+      "status": "final",
+      "winnerTeamId": "pocket",
+      "winner": "Pocket Agents",
+      "winnerShort": "Pocket",
+      "score": 262.5,
+      "note": "Highest Week 6 final score"
     }
   ],
   "survivor": {
@@ -73,7 +82,6 @@
       "lab",
       "doubtpfizer",
       "eddies",
-      "ttab",
       "hyper",
       "goats",
       "pocket",
@@ -129,6 +137,16 @@
         "aliveBefore": 10,
         "aliveAfter": 9,
         "note": "Lowest Week 5 final score among teams still alive — off the bus"
+      },
+      {
+        "week": 6,
+        "status": "final",
+        "teamId": "ttab",
+        "team": "Towner Top Aga Bottom",
+        "score": 186.5,
+        "aliveBefore": 9,
+        "aliveAfter": 8,
+        "note": "Lowest Week 6 final score among teams still alive — off the bus"
       }
     ],
     "lastRide": {
@@ -139,13 +157,13 @@
       "reentryWeek": 11,
       "rules": "Teams off the bus battle head-to-head on Last Ride. Week 3: the two eliminated teams face off. Higher week score stays alive; loser is out of Last Ride for good. Winner then battles each week's lowest score through Week 10 (same rule: lose once, you're done). Only the Last Ride winner gets a Week 11 shot back on the bus.",
       "currentMatchup": {
-        "week": 6,
+        "week": 7,
         "status": "upcoming",
         "teamAId": "saltese",
         "teamA": "Saltese Slamm",
-        "teamBId": "ultron",
-        "teamB": "Ultron",
-        "note": "Week 6 Last Ride — Saltese Slamm (Last Ride survivor) vs Ultron (off the bus Week 5); loser out for good"
+        "teamBId": "ttab",
+        "teamB": "Towner Top Aga Bottom",
+        "note": "Week 7 Last Ride — Saltese Slamm (Last Ride survivor) vs Towner Top Aga Bottom (off the bus Week 6); loser out for good"
       },
       "aliveTeamIds": [
         "saltese"
@@ -183,6 +201,17 @@
           "loser": "Morningside Muff Divers",
           "loserScore": 203,
           "note": "Week 5 Last Ride — Saltese stay alive; Morningside out of Last Ride for good"
+        },
+        {
+          "week": 6,
+          "status": "final",
+          "winnerTeamId": "saltese",
+          "winner": "Saltese Slamm",
+          "winnerScore": 259,
+          "loserTeamId": "ultron",
+          "loser": "Ultron",
+          "loserScore": 205.5,
+          "note": "Week 6 Last Ride — Saltese stay alive; Ultron out of Last Ride for good"
         }
       ]
     }
@@ -195,34 +224,34 @@
       "trackTop": 3,
       "teamId": "pocket",
       "team": "Pocket Agents",
-      "value": "4-1",
+      "value": "5-1",
       "leaders": [
         {
           "rank": 1,
           "teamId": "pocket",
           "team": "Pocket Agents",
           "teamShort": "Pocket",
-          "value": "4-1",
-          "valueLabel": "4-1 · 1443.5 PF"
+          "value": "5-1",
+          "valueLabel": "5-1 · 1706 PF"
         },
         {
           "rank": 2,
           "teamId": "lab",
           "team": "Little Ass Boys",
           "teamShort": "LAB",
-          "value": "4-1",
-          "valueLabel": "4-1 · 1250 PF"
+          "value": "5-1",
+          "valueLabel": "5-1 · 1485.5 PF"
         },
         {
           "rank": 3,
           "teamId": "goats",
           "team": "Valley Old Goats",
           "teamShort": "Goats",
-          "value": "4-1",
-          "valueLabel": "4-1 · 1241 PF"
+          "value": "5-1",
+          "valueLabel": "5-1 · 1430.5 PF"
         }
       ],
-      "note": "Live after Week 5 · locks at season end"
+      "note": "Live after Week 6 · locks at season end"
     },
     "topPoints": {
       "key": "topPoints",
@@ -231,31 +260,31 @@
       "trackTop": 3,
       "teamId": "pocket",
       "team": "Pocket Agents",
-      "value": 1443.5,
+      "value": 1706,
       "leaders": [
         {
           "rank": 1,
           "teamId": "pocket",
           "team": "Pocket Agents",
           "teamShort": "Pocket",
-          "value": 1443.5,
-          "valueLabel": "1443.5"
+          "value": 1706,
+          "valueLabel": "1706"
         },
         {
           "rank": 2,
-          "teamId": "hyper",
-          "team": "The Hypersecretors",
-          "teamShort": "Hyper",
-          "value": 1282.5,
-          "valueLabel": "1282.5"
-        },
-        {
-          "rank": 3,
           "teamId": "eddies",
           "team": "Eagle Ridge Eddies",
           "teamShort": "Eddies",
-          "value": 1279,
-          "valueLabel": "1279"
+          "value": 1538.5,
+          "valueLabel": "1538.5"
+        },
+        {
+          "rank": 3,
+          "teamId": "hyper",
+          "team": "The Hypersecretors",
+          "teamShort": "Hyper",
+          "value": 1519.5,
+          "valueLabel": "1519.5"
         }
       ],
       "note": "Live season PF · locks at season end"
@@ -708,6 +737,78 @@
         "teamId": "morningside",
         "team": "Morningside Muff Divers",
         "score": 203
+      }
+    ],
+    "6": [
+      {
+        "teamId": "pocket",
+        "team": "Pocket Agents",
+        "score": 262.5
+      },
+      {
+        "teamId": "eddies",
+        "team": "Eagle Ridge Eddies",
+        "score": 259.5
+      },
+      {
+        "teamId": "saltese",
+        "team": "Saltese Slamm",
+        "score": 259.0
+      },
+      {
+        "teamId": "doubtpfizer",
+        "team": "Mrs. Doubtpfizer",
+        "score": 255.0
+      },
+      {
+        "teamId": "slumlords",
+        "team": "Indian Trail Slumlords",
+        "score": 249.5
+      },
+      {
+        "teamId": "hyper",
+        "team": "The Hypersecretors",
+        "score": 237.0
+      },
+      {
+        "teamId": "lab",
+        "team": "Little Ass Boys",
+        "score": 235.5
+      },
+      {
+        "teamId": "substation",
+        "team": "Substation",
+        "score": 227.5
+      },
+      {
+        "teamId": "morningside",
+        "team": "Morningside Muff Divers",
+        "score": 212.5
+      },
+      {
+        "teamId": "newman",
+        "team": "Newman Lake Sleep Paralysis Demons",
+        "score": 209.0
+      },
+      {
+        "teamId": "ultron",
+        "team": "Ultron",
+        "score": 205.5
+      },
+      {
+        "teamId": "goats",
+        "team": "Valley Old Goats",
+        "score": 189.5
+      },
+      {
+        "teamId": "ttab",
+        "team": "Towner Top Aga Bottom",
+        "score": 186.5
+      },
+      {
+        "teamId": "dongers",
+        "team": "Drummond Dongers",
+        "score": 163.0
       }
     ]
   },
