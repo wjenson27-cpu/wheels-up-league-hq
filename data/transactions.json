@@ -1,7 +1,89 @@
 {
-  "updated": "2026-10-19",
-  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
+  "updated": "2026-10-20",
+  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
   "items": [
+    {
+      "date": "2026-10-19",
+      "team": "Mrs. Doubtpfizer",
+      "type": "DROP",
+      "summary": "Dropped Dylan Sampson (RB-CLE)",
+      "time": "9:04 PM PDT",
+      "player": "Dylan Sampson",
+      "playerMeta": "RB-CLE",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-19",
+      "team": "Eagle Ridge Eddies",
+      "type": "TRADE",
+      "summary": "Eagle Ridge Eddies sent Rhamondre Stevenson (RB) to Ultron for Bryce Young (QB)",
+      "time": "8:54 PM PDT",
+      "player": "Rhamondre Stevenson",
+      "playerMeta": "RB-NE",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6",
+      "counterparty": "Ultron",
+      "received": [
+        "Bryce Young (QB)"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "team": "The Hypersecretors",
+      "type": "DROP",
+      "summary": "Dropped Darren Waller (TE-CAR)",
+      "time": "8:49 PM PDT",
+      "player": "Darren Waller",
+      "playerMeta": "TE-CAR",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-19",
+      "team": "Little Ass Boys",
+      "type": "DROP",
+      "summary": "Dropped Austin Booker (DL-CHI)",
+      "time": "8:03 PM PDT",
+      "player": "Austin Booker",
+      "playerMeta": "DL-CHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-19",
+      "team": "Ultron",
+      "type": "DROP",
+      "summary": "Dropped Terry McLaurin (WR-WAS)",
+      "time": "7:53 PM PDT",
+      "player": "Terry McLaurin",
+      "playerMeta": "WR-WAS",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
+    {
+      "date": "2026-10-19",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "type": "DROP",
+      "summary": "Dropped Jalen Hurts (QB-PHI)",
+      "time": "8:36 AM PDT",
+      "player": "Jalen Hurts",
+      "playerMeta": "QB-PHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 6"
+    },
     {
       "date": "2026-10-18",
       "team": "Substation",
@@ -4601,6 +4683,6 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 19 AM: +9 FA rows (Oct 18 7:32 AM–9:01 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 20 AM: +5 FA drops (Oct 19 8:36 AM–9:04 PM PT), no bids; +1 completed trade Eddies/Ultron (Stevenson for Bryce Young, Oct 19 8:54 PM PT). Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
 }

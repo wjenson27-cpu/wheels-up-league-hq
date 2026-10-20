@@ -1,8 +1,24 @@
 {
-  "updated": "2026-10-19",
-  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
+  "updated": "2026-10-20",
+  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-10-19",
+      "time": "8:54 PM PDT",
+      "week": 6,
+      "status": "completed",
+      "official": true,
+      "teamA": "Eagle Ridge Eddies",
+      "teamB": "Ultron",
+      "givesA": [
+        "Rhamondre Stevenson (RB)"
+      ],
+      "givesB": [
+        "Bryce Young (QB)"
+      ],
+      "summary": "Week 6 — Eagle Ridge Eddies sent Rhamondre Stevenson (RB) to Ultron for Bryce Young (QB) (Oct 19 8:54 PM PDT)."
+    },
     {
       "date": "2026-10-16",
       "time": "10:20 AM PDT",
@@ -435,13 +451,12 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "Oct 16 8:33 AM",
+      "lastUpdated": "Oct 19 8:54 PM",
       "players": [
         "Zach Charbonnet",
         "Jacory Croskey-Merritt",
         "Travis Etienne",
         "Brian Robinson Jr.",
-        "Rhamondre Stevenson",
         "Kendrick Bourne",
         "Chimere Dike",
         "Jordyn Tyson",
@@ -470,9 +485,8 @@
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "Oct 14 9:00 AM",
+      "lastUpdated": "Oct 19 8:36 AM",
       "players": [
-        "Jalen Hurts",
         "TreVeyon Henderson",
         "Davante Adams",
         "A.J. Brown",
@@ -534,7 +548,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-19 7:45 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-20 6:45 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Substation↔Ultron London+Edmunds+Schwesinger+Mascarenas-Arnold+$7 for Chase+Luvu+Campbell+Bernard (Oct 16 6:29 PM); Newman↔Substation Elliss+$5 for Jordan Love (Oct 16 10:20 AM); Saltese↔Substation Carnell Tate for Dre Greenlaw+Denzel Boston (Oct 9 9:58 AM).",
   "hqComplete": true
 }

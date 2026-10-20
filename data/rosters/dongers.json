@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-10-19 7:45 AM PT",
+  "asOf": "2026-10-20 6:45 AM PT",
   "faabLeft": 2,
   "startingQB": "Jameis Winston",
   "roster": {
@@ -26,11 +26,11 @@
       "Brenton Strange"
     ],
     "DL": [
-      "Zach Allen"
+      "Zach Allen",
+      "David Bailey"
     ],
     "LB": [
       "Christian Elliss",
-      "David Bailey",
       "Isaiah McDuffie"
     ],
     "DB": [
@@ -50,30 +50,27 @@
   "injuryFlags": [
     "KaVontae Turpin — Q (active)",
     "Ladd McConkey — Q (reserve)",
-    "D.J. Moore — O (reserve)",
+    "D.J. Moore — Q (reserve)",
     "Tyreek Hill — INACTIVE (IR slot)",
     "T.J. Hockenson — Q (IR slot)",
-    "Nick Cross — Q (active)",
-    "T.J. Edwards — O (IR slot)"
+    "T.J. Edwards — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
+  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
     "KaVontae Turpin — Q (active)",
     "Ladd McConkey — Q (reserve)",
-    "D.J. Moore — O (reserve)",
-    "Nick Cross — Q (active)"
+    "D.J. Moore — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "KaVontae Turpin — Q (active)",
     "Ladd McConkey — Q (reserve)",
-    "D.J. Moore — O (reserve)",
+    "D.J. Moore — Q (reserve)",
     "Tyreek Hill — INACTIVE (IR slot)",
     "T.J. Hockenson — Q (IR slot)",
-    "Nick Cross — Q (active)",
-    "T.J. Edwards — O (IR slot)"
+    "T.J. Edwards — Q (IR slot)"
   ],
-  "updated": "2026-10-19"
+  "updated": "2026-10-20"
 }

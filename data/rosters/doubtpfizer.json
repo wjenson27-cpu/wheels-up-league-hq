@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-10-19 7:45 AM PT",
+  "asOf": "2026-10-20 6:45 AM PT",
   "faabLeft": 86,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -14,7 +14,6 @@
       "Braelon Allen",
       "Chuba Hubbard",
       "Kaelon Black",
-      "Dylan Sampson",
       "Blake Corum"
     ],
     "WR": [
@@ -24,8 +23,8 @@
     ],
     "TE": [
       "Colston Loveland",
-      "Kyle Pitts",
-      "Hunter Henry"
+      "Hunter Henry",
+      "Kyle Pitts"
     ],
     "DL": [
       "Byron Young"
@@ -33,41 +32,38 @@
     "LB": [
       "Nakobe Dean",
       "D'Marco Jackson",
+      "DeMarvion Overshown",
       "Alex Singleton",
       "Sonny Styles"
     ],
     "DB": [
-      "Reed Blankenship",
       "Kamari Lassiter"
     ],
     "IR": [
       "Rashee Rice",
       "Mason Graham",
-      "DeMarvion Overshown"
+      "Reed Blankenship"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Dylan Sampson — IR (reserve)",
-    "Rashee Rice — O (IR slot)",
-    "Reed Blankenship — Q (active)",
-    "Mason Graham — O (IR slot)",
-    "DeMarvion Overshown — O (IR slot)"
+    "Rashee Rice — Q (IR slot)",
+    "DeMarvion Overshown — Q (active)",
+    "Mason Graham — Q (IR slot)",
+    "Reed Blankenship — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
+  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
   "lineupFlags": [
-    "Dylan Sampson — IR (reserve)",
-    "Reed Blankenship — Q (active)"
+    "DeMarvion Overshown — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Dylan Sampson — IR (reserve)",
-    "Rashee Rice — O (IR slot)",
-    "Reed Blankenship — Q (active)",
-    "Mason Graham — O (IR slot)",
-    "DeMarvion Overshown — O (IR slot)"
+    "Rashee Rice — Q (IR slot)",
+    "DeMarvion Overshown — Q (active)",
+    "Mason Graham — Q (IR slot)",
+    "Reed Blankenship — Q (IR slot)"
   ],
-  "updated": "2026-10-19"
+  "updated": "2026-10-20"
 }

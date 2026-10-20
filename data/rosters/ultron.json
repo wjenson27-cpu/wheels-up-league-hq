@@ -2,43 +2,42 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-19 7:45 AM PT",
+  "asOf": "2026-10-20 6:45 AM PT",
   "faabLeft": 7,
   "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
-      "Caleb Williams",
-      "Bryce Young"
+      "Caleb Williams"
     ],
     "RB": [
-      "Bhayshul Tuten",
       "D'Andre Swift",
-      "Chris Rodriguez Jr."
+      "Rhamondre Stevenson",
+      "Chris Rodriguez Jr.",
+      "Bhayshul Tuten"
     ],
     "WR": [
       "Drake London",
-      "Terry McLaurin",
       "Michael Wilson"
     ],
     "TE": [
       "Pat Freiermuth"
     ],
     "DL": [
-      "Dallas Turner"
+      "Dallas Turner",
+      "Jaishawn Barham"
     ],
     "LB": [
-      "Jaishawn Barham",
-      "Foyesade Oluokun",
-      "Tremaine Edmunds",
-      "Carson Schwesinger",
       "Robert Spillane",
+      "Tremaine Edmunds",
+      "Patrick Queen",
+      "Carson Schwesinger",
       "Kendal Daniels",
-      "Patrick Queen"
+      "Foyesade Oluokun"
     ],
     "DB": [
-      "Grant Delpit",
+      "A.J. Haulcy",
       "Dillon Thieneman",
-      "A.J. Haulcy"
+      "Grant Delpit"
     ],
     "IR": [
       "Kyle Monangai",
@@ -47,27 +46,27 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Kyle Monangai — O (IR slot)",
-    "Grant Delpit — Q (active)",
+    "Kyle Monangai — Q (IR slot)",
     "Tremaine Edmunds — Q (active)",
     "Kendal Daniels — Q (reserve)",
+    "Grant Delpit — Q (reserve)",
     "Myles Garrett — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
+  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [
-    "Grant Delpit — Q (active)",
     "Tremaine Edmunds — Q (active)",
-    "Kendal Daniels — Q (reserve)"
+    "Kendal Daniels — Q (reserve)",
+    "Grant Delpit — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Kyle Monangai — O (IR slot)",
-    "Grant Delpit — Q (active)",
+    "Kyle Monangai — Q (IR slot)",
     "Tremaine Edmunds — Q (active)",
     "Kendal Daniels — Q (reserve)",
+    "Grant Delpit — Q (reserve)",
     "Myles Garrett — IR (IR slot)"
   ],
-  "updated": "2026-10-19"
+  "updated": "2026-10-20"
 }

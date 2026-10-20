@@ -2,16 +2,17 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-19 7:45 AM PT",
+  "asOf": "2026-10-20 6:45 AM PT",
   "faabLeft": 101,
-  "startingQB": "Tyler Shough",
+  "startingQB": "Jared Goff",
   "roster": {
     "QB": [
-      "Tyler Shough",
-      "Jared Goff"
+      "Jared Goff",
+      "Tyler Shough"
     ],
     "RB": [
       "Woody Marks",
+      "Saquon Barkley",
       "Mike Washington"
     ],
     "WR": [
@@ -22,7 +23,6 @@
       "Malik Washington"
     ],
     "TE": [
-      "Dalton Kincaid",
       "Trey McBride"
     ],
     "DL": [
@@ -30,41 +30,39 @@
     ],
     "LB": [
       "Ernest Jones",
-      "Josiah Trotter",
-      "Barrett Carter"
+      "Barrett Carter",
+      "Josiah Trotter"
     ],
     "DB": [
       "Cooper DeJean",
       "Brandon Jones",
       "Amani Hooker",
-      "Andru Phillips",
-      "Jaquan Brisker"
+      "Jaquan Brisker",
+      "Andru Phillips"
     ],
     "IR": [
-      "Saquon Barkley",
       "Jonah Coleman",
-      "Adonai Mitchell"
+      "Adonai Mitchell",
+      "Dalton Kincaid"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Dalton Kincaid — Q (active)",
-    "Saquon Barkley — O (IR slot)",
+    "Saquon Barkley — Q (reserve)",
     "Jonah Coleman — IR (IR slot)",
-    "Adonai Mitchell — O (IR slot)"
+    "Adonai Mitchell — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
+  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Dalton Kincaid — Q (active)"
+    "Saquon Barkley — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Dalton Kincaid — Q (active)",
-    "Saquon Barkley — O (IR slot)",
+    "Saquon Barkley — Q (reserve)",
     "Jonah Coleman — IR (IR slot)",
-    "Adonai Mitchell — O (IR slot)"
+    "Adonai Mitchell — Q (IR slot)"
   ],
-  "updated": "2026-10-19"
+  "updated": "2026-10-20"
 }

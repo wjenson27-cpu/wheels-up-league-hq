@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-19 7:45 AM PT",
+  "asOf": "2026-10-20 6:45 AM PT",
   "faabLeft": 39,
   "startingQB": "Josh Allen",
   "roster": {
@@ -25,9 +25,10 @@
       "Dallas Goedert",
       "Jake Ferguson"
     ],
-    "DL": [],
+    "DL": [
+      "Akheem Mesidor"
+    ],
     "LB": [
-      "Akheem Mesidor",
       "Dorian Williams",
       "Zack Baun",
       "Divine Deablo",
@@ -47,9 +48,9 @@
   "injuryFlags": [
     "Divine Deablo — Q (active)",
     "Dee Winters — Q (active)",
-    "Andrew Wingard — O (IR slot)"
+    "Andrew Wingard — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-19 7:45 AM PT (/workspace/fantrax-raw-2026-10-19.json)",
+  "source": "Fantrax roster sync 2026-10-20 6:45 AM PT (fantrax-raw-2026-10-20.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
     "Divine Deablo — Q (active)",
@@ -60,7 +61,7 @@
   "flags": [
     "Divine Deablo — Q (active)",
     "Dee Winters — Q (active)",
-    "Andrew Wingard — O (IR slot)"
+    "Andrew Wingard — Q (IR slot)"
   ],
-  "updated": "2026-10-19"
+  "updated": "2026-10-20"
 }
