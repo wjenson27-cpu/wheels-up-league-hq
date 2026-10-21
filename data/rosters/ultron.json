@@ -2,7 +2,7 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-21 9:34 AM PT",
+  "asOf": "2026-10-21 4:10 PM PT",
   "faabLeft": 2,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -11,14 +11,16 @@
     ],
     "RB": [
       "D'Andre Swift",
+      "Roschon Johnson",
       "Rhamondre Stevenson",
       "Chris Rodriguez Jr.",
       "Bhayshul Tuten"
     ],
     "WR": [
       "Drake London",
-      "Kaden Wetjen",
-      "Michael Wilson"
+      "Michael Wilson",
+      "Dillon Thieneman",
+      "Kendal Daniels"
     ],
     "TE": [
       "Pat Freiermuth"
@@ -32,13 +34,11 @@
       "Tremaine Edmunds",
       "Patrick Queen",
       "Carson Schwesinger",
-      "Kendal Daniels",
+      "Easton Mascarenas-Arnold",
       "Foyesade Oluokun"
     ],
     "DB": [
-      "Josh Metellus",
-      "Dillon Thieneman",
-      "Grant Delpit"
+      "Josh Metellus"
     ],
     "IR": [
       "Terrance Ferguson",
@@ -49,29 +49,29 @@
   "notes": "",
   "injuryFlags": [
     "Terrance Ferguson — IR (IR slot)",
-    "Kyle Monangai — Q (IR slot)",
+    "Kyle Monangai — O (IR slot)",
     "Tremaine Edmunds — Q (active)",
+    "Carson Schwesinger — Q (active)",
     "Kendal Daniels — Q (reserve)",
-    "Grant Delpit — Q (reserve)",
     "Myles Garrett — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
+  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [
     "Tremaine Edmunds — Q (active)",
-    "Kendal Daniels — Q (reserve)",
-    "Grant Delpit — Q (reserve)"
+    "Carson Schwesinger — Q (active)",
+    "Kendal Daniels — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Terrance Ferguson — IR (IR slot)",
-    "Kyle Monangai — Q (IR slot)",
+    "Kyle Monangai — O (IR slot)",
     "Tremaine Edmunds — Q (active)",
+    "Carson Schwesinger — Q (active)",
     "Kendal Daniels — Q (reserve)",
-    "Grant Delpit — Q (reserve)",
     "Myles Garrett — IR (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 9:34 AM PT"
+  "lastSynced": "2026-10-21 4:10 PM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-21 9:34 AM PT",
+  "asOf": "2026-10-21 4:10 PM PT",
   "faabLeft": 47,
   "startingQB": "Jordan Love",
   "roster": {
@@ -14,10 +14,11 @@
       "TreVeyon Henderson"
     ],
     "WR": [
-      "Myles Price",
+      "A.J. Brown",
       "Zay Flowers",
       "Matthew Golden",
-      "Tee Higgins"
+      "Tee Higgins",
+      "Myles Price"
     ],
     "TE": [
       "Juwan Johnson",
@@ -32,36 +33,51 @@
       "Nathan Landman",
       "Henry To'oTo'o",
       "Jeremiah Trotter",
-      "Jake Hansen",
       "Eric Wilson"
     ],
     "DB": [
-      "L'Jarius Sneed",
+      "Jordan Battle",
       "Xavier Watts",
-      "Jordan Battle"
+      "L'Jarius Sneed"
     ],
     "IR": [
       "Jordan Mason",
-      "A.J. Brown",
       "Davante Adams"
     ]
   },
   "notes": "",
   "injuryFlags": [
+    "Jordan Love — Q (active)",
+    "Matthew Golden — Q (active)",
     "Jordan Mason — IR (IR slot)",
-    "A.J. Brown — Q (IR slot)",
-    "Davante Adams — IR (IR slot)"
+    "Davante Adams — IR (IR slot)",
+    "Azeez Al-Shaair — Q (active)",
+    "Nathan Landman — Q (active)",
+    "Henry To'oTo'o — Q (active)",
+    "L'Jarius Sneed — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
+  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Jordan Love — Q (active)",
+    "Matthew Golden — Q (active)",
+    "Azeez Al-Shaair — Q (active)",
+    "Nathan Landman — Q (active)",
+    "Henry To'oTo'o — Q (active)",
+    "L'Jarius Sneed — Q (reserve)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Jordan Love — Q (active)",
+    "Matthew Golden — Q (active)",
     "Jordan Mason — IR (IR slot)",
-    "A.J. Brown — Q (IR slot)",
-    "Davante Adams — IR (IR slot)"
+    "Davante Adams — IR (IR slot)",
+    "Azeez Al-Shaair — Q (active)",
+    "Nathan Landman — Q (active)",
+    "Henry To'oTo'o — Q (active)",
+    "L'Jarius Sneed — Q (reserve)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 9:34 AM PT"
+  "lastSynced": "2026-10-21 4:10 PM PT"
 }

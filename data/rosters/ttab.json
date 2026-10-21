@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-21 9:34 AM PT",
+  "asOf": "2026-10-21 4:10 PM PT",
   "faabLeft": 0,
   "startingQB": "Bo Nix",
   "roster": {
@@ -21,7 +21,9 @@
       "Ryan Flournoy",
       "Jameson Williams",
       "Omar Cooper Jr.",
-      "Stefon Diggs"
+      "Stefon Diggs",
+      "Caleb Downs",
+      "Harold Perkins"
     ],
     "TE": [
       "Dallas Goedert"
@@ -31,12 +33,11 @@
     ],
     "LB": [
       "Zack Baun",
-      "Harold Perkins",
       "Dorian Williams"
     ],
     "DB": [
       "Javon Bullard",
-      "Caleb Downs",
+      "Tony Adams",
       "Dane Belton"
     ],
     "IR": [
@@ -47,20 +48,27 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Christian Watson — Q (active)",
+    "Tony Adams — Q (active)",
     "Divine Deablo — Q (IR slot)",
     "Andrew Wingard — Q (IR slot)",
     "Dee Winters — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
+  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Christian Watson — Q (active)",
+    "Tony Adams — Q (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Christian Watson — Q (active)",
+    "Tony Adams — Q (active)",
     "Divine Deablo — Q (IR slot)",
     "Andrew Wingard — Q (IR slot)",
     "Dee Winters — Q (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 9:34 AM PT"
+  "lastSynced": "2026-10-21 4:10 PM PT"
 }

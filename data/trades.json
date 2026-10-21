@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-21",
-  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
+  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
   "season": 2026,
   "trades": [
     {
@@ -501,14 +501,13 @@
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "Oct 19 8:36 AM",
+      "lastUpdated": "Oct 21 12:57 PM",
       "players": [
         "TreVeyon Henderson",
         "Davante Adams",
         "A.J. Brown",
         "Matthew Golden",
         "Tee Higgins",
-        "Jake Hansen",
         "Eric Wilson"
       ],
       "note": null
@@ -562,8 +561,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-21 9:34 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-21 4:10 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Substation↔Ultron London+Edmunds+Schwesinger+Mascarenas-Arnold+$7 for Chase+Luvu+Campbell+Bernard (Oct 16 6:29 PM); Newman↔Substation Elliss+$5 for Jordan Love (Oct 16 10:20 AM); Saltese↔Substation Carnell Tate for Dre Greenlaw+Denzel Boston (Oct 9 9:58 AM).",
   "hqComplete": true,
-  "lastSynced": "2026-10-21 9:34 AM PT"
+  "lastSynced": "2026-10-21 4:10 PM PT"
 }

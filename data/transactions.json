@@ -1,7 +1,111 @@
 {
   "updated": "2026-10-21",
-  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
+  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
   "items": [
+    {
+      "date": "2026-10-21",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Roschon Johnson (RB-CHI); dropped Kaden Wetjen (WR-PIT)",
+      "time": "2:23 PM PDT",
+      "player": "Roschon Johnson",
+      "playerMeta": "RB-CHI",
+      "dropped": "Kaden Wetjen",
+      "droppedMeta": "WR-PIT",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-21",
+      "team": "The Hypersecretors",
+      "type": "ADD",
+      "summary": "Added Jalen Carter (DL-PHI) ($0/null bid)",
+      "time": "1:28 PM PDT",
+      "player": "Jalen Carter",
+      "playerMeta": "DL-PHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-21",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "type": "DROP",
+      "summary": "Dropped Jake Hansen (LB-HOU)",
+      "time": "12:57 PM PDT",
+      "player": "Jake Hansen",
+      "playerMeta": "LB-HOU",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-21",
+      "team": "Saltese Slamm",
+      "type": "ADD/DROP",
+      "summary": "Added Kevin Byard (DB-NE); dropped Josh Woods (LB-ATL)",
+      "time": "12:12 PM PDT",
+      "player": "Kevin Byard",
+      "playerMeta": "DB-NE",
+      "dropped": "Josh Woods",
+      "droppedMeta": "LB-ATL",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-21",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD",
+      "summary": "Added Tony Adams (DB-TEN) ($0/null bid)",
+      "time": "10:51 AM PDT",
+      "player": "Tony Adams",
+      "playerMeta": "DB-TEN",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-21",
+      "team": "Substation",
+      "type": "ADD",
+      "summary": "Added Alec Pierce (WR-IND) ($0/null bid)",
+      "time": "10:40 AM PDT",
+      "player": "Alec Pierce",
+      "playerMeta": "WR-IND",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-21",
+      "team": "Saltese Slamm",
+      "type": "ADD/DROP",
+      "summary": "Added Josh Woods (LB-ATL); dropped Nik Bonitto (DL-DEN)",
+      "time": "10:38 AM PDT",
+      "player": "Josh Woods",
+      "playerMeta": "LB-ATL",
+      "dropped": "Nik Bonitto",
+      "droppedMeta": "DL-DEN",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-21",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Easton Mascarenas-Arnold (LB-CLE); dropped Grant Delpit (DB-CLE)",
+      "time": "10:06 AM PDT",
+      "player": "Easton Mascarenas-Arnold",
+      "playerMeta": "LB-CLE",
+      "dropped": "Grant Delpit",
+      "droppedMeta": "DB-CLE",
+      "bid": null,
+      "period": "Week 7"
+    },
     {
       "date": "2026-10-21",
       "team": "Mrs. Doubtpfizer",
@@ -5099,7 +5203,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 21 AM: +30 FA rows (Oct 21 8:21 AM–9:26 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 21 AM: +8 FA rows (Oct 21 10:06 AM–2:23 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-21 9:34 AM PT"
+  "lastSynced": "2026-10-21 4:10 PM PT"
 }

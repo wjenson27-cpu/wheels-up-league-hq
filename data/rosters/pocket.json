@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-21 9:34 AM PT",
+  "asOf": "2026-10-21 4:10 PM PT",
   "faabLeft": 98,
   "startingQB": "Jared Goff",
   "roster": {
@@ -11,15 +11,16 @@
       "Tyler Shough"
     ],
     "RB": [
-      "Woody Marks",
-      "Mike Washington"
+      "Woody Marks"
     ],
     "WR": [
       "Rashid Shaheed",
       "CeeDee Lamb",
       "Tetairoa McMillan",
       "Jaylen Waddle",
-      "Malik Washington"
+      "Mike Washington",
+      "Malik Washington",
+      "Josiah Trotter"
     ],
     "TE": [
       "Trey McBride",
@@ -31,7 +32,6 @@
     "LB": [
       "Ernest Jones",
       "Barrett Carter",
-      "Josiah Trotter",
       "Micah McFadden"
     ],
     "DB": [
@@ -51,7 +51,7 @@
     "Saquon Barkley — Q (IR slot)",
     "Jonah Coleman — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
+  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -61,5 +61,5 @@
     "Jonah Coleman — IR (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 9:34 AM PT"
+  "lastSynced": "2026-10-21 4:10 PM PT"
 }

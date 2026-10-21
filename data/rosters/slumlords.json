@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-21 9:34 AM PT",
+  "asOf": "2026-10-21 4:10 PM PT",
   "faabLeft": 0,
   "startingQB": "Drake Maye",
   "roster": {
@@ -15,12 +15,14 @@
       "James Cook"
     ],
     "WR": [
-      "Wan'Dale Robinson",
-      "Kalif Raymond",
-      "Kyle Williams",
       "Demario Douglas",
+      "Kalif Raymond",
+      "Wan'Dale Robinson",
       "Chris Godwin",
-      "Darius Cooper"
+      "Darius Cooper",
+      "Kyle Williams",
+      "Anthony Hill",
+      "Jaden Dugger"
     ],
     "TE": [
       "Harold Fannin"
@@ -31,8 +33,6 @@
       "Gregory Rousseau"
     ],
     "LB": [
-      "Anthony Hill",
-      "Jaden Dugger",
       "Alex Anzalone"
     ],
     "DB": [
@@ -52,7 +52,7 @@
     "Quinshon Judkins — Q (IR slot)",
     "Talanoa Hufanga — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
+  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -63,5 +63,5 @@
     "Talanoa Hufanga — Q (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 9:34 AM PT"
+  "lastSynced": "2026-10-21 4:10 PM PT"
 }
