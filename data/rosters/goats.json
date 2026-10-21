@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-10-20 4:40 PM PT",
+  "asOf": "2026-10-21 6:35 AM PT",
   "faabLeft": 64,
   "startingQB": "Patrick Mahomes",
   "roster": {
@@ -10,9 +10,9 @@
       "Patrick Mahomes"
     ],
     "RB": [
-      "Bucky Irving",
-      "Chase Brown",
       "Derrick Henry",
+      "Chase Brown",
+      "Bucky Irving",
       "Samaje Perine",
       "Kendre Miller"
     ],
@@ -50,7 +50,7 @@
   "injuryFlags": [
     "Drake Thomas — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-20 4:40 PM PT (fantrax-raw-2026-10-20-pm.json)",
+  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -58,5 +58,6 @@
   "flags": [
     "Drake Thomas — Q (IR slot)"
   ],
-  "updated": "2026-10-20"
+  "updated": "2026-10-21",
+  "lastSynced": "2026-10-21 6:35 AM PT"
 }

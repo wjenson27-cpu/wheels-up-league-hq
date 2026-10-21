@@ -1,7 +1,33 @@
 {
-  "updated": "2026-10-20",
-  "source": "Fantrax roster sync 2026-10-20 4:40 PM PT (fantrax-raw-2026-10-20-pm.json)",
+  "updated": "2026-10-21",
+  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
   "items": [
+    {
+      "date": "2026-10-20",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Akheem Mesidor (DL-LAC)",
+      "time": "10:56 PM PDT",
+      "player": "Akheem Mesidor",
+      "playerMeta": "DL-LAC",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-20",
+      "team": "Pocket Agents",
+      "type": "DROP",
+      "summary": "Dropped Adonai Mitchell (WR-NYJ)",
+      "time": "7:15 PM PDT",
+      "player": "Adonai Mitchell",
+      "playerMeta": "WR-NYJ",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
     {
       "date": "2026-10-19",
       "team": "Mrs. Doubtpfizer",
@@ -4683,6 +4709,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 20 AM: no new rows. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
-  "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3."
+  "note": "Oct 21 AM: +2 FA rows (Oct 20 7:15 PM–10:56 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
+  "lastSynced": "2026-10-21 6:35 AM PT"
 }

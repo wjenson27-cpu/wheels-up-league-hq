@@ -1,8 +1,24 @@
 {
-  "updated": "2026-10-20",
-  "source": "Fantrax roster sync 2026-10-20 4:40 PM PT (fantrax-raw-2026-10-20-pm.json)",
+  "updated": "2026-10-21",
+  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-10-20",
+      "time": "11:01 PM PDT",
+      "week": 6,
+      "status": "completed",
+      "official": true,
+      "teamA": "Saltese Slamm",
+      "teamB": "Towner Top Aga Bottom",
+      "givesA": [
+        "Stefon Diggs (WR)"
+      ],
+      "givesB": [
+        "$20 FAAB"
+      ],
+      "summary": "Week 6 — Saltese Slamm sent Stefon Diggs (WR) to TTAB for $20 FAAB (Oct 20 11:01 PM PDT)."
+    },
     {
       "date": "2026-10-19",
       "time": "8:54 PM PDT",
@@ -510,9 +526,8 @@
     {
       "teamId": "saltese",
       "team": "Saltese Slamm",
-      "lastUpdated": "Oct 6 11:31 AM",
+      "lastUpdated": "Oct 20 11:01 PM",
       "players": [
-        "Stefon Diggs",
         "DeVonta Smith"
       ],
       "note": "Looking for FAAB or flex swaps."
@@ -548,7 +563,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-20 4:40 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-21 6:35 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Substation↔Ultron London+Edmunds+Schwesinger+Mascarenas-Arnold+$7 for Chase+Luvu+Campbell+Bernard (Oct 16 6:29 PM); Newman↔Substation Elliss+$5 for Jordan Love (Oct 16 10:20 AM); Saltese↔Substation Carnell Tate for Dre Greenlaw+Denzel Boston (Oct 9 9:58 AM).",
-  "hqComplete": true
+  "hqComplete": true,
+  "lastSynced": "2026-10-21 6:35 AM PT"
 }

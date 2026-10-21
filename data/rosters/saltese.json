@@ -2,8 +2,8 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-20 4:40 PM PT",
-  "faabLeft": 8,
+  "asOf": "2026-10-21 6:35 AM PT",
+  "faabLeft": 28,
   "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
@@ -18,7 +18,6 @@
       "Jaxon Smith-Njigba",
       "Denzel Boston",
       "DeVonta Smith",
-      "Stefon Diggs",
       "Ja'Kobi Lane",
       "Dohnte Meyers",
       "Tre Tucker"
@@ -52,7 +51,7 @@
     "David Montgomery — Q (IR slot)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-20 4:40 PM PT (fantrax-raw-2026-10-20-pm.json)",
+  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -62,5 +61,6 @@
     "David Montgomery — Q (IR slot)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "updated": "2026-10-20"
+  "updated": "2026-10-21",
+  "lastSynced": "2026-10-21 6:35 AM PT"
 }
