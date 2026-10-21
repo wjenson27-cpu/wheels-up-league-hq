@@ -2,18 +2,18 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-21 6:35 AM PT",
+  "asOf": "2026-10-21 9:34 AM PT",
   "faabLeft": 10,
   "startingQB": "Brock Purdy",
   "roster": {
     "QB": [
-      "Brock Purdy"
+      "Brock Purdy",
+      "Kyler Murray"
     ],
     "RB": [
       "RJ Harvey",
       "Kenneth Gainwell",
-      "Emmett Johnson",
-      "Tyjae Spears"
+      "Emmett Johnson"
     ],
     "WR": [
       "Ja'Marr Chase",
@@ -36,7 +36,8 @@
     "DB": [
       "Malik Mustapha",
       "Tykee Smith",
-      "Nick Emmanwori"
+      "Nick Emmanwori",
+      "Kevin Winston"
     ],
     "IR": [
       "Kaden Elliss",
@@ -46,20 +47,24 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Kevin Winston — Q (active)",
     "Kaden Elliss — Q (IR slot)",
     "Brian Branch — IR (IR slot)",
     "DeShon Elliott — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
+  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Kevin Winston — Q (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Kevin Winston — Q (active)",
     "Kaden Elliss — Q (IR slot)",
     "Brian Branch — IR (IR slot)",
     "DeShon Elliott — IR (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 6:35 AM PT"
+  "lastSynced": "2026-10-21 9:34 AM PT"
 }

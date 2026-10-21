@@ -2,12 +2,14 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-21 6:35 AM PT",
-  "faabLeft": 50,
+  "asOf": "2026-10-21 9:34 AM PT",
+  "faabLeft": 25,
   "startingQB": "Justin Herbert",
   "roster": {
     "QB": [
-      "Justin Herbert"
+      "Justin Herbert",
+      "Kirk Cousins",
+      "Michael Penix Jr."
     ],
     "RB": [
       "Kenneth Walker III",
@@ -19,16 +21,14 @@
       "Amon-Ra St. Brown",
       "Luther Burden",
       "Emeka Egbuka",
-      "Jaylin Noel"
+      "Jaylin Noel",
+      "Travis Hunter"
     ],
     "TE": [
       "Sam LaPorta",
       "Kenyon Sadiq"
     ],
-    "DL": [
-      "Abdul Carter",
-      "Josh Hines-Allen"
-    ],
+    "DL": [],
     "LB": [
       "Nick Bolton",
       "Blake Cashman",
@@ -40,22 +40,24 @@
       "Kamren Curl"
     ],
     "IR": [
-      "Travis Hunter",
-      "Nick Bosa"
+      "Nick Bosa",
+      "Jalen Pitre"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Nick Bosa — Q (IR slot)"
+    "Nick Bosa — Q (IR slot)",
+    "Jalen Pitre — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
+  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Nick Bosa — Q (IR slot)"
+    "Nick Bosa — Q (IR slot)",
+    "Jalen Pitre — Q (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 6:35 AM PT"
+  "lastSynced": "2026-10-21 9:34 AM PT"
 }

@@ -2,13 +2,13 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-10-21 6:35 AM PT",
-  "faabLeft": 2,
-  "startingQB": "Jameis Winston",
+  "asOf": "2026-10-21 9:34 AM PT",
+  "faabLeft": 1,
+  "startingQB": "Joe Burrow",
   "roster": {
     "QB": [
-      "Jameis Winston",
-      "Joe Burrow"
+      "Joe Burrow",
+      "Jameis Winston"
     ],
     "RB": [
       "Bijan Robinson",
@@ -17,12 +17,12 @@
     "WR": [
       "Chris Olave",
       "KaVontae Turpin",
-      "Parker Washington",
       "KC Concepcion",
-      "Ladd McConkey",
-      "D.J. Moore"
+      "Parker Washington"
     ],
     "TE": [
+      "T.J. Hockenson",
+      "Darnell Washington",
       "Brenton Strange"
     ],
     "DL": [
@@ -36,42 +36,39 @@
     "DB": [
       "Kyle Hamilton",
       "Xavier McKinney",
-      "Nick Cross",
-      "Jonas Sanker",
-      "Kamren Kinchens"
+      "Chuck Clark",
+      "Jalen Ramsey",
+      "Nick Cross"
     ],
     "IR": [
-      "Tyreek Hill",
-      "T.J. Hockenson",
+      "Ladd McConkey",
+      "D.J. Moore",
       "T.J. Edwards"
     ]
   },
   "notes": "",
   "injuryFlags": [
+    "T.J. Hockenson — Q (active)",
     "KaVontae Turpin — Q (active)",
-    "Ladd McConkey — Q (reserve)",
-    "D.J. Moore — Q (reserve)",
-    "Tyreek Hill — INACTIVE (IR slot)",
-    "T.J. Hockenson — Q (IR slot)",
+    "Ladd McConkey — Q (IR slot)",
+    "D.J. Moore — Q (IR slot)",
     "T.J. Edwards — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
+  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
-    "KaVontae Turpin — Q (active)",
-    "Ladd McConkey — Q (reserve)",
-    "D.J. Moore — Q (reserve)"
+    "T.J. Hockenson — Q (active)",
+    "KaVontae Turpin — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "T.J. Hockenson — Q (active)",
     "KaVontae Turpin — Q (active)",
-    "Ladd McConkey — Q (reserve)",
-    "D.J. Moore — Q (reserve)",
-    "Tyreek Hill — INACTIVE (IR slot)",
-    "T.J. Hockenson — Q (IR slot)",
+    "Ladd McConkey — Q (IR slot)",
+    "D.J. Moore — Q (IR slot)",
     "T.J. Edwards — Q (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 6:35 AM PT"
+  "lastSynced": "2026-10-21 9:34 AM PT"
 }

@@ -2,11 +2,12 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-21 6:35 AM PT",
-  "faabLeft": 19,
-  "startingQB": "Josh Allen",
+  "asOf": "2026-10-21 9:34 AM PT",
+  "faabLeft": 0,
+  "startingQB": "Bo Nix",
   "roster": {
     "QB": [
+      "Bo Nix",
       "Josh Allen"
     ],
     "RB": [
@@ -19,13 +20,15 @@
       "Christian Watson",
       "Ryan Flournoy",
       "Jameson Williams",
+      "Omar Cooper Jr.",
       "Stefon Diggs"
     ],
     "TE": [
-      "Dallas Goedert",
-      "Jake Ferguson"
+      "Dallas Goedert"
     ],
-    "DL": [],
+    "DL": [
+      "Kingsley Enagbare"
+    ],
     "LB": [
       "Zack Baun",
       "Harold Perkins",
@@ -48,7 +51,7 @@
     "Andrew Wingard — Q (IR slot)",
     "Dee Winters — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
+  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -59,5 +62,5 @@
     "Dee Winters — Q (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 6:35 AM PT"
+  "lastSynced": "2026-10-21 9:34 AM PT"
 }

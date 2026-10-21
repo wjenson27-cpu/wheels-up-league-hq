@@ -2,8 +2,8 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-21 6:35 AM PT",
-  "faabLeft": 60,
+  "asOf": "2026-10-21 9:34 AM PT",
+  "faabLeft": 55,
   "startingQB": "Bryce Young",
   "roster": {
     "QB": [
@@ -38,7 +38,7 @@
     "DB": [
       "Quentin Lake",
       "Evan Williams",
-      "Mansoor Delane"
+      "D.J. Reed"
     ],
     "IR": [
       "Jordyn Tyson",
@@ -55,7 +55,7 @@
     "Jacory Croskey-Merritt — IR (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
+  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Breece Hall — Q (active)",
@@ -73,5 +73,5 @@
     "Travis Etienne — IR (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 6:35 AM PT"
+  "lastSynced": "2026-10-21 9:34 AM PT"
 }

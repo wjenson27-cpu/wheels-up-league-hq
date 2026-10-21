@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-21",
-  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
+  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
   "season": 2026,
   "trades": [
     {
@@ -542,7 +542,7 @@
     {
       "teamId": "ttab",
       "team": "TTAB",
-      "lastUpdated": "Oct 14 9:00 AM",
+      "lastUpdated": "Oct 21 8:22 AM",
       "players": [
         "Ashton Jeanty",
         "Cameron Skattebo",
@@ -550,7 +550,6 @@
         "Emanuel Wilson",
         "Christian Watson",
         "Jameson Williams",
-        "Jake Ferguson",
         "Dallas Goedert",
         "Zack Baun",
         "Divine Deablo",
@@ -563,8 +562,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-21 6:35 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-21 9:34 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Substation↔Ultron London+Edmunds+Schwesinger+Mascarenas-Arnold+$7 for Chase+Luvu+Campbell+Bernard (Oct 16 6:29 PM); Newman↔Substation Elliss+$5 for Jordan Love (Oct 16 10:20 AM); Saltese↔Substation Carnell Tate for Dre Greenlaw+Denzel Boston (Oct 9 9:58 AM).",
   "hqComplete": true,
-  "lastSynced": "2026-10-21 6:35 AM PT"
+  "lastSynced": "2026-10-21 9:34 AM PT"
 }

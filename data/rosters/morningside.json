@@ -2,8 +2,8 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-21 6:35 AM PT",
-  "faabLeft": 10,
+  "asOf": "2026-10-21 9:34 AM PT",
+  "faabLeft": 8,
   "startingQB": "Aaron Rodgers",
   "roster": {
     "QB": [
@@ -12,7 +12,7 @@
     ],
     "RB": [
       "Ollie Gordon",
-      "MarShawn Lloyd",
+      "Jaleel McLaughlin",
       "Kimani Vidal"
     ],
     "WR": [
@@ -54,7 +54,7 @@
     "Deebo Samuel — O (IR slot)",
     "Derwin James — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 6:35 AM PT (/workspace/fantrax-raw-2026-10-21-am.json)",
+  "source": "Fantrax roster sync 2026-10-21 9:34 AM PT (/workspace/fantrax-raw-2026-10-21-am2.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
     "Lamar Jackson — Q (reserve)",
@@ -70,5 +70,5 @@
     "Derwin James — Q (IR slot)"
   ],
   "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 6:35 AM PT"
+  "lastSynced": "2026-10-21 9:34 AM PT"
 }
