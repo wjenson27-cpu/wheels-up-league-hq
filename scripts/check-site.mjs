@@ -73,7 +73,7 @@ async function checkJson() {
       text = await readFile(file, "utf8");
       JSON.parse(text);
     } catch (err) {
-      fail(`${rel} is not valid JSON (${err.message})`);
+      fail(`[site] ${rel} is not valid JSON (${err.message})`);
       continue;
     }
     if (!text.trim()) fail(`${rel} is empty`);
@@ -111,6 +111,231 @@ async function checkJson() {
   if (trades.includes("tradePending") || /Pending offers/i.test(trades)) {
     fail("trades.html still has a pending-offers section");
   }
+}
+
+// ---- Data integrity: rosters must have players, sync data must be fresh ----
+const MAX_AGE_MS = 36 * 60 * 60 * 1000;
+const MAX_FUTURE_MS = 2 * 60 * 60 * 1000;
+// Freshness applies ONLY to roster/transaction sync output. Recaps, awards,
+// power rankings, scores, schedule and teams.json (standings + power ranks,
+// edited by recap/rankings pushes) are deliberately exempt so a missed scrape
+// never blocks those pushes.
+const FRESH_FILES = ["data/transactions.json", "data/trades.json", "data/faab.json", "data/roster-eddies.json"];
+// Mirror tree (sibling ../wheels-up-league-hq, i.e. /workspace/wheels-up-league-hq
+// for this repo) is EXPECTED: missing folder or checked files that differ from
+// the site fail. Same JSON/roster/freshness rules apply. Override with
+// CHECK_SITE_MIRROR=/path, or CHECK_SITE_MIRROR=none to skip.
+const MIRROR_ROOT = process.env.CHECK_SITE_MIRROR ?? join(root, "..", "wheels-up-league-hq");
+const TS_FIELDS = ["lastSynced", "asOf", "updated"];
+// lastSynced: timed heartbeat ("2026-10-20 4:40 PM PT") stamped by the sync on
+// every run, even when nothing changed. When present it alone decides staleness;
+// asOf/updated are then only parsed and future-checked.
+
+// Offset (minutes) of America/Los_Angeles from UTC at a given UTC instant.
+function ptOffsetMinutes(utcMs) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles", hourCycle: "h23",
+    year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit"
+  }).formatToParts(new Date(utcMs));
+  const g = (t) => Number(parts.find((p) => p.type === t).value);
+  return (Date.UTC(g("year"), g("month") - 1, g("day"), g("hour"), g("minute"), g("second")) - utcMs) / 60000;
+}
+
+// Wall-clock time in PT -> UTC ms (DST-aware).
+function ptToUtc(y, mo, d, h, mi, s = 0) {
+  const guess = Date.UTC(y, mo - 1, d, h, mi, s);
+  let ms = guess - ptOffsetMinutes(guess) * 60000;
+  ms = guess - ptOffsetMinutes(ms) * 60000;
+  return ms;
+}
+
+// Returns {start, end} UTC ms, or null if unparseable. Formats seen in data/:
+//   "2026-10-20 4:40 PM PT" (also PDT/PST, 24h "16:40 PT")  -> start = end
+//   "2026-10-20" (date only)  -> start 00:00 PT (future check), end 23:59:59 PT (staleness)
+//   ISO strings with Z or an explicit offset.
+function parseDataTimestamp(value) {
+  const v = typeof value === "string" ? value.trim() : "";
+  const d = v.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (d) return { start: ptToUtc(+d[1], +d[2], +d[3], 0, 0, 0), end: ptToUtc(+d[1], +d[2], +d[3], 23, 59, 59), dateOnly: true };
+  const ms = parseTimed(value);
+  return ms === null ? null : { start: ms, end: ms, dateOnly: false };
+}
+
+function parseTimed(value) {
+  if (typeof value !== "string") return null;
+  const v = value.trim();
+  let m = v.match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{1,2}):(\d{2})(?::(\d{2}))?\s*(AM|PM)?\s*(PT|PDT|PST)$/i);
+  if (m) {
+    let h = +m[4];
+    const ap = (m[7] || "").toUpperCase();
+    if (ap) {
+      if (h < 1 || h > 12) return null;
+      if (ap === "AM" && h === 12) h = 0;
+      if (ap === "PM" && h !== 12) h += 12;
+    }
+    if (h > 23) return null;
+    return ptToUtc(+m[1], +m[2], +m[3], h, +m[5], +(m[6] || 0));
+  }
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?(Z|[+-]\d{2}:?\d{2})$/.test(v)) {
+    const ms = Date.parse(v);
+    return Number.isNaN(ms) ? null : ms;
+  }
+  return null;
+}
+
+function countPlayers(data) {
+  if (!data || typeof data !== "object" || !data.roster || typeof data.roster !== "object") return 0;
+  return Object.values(data.roster)
+    .filter(Array.isArray)
+    .reduce((n, arr) => n + arr.filter((p) => typeof p === "string" ? p.trim() : p).length, 0);
+}
+
+async function loadJson(base, rel, tag) {
+  let text;
+  try {
+    text = await readFile(join(base, rel), "utf8");
+  } catch (err) {
+    fail(`${tag}${rel} could not be read (${err.code || err.message})`);
+    return undefined;
+  }
+  if (!text.trim()) {
+    fail(`${tag}${rel} is empty`);
+    return undefined;
+  }
+  try {
+    return JSON.parse(text);
+  } catch (err) {
+    fail(`${tag}${rel} is not valid JSON (${err.message})`);
+    return undefined;
+  }
+}
+
+async function checkDataIntegrity(base, label) {
+  const tag = `[${label}] `;
+  const envNow = process.env.CHECK_SITE_NOW ? Date.parse(process.env.CHECK_SITE_NOW) : NaN;
+  const now = Number.isNaN(envNow) ? Date.now() : envNow;
+  let rosterFiles = [];
+  try {
+    rosterFiles = (await readdir(join(base, "data/rosters")))
+      .filter((f) => f.endsWith(".json")).sort().map((f) => `data/rosters/${f}`);
+  } catch {
+    fail(`${tag}data/rosters/ is missing`);
+  }
+  const playerFiles = [...rosterFiles.filter((f) => f !== "data/rosters/index.json"), "data/roster-eddies.json"];
+  const freshFiles = [...new Set([...FRESH_FILES, ...rosterFiles])];
+  const cache = new Map();
+  const get = async (rel) => {
+    if (!cache.has(rel)) cache.set(rel, await loadJson(base, rel, tag));
+    return cache.get(rel);
+  };
+  let rosterOk = 0;
+  for (const rel of playerFiles) {
+    const data = await get(rel);
+    if (data === undefined) continue;
+    const n = countPlayers(data);
+    if (n === 0) fail(`${tag}${rel} has zero players (roster position arrays are empty or missing)`);
+    else rosterOk++;
+  }
+  // index.json must list teams, and every listed team needs a roster file.
+  const index = rosterFiles.includes("data/rosters/index.json") ? await get("data/rosters/index.json") : undefined;
+  if (index && (!Array.isArray(index.teams) || !index.teams.length)) fail(`${tag}data/rosters/index.json lists no teams`);
+  else if (index) {
+    for (const id of index.teams) {
+      if (!rosterFiles.includes(`data/rosters/${id}.json`)) fail(`${tag}data/rosters/index.json lists ${id} but data/rosters/${id}.json is missing`);
+    }
+  }
+  let freshOk = 0;
+  for (const rel of freshFiles) {
+    const data = await get(rel);
+    if (data === undefined) continue;
+    const present = TS_FIELDS.filter((k) => data && data[k] !== undefined);
+    if (!present.length) {
+      fail(`${tag}${rel} has no lastSynced/asOf/updated timestamp`);
+      continue;
+    }
+    let good = true;
+    const parsed = {};
+    for (const k of present) {
+      const t = parseDataTimestamp(data[k]);
+      if (t === null || (k === "lastSynced" && t.dateOnly)) {
+        fail(`${tag}${rel} ${k} "${data[k]}" is not a recognized ${k === "lastSynced" ? "timed " : ""}timestamp`);
+        good = false;
+        continue;
+      }
+      parsed[k] = t;
+      if (t.start - now > MAX_FUTURE_MS) {
+        const hrs = ((t.start - now) / 3600000).toFixed(1);
+        fail(`${tag}${rel} ${k} "${data[k]}" is ${hrs}h in the future (limit 2h)`);
+        good = false;
+      }
+    }
+    // Roster files restamp a timed asOf on every rebuild, so asOf trailing a
+    // fresh lastSynced by >36h means the heartbeat moved but roster content didn't.
+    // Not applied to transactions/trades/faab or to date-only values.
+    const isRoster = rel.startsWith("data/rosters/") || rel === "data/roster-eddies.json";
+    if (isRoster && parsed.lastSynced && parsed.asOf && !parsed.asOf.dateOnly) {
+      const lag = parsed.lastSynced.end - parsed.asOf.end;
+      if (lag > MAX_AGE_MS) {
+        fail(`${tag}${rel} asOf "${data.asOf}" trails lastSynced "${data.lastSynced}" by ${(lag / 3600000).toFixed(1)}h (limit 36h)`);
+        good = false;
+      }
+    }
+    const staleKeys = parsed.lastSynced ? ["lastSynced"] : Object.keys(parsed);
+    for (const k of staleKeys) {
+      const age = now - parsed[k].end;
+      if (age > MAX_AGE_MS) {
+        fail(`${tag}${rel} ${k} "${data[k]}" is stale (${(age / 3600000).toFixed(1)}h old, limit 36h)`);
+        good = false;
+      }
+    }
+    if (good) freshOk++;
+  }
+  console.log(`${tag}Rosters ok (${rosterOk}/${playerFiles.length} files with players)`);
+  console.log(`${tag}Freshness ok (${freshOk}/${freshFiles.length} files within 36h)`);
+}
+
+// Canonical JSON (sorted keys) so formatting-only differences don't count.
+function canon(v) {
+  if (Array.isArray(v)) return `[${v.map(canon).join(",")}]`;
+  if (v && typeof v === "object") return `{${Object.keys(v).sort().map((k) => `${JSON.stringify(k)}:${canon(v[k])}`).join(",")}}`;
+  return JSON.stringify(v);
+}
+
+async function checkedFiles(base) {
+  let rosters = [];
+  try {
+    rosters = (await readdir(join(base, "data/rosters"))).filter((f) => f.endsWith(".json")).map((f) => `data/rosters/${f}`);
+  } catch {}
+  return [...new Set([...FRESH_FILES, ...rosters])].sort();
+}
+
+async function checkMirror() {
+  if (MIRROR_ROOT === "none") return;
+  const tag = `[mirror ${MIRROR_ROOT}] `;
+  try {
+    if (!(await stat(join(MIRROR_ROOT, "data"))).isDirectory()) throw new Error("not a dir");
+  } catch {
+    fail(`${tag}expected mirror folder ${MIRROR_ROOT}/data is missing (set CHECK_SITE_MIRROR=none to skip)`);
+    return;
+  }
+  const files = (await walk(join(MIRROR_ROOT, "data"))).filter((f) => f.endsWith(".json"));
+  for (const file of files) await loadJson(MIRROR_ROOT, relative(MIRROR_ROOT, file), tag);
+  console.log(`${tag}JSON checked (${files.length} files)`);
+  await checkDataIntegrity(MIRROR_ROOT, `mirror ${MIRROR_ROOT}`);
+  // Mirror must carry the same checked data as the site.
+  const names = [...new Set([...(await checkedFiles(root)), ...(await checkedFiles(MIRROR_ROOT))])].sort();
+  const differ = [];
+  for (const rel of names) {
+    let a = null, b = null;
+    try { a = canon(JSON.parse(await readFile(join(root, rel), "utf8"))); } catch {}
+    try { b = canon(JSON.parse(await readFile(join(MIRROR_ROOT, rel), "utf8"))); } catch {}
+    if (a === null && b === null) continue;
+    if (a === null) differ.push(`${rel} (missing or invalid in site)`);
+    else if (b === null) differ.push(`${rel} (missing or invalid in mirror)`);
+    else if (a !== b) differ.push(rel);
+  }
+  if (differ.length) fail(`${tag}differs from site in ${differ.length} checked file(s): ${differ.join(", ")}`);
+  else console.log(`${tag}matches site (${names.length} checked files)`);
 }
 
 function contentType(file) {
@@ -456,6 +681,8 @@ async function checkRankAgreement(page, port, viewportName) {
 }
 
 if (runJson) await checkJson();
+if (runJson) await checkDataIntegrity(root, "site");
+if (runJson) await checkMirror();
 if (runPages) await checkPages();
 
 if (failures.length) {
