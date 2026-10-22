@@ -2,7 +2,7 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-21 4:10 PM PT",
+  "asOf": "2026-10-22 6:21 AM PT",
   "faabLeft": 2,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -34,8 +34,8 @@
       "Tremaine Edmunds",
       "Patrick Queen",
       "Carson Schwesinger",
-      "Easton Mascarenas-Arnold",
-      "Foyesade Oluokun"
+      "Foyesade Oluokun",
+      "Jack Gibbens"
     ],
     "DB": [
       "Josh Metellus"
@@ -52,15 +52,13 @@
     "Kyle Monangai — O (IR slot)",
     "Tremaine Edmunds — Q (active)",
     "Carson Schwesinger — Q (active)",
-    "Kendal Daniels — Q (reserve)",
     "Myles Garrett — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
+  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [
     "Tremaine Edmunds — Q (active)",
-    "Carson Schwesinger — Q (active)",
-    "Kendal Daniels — Q (reserve)"
+    "Carson Schwesinger — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -69,9 +67,8 @@
     "Kyle Monangai — O (IR slot)",
     "Tremaine Edmunds — Q (active)",
     "Carson Schwesinger — Q (active)",
-    "Kendal Daniels — Q (reserve)",
     "Myles Garrett — IR (IR slot)"
   ],
-  "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 4:10 PM PT"
+  "updated": "2026-10-22",
+  "lastSynced": "2026-10-22 6:21 AM PT"
 }

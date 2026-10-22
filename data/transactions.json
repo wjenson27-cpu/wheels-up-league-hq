@@ -1,7 +1,20 @@
 {
-  "updated": "2026-10-21",
-  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
+  "updated": "2026-10-22",
+  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
   "items": [
+    {
+      "date": "2026-10-21",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Jack Gibbens (LB-ARI); dropped Easton Mascarenas-Arnold (LB-CLE)",
+      "time": "4:43 PM PDT",
+      "player": "Jack Gibbens",
+      "playerMeta": "LB-ARI",
+      "dropped": "Easton Mascarenas-Arnold",
+      "droppedMeta": "LB-CLE",
+      "bid": null,
+      "period": "Week 7"
+    },
     {
       "date": "2026-10-21",
       "team": "Ultron",
@@ -5203,7 +5216,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 21 AM: +8 FA rows (Oct 21 10:06 AM–2:23 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 22 AM: +1 FA rows (Oct 21 4:43 PM–4:43 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-21 4:10 PM PT"
+  "lastSynced": "2026-10-22 6:21 AM PT"
 }

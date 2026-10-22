@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-21 4:10 PM PT",
+  "asOf": "2026-10-22 6:21 AM PT",
   "faabLeft": 61,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -51,12 +51,14 @@
     "Jaylen Wright — Q (reserve)",
     "Jeremiyah Love — Q (IR slot)",
     "Caleb Douglas — Q (IR slot)",
-    "Mike Evans — Q (IR slot)"
+    "Mike Evans — Q (IR slot)",
+    "Quay Walker — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
+  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
-    "Jaylen Wright — Q (reserve)"
+    "Jaylen Wright — Q (reserve)",
+    "Quay Walker — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -64,8 +66,9 @@
     "Jaylen Wright — Q (reserve)",
     "Jeremiyah Love — Q (IR slot)",
     "Caleb Douglas — Q (IR slot)",
-    "Mike Evans — Q (IR slot)"
+    "Mike Evans — Q (IR slot)",
+    "Quay Walker — Q (active)"
   ],
-  "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 4:10 PM PT"
+  "updated": "2026-10-22",
+  "lastSynced": "2026-10-22 6:21 AM PT"
 }

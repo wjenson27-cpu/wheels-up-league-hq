@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-21 4:10 PM PT",
+  "asOf": "2026-10-22 6:21 AM PT",
   "faabLeft": 25,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -52,7 +52,7 @@
     "Nick Bosa — Q (IR slot)",
     "Jalen Pitre — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
+  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -62,6 +62,6 @@
     "Nick Bosa — Q (IR slot)",
     "Jalen Pitre — Q (IR slot)"
   ],
-  "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 4:10 PM PT"
+  "updated": "2026-10-22",
+  "lastSynced": "2026-10-22 6:21 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-21 4:10 PM PT",
+  "asOf": "2026-10-22 6:21 AM PT",
   "faabLeft": 0,
   "startingQB": "Bo Nix",
   "roster": {
@@ -54,7 +54,7 @@
     "Andrew Wingard — Q (IR slot)",
     "Dee Winters — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-21 4:10 PM PT (/workspace/fantrax-raw-2026-10-21-pm.json)",
+  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
     "Christian Watson — Q (active)",
@@ -69,6 +69,6 @@
     "Andrew Wingard — Q (IR slot)",
     "Dee Winters — Q (IR slot)"
   ],
-  "updated": "2026-10-21",
-  "lastSynced": "2026-10-21 4:10 PM PT"
+  "updated": "2026-10-22",
+  "lastSynced": "2026-10-22 6:21 AM PT"
 }
