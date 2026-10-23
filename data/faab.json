@@ -153,14 +153,14 @@
       "name": "Valley Old Goats",
       "owner": "Mike Heff",
       "abbrev": "VOG",
-      "starting": 115,
+      "starting": 100,
       "remaining": 64,
       "spentClaims": 36,
       "tradeOut": 0,
       "tradeIn": 0,
       "spentKnown": 36,
       "remainingKnown": 64,
-      "note": " | Sep23 clear: scrape rem 84 vs formula 99"
+      "note": " | Started at $100: only team that did not pay dues by Aug 1 (no +$15 bonus), per Bill Oct 23 2026"
     },
     {
       "id": "pocket",
