@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-23 6:30 AM PT",
+  "asOf": "2026-10-23 6:31 AM PT",
   "faabLeft": 0,
   "startingQB": "Drake Maye",
   "roster": {
@@ -54,7 +54,7 @@
     "Jaden Dugger — Q (reserve)",
     "Talanoa Hufanga — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:31 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
     "Budda Baker — Q (active)",
@@ -70,5 +70,5 @@
     "Talanoa Hufanga — Q (IR slot)"
   ],
   "updated": "2026-10-23",
-  "lastSynced": "2026-10-23 6:30 AM PT"
+  "lastSynced": "2026-10-23 6:31 AM PT"
 }

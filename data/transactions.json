@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-23",
-  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:31 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "items": [
     {
       "date": "2026-10-22",
@@ -5398,7 +5398,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 23 AM: +14 FA rows (Oct 22 8:28 AM–7:15 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 23 AM: no new rows. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-23 6:30 AM PT"
+  "lastSynced": "2026-10-23 6:31 AM PT"
 }

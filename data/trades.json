@@ -1,8 +1,59 @@
 {
   "updated": "2026-10-23",
-  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:31 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-10-22",
+      "time": "3:07 PM PDT",
+      "week": 7,
+      "status": "completed",
+      "official": true,
+      "teamA": "Towner Top Aga Bottom",
+      "teamB": "Ultron",
+      "givesA": [
+        "Ashton Jeanty (RB)"
+      ],
+      "givesB": [
+        "DeVonta Smith (WR)",
+        "Dillon Thieneman (DB)"
+      ],
+      "summary": "Week 7 — TTAB sent Ashton Jeanty (RB) to Ultron for DeVonta Smith (WR), Dillon Thieneman (DB) (Oct 22 3:07 PM PDT)."
+    },
+    {
+      "date": "2026-10-22",
+      "time": "2:39 PM PDT",
+      "week": 7,
+      "status": "completed",
+      "official": true,
+      "teamA": "Saltese Slamm",
+      "teamB": "Ultron",
+      "givesA": [
+        "DeVonta Smith (WR)",
+        "Mack Wilson (LB)"
+      ],
+      "givesB": [
+        "Bhayshul Tuten (RB)"
+      ],
+      "summary": "Week 7 — Saltese Slamm sent DeVonta Smith (WR), Mack Wilson (LB) to Ultron for Bhayshul Tuten (RB) (Oct 22 2:39 PM PDT)."
+    },
+    {
+      "date": "2026-10-22",
+      "time": "9:56 AM PDT",
+      "week": 7,
+      "status": "completed",
+      "official": true,
+      "teamA": "Substation",
+      "teamB": "Towner Top Aga Bottom",
+      "givesA": [
+        "Brian Branch (DB)",
+        "Demario Davis (LB)"
+      ],
+      "givesB": [
+        "Zack Baun (LB)"
+      ],
+      "summary": "Week 7 — Substation sent Brian Branch (DB), Demario Davis (LB) to TTAB for Zack Baun (LB) (Oct 22 9:56 AM PDT)."
+    },
     {
       "date": "2026-10-21",
       "time": "11:37 AM PDT",
@@ -590,8 +641,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-23 6:30 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
-  "fantrax_completed_view": "Newest official: Drummond↔Saltese Bijan Robinson+Kyle Hamilton for Jaxon Smith-Njigba+Jevon Holland (Oct 21 11:37 AM); LAB↔Substation Demario Davis for Jihaad Campbell+Carnell Tate (Oct 21 10:15 AM); Saltese↔TTAB Stefon Diggs for $20 FAAB (Oct 20 11:01 PM).",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-23 6:31 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "fantrax_completed_view": "Newest official: TTAB↔Ultron Ashton Jeanty for DeVonta Smith+Dillon Thieneman (Oct 22 3:07 PM); Saltese↔Ultron DeVonta Smith+Mack Wilson for Bhayshul Tuten (Oct 22 2:39 PM); Substation↔TTAB Brian Branch+Demario Davis for Zack Baun (Oct 22 9:56 AM).",
   "hqComplete": true,
-  "lastSynced": "2026-10-23 6:30 AM PT"
+  "lastSynced": "2026-10-23 6:31 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-23 6:30 AM PT",
+  "asOf": "2026-10-23 6:31 AM PT",
   "faabLeft": 61,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -55,7 +55,7 @@
     "Mike Evans — Q (IR slot)",
     "Quay Walker — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:31 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
     "Puka Nacua — Q (active)",
@@ -73,5 +73,5 @@
     "Quay Walker — Q (active)"
   ],
   "updated": "2026-10-23",
-  "lastSynced": "2026-10-23 6:30 AM PT"
+  "lastSynced": "2026-10-23 6:31 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-23 6:30 AM PT",
+  "asOf": "2026-10-23 6:31 AM PT",
   "faabLeft": 47,
   "startingQB": "Jordan Love",
   "roster": {
@@ -56,7 +56,7 @@
     "Henry To'oTo'o — Q (active)",
     "L'Jarius Sneed — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:31 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
   "lineupFlags": [
     "Matthew Golden — Q (active)",
@@ -79,5 +79,5 @@
     "L'Jarius Sneed — Q (reserve)"
   ],
   "updated": "2026-10-23",
-  "lastSynced": "2026-10-23 6:30 AM PT"
+  "lastSynced": "2026-10-23 6:31 AM PT"
 }
