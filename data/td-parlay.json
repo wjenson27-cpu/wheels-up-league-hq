@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-23",
   "season": 2026,
   "weeks": 17,
   "note": "Anytime TD. Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded).",
@@ -9,7 +9,8 @@
     "3": "Week 3 finals (TNF Sep 24 through MNF Sep 28 2026).",
     "4": "Week 4 finals (TNF Oct 1 through MNF Oct 5 2026).",
     "5": "Week 5 finals (TNF Oct 8 through MNF Oct 12 2026).",
-    "6": "Week 6 picks locked Sat Oct 17; results pending."
+    "6": "Week 6 picks locked Sat Oct 17; results pending.",
+    "7": "Week 7 picks in Oct 23 (Jacob TBD); results pending."
   },
   "owners": [
     {
@@ -41,7 +42,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Aaron Jones Sr.",
           "td": ""
         },
         "8": {
@@ -115,7 +116,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Sam LaPorta",
           "td": ""
         },
         "8": {
@@ -189,7 +190,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "George Pickens",
           "td": ""
         },
         "8": {
@@ -263,7 +264,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Bijan Robinson",
           "td": ""
         },
         "8": {
@@ -337,7 +338,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Tetairoa McMillan",
           "td": ""
         },
         "8": {
@@ -411,7 +412,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Javonte Williams",
           "td": ""
         },
         "8": {
@@ -485,7 +486,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Jahmyr Gibbs",
           "td": ""
         },
         "8": {
@@ -559,7 +560,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Darnell Washington",
           "td": ""
         },
         "8": {
@@ -633,7 +634,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Jaxon Smith-Njigba",
           "td": ""
         },
         "8": {
@@ -707,7 +708,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Kenneth Walker III",
           "td": ""
         },
         "8": {
@@ -781,7 +782,7 @@
           "td": ""
         },
         "7": {
-          "player": "",
+          "player": "Christian McCaffrey",
           "td": ""
         },
         "8": {
