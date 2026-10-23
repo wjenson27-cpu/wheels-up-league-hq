@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-22 6:21 AM PT",
+  "asOf": "2026-10-23 6:30 AM PT",
   "faabLeft": 55,
   "startingQB": "Bryce Young",
   "roster": {
@@ -13,7 +13,8 @@
     "RB": [
       "Breece Hall",
       "Zach Charbonnet",
-      "Brian Robinson Jr."
+      "Brian Robinson Jr.",
+      "Jacory Croskey-Merritt"
     ],
     "WR": [
       "Garrett Wilson",
@@ -22,8 +23,7 @@
       "Kendrick Bourne"
     ],
     "TE": [
-      "Brock Bowers",
-      "Tyler Warren"
+      "Brock Bowers"
     ],
     "DL": [
       "George Karlaftis"
@@ -42,45 +42,39 @@
     ],
     "IR": [
       "Jordyn Tyson",
-      "Jacory Croskey-Merritt",
-      "Travis Etienne"
+      "Travis Etienne",
+      "Tyler Warren"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Breece Hall — Q (active)",
-    "Brock Bowers — Q (active)",
-    "Tyler Warren — Q (active)",
-    "Zach Charbonnet — IR (reserve)",
+    "Zach Charbonnet — Q (active)",
     "Brian Robinson Jr. — Q (reserve)",
+    "Jacory Croskey-Merritt — IR (reserve)",
     "Jordyn Tyson — IR (IR slot)",
-    "Jacory Croskey-Merritt — IR (IR slot)",
     "Travis Etienne — IR (IR slot)",
-    "Tyrice Knight — Q (reserve)"
+    "Tyler Warren — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Breece Hall — Q (active)",
-    "Brock Bowers — Q (active)",
-    "Tyler Warren — Q (active)",
-    "Zach Charbonnet — IR (reserve)",
+    "Zach Charbonnet — Q (active)",
     "Brian Robinson Jr. — Q (reserve)",
-    "Tyrice Knight — Q (reserve)"
+    "Jacory Croskey-Merritt — IR (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Breece Hall — Q (active)",
-    "Brock Bowers — Q (active)",
-    "Tyler Warren — Q (active)",
-    "Zach Charbonnet — IR (reserve)",
+    "Zach Charbonnet — Q (active)",
     "Brian Robinson Jr. — Q (reserve)",
+    "Jacory Croskey-Merritt — IR (reserve)",
     "Jordyn Tyson — IR (IR slot)",
-    "Jacory Croskey-Merritt — IR (IR slot)",
     "Travis Etienne — IR (IR slot)",
-    "Tyrice Knight — Q (reserve)"
+    "Tyler Warren — Q (IR slot)"
   ],
-  "updated": "2026-10-22",
-  "lastSynced": "2026-10-22 6:21 AM PT"
+  "updated": "2026-10-23",
+  "lastSynced": "2026-10-23 6:30 AM PT"
 }

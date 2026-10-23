@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-22 6:21 AM PT",
+  "asOf": "2026-10-23 6:30 AM PT",
   "faabLeft": 98,
   "startingQB": "Jared Goff",
   "roster": {
@@ -11,16 +11,16 @@
       "Tyler Shough"
     ],
     "RB": [
-      "Woody Marks"
+      "Woody Marks",
+      "Saquon Barkley"
     ],
     "WR": [
       "Rashid Shaheed",
       "CeeDee Lamb",
       "Tetairoa McMillan",
       "Jaylen Waddle",
-      "Mike Washington",
-      "Malik Washington",
-      "Josiah Trotter"
+      "Konata Mumpfield",
+      "Malik Washington"
     ],
     "TE": [
       "Trey McBride",
@@ -32,7 +32,7 @@
     "LB": [
       "Ernest Jones",
       "Barrett Carter",
-      "Micah McFadden"
+      "Josiah Trotter"
     ],
     "DB": [
       "Cooper DeJean",
@@ -41,35 +41,32 @@
       "Jaquan Brisker"
     ],
     "IR": [
-      "Saquon Barkley",
       "Jonah Coleman",
+      "Mike Washington",
       "Dalton Kincaid"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Rashid Shaheed — Q (active)",
     "Jaylen Waddle — Q (active)",
-    "Mike Washington — Q (reserve)",
-    "Saquon Barkley — Q (IR slot)",
-    "Jonah Coleman — IR (IR slot)"
+    "Saquon Barkley — Q (reserve)",
+    "Jonah Coleman — IR (IR slot)",
+    "Mike Washington — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Rashid Shaheed — Q (active)",
     "Jaylen Waddle — Q (active)",
-    "Mike Washington — Q (reserve)"
+    "Saquon Barkley — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Rashid Shaheed — Q (active)",
     "Jaylen Waddle — Q (active)",
-    "Mike Washington — Q (reserve)",
-    "Saquon Barkley — Q (IR slot)",
-    "Jonah Coleman — IR (IR slot)"
+    "Saquon Barkley — Q (reserve)",
+    "Jonah Coleman — IR (IR slot)",
+    "Mike Washington — Q (IR slot)"
   ],
-  "updated": "2026-10-22",
-  "lastSynced": "2026-10-22 6:21 AM PT"
+  "updated": "2026-10-23",
+  "lastSynced": "2026-10-23 6:30 AM PT"
 }

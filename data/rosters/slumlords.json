@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-22 6:21 AM PT",
+  "asOf": "2026-10-23 6:30 AM PT",
   "faabLeft": 0,
   "startingQB": "Drake Maye",
   "roster": {
@@ -19,10 +19,7 @@
       "Kalif Raymond",
       "Wan'Dale Robinson",
       "Chris Godwin",
-      "Darius Cooper",
-      "Kyle Williams",
-      "Anthony Hill",
-      "Jaden Dugger"
+      "Kyle Williams"
     ],
     "TE": [
       "Harold Fannin"
@@ -33,12 +30,15 @@
       "Gregory Rousseau"
     ],
     "LB": [
-      "Alex Anzalone"
+      "Anthony Hill",
+      "Alex Anzalone",
+      "Jaden Dugger"
     ],
     "DB": [
-      "Budda Baker",
       "Chamarri Conner",
-      "Devon Witherspoon"
+      "Devon Witherspoon",
+      "Budda Baker",
+      "Mike Hughes"
     ],
     "IR": [
       "Isiah Pacheco",
@@ -51,14 +51,14 @@
     "Isiah Pacheco — IR (IR slot)",
     "Quinshon Judkins — Q (IR slot)",
     "Budda Baker — Q (active)",
-    "Jaden Dugger — Q (active)",
+    "Jaden Dugger — Q (reserve)",
     "Talanoa Hufanga — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
     "Budda Baker — Q (active)",
-    "Jaden Dugger — Q (active)"
+    "Jaden Dugger — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -66,9 +66,9 @@
     "Isiah Pacheco — IR (IR slot)",
     "Quinshon Judkins — Q (IR slot)",
     "Budda Baker — Q (active)",
-    "Jaden Dugger — Q (active)",
+    "Jaden Dugger — Q (reserve)",
     "Talanoa Hufanga — Q (IR slot)"
   ],
-  "updated": "2026-10-22",
-  "lastSynced": "2026-10-22 6:21 AM PT"
+  "updated": "2026-10-23",
+  "lastSynced": "2026-10-23 6:30 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-22 6:21 AM PT",
+  "asOf": "2026-10-23 6:30 AM PT",
   "faabLeft": 2,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -11,16 +11,13 @@
     ],
     "RB": [
       "D'Andre Swift",
-      "Roschon Johnson",
+      "Ashton Jeanty",
       "Rhamondre Stevenson",
-      "Chris Rodriguez Jr.",
-      "Bhayshul Tuten"
+      "Roschon Johnson"
     ],
     "WR": [
       "Drake London",
-      "Michael Wilson",
-      "Dillon Thieneman",
-      "Kendal Daniels"
+      "Michael Wilson"
     ],
     "TE": [
       "Pat Freiermuth"
@@ -31,14 +28,17 @@
     ],
     "LB": [
       "Robert Spillane",
+      "Kendal Daniels",
       "Tremaine Edmunds",
-      "Patrick Queen",
       "Carson Schwesinger",
+      "Jack Gibbens",
       "Foyesade Oluokun",
-      "Jack Gibbens"
+      "Mack Wilson",
+      "Patrick Queen"
     ],
     "DB": [
-      "Josh Metellus"
+      "Josh Metellus",
+      "Treydan Stukes"
     ],
     "IR": [
       "Terrance Ferguson",
@@ -50,13 +50,15 @@
   "injuryFlags": [
     "Terrance Ferguson — IR (IR slot)",
     "Kyle Monangai — O (IR slot)",
+    "Kendal Daniels — Q (active)",
     "Tremaine Edmunds — Q (active)",
     "Carson Schwesinger — Q (active)",
     "Myles Garrett — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [
+    "Kendal Daniels — Q (active)",
     "Tremaine Edmunds — Q (active)",
     "Carson Schwesinger — Q (active)"
   ],
@@ -65,10 +67,11 @@
   "flags": [
     "Terrance Ferguson — IR (IR slot)",
     "Kyle Monangai — O (IR slot)",
+    "Kendal Daniels — Q (active)",
     "Tremaine Edmunds — Q (active)",
     "Carson Schwesinger — Q (active)",
     "Myles Garrett — IR (IR slot)"
   ],
-  "updated": "2026-10-22",
-  "lastSynced": "2026-10-22 6:21 AM PT"
+  "updated": "2026-10-23",
+  "lastSynced": "2026-10-23 6:30 AM PT"
 }

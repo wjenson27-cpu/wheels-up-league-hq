@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-22 6:21 AM PT",
+  "asOf": "2026-10-23 6:30 AM PT",
   "faabLeft": 21,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -13,14 +13,14 @@
       "Aaron Jones",
       "Bijan Robinson",
       "Omarion Hampton",
+      "Bhayshul Tuten",
       "Rico Dowdle"
     ],
     "WR": [
-      "DeVonta Smith",
+      "Ja'Kobi Lane",
       "Denzel Boston",
       "Tre Tucker",
-      "Antonio Williams",
-      "Ja'Kobi Lane"
+      "Antonio Williams"
     ],
     "TE": [
       "Tyler Higbee"
@@ -31,46 +31,43 @@
     "LB": [
       "Jamien Sherwood",
       "Dre Greenlaw",
-      "Mack Wilson",
       "Terrel Bernard"
     ],
     "DB": [
       "Jahdae Barron",
       "Kyle Hamilton",
-      "Kevin Byard"
+      "Kevin Byard",
+      "Nick Scott"
     ],
     "IR": [
+      "Adonai Mitchell",
       "Jonathon Brooks",
-      "David Montgomery",
-      "Micah Parsons"
+      "David Montgomery"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Denzel Boston — Q (active)",
     "Rico Dowdle — Q (reserve)",
+    "Adonai Mitchell — Q (IR slot)",
     "Jonathon Brooks — IR (IR slot)",
-    "David Montgomery — Q (IR slot)",
-    "Kevin Byard — Q (active)",
-    "Micah Parsons — IR (IR slot)"
+    "David Montgomery — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "Denzel Boston — Q (active)",
-    "Rico Dowdle — Q (reserve)",
-    "Kevin Byard — Q (active)"
+    "Rico Dowdle — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Denzel Boston — Q (active)",
     "Rico Dowdle — Q (reserve)",
+    "Adonai Mitchell — Q (IR slot)",
     "Jonathon Brooks — IR (IR slot)",
-    "David Montgomery — Q (IR slot)",
-    "Kevin Byard — Q (active)",
-    "Micah Parsons — IR (IR slot)"
+    "David Montgomery — Q (IR slot)"
   ],
-  "updated": "2026-10-22",
-  "lastSynced": "2026-10-22 6:21 AM PT"
+  "updated": "2026-10-23",
+  "lastSynced": "2026-10-23 6:30 AM PT"
 }

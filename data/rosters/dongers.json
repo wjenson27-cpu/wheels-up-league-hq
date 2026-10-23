@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-10-22 6:21 AM PT",
+  "asOf": "2026-10-23 6:30 AM PT",
   "faabLeft": 1,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -17,8 +17,7 @@
       "Jaxon Smith-Njigba",
       "KaVontae Turpin",
       "KC Concepcion",
-      "Parker Washington",
-      "Keionte Scott"
+      "Parker Washington"
     ],
     "TE": [
       "T.J. Hockenson",
@@ -38,6 +37,7 @@
       "Xavier McKinney",
       "Jevon Holland",
       "Jalen Ramsey",
+      "Keionte Scott",
       "Nick Cross"
     ],
     "IR": [
@@ -53,20 +53,16 @@
     "KC Concepcion — Q (reserve)",
     "Ladd McConkey — Q (IR slot)",
     "D.J. Moore — Q (IR slot)",
-    "Christian Elliss — Q (active)",
     "Jevon Holland — Q (active)",
-    "Jalen Ramsey — Q (active)",
-    "T.J. Edwards — Q (IR slot)"
+    "T.J. Edwards — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
     "T.J. Hockenson — Q (active)",
     "KaVontae Turpin — Q (active)",
     "KC Concepcion — Q (reserve)",
-    "Christian Elliss — Q (active)",
-    "Jevon Holland — Q (active)",
-    "Jalen Ramsey — Q (active)"
+    "Jevon Holland — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -76,11 +72,9 @@
     "KC Concepcion — Q (reserve)",
     "Ladd McConkey — Q (IR slot)",
     "D.J. Moore — Q (IR slot)",
-    "Christian Elliss — Q (active)",
     "Jevon Holland — Q (active)",
-    "Jalen Ramsey — Q (active)",
-    "T.J. Edwards — Q (IR slot)"
+    "T.J. Edwards — O (IR slot)"
   ],
-  "updated": "2026-10-22",
-  "lastSynced": "2026-10-22 6:21 AM PT"
+  "updated": "2026-10-23",
+  "lastSynced": "2026-10-23 6:30 AM PT"
 }

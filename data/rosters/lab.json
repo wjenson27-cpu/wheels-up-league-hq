@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-22 6:21 AM PT",
+  "asOf": "2026-10-23 6:30 AM PT",
   "faabLeft": 61,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -14,8 +14,8 @@
       "Kyren Williams",
       "Tyler Allgeier",
       "Jaylen Warren",
-      "Tyrone Tracy",
-      "Jaylen Wright"
+      "Dylan Sampson",
+      "Tyrone Tracy"
     ],
     "WR": [
       "Puka Nacua",
@@ -48,27 +48,30 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Jaylen Wright — Q (reserve)",
+    "Puka Nacua — Q (active)",
+    "Dylan Sampson — IR (reserve)",
     "Jeremiyah Love — Q (IR slot)",
     "Caleb Douglas — Q (IR slot)",
     "Mike Evans — Q (IR slot)",
     "Quay Walker — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
+  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
-    "Jaylen Wright — Q (reserve)",
+    "Puka Nacua — Q (active)",
+    "Dylan Sampson — IR (reserve)",
     "Quay Walker — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Jaylen Wright — Q (reserve)",
+    "Puka Nacua — Q (active)",
+    "Dylan Sampson — IR (reserve)",
     "Jeremiyah Love — Q (IR slot)",
     "Caleb Douglas — Q (IR slot)",
     "Mike Evans — Q (IR slot)",
     "Quay Walker — Q (active)"
   ],
-  "updated": "2026-10-22",
-  "lastSynced": "2026-10-22 6:21 AM PT"
+  "updated": "2026-10-23",
+  "lastSynced": "2026-10-23 6:30 AM PT"
 }

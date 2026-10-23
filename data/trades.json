@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-22",
-  "source": "Fantrax roster sync 2026-10-22 6:21 AM PT (/workspace/fantrax-raw-2026-10-22-am.json)",
+  "updated": "2026-10-23",
+  "source": "Fantrax roster sync 2026-10-23 6:30 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
   "season": 2026,
   "trades": [
     {
@@ -560,10 +560,8 @@
     {
       "teamId": "saltese",
       "team": "Saltese Slamm",
-      "lastUpdated": "Oct 20 11:01 PM",
-      "players": [
-        "DeVonta Smith"
-      ],
+      "lastUpdated": "Oct 22 2:39 PM",
+      "players": [],
       "note": "Looking for FAAB or flex swaps."
     },
     {
@@ -576,28 +574,24 @@
     {
       "teamId": "ttab",
       "team": "TTAB",
-      "lastUpdated": "Oct 21 8:22 AM",
+      "lastUpdated": "Oct 22 3:07 PM",
       "players": [
-        "Ashton Jeanty",
-        "Cameron Skattebo",
         "Javonte Williams",
         "Emanuel Wilson",
         "Christian Watson",
         "Jameson Williams",
         "Dallas Goedert",
-        "Zack Baun",
         "Divine Deablo",
         "Harold Perkins",
         "Dorian Williams",
-        "Dee Winters",
         "Dane Belton"
       ],
       "note": null
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-22 6:21 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-23 6:30 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Drummond↔Saltese Bijan Robinson+Kyle Hamilton for Jaxon Smith-Njigba+Jevon Holland (Oct 21 11:37 AM); LAB↔Substation Demario Davis for Jihaad Campbell+Carnell Tate (Oct 21 10:15 AM); Saltese↔TTAB Stefon Diggs for $20 FAAB (Oct 20 11:01 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-10-22 6:21 AM PT"
+  "lastSynced": "2026-10-23 6:30 AM PT"
 }
