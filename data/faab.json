@@ -40,7 +40,7 @@
       "remaining": 21,
       "spentClaims": 95,
       "tradeOut": 24,
-      "tradeIn": 5,
+      "tradeIn": 25,
       "spentKnown": 119,
       "remainingKnown": 21
     },
@@ -104,9 +104,9 @@
       "starting": 115,
       "remaining": 0,
       "spentClaims": 93,
-      "tradeOut": 10,
+      "tradeOut": 30,
       "tradeIn": 8,
-      "spentKnown": 103,
+      "spentKnown": 123,
       "remainingKnown": 0
     },
     {
@@ -1003,7 +1003,9 @@
       "player": "Quentin Johnston",
       "bid": 6,
       "dropped": "Wade Woodaz",
-      "note": "Fantasy check Oct 3 scrape"
+      "note": "Fantasy check Oct 3 scrape",
+      "amount": 6,
+      "kind": "claim"
     },
     {
       "date": "2026-09-30",
