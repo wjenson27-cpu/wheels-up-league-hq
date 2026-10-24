@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-24 6:20 AM PT",
+  "asOf": "2026-10-24 4:04 PM PT",
   "faabLeft": 98,
   "startingQB": "Jared Goff",
   "roster": {
@@ -49,10 +49,10 @@
   "notes": "",
   "injuryFlags": [
     "Saquon Barkley — Q (reserve)",
-    "Jonah Coleman — IR (IR slot)",
+    "Jonah Coleman — Q (IR slot)",
     "Mike Washington — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-24 6:20 AM PT (/workspace/fantrax-raw-2026-10-24-am.json)",
+  "source": "Fantrax roster sync 2026-10-24 4:04 PM PT (/workspace/fantrax-raw-2026-10-24-pm.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
     "Saquon Barkley — Q (reserve)"
@@ -61,9 +61,9 @@
   "pendingClaims": [],
   "flags": [
     "Saquon Barkley — Q (reserve)",
-    "Jonah Coleman — IR (IR slot)",
+    "Jonah Coleman — Q (IR slot)",
     "Mike Washington — Q (IR slot)"
   ],
   "updated": "2026-10-24",
-  "lastSynced": "2026-10-24 6:20 AM PT"
+  "lastSynced": "2026-10-24 4:04 PM PT"
 }

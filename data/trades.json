@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-24",
-  "source": "Fantrax roster sync 2026-10-24 6:20 AM PT (/workspace/fantrax-raw-2026-10-24-am.json)",
+  "source": "Fantrax roster sync 2026-10-24 4:04 PM PT (/workspace/fantrax-raw-2026-10-24-pm.json)",
   "season": 2026,
   "trades": [
     {
@@ -553,10 +553,9 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "Oct 23 2:50 PM",
+      "lastUpdated": "Oct 24 8:28 AM",
       "players": [
         "Zach Charbonnet RB SEA",
-        "Jacory Croskey-Merritt RB WAS",
         "Travis Etienne RB NO",
         "Brian Robinson Jr. RB ATL",
         "Kendrick Bourne WR ARI",
@@ -604,7 +603,7 @@
         "Myles Price WR MIN",
         "Juwan Johnson TE NO",
         "Michael Mayer TE LV",
-        "Andrew Van Ginkel DL,LB MIN",
+        "Andrew Van Ginkel DL MIN",
         "Azeez Al-Shaair LB HOU",
         "Zaire Franklin LB GB",
         "Ty'Ron Hopper LB GB",
@@ -661,8 +660,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-24 6:20 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-24 4:04 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: TTAB↔Ultron Ashton Jeanty for DeVonta Smith+Dillon Thieneman (Oct 22 3:07 PM); Saltese↔Ultron DeVonta Smith+Mack Wilson for Bhayshul Tuten (Oct 22 2:39 PM); Substation↔TTAB Brian Branch+Demario Davis for Zack Baun (Oct 22 9:56 AM).",
   "hqComplete": true,
-  "lastSynced": "2026-10-24 6:20 AM PT"
+  "lastSynced": "2026-10-24 4:04 PM PT"
 }

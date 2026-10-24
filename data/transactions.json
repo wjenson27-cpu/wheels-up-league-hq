@@ -1,7 +1,46 @@
 {
   "updated": "2026-10-24",
-  "source": "Fantrax roster sync 2026-10-24 6:20 AM PT (/workspace/fantrax-raw-2026-10-24-am.json)",
+  "source": "Fantrax roster sync 2026-10-24 4:04 PM PT (/workspace/fantrax-raw-2026-10-24-pm.json)",
   "items": [
+    {
+      "date": "2026-10-24",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Dante Trader (DB-MIA); dropped Jack Gibbens (LB-ARI)",
+      "time": "2:27 PM PDT",
+      "player": "Dante Trader",
+      "playerMeta": "DB-MIA",
+      "dropped": "Jack Gibbens",
+      "droppedMeta": "LB-ARI",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-24",
+      "team": "Substation",
+      "type": "ADD/DROP",
+      "summary": "Added Tyjae Spears (RB-TEN); dropped Dante Trader (DB-MIA)",
+      "time": "2:25 PM PDT",
+      "player": "Tyjae Spears",
+      "playerMeta": "RB-TEN",
+      "dropped": "Dante Trader",
+      "droppedMeta": "DB-MIA",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-24",
+      "team": "Eagle Ridge Eddies",
+      "type": "ADD/DROP",
+      "summary": "Won Cameron Skattebo $6 FAAB; dropped Jacory Croskey-Merritt (RB-WAS)",
+      "time": "8:28 AM PDT",
+      "player": "Cameron Skattebo",
+      "playerMeta": "RB-NYG",
+      "dropped": "Jacory Croskey-Merritt",
+      "droppedMeta": "RB-WAS",
+      "bid": 6,
+      "period": "Week 7"
+    },
     {
       "date": "2026-10-23",
       "team": "Drummond Dongers",
@@ -5541,7 +5580,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 24 AM: +11 FA rows (Oct 23 9:00 AM–5:49 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 24 AM: +3 FA rows (Oct 24 8:28 AM–2:27 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-24 6:20 AM PT"
+  "lastSynced": "2026-10-24 4:04 PM PT"
 }

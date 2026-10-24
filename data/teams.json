@@ -127,7 +127,7 @@
       "owner": "Bill Jenson",
       "abbrev": "ERE",
       "record": "4-2-0",
-      "faab": 55,
+      "faab": 49,
       "projW1": 187.31,
       "powerRank": 6,
       "note": "Bill Jenson — record 2-2-0, Week 5 vs Mrs. Doubtpfizer (live Mon AM 285–222.5, Lake MNF left). Oct 9: +Cedric Gray $3 (−Kyle Pitts). FAAB $68. No pending claims. | Oct 10: +Kendrick Bourne (−Brian Thomas) FA $0. FAAB $68.",
@@ -345,6 +345,6 @@
   "standingsSource": "Fantrax Week 6 finals (Matchups scrape Tue Oct 20); records match Fantrax Standings; rank by record then PF",
   "week": 7,
   "hqNote": "Week 6 FINAL: Eddies beat Substation 259.5–227.5 (4-2, four straight). Kitty Pocket 262.5; survivor TTAB 186.5 off the bus. Last Ride: Saltese beat Ultron 259–205.5 (Ultron out). Pocket, LAB and Goats share 5-1. OMVP Jaxon Smith-Njigba 197 / DMVP Nakobe Dean 163.",
-  "source": "Fantrax roster sync 2026-10-24 6:20 AM PT (/workspace/fantrax-raw-2026-10-24-am.json)",
-  "note": "Week 6 finals applied Tue Oct 20 · records/PF/PA from Fantrax finals. Oct 24 6:20 AM PT roster sync: FAAB verified live, all 14 unchanged."
+  "source": "Fantrax roster sync 2026-10-24 4:04 PM PT (/workspace/fantrax-raw-2026-10-24-pm.json)",
+  "note": "Week 6 finals applied Tue Oct 20 · records/PF/PA from Fantrax finals. Oct 24 4:04 PM PT roster sync: FAAB verified live, all 14 updated."
 }
