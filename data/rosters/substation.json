@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-23 6:31 AM PT",
+  "asOf": "2026-10-24 6:20 AM PT",
   "faabLeft": 10,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -31,46 +31,44 @@
     "LB": [
       "Jack Campbell",
       "Zack Baun",
+      "Kaden Elliss",
       "Frankie Luvu"
     ],
     "DB": [
-      "Nick Emmanwori",
-      "Tykee Smith",
       "Malik Mustapha",
-      "Kevin Winston"
+      "Tykee Smith",
+      "Nick Emmanwori",
+      "Dante Trader"
     ],
     "IR": [
       "Alec Pierce",
-      "Kaden Elliss",
-      "DeShon Elliott"
+      "DeShon Elliott",
+      "Kevin Winston"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "George Pickens — Q (active)",
     "Christian Kirk — IR (reserve)",
     "Alec Pierce — IR (IR slot)",
-    "Kevin Winston — Q (active)",
-    "Kaden Elliss — Q (IR slot)",
-    "DeShon Elliott — IR (IR slot)"
+    "Nick Emmanwori — Q (active)",
+    "DeShon Elliott — IR (IR slot)",
+    "Kevin Winston — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-23 6:31 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
+  "source": "Fantrax roster sync 2026-10-24 6:20 AM PT (/workspace/fantrax-raw-2026-10-24-am.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
-    "George Pickens — Q (active)",
     "Christian Kirk — IR (reserve)",
-    "Kevin Winston — Q (active)"
+    "Nick Emmanwori — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "George Pickens — Q (active)",
     "Christian Kirk — IR (reserve)",
     "Alec Pierce — IR (IR slot)",
-    "Kevin Winston — Q (active)",
-    "Kaden Elliss — Q (IR slot)",
-    "DeShon Elliott — IR (IR slot)"
+    "Nick Emmanwori — Q (active)",
+    "DeShon Elliott — IR (IR slot)",
+    "Kevin Winston — Q (IR slot)"
   ],
-  "updated": "2026-10-23",
-  "lastSynced": "2026-10-23 6:31 AM PT"
+  "updated": "2026-10-24",
+  "lastSynced": "2026-10-24 6:20 AM PT"
 }

@@ -1,7 +1,150 @@
 {
-  "updated": "2026-10-23",
-  "source": "Fantrax roster sync 2026-10-23 6:31 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
+  "updated": "2026-10-24",
+  "source": "Fantrax roster sync 2026-10-24 6:20 AM PT (/workspace/fantrax-raw-2026-10-24-am.json)",
   "items": [
+    {
+      "date": "2026-10-23",
+      "team": "Drummond Dongers",
+      "type": "ADD/DROP",
+      "summary": "Added Jordan Watkins (WR-SF); dropped KC Concepcion (WR-CLE)",
+      "time": "5:49 PM PDT",
+      "player": "Jordan Watkins",
+      "playerMeta": "WR-SF",
+      "dropped": "KC Concepcion",
+      "droppedMeta": "WR-CLE",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "The Hypersecretors",
+      "type": "ADD/DROP",
+      "summary": "Added Kaleb Elarms-Orr (LB-BUF); dropped Michael Penix Jr. (QB-ATL)",
+      "time": "5:19 PM PDT",
+      "player": "Kaleb Elarms-Orr",
+      "playerMeta": "LB-BUF",
+      "dropped": "Michael Penix Jr.",
+      "droppedMeta": "QB-ATL",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Jake Hansen (LB-HOU); dropped Shemar James (LB-DAL)",
+      "time": "2:55 PM PDT",
+      "player": "Jake Hansen",
+      "playerMeta": "LB-HOU",
+      "dropped": "Shemar James",
+      "droppedMeta": "LB-DAL",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Jack Gibbens (LB-ARI); dropped Tremaine Edmunds (LB-NYG)",
+      "time": "2:50 PM PDT",
+      "player": "Jack Gibbens",
+      "playerMeta": "LB-ARI",
+      "dropped": "Tremaine Edmunds",
+      "droppedMeta": "LB-NYG",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Shemar James (LB-DAL); dropped Jaishawn Barham (DL-DAL)",
+      "time": "2:49 PM PDT",
+      "player": "Shemar James",
+      "playerMeta": "LB-DAL",
+      "dropped": "Jaishawn Barham",
+      "droppedMeta": "DL-DAL",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD",
+      "summary": "Added Trace Ford (LB-NYG) ($0/null bid)",
+      "time": "2:45 PM PDT",
+      "player": "Trace Ford",
+      "playerMeta": "LB-NYG",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Tony Adams (DB-TEN)",
+      "time": "2:44 PM PDT",
+      "player": "Tony Adams",
+      "playerMeta": "DB-TEN",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Micah McFadden (LB-NYG); dropped Jack Gibbens (LB-ARI)",
+      "time": "11:06 AM PDT",
+      "player": "Micah McFadden",
+      "playerMeta": "LB-NYG",
+      "dropped": "Jack Gibbens",
+      "droppedMeta": "LB-ARI",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "Saltese Slamm",
+      "type": "ADD",
+      "summary": "Added Josh Woods (LB-ATL) ($0/null bid)",
+      "time": "9:30 AM PDT",
+      "player": "Josh Woods",
+      "playerMeta": "LB-ATL",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "Substation",
+      "type": "ADD",
+      "summary": "Added Dante Trader (DB-MIA) ($0/null bid)",
+      "time": "9:04 AM PDT",
+      "player": "Dante Trader",
+      "playerMeta": "DB-MIA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-23",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "type": "ADD",
+      "summary": "Added Ty'Ron Hopper (LB-GB) ($0/null bid)",
+      "time": "9:00 AM PDT",
+      "player": "Ty'Ron Hopper",
+      "playerMeta": "LB-GB",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
     {
       "date": "2026-10-22",
       "team": "Saltese Slamm",
@@ -5398,7 +5541,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 23 AM: no new rows. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 24 AM: +11 FA rows (Oct 23 9:00 AM–5:49 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-23 6:31 AM PT"
+  "lastSynced": "2026-10-24 6:20 AM PT"
 }

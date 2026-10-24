@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-23",
-  "source": "Fantrax roster sync 2026-10-23 6:31 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
+  "updated": "2026-10-24",
+  "source": "Fantrax roster sync 2026-10-24 6:20 AM PT (/workspace/fantrax-raw-2026-10-24-am.json)",
   "season": 2026,
   "trades": [
     {
@@ -553,17 +553,20 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "Oct 19 8:54 PM",
+      "lastUpdated": "Oct 23 2:50 PM",
       "players": [
-        "Zach Charbonnet",
-        "Jacory Croskey-Merritt",
-        "Travis Etienne",
-        "Brian Robinson Jr.",
-        "Kendrick Bourne",
-        "Chimere Dike",
-        "Jordyn Tyson",
-        "Cedric Gray",
-        "Trenton Simpson"
+        "Zach Charbonnet RB SEA",
+        "Jacory Croskey-Merritt RB WAS",
+        "Travis Etienne RB NO",
+        "Brian Robinson Jr. RB ATL",
+        "Kendrick Bourne WR ARI",
+        "Chimere Dike WR TEN",
+        "Jordyn Tyson WR NO",
+        "Tyler Warren TE IND",
+        "Cedric Gray LB TEN",
+        "Trenton Simpson LB BAL",
+        "Quentin Lake DB LAR",
+        "D.J. Reed DB DET"
       ],
       "note": null
     },
@@ -572,9 +575,9 @@
       "team": "Morningside Muff Divers",
       "lastUpdated": "Oct 7 9:30 AM",
       "players": [
-        "Derrick Barnes",
-        "Bobby Okereke",
-        "Pete Werner"
+        "Derrick Barnes LB DET",
+        "Bobby Okereke LB CAR",
+        "Pete Werner LB NO"
       ],
       "note": null,
       "positionsOffered": [
@@ -587,14 +590,31 @@
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "Oct 21 12:57 PM",
+      "lastUpdated": "Oct 23 2:48 PM",
       "players": [
-        "TreVeyon Henderson",
-        "Davante Adams",
-        "A.J. Brown",
-        "Matthew Golden",
-        "Tee Higgins",
-        "Eric Wilson"
+        "Jordan Love QB GB",
+        "TreVeyon Henderson RB NE",
+        "Jordan Mason RB MIN",
+        "Jonathan Taylor RB IND",
+        "Davante Adams WR LAR",
+        "A.J. Brown WR NE",
+        "Zay Flowers WR BAL",
+        "Matthew Golden WR GB",
+        "Tee Higgins WR CIN",
+        "Myles Price WR MIN",
+        "Juwan Johnson TE NO",
+        "Michael Mayer TE LV",
+        "Andrew Van Ginkel DL,LB MIN",
+        "Azeez Al-Shaair LB HOU",
+        "Zaire Franklin LB GB",
+        "Ty'Ron Hopper LB GB",
+        "Nathan Landman LB LAR",
+        "Henry To'oTo'o LB HOU",
+        "Jeremiah Trotter LB PHI",
+        "Eric Wilson LB MIN",
+        "Jordan Battle DB CIN",
+        "L'Jarius Sneed DB KC",
+        "Xavier Watts DB ATL"
       ],
       "note": null
     },
@@ -603,8 +623,8 @@
       "team": "Pocket Agents",
       "lastUpdated": "Oct 2 4:24 PM",
       "players": [
-        "Jared Goff",
-        "Tyler Shough"
+        "Jared Goff QB DET",
+        "Tyler Shough QB NO"
       ],
       "note": "Goff & Shough both top 5 QBs through 3 weeks. Looking to potentially trade 1 for a running back."
     },
@@ -627,22 +647,22 @@
       "team": "TTAB",
       "lastUpdated": "Oct 22 3:07 PM",
       "players": [
-        "Javonte Williams",
-        "Emanuel Wilson",
-        "Christian Watson",
-        "Jameson Williams",
-        "Dallas Goedert",
-        "Divine Deablo",
-        "Harold Perkins",
-        "Dorian Williams",
-        "Dane Belton"
+        "Javonte Williams RB DAL",
+        "Emanuel Wilson RB SEA",
+        "Christian Watson WR GB",
+        "Jameson Williams WR DET",
+        "Dallas Goedert TE PHI",
+        "Divine Deablo LB ATL",
+        "Harold Perkins LB ATL",
+        "Dorian Williams LB BUF",
+        "Dane Belton DB NYJ"
       ],
       "note": null
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-23 6:31 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-24 6:20 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: TTAB↔Ultron Ashton Jeanty for DeVonta Smith+Dillon Thieneman (Oct 22 3:07 PM); Saltese↔Ultron DeVonta Smith+Mack Wilson for Bhayshul Tuten (Oct 22 2:39 PM); Substation↔TTAB Brian Branch+Demario Davis for Zack Baun (Oct 22 9:56 AM).",
   "hqComplete": true,
-  "lastSynced": "2026-10-23 6:31 AM PT"
+  "lastSynced": "2026-10-24 6:20 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-23 6:31 AM PT",
+  "asOf": "2026-10-24 6:20 AM PT",
   "faabLeft": 21,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -13,13 +13,13 @@
       "Aaron Jones",
       "Bijan Robinson",
       "Omarion Hampton",
-      "Bhayshul Tuten",
-      "Rico Dowdle"
+      "Bhayshul Tuten"
     ],
     "WR": [
       "Ja'Kobi Lane",
       "Denzel Boston",
       "Tre Tucker",
+      "Adonai Mitchell",
       "Antonio Williams"
     ],
     "TE": [
@@ -31,6 +31,7 @@
     "LB": [
       "Jamien Sherwood",
       "Dre Greenlaw",
+      "Josh Woods",
       "Terrel Bernard"
     ],
     "DB": [
@@ -40,34 +41,27 @@
       "Nick Scott"
     ],
     "IR": [
-      "Adonai Mitchell",
       "Jonathon Brooks",
+      "Rico Dowdle",
       "David Montgomery"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Denzel Boston — Q (active)",
-    "Rico Dowdle — Q (reserve)",
-    "Adonai Mitchell — Q (IR slot)",
     "Jonathon Brooks — IR (IR slot)",
-    "David Montgomery — Q (IR slot)"
+    "Rico Dowdle — Q (IR slot)",
+    "David Montgomery — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-23 6:31 AM PT (/workspace/fantrax-raw-2026-10-23-am.json)",
+  "source": "Fantrax roster sync 2026-10-24 6:20 AM PT (/workspace/fantrax-raw-2026-10-24-am.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
-  "lineupFlags": [
-    "Denzel Boston — Q (active)",
-    "Rico Dowdle — Q (reserve)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Denzel Boston — Q (active)",
-    "Rico Dowdle — Q (reserve)",
-    "Adonai Mitchell — Q (IR slot)",
     "Jonathon Brooks — IR (IR slot)",
-    "David Montgomery — Q (IR slot)"
+    "Rico Dowdle — Q (IR slot)",
+    "David Montgomery — O (IR slot)"
   ],
-  "updated": "2026-10-23",
-  "lastSynced": "2026-10-23 6:31 AM PT"
+  "updated": "2026-10-24",
+  "lastSynced": "2026-10-24 6:20 AM PT"
 }
