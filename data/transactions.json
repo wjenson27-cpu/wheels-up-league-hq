@@ -1,7 +1,59 @@
 {
-  "updated": "2026-10-24",
-  "source": "Fantrax roster sync 2026-10-24 4:04 PM PT (/workspace/fantrax-raw-2026-10-24-pm.json)",
+  "updated": "2026-10-25",
+  "source": "Fantrax roster sync 2026-10-25 6:18 AM PT (/workspace/fantrax-raw-2026-10-25-am.json)",
   "items": [
+    {
+      "date": "2026-10-25",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD/DROP",
+      "summary": "Added Nik Bonitto (DL-DEN); dropped Kingsley Enagbare (DL-NYJ)",
+      "time": "2:21 AM PDT",
+      "player": "Nik Bonitto",
+      "playerMeta": "DL-DEN",
+      "dropped": "Kingsley Enagbare",
+      "droppedMeta": "DL-NYJ",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-24",
+      "team": "Substation",
+      "type": "DROP",
+      "summary": "Dropped Tyjae Spears (RB-TEN)",
+      "time": "7:38 PM PDT",
+      "player": "Tyjae Spears",
+      "playerMeta": "RB-TEN",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-24",
+      "team": "Mrs. Doubtpfizer",
+      "type": "ADD/DROP",
+      "summary": "Added Quinyon Mitchell (DB-PHI); dropped Kaelon Black (RB-SF)",
+      "time": "7:34 PM PDT",
+      "player": "Quinyon Mitchell",
+      "playerMeta": "DB-PHI",
+      "dropped": "Kaelon Black",
+      "droppedMeta": "RB-SF",
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-24",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Eric Kendricks (LB-LAR); dropped Jake Hansen (LB-HOU)",
+      "time": "6:13 PM PDT",
+      "player": "Eric Kendricks",
+      "playerMeta": "LB-LAR",
+      "dropped": "Jake Hansen",
+      "droppedMeta": "LB-HOU",
+      "bid": null,
+      "period": "Week 7"
+    },
     {
       "date": "2026-10-24",
       "team": "Ultron",
@@ -5580,7 +5632,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 24 AM: +3 FA rows (Oct 24 8:28 AM–2:27 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 25 AM: +4 FA rows (Oct 24 6:13 PM–Oct 25 2:21 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-24 4:04 PM PT"
+  "lastSynced": "2026-10-25 6:18 AM PT"
 }

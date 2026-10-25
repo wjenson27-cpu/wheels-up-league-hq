@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-24 4:04 PM PT",
+  "asOf": "2026-10-25 6:18 AM PT",
   "faabLeft": 49,
   "startingQB": "Bryce Young",
   "roster": {
@@ -55,7 +55,7 @@
     "Travis Etienne — IR (IR slot)",
     "Tyler Warren — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-24 4:04 PM PT (/workspace/fantrax-raw-2026-10-24-pm.json)",
+  "source": "Fantrax roster sync 2026-10-25 6:18 AM PT (/workspace/fantrax-raw-2026-10-25-am.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Breece Hall — Q (active)",
@@ -72,6 +72,6 @@
     "Travis Etienne — IR (IR slot)",
     "Tyler Warren — O (IR slot)"
   ],
-  "updated": "2026-10-24",
-  "lastSynced": "2026-10-24 4:04 PM PT"
+  "updated": "2026-10-25",
+  "lastSynced": "2026-10-25 6:18 AM PT"
 }
