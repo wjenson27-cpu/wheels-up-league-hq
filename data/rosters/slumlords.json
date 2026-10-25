@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-25 6:18 AM PT",
+  "asOf": "2026-10-25 4:03 PM PT",
   "faabLeft": 0,
   "startingQB": "Drake Maye",
   "roster": {
@@ -18,7 +18,6 @@
       "Demario Douglas",
       "Kalif Raymond",
       "Wan'Dale Robinson",
-      "Chris Godwin",
       "Kyle Williams"
     ],
     "TE": [
@@ -27,7 +26,8 @@
     "DL": [
       "Jeffery Simmons",
       "Maxx Crosby",
-      "Gregory Rousseau"
+      "Gregory Rousseau",
+      "Leonard Williams"
     ],
     "LB": [
       "Anthony Hill",
@@ -37,8 +37,7 @@
     "DB": [
       "Chamarri Conner",
       "Devon Witherspoon",
-      "Budda Baker",
-      "Mike Hughes"
+      "Budda Baker"
     ],
     "IR": [
       "Isiah Pacheco",
@@ -52,7 +51,7 @@
     "Budda Baker — Q (active)",
     "Talanoa Hufanga — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-25 6:18 AM PT (/workspace/fantrax-raw-2026-10-25-am.json)",
+  "source": "Fantrax roster sync 2026-10-25 4:03 PM PT (/workspace/fantrax-raw-2026-10-25-pm.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
     "Budda Baker — Q (active)"
@@ -65,5 +64,5 @@
     "Talanoa Hufanga — O (IR slot)"
   ],
   "updated": "2026-10-25",
-  "lastSynced": "2026-10-25 6:18 AM PT"
+  "lastSynced": "2026-10-25 4:03 PM PT"
 }

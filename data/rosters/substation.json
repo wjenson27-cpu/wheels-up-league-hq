@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-25 6:18 AM PT",
+  "asOf": "2026-10-25 4:03 PM PT",
   "faabLeft": 10,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -19,8 +19,7 @@
       "Ja'Marr Chase",
       "Germie Bernard",
       "Malik Nabers",
-      "George Pickens",
-      "Christian Kirk"
+      "George Pickens"
     ],
     "TE": [
       "Tucker Kraft"
@@ -35,7 +34,6 @@
       "Frankie Luvu"
     ],
     "DB": [
-      "Malik Mustapha",
       "Tykee Smith",
       "Nick Emmanwori"
     ],
@@ -51,7 +49,7 @@
     "Nick Emmanwori — Q (active)",
     "Kevin Winston — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-25 6:18 AM PT (/workspace/fantrax-raw-2026-10-25-am.json)",
+  "source": "Fantrax roster sync 2026-10-25 4:03 PM PT (/workspace/fantrax-raw-2026-10-25-pm.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
     "Nick Emmanwori — Q (active)"
@@ -64,5 +62,5 @@
     "Kevin Winston — Q (IR slot)"
   ],
   "updated": "2026-10-25",
-  "lastSynced": "2026-10-25 6:18 AM PT"
+  "lastSynced": "2026-10-25 4:03 PM PT"
 }
