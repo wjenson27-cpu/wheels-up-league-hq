@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-25 4:03 PM PT",
+  "asOf": "2026-10-26 6:45 AM PT",
   "faabLeft": 49,
   "startingQB": "Bryce Young",
   "roster": {
@@ -11,8 +11,8 @@
       "Trevor Lawrence"
     ],
     "RB": [
-      "Breece Hall",
       "Cameron Skattebo",
+      "Breece Hall",
       "Zach Charbonnet"
     ],
     "WR": [
@@ -48,33 +48,33 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Breece Hall — O (reserve)",
-    "Brian Robinson Jr. — O (IR slot)",
     "Cameron Skattebo — Q (active)",
+    "Breece Hall — O (reserve)",
     "Zach Charbonnet — O (reserve)",
+    "Tyler Warren — O (reserve)",
+    "Brian Robinson Jr. — O (IR slot)",
     "Jordyn Tyson — IR (IR slot)",
-    "Travis Etienne — IR (IR slot)",
-    "Tyler Warren — O (reserve)"
+    "Travis Etienne — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-25 4:03 PM PT (/workspace/fantrax-raw-2026-10-25-pm.json)",
+  "source": "Fantrax roster sync 2026-10-26 6:45 AM PT (/workspace/fantrax-raw-2026-10-26-am.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
-    "Breece Hall — O (reserve)",
     "Cameron Skattebo — Q (active)",
+    "Breece Hall — O (reserve)",
     "Zach Charbonnet — O (reserve)",
     "Tyler Warren — O (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Breece Hall — O (reserve)",
-    "Brian Robinson Jr. — O (IR slot)",
     "Cameron Skattebo — Q (active)",
+    "Breece Hall — O (reserve)",
     "Zach Charbonnet — O (reserve)",
+    "Tyler Warren — O (reserve)",
+    "Brian Robinson Jr. — O (IR slot)",
     "Jordyn Tyson — IR (IR slot)",
-    "Travis Etienne — IR (IR slot)",
-    "Tyler Warren — O (reserve)"
+    "Travis Etienne — IR (IR slot)"
   ],
-  "updated": "2026-10-25",
-  "lastSynced": "2026-10-25 4:03 PM PT"
+  "updated": "2026-10-26",
+  "lastSynced": "2026-10-26 6:45 AM PT"
 }

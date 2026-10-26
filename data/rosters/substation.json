@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-25 4:03 PM PT",
+  "asOf": "2026-10-26 6:45 AM PT",
   "faabLeft": 10,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -19,13 +19,14 @@
       "Ja'Marr Chase",
       "Germie Bernard",
       "Malik Nabers",
-      "George Pickens"
+      "George Pickens",
+      "Christian Kirk"
     ],
     "TE": [
       "Tucker Kraft"
     ],
     "DL": [
-      "DeForest Buckner"
+      "Deforest Buckner"
     ],
     "LB": [
       "Jack Campbell",
@@ -34,6 +35,7 @@
       "Frankie Luvu"
     ],
     "DB": [
+      "Malik Mustapha",
       "Tykee Smith",
       "Nick Emmanwori"
     ],
@@ -45,22 +47,16 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Alec Pierce — IR (IR slot)",
-    "Nick Emmanwori — Q (active)",
-    "Kevin Winston — Q (IR slot)"
+    "Alec Pierce — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-25 4:03 PM PT (/workspace/fantrax-raw-2026-10-25-pm.json)",
+  "source": "Fantrax roster sync 2026-10-26 6:45 AM PT (/workspace/fantrax-raw-2026-10-26-am.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "lineupFlags": [
-    "Nick Emmanwori — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Alec Pierce — IR (IR slot)",
-    "Nick Emmanwori — Q (active)",
-    "Kevin Winston — Q (IR slot)"
+    "Alec Pierce — IR (IR slot)"
   ],
-  "updated": "2026-10-25",
-  "lastSynced": "2026-10-25 4:03 PM PT"
+  "updated": "2026-10-26",
+  "lastSynced": "2026-10-26 6:45 AM PT"
 }

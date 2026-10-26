@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-25 4:03 PM PT",
+  "asOf": "2026-10-26 6:45 AM PT",
   "faabLeft": 47,
   "startingQB": "Jordan Love",
   "roster": {
@@ -49,23 +49,19 @@
   "notes": "",
   "injuryFlags": [
     "Davante Adams — IR (IR slot)",
-    "L'Jarius Sneed — Q (reserve)",
     "Zaire Franklin — O (IR slot)",
     "Nathan Landman — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-25 4:03 PM PT (/workspace/fantrax-raw-2026-10-25-pm.json)",
+  "source": "Fantrax roster sync 2026-10-26 6:45 AM PT (/workspace/fantrax-raw-2026-10-26-am.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
-  "lineupFlags": [
-    "L'Jarius Sneed — Q (reserve)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Davante Adams — IR (IR slot)",
-    "L'Jarius Sneed — Q (reserve)",
     "Zaire Franklin — O (IR slot)",
     "Nathan Landman — O (IR slot)"
   ],
-  "updated": "2026-10-25",
-  "lastSynced": "2026-10-25 4:03 PM PT"
+  "updated": "2026-10-26",
+  "lastSynced": "2026-10-26 6:45 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-25 4:03 PM PT",
+  "asOf": "2026-10-26 6:45 AM PT",
   "faabLeft": 98,
   "startingQB": "Jared Goff",
   "roster": {
@@ -15,12 +15,12 @@
       "Saquon Barkley"
     ],
     "WR": [
-      "Rashid Shaheed",
+      "Malik Washington",
       "CeeDee Lamb",
       "Tetairoa McMillan",
       "Jaylen Waddle",
       "Konata Mumpfield",
-      "Malik Washington"
+      "Rashid Shaheed"
     ],
     "TE": [
       "Trey McBride",
@@ -48,22 +48,24 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Jaylen Waddle — Q (active)",
     "Saquon Barkley — Q (reserve)",
-    "Jonah Coleman — Q (IR slot)",
-    "Mike Washington — Q (IR slot)"
+    "Rashid Shaheed — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-10-25 4:03 PM PT (/workspace/fantrax-raw-2026-10-25-pm.json)",
+  "source": "Fantrax roster sync 2026-10-26 6:45 AM PT (/workspace/fantrax-raw-2026-10-26-am.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Saquon Barkley — Q (reserve)"
+    "Jaylen Waddle — Q (active)",
+    "Saquon Barkley — Q (reserve)",
+    "Rashid Shaheed — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Jaylen Waddle — Q (active)",
     "Saquon Barkley — Q (reserve)",
-    "Jonah Coleman — Q (IR slot)",
-    "Mike Washington — Q (IR slot)"
+    "Rashid Shaheed — Q (reserve)"
   ],
-  "updated": "2026-10-25",
-  "lastSynced": "2026-10-25 4:03 PM PT"
+  "updated": "2026-10-26",
+  "lastSynced": "2026-10-26 6:45 AM PT"
 }

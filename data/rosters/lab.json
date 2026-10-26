@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-25 4:03 PM PT",
+  "asOf": "2026-10-26 6:45 AM PT",
   "faabLeft": 61,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -48,25 +48,22 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Puka Nacua — Q (active)",
+    "Tyrone Tracy — Q (reserve)",
     "Jeremiyah Love — O (IR slot)",
-    "Mike Evans — O (IR slot)",
-    "Quay Walker — Q (active)"
+    "Mike Evans — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-25 4:03 PM PT (/workspace/fantrax-raw-2026-10-25-pm.json)",
+  "source": "Fantrax roster sync 2026-10-26 6:45 AM PT (/workspace/fantrax-raw-2026-10-26-am.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
-    "Puka Nacua — Q (active)",
-    "Quay Walker — Q (active)"
+    "Tyrone Tracy — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Puka Nacua — Q (active)",
+    "Tyrone Tracy — Q (reserve)",
     "Jeremiyah Love — O (IR slot)",
-    "Mike Evans — O (IR slot)",
-    "Quay Walker — Q (active)"
+    "Mike Evans — O (IR slot)"
   ],
-  "updated": "2026-10-25",
-  "lastSynced": "2026-10-25 4:03 PM PT"
+  "updated": "2026-10-26",
+  "lastSynced": "2026-10-26 6:45 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-25 4:03 PM PT",
+  "asOf": "2026-10-26 6:45 AM PT",
   "faabLeft": 0,
   "startingQB": "Drake Maye",
   "roster": {
@@ -11,8 +11,9 @@
     ],
     "RB": [
       "Jahmyr Gibbs",
-      "Dameon Pierce",
-      "James Cook"
+      "Quinshon Judkins",
+      "James Cook",
+      "Dameon Pierce"
     ],
     "WR": [
       "Demario Douglas",
@@ -26,8 +27,8 @@
     "DL": [
       "Jeffery Simmons",
       "Maxx Crosby",
-      "Gregory Rousseau",
-      "Leonard Williams"
+      "Leonard Williams",
+      "Gregory Rousseau"
     ],
     "LB": [
       "Anthony Hill",
@@ -41,28 +42,23 @@
     ],
     "IR": [
       "Isiah Pacheco",
-      "Quinshon Judkins",
       "Talanoa Hufanga"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Isiah Pacheco — IR (IR slot)",
-    "Budda Baker — Q (active)",
     "Talanoa Hufanga — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-25 4:03 PM PT (/workspace/fantrax-raw-2026-10-25-pm.json)",
+  "source": "Fantrax roster sync 2026-10-26 6:45 AM PT (/workspace/fantrax-raw-2026-10-26-am.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
-  "lineupFlags": [
-    "Budda Baker — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Isiah Pacheco — IR (IR slot)",
-    "Budda Baker — Q (active)",
     "Talanoa Hufanga — O (IR slot)"
   ],
-  "updated": "2026-10-25",
-  "lastSynced": "2026-10-25 4:03 PM PT"
+  "updated": "2026-10-26",
+  "lastSynced": "2026-10-26 6:45 AM PT"
 }

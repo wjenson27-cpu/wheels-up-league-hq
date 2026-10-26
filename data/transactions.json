@@ -1,7 +1,33 @@
 {
-  "updated": "2026-10-25",
-  "source": "Fantrax roster sync 2026-10-25 4:03 PM PT (/workspace/fantrax-raw-2026-10-25-pm.json)",
+  "updated": "2026-10-26",
+  "source": "Fantrax roster sync 2026-10-26 6:45 AM PT (/workspace/fantrax-raw-2026-10-26-am.json)",
   "items": [
+    {
+      "date": "2026-10-25",
+      "team": "Substation",
+      "type": "DROP",
+      "summary": "Dropped Malik Mustapha (DB-SF)",
+      "time": "1:34 PM PDT",
+      "player": "Malik Mustapha",
+      "playerMeta": "DB-SF",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 7"
+    },
+    {
+      "date": "2026-10-25",
+      "team": "Saltese Slamm",
+      "type": "ADD/DROP",
+      "summary": "Added Byron Murphy (DB-MIN); dropped Omar Speights (LB-LAR)",
+      "time": "9:39 AM PDT",
+      "player": "Byron Murphy",
+      "playerMeta": "DB-MIN",
+      "dropped": "Omar Speights",
+      "droppedMeta": "LB-LAR",
+      "bid": null,
+      "period": "Week 7"
+    },
     {
       "date": "2026-10-25",
       "team": "Substation",
@@ -5723,7 +5749,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 25 AM: +7 FA rows (Oct 25 6:16 AM–1:34 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 26 AM: +2 FA rows (Oct 25 9:39 AM–1:34 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-25 4:03 PM PT"
+  "lastSynced": "2026-10-26 6:45 AM PT"
 }
