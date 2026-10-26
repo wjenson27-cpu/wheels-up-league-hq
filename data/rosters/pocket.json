@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-26 6:45 AM PT",
+  "asOf": "2026-10-26 4:01 PM PT",
   "faabLeft": 98,
   "startingQB": "Jared Goff",
   "roster": {
@@ -52,7 +52,7 @@
     "Saquon Barkley — Q (reserve)",
     "Rashid Shaheed — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-10-26 6:45 AM PT (/workspace/fantrax-raw-2026-10-26-am.json)",
+  "source": "Fantrax roster sync 2026-10-26 4:01 PM PT (/workspace/fantrax-raw-2026-10-26-pm.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
     "Jaylen Waddle — Q (active)",
@@ -67,5 +67,5 @@
     "Rashid Shaheed — Q (reserve)"
   ],
   "updated": "2026-10-26",
-  "lastSynced": "2026-10-26 6:45 AM PT"
+  "lastSynced": "2026-10-26 4:01 PM PT"
 }
