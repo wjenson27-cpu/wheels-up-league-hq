@@ -1,7 +1,46 @@
 {
   "updated": "2026-10-27",
-  "source": "Fantrax roster sync 2026-10-27 6:32 AM PT (/workspace/fantrax-raw-2026-10-27-am.json)",
+  "source": "Fantrax roster sync 2026-10-27 4:08 PM PT (/workspace/fantrax-raw-2026-10-27-pm.json)",
   "items": [
+    {
+      "date": "2026-10-27",
+      "team": "Little Ass Boys",
+      "type": "DROP",
+      "summary": "Dropped Tyrone Tracy (RB-NYG)",
+      "time": "11:49 AM PDT",
+      "player": "Tyrone Tracy",
+      "playerMeta": "RB-NYG",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-26",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Trace Ford (LB-NYG)",
+      "time": "9:47 PM PDT",
+      "player": "Trace Ford",
+      "playerMeta": "LB-NYG",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-26",
+      "team": "The Hypersecretors",
+      "type": "DROP",
+      "summary": "Dropped Kenyon Sadiq (TE-NYJ)",
+      "time": "9:16 PM PDT",
+      "player": "Kenyon Sadiq",
+      "playerMeta": "TE-NYJ",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
     {
       "date": "2026-10-26",
       "team": "Pocket Agents",
@@ -5879,7 +5918,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 27 AM: +7 FA rows (Oct 25 9:38 AM–Oct 26 9:58 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 27 AM: +3 FA rows (Oct 26 9:16 PM–Oct 27 11:49 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-27 6:32 AM PT"
+  "lastSynced": "2026-10-27 4:08 PM PT"
 }

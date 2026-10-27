@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-10-27 6:32 AM PT",
+  "asOf": "2026-10-27 4:08 PM PT",
   "faabLeft": 1,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -13,11 +13,11 @@
       "Tony Pollard"
     ],
     "WR": [
-      "Chris Olave",
+      "Parker Washington",
+      "D.J. Moore",
       "Jaxon Smith-Njigba",
-      "Jordan Watkins",
-      "KaVontae Turpin",
-      "Parker Washington"
+      "Chris Olave",
+      "Jordan Watkins"
     ],
     "TE": [
       "T.J. Hockenson",
@@ -42,36 +42,36 @@
     ],
     "IR": [
       "Ladd McConkey",
-      "D.J. Moore",
+      "KaVontae Turpin",
       "T.J. Edwards"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "KaVontae Turpin — Q (reserve)",
+    "D.J. Moore — Q (active)",
     "Ladd McConkey — Q (IR slot)",
-    "D.J. Moore — Q (IR slot)",
+    "KaVontae Turpin — Q (IR slot)",
     "Zach Allen — Q (active)",
     "Jevon Holland — Q (reserve)",
     "T.J. Edwards — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-27 6:32 AM PT (/workspace/fantrax-raw-2026-10-27-am.json)",
+  "source": "Fantrax roster sync 2026-10-27 4:08 PM PT (/workspace/fantrax-raw-2026-10-27-pm.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
-    "KaVontae Turpin — Q (reserve)",
+    "D.J. Moore — Q (active)",
     "Zach Allen — Q (active)",
     "Jevon Holland — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "KaVontae Turpin — Q (reserve)",
+    "D.J. Moore — Q (active)",
     "Ladd McConkey — Q (IR slot)",
-    "D.J. Moore — Q (IR slot)",
+    "KaVontae Turpin — Q (IR slot)",
     "Zach Allen — Q (active)",
     "Jevon Holland — Q (reserve)",
     "T.J. Edwards — Q (IR slot)"
   ],
   "updated": "2026-10-27",
-  "lastSynced": "2026-10-27 6:32 AM PT"
+  "lastSynced": "2026-10-27 4:08 PM PT"
 }

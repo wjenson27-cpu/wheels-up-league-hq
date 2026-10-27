@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-27 6:32 AM PT",
+  "asOf": "2026-10-27 4:08 PM PT",
   "faabLeft": 10,
   "startingQB": "Josh Allen",
   "roster": {
@@ -50,7 +50,7 @@
     "Divine Deablo — Q (IR slot)",
     "Andrew Wingard — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-27 6:32 AM PT (/workspace/fantrax-raw-2026-10-27-am.json)",
+  "source": "Fantrax roster sync 2026-10-27 4:08 PM PT (/workspace/fantrax-raw-2026-10-27-pm.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -61,5 +61,5 @@
     "Andrew Wingard — Q (IR slot)"
   ],
   "updated": "2026-10-27",
-  "lastSynced": "2026-10-27 6:32 AM PT"
+  "lastSynced": "2026-10-27 4:08 PM PT"
 }

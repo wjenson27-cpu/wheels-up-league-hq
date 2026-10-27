@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-27 6:32 AM PT",
+  "asOf": "2026-10-27 4:08 PM PT",
   "faabLeft": 49,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -49,7 +49,6 @@
   "notes": "",
   "injuryFlags": [
     "Breece Hall — Q (active)",
-    "Jalen Coker — Q (active)",
     "Tyler Warren — Q (active)",
     "Brian Robinson Jr. — Q (reserve)",
     "Zach Charbonnet — Q (reserve)",
@@ -57,11 +56,10 @@
     "Jordyn Tyson — IR (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-27 6:32 AM PT (/workspace/fantrax-raw-2026-10-27-am.json)",
+  "source": "Fantrax roster sync 2026-10-27 4:08 PM PT (/workspace/fantrax-raw-2026-10-27-pm.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Breece Hall — Q (active)",
-    "Jalen Coker — Q (active)",
     "Tyler Warren — Q (active)",
     "Brian Robinson Jr. — Q (reserve)",
     "Zach Charbonnet — Q (reserve)"
@@ -70,7 +68,6 @@
   "pendingClaims": [],
   "flags": [
     "Breece Hall — Q (active)",
-    "Jalen Coker — Q (active)",
     "Tyler Warren — Q (active)",
     "Brian Robinson Jr. — Q (reserve)",
     "Zach Charbonnet — Q (reserve)",
@@ -79,5 +76,5 @@
     "Travis Etienne — IR (IR slot)"
   ],
   "updated": "2026-10-27",
-  "lastSynced": "2026-10-27 6:32 AM PT"
+  "lastSynced": "2026-10-27 4:08 PM PT"
 }
