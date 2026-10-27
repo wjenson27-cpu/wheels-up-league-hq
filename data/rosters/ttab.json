@@ -2,23 +2,23 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-26 4:01 PM PT",
-  "faabLeft": 0,
-  "startingQB": "Bo Nix",
+  "asOf": "2026-10-27 6:32 AM PT",
+  "faabLeft": 10,
+  "startingQB": "Josh Allen",
   "roster": {
     "QB": [
-      "Bo Nix",
       "Josh Allen"
     ],
     "RB": [
       "Javonte Williams",
-      "Zonovan Knight",
-      "Emanuel Wilson"
+      "Emanuel Wilson",
+      "Zonovan Knight"
     ],
     "WR": [
       "Christian Watson",
-      "Jameson Williams",
       "Stefon Diggs",
+      "Jameson Williams",
+      "Malik Washington",
       "Omar Cooper Jr."
     ],
     "TE": [
@@ -30,13 +30,11 @@
     "LB": [
       "Demario Davis",
       "Harold Perkins",
-      "Trace Ford",
       "Dorian Williams"
     ],
     "DB": [
       "Caleb Downs",
       "Dillon Thieneman",
-      "Dane Belton",
       "Brian Branch",
       "Javon Bullard"
     ],
@@ -48,20 +46,20 @@
   },
   "notes": "",
   "injuryFlags": [
-    "DeVonta Smith — O (IR slot)",
-    "Divine Deablo — O (IR slot)",
-    "Andrew Wingard — O (IR slot)"
+    "DeVonta Smith — Q (IR slot)",
+    "Divine Deablo — Q (IR slot)",
+    "Andrew Wingard — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-26 4:01 PM PT (/workspace/fantrax-raw-2026-10-26-pm.json)",
+  "source": "Fantrax roster sync 2026-10-27 6:32 AM PT (/workspace/fantrax-raw-2026-10-27-am.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "DeVonta Smith — O (IR slot)",
-    "Divine Deablo — O (IR slot)",
-    "Andrew Wingard — O (IR slot)"
+    "DeVonta Smith — Q (IR slot)",
+    "Divine Deablo — Q (IR slot)",
+    "Andrew Wingard — Q (IR slot)"
   ],
-  "updated": "2026-10-26",
-  "lastSynced": "2026-10-26 4:01 PM PT"
+  "updated": "2026-10-27",
+  "lastSynced": "2026-10-27 6:32 AM PT"
 }

@@ -1,7 +1,98 @@
 {
-  "updated": "2026-10-26",
-  "source": "Fantrax roster sync 2026-10-26 4:01 PM PT (/workspace/fantrax-raw-2026-10-26-pm.json)",
+  "updated": "2026-10-27",
+  "source": "Fantrax roster sync 2026-10-27 6:32 AM PT (/workspace/fantrax-raw-2026-10-27-am.json)",
   "items": [
+    {
+      "date": "2026-10-26",
+      "team": "Pocket Agents",
+      "type": "DROP",
+      "summary": "Dropped Jaquan Brisker (DB-PIT)",
+      "time": "9:58 PM PDT",
+      "player": "Jaquan Brisker",
+      "playerMeta": "DB-PIT",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-26",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Bo Nix (QB-DEN)",
+      "time": "9:47 PM PDT",
+      "player": "Bo Nix",
+      "playerMeta": "QB-DEN",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-26",
+      "team": "The Hypersecretors",
+      "type": "DROP",
+      "summary": "Dropped Jalen Carter (DL-PHI)",
+      "time": "9:16 PM PDT",
+      "player": "Jalen Carter",
+      "playerMeta": "DL-PHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-26",
+      "team": "Morningside Muff Divers",
+      "type": "DROP",
+      "summary": "Dropped Aaron Rodgers (QB-PIT)",
+      "time": "8:23 PM PDT",
+      "player": "Aaron Rodgers",
+      "playerMeta": "QB-PIT",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-26",
+      "team": "Mrs. Doubtpfizer",
+      "type": "DROP",
+      "summary": "Dropped Elijah Ponder (LB-NE)",
+      "time": "8:15 PM PDT",
+      "player": "Elijah Ponder",
+      "playerMeta": "LB-NE",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-26",
+      "team": "Mrs. Doubtpfizer",
+      "type": "DROP",
+      "summary": "Dropped Mason Graham (DL-CLE)",
+      "time": "8:14 PM PDT",
+      "player": "Mason Graham",
+      "playerMeta": "DL-CLE",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-25",
+      "team": "Saltese Slamm",
+      "type": "ADD/DROP",
+      "summary": "Added Nick Scott (DB-CAR); dropped Josh Woods (LB-ATL)",
+      "time": "9:38 AM PDT",
+      "player": "Nick Scott",
+      "playerMeta": "DB-CAR",
+      "dropped": "Josh Woods",
+      "droppedMeta": "LB-ATL",
+      "bid": null,
+      "period": "Week 8"
+    },
     {
       "date": "2026-10-26",
       "team": "Ultron",
@@ -5788,7 +5879,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 26 AM: +3 FA rows (Oct 26 9:16 AM–12:59 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 27 AM: +7 FA rows (Oct 25 9:38 AM–Oct 26 9:58 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-26 4:01 PM PT"
+  "lastSynced": "2026-10-27 6:32 AM PT"
 }

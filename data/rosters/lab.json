@@ -2,19 +2,19 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-26 4:01 PM PT",
+  "asOf": "2026-10-27 6:32 AM PT",
   "faabLeft": 61,
-  "startingQB": "C.J. Stroud",
+  "startingQB": "Jayden Daniels",
   "roster": {
     "QB": [
-      "C.J. Stroud",
-      "Jayden Daniels"
+      "Jayden Daniels",
+      "C.J. Stroud"
     ],
     "RB": [
       "Kyren Williams",
       "Tyler Allgeier",
       "Jaylen Warren",
-      "Tyrone Tracy"
+      "Dylan Sampson"
     ],
     "WR": [
       "Puka Nacua",
@@ -43,27 +43,25 @@
     "IR": [
       "Jeremiyah Love",
       "Mike Evans",
-      "Dylan Sampson"
+      "Tyrone Tracy"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Tyrone Tracy — Q (reserve)",
-    "Jeremiyah Love — O (IR slot)",
-    "Mike Evans — O (IR slot)"
+    "Jeremiyah Love — Q (IR slot)",
+    "Mike Evans — Q (IR slot)",
+    "Tyrone Tracy — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-26 4:01 PM PT (/workspace/fantrax-raw-2026-10-26-pm.json)",
+  "source": "Fantrax roster sync 2026-10-27 6:32 AM PT (/workspace/fantrax-raw-2026-10-27-am.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
-  "lineupFlags": [
-    "Tyrone Tracy — Q (reserve)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Tyrone Tracy — Q (reserve)",
-    "Jeremiyah Love — O (IR slot)",
-    "Mike Evans — O (IR slot)"
+    "Jeremiyah Love — Q (IR slot)",
+    "Mike Evans — Q (IR slot)",
+    "Tyrone Tracy — Q (IR slot)"
   ],
-  "updated": "2026-10-26",
-  "lastSynced": "2026-10-26 4:01 PM PT"
+  "updated": "2026-10-27",
+  "lastSynced": "2026-10-27 6:32 AM PT"
 }

@@ -2,24 +2,24 @@
   "teamId": "eddies",
   "teamName": "Eagle Ridge Eddies",
   "owner": "Bill Jenson",
-  "asOf": "2026-10-26 4:01 PM PT",
+  "asOf": "2026-10-27 6:32 AM PT",
   "faabLeft": 49,
-  "startingQB": "Bryce Young",
+  "startingQB": "Trevor Lawrence",
   "roster": {
     "QB": [
-      "Bryce Young",
-      "Trevor Lawrence"
+      "Trevor Lawrence",
+      "Bryce Young"
     ],
     "RB": [
-      "Cameron Skattebo",
       "Breece Hall",
+      "Brian Robinson Jr.",
       "Zach Charbonnet"
     ],
     "WR": [
       "Garrett Wilson",
-      "Kendrick Bourne",
       "Jalen Coker",
-      "Chimere Dike"
+      "Chimere Dike",
+      "Kendrick Bourne"
     ],
     "TE": [
       "Brock Bowers",
@@ -29,11 +29,11 @@
       "George Karlaftis"
     ],
     "LB": [
-      "Fred Warner",
       "Jordyn Brooks",
       "Tyrice Knight",
+      "Trenton Simpson",
       "Cedric Gray",
-      "Trenton Simpson"
+      "Fred Warner"
     ],
     "DB": [
       "Quentin Lake",
@@ -41,40 +41,43 @@
       "D.J. Reed"
     ],
     "IR": [
-      "Brian Robinson Jr.",
+      "Cameron Skattebo",
       "Jordyn Tyson",
       "Travis Etienne"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Cameron Skattebo — Q (active)",
-    "Breece Hall — O (reserve)",
-    "Zach Charbonnet — O (reserve)",
-    "Tyler Warren — O (reserve)",
-    "Brian Robinson Jr. — O (IR slot)",
+    "Breece Hall — Q (active)",
+    "Jalen Coker — Q (active)",
+    "Tyler Warren — Q (active)",
+    "Brian Robinson Jr. — Q (reserve)",
+    "Zach Charbonnet — Q (reserve)",
+    "Cameron Skattebo — Q (IR slot)",
     "Jordyn Tyson — IR (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-26 4:01 PM PT (/workspace/fantrax-raw-2026-10-26-pm.json)",
+  "source": "Fantrax roster sync 2026-10-27 6:32 AM PT (/workspace/fantrax-raw-2026-10-27-am.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
-    "Cameron Skattebo — Q (active)",
-    "Breece Hall — O (reserve)",
-    "Zach Charbonnet — O (reserve)",
-    "Tyler Warren — O (reserve)"
+    "Breece Hall — Q (active)",
+    "Jalen Coker — Q (active)",
+    "Tyler Warren — Q (active)",
+    "Brian Robinson Jr. — Q (reserve)",
+    "Zach Charbonnet — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Cameron Skattebo — Q (active)",
-    "Breece Hall — O (reserve)",
-    "Zach Charbonnet — O (reserve)",
-    "Tyler Warren — O (reserve)",
-    "Brian Robinson Jr. — O (IR slot)",
+    "Breece Hall — Q (active)",
+    "Jalen Coker — Q (active)",
+    "Tyler Warren — Q (active)",
+    "Brian Robinson Jr. — Q (reserve)",
+    "Zach Charbonnet — Q (reserve)",
+    "Cameron Skattebo — Q (IR slot)",
     "Jordyn Tyson — IR (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
-  "updated": "2026-10-26",
-  "lastSynced": "2026-10-26 4:01 PM PT"
+  "updated": "2026-10-27",
+  "lastSynced": "2026-10-27 6:32 AM PT"
 }

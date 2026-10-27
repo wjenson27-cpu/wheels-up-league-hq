@@ -175,7 +175,7 @@
       "owner": "Chase Anderson",
       "abbrev": "TTA",
       "record": "3-3-0",
-      "faab": 0,
+      "faab": 10,
       "projW1": 185.52,
       "powerRank": 8,
       "note": "Chase Anderson — TTAB. Sep 16: +Goedert+Winfield+$8 FAAB (−Pollard/−Edmunds) vs Substation. FAAB $59. Sep 20: Christian Harris add/drop churn (net zero). | Sep 23: acquired Dorian Williams + Wingard for Etienne + Winfield (Eddies). | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/−McGowan; +Ji'Ayir Brown/−Bishop. | Sep 25: −Kendre Miller; +Cole Bishop; +Romeo Doubs/−Jalen Thompson. | Sep 28: −Abdul Carter ($0/null). | Sep 30 W4 waivers/FA: −Romeo Doubs; +Mack Hollins; +Bradley Chubb; +Malaki Starks; +Andre Cisco. FAAB $42. | Oct 3: +Harold Perkins/−Tre Harris ($0/null). | Oct 7 W5 waivers/FA: +Khalil Mack (−Bradley Chubb) [FA 09:07 AM]; +Mansoor Delane (−Treydan Stukes) [FA 09:08 AM]; +Dane Belton (−Andre Cisco) [FA 09:12 AM]. FAAB $42. | Oct 7 FA: −Mansoor Delane; +Najee Harris/−Mack Hollins. | Oct 10: +Javon Bullard (−Jeremiah Trotter). | Oct 11: −Ji'Ayir Brown; Jeanty IR→Active.",
@@ -297,7 +297,7 @@
       "owner": "Kellen Olson",
       "abbrev": "PKT",
       "record": "5-1-0",
-      "faab": 98,
+      "faab": 88,
       "projW1": 169.07,
       "powerRank": 13,
       "note": "Kellen Olson (Host) — Week 1 L. FAAB $111. Sep 19: +Teddye Buchanan/−Jake Hansen; Sep 18: +Marvin Mims $0/−Kyler Gordon. See transactions. | Sep 25: −Marvin Mims; +Brandon Jones (Dennis churn). | Sep 30 W4 waivers/FA: +Jonah Coleman (−Ty Okada); +Chris Johnson (−Teddye Buchanan). FAAB $111. | Oct 5: −Chris Bell ($0/null). | Oct 7 W5 waivers/FA: +Jonah Coleman; +Jalen Pitre. FAAB $111. | Oct 8: traded Oluokun+$10 FAAB to Ultron for Hooker+Barkley; −Gainwell. FAAB $101.",
@@ -340,11 +340,11 @@
       "pa": 1374.5
     }
   ],
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "ownerSource": "Bill confirmed Sep 6 2026 + League Archives",
   "standingsSource": "Fantrax Week 6 finals (Matchups scrape Tue Oct 20); records match Fantrax Standings; rank by record then PF",
-  "week": 7,
+  "week": 8,
   "hqNote": "Week 6 FINAL: Eddies beat Substation 259.5–227.5 (4-2, four straight). Kitty Pocket 262.5; survivor TTAB 186.5 off the bus. Last Ride: Saltese beat Ultron 259–205.5 (Ultron out). Pocket, LAB and Goats share 5-1. OMVP Jaxon Smith-Njigba 197 / DMVP Nakobe Dean 163.",
-  "source": "Fantrax roster sync 2026-10-26 4:01 PM PT (/workspace/fantrax-raw-2026-10-26-pm.json)",
-  "note": "Week 6 finals applied Tue Oct 20 · records/PF/PA from Fantrax finals. Oct 26 4:01 PM PT roster sync: FAAB verified live, all 14 unchanged."
+  "source": "Fantrax roster sync 2026-10-27 6:32 AM PT (/workspace/fantrax-raw-2026-10-27-am.json)",
+  "note": "Week 6 finals applied Tue Oct 20 · records/PF/PA from Fantrax finals. Oct 27 6:32 AM PT roster sync: FAAB verified live, all 14 updated."
 }
