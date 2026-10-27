@@ -325,29 +325,29 @@
       "trackTop": 3,
       "player": "Jaxon Smith-Njigba",
       "pos": "WR",
-      "teamId": "saltese",
-      "team": "Saltese Slamm",
-      "value": 197,
+      "teamId": "dongers",
+      "team": "Drummond Dongers",
+      "value": 234,
       "leaders": [
         {
           "rank": 1,
           "player": "Jaxon Smith-Njigba",
           "pos": "WR",
-          "teamId": "saltese",
-          "team": "Saltese Slamm",
-          "teamShort": "Saltese",
-          "value": 197,
-          "valueLabel": "197"
+          "teamId": "dongers",
+          "team": "Drummond Dongers",
+          "teamShort": "Dongers",
+          "value": 234,
+          "valueLabel": "234"
         },
         {
           "rank": 2,
-          "player": "Josh Allen",
-          "pos": "QB",
-          "teamId": "ttab",
-          "team": "Towner Top Aga Bottom",
-          "teamShort": "TTAB",
-          "value": 186,
-          "valueLabel": "186"
+          "player": "Jahmyr Gibbs",
+          "pos": "RB",
+          "teamId": "slumlords",
+          "team": "Indian Trail Slumlords",
+          "teamShort": "Slumlords",
+          "value": 199,
+          "valueLabel": "199"
         },
         {
           "rank": 3,
@@ -356,55 +356,57 @@
           "teamId": "hyper",
           "team": "The Hypersecretors",
           "teamShort": "Hyper",
-          "value": 177,
-          "valueLabel": "177"
+          "value": 188,
+          "valueLabel": "188"
         }
       ],
-      "note": "Live after Week 6 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end"
+      "note": "Live after Week 7 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end",
+      "source": "Fantrax Players, 2026-27 Reg Season YTD, All Taken Players (excl. free agents), Tue Oct 27 ~9:30 AM PT after Week 7 finals"
     },
     "topDefensivePlayer": {
       "key": "topDefensivePlayer",
       "label": "Top Defensive Player",
       "status": "live",
       "trackTop": 3,
-      "player": "Nakobe Dean",
+      "player": "Alex Singleton",
       "pos": "LB",
       "teamId": "doubtpfizer",
       "team": "Mrs. Doubtpfizer",
-      "value": 163,
+      "value": 204,
       "leaders": [
         {
           "rank": 1,
+          "player": "Alex Singleton",
+          "pos": "LB",
+          "teamId": "doubtpfizer",
+          "team": "Mrs. Doubtpfizer",
+          "teamShort": "Doubtpfizer",
+          "value": 204,
+          "valueLabel": "204"
+        },
+        {
+          "rank": 2,
           "player": "Nakobe Dean",
           "pos": "LB",
           "teamId": "doubtpfizer",
           "team": "Mrs. Doubtpfizer",
           "teamShort": "Doubtpfizer",
-          "value": 163,
-          "valueLabel": "163"
-        },
-        {
-          "rank": 2,
-          "player": "Ernest Jones",
-          "pos": "LB",
-          "teamId": "pocket",
-          "team": "Pocket Agents",
-          "teamShort": "Pocket",
-          "value": 162,
-          "valueLabel": "162"
+          "value": 188,
+          "valueLabel": "188"
         },
         {
           "rank": 3,
-          "player": "Will Anderson Jr.",
-          "pos": "DL",
-          "teamId": "pocket",
-          "team": "Pocket Agents",
-          "teamShort": "Pocket",
-          "value": 161,
-          "valueLabel": "161"
+          "player": "Blake Cashman",
+          "pos": "LB",
+          "teamId": "hyper",
+          "team": "The Hypersecretors",
+          "teamShort": "Hyper",
+          "value": 183,
+          "valueLabel": "183"
         }
       ],
-      "note": "Live after Week 6 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end"
+      "note": "Live after Week 7 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end",
+      "source": "Fantrax Players, 2026-27 Reg Season YTD, All Taken Players (excl. free agents), Tue Oct 27 ~9:30 AM PT after Week 7 finals"
     }
   },
   "weekScores": {
@@ -983,6 +985,76 @@
         }
       ],
       "note": "Week 6 defense #3 is a three-way tie at 35 (Jeffery Simmons, George Karlaftis, Pete Werner); Simmons listed."
+    },
+    {
+      "week": 7,
+      "status": "final",
+      "source": "Fantrax Players, Week 7, All Taken (excl. free agents), Oct 27 AM; points cross-checked vs Week 7 box scores",
+      "topOffensivePlayer": [
+        {
+          "rank": 1,
+          "player": "Tony Pollard",
+          "pos": "RB",
+          "teamId": "dongers",
+          "team": "Drummond Dongers",
+          "teamShort": "Dongers",
+          "value": 44,
+          "valueLabel": "44"
+        },
+        {
+          "rank": 2,
+          "player": "Trey McBride",
+          "pos": "TE",
+          "teamId": "pocket",
+          "team": "Pocket Agents",
+          "teamShort": "Pocket",
+          "value": 40,
+          "valueLabel": "40"
+        },
+        {
+          "rank": 3,
+          "player": "Jaxon Smith-Njigba",
+          "pos": "WR",
+          "teamId": "dongers",
+          "team": "Drummond Dongers",
+          "teamShort": "Dongers",
+          "value": 37,
+          "valueLabel": "37"
+        }
+      ],
+      "topDefensivePlayer": [
+        {
+          "rank": 1,
+          "player": "Blake Cashman",
+          "pos": "LB",
+          "teamId": "hyper",
+          "team": "The Hypersecretors",
+          "teamShort": "Hyper",
+          "value": 60,
+          "valueLabel": "60"
+        },
+        {
+          "rank": 2,
+          "player": "Alex Singleton",
+          "pos": "LB",
+          "teamId": "doubtpfizer",
+          "team": "Mrs. Doubtpfizer",
+          "teamShort": "Doubtpfizer",
+          "value": 53,
+          "valueLabel": "53"
+        },
+        {
+          "rank": 3,
+          "player": "Kendal Daniels",
+          "pos": "LB",
+          "teamId": "ultron",
+          "team": "Ultron",
+          "teamShort": "Ultron",
+          "value": 44,
+          "valueLabel": "44"
+        }
+      ],
+      "note": "Kendal Daniels 44 per Fantrax Week 7 box score (starter sums verified)."
     }
   ]
 }
