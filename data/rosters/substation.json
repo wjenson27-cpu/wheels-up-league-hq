@@ -2,12 +2,12 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-27 4:08 PM PT",
-  "faabLeft": 10,
-  "startingQB": "Kyler Murray",
+  "asOf": "2026-10-27 6:45 PM PT",
+  "faabLeft": 21,
+  "startingQB": "Bryce Young",
   "roster": {
     "QB": [
-      "Kyler Murray",
+      "Bryce Young",
       "Brock Purdy"
     ],
     "RB": [
@@ -18,11 +18,11 @@
     "WR": [
       "Ja'Marr Chase",
       "Germie Bernard",
-      "George Pickens",
       "Malik Nabers"
     ],
     "TE": [
-      "Tucker Kraft"
+      "Tucker Kraft",
+      "Tyler Warren"
     ],
     "DL": [
       "DeForest Buckner"
@@ -30,7 +30,6 @@
     "LB": [
       "Jack Campbell",
       "Zack Baun",
-      "Frankie Luvu",
       "Kaden Elliss"
     ],
     "DB": [
@@ -45,16 +44,16 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Alec Pierce — IR (IR slot)"
+    "Alec Pierce \u2014 IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-27 4:08 PM PT (/workspace/fantrax-raw-2026-10-27-pm.json)",
+  "source": "Fantrax roster & trade sync 2026-10-27 6:45 PM PT",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Alec Pierce — IR (IR slot)"
+    "Alec Pierce \u2014 IR (IR slot)"
   ],
   "updated": "2026-10-27",
-  "lastSynced": "2026-10-27 4:08 PM PT"
+  "lastSynced": "2026-10-27 6:45 PM PT"
 }
