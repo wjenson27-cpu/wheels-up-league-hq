@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-10-27 4:08 PM PT",
+  "asOf": "2026-10-28 6:33 AM PT",
   "faabLeft": 25,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -19,13 +19,14 @@
     "WR": [
       "Amon-Ra St. Brown",
       "Luther Burden",
-      "Emeka Egbuka",
-      "Travis Hunter"
+      "Emeka Egbuka"
     ],
     "TE": [
       "Sam LaPorta"
     ],
-    "DL": [],
+    "DL": [
+      "Nick Bosa"
+    ],
     "LB": [
       "Nick Bolton",
       "Blake Cashman",
@@ -35,12 +36,12 @@
     ],
     "DB": [
       "Jeremy Chinn",
-      "Kamren Curl"
+      "Kamren Curl",
+      "Jalen Pitre"
     ],
     "IR": [
       "Jaylin Noel",
-      "Nick Bosa",
-      "Jalen Pitre"
+      "Travis Hunter"
     ]
   },
   "notes": "",
@@ -48,14 +49,16 @@
     "Amon-Ra St. Brown — Q (active)",
     "Emeka Egbuka — Q (active)",
     "Jaylin Noel — Q (IR slot)",
-    "Nick Bosa — Q (IR slot)",
-    "Jalen Pitre — Q (IR slot)"
+    "Nick Bosa — Q (active)",
+    "Jalen Pitre — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-10-27 4:08 PM PT (/workspace/fantrax-raw-2026-10-27-pm.json)",
+  "source": "Fantrax roster sync 2026-10-28 6:33 AM PT (/workspace/fantrax-raw-2026-10-28-am.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
     "Amon-Ra St. Brown — Q (active)",
-    "Emeka Egbuka — Q (active)"
+    "Emeka Egbuka — Q (active)",
+    "Nick Bosa — Q (active)",
+    "Jalen Pitre — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -63,9 +66,9 @@
     "Amon-Ra St. Brown — Q (active)",
     "Emeka Egbuka — Q (active)",
     "Jaylin Noel — Q (IR slot)",
-    "Nick Bosa — Q (IR slot)",
-    "Jalen Pitre — Q (IR slot)"
+    "Nick Bosa — Q (active)",
+    "Jalen Pitre — Q (active)"
   ],
-  "updated": "2026-10-27",
-  "lastSynced": "2026-10-27 4:08 PM PT"
+  "updated": "2026-10-28",
+  "lastSynced": "2026-10-28 6:33 AM PT"
 }

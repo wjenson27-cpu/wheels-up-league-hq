@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-27 6:45 PM PT",
+  "asOf": "2026-10-28 6:33 AM PT",
   "faabLeft": 21,
   "startingQB": "Bryce Young",
   "roster": {
@@ -11,8 +11,8 @@
       "Brock Purdy"
     ],
     "RB": [
-      "RJ Harvey",
       "Kenneth Gainwell",
+      "RJ Harvey",
       "Emmett Johnson"
     ],
     "WR": [
@@ -21,8 +21,7 @@
       "Malik Nabers"
     ],
     "TE": [
-      "Tucker Kraft",
-      "Tyler Warren"
+      "Tucker Kraft"
     ],
     "DL": [
       "DeForest Buckner"
@@ -39,21 +38,24 @@
     ],
     "IR": [
       "Alec Pierce",
+      "Tyler Warren",
       "DeShon Elliott"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Alec Pierce \u2014 IR (IR slot)"
+    "Alec Pierce — IR (IR slot)",
+    "Tyler Warren — Q (IR slot)"
   ],
-  "source": "Fantrax roster & trade sync 2026-10-27 6:45 PM PT",
+  "source": "Fantrax roster sync 2026-10-28 6:33 AM PT (/workspace/fantrax-raw-2026-10-28-am.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Alec Pierce \u2014 IR (IR slot)"
+    "Alec Pierce — IR (IR slot)",
+    "Tyler Warren — Q (IR slot)"
   ],
-  "updated": "2026-10-27",
-  "lastSynced": "2026-10-27 6:45 PM PT"
+  "updated": "2026-10-28",
+  "lastSynced": "2026-10-28 6:33 AM PT"
 }
