@@ -78,9 +78,9 @@
       "starting": 115,
       "remaining": 38,
       "spentClaims": 66,
-      "tradeOut": 0,
+      "tradeOut": 11,
       "tradeIn": 0,
-      "spentKnown": 66,
+      "spentKnown": 77,
       "remainingKnown": 38
     },
     {
@@ -105,7 +105,7 @@
       "remaining": 10,
       "spentClaims": 93,
       "tradeOut": 30,
-      "tradeIn": 8,
+      "tradeIn": 18,
       "spentKnown": 123,
       "remainingKnown": 10
     },
@@ -170,9 +170,9 @@
       "starting": 115,
       "remaining": 88,
       "spentClaims": 21,
-      "tradeOut": 10,
+      "tradeOut": 20,
       "tradeIn": 14,
-      "spentKnown": 31,
+      "spentKnown": 41,
       "remainingKnown": 88
     },
     {
@@ -184,9 +184,9 @@
       "remaining": 21,
       "spentClaims": 113,
       "tradeOut": 35,
-      "tradeIn": 43,
+      "tradeIn": 16,
       "spentKnown": 148,
-      "remainingKnown": 21
+      "remainingKnown": -17
     }
   ],
   "claims": [
