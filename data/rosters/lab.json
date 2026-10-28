@@ -2,8 +2,8 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-28 6:33 AM PT",
-  "faabLeft": 61,
+  "asOf": "2026-10-28 9:44 AM PT",
+  "faabLeft": 56,
   "startingQB": "Jayden Daniels",
   "roster": {
     "QB": [
@@ -20,10 +20,10 @@
       "Puka Nacua",
       "Caleb Douglas",
       "Carnell Tate",
-      "Jakobi Meyers",
       "Khalil Shakir"
     ],
     "TE": [
+      "Greg Dulcich",
       "Isaiah Likely"
     ],
     "DL": [
@@ -50,7 +50,7 @@
     "Jeremiyah Love — Q (IR slot)",
     "Mike Evans — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-28 6:33 AM PT (/workspace/fantrax-raw-2026-10-28-am.json)",
+  "source": "Fantrax roster sync 2026-10-28 9:44 AM PT (/workspace/fantrax-raw-2026-10-28-postwaiver.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -60,5 +60,5 @@
     "Mike Evans — Q (IR slot)"
   ],
   "updated": "2026-10-28",
-  "lastSynced": "2026-10-28 6:33 AM PT"
+  "lastSynced": "2026-10-28 9:44 AM PT"
 }
