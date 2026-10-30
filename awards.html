@@ -182,7 +182,7 @@
                 <span class="muted" style="font-weight:700">vs</span>
                 <span class="team-inline">${WUC.teamMark(m.teamBId, { size: "lg" })}<span class="award-hero-name" style="font-size:1.05rem">${WUC.escapeHtml(WUC.officialName(m.teamBId, m.teamB || "—"))}</span></span>
               </div>
-              ${m.note ? `<p class="muted mb-0" style="margin-top:0.65rem;font-size:0.85rem">${WUC.escapeHtml(m.note)}</p>` : ""}
+              ${m.note ? `<p class="muted mb-0" style="margin-top:0.65rem;font-size:0.85rem">${WUC.escapeHtml(WUC.displayText(m.note))}</p>` : ""}
               ${(lastRide.aliveTeamIds && lastRide.aliveTeamIds.length) ? `<div class="survivor-chips" style="margin-top:0.75rem">${lastRide.aliveTeamIds.map((id) => {
                 const t = WUC.getTeam(id) || {};
                 return `<span class="survivor-chip team-inline" title="${WUC.escapeHtml(t.name || id)}">${WUC.teamMark(id, { size: "sm" })}<span>${WUC.escapeHtml(t.abbrev || id)}</span></span>`;
@@ -205,9 +205,9 @@
                 ${results.map((r) => `
                   <tr>
                     <td class="col-rank">${r.week}</td>
-                    <td class="col-team"><span class="team-inline">${WUC.teamMark(r.winnerTeamId, { size: "sm" })}<span>${WUC.escapeHtml(r.winner || "—")}</span></span></td>
+                    <td class="col-team"><span class="team-inline">${WUC.teamMark(r.winnerTeamId, { size: "sm" })}<span>${WUC.escapeHtml(WUC.displayText(r.winner || "—"))}</span></span></td>
                     <td class="col-trades">${r.winnerScore != null ? Number(r.winnerScore).toLocaleString(undefined, { maximumFractionDigits: 1 }) : "—"}</td>
-                    <td class="col-owner"><span class="team-inline">${WUC.teamMark(r.loserTeamId, { size: "sm" })}<span>${WUC.escapeHtml(r.loser || "—")}</span></span></td>
+                    <td class="col-owner"><span class="team-inline">${WUC.teamMark(r.loserTeamId, { size: "sm" })}<span>${WUC.escapeHtml(WUC.displayText(r.loser || "—"))}</span></span></td>
                   </tr>`).join("")}
               </tbody>
             </table>` : `<p class="muted mb-0">No Last Ride results yet — Week ${lastRide.startsWeek || 3} opener upcoming.</p>`;
@@ -237,9 +237,9 @@
                 </div>
               </li>`;
             }).join("") + `</ol>
-            <p class="muted mb-0" style="font-size:0.8rem;margin-top:0.65rem">${WUC.escapeHtml(String(a.note || (status === "final" ? "Final" : "Live · locks at season end")).split(" · ").filter((part) => !/YTD|Taken Players|free agents/i.test(part)).join(" · "))}</p>`;
+            <p class="muted mb-0" style="font-size:0.8rem;margin-top:0.65rem">${WUC.escapeHtml(WUC.displayText(String(a.note || (status === "final" ? "Final" : "Live · locks at season end")).split(" · ").filter((part) => !/YTD|Taken Players|free agents/i.test(part)).join(" · ")))}</p>`;
           } else {
-            body = `<div class="yearly-tbd">TBD · top 3</div><p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(a.note || "Season still in progress")}</p>`;
+            body = `<div class="yearly-tbd">TBD · top 3</div><p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(WUC.displayText(a.note || "Season still in progress"))}</p>`;
           }
           return `
             <article class="yearly-card">

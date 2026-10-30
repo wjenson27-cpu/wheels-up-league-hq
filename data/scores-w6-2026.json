@@ -303,10 +303,10 @@
     },
     {
       "home": "Substation",
-      "away": "Eagle Ridge Eddies",
+      "away": "The Eddies",
       "homeScore": 227.5,
       "awayScore": 259.5,
-      "winner": "Eagle Ridge Eddies",
+      "winner": "The Eddies",
       "status": "final",
       "topScorers": [
         {
@@ -328,19 +328,19 @@
           "pts": 25.0
         },
         {
-          "team": "Eagle Ridge Eddies",
+          "team": "The Eddies",
           "player": "Trevor Lawrence",
           "pos": "QB",
           "pts": 40.0
         },
         {
-          "team": "Eagle Ridge Eddies",
+          "team": "The Eddies",
           "player": "George Karlaftis",
           "pos": "DL",
           "pts": 35.0
         },
         {
-          "team": "Eagle Ridge Eddies",
+          "team": "The Eddies",
           "player": "Quentin Lake",
           "pos": "DB",
           "pts": 25.0

@@ -34,9 +34,11 @@
  *   ]
  * }
  *
- * The featured pair (Eagle Ridge Eddies vs Ultron) is first when both are
+ * The featured pair (The Eddies vs Ultron) is first when both are
  * in the slate. Public names only: Towner Top Aga Bottom is written as TTAB.
- * Owner names, bids, claims, and trades are not copied.
+ * Fantrax still calls that club "Eagle Ridge Eddies". Match on that string
+ * (or the team id) and write the public name "The Eddies". Owner names,
+ * bids, claims, and trades are not copied.
  */
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join, relative } from "node:path";
@@ -132,6 +134,7 @@ function resolveId(label, teams) {
 function publicName(team) {
   if (!team) return "—";
   if (team.id === "ttab") return "TTAB";
+  if (team.id === "eddies" || norm(team.name) === "eagle ridge eddies") return "The Eddies";
   return team.name;
 }
 
@@ -275,6 +278,7 @@ function headerFromRaw(raw) {
   const score = String(header.score || "");
   const parts = score.split("-").map((s) => Number(String(s).trim()));
   if (parts.length < 2 || parts.some((n) => !Number.isFinite(n))) return null;
+  /* Fantrax join key only. resolveId maps it; publicName writes The Eddies. */
   const away = header.eddies_home_or_away === "home" ? header.opponent : "Eagle Ridge Eddies";
   const home = header.eddies_home_or_away === "home" ? "Eagle Ridge Eddies" : (header.opponent || "Ultron");
   const eddiesScore = parts[0];
@@ -654,6 +658,7 @@ export async function buildMatchups(options = {}) {
   const leaked = owners.filter((name) => blob.includes(name));
   if (leaked.length) throw new Error("refusing to write owner names: " + leaked.join(", "));
   if (blob.includes("Towner Top Aga Bottom")) throw new Error("TTAB must be the public name");
+  if (blob.includes("Eagle Ridge Eddies")) throw new Error("public name must be The Eddies");
   const badKeys = [];
   walkKeys(out, "$", badKeys);
   if (badKeys.length) throw new Error("refusing banned keys: " + badKeys.join(", "));

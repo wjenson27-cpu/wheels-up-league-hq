@@ -182,6 +182,11 @@
       teamColors = Object.fromEntries((data.teams || []).map((t) => {
         const copy = Object.assign({}, t);
         if (!copy.logo && copy.id) copy.logo = "img/logos/" + copy.id + ".jpg";
+        if (window.WUC && typeof WUC.publishTeam === "function") WUC.publishTeam(copy);
+        else if (copy.id === "eddies" || copy.name === "Eagle Ridge Eddies") {
+          copy.name = "The Eddies";
+          copy.owner = "";
+        }
         return [t.id, copy];
       }));
     } catch (e) {

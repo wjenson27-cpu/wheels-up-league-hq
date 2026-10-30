@@ -50,7 +50,7 @@
           ? `Updated ${WUC.formatDate(data.updated)}.`
           : "";
         if (data.note) {
-          document.getElementById("faabNote").textContent = data.note;
+          document.getElementById("faabNote").textContent = WUC.displayText(data.note);
         }
 
         const teams = [...(data.teamBalances || [])].sort((a, b) => {
@@ -83,7 +83,7 @@
                 return `<tr class="${i < 3 ? "hot" : ""}">
                   <td class="col-rank">${i + 1}</td>
                   <td class="col-team">${t.id ? WUC.teamLinkHtml(t.id, { size: "sm" }) : WUC.escapeHtml(WUC.displayText(t.name || "—"))}</td>
-                  <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
+                  <td class="col-owner">${WUC.escapeHtml(WUC.publicOwner(t.owner, t.id, "—"))}</td>
                   <td class="col-trades">$${claims}</td>
                   <td class="col-trades">${tradeLabel}</td>
                   <td class="col-trades">$${leftLabel}</td>
@@ -114,7 +114,7 @@
                 const drop = c.dropped ? ` <span class="muted">(−${WUC.escapeHtml(c.dropped)})</span>` : "";
                 const teamLine = c.teamId
                   ? WUC.teamLinkHtml(c.teamId, { size: "sm" })
-                  : WUC.escapeHtml(team);
+                  : WUC.escapeHtml(WUC.displayText(team));
                 const when = c.date ? WUC.formatDate(c.date) : "";
                 const meta = when ? `${teamLine} <span class="muted">· ${when}</span>` : teamLine;
                 return `<tr class="${i < 3 ? "hot" : ""}">
@@ -152,7 +152,7 @@
                 const forWhat = (t.for || []).length
                   ? (t.for || []).map(WUC.escapeHtml).join(", ")
                   : "—";
-                const lane = `${WUC.escapeHtml(t.fromTeam || "?")} → ${WUC.escapeHtml(t.toTeam || "?")}`;
+                const lane = `${WUC.escapeHtml(WUC.displayText(t.fromTeam || "?"))} → ${WUC.escapeHtml(WUC.displayText(t.toTeam || "?"))}`;
                 const off = t.official === false ? ` <span class="muted">(handshake)</span>` : "";
                 return `<tr class="${i < 3 ? "hot" : ""}">
                   <td class="col-rank">${i + 1}</td>

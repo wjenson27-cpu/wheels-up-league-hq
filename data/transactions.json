@@ -563,7 +563,7 @@
     },
     {
       "date": "2026-10-28",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Won Cole Bishop $4 FAAB; dropped D.J. Reed (DB-DET)",
       "time": "9:00 AM PDT",
@@ -1057,7 +1057,7 @@
     },
     {
       "date": "2026-10-24",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Won Cameron Skattebo $6 FAAB; dropped Jacory Croskey-Merritt (RB-WAS)",
       "time": "8:28 AM PDT",
@@ -1681,7 +1681,7 @@
     },
     {
       "date": "2026-10-21",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Won D.J. Reed $5 FAAB; dropped Mansoor Delane (DB-KC)",
       "time": "9:00 AM PDT",
@@ -1941,9 +1941,9 @@
     },
     {
       "date": "2026-10-19",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "TRADE",
-      "summary": "Eagle Ridge Eddies sent Rhamondre Stevenson (RB) to Ultron for Bryce Young (QB)",
+      "summary": "The Eddies sent Rhamondre Stevenson (RB) to Ultron for Bryce Young (QB)",
       "time": "8:54 PM PDT",
       "player": "Rhamondre Stevenson",
       "playerMeta": "RB-NE",
@@ -2359,7 +2359,7 @@
     },
     {
       "date": "2026-10-16",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Added George Karlaftis (DL-KC); dropped Tuli Tuipulotu (DL-LAC)",
       "time": "8:33 AM PDT",
@@ -2489,7 +2489,7 @@
     },
     {
       "date": "2026-10-14",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Added Tyrice Knight (LB-SEA); dropped Julian Love (DB-SEA)",
       "time": "8:51 PM PDT",
@@ -2853,7 +2853,7 @@
     },
     {
       "date": "2026-10-14",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Won Mansoor Delane $8 FAAB; dropped Leonard Williams",
       "time": "9:00 AM PDT",
@@ -3126,7 +3126,7 @@
     },
     {
       "date": "2026-10-10",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Added Kendrick Bourne (WR-ARI); dropped Brian Thomas",
       "time": "8:23 AM PDT",
@@ -3274,7 +3274,7 @@
     },
     {
       "date": "2026-10-09",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Won Cedric Gray (LB) $3 FAAB; dropped Kyle Pitts (TE)",
       "time": "9:30 AM PDT",
@@ -3508,7 +3508,7 @@
     },
     {
       "date": "2026-10-07",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Won Chimere Dike (WR) $2 FAAB; dropped Kendre Miller (RB)",
       "time": "9:00 AM PDT",
@@ -3558,7 +3558,7 @@
     },
     {
       "date": "2026-10-07",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD",
       "summary": "Won Tuli Tuipulotu (DL) $6 FAAB",
       "time": "9:00 AM PDT",
@@ -3851,7 +3851,7 @@
     },
     {
       "date": "2026-10-05",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "DROP",
       "summary": "Dropped George Holani (RB-SEA) ($0/null bid)",
       "time": "9:59 AM PDT",
@@ -4133,7 +4133,7 @@
     },
     {
       "date": "2026-10-01",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD",
       "summary": "Added George Holani (RB-SEA) ($0/null bid)",
       "time": "5:24 PM PDT",
@@ -4165,7 +4165,7 @@
     },
     {
       "date": "2026-10-01",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "DROP",
       "summary": "Dropped Denzel Perryman (LB-LAC) ($0/null bid)",
       "time": "2:03 PM PDT",
@@ -4185,7 +4185,7 @@
     },
     {
       "date": "2026-10-01",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Added Kendre Miller (RB-NO); dropped Tyjae Spears (RB-TEN) ($0/null bid)",
       "time": "10:45 AM PDT",
@@ -4539,7 +4539,7 @@
     },
     {
       "date": "2026-09-30",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Won Trenton Simpson (LB) $6 FAAB; dropped Marques Sigle (DB)",
       "time": "9:00 AM PDT",
@@ -4595,7 +4595,7 @@
     },
     {
       "date": "2026-09-30",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "type": "ADD/DROP",
       "summary": "Won Brian Robinson Jr. (RB) $6 FAAB; dropped Chimere Dike (WR)",
       "time": "9:00 AM PDT",
@@ -5173,7 +5173,7 @@
     {
       "date": "2026-09-23",
       "type": "ADD/DROP",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "summary": "Added Marques Sigle (DB); dropped Antoine Winfield (DB) ($0/null bid)",
       "time": "12:05 PM PDT",
       "player": "Marques Sigle",
@@ -5195,7 +5195,7 @@
     {
       "date": "2026-09-23",
       "type": "TRADE",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "summary": "Traded Dorian Williams (LB), Andrew Wingard (DB) to TTAB for Travis Etienne (RB), Antoine Winfield (DB)",
       "time": "11:27 AM PDT",
       "player": "Dorian Williams",
@@ -5210,11 +5210,11 @@
       "date": "2026-09-23",
       "type": "TRADE",
       "team": "Towner Top Aga Bottom",
-      "summary": "Traded Travis Etienne (RB), Antoine Winfield (DB) to Eagle Ridge Eddies for Dorian Williams (LB), Andrew Wingard (DB)",
+      "summary": "Traded Travis Etienne (RB), Antoine Winfield (DB) to The Eddies for Dorian Williams (LB), Andrew Wingard (DB)",
       "time": "11:27 AM PDT",
       "player": "Travis Etienne",
       "playerMeta": "RB-NO",
-      "counterparty": "Eagle Ridge Eddies",
+      "counterparty": "The Eddies",
       "received": [
         "Dorian Williams",
         "Andrew Wingard"
@@ -5248,11 +5248,11 @@
       "date": "2026-09-23",
       "type": "TRADE",
       "team": "Saltese Slamm",
-      "summary": "Traded Jordyn Brooks (LB) to Eagle Ridge Eddies for Jamien Sherwood (LB)",
+      "summary": "Traded Jordyn Brooks (LB) to The Eddies for Jamien Sherwood (LB)",
       "time": "9:52 AM PDT",
       "player": "Jordyn Brooks",
       "playerMeta": "LB-MIA",
-      "counterparty": "Eagle Ridge Eddies",
+      "counterparty": "The Eddies",
       "received": [
         "Jamien Sherwood"
       ]
@@ -5260,7 +5260,7 @@
     {
       "date": "2026-09-23",
       "type": "TRADE",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "summary": "Traded Jamien Sherwood (LB) to Saltese Slamm for Jordyn Brooks (LB)",
       "time": "9:52 AM PDT",
       "player": "Jamien Sherwood",
@@ -6075,13 +6075,13 @@
     {
       "date": "2026-09-16",
       "type": "ADD/DROP",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "summary": "Added Andrew Wingard (DB) $6; dropped James Williams"
     },
     {
       "date": "2026-09-16",
       "type": "ADD/DROP",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "summary": "Added Dorian Williams (LB) $8; dropped Henry To'oTo'o"
     },
     {
@@ -6274,7 +6274,7 @@
     {
       "date": "2026-09-11",
       "type": "ADD/DROP",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "summary": "Added James Williams; dropped Troy Dye (10:32 AM PDT)"
     },
     {
@@ -6478,7 +6478,7 @@
     {
       "date": "2026-09-04",
       "type": "ADD/DROP",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "summary": "Added Evan Williams (DB/GB); dropped Ja'Quan McMillian (DB/DEN)"
     },
     {
@@ -6538,7 +6538,7 @@
     {
       "date": "2026-09-02",
       "type": "ADD",
-      "team": "Eagle Ridge Eddies",
+      "team": "The Eddies",
       "summary": "Added Denzel Perryman (LB/LAC)"
     },
     {

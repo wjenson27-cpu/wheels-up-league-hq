@@ -31,8 +31,8 @@
           <a class="card team-card team-pick" href="${WUC.teamHref(t.id)}" style="--team-color:${WUC.escapeHtml(t.color || "#69BE28")}">
             <div class="team-head">
               <div>
-                <h3 style="margin:0">${WUC.escapeHtml(t.name)}</h3>
-                <p class="muted mb-0">${WUC.escapeHtml(t.owner || "Owner TBD")}${t.record ? ` · ${WUC.escapeHtml(WUC.recordLabel(t))}` : ""}</p>
+                <h3 style="margin:0">${WUC.escapeHtml(WUC.officialName(t.id, t.name))}</h3>
+                <p class="muted mb-0">${WUC.escapeHtml(WUC.publicOwner(t.owner, t.id, "Owner TBD"))}${t.record ? `${WUC.publicOwner(t.owner, t.id, "Owner TBD") ? " · " : ""}${WUC.escapeHtml(WUC.recordLabel(t))}` : ""}</p>
               </div>
               ${WUC.teamMark(t.id, { size: "lg" })}
             </div>
@@ -75,8 +75,8 @@
               ${WUC.teamMark(team.id, { size: "lg" })}
               <div>
                 <span class="eyebrow" id="teamEyebrow">${WUC.escapeHtml(team.abbrev || "")}</span>
-                <h1 id="teamTitle">${WUC.escapeHtml(team.name)}</h1>
-                <p class="lede" id="teamLede">${WUC.escapeHtml(team.owner || "Owner TBD")}</p>
+                <h1 id="teamTitle">${WUC.escapeHtml(WUC.officialName(team.id, team.name))}</h1>
+                <p class="lede" id="teamLede">${WUC.escapeHtml(WUC.publicOwner(team.owner, team.id, "Owner TBD"))}</p>
               </div>
             </div>
           </header>
@@ -107,7 +107,7 @@
             <div id="txBody" aria-busy="true">${WUC.skeleton(3)}</div>
           </section>`;
 
-        document.title = `${team.name} — Wheels Up Collective`;
+        document.title = `${WUC.officialName(team.id, team.name)} — Wheels Up Collective`;
 
         const [rosterFile, eddiesFallback, tradesFile, txFile, schedule, h2hFile] = await Promise.all([
           WUC.loadOptional(`data/rosters/${team.id}.json`),
@@ -144,7 +144,9 @@
 
         if (upcoming) {
           const lede = document.getElementById("teamLede");
-          lede.innerHTML = `${WUC.escapeHtml(team.owner || "Owner TBD")} · Week ${upcoming.week} vs ${WUC.teamLinkHtml(upcoming.oppId || upcoming.oppName, { size: "sm" })}`;
+          const who = WUC.publicOwner(team.owner, team.id, "");
+          const vs = `Week ${upcoming.week} vs ${WUC.teamLinkHtml(upcoming.oppId || upcoming.oppName, { size: "sm" })}`;
+          lede.innerHTML = who ? `${WUC.escapeHtml(who)} · ${vs}` : vs;
         }
 
         const chart = document.getElementById("scoreChart");
@@ -190,7 +192,7 @@
         const rosterBody = document.getElementById("rosterBody");
         rosterBody.removeAttribute("aria-busy");
         const flags = Array.isArray(rosterMeta.injuryFlags) ? rosterMeta.injuryFlags : [];
-        const note = WUC.publicNote(rosterMeta.notes || team.note || "");
+        const note = WUC.displayText(WUC.publicNote(rosterMeta.notes || team.note || ""));
         rosterBody.innerHTML = `
           ${roster ? WUC.renderRoster(roster) : WUC.emptyState("Depth chart isn’t in the league files yet.")}
           ${flags.length ? `<details class="club-details" open><summary>Injury flags</summary><ul class="plain-list">${flags.map((f) => `<li>${WUC.escapeHtml(f)}</li>`).join("")}</ul></details>` : ""}
