@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-10-29 6:21 AM PT",
+  "asOf": "2026-10-30 6:25 AM PT",
   "faabLeft": 1,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -24,11 +24,12 @@
       "Brenton Strange"
     ],
     "DL": [
-      "Zach Allen",
-      "David Bailey"
+      "David Bailey",
+      "Zach Allen"
     ],
     "LB": [
       "Christian Elliss",
+      "T.J. Edwards",
       "Isaiah McDuffie"
     ],
     "DB": [
@@ -36,22 +37,21 @@
       "Xavier McKinney",
       "Nick Cross",
       "Jalen Ramsey",
-      "Jevon Holland",
       "Keionte Scott"
     ],
     "IR": [
       "KaVontae Turpin",
-      "T.J. Edwards"
+      "Jevon Holland"
     ]
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-29 6:21 AM PT (/workspace/fantrax-raw-2026-10-29-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
-  "updated": "2026-10-29",
-  "lastSynced": "2026-10-29 6:21 AM PT"
+  "updated": "2026-10-30",
+  "lastSynced": "2026-10-30 6:25 AM PT"
 }

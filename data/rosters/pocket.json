@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-10-29 6:21 AM PT",
+  "asOf": "2026-10-30 6:25 AM PT",
   "faabLeft": 85,
   "startingQB": "Jared Goff",
   "roster": {
@@ -48,12 +48,12 @@
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-29 6:21 AM PT (/workspace/fantrax-raw-2026-10-29-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
-  "updated": "2026-10-29",
-  "lastSynced": "2026-10-29 6:21 AM PT"
+  "updated": "2026-10-30",
+  "lastSynced": "2026-10-30 6:25 AM PT"
 }

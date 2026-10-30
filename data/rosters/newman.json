@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-10-29 6:21 AM PT",
+  "asOf": "2026-10-30 6:25 AM PT",
   "faabLeft": 44,
   "startingQB": "Jordan Love",
   "roster": {
@@ -11,15 +11,14 @@
     ],
     "RB": [
       "Jonathan Taylor",
-      "Jordan Mason",
-      "TreVeyon Henderson"
+      "Jordan Mason"
     ],
     "WR": [
       "Matthew Golden",
-      "A.J. Brown",
       "Zay Flowers",
       "Tee Higgins",
-      "Myles Price"
+      "Myles Price",
+      "A.J. Brown"
     ],
     "TE": [
       "Michael Mayer",
@@ -30,9 +29,10 @@
     ],
     "LB": [
       "Ty'Ron Hopper",
+      "Nathan Landman",
+      "Jeremiah Trotter",
       "Eric Wilson",
       "Azeez Al-Shaair",
-      "Jeremiah Trotter",
       "Henry To'oTo'o"
     ],
     "DB": [
@@ -42,18 +42,18 @@
     ],
     "IR": [
       "Davante Adams",
-      "Zaire Franklin",
-      "Nathan Landman"
+      "TreVeyon Henderson",
+      "Zaire Franklin"
     ]
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-29 6:21 AM PT (/workspace/fantrax-raw-2026-10-29-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
-  "updated": "2026-10-29",
-  "lastSynced": "2026-10-29 6:21 AM PT"
+  "updated": "2026-10-30",
+  "lastSynced": "2026-10-30 6:25 AM PT"
 }

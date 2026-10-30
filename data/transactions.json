@@ -1,7 +1,85 @@
 {
-  "updated": "2026-10-29",
-  "source": "Fantrax roster sync 2026-10-29 6:21 AM PT (/workspace/fantrax-raw-2026-10-29-am.json)",
+  "updated": "2026-10-30",
+  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
   "items": [
+    {
+      "date": "2026-10-29",
+      "team": "Ultron",
+      "type": "ADD",
+      "summary": "Added Kaden Wetjen (WR-PIT) ($0/null bid)",
+      "time": "9:48 PM PDT",
+      "player": "Kaden Wetjen",
+      "playerMeta": "WR-PIT",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-29",
+      "team": "Ultron",
+      "type": "ADD",
+      "summary": "Added Chris Rodriguez Jr. (RB-JAX) ($0/null bid)",
+      "time": "9:42 PM PDT",
+      "player": "Chris Rodriguez Jr.",
+      "playerMeta": "RB-JAX",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-29",
+      "team": "Saltese Slamm",
+      "type": "ADD/DROP",
+      "summary": "Added Mason Taylor (TE-NYJ); dropped Colby Parkinson (TE-LAR)",
+      "time": "9:21 PM PDT",
+      "player": "Mason Taylor",
+      "playerMeta": "TE-NYJ",
+      "dropped": "Colby Parkinson",
+      "droppedMeta": "TE-LAR",
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-29",
+      "team": "Saltese Slamm",
+      "type": "ADD/DROP",
+      "summary": "Added David Walker (LB-TB); dropped Chase Young (DL-NO)",
+      "time": "8:27 PM PDT",
+      "player": "David Walker",
+      "playerMeta": "LB-TB",
+      "dropped": "Chase Young",
+      "droppedMeta": "DL-NO",
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-29",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD",
+      "summary": "Added Chris Godwin (WR-TB) ($0/null bid)",
+      "time": "4:24 PM PDT",
+      "player": "Chris Godwin",
+      "playerMeta": "WR-TB",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-29",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Javon Bullard (DB-GB)",
+      "time": "4:23 PM PDT",
+      "player": "Javon Bullard",
+      "playerMeta": "DB-GB",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
     {
       "date": "2026-10-28",
       "team": "Saltese Slamm",
@@ -6529,7 +6607,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 29 AM: +16 FA rows (Oct 28 9:56 AM–8:14 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 30 AM: +6 FA rows (Oct 29 4:23 PM–9:48 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-29 6:21 AM PT"
+  "lastSynced": "2026-10-30 6:25 AM PT"
 }

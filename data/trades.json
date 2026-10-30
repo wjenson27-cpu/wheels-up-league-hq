@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-30",
-  "source": "Fantrax roster sync 2026-10-29 6:21 AM PT (/workspace/fantrax-raw-2026-10-29-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
   "season": 2026,
   "trades": [
     {
@@ -663,7 +663,7 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "Oct 27 6:16 PM",
+      "lastUpdated": "Oct 28 9:49 AM",
       "players": [
         "Zach Charbonnet RB SEA",
         "Travis Etienne RB NO",
@@ -696,7 +696,7 @@
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "Oct 23 2:48 PM",
+      "lastUpdated": "Oct 28 9:00 AM",
       "players": [
         "Jordan Love QB GB",
         "TreVeyon Henderson RB NE",
@@ -769,8 +769,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-29 6:21 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-30 6:25 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: TTAB↔Ultron Ashton Jeanty for DeVonta Smith+Dillon Thieneman (Oct 22 3:07 PM); Saltese↔Ultron DeVonta Smith+Mack Wilson for Bhayshul Tuten (Oct 22 2:39 PM); Substation↔TTAB Brian Branch+Demario Davis for Zack Baun (Oct 22 9:56 AM).",
   "hqComplete": true,
-  "lastSynced": "2026-10-29 6:21 AM PT"
+  "lastSynced": "2026-10-30 6:25 AM PT"
 }

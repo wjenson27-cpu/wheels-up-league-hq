@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-29 6:21 AM PT",
+  "asOf": "2026-10-30 6:25 AM PT",
   "faabLeft": 5,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -11,28 +11,29 @@
     ],
     "RB": [
       "Bhayshul Tuten",
-      "Rico Dowdle",
-      "RJ Harvey",
       "Ashton Jeanty",
-      "D'Andre Swift"
+      "D'Andre Swift",
+      "Kyle Monangai",
+      "Rico Dowdle",
+      "RJ Harvey"
     ],
     "WR": [
       "Denzel Boston",
       "Antonio Williams"
     ],
     "TE": [
-      "Colby Parkinson"
+      "Mason Taylor"
     ],
     "DL": [
-      "Boye Mafe",
-      "Chase Young"
+      "Boye Mafe"
     ],
     "LB": [
       "Jamien Sherwood",
       "Terrel Bernard",
-      "Dee Winters",
+      "Carson Schwesinger",
+      "David Walker",
       "Dre Greenlaw",
-      "Carson Schwesinger"
+      "Dee Winters"
     ],
     "DB": [
       "Byron Murphy",
@@ -42,18 +43,17 @@
     "IR": [
       "Aaron Jones",
       "Jonathon Brooks",
-      "David Montgomery",
-      "Kyle Monangai"
+      "David Montgomery"
     ]
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-29 6:21 AM PT (/workspace/fantrax-raw-2026-10-29-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
-  "updated": "2026-10-29",
-  "lastSynced": "2026-10-29 6:21 AM PT"
+  "updated": "2026-10-30",
+  "lastSynced": "2026-10-30 6:25 AM PT"
 }

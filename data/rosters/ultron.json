@@ -2,7 +2,7 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-10-29 6:21 AM PT",
+  "asOf": "2026-10-30 6:25 AM PT",
   "faabLeft": 7,
   "startingQB": "Josh Allen",
   "roster": {
@@ -10,14 +10,16 @@
       "Josh Allen"
     ],
     "RB": [
-      "Rhamondre Stevenson",
+      "Bijan Robinson",
       "Omarion Hampton",
+      "Rhamondre Stevenson",
       "Brian Robinson Jr.",
-      "Bijan Robinson"
+      "Chris Rodriguez Jr."
     ],
     "WR": [
       "Drake London",
-      "Michael Wilson"
+      "Michael Wilson",
+      "Kaden Wetjen"
     ],
     "TE": [
       "Pat Freiermuth",
@@ -27,31 +29,31 @@
       "Dallas Turner"
     ],
     "LB": [
-      "Kendal Daniels",
       "Foyesade Oluokun",
-      "CJ Allen",
+      "Kendal Daniels",
+      "Robert Spillane",
       "Mack Wilson",
-      "Robert Spillane"
+      "CJ Allen"
     ],
     "DB": [
       "A.J. Haulcy",
       "Josh Metellus",
-      "Dante Trader",
       "Kyle Hamilton"
     ],
     "IR": [
       "Terrance Ferguson",
-      "Myles Garrett"
+      "Myles Garrett",
+      "Dante Trader"
     ]
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-29 6:21 AM PT (/workspace/fantrax-raw-2026-10-29-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
-  "updated": "2026-10-29",
-  "lastSynced": "2026-10-29 6:21 AM PT"
+  "updated": "2026-10-30",
+  "lastSynced": "2026-10-30 6:25 AM PT"
 }

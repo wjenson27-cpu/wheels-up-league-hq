@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-10-29 6:21 AM PT",
+  "asOf": "2026-10-30 6:25 AM PT",
   "faabLeft": 8,
   "startingQB": "Lamar Jackson",
   "roster": {
@@ -12,15 +12,15 @@
     ],
     "RB": [
       "Ollie Gordon",
-      "Jaleel McLaughlin",
-      "Kimani Vidal"
+      "Kimani Vidal",
+      "Elijah Mitchell"
     ],
     "WR": [
-      "Jordan Addison",
+      "Xavier Worthy",
       "Keenan Allen",
       "Justin Jefferson",
-      "Xavier Worthy",
-      "Isaiah Williams"
+      "Isaiah Williams",
+      "Jordan Addison"
     ],
     "TE": [
       "Travis Kelce"
@@ -48,12 +48,12 @@
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-29 6:21 AM PT (/workspace/fantrax-raw-2026-10-29-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
-  "updated": "2026-10-29",
-  "lastSynced": "2026-10-29 6:21 AM PT"
+  "updated": "2026-10-30",
+  "lastSynced": "2026-10-30 6:25 AM PT"
 }
