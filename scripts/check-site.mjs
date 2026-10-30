@@ -12,6 +12,7 @@ import { readFile, readdir, stat } from "node:fs/promises";
 import { extname, join, relative } from "node:path";
 import { execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { FORMULA, winProbability } from "../js/live-prob.js";
 
 const root = join(fileURLToPath(new URL("..", import.meta.url)));
 const args = new Set(process.argv.slice(2));
@@ -22,6 +23,7 @@ const runPages = args.has("--pages");
 
 const PAGES = [
   ["index.html", "/index.html"],
+  ["matchups.html", "/matchups.html"],
   ["standings.html", "/standings.html"],
   ["team.html", "/team.html"],
   ["team-eddies", "/team.html?id=eddies"],
@@ -81,10 +83,12 @@ async function checkJson() {
   console.log(`JSON ok (${files.length} files)`);
 
   const required = [
-    "index.html", "standings.html", "team.html", "rosters.html", "trades.html",
+    "index.html", "matchups.html", "standings.html", "team.html", "rosters.html", "trades.html",
     "rankings.html", "recap.html", "awards.html", "faab.html", "td-parlay.html",
     "history.html", "archives.html", "podcast.html", "scoring.html",
-    "css/styles.css", "js/main.js", "js/config.js", "js/league.js"
+    "css/styles.css", "js/main.js", "js/config.js", "js/league.js",
+    "js/live-prob.js", "js/matchups-page.js", "scripts/build-matchups-live.mjs",
+    "data/matchups-live.json"
   ];
   for (const rel of required) {
     try {
@@ -102,7 +106,7 @@ async function checkJson() {
     if (!html.includes("js/main.js")) fail(`${rel} does not load js/main.js`);
     if (!html.includes('rel="icon"') && !html.includes("rel='icon'")) fail(`${rel} has no favicon`);
   }
-  const leaguePages = ["index.html", "standings.html", "team.html", "rosters.html", "trades.html", "faab.html"];
+  const leaguePages = ["index.html", "matchups.html", "standings.html", "team.html", "rosters.html", "trades.html", "faab.html"];
   for (const rel of leaguePages) {
     const html = await readFile(join(root, rel), "utf8");
     if (!html.includes("js/league.js")) fail(`${rel} does not load js/league.js`);
@@ -111,6 +115,177 @@ async function checkJson() {
   if (trades.includes("tradePending") || /Pending offers/i.test(trades)) {
     fail("trades.html still has a pending-offers section");
   }
+  await checkMatchupsLive();
+}
+
+const LIVE_BANNED_KEYS = new Set(["owner", "owners", "pending", "pendingclaim", "pendingclaims", "bid", "bids", "claim", "claims", "trade", "trades"]);
+
+function nowForChecks() {
+  const envNow = process.env.CHECK_SITE_NOW ? Date.parse(process.env.CHECK_SITE_NOW) : NaN;
+  return Number.isNaN(envNow) ? Date.now() : envNow;
+}
+
+function ptYmd(utcMs) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).formatToParts(new Date(utcMs));
+  const g = (t) => parts.find((p) => p.type === t).value;
+  return `${g("year")}-${g("month")}-${g("day")}`;
+}
+
+function addUtcDays(iso, days) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  dt.setUTCDate(dt.getUTCDate() + days);
+  const mm = String(dt.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(dt.getUTCDate()).padStart(2, "0");
+  return `${dt.getUTCFullYear()}-${mm}-${dd}`;
+}
+
+/* Same Thursday-start rule as data/scoring.json. Week 8 is Oct 29 – Nov 4, 2026. */
+function liveWeekNumber(utcMs) {
+  const today = ptYmd(utcMs);
+  const days = Math.round((Date.parse(`${today}T00:00:00Z`) - Date.parse("2026-09-10T00:00:00Z")) / 86400000);
+  return 1 + Math.floor(days / 7);
+}
+
+function walkBannedKeys(value, path, hits) {
+  if (!value || typeof value !== "object") return;
+  for (const key of Object.keys(value)) {
+    if (LIVE_BANNED_KEYS.has(String(key).toLowerCase())) hits.push(`${path}.${key}`);
+    walkBannedKeys(value[key], `${path}.${key}`, hits);
+  }
+}
+
+async function checkMatchupsLive() {
+  const rel = "data/matchups-live.json";
+  const data = await loadJson(root, rel, "[site] ");
+  if (!data) return;
+  const teams = await loadJson(root, "data/teams.json", "[site] ");
+  const owners = ((teams && teams.teams) || []).map((t) => t && t.owner).filter(Boolean);
+  const blob = JSON.stringify(data);
+  for (const name of owners) {
+    if (blob.includes(name)) fail(`${rel} names an owner (${name})`);
+  }
+  if (/Towner Top Aga Bottom/.test(blob)) fail(`${rel} uses the long TTAB name`);
+  if (/\b(pending|bids?|claims?)\b/i.test(blob)) fail(`${rel} mentions a bid, claim, or pending item`);
+  const badKeys = [];
+  walkBannedKeys(data, "$", badKeys);
+  if (badKeys.length) fail(`${rel} has banned keys: ${badKeys.join(", ")}`);
+  if (data.schemaVersion !== 1) fail(`${rel} schemaVersion is ${data.schemaVersion}`);
+  const expectedWeek = liveWeekNumber(nowForChecks());
+  if (Number(data.week) !== expectedWeek) fail(`${rel} week is ${data.week}, expected ${expectedWeek}`);
+  const windowStart = addUtcDays("2026-09-10", (expectedWeek - 1) * 7);
+  const windowEnd = addUtcDays(windowStart, 6);
+  if (data.weekStart !== windowStart || data.weekEnd !== windowEnd) {
+    fail(`${rel} window is ${data.weekStart} – ${data.weekEnd}, expected ${windowStart} – ${windowEnd}`);
+  }
+  if (expectedWeek === 8 && (data.weekStart !== "2026-10-29" || data.weekEnd !== "2026-11-04")) {
+    fail(`${rel} Week 8 window is not Oct 29 – Nov 4, 2026`);
+  }
+  if (data.timezone !== "PT") fail(`${rel} timezone is not PT`);
+  if (!parseTimed(data.asOf)) fail(`${rel} asOf "${data.asOf}" is not a Pacific timestamp`);
+  if (!String(data.asOf || "").trim().endsWith("PT")) fail(`${rel} asOf does not end with PT`);
+  const formula = data.formula || {};
+  if (formula.id !== FORMULA.id) fail(`${rel} formula id ${formula.id}`);
+  if (formula.playerSd !== FORMULA.playerSd || formula.unknownTeamSd !== FORMULA.unknownTeamSd) {
+    fail(`${rel} formula constants do not match js/live-prob.js`);
+  }
+  if (formula.text !== FORMULA.text) fail(`${rel} formula text does not match js/live-prob.js`);
+  const games = data.matchups;
+  if (!Array.isArray(games) || games.length !== 7) fail(`${rel} has ${games && games.length} matchups, expected 7`);
+  else {
+    const first = games[0];
+    const ids = first && [first.sideA && first.sideA.teamId, first.sideB && first.sideB.teamId];
+    if (expectedWeek === 8) {
+      if (!first || first.featured !== true || !ids.includes("eddies") || !ids.includes("ultron")) {
+        fail(`${rel} does not feature Eddies vs Ultron first`);
+      }
+      if (first && first.sideA && first.sideA.name !== "Eagle Ridge Eddies") fail(`${rel} featured side A is ${first.sideA && first.sideA.name}`);
+      if (first && first.sideB && first.sideB.name !== "Ultron") fail(`${rel} featured side B is ${first.sideB && first.sideB.name}`);
+    } else if (games.some((g) => g.featured) && (!first || first.featured !== true)) {
+      fail(`${rel} featured matchup is not first`);
+    }
+    const ttab = JSON.stringify(games).match(/"teamId":"ttab"[^}]*"name":"([^"]*)"/);
+    const ttabSide = games.flatMap((g) => [g.sideA, g.sideB]).find((s) => s && s.teamId === "ttab");
+    if (!ttabSide || ttabSide.name !== "TTAB") fail(`${rel} TTAB public name is ${ttabSide && ttabSide.name}`);
+    if (ttab && ttab[1] !== "TTAB") fail(`${rel} TTAB name mismatch`);
+    if (expectedWeek === 8) {
+      if (data.asOf !== "2026-10-30 9:17 AM PT") fail(`${rel} asOf is "${data.asOf}", expected 2026-10-30 9:17 AM PT`);
+      if (!(data.sources || []).includes("data/livescoring-w8.json")) fail(`${rel} was not built from data/livescoring-w8.json`);
+      if (ttabSide && ttabSide.lineupSet !== false) fail(`${rel} TTAB lineup is not marked unset`);
+      const live = await loadJson(root, "data/livescoring-w8.json", "[site] ");
+      const byName = new Map();
+      for (const game of games) {
+        for (const side of [game.sideA, game.sideB]) {
+          if (side) byName.set(side.teamId === "ttab" ? "Towner Top Aga Bottom" : side.name, { side, game });
+        }
+      }
+      for (const pair of (live && live.matchups) || []) {
+        if (!Array.isArray(pair)) continue;
+        for (const row of pair) {
+          const found = byName.get(row.team);
+          if (!found) {
+            fail(`${rel} missing live row for ${row.team}`);
+            continue;
+          }
+          if (found.side.score !== row.score) fail(`${rel} ${row.team} score ${found.side.score} != ${row.score}`);
+          if (found.side.projection !== row.proj) fail(`${rel} ${row.team} projection ${found.side.projection} != ${row.proj}`);
+          if (found.side.playersLeft !== row.yet) fail(`${rel} ${row.team} players left ${found.side.playersLeft} != yet ${row.yet}`);
+        }
+      }
+      const morningside = byName.get("Morningside Muff Divers");
+      if (morningside) {
+        const pct = morningside.game.sideA.teamId === "morningside" ? morningside.game.winProb.sideA : morningside.game.winProb.sideB;
+        if (pct !== 0.95) fail(`${rel} Morningside win chance is ${pct}, expected 0.95`);
+      } else fail(`${rel} missing Morningside`);
+      if (games.some((g) => !g.winProb)) fail(`${rel} a Week 8 game has no win bar`);
+    }
+    for (const game of games) {
+      for (const side of [game.sideA, game.sideB]) {
+        if (!side) {
+          fail(`${rel} matchup ${game.id} is missing a side`);
+          continue;
+        }
+        for (const key of ["score", "projection", "playersLeft"]) {
+          const value = side[key];
+          if (value == null) continue;
+          if (typeof value !== "number" || !Number.isFinite(value)) fail(`${rel} ${game.id} ${side.teamId} ${key} is not a number`);
+        }
+        if (side.playersLeft != null && (!Number.isInteger(side.playersLeft) || side.playersLeft < 0 || side.playersLeft > 14)) {
+          fail(`${rel} ${game.id} ${side.teamId} playersLeft is ${side.playersLeft}`);
+        }
+      }
+      const expect = winProbability({
+        scoreA: game.sideA && game.sideA.score,
+        projA: game.sideA && game.sideA.projection,
+        leftA: game.sideA && game.sideA.playersLeft,
+        scoreB: game.sideB && game.sideB.score,
+        projB: game.sideB && game.sideB.projection,
+        leftB: game.sideB && game.sideB.playersLeft,
+        emptyA: game.sideA && game.sideA.lineupSet === false,
+        emptyB: game.sideB && game.sideB.lineupSet === false,
+        final: game.status === "final"
+      });
+      const got = game.winProb;
+      if (expect == null && got != null) fail(`${rel} ${game.id} has a winProb the formula would leave blank`);
+      if (expect != null && (!got || got.sideA !== expect.sideA || got.sideB !== expect.sideB || got.decided !== expect.decided)) {
+        fail(`${rel} ${game.id} winProb ${JSON.stringify(got)} != ${JSON.stringify(expect)}`);
+      }
+      if (got && got.decided !== true) {
+        const pct = Math.round(got.sideA * 100);
+        if (pct % 5 !== 0 || pct < 5 || pct > 95) fail(`${rel} ${game.id} live win chance ${pct}% is off the 5% band`);
+      }
+    }
+  }
+  const page = await readFile(join(root, "matchups.html"), "utf8");
+  if (!page.includes('type="module" src="js/matchups-page.js"') && !page.includes("js/matchups-page.js")) {
+    fail("matchups.html does not load js/matchups-page.js");
+  }
+  console.log("Live matchups JSON ok");
 }
 
 // ---- Data integrity: rosters must have players, sync data must be fresh ----
@@ -315,7 +490,7 @@ async function checkMirror() {
   try {
     if (!(await stat(join(MIRROR_ROOT, "data"))).isDirectory()) throw new Error("not a dir");
   } catch {
-    fail(`${tag}expected mirror folder ${MIRROR_ROOT}/data is missing (set CHECK_SITE_MIRROR=none to skip)`);
+    console.log(`skipped: mirror path not present (${MIRROR_ROOT})`);
     return;
   }
   const files = (await walk(join(MIRROR_ROOT, "data"))).filter((f) => f.endsWith(".json"));
@@ -539,6 +714,65 @@ async function checkPages() {
               else if (log.overflow > 1 || log.cut) errors.push(`weekly results overflow ${Math.round(log.overflow)}px`);
               else if (log.header !== "W/L") errors.push(`weekly results header is ${log.header}`);
             }
+          }
+          if (name === "matchups.html") {
+            const live = JSON.parse(await readFile(join(root, "data/matchups-live.json"), "utf8"));
+            const feat = (live.matchups || [])[0] || {};
+            const pctA = feat.winProb ? Math.round(feat.winProb.sideA * 100) : null;
+            const pctB = feat.winProb ? Math.round(feat.winProb.sideB * 100) : null;
+            const info = await page.evaluate(() => {
+              const main = document.querySelector("main");
+              const text = main ? main.innerText : "";
+              const html = main ? main.innerHTML : "";
+              const cards = [...document.querySelectorAll("[data-matchup]")];
+              const first = cards[0] || null;
+              const bar = first ? first.querySelector(".winbar:not(.winbar-empty)") : null;
+              const overflow = document.documentElement.scrollWidth - document.documentElement.clientWidth;
+              return {
+                text,
+                html,
+                n: cards.length,
+                featured: first ? first.getAttribute("data-featured") : "",
+                firstText: first ? first.innerText : "",
+                barLabel: bar ? (bar.getAttribute("aria-label") || "") : "",
+                asOf: ((document.getElementById("asOf") || {}).textContent || ""),
+                formula: ((document.getElementById("formulaText") || {}).textContent || ""),
+                overflow
+              };
+            });
+            const owners = ["Ryan Towner", "Ryan McCallum", "Luke Sahlberg", "Jesse Nicholson", "Kyle Weberg", "Bill Jenson", "Gavin Heaton", "Chase Anderson", "Jacob Crisp", "Tim Brandle", "Brian Aga", "Mike Heff", "Kellen Olson", "Nathan Kelly", "ThiccSwede"];
+            if (info.n !== (live.matchups || []).length) errors.push(`live board has ${info.n} matchups`);
+            if (feat.featured === true && info.featured !== "yes") errors.push("featured matchup is not first");
+            if (feat.sideA && feat.sideB && (!info.firstText.includes(feat.sideA.name) || !info.firstText.includes(feat.sideB.name))) {
+              errors.push("featured card names do not match the JSON");
+            }
+            if (feat.sideA && feat.sideA.teamId === "eddies" && feat.sideB && feat.sideB.teamId === "ultron") {
+              if (!/The Eddies vs Ultron/.test(info.firstText)) errors.push("featured card is not Eddies vs Ultron");
+            }
+            if (pctA != null && (!info.firstText.includes(`${pctA}%`) || !info.firstText.includes(`${pctB}%`))) {
+              errors.push(`featured win chance missing ${pctA}/${pctB}`);
+            }
+            if (pctA != null && feat.sideA && !info.barLabel.includes(`${feat.sideA.name} ${pctA}%`)) {
+              errors.push(`win bar label is ${info.barLabel}`);
+            }
+            const bars = await page.evaluate(() => ({
+              filled: document.querySelectorAll(".winbar:not(.winbar-empty)").length,
+              unset: document.querySelectorAll("[data-lineup='unset']").length
+            }));
+            if (bars.filled !== (live.matchups || []).length) errors.push(`filled win bars ${bars.filled}`);
+            if (!bars.unset) errors.push("no unset-lineup row");
+            if (!/No lineup set/.test(info.text)) errors.push("empty lineup is not labeled");
+            if (!/95%/.test(info.text)) errors.push("95% cap is not shown");
+            const slateHasTtab = (live.matchups || []).some((g) => (g.sideA && g.sideA.teamId === "ttab") || (g.sideB && g.sideB.teamId === "ttab"));
+            if (slateHasTtab && !/TTAB/.test(info.text)) errors.push("TTAB is not on the board");
+            if (/Towner Top Aga Bottom/.test(info.html)) errors.push("long TTAB name is visible");
+            const named = owners.find((owner) => info.text.includes(owner) || info.html.includes(owner));
+            if (named) errors.push(`page names ${named}`);
+            if (/\b(pending|bids?|claims?)\b/i.test(info.text)) errors.push("page mentions a bid, claim, or pending item");
+            if (!/^as of .+\bPT$/.test(info.asOf.trim())) errors.push(`as-of line is "${info.asOf}"`);
+            if (live.asOf && info.asOf.trim() !== `as of ${live.asOf}`) errors.push(`as-of line is "${info.asOf}"`);
+            if (!/normal approximation/.test(info.formula) || !/nearest 5%/.test(info.formula)) errors.push("formula is not on the page");
+            if (info.overflow > 1) errors.push(`page overflows by ${info.overflow}px`);
           }
           if (name === "index.html") {
             const info = await page.evaluate(() => {

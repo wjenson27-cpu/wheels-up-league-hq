@@ -2,6 +2,7 @@
 (function () {
   const PRIMARY = [
     { href: "index.html", label: "Home" },
+    { href: "matchups.html", label: "Live" },
     { href: "standings.html", label: "Standings" },
     { href: "rankings.html", label: "Rankings" },
     { href: "rosters.html", label: "Rosters" },

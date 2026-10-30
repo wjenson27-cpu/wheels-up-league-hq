@@ -1,0 +1,17 @@
+{
+  "asOf": "2026-10-30 9:17 AM PT",
+  "week": 8,
+  "season": 2026,
+  "source": "Fantrax live scoring (data/livescoring-w8.json), Friday Oct 30 2026, 9:17 AM PT; featured game scores unchanged from the 6:50 AM PT home widget",
+  "note": "Restamped to match data/livescoring-w8.json (9:17 AM PT). Live scoring is the preferred input; this overlay only carries the featured game.",
+  "games": [
+    {
+      "away": "Eagle Ridge Eddies",
+      "home": "Ultron",
+      "awayScore": 33,
+      "homeScore": 0,
+      "awayProjection": 201.1,
+      "homeProjection": 202.8
+    }
+  ]
+}

@@ -23,6 +23,7 @@ Then open <http://localhost:8080>.
 | Page | What it shows |
 |------|----------------|
 | `index.html` | Home. Current week scores, a standings snapshot, and the trade count board. |
+| `matchups.html` | Live matchups for the current week: score, projection, players still to play, and a win-chance bar. |
 | `standings.html` | Full standings (including playoff odds), points-for chart, and each week’s head-to-head scores. |
 | `team.html?id=eddies` | One club: record, weekly scores, all-time head-to-head (Fantrax era), roster, settled FAAB, completed trades, transactions. Every team id works the same way. |
 | `rosters.html` | All 14 clubs. Open a card for the depth chart. Names link to the team page. |
@@ -45,6 +46,9 @@ Automated jobs write these files and push them to `main` several times a day. **
 |------|------------|
 | `data/teams.json` | 14 clubs: names, owners, colors, logos. The site does not use `powerRank`, `standingsRank`, `record`, or points from this file. |
 | `data/scores.json` | Latest week’s matchups. |
+| `data/matchups-live.json` | Live matchups page. Built by `scripts/build-matchups-live.mjs`. Do not hand-edit; rebuild it. |
+| `data/livescoring-wN.json` | Fantrax live-scoring read for week N. Preferred input for the live page. |
+| `data/matchups-live.overlay.json` | Optional live totals used only where the live-scoring file has a hole. |
 | `data/scores-wN-2026.json` | Older weeks, when those files exist (`scores-w1-2026.json`, and so on). |
 | `data/schedule.json` | Season matchup pairings. The playoff sim reads `weeks`. |
 | `data/rosters/*.json` | Depth chart for each club. |
@@ -79,6 +83,26 @@ The 2024 and 2025 Fantrax games behind the team-page table **All-time vs. each t
 - Consolation games are not in the file. `excludedConsolationGames` gives the count per season.
 - `formerNames` lists the old names by current club, and the footnote is built from it with `pastOwners`.
 - 2026 is not stored here. The table reads 2026 from the posted final score files (weeks 1–14), so it updates every week. A 2026 game after week 14 counts only if its score row is tagged as a winners-bracket playoff game.
+
+### `data/matchups-live.json`
+
+The Live Matchups page reads this file and nothing else for the slate. Rebuild it after the sync drops new scores or an overlay:
+
+```bash
+node scripts/build-matchups-live.mjs
+```
+
+The builder takes pairings from `data/schedule.json` → `weeks`. If `data/scores.json` is still a finished week, the live slate is the next scheduled week. A same-week `scores.json` fills score, and any projection or players-left fields on those games. `data/livescoring-wN.json` is preferred over that and over the overlay: each matchup is a pair of club rows with `score`, `proj`, `done`, `inProgress`, `yet`, and `min`. `yet` is the players-still-to-play count the win formula uses. `data/matchups-live.overlay.json` fills only holes the live-scoring file left. A roster file can add `playersLeft` (an integer from 0 to 14) or per-player `played` / `yetToPlay` flags when no live-scoring row covers that club. A depth chart of plain names does not invent a headcount. Pass `--raw` with a Fantrax scrape that has `week8_header` to fill the same holes from that widget.
+
+A row with projection 0 and nobody done, in progress, or yet to play is an unset lineup. The page says "No lineup set" and the win bar stays inside the live 5–95% cap instead of calling it a lock.
+
+Missing score, projection, or players-left stays `null`. The page shows a dash. Null is not stored as zero.
+
+`asOf` is the Pacific clock time the live numbers were observed, and it ends with `PT`. The page prints `as of <asOf>`.
+
+Win chance is `formula.id` `normal-approx-v1`, calculated in `js/live-prob.js` (the page and the builder share that file). It is a normal approximation, rounded to the nearest 5%. A game still going stays between 5% and 95%. A finished game is 100 / 0, or 50 / 50 on a tie. If either projection is missing, `winProb` is `null` and the bar is blank. Each starter still out is an 8-point standard deviation. When the headcount is missing, a club with projected points still out uses an 18-point stand-in, and the card says so.
+
+The Eddies vs Ultron game is `featured` and listed first. The public name for Towner Top Aga Bottom is `TTAB`. Do not put owner names, bids, claims, or trades in this file or the overlay.
 
 ## Shared code
 
