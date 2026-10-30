@@ -4,10 +4,10 @@
   "owner": "Chase Anderson",
   "asOf": "2026-10-29 6:21 AM PT",
   "faabLeft": 10,
-  "startingQB": "Josh Allen",
+  "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
-      "Josh Allen"
+      "Caleb Williams"
     ],
     "RB": [
       "Javonte Williams",
@@ -31,7 +31,9 @@
     "LB": [
       "Demario Davis",
       "Harold Perkins",
-      "Dorian Williams"
+      "Dorian Williams",
+      "Micah McFadden",
+      "Patrick Queen"
     ],
     "DB": [
       "Caleb Downs",

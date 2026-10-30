@@ -3,16 +3,17 @@
   "teamName": "Ultron",
   "owner": "Brian Aga",
   "asOf": "2026-10-29 6:21 AM PT",
-  "faabLeft": 2,
-  "startingQB": "Caleb Williams",
+  "faabLeft": 7,
+  "startingQB": "Josh Allen",
   "roster": {
     "QB": [
-      "Caleb Williams"
+      "Josh Allen"
     ],
     "RB": [
-      "D'Andre Swift",
-      "Ashton Jeanty",
-      "Rhamondre Stevenson"
+      "Rhamondre Stevenson",
+      "Omarion Hampton",
+      "Brian Robinson Jr.",
+      "Bijan Robinson"
     ],
     "WR": [
       "Drake London",
@@ -26,23 +27,20 @@
       "Dallas Turner"
     ],
     "LB": [
-      "Carson Schwesinger",
       "Kendal Daniels",
       "Foyesade Oluokun",
-      "Patrick Queen",
       "CJ Allen",
       "Mack Wilson",
-      "Micah McFadden",
       "Robert Spillane"
     ],
     "DB": [
       "A.J. Haulcy",
       "Josh Metellus",
-      "Dante Trader"
+      "Dante Trader",
+      "Kyle Hamilton"
     ],
     "IR": [
       "Terrance Ferguson",
-      "Kyle Monangai",
       "Myles Garrett"
     ]
   },

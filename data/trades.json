@@ -1,8 +1,49 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "source": "Fantrax roster sync 2026-10-29 6:21 AM PT (/workspace/fantrax-raw-2026-10-29-am.json)",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-10-29",
+      "time": "9:34 PM PDT",
+      "week": 8,
+      "status": "completed",
+      "official": true,
+      "teamA": "Towner Top Aga Bottom",
+      "teamB": "Ultron",
+      "givesA": [
+        "Josh Allen (QB)"
+      ],
+      "givesB": [
+        "Micah McFadden (LB)",
+        "Caleb Williams (QB)",
+        "Patrick Queen (LB)"
+      ],
+      "summary": "Week 8 — TTAB sent Josh Allen (QB) to Ultron for Micah McFadden (LB), Caleb Williams (QB), Patrick Queen (LB) (Oct 29 9:34 PM PDT)."
+    },
+    {
+      "date": "2026-10-29",
+      "time": "12:41 PM PDT",
+      "week": 8,
+      "status": "completed",
+      "official": true,
+      "teamA": "Saltese Slamm",
+      "teamB": "Ultron",
+      "givesA": [
+        "Omarion Hampton (RB)",
+        "Brian Robinson Jr. (RB)",
+        "Kyle Hamilton (DB)",
+        "Bijan Robinson (RB)",
+        "$5 FAAB"
+      ],
+      "givesB": [
+        "Ashton Jeanty (RB)",
+        "Carson Schwesinger (LB)",
+        "Kyle Monangai (RB)",
+        "D'Andre Swift (RB)"
+      ],
+      "summary": "Week 8 — Saltese Slamm sent Omarion Hampton (RB), Brian Robinson Jr. (RB), Kyle Hamilton (DB), Bijan Robinson (RB), $5 FAAB to Ultron for Ashton Jeanty (RB), Carson Schwesinger (LB), Kyle Monangai (RB), D'Andre Swift (RB) (Oct 29 12:41 PM PDT)."
+    },
     {
       "date": "2026-10-28",
       "time": "9:49 AM PDT",

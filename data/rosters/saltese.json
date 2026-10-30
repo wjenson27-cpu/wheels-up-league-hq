@@ -3,7 +3,7 @@
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
   "asOf": "2026-10-29 6:21 AM PT",
-  "faabLeft": 10,
+  "faabLeft": 5,
   "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
@@ -12,10 +12,9 @@
     "RB": [
       "Bhayshul Tuten",
       "Rico Dowdle",
-      "Bijan Robinson",
-      "Omarion Hampton",
-      "Brian Robinson Jr.",
-      "RJ Harvey"
+      "RJ Harvey",
+      "Ashton Jeanty",
+      "D'Andre Swift"
     ],
     "WR": [
       "Denzel Boston",
@@ -32,10 +31,10 @@
       "Jamien Sherwood",
       "Terrel Bernard",
       "Dee Winters",
-      "Dre Greenlaw"
+      "Dre Greenlaw",
+      "Carson Schwesinger"
     ],
     "DB": [
-      "Kyle Hamilton",
       "Byron Murphy",
       "Ty Okada",
       "Brandon Cisse"
@@ -43,7 +42,8 @@
     "IR": [
       "Aaron Jones",
       "Jonathon Brooks",
-      "David Montgomery"
+      "David Montgomery",
+      "Kyle Monangai"
     ]
   },
   "notes": "",
