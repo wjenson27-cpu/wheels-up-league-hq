@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "season": 2026,
+  "week": 8,
+  "weekStart": "2026-10-29",
+  "weekEnd": "2026-11-04",
+  "windowLabel": "Oct 29 – Nov 4, 2026",
+  "timezone": "PT",
+  "asOf": "2026-10-30 6:50 AM PT",
+  "status": "live",
+  "formula": {
+    "id": "normal-approx-v1",
+    "playerSd": 8,
+    "unknownTeamSd": 18,
+    "roundTo": 5,
+    "liveFloor": 5,
+    "liveCeil": 95,
+    "text": "Win chance is a normal approximation, rounded to the nearest 5%. Each club’s projected final already includes points on the board, so points still expected are the projection minus the current score, and never below zero. The expected margin is one club’s current score plus the points it still expects, minus the other club’s. Each starter still to play is an independent 8-point standard deviation. The two clubs combine as the square root of the sum of squares. If the sync did not say how many players are left, a club that still has projected points out uses a flat 18-point stand-in. That stand-in is not a headcount. The bar prints the curve’s chance, rounded to the nearest 5%. A game still in progress stays between 5% and 95%. A finished game — nobody left, or a posted final — is 100 / 0, or 50 / 50 on a tie, and does not use the curve. If either projection is missing, the bar is left blank."
+  },
+  "sources": [
+    "data/schedule.json",
+    "data/scores.json",
+    "data/teams.json",
+    "data/rosters/",
+    "data/matchups-live.overlay.json"
+  ],
+  "matchups": [
+    {
+      "id": "w8-eddies-ultron",
+      "featured": true,
+      "status": "live",
+      "place": "at",
+      "sideA": {
+        "teamId": "eddies",
+        "name": "Eagle Ridge Eddies",
+        "color": "#69BE28",
+        "logo": "img/logos/eddies.jpg",
+        "record": "5-2",
+        "score": 33,
+        "projection": 201.1,
+        "playersLeft": null
+      },
+      "sideB": {
+        "teamId": "ultron",
+        "name": "Ultron",
+        "color": "#E11D48",
+        "logo": "img/logos/ultron.jpg",
+        "record": "3-4",
+        "score": 0,
+        "projection": 202.8,
+        "playersLeft": null
+      },
+      "winProb": {
+        "sideA": 0.45,
+        "sideB": 0.55,
+        "mu": -1.7,
+        "sigma": 25.5,
+        "decided": false,
+        "playersLeftKnown": false
+      }
+    },
+    {
+      "id": "w8-doubtpfizer-slumlords",
+      "featured": false,
+      "status": "scheduled",
+      "place": "vs",
+      "sideA": {
+        "teamId": "doubtpfizer",
+        "name": "Mrs. Doubtpfizer",
+        "color": "#EC4899",
+        "logo": "img/logos/doubtpfizer.jpg",
+        "record": "3-4",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "sideB": {
+        "teamId": "slumlords",
+        "name": "Indian Trail Slumlords",
+        "color": "#8B5CF6",
+        "logo": "img/logos/slumlords.jpg",
+        "record": "3-4",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "winProb": null
+    },
+    {
+      "id": "w8-morningside-ttab",
+      "featured": false,
+      "status": "scheduled",
+      "place": "vs",
+      "sideA": {
+        "teamId": "morningside",
+        "name": "Morningside Muff Divers",
+        "color": "#84CC16",
+        "logo": "img/logos/morningside.jpg",
+        "record": "3-4",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "sideB": {
+        "teamId": "ttab",
+        "name": "TTAB",
+        "color": "#A78BFA",
+        "logo": "img/logos/ttab.jpg",
+        "record": "3-4",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "winProb": null
+    },
+    {
+      "id": "w8-hyper-substation",
+      "featured": false,
+      "status": "scheduled",
+      "place": "vs",
+      "sideA": {
+        "teamId": "hyper",
+        "name": "The Hypersecretors",
+        "color": "#14B8A6",
+        "logo": "img/logos/hyper.jpg",
+        "record": "3-4",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "sideB": {
+        "teamId": "substation",
+        "name": "Substation",
+        "color": "#EAB308",
+        "logo": "img/logos/substation.jpg",
+        "record": "4-3",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "winProb": null
+    },
+    {
+      "id": "w8-pocket-newman",
+      "featured": false,
+      "status": "scheduled",
+      "place": "vs",
+      "sideA": {
+        "teamId": "pocket",
+        "name": "Pocket Agents",
+        "color": "#3B82F6",
+        "logo": "img/logos/pocket.jpg",
+        "record": "5-2",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "sideB": {
+        "teamId": "newman",
+        "name": "Newman Lake Sleep Paralysis Demons",
+        "color": "#22D3EE",
+        "logo": "img/logos/newman.jpg",
+        "record": "3-4",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "winProb": null
+    },
+    {
+      "id": "w8-saltese-dongers",
+      "featured": false,
+      "status": "scheduled",
+      "place": "vs",
+      "sideA": {
+        "teamId": "saltese",
+        "name": "Saltese Slamm",
+        "color": "#F59E0B",
+        "logo": "img/logos/saltese.jpg",
+        "record": "3-4",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "sideB": {
+        "teamId": "dongers",
+        "name": "Drummond Dongers",
+        "color": "#F97316",
+        "logo": "img/logos/dongers.jpg",
+        "record": "1-6",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "winProb": null
+    },
+    {
+      "id": "w8-lab-goats",
+      "featured": false,
+      "status": "scheduled",
+      "place": "vs",
+      "sideA": {
+        "teamId": "lab",
+        "name": "Little Ass Boys",
+        "color": "#EF4444",
+        "logo": "img/logos/lab.jpg",
+        "record": "5-2",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "sideB": {
+        "teamId": "goats",
+        "name": "Valley Old Goats",
+        "color": "#D97706",
+        "logo": "img/logos/goats.jpg",
+        "record": "5-2",
+        "score": null,
+        "projection": null,
+        "playersLeft": null
+      },
+      "winProb": null
+    }
+  ]
+}

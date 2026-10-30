@@ -1,0 +1,17 @@
+{
+  "asOf": "2026-10-30 6:50 AM PT",
+  "week": 8,
+  "season": 2026,
+  "source": "Fantrax home matchups widget, Friday Oct 30 2026, 6:50 AM PT",
+  "note": "Only the featured game was on the home widget. Other Week 8 games stay blank until the score file or a later widget scrape has them.",
+  "games": [
+    {
+      "away": "Eagle Ridge Eddies",
+      "home": "Ultron",
+      "awayScore": 33,
+      "homeScore": 0,
+      "awayProjection": 201.1,
+      "homeProjection": 202.8
+    }
+  ]
+}
