@@ -11,11 +11,15 @@ function safeId(value) {
   return /^[a-z0-9-]{1,40}$/.test(String(value || "")) ? String(value) : "";
 }
 
+const PUBLIC_EDDIES = "Eagleridge Eddie's";
+
 function publicName(side) {
   if (!side) return "—";
   if (side.teamId === "ttab") return "TTAB";
-  /* Fantrax sync keeps the long club name. The card always says The Eddies. */
-  if (side.teamId === "eddies" || side.name === "Eagle Ridge Eddies") return "The Eddies";
+  /* Fantrax sync keeps "Eagle Ridge Eddies". The card always says Eagleridge Eddie's. */
+  if (side.teamId === "eddies" || side.name === "Eagle Ridge Eddies" || side.name === "The Eddies" || side.name === PUBLIC_EDDIES) {
+    return PUBLIC_EDDIES;
+  }
   return side.name || "—";
 }
 
@@ -109,7 +113,7 @@ function card(game) {
   const place = game.place === "at" ? "at" : "vs";
   const ids = [game.sideA && game.sideA.teamId, game.sideB && game.sideB.teamId];
   const eddiesUltron = ids.includes("eddies") && ids.includes("ultron");
-  const title = featured && eddiesUltron ? `<h2>The Eddies vs Ultron</h2>` : "";
+  const title = featured && eddiesUltron ? `<h2>${esc(PUBLIC_EDDIES)} vs Ultron</h2>` : "";
   const tag = statusLabel(game.status);
   return `<article class="card live-card${featured ? " is-featured" : ""}" data-matchup="${esc(game.id || "")}" data-featured="${featured ? "yes" : "no"}">
     <div class="live-kicker">

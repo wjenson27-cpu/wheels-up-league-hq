@@ -50,7 +50,7 @@
       "week": 8,
       "status": "completed",
       "official": true,
-      "teamA": "The Eddies",
+      "teamA": "Eagleridge Eddie's",
       "teamB": "Saltese Slamm",
       "givesA": [
         "Brian Robinson Jr. (RB)"
@@ -58,7 +58,7 @@
       "givesB": [
         "Ja'Kobi Lane (WR)"
       ],
-      "summary": "Week 8 — The Eddies sent Brian Robinson Jr. (RB) to Saltese Slamm for Ja'Kobi Lane (WR) (Oct 28 9:49 AM PDT)."
+      "summary": "Week 8 — Eagleridge Eddie's sent Brian Robinson Jr. (RB) to Saltese Slamm for Ja'Kobi Lane (WR) (Oct 28 9:49 AM PDT)."
     },
     {
       "date": "2026-10-28",
@@ -83,7 +83,7 @@
       "week": 8,
       "status": "completed",
       "official": true,
-      "teamA": "The Eddies",
+      "teamA": "Eagleridge Eddie's",
       "teamB": "Substation",
       "givesA": [
         "Tyler Warren (TE)",
@@ -94,7 +94,7 @@
         "George Pickens (WR)",
         "Frankie Luvu (LB)"
       ],
-      "summary": "Week 8 — The Eddies sent Tyler Warren (TE), Bryce Young (QB), $11 FAAB to Substation for George Pickens (WR), Frankie Luvu (LB) (Oct 27 6:16 PM PDT)."
+      "summary": "Week 8 — Eagleridge Eddie's sent Tyler Warren (TE), Bryce Young (QB), $11 FAAB to Substation for George Pickens (WR), Frankie Luvu (LB) (Oct 27 6:16 PM PDT)."
     },
     {
       "date": "2026-10-26",
@@ -221,7 +221,7 @@
       "week": 6,
       "status": "completed",
       "official": true,
-      "teamA": "The Eddies",
+      "teamA": "Eagleridge Eddie's",
       "teamB": "Ultron",
       "givesA": [
         "Rhamondre Stevenson (RB)"
@@ -229,7 +229,7 @@
       "givesB": [
         "Bryce Young (QB)"
       ],
-      "summary": "Week 6 — The Eddies sent Rhamondre Stevenson (RB) to Ultron for Bryce Young (QB) (Oct 19 8:54 PM PDT)."
+      "summary": "Week 6 — Eagleridge Eddie's sent Rhamondre Stevenson (RB) to Ultron for Bryce Young (QB) (Oct 19 8:54 PM PDT)."
     },
     {
       "date": "2026-10-16",
@@ -344,7 +344,7 @@
       "week": 4,
       "status": "completed",
       "official": true,
-      "teamA": "The Eddies",
+      "teamA": "Eagleridge Eddie's",
       "teamB": "Saltese Slamm (Luke)",
       "givesA": [
         "Omarion Hampton (RB)",
@@ -409,7 +409,7 @@
       "status": "completed",
       "official": true,
       "teamA": "Towner Top Aga Bottom (Chase)",
-      "teamB": "The Eddies",
+      "teamB": "Eagleridge Eddie's",
       "givesA": [
         "Travis Etienne (RB)",
         "Antoine Winfield (DB)"
@@ -418,7 +418,7 @@
         "Dorian Williams (LB)",
         "Andrew Wingard (DB)"
       ],
-      "summary": "Fantrax official — TTAB traded Travis Etienne and Antoine Winfield to The Eddies for Dorian Williams and Andrew Wingard (Sep 23 11:27 AM PDT; accepted by Bill)."
+      "summary": "Fantrax official — TTAB traded Travis Etienne and Antoine Winfield to Eagleridge Eddie's for Dorian Williams and Andrew Wingard (Sep 23 11:27 AM PDT; accepted by Bill)."
     },
     {
       "date": "2026-09-23",
@@ -426,14 +426,14 @@
       "status": "completed",
       "official": true,
       "teamA": "Saltese Slamm (Larry)",
-      "teamB": "The Eddies",
+      "teamB": "Eagleridge Eddie's",
       "givesA": [
         "Jordyn Brooks (LB)"
       ],
       "givesB": [
         "Jamien Sherwood (LB)"
       ],
-      "summary": "Fantrax official — Saltese traded Jordyn Brooks to The Eddies for Jamien Sherwood (Sep 23 9:52 AM PDT; accepted by Bill)."
+      "summary": "Fantrax official — Saltese traded Jordyn Brooks to Eagleridge Eddie's for Jamien Sherwood (Sep 23 9:52 AM PDT; accepted by Bill)."
     },
     {
       "date": "2026-09-22",
@@ -616,7 +616,7 @@
     {
       "date": "2026-08-30",
       "status": "completed",
-      "teamA": "The Eddies",
+      "teamA": "Eagleridge Eddie's",
       "teamB": "Substation (Nate)",
       "givesA": [
         "R2 / R3 / R8 chairs (handshake)"
@@ -662,7 +662,7 @@
   "blocks": [
     {
       "teamId": "eddies",
-      "team": "The Eddies",
+      "team": "Eagleridge Eddie's",
       "lastUpdated": "Oct 28 9:49 AM",
       "players": [
         "Zach Charbonnet RB SEA",
@@ -769,7 +769,7 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-30 6:25 AM PT roster sync). The Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-30 6:25 AM PT roster sync). Eagleridge Eddie's exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: TTAB↔Ultron Ashton Jeanty for DeVonta Smith+Dillon Thieneman (Oct 22 3:07 PM); Saltese↔Ultron DeVonta Smith+Mack Wilson for Bhayshul Tuten (Oct 22 2:39 PM); Substation↔TTAB Brian Branch+Demario Davis for Zack Baun (Oct 22 9:56 AM).",
   "hqComplete": true,
   "lastSynced": "2026-10-30 6:25 AM PT"

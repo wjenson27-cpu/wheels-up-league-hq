@@ -20,7 +20,7 @@
   "matchups": [
     {
       "home": "Valley Old Goats",
-      "away": "The Eddies",
+      "away": "Eagleridge Eddie's",
       "homeScore": 274.5,
       "awayScore": 251.5,
       "status": "final",
@@ -32,7 +32,7 @@
           "pts": 66
         },
         {
-          "team": "The Eddies",
+          "team": "Eagleridge Eddie's",
           "player": "Evan Williams",
           "pts": 34
         }

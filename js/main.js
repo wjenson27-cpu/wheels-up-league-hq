@@ -183,8 +183,8 @@
         const copy = Object.assign({}, t);
         if (!copy.logo && copy.id) copy.logo = "img/logos/" + copy.id + ".jpg";
         if (window.WUC && typeof WUC.publishTeam === "function") WUC.publishTeam(copy);
-        else if (copy.id === "eddies" || copy.name === "Eagle Ridge Eddies") {
-          copy.name = "The Eddies";
+        else if (copy.id === "eddies" || copy.name === "Eagle Ridge Eddies" || copy.name === "The Eddies") {
+          copy.name = "Eagleridge Eddie's";
           copy.owner = "";
         }
         return [t.id, copy];
@@ -237,7 +237,8 @@
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
   }
 
   function formatDate(iso) {

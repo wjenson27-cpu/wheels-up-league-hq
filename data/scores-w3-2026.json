@@ -19,12 +19,12 @@
   },
   "matchups": [
     {
-      "home": "The Eddies",
+      "home": "Eagleridge Eddie's",
       "away": "Drummond Dongers",
       "homeScore": 263.5,
       "awayScore": 224,
       "status": "final",
-      "winner": "The Eddies",
+      "winner": "Eagleridge Eddie's",
       "topScorers": [
         {
           "team": "Drummond Dongers",
@@ -32,7 +32,7 @@
           "pts": 44
         },
         {
-          "team": "The Eddies",
+          "team": "Eagleridge Eddie's",
           "player": "Brock Bowers",
           "pts": 41.5
         }

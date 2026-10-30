@@ -7,7 +7,7 @@
   "scraped_at": "2026-09-11T22:45:00Z",
   "week1_matchups": [
     {
-      "away": "The Eddies",
+      "away": "Eagleridge Eddie's",
       "away_listed_score": 83,
       "away_projection": 188.2,
       "home": "Saltese Slamm",
@@ -66,7 +66,7 @@
   "week_matchups": {
     "1": [
       [
-        "The Eddies",
+        "Eagleridge Eddie's",
         "Saltese Slamm"
       ],
       [
@@ -96,7 +96,7 @@
     ],
     "2": [
       [
-        "The Eddies",
+        "Eagleridge Eddie's",
         "Valley Old Goats"
       ],
       [
@@ -127,7 +127,7 @@
     "3": [
       [
         "Drummond Dongers",
-        "The Eddies"
+        "Eagleridge Eddie's"
       ],
       [
         "Indian Trail Slumlords",
@@ -157,7 +157,7 @@
     "4": [
       [
         "Indian Trail Slumlords",
-        "The Eddies"
+        "Eagleridge Eddie's"
       ],
       [
         "Morningside Muff Divers",
@@ -186,7 +186,7 @@
     ],
     "5": [
       [
-        "The Eddies",
+        "Eagleridge Eddie's",
         "Mrs. Doubtpfizer"
       ],
       [
@@ -216,7 +216,7 @@
     ]
   },
   "per_team_next_opponents": {
-    "The Eddies": [
+    "Eagleridge Eddie's": [
       "Saltese Slamm",
       "Valley Old Goats",
       "Drummond Dongers",
@@ -224,7 +224,7 @@
       "Mrs. Doubtpfizer"
     ],
     "Saltese Slamm": [
-      "The Eddies",
+      "Eagleridge Eddie's",
       "The Hypersecretors",
       "Newman Lake Sleep Paralysis Demons",
       "Morningside Muff Divers",
@@ -254,7 +254,7 @@
     "Drummond Dongers": [
       "The Hypersecretors",
       "Towner Top Aga Bottom",
-      "The Eddies",
+      "Eagleridge Eddie's",
       "Newman Lake Sleep Paralysis Demons",
       "Pocket Agents"
     ],
@@ -270,7 +270,7 @@
       "Newman Lake Sleep Paralysis Demons",
       "Ultron",
       "Pocket Agents",
-      "The Eddies"
+      "Eagleridge Eddie's"
     ],
     "Towner Top Aga Bottom": [
       "Indian Trail Slumlords",
@@ -283,7 +283,7 @@
       "Towner Top Aga Bottom",
       "Pocket Agents",
       "The Hypersecretors",
-      "The Eddies",
+      "Eagleridge Eddie's",
       "Ultron"
     ],
     "Newman Lake Sleep Paralysis Demons": [
@@ -295,7 +295,7 @@
     ],
     "Valley Old Goats": [
       "Newman Lake Sleep Paralysis Demons",
-      "The Eddies",
+      "Eagleridge Eddie's",
       "Morningside Muff Divers",
       "Ultron",
       "The Hypersecretors"
@@ -333,7 +333,7 @@
   },
   "projections_and_custom_numbers": {
     "week1_home_matchup_cards": "Fantrax Home displayed listed/current scores plus projected totals; values are recorded in week1_matchups.",
-    "note": "Live Scoring also showed alternate live projected-total figures on matchup cards (e.g. 177.33 vs 177.36 for The Eddies/Saltese Slamm); the Home card projections above are retained as the clearest Week 1 projections."
+    "note": "Live Scoring also showed alternate live projected-total figures on matchup cards (e.g. 177.33 vs 177.36 for Eagleridge Eddie's/Saltese Slamm); the Home card projections above are retained as the clearest Week 1 projections."
   },
   "nix_trade_confirmation": {
     "confirmed": true,
