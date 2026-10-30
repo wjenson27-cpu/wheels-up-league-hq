@@ -1,5 +1,16 @@
-/* Live Matchups page. Reads data/matchups-live.json only. */
+/* Live Matchups page. Reads data/matchups-live.json only.
+   On Thu, Sun, and Mon PT it re-fetches that file, cache-busted, every 30 minutes. */
 import { FORMULA } from "./live-prob.js";
+import {
+  LIVE_FILE,
+  TICK_MS,
+  cacheBust,
+  evaluateFreshness,
+  isGameWindow,
+  mergeRefresh,
+  shouldRefresh,
+  sourceFiles
+} from "./live-refresh.js";
 
 const esc = (s) => (window.WUC && WUC.escapeHtml ? WUC.escapeHtml(s) : String(s ?? ""));
 
@@ -153,19 +164,99 @@ function render(data) {
     </section>`;
 }
 
-async function start() {
+let lastGood = null;
+let fileMissing = false;
+let lastWindowFetchMs = null;
+let inflight = false;
+
+function showUnavailable() {
   const board = document.getElementById("liveBoard");
-  try {
-    const res = await fetch("data/matchups-live.json");
-    if (!res.ok) throw new Error(`status ${res.status}`);
-    const data = await res.json();
-    render(data);
-  } catch (err) {
-    console.error(err);
-    if (!board) return;
-    board.removeAttribute("aria-busy");
-    board.innerHTML = `<div class="soft-error">Live matchups are unavailable.<br/><button type="button" class="btn btn-ghost" data-retry="1">Refresh</button></div>`;
+  if (!board) return;
+  board.removeAttribute("aria-busy");
+  board.innerHTML = `<div class="soft-error">Live matchups are unavailable.<br/><button type="button" class="btn btn-ghost" data-retry="1">Refresh</button></div>`;
+}
+
+function paintFreshness(data, missing) {
+  const verdict = evaluateFreshness({
+    stamp: data && (data.asOf || data.updated || data.lastSynced),
+    now: Date.now(),
+    missing
+  });
+  const ago = document.getElementById("updatedAgo");
+  const row = document.getElementById("staleRow");
+  const reason = document.getElementById("staleReason");
+  if (ago) ago.textContent = verdict.label;
+  if (row) {
+    row.hidden = !verdict.stale;
+    row.setAttribute("data-stale", verdict.stale ? "yes" : "no");
+    if (reason) reason.textContent = verdict.stale ? verdict.reasonText : "";
   }
+}
+
+async function fetchLiveFile(now) {
+  let res;
+  try {
+    res = await fetch(cacheBust(LIVE_FILE, now), { cache: "no-store" });
+  } catch (err) {
+    return { ok: false, status: 0, error: err };
+  }
+  if (!res.ok) return { ok: false, status: res.status };
+  try {
+    const data = await res.json();
+    if (!data || !Array.isArray(data.matchups)) return { ok: false, status: 422 };
+    return { ok: true, status: res.status, data };
+  } catch (err) {
+    return { ok: false, status: 422, error: err };
+  }
+}
+
+async function refreshCompanions(data, now) {
+  const files = sourceFiles(data).filter((file) => file !== LIVE_FILE);
+  await Promise.all(files.map(async (file) => {
+    try {
+      await fetch(cacheBust(file, now), { cache: "no-store" });
+    } catch (_) {
+      /* A companion miss does not replace the board. */
+    }
+  }));
+}
+
+async function pull({ windowed }) {
+  const now = Date.now();
+  if (windowed && !shouldRefresh({ now, lastAttemptMs: lastWindowFetchMs, inWindow: isGameWindow(now) })) {
+    if (lastGood || fileMissing) paintFreshness(lastGood, fileMissing);
+    return;
+  }
+  if (inflight) return;
+  inflight = true;
+  if (windowed || isGameWindow(now)) lastWindowFetchMs = now;
+  try {
+    const outcome = await fetchLiveFile(now);
+    const merged = mergeRefresh(lastGood, outcome);
+    if (!merged.data) {
+      fileMissing = true;
+      lastGood = null;
+      showUnavailable();
+      paintFreshness(null, true);
+      console.error(outcome.error || new Error("live scores unavailable"));
+      return;
+    }
+    lastGood = merged.data;
+    fileMissing = merged.missing;
+    render(merged.data);
+    paintFreshness(merged.data, fileMissing);
+    if (!merged.missing) await refreshCompanions(merged.data, now);
+  } finally {
+    inflight = false;
+  }
+}
+
+function start() {
+  pull({ windowed: false });
+  setInterval(() => pull({ windowed: true }), TICK_MS);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") pull({ windowed: true });
+  });
 }
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);

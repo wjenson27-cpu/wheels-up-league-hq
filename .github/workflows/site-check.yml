@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: 22
       - name: Validate JSON and page files
-        run: node scripts/check-site.mjs --json
+        run: |
+          node scripts/check-site.mjs --json
+          node scripts/check-live-refresh.mjs
 
   pages:
     name: Pages load cleanly

@@ -1,0 +1,8 @@
+# GitHub Pages runs Jekyll when .nojekyll is absent. private/ is the
+# featured club's trade desk and is left out of the published site.
+# Do not add .nojekyll back: that skips this file and would publish private/.
+# Public HTML has no front matter, so Jekyll copies those pages through unchanged.
+exclude:
+  - private
+  - node_modules
+  - vendor

@@ -21,6 +21,11 @@
       <h1>Live matchups</h1>
       <p class="lede" id="liveLede">Current score, projected final, and how many starters are still out. The bar is a normal approximation, rounded to the nearest 5%.</p>
       <p class="last-sync" id="asOf">as of — PT</p>
+      <p class="last-sync" id="updatedAgo"></p>
+      <p class="live-stale-row" id="staleRow" data-stale="no" hidden>
+        <span class="stale-badge">STALE</span>
+        <span id="staleReason"></span>
+      </p>
     </header>
 
     <div id="liveBoard" aria-busy="true">
