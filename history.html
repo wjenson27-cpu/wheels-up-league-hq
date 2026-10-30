@@ -101,6 +101,7 @@
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       try {
@@ -108,66 +109,68 @@
         document.getElementById("commishList").innerHTML = (data.commissioners || []).map(c =>
           `<p class="mb-0" style="margin-bottom:0.5rem"><strong>${WUC.escapeHtml(c.name)}</strong><br><span class="muted">${WUC.escapeHtml(c.era || "")}</span></p>`
         ).join("");
-        document.getElementById("ringsLine").textContent = data.ringsThrough2025 || "";
+        const show = (s) => WUC.escapeHtml(WUC.displayText(s || ""));
+        const ownerCell = (s) => WUC.escapeHtml(WUC.publicOwner(s, "", ""));
+        document.getElementById("ringsLine").textContent = WUC.displayText(data.ringsThrough2025 || "");
         document.getElementById("loreList").innerHTML = (data.lore || [])
           .filter(l => !/\b(Bill confirmed|confirmed Bill)\b/i.test(String(l)))
-          .map(l => `<li>${WUC.escapeHtml(l)}</li>`)
+          .map(l => `<li>${show(l)}</li>`)
           .join("");
 
         const champBody = document.querySelector("#champTable tbody");
         champBody.innerHTML = (data.champions || []).slice().reverse().map(r => `
           <tr>
             <td>${r.year}</td>
-            <td>${WUC.escapeHtml(r.era || "")}</td>
-            <td><strong>${WUC.escapeHtml(r.champion || "")}</strong></td>
-            <td>${WUC.escapeHtml(r.owner || "")}</td>
-            <td>${WUC.escapeHtml(r.rs || "")}</td>
-            <td class="muted">${WUC.escapeHtml(r.note || "")}</td>
+            <td>${show(r.era || "")}</td>
+            <td><strong>${show(r.champion || "")}</strong></td>
+            <td>${ownerCell(r.owner || "")}</td>
+            <td>${show(r.rs || "")}</td>
+            <td class="muted">${show(r.note || "")}</td>
           </tr>`).join("");
 
         document.querySelector("#podiumTable tbody").innerHTML = (data.podium || []).slice().reverse().map(r => `
           <tr>
             <td>${r.year}</td>
-            <td>${WUC.escapeHtml(r.champion || "")}</td>
-            <td>${WUC.escapeHtml(r.runnerUp || "")}</td>
-            <td>${WUC.escapeHtml(r.third || "")}</td>
+            <td>${show(r.champion || "")}</td>
+            <td>${show(r.runnerUp || "")}</td>
+            <td>${show(r.third || "")}</td>
           </tr>`).join("");
 
         document.querySelector("#recordsTable tbody").innerHTML = (data.allTimeRecords || []).map(r => `
           <tr>
             <td>${r.rk == null ? "—" : r.rk}</td>
-            <td><strong>${WUC.escapeHtml(r.owner || "")}</strong></td>
-            <td>${WUC.escapeHtml(r.team2026 || "")}</td>
-            <td>${WUC.escapeHtml(r.overall || "")}</td>
-            <td>${WUC.escapeHtml(r.winPct || "")}</td>
-            <td>${WUC.escapeHtml(r.y2024 || "")}</td>
-            <td>${WUC.escapeHtml(r.y2025 || "")}</td>
+            <td><strong>${ownerCell(r.owner || "")}</strong></td>
+            <td>${show(r.team2026 || "")}</td>
+            <td>${show(r.overall || "")}</td>
+            <td>${show(r.winPct || "")}</td>
+            <td>${show(r.y2024 || "")}</td>
+            <td>${show(r.y2025 || "")}</td>
           </tr>`).join("");
 
         document.getElementById("seasonTimeline").innerHTML = (data.seasons || []).map(s => `
           <div class="timeline-item">
             <div class="timeline-year">${s.year}${s.era ? `<span class="pill">${WUC.escapeHtml(s.era)}</span>` : ""}</div>
             <div class="card" style="margin-top:0.35rem">
-              <p><strong>Champion:</strong> ${WUC.escapeHtml(s.champion || "TBD")}</p>
-              <p><strong>Runner-up:</strong> ${WUC.escapeHtml(s.runnerUp || "TBD")}</p>
-              ${s.third ? `<p><strong>Third:</strong> ${WUC.escapeHtml(s.third)}</p>` : ""}
-              <p class="muted mb-0">${WUC.escapeHtml(s.note || "")}</p>
+              <p><strong>Champion:</strong> ${show(s.champion || "TBD")}</p>
+              <p><strong>Runner-up:</strong> ${show(s.runnerUp || "TBD")}</p>
+              ${s.third ? `<p><strong>Third:</strong> ${show(s.third)}</p>` : ""}
+              <p class="muted mb-0">${show(s.note || "")}</p>
             </div>
           </div>`).join("");
 
         document.getElementById("careerList").innerHTML = (data.careers || []).map(c => `
           <article class="card career-card">
-            <p class="mb-0"><strong>${WUC.escapeHtml(c.owner)}</strong> → ${WUC.escapeHtml(c.team || "")}</p>
+            <p class="mb-0">${ownerCell(c.owner) ? `<strong>${ownerCell(c.owner)}</strong> → ` : ""}${show(c.team || "")}</p>
             <p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(c.years || "")} · ${WUC.escapeHtml(c.overall || "")}</p>
             <p class="muted mb-0" style="font-size:0.85rem">${WUC.escapeHtml(c.hardware || "")}</p>
-            <p class="cut">${WUC.escapeHtml(String(c.cut || "").replace(/\s*\((?:confirmed Bill|Bill confirmed)\)/gi, ""))}</p>
+            <p class="cut">${show(String(c.cut || "").replace(/\s*\((?:confirmed Bill|Bill confirmed)\)/gi, ""))}</p>
           </article>`).join("");
 
         document.getElementById("alumniList").innerHTML = (data.alumni || []).map(a => `
           <article class="card career-card">
-            <p class="mb-0"><strong>${WUC.escapeHtml(a.owner)}</strong> <span class="muted">${WUC.escapeHtml(a.years || "")}</span></p>
+            <p class="mb-0">${ownerCell(a.owner) ? `<strong>${ownerCell(a.owner)}</strong>` : ""} <span class="muted">${show(a.years || "")}</span></p>
             <p class="muted mb-0">${WUC.escapeHtml(a.record || "")}</p>
-            <p class="cut">${WUC.escapeHtml(a.note || "")}</p>
+            <p class="cut">${show(a.note || "")}</p>
           </article>`).join("");
       } catch (e) {
         document.getElementById("commishList").innerHTML = `<p class="muted">Couldn’t load history.</p>`;

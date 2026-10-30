@@ -14,6 +14,8 @@ function safeId(value) {
 function publicName(side) {
   if (!side) return "—";
   if (side.teamId === "ttab") return "TTAB";
+  /* Fantrax sync keeps the long club name. The card always says The Eddies. */
+  if (side.teamId === "eddies" || side.name === "Eagle Ridge Eddies") return "The Eddies";
   return side.name || "—";
 }
 

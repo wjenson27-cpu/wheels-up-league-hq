@@ -202,7 +202,8 @@
 
       const body = state.owners.map((o) => {
         const s = ownerStats(o);
-        let cells = `<td class="owner-col">${WUC.escapeHtml(o.name)}</td>`;
+        const ownerName = /\bBill\b/.test(String(o.name || "")) ? "" : (o.name || "");
+        let cells = `<td class="owner-col">${WUC.escapeHtml(ownerName)}</td>`;
         for (let w = 1; w <= 17; w++) {
           const cell = o.weeks[String(w)] || { player: "", td: "" };
           const tdClass = cell.td === "Yes" ? "yes" : cell.td === "No" ? "no" : cell.td === "N/A" ? "na" : "";

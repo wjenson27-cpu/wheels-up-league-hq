@@ -16,6 +16,6 @@ window.WUC_CONFIG = {
   // Luke and Larry are the same person (ThiccSwede / Saltese)
   commissioner: "Luke Sahlberg (ThiccSwede)",
   commissioners: ["Luke Sahlberg (ThiccSwede)"],
-  billTeam: "Eagle Ridge Eddies",
+  featuredTeam: "The Eddies",
   leagueFocus: true
 };

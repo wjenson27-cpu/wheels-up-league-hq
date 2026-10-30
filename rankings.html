@@ -76,7 +76,7 @@
 
         
         function formatBlurb(text) {
-          const raw = String(text || "");
+          const raw = WUC.displayText(String(text || ""));
           const parts = raw.split(/(?=Junk:)/);
           return parts.map(p => {
             const t = WUC.escapeHtml(p.trim());
@@ -106,7 +106,7 @@
             <div class="rank-num">${r.rank}</div>
             ${WUC.teamMark(r.teamId, { size: "md" })}
             <div>
-              <div class="rank-meta">${WUC.escapeHtml(r.owner || "")}</div>
+              <div class="rank-meta">${WUC.escapeHtml(WUC.publicOwner(r.owner, r.teamId, ""))}</div>
               <h2 class="rank-team">${r.teamId ? `<a class="team-link" href="team.html?id=${encodeURIComponent(r.teamId)}">${WUC.escapeHtml(WUC.officialName(r.teamId, r.team))}</a>` : WUC.escapeHtml(WUC.displayText(r.team))}${recordHtml}</h2>
               <div class="rank-line">${WUC.escapeHtml(line)}</div>
               <p class="rank-blurb">${formatBlurb(r.blurb)}</p>

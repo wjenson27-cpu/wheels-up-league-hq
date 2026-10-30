@@ -116,6 +116,7 @@ async function checkJson() {
     fail("trades.html still has a pending-offers section");
   }
   await checkMatchupsLive();
+  await checkPublicNames();
 }
 
 const LIVE_BANNED_KEYS = new Set(["owner", "owners", "pending", "pendingclaim", "pendingclaims", "bid", "bids", "claim", "claims", "trade", "trades"]);
@@ -158,6 +159,14 @@ function walkBannedKeys(value, path, hits) {
     if (LIVE_BANNED_KEYS.has(String(key).toLowerCase())) hits.push(`${path}.${key}`);
     walkBannedKeys(value[key], `${path}.${key}`, hits);
   }
+}
+
+/* Livescoring rows still use the Fantrax club name. The published card does not. */
+function liveJoinName(side) {
+  if (!side) return "";
+  if (side.teamId === "ttab") return "Towner Top Aga Bottom";
+  if (side.teamId === "eddies") return "Eagle Ridge Eddies";
+  return side.name || "";
 }
 
 async function checkMatchupsLive() {
@@ -204,7 +213,7 @@ async function checkMatchupsLive() {
       if (!first || first.featured !== true || !ids.includes("eddies") || !ids.includes("ultron")) {
         fail(`${rel} does not feature Eddies vs Ultron first`);
       }
-      if (first && first.sideA && first.sideA.name !== "Eagle Ridge Eddies") fail(`${rel} featured side A is ${first.sideA && first.sideA.name}`);
+      if (first && first.sideA && first.sideA.name !== "The Eddies") fail(`${rel} featured side A is ${first.sideA && first.sideA.name}`);
       if (first && first.sideB && first.sideB.name !== "Ultron") fail(`${rel} featured side B is ${first.sideB && first.sideB.name}`);
     } else if (games.some((g) => g.featured) && (!first || first.featured !== true)) {
       fail(`${rel} featured matchup is not first`);
@@ -221,7 +230,7 @@ async function checkMatchupsLive() {
       const byName = new Map();
       for (const game of games) {
         for (const side of [game.sideA, game.sideB]) {
-          if (side) byName.set(side.teamId === "ttab" ? "Towner Top Aga Bottom" : side.name, { side, game });
+          if (side) byName.set(liveJoinName(side), { side, game });
         }
       }
       for (const pair of (live && live.matchups) || []) {
@@ -286,6 +295,38 @@ async function checkMatchupsLive() {
     fail("matchups.html does not load js/matchups-page.js");
   }
   console.log("Live matchups JSON ok");
+}
+
+/* Published site files: HTML, CSS, JS, and data. Scripts and the README are not the site. */
+async function checkPublicNames() {
+  const files = [];
+  const entries = await readdir(root, { withFileTypes: true });
+  for (const entry of entries) {
+    if (entry.isFile() && entry.name.endsWith(".html")) files.push(join(root, entry.name));
+  }
+  for (const dir of ["js", "css", "data"]) {
+    const found = await walk(join(root, dir));
+    for (const file of found) {
+      if (/\.(html|js|css|json)$/.test(file)) files.push(file);
+    }
+  }
+  for (const file of files) {
+    const rel = relative(root, file);
+    const text = await readFile(file, "utf8");
+    if (text.includes("billTeam")) fail(`${rel} contains billTeam`);
+    const ownerRe = /"owner"\s*:\s*"([^"\\]*)"/g;
+    let match;
+    while ((match = ownerRe.exec(text))) {
+      if (/\bBill\b/.test(match[1])) fail(`${rel} owner label "${match[1]}"`);
+    }
+    if (/"name"\s*:\s*"Bill"/.test(text)) fail(`${rel} owner label "Bill"`);
+    if (!rel.endsWith(".html")) continue;
+    if (/—\s*Bill\b/.test(text)) fail(`${rel} has an owner label “— Bill”`);
+    if (/>\s*Bill\s*</.test(text)) fail(`${rel} has an owner label Bill`);
+    if (/<\/span>\s*Bill\s*</.test(text)) fail(`${rel} has an owner cell Bill`);
+    if (/>\s*Bill\s*—/.test(text)) fail(`${rel} has an owner label “Bill —”`);
+  }
+  console.log("Public names ok");
 }
 
 // ---- Data integrity: rosters must have players, sync data must be fresh ----
@@ -642,6 +683,19 @@ async function checkPages() {
           }, 4);
           await page.reload({ waitUntil: "networkidle0", timeout: 30000 });
           await new Promise((r) => setTimeout(r, 250));
+          const privacy = await page.evaluate(() => {
+            const text = document.body ? document.body.innerText : "";
+            const html = document.documentElement ? document.documentElement.innerHTML : "";
+            const ownerBill = [...document.querySelectorAll("td.col-owner, td.owner-col, .rank-meta, #teamLede")].some((el) => /\bBill\b/.test(el.textContent || ""));
+            return {
+              eagle: /Eagle Ridge Eddies/.test(text),
+              billTeam: html.includes("billTeam"),
+              ownerBill
+            };
+          });
+          if (privacy.eagle) errors.push("page shows Eagle Ridge Eddies");
+          if (privacy.billTeam) errors.push("page contains billTeam");
+          if (privacy.ownerBill) errors.push("owner label Bill is visible");
           if (name === "trades.html") {
             const leaked = await page.evaluate(() => {
               const text = document.body.innerText || "";
@@ -683,7 +737,7 @@ async function checkPages() {
               const chips = [...document.querySelectorAll("#roster .chip")].map((el) => el.textContent.trim());
               const count = (name) => chips.filter((n) => n === name).length;
               return {
-                ok: /Eagle Ridge Eddies/.test(text) && Boolean(document.getElementById("roster")),
+                ok: /The Eddies/.test(text) && !/Eagle Ridge Eddies/.test(text) && Boolean(document.getElementById("roster")),
                 chars: count("Zach Charbonnet"),
                 etienne: count("Travis Etienne"),
                 raw: /W1 FINAL/.test(text),
@@ -782,7 +836,7 @@ async function checkPages() {
               return {
                 rows,
                 eddiesCard: Boolean(document.getElementById("eddiesCard")),
-                eddiesHeading: [...document.querySelectorAll("h1,h2")].some((el) => /Eagle Ridge Eddies/.test(el.textContent)),
+                eddiesHeading: [...document.querySelectorAll("h1,h2")].some((el) => /Eagle Ridge Eddies|The Eddies/.test(el.textContent)),
                 ranks
               };
             });

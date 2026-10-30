@@ -203,7 +203,7 @@
               return `<tr class="${hot.trim()}">
                 <td class="col-rank">${place}</td>
                 <td class="col-team">${WUC.teamLinkHtml(t.id, { size: "sm" })}</td>
-                <td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>
+                <td class="col-owner">${WUC.escapeHtml(WUC.publicOwner(t.owner, t.id, "—"))}</td>
                 <td class="col-trades">${n}</td>
               </tr>`;
             }).join("");
@@ -231,7 +231,7 @@
           const matchups = (ranks && ranks.week1Matchups) || [];
           mu.removeAttribute("aria-busy");
           mu.innerHTML = matchups.length
-            ? `<ul style="margin:0;padding-left:1.1rem;color:var(--text-muted)">${matchups.map(m => `<li>${WUC.escapeHtml(m)}</li>`).join("")}</ul>`
+            ? `<ul style="margin:0;padding-left:1.1rem;color:var(--text-muted)">${matchups.map(m => `<li>${WUC.escapeHtml(WUC.displayText(m))}</li>`).join("")}</ul>`
             : `<p class="muted">Matchups TBD.</p>`;
 
           const powerBoard = WUC.publishedPowerRanks(ranks);

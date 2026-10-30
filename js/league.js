@@ -3,7 +3,7 @@
 (function () {
   const POS_ORDER = ["QB", "RB", "WR", "TE", "K", "LB", "DL", "DB", "FLEX", "IDP", "IR"];
 
-  /* Playoff odds. Confirm with Bill if the league changes this.
+  /* Playoff odds. Confirm if the league changes this.
      spots: 8 — data/history.json (2024 “8-team playoffs”; 2025 champ was a 5-seed
        and the 1-seed played round 1, so no bye).
      regularSeasonWeeks: 14 — 2024 best record was 11-3; 2025 records include 12-2 and 2-12.
@@ -34,6 +34,7 @@
     "saltese slamm": "saltese",
     saltese: "saltese",
     "eagle ridge eddies": "eddies",
+    "the eddies": "eddies",
     eddies: "eddies",
     "indian trail slumlords": "slumlords",
     slumlords: "slumlords",
@@ -64,8 +65,25 @@
       .trim();
   }
 
+  /* Fantrax still writes "Eagle Ridge Eddies". The public name is The Eddies.
+     Keep the Fantrax string as a join key (ALIAS_TO_ID) and map it here. */
+  function ownerIsBill(owner) {
+    return /\bBill\b/.test(String(owner || ""));
+  }
+
+  function publishTeam(team) {
+    if (!team || typeof team !== "object") return team;
+    if (team.id === "eddies" || norm(team.name) === "eagle ridge eddies") {
+      team.name = "The Eddies";
+      team.owner = "";
+    } else if (ownerIsBill(team.owner)) {
+      team.owner = "";
+    }
+    return team;
+  }
+
   function indexTeams(teams) {
-    teamIndex = Array.isArray(teams) ? teams : [];
+    teamIndex = (Array.isArray(teams) ? teams : []).map((t) => publishTeam(Object.assign({}, t)));
     return teamIndex;
   }
 
@@ -116,8 +134,11 @@
 
   function officialName(labelOrId, fallback) {
     const id = resolveTeamId(labelOrId);
+    if (id === "eddies") return "The Eddies";
     const team = id ? teamById(id) : null;
     if (team && team.name) return team.name;
+    const raw = fallback || labelOrId;
+    if (raw && /\bEagle Ridge Eddies\b/.test(String(raw))) return "The Eddies";
     if (fallback) return String(fallback);
     return labelOrId ? String(labelOrId) : "—";
   }
@@ -125,13 +146,26 @@
   function officialOwner(labelOrId) {
     const id = resolveTeamId(labelOrId);
     const team = id ? teamById(id) : null;
-    return (team && team.owner) || "";
+    return publicOwner(team && team.owner, id, "");
+  }
+
+  /* Blank when the label would identify the featured club's owner.
+     fallback is used only for a genuinely empty owner. */
+  function publicOwner(owner, teamId, fallback) {
+    const id = teamId ? (resolveTeamId(teamId) || "") : "";
+    if (id === "eddies" || ownerIsBill(owner)) return "";
+    const name = String(owner || "").trim();
+    if (name) return name;
+    return fallback == null ? "" : String(fallback);
   }
 
   /* One display pass for free text that still uses an old club name. */
   function displayText(text) {
     let s = String(text || "");
     if (!s) return s;
+    s = s.replace(/Eagle Ridge Eddies\s*\(\s*Bill\s*\)/g, "The Eddies");
+    s = s.replace(/\bEagle Ridge Eddies\b/g, "The Eddies");
+    s = s.replace(/Bill['’]s Eddies/g, "The Eddies");
     const hyper = officialName("hyper");
     const ttab = officialName("ttab");
     s = s.replace(/Greenacres Goblins\s*\/\s*Hypersecretors/gi, hyper);
@@ -286,7 +320,7 @@
       const record = rec.played
         ? (rec.ties ? `${rec.wins}-${rec.losses}-${rec.ties}` : `${rec.wins}-${rec.losses}`)
         : null;
-      return Object.assign({}, t, {
+      return Object.assign(publishTeam(Object.assign({}, t)), {
         wins: rec.played ? rec.wins : null,
         losses: rec.played ? rec.losses : null,
         ties: rec.played ? rec.ties : null,
@@ -536,7 +570,7 @@
       const width = Math.max(4, Math.round((pf / max) * 100));
       const color = t.color || "#69BE28";
       return `<div class="bar-row">
-        <span class="bar-label">${teamLinkHtml(t.id, { size: "sm", text: t.abbrev || t.name })}</span>
+        <span class="bar-label">${teamLinkHtml(t.id, { size: "sm", text: t.abbrev || officialName(t.id) })}</span>
         <div class="bar-track"><div class="bar-fill" style="width:${width}%;background:${WUC.escapeHtml(color)}"></div></div>
         <span class="bar-val">${formatPts(pf)}</span>
       </div>`;
@@ -858,7 +892,7 @@
         <td class="col-rank">${i + 1}</td>
         <td class="col-team">${teamLinkHtml(t.id, { size: "sm" })}</td>
         <td class="col-record">${WUC.escapeHtml(recordLabel(t))}</td>
-        ${compact ? "" : `<td class="col-owner">${WUC.escapeHtml(t.owner || "—")}</td>`}
+        ${compact ? "" : `<td class="col-owner">${WUC.escapeHtml(publicOwner(t.owner, t.id, "—"))}</td>`}
         <td class="col-num">${pf == null ? "—" : formatPts(pf)}</td>
         ${compact ? "" : `<td class="col-num col-phone-hide">${pa == null ? "—" : formatPts(pa)}</td>`}
         ${compact ? "" : `<td class="col-num col-phone-hide${diffCls}">${formatDiff(diff)}</td>`}
@@ -1010,7 +1044,7 @@
         const chip = `<span class="team-mark team-mark-sm h2h-past-chip" aria-hidden="true">${WUC.escapeHtml(String(team.abbrev || team.name || "?").slice(0, 3))}</span>`;
         who = `<span class="team-inline h2h-past" title="${WUC.escapeHtml(full)}">${chip}<span class="opp-full">${WUC.escapeHtml(full)}</span><span class="opp-short">${WUC.escapeHtml(short)}</span></span>`;
       } else {
-        const full = team.name || team.id;
+        const full = officialName(team.id) || team.name || team.id;
         const short = team.abbrev || full;
         const inner = `<span class="team-inline">${WUC.teamMark(team.id, { size: "sm" })}<span class="opp-full">${WUC.escapeHtml(full)}</span><span class="opp-short">${WUC.escapeHtml(short)}</span></span>`;
         who = `<a class="team-link" href="${teamHref(team.id)}" title="${WUC.escapeHtml(full)}">${inner}</a>`;
@@ -1075,8 +1109,10 @@
     resolveTeamId,
     teamById,
     teamHref,
+    publishTeam,
     officialName,
     officialOwner,
+    publicOwner,
     displayText,
     publicNote,
     teamLinkHtml,

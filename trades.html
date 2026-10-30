@@ -59,7 +59,7 @@
 
     function blockCard(b) {
       const players = Array.isArray(b.players) ? b.players.filter(Boolean) : [];
-      const note = b.note || b.notes || "";
+      const note = WUC.displayText(b.note || b.notes || "");
       if (!players.length && !b.player && !b.assets && !note) return "";
       const listed = players.length
         ? players.map((p) => WUC.escapeHtml(p)).join(", ")

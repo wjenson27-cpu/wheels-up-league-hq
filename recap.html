@@ -45,6 +45,7 @@
   <div id="site-footer"></div>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       try {
@@ -55,25 +56,26 @@
         }
         const list = (data.recaps || []).slice().sort((a, b) => (b.week || 0) - (a.week || 0));
         if (!list.length) return;
+        const show = (s) => WUC.escapeHtml(WUC.displayText(s || ""));
         document.getElementById("recapList").innerHTML = list.map((r) => {
           const mus = (r.matchups || []).map((m) => `
             <div class="matchup">
-              <div class="matchup-score">${WUC.escapeHtml(m.scoreline || m.title || "")}</div>
-              <p class="matchup-blurb">${WUC.escapeHtml(m.blurb || "")}</p>
+              <div class="matchup-score">${show(m.scoreline || m.title || "")}</div>
+              <p class="matchup-blurb">${show(m.blurb || "")}</p>
             </div>`).join("");
           const heroes = (r.heroes || []).length
-            ? `<div class="matchup"><div class="matchup-score">Juice</div><ul class="recap-list">${(r.heroes || []).map(h => `<li>${WUC.escapeHtml(h)}</li>`).join("")}</ul></div>`
+            ? `<div class="matchup"><div class="matchup-score">Juice</div><ul class="recap-list">${(r.heroes || []).map(h => `<li>${show(h)}</li>`).join("")}</ul></div>`
             : "";
           const goats = (r.goats || []).length
-            ? `<div class="matchup"><div class="matchup-score">Junk</div><ul class="recap-list">${(r.goats || []).map(g => `<li>${WUC.escapeHtml(g)}</li>`).join("")}</ul></div>`
+            ? `<div class="matchup"><div class="matchup-score">Junk</div><ul class="recap-list">${(r.goats || []).map(g => `<li>${show(g)}</li>`).join("")}</ul></div>`
             : "";
-          const closer = r.closer ? `<p class="recap-meta" style="margin-top:1rem">${WUC.escapeHtml(r.closer)}</p>` : "";
+          const closer = r.closer ? `<p class="recap-meta" style="margin-top:1rem">${show(r.closer)}</p>` : "";
           const sample = r.sample ? `<span class="chip" style="margin-left:0.5rem">SAMPLE</span>` : "";
           return `
             <article class="card recap-card">
-              <h2>${WUC.escapeHtml(r.title || `Week ${r.week}`)}${sample}</h2>
-              <p class="recap-meta">${WUC.escapeHtml(r.dateLabel || "")}</p>
-              <p class="recap-open">${WUC.escapeHtml(r.coldOpen || "")}</p>
+              <h2>${show(r.title || `Week ${r.week}`)}${sample}</h2>
+              <p class="recap-meta">${show(r.dateLabel || "")}</p>
+              <p class="recap-open">${show(r.coldOpen || "")}</p>
               ${mus}
               ${heroes}
               ${goats}
