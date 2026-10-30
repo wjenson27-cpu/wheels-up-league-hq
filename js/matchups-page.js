@@ -86,6 +86,8 @@ function winBar(game) {
   const unsetName = game.sideA.lineupSet === false ? nameA : nameB;
   const spread = prob.decided
     ? "Posted result. The curve is not used once the game is finished."
+    : unset
+    ? `${unsetName} has no lineup set, so no expected margin is shown and a live game stays at the 95% cap.`
     : `Expected margin for ${nameA}: ${signed(prob.mu)} · spread ${Number(prob.sigma).toFixed(1)}.${prob.playersLeftKnown ? "" : " Players left were not in the sync, so each club still out uses the 18-point stand-in."}${unset ? ` ${unsetName} has no lineup set, so a live game stays at the 95% cap.` : ""}`;
   return `<div class="winbar-head">
       <span style="color:${colorA}">${esc(nameA)} ${esc(a)}</span>

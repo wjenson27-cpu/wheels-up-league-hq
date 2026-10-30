@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-10-30 6:50 AM PT",
+  "asOf": "2026-10-30 9:17 AM PT",
   "week": 8,
   "season": 2026,
-  "source": "Fantrax home matchups widget, Friday Oct 30 2026, 6:50 AM PT",
-  "note": "Only the featured game was on the home widget. Other Week 8 games stay blank until the score file or a later widget scrape has them.",
+  "source": "Fantrax live scoring (data/livescoring-w8.json), Friday Oct 30 2026, 9:17 AM PT; featured game scores unchanged from the 6:50 AM PT home widget",
+  "note": "Restamped to match data/livescoring-w8.json (9:17 AM PT). Live scoring is the preferred input; this overlay only carries the featured game.",
   "games": [
     {
       "away": "Eagle Ridge Eddies",
