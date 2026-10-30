@@ -5,8 +5,9 @@
  *   node scripts/build-matchups-live.mjs
  *   node scripts/build-matchups-live.mjs --raw /path/to/fantrax-raw.json
  *
- * Reads the files the sync already refreshes, plus an optional overlay for
- * live totals that are not in scores.json yet. Missing numbers stay null.
+ * Reads the files the sync already refreshes. data/livescoring-wN.json is the
+ * preferred live input (score, proj, done / inProgress / yet). The overlay
+ * only fills holes that file left. Missing numbers stay null.
  * The page shows a dash for null. Null is never written as zero.
  *
  * Output schema (schemaVersion 1):
@@ -21,8 +22,9 @@
  *       id, featured, status,   // "live" | "final" | "scheduled"
  *       place,                  // "at" (side A at side B) or "vs"
  *       sideA, sideB: {
- *         teamId, name, color, logo, record,
- *         score, projection, playersLeft   // number or null
+ *         teamId, name, color, logo, record, lineupSet,
+ *         score, projection, playersLeft,   // number or null; playersLeft is yet-to-play
+ *         playersDone, playersInProgress, minutesRemaining
  *       },
  *       winProb: null | {
  *         sideA, sideB,          // 0–1, on a 5% grid (100/0 only when decided)
@@ -158,9 +160,13 @@ function emptySide(team) {
     color: team.color || "#69BE28",
     logo: `img/logos/${team.id}.jpg`,
     record: null,
+    lineupSet: true,
     score: null,
     projection: null,
-    playersLeft: null
+    playersLeft: null,
+    playersDone: null,
+    playersInProgress: null,
+    minutesRemaining: null
   };
 }
 
@@ -226,8 +232,26 @@ function playersLeftFromRoster(data) {
   return left <= ACTIVE_CAP ? left : null;
 }
 
+function clockFromInstant(ms) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Los_Angeles",
+    hourCycle: "h12",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "numeric",
+    minute: "2-digit"
+  }).formatToParts(new Date(ms));
+  const g = (t) => parts.find((p) => p.type === t).value;
+  return `${g("year")}-${g("month")}-${g("day")} ${g("hour")}:${g("minute")} ${g("dayPeriod").toUpperCase()} PT`;
+}
+
 function clockToPt(value) {
   const v = String(value || "").trim();
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(v)) {
+    const ms = Date.parse(v);
+    return Number.isNaN(ms) ? null : clockFromInstant(ms);
+  }
   let m = v.match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{1,2}):(\d{2})(?::(\d{2}))?\s*(AM|PM)?\s*(PT|PDT|PST)$/i);
   if (!m) return null;
   let h = Number(m[4]);
@@ -364,7 +388,8 @@ function gameStatus(game) {
   if (game.status === "final") return "final";
   const a = game.sideA;
   const b = game.sideB;
-  if (a.playersLeft === 0 && b.playersLeft === 0 && a.score != null && b.score != null) return "final";
+  const unset = a.lineupSet === false || b.lineupSet === false;
+  if (!unset && a.playersLeft === 0 && b.playersLeft === 0 && a.score != null && b.score != null) return "final";
   if (a.score != null || b.score != null) return "live";
   return "scheduled";
 }
@@ -379,9 +404,70 @@ function attachWin(game) {
     scoreB: game.sideB.score,
     projB: game.sideB.projection,
     leftB: game.sideB.playersLeft,
+    emptyA: game.sideA.lineupSet === false,
+    emptyB: game.sideB.lineupSet === false,
     final: status === "final"
   });
   game.winProb = prob;
+}
+
+function intOrNull(value) {
+  if (value == null || value === "") return null;
+  const n = Number(value);
+  return Number.isInteger(n) && n >= 0 ? n : null;
+}
+
+/* proj 0 with nobody done, in progress, or yet to play is an unset lineup. */
+function rowLineupSet(row) {
+  const note = String((row && row.note) || "");
+  if (/empty|unset lineup/i.test(note)) return false;
+  const proj = numOrNull(row.proj != null ? row.proj : row.projection);
+  const yet = intOrNull(row.yet != null ? row.yet : row.yetToPlay);
+  const done = intOrNull(row.done);
+  const ip = intOrNull(row.inProgress);
+  if (proj === 0 && yet === 0 && done === 0 && ip === 0) return false;
+  return true;
+}
+
+function sideFromLiveRow(row) {
+  const yet = intOrNull(row.yet != null ? row.yet : row.yetToPlay);
+  return {
+    score: numOrNull(row.score),
+    projection: numOrNull(row.proj != null ? row.proj : row.projection),
+    playersLeft: yet,
+    playersDone: intOrNull(row.done),
+    playersInProgress: intOrNull(row.inProgress),
+    minutesRemaining: intOrNull(row.min != null ? row.min : row.minutesRemaining),
+    lineupSet: rowLineupSet(row)
+  };
+}
+
+function writeSide(side, patch) {
+  if (!side || !patch) return;
+  if (patch.score != null) side.score = patch.score;
+  if (patch.projection != null) side.projection = patch.projection;
+  if (patch.playersLeft != null) side.playersLeft = patch.playersLeft;
+  if (patch.playersDone != null) side.playersDone = patch.playersDone;
+  if (patch.playersInProgress != null) side.playersInProgress = patch.playersInProgress;
+  if (patch.minutesRemaining != null) side.minutesRemaining = patch.minutesRemaining;
+  if (patch.lineupSet != null) side.lineupSet = patch.lineupSet;
+}
+
+/* Fantrax live scoring: matchups is a list of [club, club] rows. Preferred over the overlay. */
+function applyLiveScoring(matchups, teams, live) {
+  const list = live && Array.isArray(live.matchups) ? live.matchups : [];
+  let applied = 0;
+  for (const pair of list) {
+    if (!Array.isArray(pair) || pair.length < 2) continue;
+    const idA = resolveId(pair[0] && pair[0].team, teams);
+    const idB = resolveId(pair[1] && pair[1].team, teams);
+    const game = idA && idB ? findPair(matchups, idA, idB) : null;
+    if (!game) continue;
+    writeSide(sideById(game, idA), sideFromLiveRow(pair[0]));
+    writeSide(sideById(game, idB), sideFromLiveRow(pair[1]));
+    applied += 1;
+  }
+  return applied;
 }
 
 function newestRosterClock(rosterFiles) {
@@ -509,6 +595,23 @@ export async function buildMatchups(options = {}) {
   }
   if (!asOf) asOf = newestRosterClock(rosterPayloads);
   if (!asOf) asOf = clockToPt(scores && (scores.asOf || scores.updated)) || `${start} 12:00 PM PT`;
+
+  /* Live scoring wins over the overlay, the raw header, and roster counts. */
+  let liveScoring = null;
+  const liveRel = `data/livescoring-w${week}.json`;
+  try {
+    liveScoring = await readJson(liveRel);
+  } catch {
+    liveScoring = null;
+  }
+  if (liveScoring && (!liveScoring.week || Number(liveScoring.week) === week)) {
+    const applied = applyLiveScoring(matchups, teams, liveScoring);
+    if (applied) {
+      sources.push(liveRel);
+      const clock = clockToPt(liveScoring.asOf || liveScoring.scraped);
+      if (clock) asOf = clock;
+    }
+  }
 
   for (const game of matchups) {
     const ids = [game.sideA.teamId, game.sideB.teamId];

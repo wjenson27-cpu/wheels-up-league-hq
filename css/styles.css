@@ -2029,6 +2029,8 @@ summary:focus-visible {
   margin-top: 0.85rem;
   background: rgba(138, 147, 153, 0.25);
 }
+.live-unset { font-weight: 800; color: var(--text); }
+.live-score.is-unset { font-size: 1.35rem; color: var(--text-dim) !important; }
 .live-nowin,
 .live-spread {
   margin: 0.4rem 0 0;

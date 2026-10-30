@@ -75,6 +75,21 @@ function decided(scoreA, scoreB) {
   };
 }
 
+/* Higher projected total, still inside the live 5–95 band. */
+function liveCap(totalA, totalB, playersLeftKnown) {
+  let pctA = 50;
+  if (totalA > totalB) pctA = FORMULA.liveCeil;
+  else if (totalA < totalB) pctA = FORMULA.liveFloor;
+  return {
+    sideA: unit(pctA),
+    sideB: unit(100 - pctA),
+    mu: round1(totalA - totalB),
+    sigma: 0,
+    decided: false,
+    playersLeftKnown
+  };
+}
+
 function sigmaFor(left, remain) {
   if (left === 0) return 0;
   if (left != null && left > 0) return FORMULA.playerSd * Math.sqrt(left);
@@ -89,7 +104,9 @@ export function winProbability(input) {
   if (scoreA == null || scoreB == null) return null;
   const leftA = leftCount(input.leftA);
   const leftB = leftCount(input.leftB);
-  const finished = input.final === true || (leftA === 0 && leftB === 0);
+  const unset = input.emptyA === true || input.emptyB === true;
+  /* An unset lineup is not a finished game. A 100 / 0 bar would treat "no lineup" as a lock. */
+  const finished = !unset && (input.final === true || (leftA === 0 && leftB === 0));
   if (finished) return decided(scoreA, scoreB);
 
   const projA = num(input.projA);
@@ -102,7 +119,10 @@ export function winProbability(input) {
   const sigA = sigmaFor(leftA, remainA);
   const sigB = sigmaFor(leftB, remainB);
   const sigma = Math.sqrt(sigA * sigA + sigB * sigB);
-  if (sigma === 0) return decided(scoreA + remainA, scoreB + remainB);
+  if (sigma === 0) {
+    if (unset) return liveCap(scoreA + remainA, scoreB + remainB, leftA != null && leftB != null);
+    return decided(scoreA + remainA, scoreB + remainB);
+  }
 
   const p = phi(mu / sigma);
   let pctA = Math.round(p * (100 / FORMULA.roundTo)) * FORMULA.roundTo;
@@ -147,5 +167,13 @@ export function assertFormula() {
   const counted = winProbability({ scoreA: 100, projA: 100, leftA: 0, scoreB: 90, projB: 140, leftB: 4 });
   if (!counted || counted.sideA !== 0.05 || counted.playersLeftKnown !== true || counted.sigma !== 16) {
     throw new Error("counted fixture was " + JSON.stringify(counted));
+  }
+  const unset = winProbability({
+    scoreA: 41, projA: 211.49, leftA: 12,
+    scoreB: 0, projB: 0, leftB: 0,
+    emptyB: true, final: true
+  });
+  if (!unset || unset.sideA !== 0.95 || unset.sideB !== 0.05 || unset.decided !== false) {
+    throw new Error("unset lineup fixture was " + JSON.stringify(unset));
   }
 }

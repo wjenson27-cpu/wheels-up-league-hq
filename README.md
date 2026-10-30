@@ -47,7 +47,8 @@ Automated jobs write these files and push them to `main` several times a day. **
 | `data/teams.json` | 14 clubs: names, owners, colors, logos. The site does not use `powerRank`, `standingsRank`, `record`, or points from this file. |
 | `data/scores.json` | Latest week’s matchups. |
 | `data/matchups-live.json` | Live matchups page. Built by `scripts/build-matchups-live.mjs`. Do not hand-edit; rebuild it. |
-| `data/matchups-live.overlay.json` | Optional live totals the score file does not have yet (score, projection, players left). |
+| `data/livescoring-wN.json` | Fantrax live-scoring read for week N. Preferred input for the live page. |
+| `data/matchups-live.overlay.json` | Optional live totals used only where the live-scoring file has a hole. |
 | `data/scores-wN-2026.json` | Older weeks, when those files exist (`scores-w1-2026.json`, and so on). |
 | `data/schedule.json` | Season matchup pairings. The playoff sim reads `weeks`. |
 | `data/rosters/*.json` | Depth chart for each club. |
@@ -91,7 +92,9 @@ The Live Matchups page reads this file and nothing else for the slate. Rebuild i
 node scripts/build-matchups-live.mjs
 ```
 
-The builder takes pairings from `data/schedule.json` → `weeks`. If `data/scores.json` is still a finished week, the live slate is the next scheduled week. A same-week `scores.json` fills score, and any `awayProjection` / `homeProjection` / `awayPlayersLeft` / `homePlayersLeft` (or `awayProj`, `homeProj`, `awayYetToPlay`, `homeYetToPlay`) on those games. `data/matchups-live.overlay.json` fills only the holes those files left. A roster file can add `playersLeft` (an integer from 0 to 14) or per-player `played` / `yetToPlay` flags; a depth chart of plain names does not invent a headcount. Pass `--raw` with a Fantrax scrape that has `week8_header` to fill the same holes from that widget.
+The builder takes pairings from `data/schedule.json` → `weeks`. If `data/scores.json` is still a finished week, the live slate is the next scheduled week. A same-week `scores.json` fills score, and any projection or players-left fields on those games. `data/livescoring-wN.json` is preferred over that and over the overlay: each matchup is a pair of club rows with `score`, `proj`, `done`, `inProgress`, `yet`, and `min`. `yet` is the players-still-to-play count the win formula uses. `data/matchups-live.overlay.json` fills only holes the live-scoring file left. A roster file can add `playersLeft` (an integer from 0 to 14) or per-player `played` / `yetToPlay` flags when no live-scoring row covers that club. A depth chart of plain names does not invent a headcount. Pass `--raw` with a Fantrax scrape that has `week8_header` to fill the same holes from that widget.
+
+A row with projection 0 and nobody done, in progress, or yet to play is an unset lineup. The page says "No lineup set" and the win bar stays inside the live 5–95% cap instead of calling it a lock.
 
 Missing score, projection, or players-left stays `null`. The page shows a dash. Null is not stored as zero.
 

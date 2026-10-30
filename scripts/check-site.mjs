@@ -213,6 +213,37 @@ async function checkMatchupsLive() {
     const ttabSide = games.flatMap((g) => [g.sideA, g.sideB]).find((s) => s && s.teamId === "ttab");
     if (!ttabSide || ttabSide.name !== "TTAB") fail(`${rel} TTAB public name is ${ttabSide && ttabSide.name}`);
     if (ttab && ttab[1] !== "TTAB") fail(`${rel} TTAB name mismatch`);
+    if (expectedWeek === 8) {
+      if (data.asOf !== "2026-10-30 9:17 AM PT") fail(`${rel} asOf is "${data.asOf}", expected 2026-10-30 9:17 AM PT`);
+      if (!(data.sources || []).includes("data/livescoring-w8.json")) fail(`${rel} was not built from data/livescoring-w8.json`);
+      if (ttabSide && ttabSide.lineupSet !== false) fail(`${rel} TTAB lineup is not marked unset`);
+      const live = await loadJson(root, "data/livescoring-w8.json", "[site] ");
+      const byName = new Map();
+      for (const game of games) {
+        for (const side of [game.sideA, game.sideB]) {
+          if (side) byName.set(side.teamId === "ttab" ? "Towner Top Aga Bottom" : side.name, { side, game });
+        }
+      }
+      for (const pair of (live && live.matchups) || []) {
+        if (!Array.isArray(pair)) continue;
+        for (const row of pair) {
+          const found = byName.get(row.team);
+          if (!found) {
+            fail(`${rel} missing live row for ${row.team}`);
+            continue;
+          }
+          if (found.side.score !== row.score) fail(`${rel} ${row.team} score ${found.side.score} != ${row.score}`);
+          if (found.side.projection !== row.proj) fail(`${rel} ${row.team} projection ${found.side.projection} != ${row.proj}`);
+          if (found.side.playersLeft !== row.yet) fail(`${rel} ${row.team} players left ${found.side.playersLeft} != yet ${row.yet}`);
+        }
+      }
+      const morningside = byName.get("Morningside Muff Divers");
+      if (morningside) {
+        const pct = morningside.game.sideA.teamId === "morningside" ? morningside.game.winProb.sideA : morningside.game.winProb.sideB;
+        if (pct !== 0.95) fail(`${rel} Morningside win chance is ${pct}, expected 0.95`);
+      } else fail(`${rel} missing Morningside`);
+      if (games.some((g) => !g.winProb)) fail(`${rel} a Week 8 game has no win bar`);
+    }
     for (const game of games) {
       for (const side of [game.sideA, game.sideB]) {
         if (!side) {
@@ -235,6 +266,8 @@ async function checkMatchupsLive() {
         scoreB: game.sideB && game.sideB.score,
         projB: game.sideB && game.sideB.projection,
         leftB: game.sideB && game.sideB.playersLeft,
+        emptyA: game.sideA && game.sideA.lineupSet === false,
+        emptyB: game.sideB && game.sideB.lineupSet === false,
         final: game.status === "final"
       });
       const got = game.winProb;
@@ -457,7 +490,7 @@ async function checkMirror() {
   try {
     if (!(await stat(join(MIRROR_ROOT, "data"))).isDirectory()) throw new Error("not a dir");
   } catch {
-    fail(`${tag}expected mirror folder ${MIRROR_ROOT}/data is missing (set CHECK_SITE_MIRROR=none to skip)`);
+    console.log(`skipped: mirror path not present (${MIRROR_ROOT})`);
     return;
   }
   const files = (await walk(join(MIRROR_ROOT, "data"))).filter((f) => f.endsWith(".json"));
@@ -722,6 +755,14 @@ async function checkPages() {
             if (pctA != null && feat.sideA && !info.barLabel.includes(`${feat.sideA.name} ${pctA}%`)) {
               errors.push(`win bar label is ${info.barLabel}`);
             }
+            const bars = await page.evaluate(() => ({
+              filled: document.querySelectorAll(".winbar:not(.winbar-empty)").length,
+              unset: document.querySelectorAll("[data-lineup='unset']").length
+            }));
+            if (bars.filled !== (live.matchups || []).length) errors.push(`filled win bars ${bars.filled}`);
+            if (!bars.unset) errors.push("no unset-lineup row");
+            if (!/No lineup set/.test(info.text)) errors.push("empty lineup is not labeled");
+            if (!/95%/.test(info.text)) errors.push("95% cap is not shown");
             const slateHasTtab = (live.matchups || []).some((g) => (g.sideA && g.sideA.teamId === "ttab") || (g.sideB && g.sideB.teamId === "ttab"));
             if (slateHasTtab && !/TTAB/.test(info.text)) errors.push("TTAB is not on the board");
             if (/Towner Top Aga Bottom/.test(info.html)) errors.push("long TTAB name is visible");

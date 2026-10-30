@@ -19,7 +19,7 @@ function publicName(side) {
 
 function pts(n) {
   if (n == null || n === "" || !Number.isFinite(Number(n))) return "—";
-  return WUC.formatPts(n);
+  return Number(n).toLocaleString("en-US", { maximumFractionDigits: 2 });
 }
 
 function leftText(n) {
@@ -58,10 +58,15 @@ function teamRow(side) {
   const rec = side.record ? ` · ${esc(side.record)}` : "";
   const inner = `<span class="team-inline">${mark}<span>${esc(name)}</span></span>`;
   const who = id ? `<a class="team-link" href="team.html?id=${encodeURIComponent(id)}">${inner}</a>` : inner;
-  return `<div class="live-side">
+  const unset = side.lineupSet === false;
+  const meta = unset
+    ? `No lineup set${rec}`
+    : `Proj ${esc(pts(side.projection))} · ${esc(leftText(side.playersLeft))}${rec}`;
+  const score = unset ? "—" : pts(side.score);
+  return `<div class="live-side"${unset ? ' data-lineup="unset"' : ""}>
     <div class="live-who">${who}</div>
-    <div class="live-score" style="color:${color}">${esc(pts(side.score))}</div>
-    <p class="live-meta">Proj ${esc(pts(side.projection))} · ${esc(leftText(side.playersLeft))}${rec}</p>
+    <div class="live-score${unset ? " is-unset" : ""}" style="color:${color}">${esc(score)}</div>
+    <p class="live-meta${unset ? " live-unset" : ""}">${meta}</p>
   </div>`;
 }
 
@@ -77,9 +82,11 @@ function winBar(game) {
   const b = pctText(prob.sideB);
   const colorA = safeColor(game.sideA.color);
   const colorB = safeColor(game.sideB.color);
+  const unset = game.sideA.lineupSet === false || game.sideB.lineupSet === false;
+  const unsetName = game.sideA.lineupSet === false ? nameA : nameB;
   const spread = prob.decided
     ? "Posted result. The curve is not used once the game is finished."
-    : `Expected margin for ${nameA}: ${signed(prob.mu)} · spread ${Number(prob.sigma).toFixed(1)}.${prob.playersLeftKnown ? "" : " Players left were not in the sync, so each club still out uses the 18-point stand-in."}`;
+    : `Expected margin for ${nameA}: ${signed(prob.mu)} · spread ${Number(prob.sigma).toFixed(1)}.${prob.playersLeftKnown ? "" : " Players left were not in the sync, so each club still out uses the 18-point stand-in."}${unset ? ` ${unsetName} has no lineup set, so a live game stays at the 95% cap.` : ""}`;
   return `<div class="winbar-head">
       <span style="color:${colorA}">${esc(nameA)} ${esc(a)}</span>
       <span style="color:${colorB}">${esc(b)} ${esc(nameB)}</span>

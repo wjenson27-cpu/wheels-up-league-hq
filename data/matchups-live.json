@@ -6,7 +6,7 @@
   "weekEnd": "2026-11-04",
   "windowLabel": "Oct 29 – Nov 4, 2026",
   "timezone": "PT",
-  "asOf": "2026-10-30 6:50 AM PT",
+  "asOf": "2026-10-30 9:17 AM PT",
   "status": "live",
   "formula": {
     "id": "normal-approx-v1",
@@ -22,7 +22,8 @@
     "data/scores.json",
     "data/teams.json",
     "data/rosters/",
-    "data/matchups-live.overlay.json"
+    "data/matchups-live.overlay.json",
+    "data/livescoring-w8.json"
   ],
   "matchups": [
     {
@@ -36,9 +37,13 @@
         "color": "#69BE28",
         "logo": "img/logos/eddies.jpg",
         "record": "5-2",
+        "lineupSet": true,
         "score": 33,
-        "projection": 201.1,
-        "playersLeft": null
+        "projection": 201.09,
+        "playersLeft": 12,
+        "playersDone": 2,
+        "playersInProgress": 0,
+        "minutesRemaining": 720
       },
       "sideB": {
         "teamId": "ultron",
@@ -46,23 +51,27 @@
         "color": "#E11D48",
         "logo": "img/logos/ultron.jpg",
         "record": "3-4",
+        "lineupSet": true,
         "score": 0,
-        "projection": 202.8,
-        "playersLeft": null
+        "projection": 202.87,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
       },
       "winProb": {
-        "sideA": 0.45,
-        "sideB": 0.55,
-        "mu": -1.7,
-        "sigma": 25.5,
+        "sideA": 0.5,
+        "sideB": 0.5,
+        "mu": -1.8,
+        "sigma": 40.8,
         "decided": false,
-        "playersLeftKnown": false
+        "playersLeftKnown": true
       }
     },
     {
       "id": "w8-doubtpfizer-slumlords",
       "featured": false,
-      "status": "scheduled",
+      "status": "live",
       "place": "vs",
       "sideA": {
         "teamId": "doubtpfizer",
@@ -70,9 +79,13 @@
         "color": "#EC4899",
         "logo": "img/logos/doubtpfizer.jpg",
         "record": "3-4",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 27,
+        "projection": 200.92,
+        "playersLeft": 13,
+        "playersDone": 1,
+        "playersInProgress": 0,
+        "minutesRemaining": 780
       },
       "sideB": {
         "teamId": "slumlords",
@@ -80,16 +93,27 @@
         "color": "#8B5CF6",
         "logo": "img/logos/slumlords.jpg",
         "record": "3-4",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 0,
+        "projection": 186.62,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
       },
-      "winProb": null
+      "winProb": {
+        "sideA": 0.65,
+        "sideB": 0.35,
+        "mu": 14.3,
+        "sigma": 41.6,
+        "decided": false,
+        "playersLeftKnown": true
+      }
     },
     {
       "id": "w8-morningside-ttab",
       "featured": false,
-      "status": "scheduled",
+      "status": "live",
       "place": "vs",
       "sideA": {
         "teamId": "morningside",
@@ -97,9 +121,13 @@
         "color": "#84CC16",
         "logo": "img/logos/morningside.jpg",
         "record": "3-4",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 41,
+        "projection": 211.49,
+        "playersLeft": 12,
+        "playersDone": 2,
+        "playersInProgress": 0,
+        "minutesRemaining": 720
       },
       "sideB": {
         "teamId": "ttab",
@@ -107,16 +135,27 @@
         "color": "#A78BFA",
         "logo": "img/logos/ttab.jpg",
         "record": "3-4",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": false,
+        "score": 0,
+        "projection": 0,
+        "playersLeft": 0,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 0
       },
-      "winProb": null
+      "winProb": {
+        "sideA": 0.95,
+        "sideB": 0.05,
+        "mu": 211.5,
+        "sigma": 27.7,
+        "decided": false,
+        "playersLeftKnown": true
+      }
     },
     {
       "id": "w8-hyper-substation",
       "featured": false,
-      "status": "scheduled",
+      "status": "live",
       "place": "vs",
       "sideA": {
         "teamId": "hyper",
@@ -124,9 +163,13 @@
         "color": "#14B8A6",
         "logo": "img/logos/hyper.jpg",
         "record": "3-4",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 0,
+        "projection": 201.59,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
       },
       "sideB": {
         "teamId": "substation",
@@ -134,16 +177,27 @@
         "color": "#EAB308",
         "logo": "img/logos/substation.jpg",
         "record": "4-3",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 35,
+        "projection": 196.14,
+        "playersLeft": 12,
+        "playersDone": 2,
+        "playersInProgress": 0,
+        "minutesRemaining": 720
       },
-      "winProb": null
+      "winProb": {
+        "sideA": 0.55,
+        "sideB": 0.45,
+        "mu": 5.5,
+        "sigma": 40.8,
+        "decided": false,
+        "playersLeftKnown": true
+      }
     },
     {
       "id": "w8-pocket-newman",
       "featured": false,
-      "status": "scheduled",
+      "status": "live",
       "place": "vs",
       "sideA": {
         "teamId": "pocket",
@@ -151,9 +205,13 @@
         "color": "#3B82F6",
         "logo": "img/logos/pocket.jpg",
         "record": "5-2",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 11,
+        "projection": 195.37,
+        "playersLeft": 13,
+        "playersDone": 1,
+        "playersInProgress": 0,
+        "minutesRemaining": 780
       },
       "sideB": {
         "teamId": "newman",
@@ -161,16 +219,27 @@
         "color": "#22D3EE",
         "logo": "img/logos/newman.jpg",
         "record": "3-4",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 86,
+        "projection": 232.86,
+        "playersLeft": 11,
+        "playersDone": 3,
+        "playersInProgress": 0,
+        "minutesRemaining": 660
       },
-      "winProb": null
+      "winProb": {
+        "sideA": 0.15,
+        "sideB": 0.85,
+        "mu": -37.5,
+        "sigma": 39.2,
+        "decided": false,
+        "playersLeftKnown": true
+      }
     },
     {
       "id": "w8-saltese-dongers",
       "featured": false,
-      "status": "scheduled",
+      "status": "live",
       "place": "vs",
       "sideA": {
         "teamId": "saltese",
@@ -178,9 +247,13 @@
         "color": "#F59E0B",
         "logo": "img/logos/saltese.jpg",
         "record": "3-4",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 0,
+        "projection": 174.39,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
       },
       "sideB": {
         "teamId": "dongers",
@@ -188,16 +261,27 @@
         "color": "#F97316",
         "logo": "img/logos/dongers.jpg",
         "record": "1-6",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 9,
+        "projection": 205.2,
+        "playersLeft": 13,
+        "playersDone": 1,
+        "playersInProgress": 0,
+        "minutesRemaining": 780
       },
-      "winProb": null
+      "winProb": {
+        "sideA": 0.25,
+        "sideB": 0.75,
+        "mu": -30.8,
+        "sigma": 41.6,
+        "decided": false,
+        "playersLeftKnown": true
+      }
     },
     {
       "id": "w8-lab-goats",
       "featured": false,
-      "status": "scheduled",
+      "status": "live",
       "place": "vs",
       "sideA": {
         "teamId": "lab",
@@ -205,9 +289,13 @@
         "color": "#EF4444",
         "logo": "img/logos/lab.jpg",
         "record": "5-2",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 0,
+        "projection": 205.16,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
       },
       "sideB": {
         "teamId": "goats",
@@ -215,11 +303,22 @@
         "color": "#D97706",
         "logo": "img/logos/goats.jpg",
         "record": "5-2",
-        "score": null,
-        "projection": null,
-        "playersLeft": null
+        "lineupSet": true,
+        "score": 42,
+        "projection": 185.57,
+        "playersLeft": 10,
+        "playersDone": 3,
+        "playersInProgress": 0,
+        "minutesRemaining": 600
       },
-      "winProb": null
+      "winProb": {
+        "sideA": 0.7,
+        "sideB": 0.3,
+        "mu": 19.6,
+        "sigma": 39.2,
+        "decided": false,
+        "playersLeftKnown": true
+      }
     }
   ]
 }

@@ -1,0 +1,9 @@
+{"source":"Fantrax live scoring, read-only box scrape","asOf":"2026-10-30T09:17:00-07:00","week":8,"period":"Oct 29 - Nov 4, 2026","columnsNote":"counts read as done/inProgress/yetToPlay; minutesRemaining; winShare is Fantrax's own %",
+"matchups":[
+[{"team":"Eagle Ridge Eddies","score":33,"proj":201.09,"done":2,"inProgress":0,"yet":12,"min":720,"fantraxPct":49},{"team":"Ultron","score":0,"proj":202.87,"done":0,"inProgress":0,"yet":14,"min":840,"fantraxPct":51}],
+[{"team":"Little Ass Boys","score":0,"proj":205.16,"done":0,"inProgress":0,"yet":14,"min":840,"fantraxPct":59},{"team":"Valley Old Goats","score":42,"proj":185.57,"done":3,"inProgress":0,"yet":10,"min":600,"fantraxPct":41}],
+[{"team":"Morningside Muff Divers","score":41,"proj":211.49,"done":2,"inProgress":0,"yet":12,"min":720,"fantraxPct":100},{"team":"Towner Top Aga Bottom","score":0,"proj":0,"done":0,"inProgress":0,"yet":0,"min":0,"fantraxPct":0,"note":"Fantrax shows empty/unset lineup"}],
+[{"team":"Mrs. Doubtpfizer","score":27,"proj":200.92,"done":1,"inProgress":0,"yet":13,"min":780,"fantraxPct":58},{"team":"Indian Trail Slumlords","score":0,"proj":186.62,"done":0,"inProgress":0,"yet":14,"min":840,"fantraxPct":42}],
+[{"team":"Pocket Agents","score":11,"proj":195.37,"done":1,"inProgress":0,"yet":13,"min":780,"fantraxPct":29},{"team":"Newman Lake Sleep Paralysis Demons","score":86,"proj":232.86,"done":3,"inProgress":0,"yet":11,"min":660,"fantraxPct":71}],
+[{"team":"Saltese Slamm","score":0,"proj":174.39,"done":0,"inProgress":0,"yet":14,"min":840,"fantraxPct":34},{"team":"Drummond Dongers","score":9,"proj":205.20,"done":1,"inProgress":0,"yet":13,"min":780,"fantraxPct":66}],
+[{"team":"The Hypersecretors","score":0,"proj":201.59,"done":0,"inProgress":0,"yet":14,"min":840,"fantraxPct":52},{"team":"Substation","score":35,"proj":196.14,"done":2,"inProgress":0,"yet":12,"min":720,"fantraxPct":48}]]}
