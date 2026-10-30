@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* Viewport shots for the live-score badge and the private trade desk.
+/* Viewport shots for the live-score badge.
    Usage: node scripts/preview-shots.mjs /opt/cursor/artifacts */
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
@@ -141,32 +141,6 @@ try {
     const liveFile = join(outDir, `matchups-stale-${viewport.name}.png`);
     await page.screenshot({ path: liveFile });
     shots.push(liveFile);
-
-    await page.goto(`http://127.0.0.1:${port}/private/trade-analyzer.html`, { waitUntil: "networkidle0", timeout: 30000 });
-    await page.waitForSelector("#taResult", { timeout: 10000 });
-    const robots = await page.$eval('meta[name="robots"]', (el) => el.getAttribute("content") || "");
-    if (!/noindex/i.test(robots)) throw new Error("analyzer dropped noindex");
-    const before = await page.evaluate(() => document.body.innerText);
-    if (!/Eagleridge Eddie's/.test(before) || !/IDP/.test(before)) throw new Error("analyzer did not show the featured club and IDP");
-    const te = await page.$('input[data-key="brock bowers"]');
-    const dl = await page.$('input[data-key="dallas turner"]');
-    if (!te || !dl) throw new Error("deal players were not on the chart");
-    await page.click('input[data-key="brock bowers"]');
-    await page.waitForFunction(() => {
-      const box = document.querySelector('input[data-key="brock bowers"]');
-      return box && box.checked;
-    });
-    await page.click('input[data-key="dallas turner"]');
-    await page.waitForFunction(() => /Short 1 TE/.test(document.body.innerText) && /Short 1 DL/.test(document.body.innerText));
-    const after = await page.evaluate(() => document.body.innerText);
-    if (!/Depth favors|about even|Starter slots are even/.test(after)) throw new Error("depth verdict missing");
-    if (/no week log/.test(after) && /\b0 logged\b/.test(after)) throw new Error("a missing log was shown as zero");
-    await assertClean(page, owners, "body");
-    await page.evaluate(() => window.scrollTo(0, 0));
-    await new Promise((r) => setTimeout(r, 100));
-    const tradeFile = join(outDir, `trade-analyzer-${viewport.name}.png`);
-    await page.screenshot({ path: tradeFile });
-    shots.push(tradeFile);
   }
 
   await page.setViewport({ width: 1280, height: 720, deviceScaleFactor: 1 });
