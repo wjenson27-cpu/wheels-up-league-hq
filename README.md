@@ -4,7 +4,7 @@ Clubhouse site for the **Wheels Up Collective**, a 14-team IDP league on [Fantra
 
 It is a static site: plain HTML, CSS, and JavaScript. No build step. GitHub Pages serves the `main` branch at <https://wjenson27-cpu.github.io/wheels-up-league-hq/>.
 
-**The Eddies:** public name for the club Fantrax still calls Eagle Ridge Eddies. Pages and `scripts/build-matchups-live.mjs` match on that Fantrax name (and on team id `eddies`) and display **The Eddies**. `data/livescoring-wN.json` keeps the Fantrax name as a join key. The owner is not shown.  
+**Eagleridge Eddie's:** public name for the club Fantrax still calls Eagle Ridge Eddies. Pages and `scripts/build-matchups-live.mjs` match on that Fantrax name (and on team id `eddies`) and display **Eagleridge Eddie's**. `data/livescoring-wN.json` keeps the Fantrax name as a join key. The owner is not shown.  
 **Draft:** Aug 30, 2026  
 **Commissioner:** Luke Sahlberg (ThiccSwede)
 
@@ -72,7 +72,7 @@ The 2024 and 2025 Fantrax games behind the team-page table **All-time vs. each t
 
 ```json
 { "season": 2025, "week": 15, "round": "playoff", "bracket": "Playoffs R1",
-  "teamA": "eddies", "nameA": "The Eddies", "scoreA": 408,
+  "teamA": "eddies", "nameA": "Eagleridge Eddie's", "scoreA": 408,
   "teamB": "saltese", "nameB": "Saltese Slamm", "scoreB": 181 }
 ```
 
@@ -102,7 +102,7 @@ Missing score, projection, or players-left stays `null`. The page shows a dash. 
 
 Win chance is `formula.id` `normal-approx-v1`, calculated in `js/live-prob.js` (the page and the builder share that file). It is a normal approximation, rounded to the nearest 5%. A game still going stays between 5% and 95%. A finished game is 100 / 0, or 50 / 50 on a tie. If either projection is missing, `winProb` is `null` and the bar is blank. Each starter still out is an 8-point standard deviation. When the headcount is missing, a club with projected points still out uses an 18-point stand-in, and the card says so.
 
-The Eddies vs Ultron game is `featured` and listed first. The builder writes the public name **The Eddies** even when the sync file still says Eagle Ridge Eddies. The public name for Towner Top Aga Bottom is `TTAB`. Do not put owner names, bids, claims, or trades in this file or the overlay.
+Eagleridge Eddie's vs Ultron is `featured` and listed first. The builder writes the public name **Eagleridge Eddie's** even when the sync file still says Eagle Ridge Eddies. The public name for Towner Top Aga Bottom is `TTAB`. Do not put owner names, bids, claims, or trades in this file or the overlay.
 
 ## Shared code
 
@@ -118,13 +118,13 @@ The sim reads **`data/schedule.json` → `weeks`**, the same list weeks 1–5 al
 ```json
 "weeks": {
   "6": [
-    ["The Eddies", "Mrs. Doubtpfizer"],
+    ["Eagleridge Eddie's", "Mrs. Doubtpfizer"],
     ["Pocket Agents", "Ultron"]
   ]
 }
 ```
 
-Use the club’s `name` from `teams.json` (for example `Towner Top Aga Bottom`, not `TTAB`). The Eddies’ name there is `The Eddies`. A data job may still write the Fantrax name `Eagle Ridge Eddies`; the site matches that string and displays The Eddies. When a data job adds weeks 6–14 in that shape, those real matchups are used automatically. A week that is missing from `weeks` is still simulated, but the pairing is random. The per-team arrays elsewhere in the file are not what the sim reads.
+Use the club’s `name` from `teams.json` (for example `Towner Top Aga Bottom`, not `TTAB`). This club’s name there is `Eagleridge Eddie's`. A data job may still write the Fantrax name `Eagle Ridge Eddies`; the site matches that string and displays Eagleridge Eddie's. When a data job adds weeks 6–14 in that shape, those real matchups are used automatically. A week that is missing from `weeks` is still simulated, but the pairing is random. The per-team arrays elsewhere in the file are not what the sim reads.
 
 Power rank (the pill that says `Power #3 (Wk 5)`) comes from `data/rankings.json`: the `rankings` array, matched on `teamId`, and the file’s `week`. If the file or that row has `pendingPublish: true`, or the club is not in the array, the pill is hidden. `teams.json` `powerRank` is never shown.
 

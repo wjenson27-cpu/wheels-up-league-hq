@@ -213,7 +213,7 @@ async function checkMatchupsLive() {
       if (!first || first.featured !== true || !ids.includes("eddies") || !ids.includes("ultron")) {
         fail(`${rel} does not feature Eddies vs Ultron first`);
       }
-      if (first && first.sideA && first.sideA.name !== "The Eddies") fail(`${rel} featured side A is ${first.sideA && first.sideA.name}`);
+      if (first && first.sideA && first.sideA.name !== "Eagleridge Eddie's") fail(`${rel} featured side A is ${first.sideA && first.sideA.name}`);
       if (first && first.sideB && first.sideB.name !== "Ultron") fail(`${rel} featured side B is ${first.sideB && first.sideB.name}`);
     } else if (games.some((g) => g.featured) && (!first || first.featured !== true)) {
       fail(`${rel} featured matchup is not first`);
@@ -688,12 +688,12 @@ async function checkPages() {
             const html = document.documentElement ? document.documentElement.innerHTML : "";
             const ownerBill = [...document.querySelectorAll("td.col-owner, td.owner-col, .rank-meta, #teamLede")].some((el) => /\bBill\b/.test(el.textContent || ""));
             return {
-              eagle: /Eagle Ridge Eddies/.test(text),
+              eagle: /Eagle Ridge Eddies/.test(text) || /\bThe Eddies\b/.test(text),
               billTeam: html.includes("billTeam"),
               ownerBill
             };
           });
-          if (privacy.eagle) errors.push("page shows Eagle Ridge Eddies");
+          if (privacy.eagle) errors.push("page shows an old Eddies name");
           if (privacy.billTeam) errors.push("page contains billTeam");
           if (privacy.ownerBill) errors.push("owner label Bill is visible");
           if (name === "trades.html") {
@@ -737,7 +737,7 @@ async function checkPages() {
               const chips = [...document.querySelectorAll("#roster .chip")].map((el) => el.textContent.trim());
               const count = (name) => chips.filter((n) => n === name).length;
               return {
-                ok: /The Eddies/.test(text) && !/Eagle Ridge Eddies/.test(text) && Boolean(document.getElementById("roster")),
+                ok: /Eagleridge Eddie's/.test(text) && !/Eagle Ridge Eddies/.test(text) && !/\bThe Eddies\b/.test(text) && Boolean(document.getElementById("roster")),
                 chars: count("Zach Charbonnet"),
                 etienne: count("Travis Etienne"),
                 raw: /W1 FINAL/.test(text),
@@ -801,7 +801,7 @@ async function checkPages() {
               errors.push("featured card names do not match the JSON");
             }
             if (feat.sideA && feat.sideA.teamId === "eddies" && feat.sideB && feat.sideB.teamId === "ultron") {
-              if (!/The Eddies vs Ultron/.test(info.firstText)) errors.push("featured card is not Eddies vs Ultron");
+              if (!/Eagleridge Eddie's vs Ultron/.test(info.firstText)) errors.push("featured card is not Eagleridge Eddie's vs Ultron");
             }
             if (pctA != null && (!info.firstText.includes(`${pctA}%`) || !info.firstText.includes(`${pctB}%`))) {
               errors.push(`featured win chance missing ${pctA}/${pctB}`);
@@ -836,7 +836,7 @@ async function checkPages() {
               return {
                 rows,
                 eddiesCard: Boolean(document.getElementById("eddiesCard")),
-                eddiesHeading: [...document.querySelectorAll("h1,h2")].some((el) => /Eagle Ridge Eddies|The Eddies/.test(el.textContent)),
+                eddiesHeading: [...document.querySelectorAll("h1,h2")].some((el) => /Eagle Ridge Eddies|\bThe Eddies\b|Eagleridge Eddie's/.test(el.textContent)),
                 ranks
               };
             });

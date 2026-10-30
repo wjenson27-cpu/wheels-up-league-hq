@@ -35,6 +35,8 @@
     saltese: "saltese",
     "eagle ridge eddies": "eddies",
     "the eddies": "eddies",
+    "eagleridge eddie s": "eddies",
+    "eagleridge eddies": "eddies",
     eddies: "eddies",
     "indian trail slumlords": "slumlords",
     slumlords: "slumlords",
@@ -65,16 +67,24 @@
       .trim();
   }
 
-  /* Fantrax still writes "Eagle Ridge Eddies". The public name is The Eddies.
-     Keep the Fantrax string as a join key (ALIAS_TO_ID) and map it here. */
+  /* Fantrax still writes "Eagle Ridge Eddies". The public name is Eagleridge Eddie's.
+     Keep the Fantrax string as a join key (ALIAS_TO_ID) and map it here.
+     Apostrophe is a straight ' so JSON and double-quoted JS keep it literal. */
+  const PUBLIC_EDDIES = "Eagleridge Eddie's";
+
   function ownerIsBill(owner) {
     return /\bBill\b/.test(String(owner || ""));
   }
 
+  function isEddiesLabel(name) {
+    const n = norm(name);
+    return n === "eagle ridge eddies" || n === "the eddies" || n === "eagleridge eddie s" || n === "eagleridge eddies";
+  }
+
   function publishTeam(team) {
     if (!team || typeof team !== "object") return team;
-    if (team.id === "eddies" || norm(team.name) === "eagle ridge eddies") {
-      team.name = "The Eddies";
+    if (team.id === "eddies" || isEddiesLabel(team.name)) {
+      team.name = PUBLIC_EDDIES;
       team.owner = "";
     } else if (ownerIsBill(team.owner)) {
       team.owner = "";
@@ -134,11 +144,11 @@
 
   function officialName(labelOrId, fallback) {
     const id = resolveTeamId(labelOrId);
-    if (id === "eddies") return "The Eddies";
+    if (id === "eddies") return PUBLIC_EDDIES;
     const team = id ? teamById(id) : null;
     if (team && team.name) return team.name;
     const raw = fallback || labelOrId;
-    if (raw && /\bEagle Ridge Eddies\b/.test(String(raw))) return "The Eddies";
+    if (raw && (/\bEagle Ridge Eddies\b/.test(String(raw)) || /\bThe Eddies\b/.test(String(raw)))) return PUBLIC_EDDIES;
     if (fallback) return String(fallback);
     return labelOrId ? String(labelOrId) : "—";
   }
@@ -163,9 +173,10 @@
   function displayText(text) {
     let s = String(text || "");
     if (!s) return s;
-    s = s.replace(/Eagle Ridge Eddies\s*\(\s*Bill\s*\)/g, "The Eddies");
-    s = s.replace(/\bEagle Ridge Eddies\b/g, "The Eddies");
-    s = s.replace(/Bill['’]s Eddies/g, "The Eddies");
+    s = s.replace(/Eagle Ridge Eddies\s*\(\s*Bill\s*\)/g, PUBLIC_EDDIES);
+    s = s.replace(/\bEagle Ridge Eddies\b/g, PUBLIC_EDDIES);
+    s = s.replace(/Bill['’]s Eddies/g, PUBLIC_EDDIES);
+    s = s.replace(/\bThe Eddies\b/g, PUBLIC_EDDIES);
     const hyper = officialName("hyper");
     const ttab = officialName("ttab");
     s = s.replace(/Greenacres Goblins\s*\/\s*Hypersecretors/gi, hyper);
