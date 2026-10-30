@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-10-30 6:25 AM PT",
+  "asOf": "2026-10-30 4:16 PM PT",
   "faabLeft": 34,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -48,12 +48,12 @@
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 4:16 PM PT (/workspace/fantrax-raw-2026-10-30-pm.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
   "updated": "2026-10-30",
-  "lastSynced": "2026-10-30 6:25 AM PT"
+  "lastSynced": "2026-10-30 4:16 PM PT"
 }

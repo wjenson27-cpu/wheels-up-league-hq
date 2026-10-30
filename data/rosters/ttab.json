@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-30 6:25 AM PT",
+  "asOf": "2026-10-30 4:16 PM PT",
   "faabLeft": 10,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -11,36 +11,34 @@
     ],
     "RB": [
       "Javonte Williams",
-      "Emanuel Wilson",
-      "Zonovan Knight"
+      "Emanuel Wilson"
     ],
     "WR": [
       "Christian Watson",
+      "Omar Cooper Jr.",
       "Stefon Diggs",
       "Jameson Williams",
       "Ryan Flournoy",
       "Chris Godwin",
-      "Malik Washington",
-      "Omar Cooper Jr."
+      "Malik Washington"
     ],
     "TE": [
       "Dallas Goedert"
     ],
     "DL": [
-      "Nik Bonitto"
+      "Tuli Tuipulotu"
     ],
     "LB": [
       "Demario Davis",
       "Harold Perkins",
+      "Patrick Queen",
       "Dorian Williams",
-      "Micah McFadden",
-      "Patrick Queen"
+      "Micah McFadden"
     ],
     "DB": [
       "Caleb Downs",
       "Dillon Thieneman",
-      "Brian Branch",
-      "Bryan Cook"
+      "Brian Branch"
     ],
     "IR": [
       "DeVonta Smith",
@@ -50,12 +48,12 @@
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 4:16 PM PT (/workspace/fantrax-raw-2026-10-30-pm.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
   "updated": "2026-10-30",
-  "lastSynced": "2026-10-30 6:25 AM PT"
+  "lastSynced": "2026-10-30 4:16 PM PT"
 }

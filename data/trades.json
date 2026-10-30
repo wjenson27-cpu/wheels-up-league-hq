@@ -1,8 +1,25 @@
 {
   "updated": "2026-10-30",
-  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 4:16 PM PT (/workspace/fantrax-raw-2026-10-30-pm.json)",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-10-30",
+      "time": "1:12 PM PDT",
+      "week": 8,
+      "status": "completed",
+      "official": true,
+      "teamA": "Morningside Muff Divers",
+      "teamB": "Saltese Slamm",
+      "givesA": [
+        "Demetrius Knight (LB)"
+      ],
+      "givesB": [
+        "Terrel Bernard (LB)",
+        "Denzel Boston (WR)"
+      ],
+      "summary": "Week 8 — Morningside Muff Divers sent Demetrius Knight (LB) to Saltese Slamm for Terrel Bernard (LB), Denzel Boston (WR) (Oct 30 1:12 PM PDT)."
+    },
     {
       "date": "2026-10-29",
       "time": "9:34 PM PDT",
@@ -769,8 +786,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-30 6:25 AM PT roster sync). Eagleridge Eddie's exclusion standing: no pending offers involving Eddies in public HQ.",
-  "fantrax_completed_view": "Newest official: TTAB↔Ultron Ashton Jeanty for DeVonta Smith+Dillon Thieneman (Oct 22 3:07 PM); Saltese↔Ultron DeVonta Smith+Mack Wilson for Bhayshul Tuten (Oct 22 2:39 PM); Substation↔TTAB Brian Branch+Demario Davis for Zack Baun (Oct 22 9:56 AM).",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-30 4:16 PM PT roster sync). Eagleridge Eddie's exclusion standing: no pending offers involving Eddies in public HQ.",
+  "fantrax_completed_view": "Newest official: Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM); TTAB↔Ultron Josh Allen for Micah McFadden+Caleb Williams+Patrick Queen (Oct 29 9:34 PM); Saltese↔Ultron Omarion Hampton+Brian Robinson Jr.+Kyle Hamilton+Bijan Robinson+$5 FAAB for Ashton Jeanty+Carson Schwesinger+Kyle Monangai+D'Andre Swift (Oct 29 12:41 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-10-30 6:25 AM PT"
+  "lastSynced": "2026-10-30 4:16 PM PT"
 }

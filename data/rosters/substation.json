@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-10-30 6:25 AM PT",
+  "asOf": "2026-10-30 4:16 PM PT",
   "faabLeft": 5,
   "startingQB": "Bryce Young",
   "roster": {
@@ -17,13 +17,14 @@
     "WR": [
       "Ja'Marr Chase",
       "Germie Bernard",
-      "KC Concepcion",
       "Tre Tucker",
       "Makai Lemon",
+      "KC Concepcion",
       "Malik Nabers"
     ],
     "TE": [
-      "Tucker Kraft"
+      "Tucker Kraft",
+      "Tyler Warren"
     ],
     "DL": [
       "Austin Booker"
@@ -31,7 +32,6 @@
     "LB": [
       "Jack Campbell",
       "Zack Baun",
-      "Omar Speights",
       "Kaden Elliss"
     ],
     "DB": [
@@ -42,18 +42,17 @@
     ],
     "IR": [
       "Tyjae Spears",
-      "Alec Pierce",
-      "Tyler Warren"
+      "Alec Pierce"
     ]
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 4:16 PM PT (/workspace/fantrax-raw-2026-10-30-pm.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
   "updated": "2026-10-30",
-  "lastSynced": "2026-10-30 6:25 AM PT"
+  "lastSynced": "2026-10-30 4:16 PM PT"
 }

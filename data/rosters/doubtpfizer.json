@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-10-30 6:25 AM PT",
+  "asOf": "2026-10-30 4:16 PM PT",
   "faabLeft": 75,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -48,12 +48,12 @@
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 4:16 PM PT (/workspace/fantrax-raw-2026-10-30-pm.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
   "updated": "2026-10-30",
-  "lastSynced": "2026-10-30 6:25 AM PT"
+  "lastSynced": "2026-10-30 4:16 PM PT"
 }

@@ -1,7 +1,98 @@
 {
   "updated": "2026-10-30",
-  "source": "Fantrax roster sync 2026-10-30 6:25 AM PT (/workspace/fantrax-raw-2026-10-30-am.json)",
+  "source": "Fantrax roster sync 2026-10-30 4:16 PM PT (/workspace/fantrax-raw-2026-10-30-pm.json)",
   "items": [
+    {
+      "date": "2026-10-30",
+      "team": "Towner Top Aga Bottom",
+      "type": "ADD/DROP",
+      "summary": "Added Tuli Tuipulotu (DL-LAC); dropped Nik Bonitto (DL-DEN)",
+      "time": "1:28 PM PDT",
+      "player": "Tuli Tuipulotu",
+      "playerMeta": "DL-LAC",
+      "dropped": "Nik Bonitto",
+      "droppedMeta": "DL-DEN",
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Bryan Cook (DB-CIN)",
+      "time": "1:25 PM PDT",
+      "player": "Bryan Cook",
+      "playerMeta": "DB-CIN",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Zonovan Knight (RB-ARI)",
+      "time": "1:24 PM PDT",
+      "player": "Zonovan Knight",
+      "playerMeta": "RB-ARI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Morningside Muff Divers",
+      "type": "DROP",
+      "summary": "Dropped Elijah Mitchell (RB-PHI)",
+      "time": "1:13 PM PDT",
+      "player": "Elijah Mitchell",
+      "playerMeta": "RB-PHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Substation",
+      "type": "DROP",
+      "summary": "Dropped Omar Speights (LB-LAR)",
+      "time": "9:57 AM PDT",
+      "player": "Omar Speights",
+      "playerMeta": "LB-LAR",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Tyler Higbee (TE-LAR); dropped Jake Ferguson (TE-DAL)",
+      "time": "9:00 AM PDT",
+      "player": "Tyler Higbee",
+      "playerMeta": "TE-LAR",
+      "dropped": "Jake Ferguson",
+      "droppedMeta": "TE-DAL",
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Josh Woods (LB-ATL); dropped Kaden Wetjen (WR-PIT)",
+      "time": "7:13 AM PDT",
+      "player": "Josh Woods",
+      "playerMeta": "LB-ATL",
+      "dropped": "Kaden Wetjen",
+      "droppedMeta": "WR-PIT",
+      "bid": null,
+      "period": "Week 8"
+    },
     {
       "date": "2026-10-29",
       "team": "Ultron",
@@ -6607,7 +6698,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 30 AM: +6 FA rows (Oct 29 4:23 PM–9:48 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 30 AM: +7 FA rows (Oct 30 7:13 AM–1:28 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-30 6:25 AM PT"
+  "lastSynced": "2026-10-30 4:16 PM PT"
 }
