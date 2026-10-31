@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-10-31 6:25 AM PT",
+  "asOf": "2026-10-31 4:09 PM PT",
   "faabLeft": 34,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -50,28 +50,25 @@
   "injuryFlags": [
     "Breece Hall — Q (active)",
     "George Pickens — Q (active)",
-    "Zach Charbonnet — Q (reserve)",
     "Cameron Skattebo — Q (IR slot)",
     "Jordyn Tyson — IR (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-31 6:25 AM PT (fantrax-raw-2026-10-31-am.json)",
+  "source": "Fantrax roster sync 2026-10-31 4:09 PM PT (/workspace/fantrax-raw-2026-10-31-pm.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Breece Hall — Q (active)",
-    "George Pickens — Q (active)",
-    "Zach Charbonnet — Q (reserve)"
+    "George Pickens — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Breece Hall — Q (active)",
     "George Pickens — Q (active)",
-    "Zach Charbonnet — Q (reserve)",
     "Cameron Skattebo — Q (IR slot)",
     "Jordyn Tyson — IR (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
   "updated": "2026-10-31",
-  "lastSynced": "2026-10-31 6:25 AM PT"
+  "lastSynced": "2026-10-31 4:09 PM PT"
 }

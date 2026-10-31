@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-31",
-  "source": "Fantrax roster sync 2026-10-31 6:25 AM PT (fantrax-raw-2026-10-31-am.json)",
+  "source": "Fantrax roster sync 2026-10-31 4:09 PM PT (/workspace/fantrax-raw-2026-10-31-pm.json)",
   "season": 2026,
   "trades": [
     {
@@ -678,102 +678,18 @@
   "pending": [],
   "blocks": [
     {
-      "teamId": "pocket",
-      "team": "Pocket Agents",
-      "lastUpdated": "Oct 2 4:24 PM",
-      "players": [
-        "Jared Goff",
-        "Tyler Shough"
-      ],
-      "note": "Goff & Shough both top 5 QBs through 3 weeks. Looking to potentially trade 1 for a running back."
-    },
-    {
-      "teamId": "doubtpfizer",
-      "team": "Mrs. Doubtpfizer",
-      "lastUpdated": null,
-      "players": [],
-      "note": null
-    },
-    {
-      "teamId": "goats",
-      "team": "Valley Old Goats",
-      "lastUpdated": null,
-      "players": [],
-      "note": null
-    },
-    {
-      "teamId": "lab",
-      "team": "Little Ass Boys",
-      "lastUpdated": null,
-      "players": [],
-      "note": null
-    },
-    {
-      "teamId": "newman",
-      "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "Oct 28 9:00 AM",
-      "players": [
-        "Jordan Love",
-        "Jonathan Taylor",
-        "Matthew Golden",
-        "Michael Mayer",
-        "Zay Flowers",
-        "Tee Higgins",
-        "Jordan Mason",
-        "Myles Price",
-        "Juwan Johnson",
-        "A.J. Brown",
-        "Davante Adams",
-        "TreVeyon Henderson",
-        "Andrew Van Ginkel",
-        "Ty'Ron Hopper",
-        "Jordan Battle",
-        "Xavier Watts",
-        "Nathan Landman",
-        "Jeremiah Trotter",
-        "Eric Wilson",
-        "Azeez Al-Shaair",
-        "Henry To'oTo'o",
-        "Zaire Franklin"
-      ],
-      "note": null
-    },
-    {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
       "lastUpdated": "Oct 28 9:49 AM",
       "players": [
-        "Chimere Dike",
-        "Kendrick Bourne",
         "Zach Charbonnet",
-        "Jordyn Tyson",
         "Travis Etienne",
-        "Quentin Lake",
+        "Kendrick Bourne",
+        "Chimere Dike",
+        "Jordyn Tyson",
+        "Cedric Gray",
         "Trenton Simpson",
-        "Cedric Gray"
-      ],
-      "note": null
-    },
-    {
-      "teamId": "hyper",
-      "team": "The Hypersecretors",
-      "lastUpdated": null,
-      "players": [],
-      "note": null
-    },
-    {
-      "teamId": "ttab",
-      "team": "TTAB",
-      "lastUpdated": "Oct 26 9:51 PM",
-      "players": [
-        "Javonte Williams",
-        "Christian Watson",
-        "Dallas Goedert",
-        "Jameson Williams",
-        "Emanuel Wilson",
-        "Harold Perkins",
-        "Dorian Williams",
-        "Divine Deablo"
+        "Quentin Lake"
       ],
       "note": null
     },
@@ -782,9 +698,9 @@
       "team": "Morningside Muff Divers",
       "lastUpdated": "Oct 7 9:30 AM",
       "players": [
+        "Derrick Barnes",
         "Bobby Okereke",
-        "Pete Werner",
-        "Derrick Barnes"
+        "Pete Werner"
       ],
       "note": null,
       "positionsOffered": [
@@ -795,11 +711,44 @@
       ]
     },
     {
-      "teamId": "ultron",
-      "team": "Ultron",
-      "lastUpdated": null,
-      "players": [],
+      "teamId": "newman",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "lastUpdated": "Oct 28 9:00 AM",
+      "players": [
+        "Jordan Love",
+        "TreVeyon Henderson",
+        "Jordan Mason",
+        "Jonathan Taylor",
+        "Davante Adams",
+        "A.J. Brown",
+        "Zay Flowers",
+        "Matthew Golden",
+        "Tee Higgins",
+        "Myles Price",
+        "Juwan Johnson",
+        "Michael Mayer",
+        "Andrew Van Ginkel",
+        "Azeez Al-Shaair",
+        "Zaire Franklin",
+        "Ty'Ron Hopper",
+        "Nathan Landman",
+        "Henry To'oTo'o",
+        "Jeremiah Trotter",
+        "Eric Wilson",
+        "Jordan Battle",
+        "Xavier Watts"
+      ],
       "note": null
+    },
+    {
+      "teamId": "pocket",
+      "team": "Pocket Agents",
+      "lastUpdated": "Oct 2 4:24 PM",
+      "players": [
+        "Jared Goff",
+        "Tyler Shough"
+      ],
+      "note": "Goff & Shough both top 5 QBs through 3 weeks. Looking to potentially trade 1 for a running back."
     },
     {
       "teamId": "saltese",
@@ -816,23 +765,25 @@
       "note": null
     },
     {
-      "teamId": "dongers",
-      "team": "Drummond Dongers",
-      "lastUpdated": null,
-      "players": [],
-      "note": null
-    },
-    {
-      "teamId": "slumlords",
-      "team": "Indian Trail Slumlords",
-      "lastUpdated": null,
-      "players": [],
+      "teamId": "ttab",
+      "team": "TTAB",
+      "lastUpdated": "Oct 26 9:51 PM",
+      "players": [
+        "Javonte Williams",
+        "Emanuel Wilson",
+        "Christian Watson",
+        "Jameson Williams",
+        "Dallas Goedert",
+        "Divine Deablo",
+        "Harold Perkins",
+        "Dorian Williams"
+      ],
       "note": null
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-10-31 6:25 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-10-31 4:09 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM); TTAB↔Ultron Josh Allen for Micah McFadden+Caleb Williams+Patrick Queen (Oct 29 9:34 PM); Saltese↔Ultron Omarion Hampton+Brian Robinson Jr.+Kyle Hamilton+Bijan Robinson+$5 FAAB for Ashton Jeanty+Carson Schwesinger+Kyle Monangai+D'Andre Swift (Oct 29 12:41 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-10-31 6:25 AM PT"
+  "lastSynced": "2026-10-31 4:09 PM PT"
 }

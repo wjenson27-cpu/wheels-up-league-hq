@@ -1,7 +1,33 @@
 {
   "updated": "2026-10-31",
-  "source": "Fantrax roster sync 2026-10-31 6:25 AM PT (fantrax-raw-2026-10-31-am.json)",
+  "source": "Fantrax roster sync 2026-10-31 4:09 PM PT (/workspace/fantrax-raw-2026-10-31-pm.json)",
   "items": [
+    {
+      "date": "2026-10-31",
+      "team": "Valley Old Goats",
+      "type": "DROP",
+      "summary": "Dropped Kendre Miller (RB-NO)",
+      "time": "9:46 AM PDT",
+      "player": "Kendre Miller",
+      "playerMeta": "RB-NO",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-31",
+      "team": "The Hypersecretors",
+      "type": "DROP",
+      "summary": "Dropped Micah Parsons (DL-GB)",
+      "time": "7:57 AM PDT",
+      "player": "Micah Parsons",
+      "playerMeta": "DL-GB",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
     {
       "date": "2026-10-30",
       "team": "Ultron",
@@ -6763,7 +6789,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 31 AM: +5 FA rows (Oct 30 7:45 PM–11:22 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 31 AM: +2 FA rows (Oct 31 7:57 AM–9:46 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-31 6:25 AM PT"
+  "lastSynced": "2026-10-31 4:09 PM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-10-31 6:25 AM PT",
+  "asOf": "2026-10-31 4:09 PM PT",
   "faabLeft": 56,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -52,7 +52,7 @@
     "Carnell Tate — O (IR slot)",
     "Jihaad Campbell — O (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-10-31 6:25 AM PT (fantrax-raw-2026-10-31-am.json)",
+  "source": "Fantrax roster sync 2026-10-31 4:09 PM PT (/workspace/fantrax-raw-2026-10-31-pm.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
     "Jihaad Campbell — O (reserve)"
@@ -65,5 +65,5 @@
     "Jihaad Campbell — O (reserve)"
   ],
   "updated": "2026-10-31",
-  "lastSynced": "2026-10-31 6:25 AM PT"
+  "lastSynced": "2026-10-31 4:09 PM PT"
 }
