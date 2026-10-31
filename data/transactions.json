@@ -1,7 +1,72 @@
 {
-  "updated": "2026-10-30",
-  "source": "Fantrax roster sync 2026-10-30 4:16 PM PT (/workspace/fantrax-raw-2026-10-30-pm.json)",
+  "updated": "2026-10-31",
+  "source": "Fantrax roster sync 2026-10-31 6:25 AM PT (fantrax-raw-2026-10-31-am.json)",
   "items": [
+    {
+      "date": "2026-10-30",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added J.K. Dobbins (RB-DEN); dropped Kyle Williams (WR-NE)",
+      "time": "11:22 PM PDT",
+      "player": "J.K. Dobbins",
+      "playerMeta": "RB-DEN",
+      "dropped": "Kyle Williams",
+      "droppedMeta": "WR-NE",
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Substation",
+      "type": "ADD",
+      "summary": "Added Tyler Goodson (RB-DAL) ($0/null bid)",
+      "time": "9:09 PM PDT",
+      "player": "Tyler Goodson",
+      "playerMeta": "RB-DAL",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Eagle Ridge Eddies",
+      "type": "ADD/DROP",
+      "summary": "Added Corey Kiner (RB-NE); dropped Mason Graham (DL-CLE)",
+      "time": "8:46 PM PDT",
+      "player": "Corey Kiner",
+      "playerMeta": "RB-NE",
+      "dropped": "Mason Graham",
+      "droppedMeta": "DL-CLE",
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Eagle Ridge Eddies",
+      "type": "ADD/DROP",
+      "summary": "Added Mason Graham (DL-CLE); dropped Tyrice Knight (LB-SEA)",
+      "time": "8:03 PM PDT",
+      "player": "Mason Graham",
+      "playerMeta": "DL-CLE",
+      "dropped": "Tyrice Knight",
+      "droppedMeta": "LB-SEA",
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-10-30",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Kyle Williams (WR-NE); dropped Josh Woods (LB-ATL)",
+      "time": "7:45 PM PDT",
+      "player": "Kyle Williams",
+      "playerMeta": "WR-NE",
+      "dropped": "Josh Woods",
+      "droppedMeta": "LB-ATL",
+      "bid": null,
+      "period": "Week 8"
+    },
     {
       "date": "2026-10-30",
       "team": "Towner Top Aga Bottom",
@@ -6698,7 +6763,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Oct 30 AM: +7 FA rows (Oct 30 7:13 AM–1:28 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Oct 31 AM: +5 FA rows (Oct 30 7:45 PM–11:22 PM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-10-30 4:16 PM PT"
+  "lastSynced": "2026-10-31 6:25 AM PT"
 }
