@@ -10,7 +10,7 @@
     "4": "Week 4 finals (TNF Oct 1 through MNF Oct 5 2026).",
     "5": "Week 5 finals (TNF Oct 8 through MNF Oct 12 2026).",
     "6": "Week 6 finals (TNF Oct 15 through MNF Oct 19 2026). No HIT.",
-    "7": "Week 7 finals (TNF Oct 22 through MNF Oct 26 2026). Jacob: no pick recorded. No HIT.",
+    "7": "Week 7 finals (TNF Oct 22 through MNF Oct 26 2026). No HIT.",
     "8": "Week 8 picks in Oct 30; results pending."
   },
   "owners": [
@@ -857,8 +857,8 @@
           "td": "Yes"
         },
         "7": {
-          "player": "",
-          "td": ""
+          "player": "Amon-Ra St. Brown",
+          "td": "No"
         },
         "8": {
           "player": "Bucky Irving",
