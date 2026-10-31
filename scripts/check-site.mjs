@@ -825,6 +825,9 @@ async function checkPages() {
             if (/\b(pending|bids?|claims?)\b/i.test(info.text)) errors.push("page mentions a bid, claim, or pending item");
             if (!/^as of .+\bPT$/.test(info.asOf.trim())) errors.push(`as-of line is "${info.asOf}"`);
             if (live.asOf && info.asOf.trim() !== `as of ${live.asOf}`) errors.push(`as-of line is "${info.asOf}"`);
+            if (!/updated \d+ min ago/.test(info.text) && !/updated today/.test(info.text)) {
+              errors.push("live page is missing the updated-age line");
+            }
             if (!/normal approximation/.test(info.formula) || !/nearest 5%/.test(info.formula)) errors.push("formula is not on the page");
             if (info.overflow > 1) errors.push(`page overflows by ${info.overflow}px`);
           }
