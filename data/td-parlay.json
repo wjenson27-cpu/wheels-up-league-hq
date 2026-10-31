@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-30",
   "season": 2026,
   "weeks": 17,
   "note": "Anytime TD. Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded).",
@@ -9,8 +9,9 @@
     "3": "Week 3 finals (TNF Sep 24 through MNF Sep 28 2026).",
     "4": "Week 4 finals (TNF Oct 1 through MNF Oct 5 2026).",
     "5": "Week 5 finals (TNF Oct 8 through MNF Oct 12 2026).",
-    "6": "Week 6 picks locked Sat Oct 17; results pending.",
-    "7": "Week 7 picks in Oct 23 (Jacob TBD); results pending."
+    "6": "Week 6 finals (TNF Oct 15 through MNF Oct 19 2026). No HIT.",
+    "7": "Week 7 finals (TNF Oct 22 through MNF Oct 26 2026). Jacob: no pick recorded. No HIT.",
+    "8": "Week 8 picks in Oct 30; results pending."
   },
   "owners": [
     {
@@ -39,14 +40,14 @@
         },
         "6": {
           "player": "George Kittle",
-          "td": ""
+          "td": "Yes"
         },
         "7": {
           "player": "Aaron Jones Sr.",
-          "td": ""
+          "td": "No"
         },
         "8": {
-          "player": "",
+          "player": "CeeDee Lamb",
           "td": ""
         },
         "9": {
@@ -113,14 +114,14 @@
         },
         "6": {
           "player": "Christian Watson",
-          "td": ""
+          "td": "No"
         },
         "7": {
           "player": "Sam LaPorta",
-          "td": ""
+          "td": "No"
         },
         "8": {
-          "player": "",
+          "player": "Derrick Henry",
           "td": ""
         },
         "9": {
@@ -187,14 +188,14 @@
         },
         "6": {
           "player": "Rhamondre Stevenson",
-          "td": ""
+          "td": "No"
         },
         "7": {
           "player": "George Pickens",
-          "td": ""
+          "td": "Yes"
         },
         "8": {
-          "player": "",
+          "player": "Bhayshul Tuten",
           "td": ""
         },
         "9": {
@@ -261,14 +262,14 @@
         },
         "6": {
           "player": "Bijan Robinson",
-          "td": ""
+          "td": "No"
         },
         "7": {
           "player": "Bijan Robinson",
-          "td": ""
+          "td": "No"
         },
         "8": {
-          "player": "",
+          "player": "Jahmyr Gibbs",
           "td": ""
         },
         "9": {
@@ -335,14 +336,14 @@
         },
         "6": {
           "player": "Kyren Williams",
-          "td": ""
+          "td": "No"
         },
         "7": {
           "player": "Trey McBride",
-          "td": ""
+          "td": "Yes"
         },
         "8": {
-          "player": "",
+          "player": "Zay Flowers",
           "td": ""
         },
         "9": {
@@ -409,14 +410,14 @@
         },
         "6": {
           "player": "Josh Allen",
-          "td": ""
+          "td": "No"
         },
         "7": {
           "player": "Javonte Williams",
-          "td": ""
+          "td": "Yes"
         },
         "8": {
-          "player": "",
+          "player": "Javonte Williams",
           "td": ""
         },
         "9": {
@@ -483,14 +484,14 @@
         },
         "6": {
           "player": "Christian McCaffrey",
-          "td": ""
+          "td": "Yes"
         },
         "7": {
           "player": "Jahmyr Gibbs",
-          "td": ""
+          "td": "No"
         },
         "8": {
-          "player": "",
+          "player": "Bijan Robinson",
           "td": ""
         },
         "9": {
@@ -557,14 +558,14 @@
         },
         "6": {
           "player": "Chris Olave",
-          "td": ""
+          "td": "Yes"
         },
         "7": {
           "player": "Darnell Washington",
-          "td": ""
+          "td": "Yes"
         },
         "8": {
-          "player": "",
+          "player": "Jaxon Smith-Njigba",
           "td": ""
         },
         "9": {
@@ -631,14 +632,14 @@
         },
         "6": {
           "player": "Derrick Henry",
-          "td": ""
+          "td": "No"
         },
         "7": {
           "player": "Jaxon Smith-Njigba",
-          "td": ""
+          "td": "Yes"
         },
         "8": {
-          "player": "",
+          "player": "Josh Allen",
           "td": ""
         },
         "9": {
@@ -705,14 +706,14 @@
         },
         "6": {
           "player": "Brock Bowers",
-          "td": ""
+          "td": "No"
         },
         "7": {
           "player": "Kenneth Walker III",
-          "td": ""
+          "td": "No"
         },
         "8": {
-          "player": "",
+          "player": "Ashton Jeanty",
           "td": ""
         },
         "9": {
@@ -779,14 +780,14 @@
         },
         "6": {
           "player": "Jonathan Taylor",
-          "td": ""
+          "td": "Yes"
         },
         "7": {
           "player": "Christian McCaffrey",
-          "td": ""
+          "td": "Yes"
         },
         "8": {
-          "player": "",
+          "player": "Puka Nacua",
           "td": ""
         },
         "9": {
@@ -853,14 +854,14 @@
         },
         "6": {
           "player": "Kenneth Walker III",
-          "td": ""
+          "td": "Yes"
         },
         "7": {
           "player": "",
           "td": ""
         },
         "8": {
-          "player": "",
+          "player": "Bucky Irving",
           "td": ""
         },
         "9": {
