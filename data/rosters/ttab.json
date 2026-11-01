@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-10-31 4:09 PM PT",
+  "asOf": "2026-11-01 6:25 AM PT",
   "faabLeft": 10,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -53,7 +53,7 @@
     "Divine Deablo — O (IR slot)",
     "Andrew Wingard — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-31 4:09 PM PT (/workspace/fantrax-raw-2026-10-31-pm.json)",
+  "source": "Fantrax roster sync 2026-11-01 6:25 AM PT (/workspace/fantrax-raw-2026-11-01-am.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
     "Christian Watson — Q (active)"
@@ -66,6 +66,6 @@
     "Divine Deablo — O (IR slot)",
     "Andrew Wingard — Q (IR slot)"
   ],
-  "updated": "2026-10-31",
-  "lastSynced": "2026-10-31 4:09 PM PT"
+  "updated": "2026-11-01",
+  "lastSynced": "2026-11-01 6:25 AM PT"
 }

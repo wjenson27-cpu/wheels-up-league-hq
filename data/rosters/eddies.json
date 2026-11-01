@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-10-31 4:09 PM PT",
+  "asOf": "2026-11-01 6:25 AM PT",
   "faabLeft": 34,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -10,8 +10,8 @@
       "Trevor Lawrence"
     ],
     "RB": [
-      "Breece Hall",
       "Corey Kiner",
+      "Breece Hall",
       "Zach Charbonnet"
     ],
     "WR": [
@@ -48,27 +48,27 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Breece Hall — Q (active)",
     "George Pickens — Q (active)",
+    "Breece Hall — Q (reserve)",
     "Cameron Skattebo — Q (IR slot)",
     "Jordyn Tyson — IR (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-31 4:09 PM PT (/workspace/fantrax-raw-2026-10-31-pm.json)",
+  "source": "Fantrax roster sync 2026-11-01 6:25 AM PT (/workspace/fantrax-raw-2026-11-01-am.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
-    "Breece Hall — Q (active)",
-    "George Pickens — Q (active)"
+    "George Pickens — Q (active)",
+    "Breece Hall — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Breece Hall — Q (active)",
     "George Pickens — Q (active)",
+    "Breece Hall — Q (reserve)",
     "Cameron Skattebo — Q (IR slot)",
     "Jordyn Tyson — IR (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
-  "updated": "2026-10-31",
-  "lastSynced": "2026-10-31 4:09 PM PT"
+  "updated": "2026-11-01",
+  "lastSynced": "2026-11-01 6:25 AM PT"
 }

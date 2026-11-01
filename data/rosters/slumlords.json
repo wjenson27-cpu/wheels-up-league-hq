@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-10-31 4:09 PM PT",
+  "asOf": "2026-11-01 6:25 AM PT",
   "faabLeft": 0,
   "startingQB": "Drake Maye",
   "roster": {
@@ -15,10 +15,10 @@
       "Quinshon Judkins"
     ],
     "WR": [
-      "Demario Douglas",
       "Wan'Dale Robinson",
-      "Keon Coleman",
       "Dohnte Meyers",
+      "Keon Coleman",
+      "Demario Douglas",
       "Kalif Raymond"
     ],
     "TE": [
@@ -50,7 +50,7 @@
     "Isiah Pacheco — IR (IR slot)",
     "Talanoa Hufanga — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-31 4:09 PM PT (/workspace/fantrax-raw-2026-10-31-pm.json)",
+  "source": "Fantrax roster sync 2026-11-01 6:25 AM PT (/workspace/fantrax-raw-2026-11-01-am.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -59,6 +59,6 @@
     "Isiah Pacheco — IR (IR slot)",
     "Talanoa Hufanga — O (IR slot)"
   ],
-  "updated": "2026-10-31",
-  "lastSynced": "2026-10-31 4:09 PM PT"
+  "updated": "2026-11-01",
+  "lastSynced": "2026-11-01 6:25 AM PT"
 }

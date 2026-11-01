@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-10-31 4:09 PM PT",
+  "asOf": "2026-11-01 6:25 AM PT",
   "faabLeft": 5,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -53,7 +53,7 @@
     "David Montgomery — Q (IR slot)",
     "Dee Winters — O (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-10-31 4:09 PM PT (/workspace/fantrax-raw-2026-10-31-pm.json)",
+  "source": "Fantrax roster sync 2026-11-01 6:25 AM PT (/workspace/fantrax-raw-2026-11-01-am.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "Kyle Monangai — O (reserve)",
@@ -68,6 +68,6 @@
     "David Montgomery — Q (IR slot)",
     "Dee Winters — O (reserve)"
   ],
-  "updated": "2026-10-31",
-  "lastSynced": "2026-10-31 4:09 PM PT"
+  "updated": "2026-11-01",
+  "lastSynced": "2026-11-01 6:25 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-10-31 4:09 PM PT",
+  "asOf": "2026-11-01 6:25 AM PT",
   "faabLeft": 75,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -22,8 +22,8 @@
       "Rome Odunze"
     ],
     "TE": [
-      "Colston Loveland",
       "Hunter Henry",
+      "Colston Loveland",
       "Kyle Pitts"
     ],
     "DL": [
@@ -51,7 +51,7 @@
     "Christian McCaffrey — Q (IR slot)",
     "Reed Blankenship — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-10-31 4:09 PM PT (/workspace/fantrax-raw-2026-10-31-pm.json)",
+  "source": "Fantrax roster sync 2026-11-01 6:25 AM PT (/workspace/fantrax-raw-2026-11-01-am.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -60,6 +60,6 @@
     "Christian McCaffrey — Q (IR slot)",
     "Reed Blankenship — Q (IR slot)"
   ],
-  "updated": "2026-10-31",
-  "lastSynced": "2026-10-31 4:09 PM PT"
+  "updated": "2026-11-01",
+  "lastSynced": "2026-11-01 6:25 AM PT"
 }
