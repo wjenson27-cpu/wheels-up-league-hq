@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-01 4:08 PM PT",
+  "asOf": "2026-11-02 6:29 AM PT",
   "faabLeft": 12,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -42,16 +42,18 @@
     ],
     "IR": [
       "Emeka Egbuka",
-      "Nick Bosa"
+      "Nick Bosa",
+      "Micah Parsons"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Jacory Croskey-Merritt — IR (reserve)",
     "Emeka Egbuka — O (IR slot)",
-    "Nick Bosa — Q (IR slot)"
+    "Nick Bosa — Q (IR slot)",
+    "Micah Parsons — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-01 4:08 PM PT (/workspace/fantrax-raw-2026-11-01-pm.json)",
+  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
     "Jacory Croskey-Merritt — IR (reserve)"
@@ -61,8 +63,9 @@
   "flags": [
     "Jacory Croskey-Merritt — IR (reserve)",
     "Emeka Egbuka — O (IR slot)",
-    "Nick Bosa — Q (IR slot)"
+    "Nick Bosa — Q (IR slot)",
+    "Micah Parsons — IR (IR slot)"
   ],
-  "updated": "2026-11-01",
-  "lastSynced": "2026-11-01 4:08 PM PT"
+  "updated": "2026-11-02",
+  "lastSynced": "2026-11-02 6:29 AM PT"
 }

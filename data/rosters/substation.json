@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-11-01 4:08 PM PT",
+  "asOf": "2026-11-02 6:29 AM PT",
   "faabLeft": 5,
   "startingQB": "Bryce Young",
   "roster": {
@@ -48,20 +48,22 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Kenneth Gainwell — Q (IR slot)",
     "Tyjae Spears — O (IR slot)",
-    "Alec Pierce — IR (IR slot)"
+    "Alec Pierce — IR (IR slot)",
+    "Jack Campbell — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-01 4:08 PM PT (/workspace/fantrax-raw-2026-11-01-pm.json)",
+  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Jack Campbell — Q (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Kenneth Gainwell — Q (IR slot)",
     "Tyjae Spears — O (IR slot)",
-    "Alec Pierce — IR (IR slot)"
+    "Alec Pierce — IR (IR slot)",
+    "Jack Campbell — Q (active)"
   ],
-  "updated": "2026-11-01",
-  "lastSynced": "2026-11-01 4:08 PM PT"
+  "updated": "2026-11-02",
+  "lastSynced": "2026-11-02 6:29 AM PT"
 }

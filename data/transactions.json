@@ -1,7 +1,20 @@
 {
-  "updated": "2026-11-01",
-  "source": "Fantrax roster sync 2026-11-01 4:08 PM PT (/workspace/fantrax-raw-2026-11-01-pm.json)",
+  "updated": "2026-11-02",
+  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
   "items": [
+    {
+      "date": "2026-11-01",
+      "team": "Saltese Slamm",
+      "type": "DROP",
+      "summary": "Dropped David Walker (LB-TB)",
+      "time": "5:05 PM PDT",
+      "player": "David Walker",
+      "playerMeta": "LB-TB",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
     {
       "date": "2026-11-01",
       "team": "Morningside Muff Divers",
@@ -6893,7 +6906,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Nov 1 AM: +3 FA rows (Nov 1 6:19 AM–2:06 PM PT), no bids, no new trades. Nov 1 AM: +5 FA rows (Oct 31 9:05 PM–Nov 1 6:13 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Nov 2 AM: +1 FA rows (Nov 1 5:05 PM–5:05 PM PT), no bids, no new trades. Nov 1 AM: +3 FA rows (Nov 1 6:19 AM–2:06 PM PT), no bids, no new trades. Nov 1 AM: +5 FA rows (Oct 31 9:05 PM–Nov 1 6:13 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-11-01 4:08 PM PT"
+  "lastSynced": "2026-11-02 6:29 AM PT"
 }

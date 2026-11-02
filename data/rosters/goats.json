@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-11-01 4:08 PM PT",
+  "asOf": "2026-11-02 6:29 AM PT",
   "faabLeft": 64,
   "startingQB": "Patrick Mahomes",
   "roster": {
@@ -46,12 +46,12 @@
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-11-01 4:08 PM PT (/workspace/fantrax-raw-2026-11-01-pm.json)",
+  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
-  "updated": "2026-11-01",
-  "lastSynced": "2026-11-01 4:08 PM PT"
+  "updated": "2026-11-02",
+  "lastSynced": "2026-11-02 6:29 AM PT"
 }

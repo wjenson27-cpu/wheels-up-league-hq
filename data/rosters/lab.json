@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-11-01 4:08 PM PT",
+  "asOf": "2026-11-02 6:29 AM PT",
   "faabLeft": 56,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -48,22 +48,25 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Jeremiyah Love — Q (active)",
     "Mike Evans — Q (IR slot)",
     "Carnell Tate — O (IR slot)",
     "Jihaad Campbell — O (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-01 4:08 PM PT (/workspace/fantrax-raw-2026-11-01-pm.json)",
+  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
+    "Jeremiyah Love — Q (active)",
     "Jihaad Campbell — O (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Jeremiyah Love — Q (active)",
     "Mike Evans — Q (IR slot)",
     "Carnell Tate — O (IR slot)",
     "Jihaad Campbell — O (reserve)"
   ],
-  "updated": "2026-11-01",
-  "lastSynced": "2026-11-01 4:08 PM PT"
+  "updated": "2026-11-02",
+  "lastSynced": "2026-11-02 6:29 AM PT"
 }

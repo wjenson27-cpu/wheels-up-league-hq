@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-11-01 4:08 PM PT",
+  "asOf": "2026-11-02 6:29 AM PT",
   "faabLeft": 85,
   "startingQB": "Jared Goff",
   "roster": {
@@ -48,25 +48,20 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Dalton Kincaid — Q (active)",
     "Rashid Shaheed — O (IR slot)",
-    "Jaylen Waddle — Q (IR slot)",
     "Brandon Jones — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-01 4:08 PM PT (/workspace/fantrax-raw-2026-11-01-pm.json)",
+  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Dalton Kincaid — Q (active)",
     "Brandon Jones — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Dalton Kincaid — Q (active)",
     "Rashid Shaheed — O (IR slot)",
-    "Jaylen Waddle — Q (IR slot)",
     "Brandon Jones — Q (active)"
   ],
-  "updated": "2026-11-01",
-  "lastSynced": "2026-11-01 4:08 PM PT"
+  "updated": "2026-11-02",
+  "lastSynced": "2026-11-02 6:29 AM PT"
 }
