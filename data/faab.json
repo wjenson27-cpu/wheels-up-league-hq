@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-01",
-  "source": "Fantrax Claim Budget Remaining last verified live 2026-10-31 4:09 PM PT; 2026-11-01 6:25 AM PT sync found only $0 free-agent adds (no claims processed), balances carried forward.",
+  "source": "Fantrax Claim Budget Remaining last verified live for all teams 2026-10-31 4:09 PM PT; 2026-11-01 4:08 PM PT sync verified Eddies $34 live and found no claims processed (only $0 adds/drops), so other balances are carried forward.",
   "startingBudget": 115,
   "note": "Week 8 FAAB clear (Wed Oct 28, 9:00 AM PT) — spend by team: Substation $21 (KC Concepcion $21); The Hypersecretors $13 (Jacory Croskey-Merritt $9, Micah Parsons $4); Mrs. Doubtpfizer $10 (Kyler Gordon $5, Kaelon Black $3, Nohl Williams $2); Saltese Slamm $6 (Dee Winters $4, Colby Parkinson $1, Ty Okada $1); Little Ass Boys $5 (Greg Dulcich $5); Eagleridge Eddie's $4 (Cole Bishop $4); Pocket Agents $3 (Josh Hines-Allen $3); Newman Lake $3 (Grant Delpit $3). $0 executed claims excluded from claims[]. Balances verified live against Fantrax Claim Budget Remaining at 9:44 AM PT.",
   "excludeZeroBids": true,
@@ -39,9 +39,9 @@
       "starting": 115,
       "remaining": 5,
       "spentClaims": 101,
-      "tradeOut": 34,
+      "tradeOut": 29,
       "tradeIn": 25,
-      "spentKnown": 135,
+      "spentKnown": 130,
       "remainingKnown": 5
     },
     {
@@ -78,9 +78,9 @@
       "starting": 115,
       "remaining": 34,
       "spentClaims": 70,
-      "tradeOut": 11,
+      "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 81,
+      "spentKnown": 70,
       "remainingKnown": 34
     },
     {
@@ -105,7 +105,7 @@
       "remaining": 10,
       "spentClaims": 93,
       "tradeOut": 30,
-      "tradeIn": 18,
+      "tradeIn": 8,
       "spentKnown": 123,
       "remainingKnown": 10
     },
@@ -170,9 +170,9 @@
       "starting": 115,
       "remaining": 85,
       "spentClaims": 24,
-      "tradeOut": 20,
+      "tradeOut": 10,
       "tradeIn": 14,
-      "spentKnown": 44,
+      "spentKnown": 34,
       "remainingKnown": 85
     },
     {
@@ -184,7 +184,7 @@
       "remaining": 5,
       "spentClaims": 134,
       "tradeOut": 35,
-      "tradeIn": 21,
+      "tradeIn": 43,
       "spentKnown": 169,
       "remainingKnown": 5
     }
@@ -2248,5 +2248,5 @@
     }
   ],
   "incomplete": false,
-  "lastSynced": "2026-10-31 6:25 AM PT"
+  "lastSynced": "2026-11-01 4:08 PM PT"
 }
