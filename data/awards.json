@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-10-27",
+  "updated": "2026-11-03",
   "schemaVersion": 2,
   "schema": {
     "weeklyKitty": "Array of weekly high-score (kitty) winners. One entry per completed week.",
@@ -82,6 +82,15 @@
       "winnerShort": "Doubtpfizer",
       "score": 311.5,
       "note": "Highest Week 7 final score"
+    },
+    {
+      "week": 8,
+      "status": "final",
+      "winnerTeamId": "newman",
+      "winner": "Newman Lake Sleep Paralysis Demons",
+      "winnerShort": "Newman Lake Sleep Paralysis Demons",
+      "score": 317.5,
+      "note": "Highest Week 8 final score"
     }
   ],
   "survivor": {
@@ -92,8 +101,7 @@
       "doubtpfizer",
       "eddies",
       "hyper",
-      "pocket",
-      "substation"
+      "pocket"
     ],
     "eliminations": [
       {
@@ -165,6 +173,16 @@
         "aliveBefore": 8,
         "aliveAfter": 7,
         "note": "Lowest Week 7 final score among teams still alive — off the bus"
+      },
+      {
+        "week": 8,
+        "status": "final",
+        "teamId": "substation",
+        "team": "Substation",
+        "score": 203.5,
+        "aliveBefore": 7,
+        "aliveAfter": 6,
+        "note": "Lowest Week 8 final score among teams still alive — off the bus"
       }
     ],
     "lastRide": {
@@ -175,16 +193,16 @@
       "reentryWeek": 11,
       "rules": "Teams off the bus battle head-to-head on Last Ride. Week 3: the two eliminated teams face off. Higher week score stays alive; loser is out of Last Ride for good. Winner then battles each week's lowest score through Week 10 (same rule: lose once, you're done). Only the Last Ride winner gets a Week 11 shot back on the bus.",
       "currentMatchup": {
-        "week": 8,
+        "week": 9,
         "status": "upcoming",
-        "teamAId": "ttab",
-        "teamA": "Towner Top Aga Bottom",
-        "teamBId": "goats",
-        "teamB": "Valley Old Goats",
-        "note": "Week 8 Last Ride — Towner Top Aga Bottom (Last Ride survivor) vs Valley Old Goats (off the bus Week 7); loser out for good"
+        "teamAId": "goats",
+        "teamA": "Valley Old Goats",
+        "teamBId": "substation",
+        "teamB": "Substation",
+        "note": "Week 9 Last Ride — Valley Old Goats (Last Ride survivor) vs Substation (off the bus Week 8); loser out for good"
       },
       "aliveTeamIds": [
-        "ttab"
+        "goats"
       ],
       "results": [
         {
@@ -241,6 +259,17 @@
           "loser": "Saltese Slamm",
           "loserScore": 208.5,
           "note": "Week 7 Last Ride — TTAB stay alive; Saltese out of Last Ride for good"
+        },
+        {
+          "week": 8,
+          "status": "final",
+          "winnerTeamId": "goats",
+          "winner": "Valley Old Goats",
+          "winnerScore": 253.0,
+          "loserTeamId": "ttab",
+          "loser": "Towner Top Aga Bottom",
+          "loserScore": 213.5,
+          "note": "Week 8 Last Ride — Goats stay alive; TTAB out of Last Ride for good"
         }
       ]
     }
@@ -251,36 +280,36 @@
       "label": "Top Record",
       "status": "live",
       "trackTop": 3,
-      "teamId": "pocket",
-      "team": "Pocket Agents",
-      "value": "5-2",
+      "teamId": "eddies",
+      "team": "Eagleridge Eddie's",
+      "value": "6-2",
       "leaders": [
         {
           "rank": 1,
-          "teamId": "pocket",
-          "team": "Pocket Agents",
-          "teamShort": "Pocket",
-          "value": "5-2",
-          "valueLabel": "5-2 · 1940 PF"
-        },
-        {
-          "rank": 2,
           "teamId": "eddies",
           "team": "Eagleridge Eddie's",
           "teamShort": "Eddies",
-          "value": "5-2",
-          "valueLabel": "5-2 · 1748 PF"
+          "value": "6-2",
+          "valueLabel": "6-2 · 2018 PF"
+        },
+        {
+          "rank": 2,
+          "teamId": "goats",
+          "team": "Valley Old Goats",
+          "teamShort": "Goats",
+          "value": "6-2",
+          "valueLabel": "6-2 · 1887 PF"
         },
         {
           "rank": 3,
-          "teamId": "lab",
-          "team": "Little Ass Boys",
-          "teamShort": "LAB",
-          "value": "5-2",
-          "valueLabel": "5-2 · 1732 PF"
+          "teamId": "pocket",
+          "team": "Pocket Agents",
+          "teamShort": "Pocket",
+          "value": "5-3",
+          "valueLabel": "5-3 · 2210 PF"
         }
       ],
-      "note": "Live after Week 7 · locks at season end"
+      "note": "Live after Week 8 · locks at season end"
     },
     "topPoints": {
       "key": "topPoints",
@@ -289,31 +318,31 @@
       "trackTop": 3,
       "teamId": "pocket",
       "team": "Pocket Agents",
-      "value": 1940,
+      "value": 2210,
       "leaders": [
         {
           "rank": 1,
           "teamId": "pocket",
           "team": "Pocket Agents",
           "teamShort": "Pocket",
-          "value": 1940,
-          "valueLabel": "1940"
+          "value": 2210,
+          "valueLabel": "2210"
         },
         {
           "rank": 2,
-          "teamId": "doubtpfizer",
-          "team": "Mrs. Doubtpfizer",
-          "teamShort": "Doubtpfizer",
-          "value": 1782.5,
-          "valueLabel": "1782.5"
-        },
-        {
-          "rank": 3,
           "teamId": "hyper",
           "team": "The Hypersecretors",
           "teamShort": "Hyper",
-          "value": 1771.5,
-          "valueLabel": "1771.5"
+          "value": 2025.5,
+          "valueLabel": "2025.5"
+        },
+        {
+          "rank": 3,
+          "teamId": "eddies",
+          "team": "Eagleridge Eddie's",
+          "teamShort": "Eddies",
+          "value": 2018,
+          "valueLabel": "2018"
         }
       ],
       "note": "Live season PF · locks at season end"
@@ -327,7 +356,7 @@
       "pos": "WR",
       "teamId": "dongers",
       "team": "Drummond Dongers",
-      "value": 234,
+      "value": 263,
       "leaders": [
         {
           "rank": 1,
@@ -336,8 +365,8 @@
           "teamId": "dongers",
           "team": "Drummond Dongers",
           "teamShort": "Dongers",
-          "value": 234,
-          "valueLabel": "234"
+          "value": 263,
+          "valueLabel": "263"
         },
         {
           "rank": 2,
@@ -346,22 +375,22 @@
           "teamId": "slumlords",
           "team": "Indian Trail Slumlords",
           "teamShort": "Slumlords",
-          "value": 199,
-          "valueLabel": "199"
+          "value": 232,
+          "valueLabel": "232"
         },
         {
           "rank": 3,
-          "player": "Kenneth Walker III",
-          "pos": "RB",
-          "teamId": "hyper",
-          "team": "The Hypersecretors",
-          "teamShort": "Hyper",
-          "value": 188,
-          "valueLabel": "188"
+          "player": "Joe Burrow",
+          "pos": "QB",
+          "teamId": "dongers",
+          "team": "Drummond Dongers",
+          "teamShort": "Dongers",
+          "value": 220,
+          "valueLabel": "220"
         }
       ],
-      "note": "Live after Week 7 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end",
-      "source": "Fantrax Players, 2026-27 Reg Season YTD, All Taken Players (excl. free agents), Tue Oct 27 ~9:30 AM PT after Week 7 finals"
+      "note": "Live after Week 8 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end",
+      "source": "Fantrax Players, 2026-27 Reg Season - YTD, All Taken Players (excl. free agents), Off/Def filters, Tue Nov 3 ~9:34 AM PT after Week 8 finals"
     },
     "topDefensivePlayer": {
       "key": "topDefensivePlayer",
@@ -372,7 +401,7 @@
       "pos": "LB",
       "teamId": "doubtpfizer",
       "team": "Mrs. Doubtpfizer",
-      "value": 204,
+      "value": 243,
       "leaders": [
         {
           "rank": 1,
@@ -381,8 +410,8 @@
           "teamId": "doubtpfizer",
           "team": "Mrs. Doubtpfizer",
           "teamShort": "Doubtpfizer",
-          "value": 204,
-          "valueLabel": "204"
+          "value": 243,
+          "valueLabel": "243"
         },
         {
           "rank": 2,
@@ -391,8 +420,8 @@
           "teamId": "doubtpfizer",
           "team": "Mrs. Doubtpfizer",
           "teamShort": "Doubtpfizer",
-          "value": 188,
-          "valueLabel": "188"
+          "value": 213,
+          "valueLabel": "213"
         },
         {
           "rank": 3,
@@ -401,12 +430,12 @@
           "teamId": "hyper",
           "team": "The Hypersecretors",
           "teamShort": "Hyper",
-          "value": 183,
-          "valueLabel": "183"
+          "value": 208,
+          "valueLabel": "208"
         }
       ],
-      "note": "Live after Week 7 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end",
-      "source": "Fantrax Players, 2026-27 Reg Season YTD, All Taken Players (excl. free agents), Tue Oct 27 ~9:30 AM PT after Week 7 finals"
+      "note": "Live after Week 8 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end",
+      "source": "Fantrax Players, 2026-27 Reg Season - YTD, All Taken Players (excl. free agents), Off/Def filters, Tue Nov 3 ~9:34 AM PT after Week 8 finals"
     }
   },
   "weekScores": {
@@ -912,6 +941,78 @@
         "teamId": "morningside",
         "team": "Morningside Muff Divers",
         "score": 192.5
+      }
+    ],
+    "8": [
+      {
+        "teamId": "newman",
+        "team": "Newman Lake Sleep Paralysis Demons",
+        "score": 317.5
+      },
+      {
+        "teamId": "slumlords",
+        "team": "Indian Trail Slumlords",
+        "score": 305.0
+      },
+      {
+        "teamId": "eddies",
+        "team": "Eagleridge Eddie's",
+        "score": 269.0
+      },
+      {
+        "teamId": "pocket",
+        "team": "Pocket Agents",
+        "score": 268.0
+      },
+      {
+        "teamId": "dongers",
+        "team": "Drummond Dongers",
+        "score": 268.0
+      },
+      {
+        "teamId": "hyper",
+        "team": "The Hypersecretors",
+        "score": 257.0
+      },
+      {
+        "teamId": "goats",
+        "team": "Valley Old Goats",
+        "score": 253.0
+      },
+      {
+        "teamId": "lab",
+        "team": "Little Ass Boys",
+        "score": 245.0
+      },
+      {
+        "teamId": "doubtpfizer",
+        "team": "Mrs. Doubtpfizer",
+        "score": 235.5
+      },
+      {
+        "teamId": "saltese",
+        "team": "Saltese Slamm",
+        "score": 232.5
+      },
+      {
+        "teamId": "ultron",
+        "team": "Ultron",
+        "score": 227.0
+      },
+      {
+        "teamId": "ttab",
+        "team": "Towner Top Aga Bottom",
+        "score": 213.5
+      },
+      {
+        "teamId": "substation",
+        "team": "Substation",
+        "score": 203.5
+      },
+      {
+        "teamId": "morningside",
+        "team": "Morningside Muff Divers",
+        "score": 172.5
       }
     ]
   },
