@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-11-02 6:29 AM PT",
+  "asOf": "2026-11-03 6:23 AM PT",
   "faabLeft": 85,
   "startingQB": "Jared Goff",
   "roster": {
@@ -36,9 +36,9 @@
     ],
     "DB": [
       "Dane Belton",
-      "Brandon Jones",
       "Amani Hooker",
-      "Cooper DeJean"
+      "Cooper DeJean",
+      "Brandon Jones"
     ],
     "IR": [
       "Saquon Barkley",
@@ -48,20 +48,20 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Rashid Shaheed — O (IR slot)",
-    "Brandon Jones — Q (active)"
+    "Rashid Shaheed — Q (IR slot)",
+    "Brandon Jones — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
+  "source": "Fantrax roster sync 2026-11-03 6:23 AM PT (/workspace/fantrax-raw-2026-11-03-am.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Brandon Jones — Q (active)"
+    "Brandon Jones — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Rashid Shaheed — O (IR slot)",
-    "Brandon Jones — Q (active)"
+    "Rashid Shaheed — Q (IR slot)",
+    "Brandon Jones — Q (reserve)"
   ],
-  "updated": "2026-11-02",
-  "lastSynced": "2026-11-02 6:29 AM PT"
+  "updated": "2026-11-03",
+  "lastSynced": "2026-11-03 6:23 AM PT"
 }

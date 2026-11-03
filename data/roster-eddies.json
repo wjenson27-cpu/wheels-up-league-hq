@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-02 6:29 AM PT",
+  "asOf": "2026-11-03 6:23 AM PT",
   "faabLeft": 34,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -10,17 +10,16 @@
       "Trevor Lawrence"
     ],
     "RB": [
-      "Corey Kiner",
       "Breece Hall",
-      "Zach Charbonnet"
+      "Zach Charbonnet",
+      "Corey Kiner"
     ],
     "WR": [
       "Garrett Wilson",
       "Jalen Coker",
-      "Chimere Dike",
       "George Pickens",
       "Ja'Kobi Lane",
-      "Kendrick Bourne"
+      "Chimere Dike"
     ],
     "TE": [
       "Brock Bowers"
@@ -29,11 +28,11 @@
       "George Karlaftis"
     ],
     "LB": [
+      "Fred Warner",
       "Jordyn Brooks",
       "Frankie Luvu",
-      "Trenton Simpson",
       "Cedric Gray",
-      "Fred Warner"
+      "Trenton Simpson"
     ],
     "DB": [
       "Quentin Lake",
@@ -41,34 +40,31 @@
       "Cole Bishop"
     ],
     "IR": [
-      "Cameron Skattebo",
       "Jordyn Tyson",
-      "Travis Etienne"
+      "Travis Etienne",
+      "Cameron Skattebo"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Breece Hall — O (reserve)",
-    "Kendrick Bourne — Q (reserve)",
-    "Cameron Skattebo — Q (IR slot)",
+    "Breece Hall — Q (active)",
     "Jordyn Tyson — IR (IR slot)",
-    "Travis Etienne — IR (IR slot)"
+    "Travis Etienne — IR (IR slot)",
+    "Cameron Skattebo — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
+  "source": "Fantrax roster sync 2026-11-03 6:23 AM PT (/workspace/fantrax-raw-2026-11-03-am.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
-    "Breece Hall — O (reserve)",
-    "Kendrick Bourne — Q (reserve)"
+    "Breece Hall — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Breece Hall — O (reserve)",
-    "Kendrick Bourne — Q (reserve)",
-    "Cameron Skattebo — Q (IR slot)",
+    "Breece Hall — Q (active)",
     "Jordyn Tyson — IR (IR slot)",
-    "Travis Etienne — IR (IR slot)"
+    "Travis Etienne — IR (IR slot)",
+    "Cameron Skattebo — Q (IR slot)"
   ],
-  "updated": "2026-11-02",
-  "lastSynced": "2026-11-02 6:29 AM PT"
+  "updated": "2026-11-03",
+  "lastSynced": "2026-11-03 6:23 AM PT"
 }

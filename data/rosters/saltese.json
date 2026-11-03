@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-02 6:29 AM PT",
+  "asOf": "2026-11-03 6:23 AM PT",
   "faabLeft": 5,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -11,11 +11,11 @@
     ],
     "RB": [
       "Bhayshul Tuten",
-      "Rico Dowdle",
       "Ashton Jeanty",
-      "D'Andre Swift",
       "Aaron Jones",
-      "Kyle Monangai"
+      "D'Andre Swift",
+      "Kyle Monangai",
+      "Rico Dowdle"
     ],
     "WR": [
       "Antonio Williams"
@@ -28,16 +28,14 @@
     ],
     "LB": [
       "Jamien Sherwood",
+      "Dre Greenlaw",
       "Demetrius Knight",
       "Carson Schwesinger",
-      "David Walker",
-      "Dre Greenlaw",
       "Dee Winters"
     ],
     "DB": [
       "Byron Murphy",
-      "Ty Okada",
-      "Brandon Cisse"
+      "Ty Okada"
     ],
     "IR": [
       "Jonathon Brooks",
@@ -47,27 +45,33 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Kyle Monangai — O (reserve)",
+    "Matthew Stafford — Q (active)",
+    "Bhayshul Tuten — Q (active)",
+    "Kyle Monangai — Q (reserve)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
     "David Montgomery — Q (IR slot)",
-    "Dee Winters — O (reserve)"
+    "Dee Winters — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
+  "source": "Fantrax roster sync 2026-11-03 6:23 AM PT (/workspace/fantrax-raw-2026-11-03-am.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
-    "Kyle Monangai — O (reserve)",
-    "Dee Winters — O (reserve)"
+    "Matthew Stafford — Q (active)",
+    "Bhayshul Tuten — Q (active)",
+    "Kyle Monangai — Q (reserve)",
+    "Dee Winters — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Kyle Monangai — O (reserve)",
+    "Matthew Stafford — Q (active)",
+    "Bhayshul Tuten — Q (active)",
+    "Kyle Monangai — Q (reserve)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
     "David Montgomery — Q (IR slot)",
-    "Dee Winters — O (reserve)"
+    "Dee Winters — Q (reserve)"
   ],
-  "updated": "2026-11-02",
-  "lastSynced": "2026-11-02 6:29 AM PT"
+  "updated": "2026-11-03",
+  "lastSynced": "2026-11-03 6:23 AM PT"
 }

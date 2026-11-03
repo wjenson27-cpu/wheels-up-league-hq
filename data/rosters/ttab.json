@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-11-02 6:29 AM PT",
+  "asOf": "2026-11-03 6:23 AM PT",
   "faabLeft": 10,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -49,12 +49,12 @@
   "notes": "",
   "injuryFlags": [
     "Christian Watson — Q (active)",
-    "DeVonta Smith — O (IR slot)",
+    "DeVonta Smith — Q (IR slot)",
     "Caleb Downs — Q (active)",
     "Brian Branch — Q (reserve)",
-    "Divine Deablo — O (IR slot)"
+    "Divine Deablo — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-02 6:29 AM PT (/workspace/fantrax-raw-2026-11-02-am.json)",
+  "source": "Fantrax roster sync 2026-11-03 6:23 AM PT (/workspace/fantrax-raw-2026-11-03-am.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
     "Christian Watson — Q (active)",
@@ -65,11 +65,11 @@
   "pendingClaims": [],
   "flags": [
     "Christian Watson — Q (active)",
-    "DeVonta Smith — O (IR slot)",
+    "DeVonta Smith — Q (IR slot)",
     "Caleb Downs — Q (active)",
     "Brian Branch — Q (reserve)",
-    "Divine Deablo — O (IR slot)"
+    "Divine Deablo — Q (IR slot)"
   ],
-  "updated": "2026-11-02",
-  "lastSynced": "2026-11-02 6:29 AM PT"
+  "updated": "2026-11-03",
+  "lastSynced": "2026-11-03 6:23 AM PT"
 }
