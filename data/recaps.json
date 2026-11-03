@@ -1,8 +1,65 @@
 {
-  "updated": "2026-10-27T09:33:00-07:00",
-  "note": "Week 6 recap DRAFT pending Bill approval; do not publish prose until yes/go/push.",
+  "updated": "2026-11-03",
+  "note": "Week 8 recap DRAFT pending Bill approval; do not publish prose until yes/go/push.",
   "pendingPublish": false,
   "recaps": [
+    {
+      "week": 8,
+      "season": 2026,
+      "sample": false,
+      "title": "Week 8 Recap: SPD’s Drop 317.5 on Pocket, Substation Off the Bus, Eddies Make It Six Straight",
+      "dateLabel": "Tuesday drop · Week 8 finals locked",
+      "coldOpen": "Week 8 in the WU had a 206-point defense, a 58-point quarterback, and a Last Ride swap for the second week in a row. Ryan McCallum’s SPD’s dropped the week’s high at 317.5, took the kitty, and handed Pocket its third loss. Ryan Towner’s Slumlords answered at 305. Nate’s Substation scored 203.5, the low among the alive, so they’re off the bus and six teams remain. Bill’s Eddies beat Ultron 269–227 for six straight and sit alone in first on points. Joe Burrow hung 58 on Saltese and the Dongers have a winning streak, which is a sentence nobody expected to type. Mike Heff’s Goats beat LAB by 8, beat TTAB on Last Ride, and took over the driver’s seat. Hero of the week: the SPD’s, at 317.5 with a defense that outscored two teams’ entire lineups. Goat of the week: Substation, whose defense scored 70 and whose bus ticket expired with it.",
+      "matchups": [
+        {
+          "scoreline": "Newman Lake Sleep Paralysis Demons 317.5, Pocket Agents 268",
+          "blurb": "Ryan McCallum’s SPD’s led one of two 300-point weeks, and they did it with linebackers. The IDP went for **206**, best in the league by 43: **Ty’Ron Hopper’s 40**, **Eric Wilson’s 40**, **Jordan Battle’s 34**, **Andrew Van Ginkel’s 30**, **Jeremiah Trotter’s 24** and **Nathan Landman’s 22**. **Tee Higgins’ 43**, **Jordan Love’s 26** and **Matthew Golden’s 20** gave the offense **111.5**. Kellen’s Pocket got **Amani Hooker’s 42**, **Dane Belton’s 36**, **Ernest Jones’ 27** and **Trey McBride’s 25.5**, plus a **163** defense. Pocket’s **268** is the best losing score of the week and would have beaten nine other teams. The SPD’s go to **4-4** and stay on the bus; Pocket drops to **5-3** but still leads the league with **2210** PF. Juice: Hopper/Wilson 40 apiece; the kitty; a 206 defense. Junk: **Zay Flowers’ 0**, **Jordan Mason’s 3** and **Jonathan Taylor’s 6** for the SPD’s, and **Jared Goff’s 10** for Pocket."
+        },
+        {
+          "scoreline": "Indian Trail Slumlords 305, Mrs. Doubtpfizer 235.5",
+          "blurb": "The Slumlords’ defense that scored 85 last week came back with **148**, and Ryan Towner’s crew posted the second-best score of the week. **Anthony Hill’s 30**, **Jeffery Simmons’ 30**, **Gregory Rousseau’s 25** and **Devon Witherspoon’s 20** did the hitting, and **Harold Fannin’s 36**, **Jahmyr Gibbs’ 33**, **Drake Maye’s 26** and **James Cook’s 21** built a **157** offense. Kyle’s Doubtpfizer got **Alex Singleton’s 39** after last week’s 53, plus **Braelon Allen’s 31** and **Chuba Hubbard’s 27**, but the defense fell from 178 to **111**. The Slumlords go to **4-4**; Doubtpfizer drops to **3-5** despite **2010** PF, fourth-most in the league. Juice: Fannin 36 from the tight end spot; a 148 defense. Junk: **Kyle Pitts’ 3** and **Byron Young’s 3** for Doubtpfizer, and **Quinshon Judkins’ 7** for the Slumlords."
+        },
+        {
+          "scoreline": "Eagle Ridge Eddies 269, Ultron 227",
+          "blurb": "Bill’s Eddies made it six straight, and this time the offense showed up too. **Brock Bowers’ 34**, **Chimere Dike’s 34** (projected at 7.5), and **Trevor Lawrence’s 24** got the offense to **126**, and the defense added **143**: **George Karlaftis’ 30**, **Quentin Lake’s 28**, **Jordyn Brooks’ 24**, **Evan Williams’ 23** and **Cole Bishop’s 17**, the $4 waiver pickup earning his keep. Brian Aga’s Ultron got **Michael Wilson’s 32**, **Foyesade Oluokun’s 31**, **Josh Allen’s 30** and **Josh Metellus’ 28**, but **Bijan Robinson’s 9**, **Drake London’s 5** and **Tyler Higbee’s 3** sank the offense to **97**. The Eddies go to **6-2**, first on the PF tiebreak with **2018**; Ultron drops to **3-5**. Juice: Bowers and Dike at 34 apiece; six straight; first place. Junk: **Corey Kiner’s 4**, **George Pickens’ 6** in his Eddies debut, and **Trenton Simpson’s 7**."
+        },
+        {
+          "scoreline": "The Hypersecretors 257, Substation 203.5",
+          "blurb": "Nate’s Substation won the offense **133.5–113** and lost the game by 53.5, because the defense scored **70**. **Jack Campbell’s 3**, **Tykee Smith’s 3** and **DeShon Elliott’s 2** were the lowlights, and only **Zack Baun’s 19** and **Kevin Winston’s 17** showed up. **Emmett Johnson’s 41**, **Ja’Marr Chase’s 39** and **Tucker Kraft’s 22** deserved better. Jacob Crisp’s Hyper built a **144** IDP behind **Dexter Lawrence’s 30**, **Jeremy Chinn’s 29** and **Blake Cashman’s 25**, and **Kirk Cousins’ 33** led the offense. Substation’s **203.5** was the lowest score among the alive, so they’re off the bus. Hyper goes to **4-4** with two straight and **2025.5** PF; Substation drops to **4-4**. Juice: Cousins 33; Hyper’s defense; two straight. Junk: Substation’s 70 defense, **Tre Tucker’s 0**, and the trade haul from the Eddies: **Bryce Young 13**, **Tyler Warren 7.5**."
+        },
+        {
+          "scoreline": "Drummond Dongers 268, Saltese Slamm 232.5",
+          "blurb": "Gavin’s Dongers have a winning streak. **Joe Burrow’s 58** was the top player score of the week, and **Tony Pollard’s 43**, **JSN’s 29** and **T.J. Hockenson’s 18.5** gave the Dongers a **175** offense, best in the league by 18. **Christian Elliss’ 27** and **Nick Cross’ 21** led a **93** defense, which was enough. Luke’s Saltese got **Bhayshul Tuten’s 37**, **D’Andre Swift’s 30** and **Jamien Sherwood’s 25**, and won the IDP **119–93**, but **Matthew Stafford’s 9** and **Ashton Jeanty’s 9** couldn’t keep pace. The Dongers go to **2-6**; Saltese drops to **3-5**. Juice: Burrow 58; Pollard 43; back-to-back wins. Junk: **David Walker’s 0**, **Ty Okada’s 4** and **Mason Taylor’s 5.5** for Saltese, and **Parker Washington’s 3** for the Dongers."
+        },
+        {
+          "scoreline": "Valley Old Goats 253, Little Ass Boys 245",
+          "blurb": "Mike Heff’s Goats won by 8 and won Last Ride on the same scoreboard. **Patrick Mahomes** went from 4 last week to **42**, and **Bucky Irving’s 29**, **Josh Jacobs’ 25** and **Chase Brown’s 17** built a **136** offense. **T.J. Watt’s 29**, **Devin Bush’s 24** and **Quincy Williams’ 20** led the defense. Jesse’s LAB won the IDP **136–117** behind **Roquan Smith’s 33**, **Jacob Parrish’s 31** and **Minkah Fitzpatrick’s 18**, and got **Jaylen Warren’s 29** and **Puka Nacua’s 25**, but **Jayden Daniels’ 16** and **Jeremiyah Love’s 3** left them 8 short. The Goats go to **6-2**, tied with the Eddies for first; LAB drops to **5-3** and stays on the bus. On Last Ride, the Goats’ **253** beat TTAB’s **213.5**, so the Goats take the driver’s seat. Juice: Mahomes 42; Watt 29; tied for first. Junk: **DK Metcalf’s 3**, **Keisean Nixon’s 4** and **Mark Andrews’ 6**."
+        },
+        {
+          "scoreline": "Towner Top Aga Bottom 213.5, Morningside Muff Divers 172.5",
+          "blurb": "Chase’s TTAB won the game and lost Last Ride on the same afternoon, which is exactly what happened to Saltese a week ago. **Patrick Queen’s 42** and **Harold Perkins’ 26** led a **127** IDP, and **Christian Watson’s 22** and **Jameson Williams’ 19** got the offense to **86.5**. Tim’s Divers scored **172.5**, the floor of the week, with a **62.5** offense: **Lamar Jackson’s 0**, **Xavier Worthy’s 4** and **Ollie Gordon’s 8**. **Lukas Van Ness** went from 1 last week to **27**, and **Malaki Starks** added **25**. TTAB goes to **4-4**; Morningside drops to **3-5**. TTAB’s 213.5 lost the Last Ride battle to the Goats’ 253, so TTAB is out for good. Juice: Queen 42; Van Ness’ bounce-back. Junk: Lamar’s 0, **Omar Cooper Jr.’s 0** for TTAB, and the week’s floor."
+        }
+      ],
+      "heroes": [
+        "SPD’s 317.5: Hopper 40 / Eric Wilson 40 / Battle 34 / Higgins 43 / 206 defense; the kitty",
+        "Slumlords 305: Fannin 36 / Gibbs 33 / Hill 30 / Simmons 30; defense back from 85 to 148",
+        "Joe Burrow 58 (Dongers): top player of the week; Dongers win two straight",
+        "Eddies 269: Bowers 34 / Dike 34 / Karlaftis 30; six straight and first place",
+        "Goats 253: Mahomes 42 after last week’s 4; win, tie for first, and Last Ride",
+        "Pocket 268: best losing score of the week, Hooker 42 / Belton 36"
+      ],
+      "goats": [
+        "Substation 203.5: a 70-point defense and off the bus",
+        "Morningside 172.5: week floor, Lamar Jackson 0, 62.5 offense",
+        "TTAB: won the game, lost Last Ride, out for good",
+        "Doubtpfizer: 2010 PF and a 3-5 record",
+        "Zay Flowers 0 (SPD’s), Tre Tucker 0 (Substation), David Walker 0 (Saltese), Omar Cooper Jr. 0 (TTAB)",
+        "Pocket 268 in an L: would have beaten nine other teams this week"
+      ],
+      "closer": "Kitty to the SPD’s at 317.5. Substation is off the bus, and six teams remain: Eddies, Pocket, LAB, Hyper, SPD’s and Doubtpfizer. Last Ride: TTAB is out for good, the Goats take over, and Week 9 is the Goats vs Substation. The Eddies and Goats are 6-2 at the top, Pocket and LAB are 5-3, and five teams sit at 4-4. WWJDD: start your linebackers, don’t trust a 70-point defense to get you home, and remember that Joe Burrow and the Dongers are now officially a problem.",
+      "pendingPublish": false,
+      "approvedForPush": true
+    },
     {
       "week": 7,
       "season": 2026,
