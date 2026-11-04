@@ -1,7 +1,72 @@
 {
-  "updated": "2026-11-03",
-  "source": "Fantrax roster sync 2026-11-03 6:23 AM PT (/workspace/fantrax-raw-2026-11-03-am.json)",
+  "updated": "2026-11-04",
+  "source": "Fantrax roster sync 2026-11-04 6:26 AM PT (/workspace/fantrax-raw-2026-11-04-am.json)",
   "items": [
+    {
+      "date": "2026-11-03",
+      "team": "Substation",
+      "type": "DROP",
+      "summary": "Dropped DeShon Elliott (DB-PIT)",
+      "time": "10:20 PM PDT",
+      "player": "DeShon Elliott",
+      "playerMeta": "DB-PIT",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-11-03",
+      "team": "Valley Old Goats",
+      "type": "DROP",
+      "summary": "Dropped Mark Andrews (TE-BAL)",
+      "time": "10:18 AM PDT",
+      "player": "Mark Andrews",
+      "playerMeta": "TE-BAL",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-11-03",
+      "team": "Little Ass Boys",
+      "type": "DROP",
+      "summary": "Dropped Greg Dulcich (TE-MIA)",
+      "time": "10:18 AM PDT",
+      "player": "Greg Dulcich",
+      "playerMeta": "TE-MIA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-11-03",
+      "team": "Pocket Agents",
+      "type": "DROP",
+      "summary": "Dropped Tory Horton (WR-SEA)",
+      "time": "7:47 AM PDT",
+      "player": "Tory Horton",
+      "playerMeta": "WR-SEA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
+    {
+      "date": "2026-11-03",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Emanuel Wilson (RB-SEA)",
+      "time": "7:21 AM PDT",
+      "player": "Emanuel Wilson",
+      "playerMeta": "RB-SEA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 8"
+    },
     {
       "date": "2026-11-02",
       "team": "The Hypersecretors",
@@ -6984,7 +7049,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Nov 3 AM: +6 FA rows (Nov 2 12:55 PM–7:13 PM PT), no bids, no new trades. Nov 2 AM: +1 FA rows (Nov 1 5:05 PM–5:05 PM PT), no bids, no new trades. Nov 1 AM: +3 FA rows (Nov 1 6:19 AM–2:06 PM PT), no bids, no new trades. Nov 1 AM: +5 FA rows (Oct 31 9:05 PM–Nov 1 6:13 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Nov 4 AM: +5 FA rows (Nov 3 7:21 AM–10:20 PM PT), no bids, no new trades. Nov 3 AM: +6 FA rows (Nov 2 12:55 PM–7:13 PM PT), no bids, no new trades. Nov 2 AM: +1 FA rows (Nov 1 5:05 PM–5:05 PM PT), no bids, no new trades. Nov 1 AM: +3 FA rows (Nov 1 6:19 AM–2:06 PM PT), no bids, no new trades. Nov 1 AM: +5 FA rows (Oct 31 9:05 PM–Nov 1 6:13 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-11-03 6:23 AM PT"
+  "lastSynced": "2026-11-04 6:26 AM PT"
 }

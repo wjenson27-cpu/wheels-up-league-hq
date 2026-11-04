@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-03",
-  "source": "Fantrax roster sync 2026-11-03 6:23 AM PT (/workspace/fantrax-raw-2026-11-03-am.json)",
+  "updated": "2026-11-04",
+  "source": "Fantrax roster sync 2026-11-04 6:26 AM PT (/workspace/fantrax-raw-2026-11-04-am.json)",
   "season": 2026,
   "trades": [
     {
@@ -712,7 +712,7 @@
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "Oct 28 9:00 AM",
+      "lastUpdated": "Nov 3 10:18 PM",
       "players": [
         "Jordan Love QB GB",
         "TreVeyon Henderson RB NE",
@@ -766,7 +766,7 @@
     {
       "teamId": "ttab",
       "team": "TTAB",
-      "lastUpdated": "Oct 26 9:51 PM",
+      "lastUpdated": "Nov 3 7:21 AM",
       "players": [
         "Javonte Williams RB DAL",
         "Emanuel Wilson RB SEA",
@@ -781,8 +781,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-11-03 6:23 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-11-04 6:26 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM); TTAB↔Ultron Josh Allen for Micah McFadden+Caleb Williams+Patrick Queen (Oct 29 9:34 PM); Saltese↔Ultron Omarion Hampton+Brian Robinson Jr.+Kyle Hamilton+Bijan Robinson+$5 FAAB for Ashton Jeanty+Carson Schwesinger+Kyle Monangai+D'Andre Swift (Oct 29 12:41 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-03 6:23 AM PT"
+  "lastSynced": "2026-11-04 6:26 AM PT"
 }

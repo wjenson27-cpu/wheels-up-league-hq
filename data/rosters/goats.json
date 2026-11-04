@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-11-03 6:23 AM PT",
+  "asOf": "2026-11-04 6:26 AM PT",
   "faabLeft": 64,
   "startingQB": "Patrick Mahomes",
   "roster": {
@@ -10,31 +10,30 @@
       "Patrick Mahomes"
     ],
     "RB": [
-      "Josh Jacobs",
-      "Chase Brown",
       "Derrick Henry",
+      "Chase Brown",
       "Bucky Irving",
+      "Josh Jacobs",
       "Samaje Perine"
     ],
     "WR": [
+      "Devaughn Vele",
       "DK Metcalf",
-      "Marvin Harrison",
-      "Devaughn Vele"
+      "Marvin Harrison"
     ],
     "TE": [
-      "Mark Andrews",
       "George Kittle"
     ],
     "DL": [
-      "T.J. Watt",
-      "Danielle Hunter"
+      "Danielle Hunter",
+      "T.J. Watt"
     ],
     "LB": [
       "Devin Lloyd",
       "Devin Bush",
-      "Drake Thomas",
+      "Arvell Reese",
       "Quincy Williams",
-      "Arvell Reese"
+      "Drake Thomas"
     ],
     "DB": [
       "Keisean Nixon",
@@ -46,12 +45,12 @@
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-11-03 6:23 AM PT (/workspace/fantrax-raw-2026-11-03-am.json)",
+  "source": "Fantrax roster sync 2026-11-04 6:26 AM PT (/workspace/fantrax-raw-2026-11-04-am.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
-  "updated": "2026-11-03",
-  "lastSynced": "2026-11-03 6:23 AM PT"
+  "updated": "2026-11-04",
+  "lastSynced": "2026-11-04 6:26 AM PT"
 }

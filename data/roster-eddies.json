@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-03 6:23 AM PT",
+  "asOf": "2026-11-04 6:26 AM PT",
   "faabLeft": 34,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -52,7 +52,7 @@
     "Travis Etienne — IR (IR slot)",
     "Cameron Skattebo — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-03 6:23 AM PT (/workspace/fantrax-raw-2026-11-03-am.json)",
+  "source": "Fantrax roster sync 2026-11-04 6:26 AM PT (/workspace/fantrax-raw-2026-11-04-am.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Breece Hall — Q (active)"
@@ -65,6 +65,6 @@
     "Travis Etienne — IR (IR slot)",
     "Cameron Skattebo — Q (IR slot)"
   ],
-  "updated": "2026-11-03",
-  "lastSynced": "2026-11-03 6:23 AM PT"
+  "updated": "2026-11-04",
+  "lastSynced": "2026-11-04 6:26 AM PT"
 }

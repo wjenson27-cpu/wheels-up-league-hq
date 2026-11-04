@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-11-03 6:23 AM PT",
+  "asOf": "2026-11-04 6:26 AM PT",
   "faabLeft": 56,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -12,64 +12,59 @@
     ],
     "RB": [
       "Kyren Williams",
-      "Jeremiyah Love",
-      "Jaylen Warren",
-      "Dylan Sampson"
+      "Tyler Allgeier",
+      "Dylan Sampson",
+      "Jaylen Warren"
     ],
     "WR": [
       "Puka Nacua",
+      "Mike Evans",
       "Khalil Shakir",
       "Caleb Douglas"
     ],
     "TE": [
-      "Greg Dulcich",
       "Isaiah Likely"
     ],
     "DL": [
       "Aidan Hutchinson"
     ],
     "LB": [
-      "Roquan Smith",
+      "Jack Gibbens",
       "Akeem Davis-Gaither",
       "Drue Tranquill",
       "Quay Walker",
-      "Jack Gibbens",
-      "Jihaad Campbell"
+      "Roquan Smith"
     ],
     "DB": [
       "Minkah Fitzpatrick",
       "Jacob Parrish"
     ],
     "IR": [
-      "Tyler Allgeier",
-      "Mike Evans",
-      "Carnell Tate"
+      "Jeremiyah Love",
+      "Carnell Tate",
+      "Jihaad Campbell"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Jeremiyah Love — Q (active)",
-    "Mike Evans — Q (IR slot)",
+    "Mike Evans — Q (active)",
+    "Jeremiyah Love — IR (IR slot)",
     "Carnell Tate — Q (IR slot)",
-    "Roquan Smith — Q (active)",
-    "Jihaad Campbell — Q (reserve)"
+    "Jihaad Campbell — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-03 6:23 AM PT (/workspace/fantrax-raw-2026-11-03-am.json)",
+  "source": "Fantrax roster sync 2026-11-04 6:26 AM PT (/workspace/fantrax-raw-2026-11-04-am.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
-    "Jeremiyah Love — Q (active)",
-    "Roquan Smith — Q (active)",
-    "Jihaad Campbell — Q (reserve)"
+    "Mike Evans — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Jeremiyah Love — Q (active)",
-    "Mike Evans — Q (IR slot)",
+    "Mike Evans — Q (active)",
+    "Jeremiyah Love — IR (IR slot)",
     "Carnell Tate — Q (IR slot)",
-    "Roquan Smith — Q (active)",
-    "Jihaad Campbell — Q (reserve)"
+    "Jihaad Campbell — Q (IR slot)"
   ],
-  "updated": "2026-11-03",
-  "lastSynced": "2026-11-03 6:23 AM PT"
+  "updated": "2026-11-04",
+  "lastSynced": "2026-11-04 6:26 AM PT"
 }
