@@ -76,7 +76,6 @@ assert(sameDay.label === "updated today" && !sameDay.stale, "a date-only stamp s
 
 const weekFiles = [];
 for (let week = 1; week <= 7; week += 1) weekFiles.push(`data/scores-w${week}-2026.json`);
-weekFiles.push("data/scores.json");
 for (const rel of weekFiles) {
   const data = await readJson(rel);
   const parsed = parseDataTimestamp(data.asOf);
