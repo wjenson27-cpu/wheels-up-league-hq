@@ -2,13 +2,13 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-04 6:26 AM PT",
+  "asOf": "2026-11-04 10:18 AM PT",
   "faabLeft": 12,
-  "startingQB": "Justin Herbert",
+  "startingQB": "Kirk Cousins",
   "roster": {
     "QB": [
-      "Justin Herbert",
-      "Kirk Cousins"
+      "Kirk Cousins",
+      "Justin Herbert"
     ],
     "RB": [
       "Kenneth Walker III",
@@ -18,11 +18,11 @@
     ],
     "WR": [
       "Amon-Ra St. Brown",
-      "Luther Burden",
-      "Travis Hunter"
+      "Luther Burden"
     ],
     "TE": [
-      "Sam LaPorta"
+      "Sam LaPorta",
+      "Dalton Schultz"
     ],
     "DL": [
       "Dexter Lawrence"
@@ -41,6 +41,7 @@
     ],
     "IR": [
       "Emeka Egbuka",
+      "Travis Hunter",
       "Nick Bosa"
     ]
   },
@@ -50,7 +51,7 @@
     "Emeka Egbuka — Q (IR slot)",
     "Nick Bosa — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-04 6:26 AM PT (/workspace/fantrax-raw-2026-11-04-am.json)",
+  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
     "Jacory Croskey-Merritt — IR (reserve)"
@@ -63,5 +64,5 @@
     "Nick Bosa — Q (IR slot)"
   ],
   "updated": "2026-11-04",
-  "lastSynced": "2026-11-04 6:26 AM PT"
+  "lastSynced": "2026-11-04 10:18 AM PT"
 }

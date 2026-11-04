@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-04",
-  "source": "Fantrax roster sync 2026-11-04 6:26 AM PT (/workspace/fantrax-raw-2026-11-04-am.json)",
+  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
   "season": 2026,
   "trades": [
     {
@@ -744,14 +744,12 @@
         "Myles Price WR MIN",
         "Juwan Johnson TE NO",
         "Michael Mayer TE LV",
-        "Andrew Van Ginkel DL,LB MIN",
+        "Andrew Van Ginkel DL MIN",
         "Azeez Al-Shaair LB HOU",
         "Zaire Franklin LB GB",
         "Ty'Ron Hopper LB GB",
         "Nathan Landman LB LAR",
-        "Henry To'oTo'o LB HOU",
         "Jeremiah Trotter LB PHI",
-        "Eric Wilson LB MIN",
         "Jordan Battle DB CIN",
         "Xavier Watts DB ATL"
       ],
@@ -787,7 +785,6 @@
       "lastUpdated": "Nov 3 7:21 AM",
       "players": [
         "Javonte Williams RB DAL",
-        "Emanuel Wilson RB SEA",
         "Christian Watson WR GB",
         "Jameson Williams WR DET",
         "Dallas Goedert TE PHI",
@@ -799,8 +796,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-11-04 6:26 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-11-04 10:18 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Newman↔Substation Eric Wilson+Henry To'oTo'o for Kevin Winston+Tyler Warren (Nov 3 10:18 PM); Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM); TTAB↔Ultron Josh Allen for Micah McFadden+Caleb Williams+Patrick Queen (Oct 29 9:34 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-04 6:26 AM PT"
+  "lastSynced": "2026-11-04 10:18 AM PT"
 }

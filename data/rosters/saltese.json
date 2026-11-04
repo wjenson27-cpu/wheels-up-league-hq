@@ -2,12 +2,13 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-04 6:26 AM PT",
-  "faabLeft": 5,
+  "asOf": "2026-11-04 10:18 AM PT",
+  "faabLeft": 3,
   "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
-      "Matthew Stafford"
+      "Matthew Stafford",
+      "Malik Willis"
     ],
     "RB": [
       "Bhayshul Tuten",
@@ -18,7 +19,8 @@
       "Rico Dowdle"
     ],
     "WR": [
-      "Antonio Williams"
+      "Antonio Williams",
+      "Adonai Mitchell"
     ],
     "TE": [
       "Mason Taylor"
@@ -34,8 +36,9 @@
       "Dee Winters"
     ],
     "DB": [
-      "Byron Murphy",
-      "Ty Okada"
+      "Ty Okada",
+      "Antoine Winfield",
+      "Jonas Sanker"
     ],
     "IR": [
       "Jonathon Brooks",
@@ -53,7 +56,7 @@
     "David Montgomery — Q (IR slot)",
     "Dee Winters — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-04 6:26 AM PT (/workspace/fantrax-raw-2026-11-04-am.json)",
+  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "Matthew Stafford — Q (active)",
@@ -73,5 +76,5 @@
     "Dee Winters — Q (reserve)"
   ],
   "updated": "2026-11-04",
-  "lastSynced": "2026-11-04 6:26 AM PT"
+  "lastSynced": "2026-11-04 10:18 AM PT"
 }

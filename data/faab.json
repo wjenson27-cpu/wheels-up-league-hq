@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-04",
-  "source": "Fantrax Claim Budget Remaining verified live, all 14 teams, 2026-11-04 6:26 AM PT roster sync.",
+  "source": "Fantrax Claim Budget Remaining verified live, all 14 teams, 2026-11-04 10:18 AM PT roster sync.",
   "startingBudget": 115,
   "note": "Week 8 FAAB clear (Wed Oct 28, 9:00 AM PT) — spend by team: Substation $21 (KC Concepcion $21); The Hypersecretors $13 (Jacory Croskey-Merritt $9, Micah Parsons $4); Mrs. Doubtpfizer $10 (Kyler Gordon $5, Kaelon Black $3, Nohl Williams $2); Saltese Slamm $6 (Dee Winters $4, Colby Parkinson $1, Ty Okada $1); Little Ass Boys $5 (Greg Dulcich $5); Eagleridge Eddie's $4 (Cole Bishop $4); Pocket Agents $3 (Josh Hines-Allen $3); Newman Lake $3 (Grant Delpit $3). $0 executed claims excluded from claims[]. Balances verified live against Fantrax Claim Budget Remaining at 9:44 AM PT.",
   "excludeZeroBids": true,
@@ -37,12 +37,12 @@
       "owner": "Luke Sahlberg",
       "abbrev": "SAL",
       "starting": 115,
-      "remaining": 5,
-      "spentClaims": 101,
+      "remaining": 3,
+      "spentClaims": 103,
       "tradeOut": 29,
       "tradeIn": 25,
-      "spentKnown": 130,
-      "remainingKnown": 5
+      "spentKnown": 132,
+      "remainingKnown": 3
     },
     {
       "id": "lab",
@@ -63,12 +63,12 @@
       "owner": "Kyle Weberg",
       "abbrev": "MDP",
       "starting": 115,
-      "remaining": 75,
-      "spentClaims": 40,
+      "remaining": 72,
+      "spentClaims": 43,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 40,
-      "remainingKnown": 75
+      "spentKnown": 43,
+      "remainingKnown": 72
     },
     {
       "id": "eddies",
@@ -76,12 +76,12 @@
       "owner": "",
       "abbrev": "ERE",
       "starting": 115,
-      "remaining": 34,
-      "spentClaims": 70,
+      "remaining": 25,
+      "spentClaims": 79,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 70,
-      "remainingKnown": 34
+      "spentKnown": 79,
+      "remainingKnown": 25
     },
     {
       "id": "dongers",
@@ -154,12 +154,12 @@
       "owner": "Mike Heff",
       "abbrev": "VOG",
       "starting": 100,
-      "remaining": 64,
-      "spentClaims": 36,
+      "remaining": 60,
+      "spentClaims": 40,
       "tradeOut": 0,
       "tradeIn": 0,
-      "spentKnown": 36,
-      "remainingKnown": 64,
+      "spentKnown": 40,
+      "remainingKnown": 60,
       "note": " | Started at $100: only team that did not pay dues by Aug 1 (no +$15 bonus), per Bill Oct 23 2026"
     },
     {
@@ -190,6 +190,84 @@
     }
   ],
   "claims": [
+    {
+      "date": "2026-11-04",
+      "time": "9:00 AM PDT",
+      "player": "Adonai Mitchell",
+      "amount": 1,
+      "team": "Saltese Slamm",
+      "kind": "claim",
+      "teamId": "saltese",
+      "pos": "WR",
+      "dropped": null,
+      "note": "Week 9 claim",
+      "attribution": "fantrax-roster-sync-2026-11-04-am"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "9:00 AM PDT",
+      "player": "Devin Singletary",
+      "amount": 2,
+      "team": "Eagle Ridge Eddies",
+      "kind": "claim",
+      "teamId": "eddies",
+      "pos": "RB",
+      "dropped": "Corey Kiner",
+      "note": "Week 9 claim; dropped Corey Kiner",
+      "attribution": "fantrax-roster-sync-2026-11-04-am"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "9:00 AM PDT",
+      "player": "Malik Willis",
+      "amount": 1,
+      "team": "Saltese Slamm",
+      "kind": "claim",
+      "teamId": "saltese",
+      "pos": "QB",
+      "dropped": null,
+      "note": "Week 9 claim",
+      "attribution": "fantrax-roster-sync-2026-11-04-am"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "9:00 AM PDT",
+      "player": "Mike Gesicki",
+      "amount": 4,
+      "team": "Valley Old Goats",
+      "kind": "claim",
+      "teamId": "goats",
+      "pos": "TE",
+      "dropped": null,
+      "note": "Week 9 claim",
+      "attribution": "fantrax-roster-sync-2026-11-04-am"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "9:00 AM PDT",
+      "player": "Malik Mustapha",
+      "amount": 3,
+      "team": "Mrs. Doubtpfizer",
+      "kind": "claim",
+      "teamId": "doubtpfizer",
+      "pos": "DB",
+      "dropped": "Nohl Williams",
+      "note": "Week 9 claim; dropped Nohl Williams",
+      "attribution": "fantrax-roster-sync-2026-11-04-am"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "9:00 AM PDT",
+      "player": "Josh Downs",
+      "amount": 7,
+      "team": "Eagle Ridge Eddies",
+      "kind": "claim",
+      "teamId": "eddies",
+      "pos": "WR",
+      "dropped": null,
+      "note": "Week 9 claim",
+      "attribution": "fantrax-roster-sync-2026-11-04-am"
+    },
     {
       "date": "2026-10-28",
       "time": "9:00 AM PDT",
@@ -2248,5 +2326,5 @@
     }
   ],
   "incomplete": false,
-  "lastSynced": "2026-11-04 6:26 AM PT"
+  "lastSynced": "2026-11-04 10:18 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-11-04 6:26 AM PT",
+  "asOf": "2026-11-04 10:18 AM PT",
   "faabLeft": 0,
   "startingQB": "Drake Maye",
   "roster": {
@@ -51,7 +51,7 @@
     "Talanoa Hufanga — Q (IR slot)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-04 6:26 AM PT (/workspace/fantrax-raw-2026-11-04-am.json)",
+  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -62,5 +62,5 @@
     "Leonard Williams — Q (IR slot)"
   ],
   "updated": "2026-11-04",
-  "lastSynced": "2026-11-04 6:26 AM PT"
+  "lastSynced": "2026-11-04 10:18 AM PT"
 }
