@@ -4,6 +4,24 @@
   "season": 2026,
   "trades": [
     {
+      "date": "2026-11-03",
+      "time": "10:18 PM PST",
+      "week": 8,
+      "status": "completed",
+      "official": true,
+      "teamA": "Newman Lake Sleep Paralysis Demons",
+      "teamB": "Substation",
+      "givesA": [
+        "Eric Wilson (LB)",
+        "Henry To'oTo'o (LB)"
+      ],
+      "givesB": [
+        "Kevin Winston (DB)",
+        "Tyler Warren (TE)"
+      ],
+      "summary": "Week 8 — Newman Lake Sleep Paralysis Demons sent Eric Wilson (LB), Henry To'oTo'o (LB) to Substation for Kevin Winston (DB), Tyler Warren (TE) (Nov 3 10:18 PM PST)."
+    },
+    {
       "date": "2026-10-30",
       "time": "1:12 PM PDT",
       "week": 8,
@@ -782,7 +800,7 @@
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
   "pending_note": "Pending trades 0 (Fantrax 2026-11-04 6:26 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
-  "fantrax_completed_view": "Newest official: Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM); TTAB↔Ultron Josh Allen for Micah McFadden+Caleb Williams+Patrick Queen (Oct 29 9:34 PM); Saltese↔Ultron Omarion Hampton+Brian Robinson Jr.+Kyle Hamilton+Bijan Robinson+$5 FAAB for Ashton Jeanty+Carson Schwesinger+Kyle Monangai+D'Andre Swift (Oct 29 12:41 PM).",
+  "fantrax_completed_view": "Newest official: Newman↔Substation Eric Wilson+Henry To'oTo'o for Kevin Winston+Tyler Warren (Nov 3 10:18 PM); Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM); TTAB↔Ultron Josh Allen for Micah McFadden+Caleb Williams+Patrick Queen (Oct 29 9:34 PM).",
   "hqComplete": true,
   "lastSynced": "2026-11-04 6:26 AM PT"
 }
