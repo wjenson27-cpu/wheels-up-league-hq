@@ -36,11 +36,22 @@ async function readJson(rel) {
 }
 
 const live = await readJson("data/matchups-live.json");
-const livescoring = await readJson("data/livescoring-w8.json");
+const liveWeek = Number(live.week);
+const livescoringRel = Number.isFinite(liveWeek) ? `data/livescoring-w${liveWeek}.json` : null;
+let livescoring = null;
+if (livescoringRel) {
+  try {
+    livescoring = await readJson(livescoringRel);
+  } catch {
+    livescoring = null;
+  }
+}
 const timed = parseDataTimestamp(live.asOf);
-const iso = parseDataTimestamp(livescoring.asOf);
 assert(timed && !timed.dateOnly, `matchups asOf did not parse: ${live.asOf}`);
-assert(iso && iso.end === timed.end, "livescoring ISO and matchups asOf are not the same instant");
+if (livescoring) {
+  const iso = parseDataTimestamp(livescoring.asOf);
+  assert(iso && iso.end === timed.end, "livescoring ISO and matchups asOf are not the same instant");
+}
 assert(String(live.asOf).trim().endsWith("PT"), "matchups asOf does not end with PT");
 
 const thursday = ptToUtc(2026, 10, 29, 18, 0, 0);
@@ -61,9 +72,11 @@ assert(!age44.stale && age44.label === "updated 44 min ago", `44 min label ${age
 assert(age46.reasonText.includes("PT"), "stale reason should name PT");
 assert(updatedLabel(0) === "updated 0 min ago", "zero minutes label");
 
-const fridayOld = evaluateFreshness({ stamp: live.asOf, now: friday, missing: false });
+// Historical W8 Friday-morning stamp — stale-rule fixtures must not ride the live week roll.
+const fridayMorningAsOf = "2026-10-30 9:17 AM PT";
+const fridayOld = evaluateFreshness({ stamp: fridayMorningAsOf, now: friday, missing: false });
 assert(!fridayOld.stale && /^updated \d+ min ago$/.test(fridayOld.label), `Friday should keep an age without STALE (${fridayOld.label})`);
-const sundayOld = evaluateFreshness({ stamp: live.asOf, now: sunday, missing: false });
+const sundayOld = evaluateFreshness({ stamp: fridayMorningAsOf, now: sunday, missing: false });
 assert(sundayOld.stale && sundayOld.ageMs > STALE_AFTER_MS, "Sunday afternoon should mark the Friday morning file STALE");
 
 const missingTuesday = evaluateFreshness({ stamp: live.asOf, now: tuesday, missing: true });
@@ -88,7 +101,14 @@ for (const rel of weekFiles) {
 
 const sources = sourceFiles(live);
 assert(sources[0] === LIVE_FILE, "live file is the first refresh target");
-assert(sources.includes("data/livescoring-w8.json"), "livescoring file is refreshed");
+if (livescoring) {
+  assert(sources.includes(livescoringRel), "livescoring file is refreshed");
+} else {
+  assert(
+    !sources.some((file) => /livescoring-w\d+\.json$/.test(file)),
+    "pregame shell should not list a missing livescoring week file"
+  );
+}
 assert(sources.includes("data/scores.json"), "scores.json is refreshed");
 assert(!sources.some((file) => file.endsWith("/")), "a directory is not fetched as a file");
 assert(cacheBust("data/matchups-live.json", 10) === "data/matchups-live.json?v=10", "cache bust query");
