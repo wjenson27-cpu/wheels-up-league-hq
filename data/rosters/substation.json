@@ -2,17 +2,17 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-11-04 10:18 AM PT",
+  "asOf": "2026-11-05 6:24 AM PT",
   "faabLeft": 5,
   "startingQB": "Brock Purdy",
   "roster": {
     "QB": [
-      "Brock Purdy",
-      "Bryce Young"
+      "Brock Purdy"
     ],
     "RB": [
       "Kenneth Gainwell",
       "Tyler Goodson",
+      "Justice Hill",
       "Emmett Johnson"
     ],
     "WR": [
@@ -42,30 +42,33 @@
     ],
     "IR": [
       "Tyjae Spears",
-      "Alec Pierce",
+      "Treylon Burks",
       "Jack Campbell"
     ]
   },
   "notes": "",
   "injuryFlags": [
+    "Kenneth Gainwell — Q (active)",
     "Tyjae Spears — Q (IR slot)",
-    "Alec Pierce — IR (IR slot)",
-    "Jalen Pitre — Q (reserve)",
+    "Treylon Burks — Q (IR slot)",
+    "Tykee Smith — Q (active)",
     "Jack Campbell — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
+  "source": "Fantrax roster sync 2026-11-05 6:24 AM PT (/workspace/fantrax-raw-2026-11-05-am.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
-    "Jalen Pitre — Q (reserve)"
+    "Kenneth Gainwell — Q (active)",
+    "Tykee Smith — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Kenneth Gainwell — Q (active)",
     "Tyjae Spears — Q (IR slot)",
-    "Alec Pierce — IR (IR slot)",
-    "Jalen Pitre — Q (reserve)",
+    "Treylon Burks — Q (IR slot)",
+    "Tykee Smith — Q (active)",
     "Jack Campbell — Q (IR slot)"
   ],
-  "updated": "2026-11-04",
-  "lastSynced": "2026-11-04 10:18 AM PT"
+  "updated": "2026-11-05",
+  "lastSynced": "2026-11-05 6:24 AM PT"
 }

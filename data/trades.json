@@ -1,8 +1,24 @@
 {
-  "updated": "2026-11-04",
-  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
+  "updated": "2026-11-05",
+  "source": "Fantrax roster sync 2026-11-05 6:24 AM PT (/workspace/fantrax-raw-2026-11-05-am.json)",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-11-04",
+      "time": "11:53 AM PST",
+      "week": 8,
+      "status": "completed",
+      "official": true,
+      "teamA": "Little Ass Boys",
+      "teamB": "Saltese Slamm",
+      "givesA": [
+        "Tyler Allgeier (RB)"
+      ],
+      "givesB": [
+        "Ashton Jeanty (RB)"
+      ],
+      "summary": "Week 8 — Little Ass Boys sent Tyler Allgeier (RB) to Saltese Slamm for Ashton Jeanty (RB) (Nov 4 11:53 AM PST)."
+    },
     {
       "date": "2026-11-03",
       "time": "10:18 PM PST",
@@ -744,12 +760,14 @@
         "Myles Price WR MIN",
         "Juwan Johnson TE NO",
         "Michael Mayer TE LV",
-        "Andrew Van Ginkel DL MIN",
+        "Andrew Van Ginkel DL,LB MIN",
         "Azeez Al-Shaair LB HOU",
         "Zaire Franklin LB GB",
         "Ty'Ron Hopper LB GB",
         "Nathan Landman LB LAR",
+        "Henry To'oTo'o LB HOU",
         "Jeremiah Trotter LB PHI",
+        "Eric Wilson LB MIN",
         "Jordan Battle DB CIN",
         "Xavier Watts DB ATL"
       ],
@@ -785,6 +803,7 @@
       "lastUpdated": "Nov 3 7:21 AM",
       "players": [
         "Javonte Williams RB DAL",
+        "Emanuel Wilson RB SEA",
         "Christian Watson WR GB",
         "Jameson Williams WR DET",
         "Dallas Goedert TE PHI",
@@ -796,8 +815,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-11-04 10:18 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
-  "fantrax_completed_view": "Newest official: Newman↔Substation Eric Wilson+Henry To'oTo'o for Kevin Winston+Tyler Warren (Nov 3 10:18 PM); Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM); TTAB↔Ultron Josh Allen for Micah McFadden+Caleb Williams+Patrick Queen (Oct 29 9:34 PM).",
+  "pending_note": "Pending trades 0 (Fantrax 2026-11-05 6:24 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "fantrax_completed_view": "Newest official: LAB↔Saltese Tyler Allgeier for Ashton Jeanty (Nov 4 11:53 AM); Newman↔Substation Eric Wilson+Henry To'oTo'o for Kevin Winston+Tyler Warren (Nov 3 10:18 PM); Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-04 10:18 AM PT"
+  "lastSynced": "2026-11-05 6:24 AM PT"
 }

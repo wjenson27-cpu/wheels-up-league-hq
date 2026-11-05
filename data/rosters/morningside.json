@@ -2,22 +2,24 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-11-04 10:18 AM PT",
+  "asOf": "2026-11-05 6:24 AM PT",
   "faabLeft": 8,
-  "startingQB": null,
+  "startingQB": "Drew Lock",
   "roster": {
-    "QB": [],
+    "QB": [
+      "Drew Lock"
+    ],
     "RB": [
       "Ollie Gordon",
       "Jadarian Price",
       "Kimani Vidal"
     ],
     "WR": [
-      "Xavier Worthy",
+      "Justin Jefferson",
       "Keenan Allen",
       "Denzel Boston",
-      "Justin Jefferson",
       "Isaiah Williams",
+      "Xavier Worthy",
       "Jordan Addison"
     ],
     "TE": [
@@ -30,9 +32,9 @@
       "Ventrell Miller",
       "Terrel Bernard",
       "Daiyan Henley",
-      "Bobby Okereke",
       "Pete Werner",
-      "Derrick Barnes"
+      "Derrick Barnes",
+      "Bobby Okereke"
     ],
     "DB": [
       "Jessie Bates",
@@ -45,18 +47,34 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Drew Lock — Q (active)",
+    "Travis Kelce — Q (active)",
+    "Denzel Boston — Q (active)",
     "Deebo Samuel — Q (IR slot)",
+    "Daiyan Henley — Q (active)",
+    "Bobby Okereke — Q (reserve)",
     "Derwin James — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
+  "source": "Fantrax roster sync 2026-11-05 6:24 AM PT (/workspace/fantrax-raw-2026-11-05-am.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Drew Lock — Q (active)",
+    "Travis Kelce — Q (active)",
+    "Denzel Boston — Q (active)",
+    "Daiyan Henley — Q (active)",
+    "Bobby Okereke — Q (reserve)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Drew Lock — Q (active)",
+    "Travis Kelce — Q (active)",
+    "Denzel Boston — Q (active)",
     "Deebo Samuel — Q (IR slot)",
+    "Daiyan Henley — Q (active)",
+    "Bobby Okereke — Q (reserve)",
     "Derwin James — IR (IR slot)"
   ],
-  "updated": "2026-11-04",
-  "lastSynced": "2026-11-04 10:18 AM PT"
+  "updated": "2026-11-05",
+  "lastSynced": "2026-11-05 6:24 AM PT"
 }

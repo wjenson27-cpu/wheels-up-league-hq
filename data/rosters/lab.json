@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-11-04 10:18 AM PT",
+  "asOf": "2026-11-05 6:24 AM PT",
   "faabLeft": 56,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -12,7 +12,7 @@
     ],
     "RB": [
       "Kyren Williams",
-      "Tyler Allgeier",
+      "Ashton Jeanty",
       "Dylan Sampson",
       "Jaylen Warren"
     ],
@@ -50,12 +50,14 @@
     "Mike Evans — Q (active)",
     "Jeremiyah Love — IR (IR slot)",
     "Carnell Tate — Q (IR slot)",
+    "Akeem Davis-Gaither — Q (active)",
     "Jihaad Campbell — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
+  "source": "Fantrax roster sync 2026-11-05 6:24 AM PT (/workspace/fantrax-raw-2026-11-05-am.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
-    "Mike Evans — Q (active)"
+    "Mike Evans — Q (active)",
+    "Akeem Davis-Gaither — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -63,8 +65,9 @@
     "Mike Evans — Q (active)",
     "Jeremiyah Love — IR (IR slot)",
     "Carnell Tate — Q (IR slot)",
+    "Akeem Davis-Gaither — Q (active)",
     "Jihaad Campbell — Q (IR slot)"
   ],
-  "updated": "2026-11-04",
-  "lastSynced": "2026-11-04 10:18 AM PT"
+  "updated": "2026-11-05",
+  "lastSynced": "2026-11-05 6:24 AM PT"
 }

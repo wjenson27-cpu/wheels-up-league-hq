@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-04 10:18 AM PT",
+  "asOf": "2026-11-05 6:24 AM PT",
   "faabLeft": 12,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -13,19 +13,20 @@
     "RB": [
       "Kenneth Walker III",
       "Rachaad White",
-      "Jaylen Wright",
-      "Jacory Croskey-Merritt"
+      "Jaylen Wright"
     ],
     "WR": [
       "Amon-Ra St. Brown",
-      "Luther Burden"
+      "Luther Burden",
+      "Travis Hunter"
     ],
     "TE": [
       "Sam LaPorta",
       "Dalton Schultz"
     ],
     "DL": [
-      "Dexter Lawrence"
+      "Chase Young",
+      "Micah Parsons"
     ],
     "LB": [
       "Nick Bolton",
@@ -40,29 +41,40 @@
       "Kamren Curl"
     ],
     "IR": [
+      "Jacory Croskey-Merritt",
       "Emeka Egbuka",
-      "Travis Hunter",
       "Nick Bosa"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Jacory Croskey-Merritt — IR (reserve)",
+    "Amon-Ra St. Brown — Q (active)",
+    "Jaylen Wright — Q (active)",
+    "Jacory Croskey-Merritt — IR (IR slot)",
     "Emeka Egbuka — Q (IR slot)",
+    "Kamren Curl — Q (active)",
+    "Micah Parsons — IR (reserve)",
     "Nick Bosa — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
+  "source": "Fantrax roster sync 2026-11-05 6:24 AM PT (/workspace/fantrax-raw-2026-11-05-am.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
-    "Jacory Croskey-Merritt — IR (reserve)"
+    "Amon-Ra St. Brown — Q (active)",
+    "Jaylen Wright — Q (active)",
+    "Kamren Curl — Q (active)",
+    "Micah Parsons — IR (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Jacory Croskey-Merritt — IR (reserve)",
+    "Amon-Ra St. Brown — Q (active)",
+    "Jaylen Wright — Q (active)",
+    "Jacory Croskey-Merritt — IR (IR slot)",
     "Emeka Egbuka — Q (IR slot)",
+    "Kamren Curl — Q (active)",
+    "Micah Parsons — IR (reserve)",
     "Nick Bosa — Q (IR slot)"
   ],
-  "updated": "2026-11-04",
-  "lastSynced": "2026-11-04 10:18 AM PT"
+  "updated": "2026-11-05",
+  "lastSynced": "2026-11-05 6:24 AM PT"
 }

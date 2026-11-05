@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-04 10:18 AM PT",
+  "asOf": "2026-11-05 6:24 AM PT",
   "faabLeft": 3,
   "startingQB": "Matthew Stafford",
   "roster": {
@@ -11,10 +11,10 @@
       "Malik Willis"
     ],
     "RB": [
-      "Bhayshul Tuten",
-      "Ashton Jeanty",
-      "Aaron Jones",
       "D'Andre Swift",
+      "Tyler Allgeier",
+      "Aaron Jones",
+      "Bhayshul Tuten",
       "Kyle Monangai",
       "Rico Dowdle"
     ],
@@ -48,33 +48,36 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Matthew Stafford — Q (active)",
+    "Mason Taylor — Q (active)",
     "Bhayshul Tuten — Q (active)",
     "Kyle Monangai — Q (reserve)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "David Montgomery — Q (IR slot)",
+    "David Montgomery — O (IR slot)",
+    "Carson Schwesinger — Q (active)",
     "Dee Winters — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-04 10:18 AM PT (/workspace/fantrax-raw-2026-11-04-postwaiver.json)",
+  "source": "Fantrax roster sync 2026-11-05 6:24 AM PT (/workspace/fantrax-raw-2026-11-05-am.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
-    "Matthew Stafford — Q (active)",
+    "Mason Taylor — Q (active)",
     "Bhayshul Tuten — Q (active)",
     "Kyle Monangai — Q (reserve)",
+    "Carson Schwesinger — Q (active)",
     "Dee Winters — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Matthew Stafford — Q (active)",
+    "Mason Taylor — Q (active)",
     "Bhayshul Tuten — Q (active)",
     "Kyle Monangai — Q (reserve)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "David Montgomery — Q (IR slot)",
+    "David Montgomery — O (IR slot)",
+    "Carson Schwesinger — Q (active)",
     "Dee Winters — Q (reserve)"
   ],
-  "updated": "2026-11-04",
-  "lastSynced": "2026-11-04 10:18 AM PT"
+  "updated": "2026-11-05",
+  "lastSynced": "2026-11-05 6:24 AM PT"
 }
