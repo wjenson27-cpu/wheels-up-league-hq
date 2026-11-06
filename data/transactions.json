@@ -1,7 +1,111 @@
 {
-  "updated": "2026-11-05",
-  "source": "Fantrax roster sync 2026-11-05 6:24 AM PT (/workspace/fantrax-raw-2026-11-05-am.json)",
+  "updated": "2026-11-06",
+  "source": "Fantrax roster sync 2026-11-06 6:26 AM PT (/workspace/fantrax-raw-2026-11-06-am.json)",
   "items": [
+    {
+      "date": "2026-11-05",
+      "team": "Pocket Agents",
+      "type": "ADD",
+      "summary": "Added Chris Johnson (DB-MIA) ($0/null bid)",
+      "time": "5:18 PM PDT",
+      "player": "Chris Johnson",
+      "playerMeta": "DB-MIA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-05",
+      "team": "Pocket Agents",
+      "type": "DROP",
+      "summary": "Dropped Josh Hines-Allen (DL-JAX)",
+      "time": "5:09 PM PDT",
+      "player": "Josh Hines-Allen",
+      "playerMeta": "DL-JAX",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-05",
+      "team": "Indian Trail Slumlords",
+      "type": "ADD",
+      "summary": "Added Carl Granderson (DL-NO) ($0/null bid)",
+      "time": "10:37 AM PDT",
+      "player": "Carl Granderson",
+      "playerMeta": "DL-NO",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-05",
+      "team": "Indian Trail Slumlords",
+      "type": "DROP",
+      "summary": "Dropped Jakobi Meyers (WR-JAX)",
+      "time": "10:37 AM PDT",
+      "player": "Jakobi Meyers",
+      "playerMeta": "WR-JAX",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-05",
+      "team": "Indian Trail Slumlords",
+      "type": "ADD",
+      "summary": "Added Kamren Kinchens (DB-LAR) ($0/null bid)",
+      "time": "10:31 AM PDT",
+      "player": "Kamren Kinchens",
+      "playerMeta": "DB-LAR",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-05",
+      "team": "Indian Trail Slumlords",
+      "type": "DROP",
+      "summary": "Dropped Kalif Raymond (WR-CHI)",
+      "time": "10:31 AM PDT",
+      "player": "Kalif Raymond",
+      "playerMeta": "WR-CHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-05",
+      "team": "Saltese Slamm",
+      "type": "ADD",
+      "summary": "Added Greg Dulcich (TE-MIA) ($0/null bid)",
+      "time": "10:18 AM PDT",
+      "player": "Greg Dulcich",
+      "playerMeta": "TE-MIA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-05",
+      "team": "Saltese Slamm",
+      "type": "DROP",
+      "summary": "Dropped Mason Taylor (TE-NYJ)",
+      "time": "10:18 AM PDT",
+      "player": "Mason Taylor",
+      "playerMeta": "TE-NYJ",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
     {
       "date": "2026-11-04",
       "team": "Towner Top Aga Bottom",
@@ -7439,7 +7543,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Nov 5 AM: +14 FA rows (Nov 4 11:33 AM–11:21 PM PT), no bids, no new trades. Nov 4 post-waiver: +16 rows (Week 9 FAAB clear 9:00 AM PT, 13 executed claims, 6 with winning bids $1–$7; plus 3 FA moves through 9:33 AM PT), no new trades. Nov 4 AM: +5 FA rows (Nov 3 7:21 AM–10:20 PM PT), no bids, no new trades. Nov 3 AM: +6 FA rows (Nov 2 12:55 PM–7:13 PM PT), no bids, no new trades. Nov 2 AM: +1 FA rows (Nov 1 5:05 PM–5:05 PM PT), no bids, no new trades. Nov 1 AM: +3 FA rows (Nov 1 6:19 AM–2:06 PM PT), no bids, no new trades. Nov 1 AM: +5 FA rows (Oct 31 9:05 PM–Nov 1 6:13 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Nov 6 AM: +8 FA rows (Nov 5 10:18 AM–5:18 PM PT), no bids, no new trades. Nov 5 AM: +14 FA rows (Nov 4 11:33 AM–11:21 PM PT), no bids, no new trades. Nov 4 post-waiver: +16 rows (Week 9 FAAB clear 9:00 AM PT, 13 executed claims, 6 with winning bids $1–$7; plus 3 FA moves through 9:33 AM PT), no new trades. Nov 4 AM: +5 FA rows (Nov 3 7:21 AM–10:20 PM PT), no bids, no new trades. Nov 3 AM: +6 FA rows (Nov 2 12:55 PM–7:13 PM PT), no bids, no new trades. Nov 2 AM: +1 FA rows (Nov 1 5:05 PM–5:05 PM PT), no bids, no new trades. Nov 1 AM: +3 FA rows (Nov 1 6:19 AM–2:06 PM PT), no bids, no new trades. Nov 1 AM: +5 FA rows (Oct 31 9:05 PM–Nov 1 6:13 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-11-05 6:24 AM PT"
+  "lastSynced": "2026-11-06 6:26 AM PT"
 }
