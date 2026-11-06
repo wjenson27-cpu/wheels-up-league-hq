@@ -4,10 +4,10 @@
   "week": 9,
   "weekStart": "2026-11-05",
   "weekEnd": "2026-11-11",
-  "windowLabel": "Nov 5 – Nov 11, 2026",
+  "windowLabel": "Nov 5 \u2013 Nov 11, 2026",
   "timezone": "PT",
-  "asOf": "2026-11-05 6:24 AM PT",
-  "status": "scheduled",
+  "asOf": "2026-11-05 5:40 PM PT",
+  "status": "live",
   "formula": {
     "id": "normal-approx-v1",
     "playerSd": 8,
@@ -15,195 +15,63 @@
     "roundTo": 5,
     "liveFloor": 5,
     "liveCeil": 95,
-    "text": "Win chance is a normal approximation, rounded to the nearest 5%. Each club’s projected final already includes points on the board, so points still expected are the projection minus the current score, and never below zero. The expected margin is one club’s current score plus the points it still expects, minus the other club’s. Each starter still to play is an independent 8-point standard deviation. The two clubs combine as the square root of the sum of squares. If the sync did not say how many players are left, a club that still has projected points out uses a flat 18-point stand-in. That stand-in is not a headcount. The bar prints the curve’s chance, rounded to the nearest 5%. A game still in progress stays between 5% and 95%. A finished game — nobody left, or a posted final — is 100 / 0, or 50 / 50 on a tie, and does not use the curve. If either projection is missing, the bar is left blank."
+    "text": "Win chance is a normal approximation, rounded to the nearest 5%. Each club\u2019s projected final already includes points on the board, so points still expected are the projection minus the current score, and never below zero. The expected margin is one club\u2019s current score plus the points it still expects, minus the other club\u2019s. Each starter still to play is an independent 8-point standard deviation. The two clubs combine as the square root of the sum of squares. If the sync did not say how many players are left, a club that still has projected points out uses a flat 18-point stand-in. That stand-in is not a headcount. The bar prints the curve\u2019s chance, rounded to the nearest 5%. A game still in progress stays between 5% and 95%. A finished game \u2014 nobody left, or a posted final \u2014 is 100 / 0, or 50 / 50 on a tie, and does not use the curve. If either projection is missing, the bar is left blank."
   },
   "sources": [
     "data/schedule.json",
     "data/scores.json",
     "data/teams.json",
     "data/rosters/",
-    "data/matchups-live.overlay.json"
+    "data/matchups-live.overlay.json",
+    "data/livescoring-w9.json"
   ],
   "matchups": [
     {
-      "id": "w9-eddies-ttab",
+      "id": "w9-ttab-eddies",
       "featured": true,
-      "status": "scheduled",
+      "status": "live",
       "place": "vs",
       "sideA": {
-        "teamId": "eddies",
-        "name": "Eagleridge Eddie's",
-        "color": "#69BE28",
-        "logo": "img/logos/eddies.jpg",
-        "record": "6-2",
-        "lineupSet": true,
-        "score": null,
-        "projection": 204.7,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
-      },
-      "sideB": {
         "teamId": "ttab",
         "name": "TTAB",
         "color": "#A78BFA",
         "logo": "img/logos/ttab.jpg",
         "record": "4-4",
         "lineupSet": true,
-        "score": null,
-        "projection": 168.6,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
-      },
-      "winProb": null
-    },
-    {
-      "id": "w9-substation-lab",
-      "featured": false,
-      "status": "scheduled",
-      "place": "vs",
-      "sideA": {
-        "teamId": "substation",
-        "name": "Substation",
-        "color": "#EAB308",
-        "logo": "img/logos/substation.jpg",
-        "record": "4-4",
-        "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
+        "score": 0,
+        "projection": 168.36,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
       },
       "sideB": {
-        "teamId": "lab",
-        "name": "Little Ass Boys",
-        "color": "#EF4444",
-        "logo": "img/logos/lab.jpg",
-        "record": "5-3",
+        "teamId": "eddies",
+        "name": "Eagleridge Eddie's",
+        "color": "#69BE28",
+        "logo": "img/logos/eddies.jpg",
+        "record": "6-2",
         "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
+        "score": 3,
+        "projection": 202.17,
+        "playersLeft": 13,
+        "playersDone": 0,
+        "playersInProgress": 1,
+        "minutesRemaining": 829
       },
-      "winProb": null
-    },
-    {
-      "id": "w9-slumlords-saltese",
-      "featured": false,
-      "status": "scheduled",
-      "place": "vs",
-      "sideA": {
-        "teamId": "slumlords",
-        "name": "Indian Trail Slumlords",
-        "color": "#8B5CF6",
-        "logo": "img/logos/slumlords.jpg",
-        "record": "4-4",
-        "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
-      },
-      "sideB": {
-        "teamId": "saltese",
-        "name": "Saltese Slamm",
-        "color": "#F59E0B",
-        "logo": "img/logos/saltese.jpg",
-        "record": "3-5",
-        "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
-      },
-      "winProb": null
-    },
-    {
-      "id": "w9-newman-hyper",
-      "featured": false,
-      "status": "scheduled",
-      "place": "vs",
-      "sideA": {
-        "teamId": "newman",
-        "name": "Newman Lake Sleep Paralysis Demons",
-        "color": "#22D3EE",
-        "logo": "img/logos/newman.jpg",
-        "record": "4-4",
-        "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
-      },
-      "sideB": {
-        "teamId": "hyper",
-        "name": "The Hypersecretors",
-        "color": "#14B8A6",
-        "logo": "img/logos/hyper.jpg",
-        "record": "4-4",
-        "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
-      },
-      "winProb": null
-    },
-    {
-      "id": "w9-pocket-ultron",
-      "featured": false,
-      "status": "scheduled",
-      "place": "vs",
-      "sideA": {
-        "teamId": "pocket",
-        "name": "Pocket Agents",
-        "color": "#3B82F6",
-        "logo": "img/logos/pocket.jpg",
-        "record": "5-3",
-        "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
-      },
-      "sideB": {
-        "teamId": "ultron",
-        "name": "Ultron",
-        "color": "#E11D48",
-        "logo": "img/logos/ultron.jpg",
-        "record": "3-5",
-        "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
-      },
-      "winProb": null
+      "winProb": {
+        "sideA": 0.2,
+        "sideB": 0.8,
+        "mu": -33.8,
+        "sigma": 41.6,
+        "decided": false,
+        "playersLeftKnown": true
+      }
     },
     {
       "id": "w9-dongers-morningside",
       "featured": false,
-      "status": "scheduled",
+      "status": "live",
       "place": "vs",
       "sideA": {
         "teamId": "dongers",
@@ -212,12 +80,12 @@
         "logo": "img/logos/dongers.jpg",
         "record": "2-6",
         "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
+        "score": 0,
+        "projection": 193.45,
+        "playersLeft": 13,
+        "playersDone": 0,
+        "playersInProgress": 1,
+        "minutesRemaining": 829
       },
       "sideB": {
         "teamId": "morningside",
@@ -226,19 +94,26 @@
         "logo": "img/logos/morningside.jpg",
         "record": "3-5",
         "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
+        "score": 2,
+        "projection": 190.89,
+        "playersLeft": 12,
+        "playersDone": 0,
+        "playersInProgress": 2,
+        "minutesRemaining": 818
       },
-      "winProb": null
+      "winProb": {
+        "sideA": 0.55,
+        "sideB": 0.45,
+        "mu": 2.6,
+        "sigma": 40,
+        "decided": false,
+        "playersLeftKnown": true
+      }
     },
     {
       "id": "w9-goats-doubtpfizer",
       "featured": false,
-      "status": "scheduled",
+      "status": "live",
       "place": "vs",
       "sideA": {
         "teamId": "goats",
@@ -247,12 +122,12 @@
         "logo": "img/logos/goats.jpg",
         "record": "6-2",
         "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
+        "score": 2,
+        "projection": 216.4,
+        "playersLeft": 13,
+        "playersDone": 0,
+        "playersInProgress": 1,
+        "minutesRemaining": 829
       },
       "sideB": {
         "teamId": "doubtpfizer",
@@ -261,14 +136,189 @@
         "logo": "img/logos/doubtpfizer.jpg",
         "record": "3-5",
         "lineupSet": true,
-        "score": null,
-        "projection": null,
-        "playersLeft": null,
-        "playersDone": null,
-        "playersInProgress": null,
-        "minutesRemaining": null
+        "score": 0,
+        "projection": 220.43,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
       },
-      "winProb": null
+      "winProb": {
+        "sideA": 0.45,
+        "sideB": 0.55,
+        "mu": -4,
+        "sigma": 41.6,
+        "decided": false,
+        "playersLeftKnown": true
+      }
+    },
+    {
+      "id": "w9-newman-hyper",
+      "featured": false,
+      "status": "live",
+      "place": "vs",
+      "sideA": {
+        "teamId": "newman",
+        "name": "Newman Lake Sleep Paralysis Demons",
+        "color": "#22D3EE",
+        "logo": "img/logos/newman.jpg",
+        "record": "4-4",
+        "lineupSet": true,
+        "score": 1,
+        "projection": 185.59,
+        "playersLeft": 13,
+        "playersDone": 0,
+        "playersInProgress": 1,
+        "minutesRemaining": 829
+      },
+      "sideB": {
+        "teamId": "hyper",
+        "name": "The Hypersecretors",
+        "color": "#14B8A6",
+        "logo": "img/logos/hyper.jpg",
+        "record": "4-4",
+        "lineupSet": true,
+        "score": 0,
+        "projection": 207.48,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
+      },
+      "winProb": {
+        "sideA": 0.3,
+        "sideB": 0.7,
+        "mu": -21.9,
+        "sigma": 41.6,
+        "decided": false,
+        "playersLeftKnown": true
+      }
+    },
+    {
+      "id": "w9-pocket-ultron",
+      "featured": false,
+      "status": "live",
+      "place": "vs",
+      "sideA": {
+        "teamId": "pocket",
+        "name": "Pocket Agents",
+        "color": "#3B82F6",
+        "logo": "img/logos/pocket.jpg",
+        "record": "5-3",
+        "lineupSet": true,
+        "score": 0,
+        "projection": 217.49,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
+      },
+      "sideB": {
+        "teamId": "ultron",
+        "name": "Ultron",
+        "color": "#E11D48",
+        "logo": "img/logos/ultron.jpg",
+        "record": "3-5",
+        "lineupSet": true,
+        "score": 7,
+        "projection": 195.52,
+        "playersLeft": 11,
+        "playersDone": 0,
+        "playersInProgress": 3,
+        "minutesRemaining": 807
+      },
+      "winProb": {
+        "sideA": 0.7,
+        "sideB": 0.3,
+        "mu": 22,
+        "sigma": 40,
+        "decided": false,
+        "playersLeftKnown": true
+      }
+    },
+    {
+      "id": "w9-slumlords-saltese",
+      "featured": false,
+      "status": "live",
+      "place": "vs",
+      "sideA": {
+        "teamId": "slumlords",
+        "name": "Indian Trail Slumlords",
+        "color": "#8B5CF6",
+        "logo": "img/logos/slumlords.jpg",
+        "record": "4-4",
+        "lineupSet": true,
+        "score": 0,
+        "projection": 186.67,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
+      },
+      "sideB": {
+        "teamId": "saltese",
+        "name": "Saltese Slamm",
+        "color": "#F59E0B",
+        "logo": "img/logos/saltese.jpg",
+        "record": "3-5",
+        "lineupSet": true,
+        "score": 7,
+        "projection": 192.15,
+        "playersLeft": 13,
+        "playersDone": 0,
+        "playersInProgress": 1,
+        "minutesRemaining": 829
+      },
+      "winProb": {
+        "sideA": 0.45,
+        "sideB": 0.55,
+        "mu": -5.5,
+        "sigma": 41.6,
+        "decided": false,
+        "playersLeftKnown": true
+      }
+    },
+    {
+      "id": "w9-substation-lab",
+      "featured": false,
+      "status": "live",
+      "place": "vs",
+      "sideA": {
+        "teamId": "substation",
+        "name": "Substation",
+        "color": "#EAB308",
+        "logo": "img/logos/substation.jpg",
+        "record": "4-4",
+        "lineupSet": true,
+        "score": 0,
+        "projection": 184.81,
+        "playersLeft": 14,
+        "playersDone": 0,
+        "playersInProgress": 0,
+        "minutesRemaining": 840
+      },
+      "sideB": {
+        "teamId": "lab",
+        "name": "Little Ass Boys",
+        "color": "#EF4444",
+        "logo": "img/logos/lab.jpg",
+        "record": "5-3",
+        "lineupSet": true,
+        "score": 5,
+        "projection": 202.89,
+        "playersLeft": 13,
+        "playersDone": 0,
+        "playersInProgress": 1,
+        "minutesRemaining": 829
+      },
+      "winProb": {
+        "sideA": 0.35,
+        "sideB": 0.65,
+        "mu": -18.1,
+        "sigma": 41.6,
+        "decided": false,
+        "playersLeftKnown": true
+      }
     }
   ]
 }
