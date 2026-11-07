@@ -1775,7 +1775,6 @@ summary:focus-visible {
 .wl-badge.is-t { color: #041018; background: var(--gold, #e8c547); }
 
 @media (max-width: 700px) {
-  body { overflow-x: clip; }
   .table-scroll {
     overflow-x: auto;
     max-width: 100%;

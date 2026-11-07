@@ -233,7 +233,7 @@
         return;
       }
       const side = (s) => {
-        const name = WUC.displayText(s.name || WUC.officialName(s.teamId, ""));
+        const name = s.teamId === "ttab" ? "TTAB" : (s.teamId === "eddies" ? "Eagleridge Eddie's" : (s.name || "—"));
         const score = s.score == null ? "—" : WUC.formatPts(s.score);
         const tag = game.status === "final" ? "FINAL" : "SNAPSHOT";
         return `<p class="home-side">${WUC.teamLinkHtml(s.teamId, { size: "sm", text: name })} <strong class="home-score">${WUC.escapeHtml(String(score))}</strong> <span class="muted">${tag}</span></p>`;
