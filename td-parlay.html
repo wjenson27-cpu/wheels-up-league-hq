@@ -28,6 +28,25 @@
     }
     .parlay-toolbar button:hover { border-color: var(--border-glow); }
     .parlay-status { font-size: 0.85rem; color: var(--text-muted); margin-left: auto; }
+    .parlay-weekbar { display: none; align-items: center; gap: 0.6rem; margin: 0 0 0.75rem; }
+    .parlay-weekbar label { font-weight: 700; }
+    .parlay-weekbar select { font: inherit; min-height: 44px; padding: 0.35rem 0.6rem; }
+    .parlay-phone { display: none; }
+    .parlay-week-status, .parlay-phone-list li {
+      display: grid;
+      grid-template-columns: minmax(5.5rem, 7rem) minmax(0, 1fr) auto;
+      gap: 0.5rem;
+      align-items: start;
+    }
+    .parlay-phone-list { list-style: none; margin: 0; padding: 0; }
+    .parlay-phone-list li { padding: 0.55rem 0; border-bottom: 1px solid var(--border); }
+    .parlay-who { font-weight: 700; }
+    .parlay-player { min-width: 0; }
+    .parlay-td, .parlay-week-result strong { font-variant-numeric: tabular-nums; }
+    @media (max-width: 700px) {
+      .parlay-weekbar, .parlay-phone { display: block; }
+      .parlay-scroll { display: none; }
+    }
     .parlay-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; }
     table.parlay-table {
       border-collapse: collapse; width: max-content; min-width: 100%;
@@ -103,7 +122,9 @@
     <header class="page-hero">
       <span class="eyebrow">League side bet</span>
       <h1>TD Parlay</h1>
-      <p class="lede">17 weeks. Change players anytime. Mark anytime TD Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded). <span class="muted" id="updatedLabel"></span></p>
+      <p class="lede">17 weeks. Anytime TD is Yes, No, or N/A. A week is a HIT when every active pick is Yes. N/A is a player who did not play, and it is left out of that check. <span class="muted" id="updatedLabel"></span></p>
+      <p class="lede">The published board is this page’s file. Typing here saves only in this browser and does not change that file. Reset board drops those local edits. A published player or result stays when this browser’s copy of that cell is blank.</p>
+      <p class="last-sync" id="parlayAsOf"></p>
       <p class="muted" id="noteLabel"></p>
     </header>
 
@@ -117,6 +138,11 @@
       <a class="muted" href="files/WU-TD-Parlay.xlsx" style="margin-left:0.5rem">Download Excel</a>
     </div>
 
+    <div class="parlay-weekbar">
+      <label for="parlayWeek">Week</label>
+      <select id="parlayWeek"></select>
+    </div>
+    <div id="parlayPhone" class="parlay-phone" hidden></div>
     <div class="card parlay-scroll" id="board"><p class="muted">Loading…</p></div>
 
     <div class="season-tally">
@@ -202,11 +228,50 @@
       return String(name || "");
     }
 
+    function paintPhone(week) {
+      const host = document.getElementById("parlayPhone");
+      if (!host) return;
+      const key = String(week);
+      const result = weekResult(state.owners, week);
+      const status = result === "…" ? "results pending" : result;
+      const rows = state.owners.map((o) => {
+        const cell = o.weeks[key] || { player: "", td: "" };
+        const who = parlayOwnerLabel(o.name) || "—";
+        return `<li><span class="parlay-who">${WUC.escapeHtml(who)}</span><span class="parlay-player">${WUC.escapeHtml(cell.player || "—")}</span><span class="parlay-td">${WUC.escapeHtml(cell.td || "—")}</span></li>`;
+      }).join("");
+      host.hidden = false;
+      host.innerHTML = `<p class="parlay-week-status"><span>Week ${week}</span><span>${WUC.escapeHtml(status)}</span></p><ol class="parlay-phone-list">${rows}</ol><p class="parlay-week-result">Week result <strong>${WUC.escapeHtml(result)}</strong></p>`;
+    }
+
     function render() {
       document.getElementById("updatedLabel").textContent = state.updated
         ? `Updated ${WUC.formatDate(state.updated)}.`
         : "";
       document.getElementById("noteLabel").textContent = state.note || "";
+      const asOf = document.getElementById("parlayAsOf");
+      if (asOf) {
+        asOf.textContent = state.updated
+          ? `Data as of ${WUC.formatDate(state.updated)} PT.`
+          : "Data as of — PT.";
+      }
+      const weekSelect = document.getElementById("parlayWeek");
+      if (weekSelect && !weekSelect.options.length) {
+        let current = 1;
+        for (let w = 1; w <= 17; w++) {
+          const used = state.owners.some((o) => {
+            const cell = o.weeks[String(w)] || {};
+            return cell.player || cell.td;
+          });
+          if (used) current = w;
+          const opt = document.createElement("option");
+          opt.value = String(w);
+          opt.textContent = `Week ${w}`;
+          weekSelect.appendChild(opt);
+        }
+        weekSelect.value = String(current);
+        weekSelect.addEventListener("change", () => paintPhone(Number(weekSelect.value)));
+      }
+      paintPhone(Number((weekSelect && weekSelect.value) || 1));
 
       const body = state.owners.map((o) => {
         const s = ownerStats(o);

@@ -1,5 +1,6 @@
-/* Live Matchups page. Reads data/matchups-live.json only.
-   On Thu, Sun, and Mon PT it re-fetches that file, cache-busted, every 30 minutes. */
+/* Matchups page. Reads data/matchups-live.json only.
+   The half-hour game-day refetch is paused and does not resume on its own.
+   shouldRefresh still describes that cadence. This page does not call it. */
 import { FORMULA } from "./live-prob.js";
 import {
   LIVE_FILE,
@@ -12,6 +13,7 @@ import {
   sourceFiles
 } from "./live-refresh.js";
 
+const HALF_HOUR_CHECKS_PAUSED = true;
 const esc = (s) => (window.WUC && WUC.escapeHtml ? WUC.escapeHtml(s) : String(s ?? ""));
 
 function safeColor(value) {
@@ -60,6 +62,7 @@ function signed(n) {
 
 function statusLabel(status) {
   if (status === "final") return "FINAL";
+  if (status === "live" && HALF_HOUR_CHECKS_PAUSED) return "SNAPSHOT";
   if (status === "live") return "LIVE";
   return "NOT POSTED";
 }
@@ -148,11 +151,13 @@ function render(data) {
   if (eyebrow) eyebrow.textContent = `Week ${week} · ${windowLabel}`.replace(/\s+·\s+$/, "");
   const lede = document.getElementById("liveLede");
   if (lede) {
-    lede.textContent = `Week ${week}, ${windowLabel}, PT. Current score, projected final, and starters still to play. A dash means that number was not in the sync yet. The bar is a normal approximation, rounded to the nearest 5%.`;
+    lede.textContent = `Week ${week}, ${windowLabel}, PT. Numbers are the last saved snapshot: score, projected final, and starters still to play. A dash means that number was not in the file. The bar is a normal approximation, rounded to the nearest 5%.`;
   }
   const asOf = document.getElementById("asOf");
   const stamp = data.asOf || "—";
   if (asOf) asOf.textContent = `as of ${stamp}`;
+  const dataAsOf = document.getElementById("dataAsOf");
+  if (dataAsOf) dataAsOf.textContent = `Data as of ${stamp}.`;
   const formula = (data.formula && data.formula.text) || FORMULA.text;
   const cards = games.map(card).join("");
   board.removeAttribute("aria-busy");
@@ -253,6 +258,7 @@ async function pull({ windowed }) {
 
 function start() {
   pull({ windowed: false });
+  if (HALF_HOUR_CHECKS_PAUSED) return;
   setInterval(() => pull({ windowed: true }), TICK_MS);
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") pull({ windowed: true });

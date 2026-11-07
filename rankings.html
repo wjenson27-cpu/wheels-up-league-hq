@@ -36,9 +36,9 @@
   <div id="site-nav"></div>
   <main class="wrap">
     <header class="page-hero">
-      <span class="eyebrow" id="rankEyebrow">Week 1</span>
+      <span class="eyebrow" id="rankEyebrow">Season board</span>
       <h1>Season power rankings</h1>
-      <p class="lede" id="rankLede">Live Week 1 board — Thursday scores in, Sunday slate ahead.</p>
+      <p class="lede" id="rankLede">The posted board loads from the rankings file.</p>
     </header>
 
     <ol class="rank-list" id="rankList"><li class="muted">Loading…</li></ol>
@@ -70,7 +70,7 @@
         }
         const week = data.week || 1;
         document.getElementById("rankEyebrow").textContent = `Week ${week} · ${data.season || ""}`.trim();
-        const lede = data.subtitle || "1–14 with blurbs.";
+        const lede = WUC.displayText(data.subtitle || "1–14 with blurbs.");
         document.getElementById("rankLede").innerHTML =
           `${WUC.escapeHtml(lede)} <span class="dim">Updated ${WUC.formatDate(data.updated)}.</span>`;
 

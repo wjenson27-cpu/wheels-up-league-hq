@@ -294,6 +294,10 @@ async function checkMatchupsLive() {
   if (!page.includes('type="module" src="js/matchups-page.js"') && !page.includes("js/matchups-page.js")) {
     fail("matchups.html does not load js/matchups-page.js");
   }
+  const matchupsJs = await readFile(join(root, "js/matchups-page.js"), "utf8");
+  if (!matchupsJs.includes("No lineup set") || !matchupsJs.includes('data-lineup="unset"')) {
+    fail("matchups page no longer labels an unset lineup");
+  }
   console.log("Live matchups JSON ok");
 }
 
@@ -914,9 +918,13 @@ async function checkPages() {
               filled: document.querySelectorAll(".winbar:not(.winbar-empty)").length,
               unset: document.querySelectorAll("[data-lineup='unset']").length
             }));
+            const unsetExpected = (live.matchups || []).reduce((n, game) => {
+              return n + [game.sideA, game.sideB].filter((side) => side && side.lineupSet === false).length;
+            }, 0);
             if (bars.filled !== (live.matchups || []).length) errors.push(`filled win bars ${bars.filled}`);
-            if (!bars.unset) errors.push("no unset-lineup row");
-            if (!/No lineup set/.test(info.text)) errors.push("empty lineup is not labeled");
+            if (bars.unset !== unsetExpected) errors.push(`unset-lineup rows ${bars.unset}, file has ${unsetExpected}`);
+            if (unsetExpected && !/No lineup set/.test(info.text)) errors.push("empty lineup is not labeled");
+            if (!unsetExpected && /No lineup set/.test(info.text)) errors.push("empty lineup labeled when every lineup is set");
             if (!/95%/.test(info.text)) errors.push("95% cap is not shown");
             const slateHasTtab = (live.matchups || []).some((g) => (g.sideA && g.sideA.teamId === "ttab") || (g.sideB && g.sideB.teamId === "ttab"));
             if (slateHasTtab && !/TTAB/.test(info.text)) errors.push("TTAB is not on the board");
@@ -963,7 +971,12 @@ async function checkPages() {
             if (info.green) errors.push("trades still show Greenacres");
             if (info.listedEmpty) errors.push("empty trade block is visible");
             if (info.larry) errors.push("trades still say Larry");
-            if (!info.imgs.some((src) => src && src.includes("morningside"))) errors.push("morningside logo missing on the block");
+            const tradesFile = JSON.parse(await readFile(join(root, "data/trades.json"), "utf8"));
+            const blockIds = [...new Set((tradesFile.blocks || []).map((block) => block && block.teamId).filter(Boolean))];
+            for (const id of blockIds) {
+              if (!info.imgs.some((src) => src && src.includes(id))) errors.push(`${id} logo missing on the block`);
+            }
+            if (!blockIds.length && info.imgs.length) errors.push("trade block logos with no block in the file");
           }
           if (name === "rosters.html") {
             const raw = await page.evaluate(() => /W1 FINAL/.test(document.body.innerText || ""));
