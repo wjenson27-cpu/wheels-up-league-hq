@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-06 6:26 AM PT",
+  "asOf": "2026-11-06 4:09 PM PT",
   "faabLeft": 12,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -55,7 +55,7 @@
     "Micah Parsons — IR (reserve)",
     "Kamren Curl — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-06 6:26 AM PT (/workspace/fantrax-raw-2026-11-06-am.json)",
+  "source": "Fantrax roster sync 2026-11-06 4:09 PM PT (/workspace/fantrax-raw-2026-11-06-pm.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
     "Amon-Ra St. Brown — Q (active)",
@@ -73,5 +73,5 @@
     "Kamren Curl — Q (IR slot)"
   ],
   "updated": "2026-11-06",
-  "lastSynced": "2026-11-06 6:26 AM PT"
+  "lastSynced": "2026-11-06 4:09 PM PT"
 }

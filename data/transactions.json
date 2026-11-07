@@ -1,7 +1,150 @@
 {
   "updated": "2026-11-06",
-  "source": "Fantrax roster sync 2026-11-06 6:26 AM PT (/workspace/fantrax-raw-2026-11-06-am.json)",
+  "source": "Fantrax roster sync 2026-11-06 4:09 PM PT (/workspace/fantrax-raw-2026-11-06-pm.json)",
   "items": [
+    {
+      "date": "2026-11-06",
+      "team": "Drummond Dongers",
+      "type": "DROP",
+      "summary": "Dropped T.J. Edwards (LB-CHI)",
+      "time": "3:51 PM PDT",
+      "player": "T.J. Edwards",
+      "playerMeta": "LB-CHI",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Towner Top Aga Bottom",
+      "type": "DROP",
+      "summary": "Dropped Tuli Tuipulotu (DL-LAC)",
+      "time": "3:16 PM PDT",
+      "player": "Tuli Tuipulotu",
+      "playerMeta": "DL-LAC",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Morningside Muff Divers",
+      "type": "ADD",
+      "summary": "Added Chop Robinson (DL-MIA) ($0/null bid)",
+      "time": "3:08 PM PDT",
+      "player": "Chop Robinson",
+      "playerMeta": "DL-MIA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "type": "ADD/DROP",
+      "summary": "Added Eli Raridon (TE-NE); dropped Grant Delpit (DB-CLE)",
+      "time": "1:55 PM PDT",
+      "player": "Eli Raridon",
+      "playerMeta": "TE-NE",
+      "dropped": "Grant Delpit",
+      "droppedMeta": "DB-CLE",
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Substation",
+      "type": "DROP",
+      "summary": "Dropped Treylon Burks (WR-WAS)",
+      "time": "1:31 PM PDT",
+      "player": "Treylon Burks",
+      "playerMeta": "WR-WAS",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Ultron",
+      "type": "ADD/DROP",
+      "summary": "Added Michael Taaffe (DB-MIA); dropped Brevyn Spann-Ford (TE-DAL)",
+      "time": "1:23 PM PDT",
+      "player": "Michael Taaffe",
+      "playerMeta": "DB-MIA",
+      "dropped": "Brevyn Spann-Ford",
+      "droppedMeta": "TE-DAL",
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Ultron",
+      "type": "ADD",
+      "summary": "Added Jake Ferguson (TE-DAL) ($0/null bid)",
+      "time": "1:19 PM PDT",
+      "player": "Jake Ferguson",
+      "playerMeta": "TE-DAL",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Ultron",
+      "type": "DROP",
+      "summary": "Dropped Michael Taaffe (DB-MIA)",
+      "time": "1:19 PM PDT",
+      "player": "Michael Taaffe",
+      "playerMeta": "DB-MIA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Ultron",
+      "type": "ADD",
+      "summary": "Added Brevyn Spann-Ford (TE-DAL) ($0/null bid)",
+      "time": "1:17 PM PDT",
+      "player": "Brevyn Spann-Ford",
+      "playerMeta": "TE-DAL",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Ultron",
+      "type": "DROP",
+      "summary": "Dropped AJ Barner (TE-SEA)",
+      "time": "1:16 PM PDT",
+      "player": "AJ Barner",
+      "playerMeta": "TE-SEA",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 9"
+    },
+    {
+      "date": "2026-11-06",
+      "team": "Substation",
+      "type": "ADD/DROP",
+      "summary": "Added Dexter Lawrence (DL-CIN); dropped DeForest Buckner (DL-SF)",
+      "time": "11:33 AM PDT",
+      "player": "Dexter Lawrence",
+      "playerMeta": "DL-CIN",
+      "dropped": "DeForest Buckner",
+      "droppedMeta": "DL-SF",
+      "bid": null,
+      "period": "Week 9"
+    },
     {
       "date": "2026-11-05",
       "team": "Pocket Agents",
@@ -7543,7 +7686,7 @@
       "time": "5:56 PM PT"
     }
   ],
-  "note": "Nov 6 AM: +8 FA rows (Nov 5 10:18 AM–5:18 PM PT), no bids, no new trades. Nov 5 AM: +14 FA rows (Nov 4 11:33 AM–11:21 PM PT), no bids, no new trades. Nov 4 post-waiver: +16 rows (Week 9 FAAB clear 9:00 AM PT, 13 executed claims, 6 with winning bids $1–$7; plus 3 FA moves through 9:33 AM PT), no new trades. Nov 4 AM: +5 FA rows (Nov 3 7:21 AM–10:20 PM PT), no bids, no new trades. Nov 3 AM: +6 FA rows (Nov 2 12:55 PM–7:13 PM PT), no bids, no new trades. Nov 2 AM: +1 FA rows (Nov 1 5:05 PM–5:05 PM PT), no bids, no new trades. Nov 1 AM: +3 FA rows (Nov 1 6:19 AM–2:06 PM PT), no bids, no new trades. Nov 1 AM: +5 FA rows (Oct 31 9:05 PM–Nov 1 6:13 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
+  "note": "Nov 6 AM: +11 FA rows (Nov 6 11:33 AM–3:51 PM PT), no bids, no new trades. Nov 6 AM: +8 FA rows (Nov 5 10:18 AM–5:18 PM PT), no bids, no new trades. Nov 5 AM: +14 FA rows (Nov 4 11:33 AM–11:21 PM PT), no bids, no new trades. Nov 4 post-waiver: +16 rows (Week 9 FAAB clear 9:00 AM PT, 13 executed claims, 6 with winning bids $1–$7; plus 3 FA moves through 9:33 AM PT), no new trades. Nov 4 AM: +5 FA rows (Nov 3 7:21 AM–10:20 PM PT), no bids, no new trades. Nov 3 AM: +6 FA rows (Nov 2 12:55 PM–7:13 PM PT), no bids, no new trades. Nov 2 AM: +1 FA rows (Nov 1 5:05 PM–5:05 PM PT), no bids, no new trades. Nov 1 AM: +3 FA rows (Nov 1 6:19 AM–2:06 PM PT), no bids, no new trades. Nov 1 AM: +5 FA rows (Oct 31 9:05 PM–Nov 1 6:13 AM PT), no bids, no new trades. Oct 14 Week 6 FAAB clear + morning FA: 25 new Claim/Add/Drop rows prepended.",
   "dataConflictNote": "Late-claim attribution conflict resolved Sep 16 ~10:06 AM PT (Scrape A verified): Ultron Hooker $18; Valley Vele $16; Dongers Ezeiruaku $14; Saltese Sigle $3.",
-  "lastSynced": "2026-11-06 6:26 AM PT"
+  "lastSynced": "2026-11-06 4:09 PM PT"
 }

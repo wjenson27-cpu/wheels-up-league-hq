@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-11-06 6:26 AM PT",
+  "asOf": "2026-11-06 4:09 PM PT",
   "faabLeft": 10,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -25,8 +25,7 @@
       "Dallas Goedert"
     ],
     "DL": [
-      "Quinnen Williams",
-      "Tuli Tuipulotu"
+      "Quinnen Williams"
     ],
     "LB": [
       "Demario Davis",
@@ -54,7 +53,7 @@
     "Brian Branch — Q (IR slot)",
     "Divine Deablo — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-06 6:26 AM PT (/workspace/fantrax-raw-2026-11-06-am.json)",
+  "source": "Fantrax roster sync 2026-11-06 4:09 PM PT (/workspace/fantrax-raw-2026-11-06-pm.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
     "Christian Watson — Q (active)",
@@ -70,5 +69,5 @@
     "Divine Deablo — Q (IR slot)"
   ],
   "updated": "2026-11-06",
-  "lastSynced": "2026-11-06 6:26 AM PT"
+  "lastSynced": "2026-11-06 4:09 PM PT"
 }

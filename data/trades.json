@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-06",
-  "source": "Fantrax roster sync 2026-11-06 6:26 AM PT (/workspace/fantrax-raw-2026-11-06-am.json)",
+  "source": "Fantrax roster sync 2026-11-06 4:09 PM PT (/workspace/fantrax-raw-2026-11-06-pm.json)",
   "season": 2026,
   "trades": [
     {
@@ -728,8 +728,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-11-06 6:26 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-11-06 4:09 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: LAB↔Saltese Tyler Allgeier for Ashton Jeanty (Nov 4 11:53 AM); Newman↔Substation Eric Wilson+Henry To'oTo'o for Kevin Winston+Tyler Warren (Nov 3 10:18 PM); Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-06 6:26 AM PT"
+  "lastSynced": "2026-11-06 4:09 PM PT"
 }
