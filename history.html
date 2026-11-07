@@ -10,12 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
-    .table-wrap { overflow-x: auto; margin-bottom: 1.5rem; }
-    table.archive { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .table-wrap { overflow-x: auto; max-width: 100%; margin-bottom: 1.5rem; -webkit-overflow-scrolling: touch; }
+    table.archive { width: max-content; min-width: 100%; border-collapse: collapse; font-size: 1rem; }
     table.archive th, table.archive td {
-      text-align: left; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--border);
+      text-align: left; padding: 0.55rem 0.7rem; border-bottom: 1px solid var(--border); vertical-align: top;
     }
-    table.archive th { color: var(--accent); font-weight: 600; white-space: nowrap; }
+    table.archive th { color: var(--text); font-weight: 700; white-space: nowrap; }
+    table.archive td.num, table.archive th.num {
+      text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap;
+    }
     table.archive tr:hover td { background: var(--bg-card-hover); }
     .section-block { margin-bottom: 2.25rem; }
     .cut { color: var(--text-muted); font-size: 0.9rem; margin: 0.25rem 0 0; }
@@ -33,7 +36,7 @@
       <span class="eyebrow">Archive</span>
       <h1>League history</h1>
       <p class="lede">ESPN 2014–2023 · Fantrax 2024–present.</p>
-      <p><a href="archives.html" style="color:var(--accent);font-weight:700">Open full Archives (Trophies / Board / Fantrax / ESPN / Chairs) →</a></p>
+      <p><a href="archives.html">Open the 2014–2025 archive</a></p>
     </header>
 
     <div class="grid grid-2" style="margin-bottom:1.5rem">
@@ -51,7 +54,7 @@
       <h2 style="font-size:1.1rem;margin-bottom:0.75rem">Champions</h2>
       <div class="table-wrap card" style="padding:0.5rem">
         <table class="archive" id="champTable">
-          <thead><tr><th>Year</th><th>Era</th><th>Champion</th><th>Owner</th><th>RS</th><th>Note</th></tr></thead>
+          <thead><tr><th class="num">Year</th><th>Era</th><th>Champion</th><th>Owner</th><th class="num">RS</th><th>Note</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
@@ -61,7 +64,7 @@
       <h2 style="font-size:1.1rem;margin-bottom:0.75rem">Podium board</h2>
       <div class="table-wrap card" style="padding:0.5rem">
         <table class="archive" id="podiumTable">
-          <thead><tr><th>Year</th><th>Champion</th><th>Runner-up</th><th>Third</th></tr></thead>
+          <thead><tr><th class="num">Year</th><th>Champion</th><th>Runner-up</th><th>Third</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
@@ -72,7 +75,7 @@
       <p class="muted" style="margin-top:0">Through 2025 · Fantrax 2024–25 added to ESPN baseline</p>
       <div class="table-wrap card" style="padding:0.5rem">
         <table class="archive" id="recordsTable">
-          <thead><tr><th>Rk</th><th>Owner</th><th>2026 team</th><th>Overall</th><th>Win%</th><th>’24</th><th>’25</th></tr></thead>
+          <thead><tr><th class="num">Rk</th><th>Owner</th><th>2026 team</th><th class="num">Overall</th><th class="num">Win%</th><th class="num">’24</th><th class="num">’25</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
@@ -120,17 +123,17 @@
         const champBody = document.querySelector("#champTable tbody");
         champBody.innerHTML = (data.champions || []).slice().reverse().map(r => `
           <tr>
-            <td>${r.year}</td>
+            <td class="num">${r.year}</td>
             <td>${show(r.era || "")}</td>
             <td><strong>${show(r.champion || "")}</strong></td>
             <td>${ownerCell(r.owner || "")}</td>
-            <td>${show(r.rs || "")}</td>
+            <td class="num">${show(r.rs || "")}</td>
             <td class="muted">${show(r.note || "")}</td>
           </tr>`).join("");
 
         document.querySelector("#podiumTable tbody").innerHTML = (data.podium || []).slice().reverse().map(r => `
           <tr>
-            <td>${r.year}</td>
+            <td class="num">${r.year}</td>
             <td>${show(r.champion || "")}</td>
             <td>${show(r.runnerUp || "")}</td>
             <td>${show(r.third || "")}</td>
@@ -138,13 +141,13 @@
 
         document.querySelector("#recordsTable tbody").innerHTML = (data.allTimeRecords || []).map(r => `
           <tr>
-            <td>${r.rk == null ? "—" : r.rk}</td>
+            <td class="num">${r.rk == null ? "—" : r.rk}</td>
             <td><strong>${ownerCell(r.owner || "")}</strong></td>
             <td>${show(r.team2026 || "")}</td>
-            <td>${show(r.overall || "")}</td>
-            <td>${show(r.winPct || "")}</td>
-            <td>${show(r.y2024 || "")}</td>
-            <td>${show(r.y2025 || "")}</td>
+            <td class="num">${show(r.overall || "")}</td>
+            <td class="num">${show(r.winPct || "")}</td>
+            <td class="num">${show(r.y2024 || "")}</td>
+            <td class="num">${show(r.y2025 || "")}</td>
           </tr>`).join("");
 
         document.getElementById("seasonTimeline").innerHTML = (data.seasons || []).map(s => `

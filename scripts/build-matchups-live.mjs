@@ -243,7 +243,8 @@ function playersLeftFromRoster(data) {
   return left <= ACTIVE_CAP ? left : null;
 }
 
-function clockFromInstant(ms) {
+/* Displayed PT clock is the floored minute. Seconds in the source are not rounded up. */
+export function clockFromInstant(ms) {
   const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: "America/Los_Angeles",
     hourCycle: "h12",
@@ -257,7 +258,8 @@ function clockFromInstant(ms) {
   return `${g("year")}-${g("month")}-${g("day")} ${g("hour")}:${g("minute")} ${g("dayPeriod").toUpperCase()} PT`;
 }
 
-function clockToPt(value) {
+/* ISO instants and PT text both become the floored minute. The source string is not rewritten. */
+export function clockToPt(value) {
   const v = String(value || "").trim();
   if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(v)) {
     const ms = Date.parse(v);

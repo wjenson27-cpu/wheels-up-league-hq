@@ -859,10 +859,23 @@ img { max-width: 100%; height: auto; }
 }
 .team-card .team-head {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   gap: 0.75rem;
 }
+.team-card .team-copy { min-width: 0; }
+.team-card .team-copy h3 { text-wrap: balance; }
+.home-stack { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+.home-hero { margin-bottom: 0.25rem; }
+.home-side {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.75rem;
+  margin: 0.35rem 0;
+}
+.home-score { font-variant-numeric: tabular-nums; margin-left: auto; }
+.rank-team { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.55rem; }
+h1, h2, h3 { text-wrap: balance; }
 .team-card .abbrev {
   background: var(--team-color, var(--sea-green)) !important;
   color: #041018 !important;
@@ -1512,6 +1525,7 @@ summary:focus-visible {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+.scroll-cue { display: none; }
 .standings-table .col-record,
 .standings-table .col-num,
 .standings-table .col-optional,
@@ -1762,13 +1776,46 @@ summary:focus-visible {
 .wl-badge.is-t { color: #041018; background: var(--gold, #e8c547); }
 
 @media (max-width: 700px) {
-  .standings-table td.col-team,
-  .standings-table th.col-team {
-    overflow: hidden;
+  .table-scroll {
+    overflow-x: auto;
+    max-width: 100%;
+    scrollbar-color: var(--sea-grey) transparent;
   }
+  .table-scroll:not(.is-at-end) {
+    box-shadow: inset -18px 0 14px -14px rgba(0, 0, 0, 0.85);
+  }
+  .scroll-cue { display: block; margin: 0 0 0.45rem; color: var(--text-muted); font-size: 0.95rem; }
+  .standings-table {
+    width: max-content;
+    min-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 1rem;
+  }
+  .standings-table .col-rank,
+  .standings-table .col-team,
+  .standings-table .col-record {
+    position: sticky;
+    z-index: 2;
+    background: var(--bg-card);
+  }
+  .standings-table thead .col-rank,
+  .standings-table thead .col-team,
+  .standings-table thead .col-record { z-index: 3; }
+  .standings-table .col-rank { left: 0; width: 1.75rem; min-width: 1.75rem; }
+  .standings-table .col-team { left: 1.75rem; width: 9.5rem; min-width: 9.5rem; max-width: 9.5rem; }
+  .standings-table .col-record {
+    left: 11.25rem;
+    width: 3.1rem;
+    min-width: 3.1rem;
+    box-shadow: inset -3px 0 0 var(--sea-grey), 8px 0 10px -6px rgba(0, 0, 0, 0.8);
+  }
+  .standings-table td.col-team,
+  .standings-table th.col-team { overflow: visible; }
   .standings-table td.col-team .team-link,
   .standings-table td.col-team .team-inline {
     display: flex;
+    align-items: flex-start;
     min-width: 0;
     max-width: 100%;
   }
@@ -1776,9 +1823,10 @@ summary:focus-visible {
     display: block;
     flex: 1 1 auto;
     min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
+    line-height: 1.25;
   }
   .week-log-scroll { overflow: hidden; }
   .week-log {
@@ -1809,20 +1857,9 @@ summary:focus-visible {
 }
 
 @media (max-width: 700px) {
-  .standings-table .col-owner,
-  .standings-table .col-optional,
-  .standings-table .col-phone-hide { display: none; }
-  .standings-table {
-    table-layout: fixed;
-    font-size: 0.78rem;
-  }
-  .standings-table .col-rank { width: 1.5rem; }
-  .standings-table .col-record { width: 2.5rem; }
-  .standings-table .col-num { width: 3.4rem; }
-  .standings-table .col-playoff { width: 4.3rem; }
   .standings-table thead th,
-  .standings-table tbody td { padding: 0.4rem 0.2rem; }
-  .standings-table thead th { letter-spacing: 0.02em; font-size: 0.6rem; }
+  .standings-table tbody td { padding: 0.45rem 0.35rem; vertical-align: top; }
+  .standings-table thead th { letter-spacing: 0.02em; font-size: 0.75rem; }
   .standings-table thead th.col-playoff { white-space: normal; line-height: 1.15; }
   .standings-table .team-mark-sm .team-logo { width: 22px; height: 22px; }
   .bar-row { grid-template-columns: minmax(3.4rem, 5.2rem) 1fr auto; }

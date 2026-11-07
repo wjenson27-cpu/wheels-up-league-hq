@@ -18,6 +18,7 @@
       <span class="eyebrow" id="standEyebrow">Season</span>
       <h1>Standings</h1>
       <p class="lede" id="standLede">Record, points for, and points against for all 14 clubs.</p>
+      <p class="last-sync" id="standProvenance"></p>
     </header>
 
     <div class="stat-row" id="highlightRow" hidden></div>
@@ -159,6 +160,15 @@
           row.hidden = false;
           const label = highlights.cover.ok ? `Through week ${highlights.cover.max}.` : "";
           row.innerHTML = cards.join("") + (label ? `<p class="highlight-note muted">${label}</p>` : "");
+        }
+        const coverWeek = (weeks || []).find((w) => Number(w.week) === Number(highlights.cover.max));
+        const prov = document.getElementById("standProvenance");
+        if (prov) {
+          const weekBit = highlights.cover.ok ? `Through week ${highlights.cover.max}. ` : "";
+          prov.textContent = weekBit + WUC.provenanceText({
+            asOf: coverWeek && coverWeek.asOf,
+            updated: coverWeek && coverWeek.updated
+          });
         }
 
         const finalWeeks = weeks.filter(WUC.weekIsFinal);

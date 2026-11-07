@@ -99,7 +99,7 @@ async function checkJson() {
     }
   }
 
-  const shared = required.filter((f) => f.endsWith(".html") && f !== "archives.html");
+  const shared = required.filter((f) => f.endsWith(".html"));
   for (const rel of shared) {
     const html = await readFile(join(root, rel), "utf8");
     if (!html.includes("css/styles.css")) fail(`${rel} does not load css/styles.css`);
@@ -294,7 +294,85 @@ async function checkMatchupsLive() {
   if (!page.includes('type="module" src="js/matchups-page.js"') && !page.includes("js/matchups-page.js")) {
     fail("matchups.html does not load js/matchups-page.js");
   }
+  const matchupsJs = await readFile(join(root, "js/matchups-page.js"), "utf8");
+  if (!matchupsJs.includes("No lineup set") || !matchupsJs.includes('data-lineup="unset"')) {
+    fail("matchups page no longer labels an unset lineup");
+  }
   console.log("Live matchups JSON ok");
+}
+
+/* First name on the TD parlay row only. A longer name or a contact is still private. */
+function containsContact(value) {
+  const s = String(value || "");
+  if (/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i.test(s)) return true;
+  if (/(?:\+?1[\s.-]*)?(?:\(\d{3}\)|\d{3})[\s.-]\d{3}[\s.-]\d{4}\b/.test(s)) return true;
+  return false;
+}
+
+function parlayNameViolation(text) {
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    return "parlay JSON did not parse";
+  }
+  const owners = data && Array.isArray(data.owners) ? data.owners : [];
+  let billRows = 0;
+  for (const owner of owners) {
+    const name = String(owner && owner.name || "");
+    const trimmed = name.trim();
+    if (containsContact(name)) return "owner contact";
+    if (/\bBill\b/.test(name) && trimmed !== "Bill") return "owner full name";
+    if (trimmed === "Bill") {
+      billRows += 1;
+      if (!owner || owner.id !== "bill") return "owner label Bill";
+    }
+  }
+  if (billRows > 1) return "owner label Bill";
+  const rest = String(text).replace(/"name"\s*:\s*"Bill"/, '"name": ""');
+  if (/\bBill\b/.test(rest)) return "owner label Bill";
+  return "";
+}
+
+/* Empty string means the file is allowed. */
+function publicNameViolation(rel, text) {
+  const body = String(text || "");
+  if (body.includes("billTeam")) return `${rel} contains billTeam`;
+  const ownerRe = /"owner"\s*:\s*"([^"\\]*)"/g;
+  let match;
+  while ((match = ownerRe.exec(body))) {
+    if (/\bBill\b/.test(match[1])) return `${rel} owner label "${match[1]}"`;
+    if (containsContact(match[1])) return `${rel} owner contact`;
+  }
+  if (rel === "data/td-parlay.json") {
+    const parlayErr = parlayNameViolation(body);
+    if (parlayErr) return `${rel} ${parlayErr}`;
+  } else if (/"name"\s*:\s*"Bill"/.test(body)) {
+    return `${rel} owner label "Bill"`;
+  }
+  if (!String(rel).endsWith(".html")) return "";
+  if (/—\s*Bill\b/.test(body)) return `${rel} has an owner label “— Bill”`;
+  if (/>\s*Bill\s*</.test(body)) return `${rel} has an owner label Bill`;
+  if (/<\/span>\s*Bill\s*</.test(body)) return `${rel} has an owner cell Bill`;
+  if (/>\s*Bill\s*—/.test(body)) return `${rel} has an owner label “Bill —”`;
+  return "";
+}
+
+/* Rendered owner cells. Exact "Bill" is allowed on the parlay page only. */
+function ownerLabelViolation(pageName, labels) {
+  const cells = (labels || []).map((label) => String(label || "").trim());
+  for (const cell of cells) {
+    if (containsContact(cell)) return "owner contact is visible";
+    if (/\bBill\b/.test(cell) && cell !== "Bill") return "owner full name is visible";
+  }
+  const exact = cells.filter((cell) => cell === "Bill");
+  if (!exact.length) return "";
+  if (pageName === "td-parlay.html" && exact.length === 1) return "";
+  return "owner label Bill is visible";
+}
+
+function parlayFixture(name, id = "bill") {
+  return JSON.stringify({ owners: [{ id, name, weeks: {} }] });
 }
 
 /* Published site files: HTML, CSS, JS, and data. Scripts and the README are not the site. */
@@ -313,19 +391,44 @@ async function checkPublicNames() {
   for (const file of files) {
     const rel = relative(root, file);
     const text = await readFile(file, "utf8");
-    if (text.includes("billTeam")) fail(`${rel} contains billTeam`);
-    const ownerRe = /"owner"\s*:\s*"([^"\\]*)"/g;
-    let match;
-    while ((match = ownerRe.exec(text))) {
-      if (/\bBill\b/.test(match[1])) fail(`${rel} owner label "${match[1]}"`);
-    }
-    if (/"name"\s*:\s*"Bill"/.test(text)) fail(`${rel} owner label "Bill"`);
-    if (!rel.endsWith(".html")) continue;
-    if (/—\s*Bill\b/.test(text)) fail(`${rel} has an owner label “— Bill”`);
-    if (/>\s*Bill\s*</.test(text)) fail(`${rel} has an owner label Bill`);
-    if (/<\/span>\s*Bill\s*</.test(text)) fail(`${rel} has an owner cell Bill`);
-    if (/>\s*Bill\s*—/.test(text)) fail(`${rel} has an owner label “Bill —”`);
+    const violation = publicNameViolation(rel, text);
+    if (violation) fail(violation);
   }
+  const rejected = [
+    ["data/teams.json", '{"owner":"Bill Jenson"}', "full name in an owner field"],
+    ["data/teams.json", '{"owner":"bill@example.com"}', "email in an owner field"],
+    ["data/teams.json", '{"owner":"206-555-0100"}', "phone in an owner field"],
+    ["data/notes.json", '{"name":"Bill"}', "first name outside the parlay file"],
+    ["index.html", '<td class="owner-col">Bill</td>', "first name in another page"],
+    ["td-parlay.html", '<td class="owner-col">Bill</td>', "first name baked into parlay HTML"],
+    ["data/td-parlay.json", parlayFixture("Bill Example"), "full name on the parlay row"],
+    ["data/td-parlay.json", parlayFixture("Bill Jenson"), "known full name on the parlay row"],
+    ["data/td-parlay.json", parlayFixture("bill@example.com"), "email on the parlay row"],
+    ["data/td-parlay.json", parlayFixture("206-555-0100"), "phone on the parlay row"],
+    ["data/td-parlay.json", parlayFixture("Bill", "nate"), "first name on a different row"],
+    ["js/league.js", "billTeam", "billTeam token"]
+  ];
+  for (const [rel, text, why] of rejected) {
+    if (!publicNameViolation(rel, text)) fail(`privacy allowed ${why}`);
+  }
+  const allowed = publicNameViolation("data/td-parlay.json", parlayFixture("Bill"));
+  if (allowed) fail(`privacy rejected the parlay first name: ${allowed}`);
+  const labelCases = [
+    ["index.html", ["Bill"], "owner label Bill is visible"],
+    ["team-eddies", ["Bill"], "owner label Bill is visible"],
+    ["standings.html", ["Ryan Towner", "Bill"], "owner label Bill is visible"],
+    ["td-parlay.html", ["Bill", "Bill"], "owner label Bill is visible"],
+    ["td-parlay.html", ["Bill Example"], "owner full name is visible"],
+    ["td-parlay.html", ["Bill Jenson"], "owner full name is visible"],
+    ["td-parlay.html", ["bill@example.com"], "owner contact is visible"],
+    ["faab.html", ["206-555-0199"], "owner contact is visible"]
+  ];
+  for (const [pageName, labels, expect] of labelCases) {
+    const got = ownerLabelViolation(pageName, labels);
+    if (got !== expect) fail(`privacy ${pageName} ${JSON.stringify(labels)} -> "${got}" expected "${expect}"`);
+  }
+  const parlayOk = ownerLabelViolation("td-parlay.html", ["Nate", "Bill", "WEEK PARLAY"]);
+  if (parlayOk) fail(`privacy rejected the rendered parlay first name: ${parlayOk}`);
   console.log("Public names ok");
 }
 
@@ -686,16 +789,18 @@ async function checkPages() {
           const privacy = await page.evaluate(() => {
             const text = document.body ? document.body.innerText : "";
             const html = document.documentElement ? document.documentElement.innerHTML : "";
-            const ownerBill = [...document.querySelectorAll("td.col-owner, td.owner-col, .rank-meta, #teamLede")].some((el) => /\bBill\b/.test(el.textContent || ""));
+            const labels = [...document.querySelectorAll("td.col-owner, td.owner-col, .rank-meta, #teamLede")]
+              .map((el) => (el.textContent || "").replace(/\s+/g, " ").trim());
             return {
               eagle: /Eagle Ridge Eddies/.test(text) || /\bThe Eddies\b/.test(text),
               billTeam: html.includes("billTeam"),
-              ownerBill
+              labels
             };
           });
           if (privacy.eagle) errors.push("page shows an old Eddies name");
           if (privacy.billTeam) errors.push("page contains billTeam");
-          if (privacy.ownerBill) errors.push("owner label Bill is visible");
+          const ownerBill = ownerLabelViolation(name, privacy.labels);
+          if (ownerBill) errors.push(ownerBill);
           if (name === "trades.html") {
             const leaked = await page.evaluate(() => {
               const text = document.body.innerText || "";
@@ -813,9 +918,13 @@ async function checkPages() {
               filled: document.querySelectorAll(".winbar:not(.winbar-empty)").length,
               unset: document.querySelectorAll("[data-lineup='unset']").length
             }));
+            const unsetExpected = (live.matchups || []).reduce((n, game) => {
+              return n + [game.sideA, game.sideB].filter((side) => side && side.lineupSet === false).length;
+            }, 0);
             if (bars.filled !== (live.matchups || []).length) errors.push(`filled win bars ${bars.filled}`);
-            if (!bars.unset) errors.push("no unset-lineup row");
-            if (!/No lineup set/.test(info.text)) errors.push("empty lineup is not labeled");
+            if (bars.unset !== unsetExpected) errors.push(`unset-lineup rows ${bars.unset}, file has ${unsetExpected}`);
+            if (unsetExpected && !/No lineup set/.test(info.text)) errors.push("empty lineup is not labeled");
+            if (!unsetExpected && /No lineup set/.test(info.text)) errors.push("empty lineup labeled when every lineup is set");
             if (!/95%/.test(info.text)) errors.push("95% cap is not shown");
             const slateHasTtab = (live.matchups || []).some((g) => (g.sideA && g.sideA.teamId === "ttab") || (g.sideB && g.sideB.teamId === "ttab"));
             if (slateHasTtab && !/TTAB/.test(info.text)) errors.push("TTAB is not on the board");
@@ -862,7 +971,12 @@ async function checkPages() {
             if (info.green) errors.push("trades still show Greenacres");
             if (info.listedEmpty) errors.push("empty trade block is visible");
             if (info.larry) errors.push("trades still say Larry");
-            if (!info.imgs.some((src) => src && src.includes("morningside"))) errors.push("morningside logo missing on the block");
+            const tradesFile = JSON.parse(await readFile(join(root, "data/trades.json"), "utf8"));
+            const blockIds = [...new Set((tradesFile.blocks || []).map((block) => block && block.teamId).filter(Boolean))];
+            for (const id of blockIds) {
+              if (!info.imgs.some((src) => src && src.includes(id))) errors.push(`${id} logo missing on the block`);
+            }
+            if (!blockIds.length && info.imgs.length) errors.push("trade block logos with no block in the file");
           }
           if (name === "rosters.html") {
             const raw = await page.evaluate(() => /W1 FINAL/.test(document.body.innerText || ""));

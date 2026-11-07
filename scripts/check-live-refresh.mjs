@@ -1,19 +1,22 @@
 #!/usr/bin/env node
 /* Refresh / stale rules for the live matchups page.
    Week score files are read only. Their keys are not rewritten. */
-import { readFile, stat } from "node:fs/promises";
+import { readFile, readdir, stat } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { clockFromInstant, clockToPt, buildMatchups } from "./build-matchups-live.mjs";
 import {
   LIVE_FILE,
   REFRESH_MS,
   STALE_AFTER_MS,
   cacheBust,
+  epochMinute,
   evaluateFreshness,
   isGameWindow,
   mergeRefresh,
   parseDataTimestamp,
   ptToUtc,
+  sameEpochMinute,
   shouldRefresh,
   sourceFiles,
   updatedLabel
@@ -35,6 +38,53 @@ async function readJson(rel) {
   return JSON.parse(await readFile(join(root, rel), "utf8"));
 }
 
+function parsedEnd(stamp) {
+  const parsed = parseDataTimestamp(stamp);
+  assert(parsed && !parsed.dateOnly, `timestamp did not parse: ${stamp}`);
+  return parsed.end;
+}
+
+/* ISO → PT and PT text both floor. 59 seconds stays; second 0 of the next minute does not. */
+const isoSeconds = "2026-11-05T20:06:41-08:00";
+const isoLate = "2026-11-05T20:06:59-08:00";
+const isoNext = "2026-11-05T20:07:00-08:00";
+assert(clockToPt(isoSeconds) === "2026-11-05 8:06 PM PT", "ISO path rounded or kept seconds");
+assert(clockFromInstant(Date.parse(isoSeconds)) === "2026-11-05 8:06 PM PT", "instant path rounded or kept seconds");
+assert(clockToPt("2026-11-05 8:06:41 PM PT") === "2026-11-05 8:06 PM PT", "PT text path rounded or kept seconds");
+assert(clockToPt("2026-11-05 20:06:59 PT") === "2026-11-05 8:06 PM PT", "24-hour PT text rounded or kept seconds");
+assert(sameEpochMinute(parsedEnd(isoSeconds), parsedEnd(clockToPt(isoSeconds))), "same minute with non-zero seconds should pass");
+assert(sameEpochMinute(parsedEnd(isoLate), parsedEnd("2026-11-05 8:06 PM PT")), "59 seconds must stay in the floored minute");
+assert(!sameEpochMinute(parsedEnd(isoLate), parsedEnd(isoNext)), "one second into the next minute must fail");
+assert(!sameEpochMinute(parsedEnd(isoSeconds), parsedEnd("2026-11-05 8:07 PM PT")), "adjacent minute must fail");
+assert(epochMinute(parsedEnd(isoLate)) + 1 === epochMinute(parsedEnd(isoNext)), "floor must land on neighboring minutes");
+assert(clockToPt("2026-10-30T09:17:41-07:00") === "2026-10-30 9:17 AM PT", "PDT ISO path");
+assert(clockToPt("2026-10-30 9:17:41 AM PT") === "2026-10-30 9:17 AM PT", "PDT text path");
+assert(sameEpochMinute(parsedEnd("2026-10-30T09:17:41-07:00"), parsedEnd("2026-10-30 9:17 AM PT")), "PDT same minute");
+assert(clockFromInstant(Date.parse("2026-11-06T07:59:59Z")) === "2026-11-05 11:59 PM PT", "date boundary before midnight PT");
+assert(clockFromInstant(Date.parse("2026-11-06T08:00:00Z")) === "2026-11-06 12:00 AM PT", "date boundary at midnight PT");
+assert(!sameEpochMinute(Date.parse("2026-11-06T07:59:59Z"), Date.parse("2026-11-06T08:00:00Z")), "midnight boundary must fail");
+assert(clockToPt("not-a-time") === null, "invalid text should fail");
+assert(clockToPt("2026-11-05 0:06 AM PT") === null, "invalid hour should fail");
+assert(parseDataTimestamp("2026-11-05 8:06 PM") === null, "missing PT should fail");
+assert(parseDataTimestamp("nope") === null, "garbage should fail");
+assert(sameEpochMinute(Number.NaN, parsedEnd(isoSeconds)) === false, "invalid epoch should fail");
+
+const scoringNames = (await readdir(join(root, "data"))).filter((name) => /^livescoring-w\d+\.json$/.test(name));
+const sourceBefore = new Map();
+for (const name of scoringNames) sourceBefore.set(name, await readFile(join(root, "data", name), "utf8"));
+const generated = await buildMatchups();
+const generatedAgain = await buildMatchups();
+assert(JSON.stringify(generated) === JSON.stringify(generatedAgain), "generation is not idempotent");
+for (const name of scoringNames) {
+  assert((await readFile(join(root, "data", name), "utf8")) === sourceBefore.get(name), `${name} changed`);
+}
+const sourceRel = (generated.sources || []).find((item) => /^data\/livescoring-w\d+\.json$/.test(item));
+assert(sourceRel, "generation did not use a livescoring file");
+const sourceIso = JSON.parse(sourceBefore.get(sourceRel.slice("data/".length))).asOf;
+assert(typeof sourceIso === "string" && sourceIso.includes("T"), "source ISO is missing");
+assert(generated.asOf === clockToPt(sourceIso), "generated clock is not the floored source minute");
+assert(sameEpochMinute(parsedEnd(sourceIso), parsedEnd(generated.asOf)), "generated clock is not the source epoch minute");
+
 const live = await readJson("data/matchups-live.json");
 const liveWeek = Number(live.week);
 const livescoringRel = Number.isFinite(liveWeek) ? `data/livescoring-w${liveWeek}.json` : null;
@@ -46,11 +96,13 @@ if (livescoringRel) {
     livescoring = null;
   }
 }
+assert(live.asOf === generated.asOf, `committed asOf ${live.asOf} is not the generated minute clock ${generated.asOf}`);
 const timed = parseDataTimestamp(live.asOf);
 assert(timed && !timed.dateOnly, `matchups asOf did not parse: ${live.asOf}`);
 if (livescoring) {
   const iso = parseDataTimestamp(livescoring.asOf);
-  assert(iso && iso.end === timed.end, "livescoring ISO and matchups asOf are not the same instant");
+  assert(iso && !iso.dateOnly, `livescoring asOf did not parse: ${livescoring.asOf}`);
+  assert(sameEpochMinute(iso.end, timed.end), "livescoring ISO and matchups asOf are not the same minute");
 }
 assert(String(live.asOf).trim().endsWith("PT"), "matchups asOf does not end with PT");
 
