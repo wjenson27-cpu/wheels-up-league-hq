@@ -194,6 +194,14 @@
       });
     }
 
+    function parlayOwnerLabel(name) {
+      const raw = String(name || "").trim();
+      if (raw === "Bill") return "Bill";
+      if (/\bBill\b/.test(raw)) return "";
+      if (/@/.test(raw) || /\d{3}[-.\s]\d{3}[-.\s]\d{4}/.test(raw)) return "";
+      return String(name || "");
+    }
+
     function render() {
       document.getElementById("updatedLabel").textContent = state.updated
         ? `Updated ${WUC.formatDate(state.updated)}.`
@@ -202,7 +210,7 @@
 
       const body = state.owners.map((o) => {
         const s = ownerStats(o);
-        const ownerName = /\bBill\b/.test(String(o.name || "")) ? "" : (o.name || "");
+        const ownerName = parlayOwnerLabel(o.name);
         let cells = `<td class="owner-col">${WUC.escapeHtml(ownerName)}</td>`;
         for (let w = 1; w <= 17; w++) {
           const cell = o.weeks[String(w)] || { player: "", td: "" };

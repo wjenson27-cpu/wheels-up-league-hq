@@ -297,6 +297,80 @@ async function checkMatchupsLive() {
   console.log("Live matchups JSON ok");
 }
 
+/* First name on the TD parlay row only. A longer name or a contact is still private. */
+function containsContact(value) {
+  const s = String(value || "");
+  if (/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i.test(s)) return true;
+  if (/(?:\+?1[\s.-]*)?(?:\(\d{3}\)|\d{3})[\s.-]\d{3}[\s.-]\d{4}\b/.test(s)) return true;
+  return false;
+}
+
+function parlayNameViolation(text) {
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    return "parlay JSON did not parse";
+  }
+  const owners = data && Array.isArray(data.owners) ? data.owners : [];
+  let billRows = 0;
+  for (const owner of owners) {
+    const name = String(owner && owner.name || "");
+    const trimmed = name.trim();
+    if (containsContact(name)) return "owner contact";
+    if (/\bBill\b/.test(name) && trimmed !== "Bill") return "owner full name";
+    if (trimmed === "Bill") {
+      billRows += 1;
+      if (!owner || owner.id !== "bill") return "owner label Bill";
+    }
+  }
+  if (billRows > 1) return "owner label Bill";
+  const rest = String(text).replace(/"name"\s*:\s*"Bill"/, '"name": ""');
+  if (/\bBill\b/.test(rest)) return "owner label Bill";
+  return "";
+}
+
+/* Empty string means the file is allowed. */
+function publicNameViolation(rel, text) {
+  const body = String(text || "");
+  if (body.includes("billTeam")) return `${rel} contains billTeam`;
+  const ownerRe = /"owner"\s*:\s*"([^"\\]*)"/g;
+  let match;
+  while ((match = ownerRe.exec(body))) {
+    if (/\bBill\b/.test(match[1])) return `${rel} owner label "${match[1]}"`;
+    if (containsContact(match[1])) return `${rel} owner contact`;
+  }
+  if (rel === "data/td-parlay.json") {
+    const parlayErr = parlayNameViolation(body);
+    if (parlayErr) return `${rel} ${parlayErr}`;
+  } else if (/"name"\s*:\s*"Bill"/.test(body)) {
+    return `${rel} owner label "Bill"`;
+  }
+  if (!String(rel).endsWith(".html")) return "";
+  if (/—\s*Bill\b/.test(body)) return `${rel} has an owner label “— Bill”`;
+  if (/>\s*Bill\s*</.test(body)) return `${rel} has an owner label Bill`;
+  if (/<\/span>\s*Bill\s*</.test(body)) return `${rel} has an owner cell Bill`;
+  if (/>\s*Bill\s*—/.test(body)) return `${rel} has an owner label “Bill —”`;
+  return "";
+}
+
+/* Rendered owner cells. Exact "Bill" is allowed on the parlay page only. */
+function ownerLabelViolation(pageName, labels) {
+  const cells = (labels || []).map((label) => String(label || "").trim());
+  for (const cell of cells) {
+    if (containsContact(cell)) return "owner contact is visible";
+    if (/\bBill\b/.test(cell) && cell !== "Bill") return "owner full name is visible";
+  }
+  const exact = cells.filter((cell) => cell === "Bill");
+  if (!exact.length) return "";
+  if (pageName === "td-parlay.html" && exact.length === 1) return "";
+  return "owner label Bill is visible";
+}
+
+function parlayFixture(name, id = "bill") {
+  return JSON.stringify({ owners: [{ id, name, weeks: {} }] });
+}
+
 /* Published site files: HTML, CSS, JS, and data. Scripts and the README are not the site. */
 async function checkPublicNames() {
   const files = [];
@@ -313,19 +387,44 @@ async function checkPublicNames() {
   for (const file of files) {
     const rel = relative(root, file);
     const text = await readFile(file, "utf8");
-    if (text.includes("billTeam")) fail(`${rel} contains billTeam`);
-    const ownerRe = /"owner"\s*:\s*"([^"\\]*)"/g;
-    let match;
-    while ((match = ownerRe.exec(text))) {
-      if (/\bBill\b/.test(match[1])) fail(`${rel} owner label "${match[1]}"`);
-    }
-    if (/"name"\s*:\s*"Bill"/.test(text)) fail(`${rel} owner label "Bill"`);
-    if (!rel.endsWith(".html")) continue;
-    if (/—\s*Bill\b/.test(text)) fail(`${rel} has an owner label “— Bill”`);
-    if (/>\s*Bill\s*</.test(text)) fail(`${rel} has an owner label Bill`);
-    if (/<\/span>\s*Bill\s*</.test(text)) fail(`${rel} has an owner cell Bill`);
-    if (/>\s*Bill\s*—/.test(text)) fail(`${rel} has an owner label “Bill —”`);
+    const violation = publicNameViolation(rel, text);
+    if (violation) fail(violation);
   }
+  const rejected = [
+    ["data/teams.json", '{"owner":"Bill Jenson"}', "full name in an owner field"],
+    ["data/teams.json", '{"owner":"bill@example.com"}', "email in an owner field"],
+    ["data/teams.json", '{"owner":"206-555-0100"}', "phone in an owner field"],
+    ["data/notes.json", '{"name":"Bill"}', "first name outside the parlay file"],
+    ["index.html", '<td class="owner-col">Bill</td>', "first name in another page"],
+    ["td-parlay.html", '<td class="owner-col">Bill</td>', "first name baked into parlay HTML"],
+    ["data/td-parlay.json", parlayFixture("Bill Example"), "full name on the parlay row"],
+    ["data/td-parlay.json", parlayFixture("Bill Jenson"), "known full name on the parlay row"],
+    ["data/td-parlay.json", parlayFixture("bill@example.com"), "email on the parlay row"],
+    ["data/td-parlay.json", parlayFixture("206-555-0100"), "phone on the parlay row"],
+    ["data/td-parlay.json", parlayFixture("Bill", "nate"), "first name on a different row"],
+    ["js/league.js", "billTeam", "billTeam token"]
+  ];
+  for (const [rel, text, why] of rejected) {
+    if (!publicNameViolation(rel, text)) fail(`privacy allowed ${why}`);
+  }
+  const allowed = publicNameViolation("data/td-parlay.json", parlayFixture("Bill"));
+  if (allowed) fail(`privacy rejected the parlay first name: ${allowed}`);
+  const labelCases = [
+    ["index.html", ["Bill"], "owner label Bill is visible"],
+    ["team-eddies", ["Bill"], "owner label Bill is visible"],
+    ["standings.html", ["Ryan Towner", "Bill"], "owner label Bill is visible"],
+    ["td-parlay.html", ["Bill", "Bill"], "owner label Bill is visible"],
+    ["td-parlay.html", ["Bill Example"], "owner full name is visible"],
+    ["td-parlay.html", ["Bill Jenson"], "owner full name is visible"],
+    ["td-parlay.html", ["bill@example.com"], "owner contact is visible"],
+    ["faab.html", ["206-555-0199"], "owner contact is visible"]
+  ];
+  for (const [pageName, labels, expect] of labelCases) {
+    const got = ownerLabelViolation(pageName, labels);
+    if (got !== expect) fail(`privacy ${pageName} ${JSON.stringify(labels)} -> "${got}" expected "${expect}"`);
+  }
+  const parlayOk = ownerLabelViolation("td-parlay.html", ["Nate", "Bill", "WEEK PARLAY"]);
+  if (parlayOk) fail(`privacy rejected the rendered parlay first name: ${parlayOk}`);
   console.log("Public names ok");
 }
 
@@ -686,16 +785,18 @@ async function checkPages() {
           const privacy = await page.evaluate(() => {
             const text = document.body ? document.body.innerText : "";
             const html = document.documentElement ? document.documentElement.innerHTML : "";
-            const ownerBill = [...document.querySelectorAll("td.col-owner, td.owner-col, .rank-meta, #teamLede")].some((el) => /\bBill\b/.test(el.textContent || ""));
+            const labels = [...document.querySelectorAll("td.col-owner, td.owner-col, .rank-meta, #teamLede")]
+              .map((el) => (el.textContent || "").replace(/\s+/g, " ").trim());
             return {
               eagle: /Eagle Ridge Eddies/.test(text) || /\bThe Eddies\b/.test(text),
               billTeam: html.includes("billTeam"),
-              ownerBill
+              labels
             };
           });
           if (privacy.eagle) errors.push("page shows an old Eddies name");
           if (privacy.billTeam) errors.push("page contains billTeam");
-          if (privacy.ownerBill) errors.push("owner label Bill is visible");
+          const ownerBill = ownerLabelViolation(name, privacy.labels);
+          if (ownerBill) errors.push(ownerBill);
           if (name === "trades.html") {
             const leaked = await page.evaluate(() => {
               const text = document.body.innerText || "";
