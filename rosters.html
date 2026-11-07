@@ -24,7 +24,7 @@
       <div class="skeleton-stack" aria-hidden="true"><div class="skeleton-bar"></div><div class="skeleton-bar med"></div><div class="skeleton-bar short"></div></div>
     </div>
 
-    <h2 style="font-size:1.1rem;margin:2rem 0 0.75rem">League transaction feed</h2>
+    <h2 id="transactions" style="font-size:1.1rem;margin:2rem 0 0.75rem">League transaction feed</h2>
     <div class="card" id="txFull"><p class="muted">Loading…</p></div>
   </main>
   <div id="site-footer"></div>
@@ -66,13 +66,13 @@
           return `
           <article class="card team-card" id="team-${WUC.escapeHtml(t.id)}" style="--team-color:${WUC.escapeHtml(t.color || "#69BE28")}">
             <div class="team-head">
-              <div>
+              ${WUC.teamMark(t.id, { size: "lg" })}
+              <div class="team-copy">
                 <h3 style="margin:0"><a class="team-link" href="${WUC.teamHref(t.id)}">${WUC.escapeHtml(WUC.officialName(t.id, t.name))}</a></h3>
                 <p class="muted mb-0">${WUC.escapeHtml(meta)}</p>
+                <p class="mb-0"><a href="${WUC.teamHref(t.id)}">Clubhouse</a></p>
               </div>
-              ${WUC.teamMark(t.id, { size: "lg" })}
             </div>
-            <p class="mb-0"><a href="${WUC.teamHref(t.id)}">Clubhouse →</a></p>
             <details class="club-details">
               <summary>Depth chart</summary>
               ${note ? `<p>${WUC.escapeHtml(note)}</p>` : ""}

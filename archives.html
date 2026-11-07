@@ -584,6 +584,9 @@ a.hq-link:hover{text-decoration:underline}
 <div class="footer">WU Archives · verified champs 2014–2025 · Share via League HQ</div><!-- old footer -->
 <div class="footer" style="display:none">Wheels Up Collective · League Archives 2014–2025</div>
 <script>
+document.querySelectorAll(".who").forEach(function (el) {
+  if (!String(el.textContent || "").trim()) el.textContent = "Name not in this record";
+});
 document.querySelectorAll("nav button").forEach(function(b){
   b.onclick=function(){
     document.querySelectorAll("nav button").forEach(function(x){x.classList.remove("active")});

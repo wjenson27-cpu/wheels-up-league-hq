@@ -2,7 +2,7 @@
 (function () {
   const PRIMARY = [
     { href: "index.html", label: "Home" },
-    { href: "matchups.html", label: "Live" },
+    { href: "matchups.html", label: "Matchups" },
     { href: "standings.html", label: "Standings" },
     { href: "rankings.html", label: "Rankings" },
     { href: "rosters.html", label: "Rosters" },
@@ -13,8 +13,9 @@
   const MORE = [
     { href: "awards.html", label: "Awards" },
     { href: "recap.html", label: "Recap" },
-    { href: "history.html", label: "Archives" },
-    { href: "archives.html", label: "2014–2025" },
+    { href: "history.html", label: "History" },
+    { href: "archives.html", label: "Archives" },
+    { href: "rosters.html#transactions", label: "Transactions" },
     { href: "podcast.html", label: "Podcast" },
     { href: "scoring.html", label: "Scoring" },
     { href: "td-parlay.html", label: "TD Parlay" }
