@@ -82,6 +82,19 @@ export function parseDataTimestamp(value) {
   return null;
 }
 
+/* Floor to the epoch minute. 59 seconds stays in the current minute; the next minute starts at second 0. */
+export function epochMinute(ms) {
+  if (typeof ms !== "number" || !Number.isFinite(ms)) return null;
+  return Math.floor(ms / 60000);
+}
+
+export function sameEpochMinute(aMs, bMs) {
+  const a = epochMinute(aMs);
+  const b = epochMinute(bMs);
+  if (a == null || b == null) return false;
+  return a === b;
+}
+
 export function updatedLabel(ageMs) {
   const min = Math.floor(Math.max(0, ageMs) / 60000);
   return `updated ${min} min ago`;
