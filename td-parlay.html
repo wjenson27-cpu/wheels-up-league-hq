@@ -244,16 +244,11 @@
     }
 
     function render() {
-      document.getElementById("updatedLabel").textContent = state.updated
-        ? `Updated ${WUC.formatDate(state.updated)}.`
-        : "";
+      const published = WUC.provenanceText({ updated: state.updated });
+      document.getElementById("updatedLabel").textContent = published;
       document.getElementById("noteLabel").textContent = state.note || "";
       const asOf = document.getElementById("parlayAsOf");
-      if (asOf) {
-        asOf.textContent = state.updated
-          ? `Data as of ${WUC.formatDate(state.updated)} PT.`
-          : "Data as of — PT.";
-      }
+      if (asOf) asOf.textContent = published;
       const weekSelect = document.getElementById("parlayWeek");
       if (weekSelect && !weekSelect.options.length) {
         let current = 1;

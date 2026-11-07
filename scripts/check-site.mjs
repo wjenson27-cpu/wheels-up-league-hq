@@ -99,7 +99,7 @@ async function checkJson() {
     }
   }
 
-  const shared = required.filter((f) => f.endsWith(".html") && f !== "archives.html");
+  const shared = required.filter((f) => f.endsWith(".html"));
   for (const rel of shared) {
     const html = await readFile(join(root, rel), "utf8");
     if (!html.includes("css/styles.css")) fail(`${rel} does not load css/styles.css`);

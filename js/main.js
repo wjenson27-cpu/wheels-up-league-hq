@@ -13,8 +13,7 @@
   const MORE = [
     { href: "awards.html", label: "Awards" },
     { href: "recap.html", label: "Recap" },
-    { href: "history.html", label: "History" },
-    { href: "archives.html", label: "Archives" },
+    { href: "history.html", label: "History & Archives", also: ["archives.html"] },
     { href: "rosters.html#transactions", label: "Transactions" },
     { href: "podcast.html", label: "Podcast" },
     { href: "scoring.html", label: "Scoring" },
@@ -33,14 +32,15 @@
 
   function buildNav() {
     const cur = currentPage();
+    const on = (item) => item.href.split("#")[0] === cur || (item.also || []).includes(cur);
     const primaryLinks = PRIMARY.map(
       (p) =>
-        `<li><a href="${p.href}" class="${p.href === cur ? "active" : ""}"${p.href === cur ? ' aria-current="page"' : ""}>${p.label}</a></li>`
+        `<li><a href="${p.href}" class="${on(p) ? "active" : ""}"${on(p) ? ' aria-current="page"' : ""}>${p.label}</a></li>`
     ).join("");
-    const moreActive = MORE.some((p) => p.href === cur);
+    const moreActive = MORE.some(on);
     const moreLinks = MORE.map(
       (p) =>
-        `<li><a href="${p.href}" class="${p.href === cur ? "active" : ""}"${p.href === cur ? ' aria-current="page"' : ""}>${p.label}</a></li>`
+        `<li><a href="${p.href}" class="${on(p) ? "active" : ""}"${on(p) ? ' aria-current="page"' : ""}>${p.label}</a></li>`
     ).join("");
 
     return `
@@ -242,6 +242,46 @@
       .replace(/'/g, "&#39;");
   }
 
+  /* Date-only stamps stay date-only. A stored clock is reported. Nothing here invents a time. */
+  function classifyStamp(value) {
+    const v = String(value || "").trim();
+    if (!v) return null;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(v)) return { kind: "date", text: v };
+    if (/\bPT\b/.test(v) && /\d:\d{2}/.test(v)) return { kind: "clock", text: v };
+    if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(v)) {
+      const ms = Date.parse(v);
+      if (Number.isNaN(ms)) return { kind: "unknown", text: v };
+      const parts = new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/Los_Angeles",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "numeric",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true
+      }).format(new Date(ms));
+      return { kind: "clock", text: `${parts} PT` };
+    }
+    return { kind: "unknown", text: v };
+  }
+
+  function provenanceText(source) {
+    const src = source || {};
+    const asOf = classifyStamp(src.asOf);
+    const updated = classifyStamp(src.updated);
+    const check = classifyStamp(src.lastSynced);
+    const parts = [];
+    if (asOf && asOf.kind === "clock") parts.push(`Data as of ${asOf.text}.`);
+    else if (asOf && asOf.kind === "date") parts.push(`Source date ${asOf.text}. Clock time unavailable.`);
+    else if (updated && updated.kind === "clock") parts.push(`Published ${updated.text}.`);
+    else if (updated && updated.kind === "date") parts.push(`Published ${updated.text}. Clock time unavailable.`);
+    else parts.push("Source time unavailable.");
+    if (check && check.kind === "clock") parts.push(`Last check ${check.text}.`);
+    else if (check && check.kind === "date") parts.push(`Last check date ${check.text}. Clock time unavailable.`);
+    return parts.join(" ");
+  }
+
   function formatDate(iso) {
     if (!iso) return "—";
     try {
@@ -286,11 +326,20 @@
     getTeam: (id) => (teamColors || {})[id] || {},
     get teamColors() { return teamColors || {}; },
     escapeHtml,
+    classifyStamp,
+    provenanceText,
     formatDate,
     podcastUrl,
     spotifyEmbedHtml,
     mountChrome
   };
+
+  document.addEventListener("scroll", (ev) => {
+    const el = ev.target;
+    if (!el || !el.classList || !el.classList.contains("table-scroll")) return;
+    const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 2;
+    el.classList.toggle("is-at-end", atEnd);
+  }, true);
 
   document.addEventListener("DOMContentLoaded", mountChrome);
 })();

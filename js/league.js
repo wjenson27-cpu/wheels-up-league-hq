@@ -915,7 +915,8 @@
     const head = compact
       ? `<tr><th class="col-rank">#</th><th class="col-team">Team</th><th class="col-record">W-L</th><th class="col-num">PF</th></tr>`
       : `<tr><th class="col-rank">#</th><th class="col-team">Team</th><th class="col-record">W-L</th><th class="col-owner">Owner</th><th class="col-num">PF</th><th class="col-num col-phone-hide">PA</th><th class="col-num col-phone-hide">+/−</th><th class="col-optional">FAAB</th><th class="col-optional">Streak</th><th class="col-playoff">Playoff %</th></tr>`;
-    return `<div class="table-scroll"><table class="trade-table standings-table" aria-label="League standings">
+    return `<p class="scroll-cue">Scroll sideways inside the table for the other columns. Rank, team, and record stay in place.</p>
+    <div class="table-scroll" tabindex="0"><table class="trade-table standings-table" aria-label="League standings">
       <thead>${head}</thead>
       <tbody>${body}</tbody>
     </table></div>`;

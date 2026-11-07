@@ -46,9 +46,10 @@
         const data = await WUC.loadJSON("data/faab.json");
         const start = data.startingBudget || 115;
         document.getElementById("startBudget").textContent = start;
-        document.getElementById("updatedLabel").textContent = data.updated
-          ? `Updated ${WUC.formatDate(data.updated)}.`
-          : "";
+        document.getElementById("updatedLabel").textContent = WUC.provenanceText({
+          updated: data.updated,
+          lastSynced: data.lastSynced
+        });
         if (data.note) {
           document.getElementById("faabNote").textContent = WUC.displayText(data.note);
         }

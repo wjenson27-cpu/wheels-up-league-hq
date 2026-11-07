@@ -1525,6 +1525,7 @@ summary:focus-visible {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+.scroll-cue { display: none; }
 .standings-table .col-record,
 .standings-table .col-num,
 .standings-table .col-optional,
@@ -1778,7 +1779,12 @@ summary:focus-visible {
   .table-scroll {
     overflow-x: auto;
     max-width: 100%;
+    scrollbar-color: var(--sea-grey) transparent;
   }
+  .table-scroll:not(.is-at-end) {
+    box-shadow: inset -18px 0 14px -14px rgba(0, 0, 0, 0.85);
+  }
+  .scroll-cue { display: block; margin: 0 0 0.45rem; color: var(--text-muted); font-size: 0.95rem; }
   .standings-table {
     width: max-content;
     min-width: 100%;
@@ -1798,7 +1804,12 @@ summary:focus-visible {
   .standings-table thead .col-record { z-index: 3; }
   .standings-table .col-rank { left: 0; width: 1.75rem; min-width: 1.75rem; }
   .standings-table .col-team { left: 1.75rem; width: 9.5rem; min-width: 9.5rem; max-width: 9.5rem; }
-  .standings-table .col-record { left: 11.25rem; width: 3.1rem; min-width: 3.1rem; }
+  .standings-table .col-record {
+    left: 11.25rem;
+    width: 3.1rem;
+    min-width: 3.1rem;
+    box-shadow: inset -3px 0 0 var(--sea-grey), 8px 0 10px -6px rgba(0, 0, 0, 0.8);
+  }
   .standings-table td.col-team,
   .standings-table th.col-team { overflow: visible; }
   .standings-table td.col-team .team-link,
