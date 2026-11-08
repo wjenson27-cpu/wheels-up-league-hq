@@ -301,7 +301,8 @@ async function checkMatchupsLive() {
   console.log("Live matchups JSON ok");
 }
 
-/* First name on the TD parlay row only. A longer name or a contact is still private. */
+/* Parlay row rule: one owner name "Bill" on id "bill".
+   A longer label or a contact on that row still reports. */
 function containsContact(value) {
   const s = String(value || "");
   if (/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i.test(s)) return true;
@@ -334,13 +335,116 @@ function parlayNameViolation(text) {
   return "";
 }
 
+/* Five retained draft owner fields.
+   Each allowance is one exact repo path, the direct owner property of the
+   rankings row whose teamId is "eddies", and the exact value "Bill Jenson".
+   Check-site reports that owner string today. Published rankings on this
+   branch keep that row's owner empty. The draft files match *.DRAFT.json in
+   .gitignore and are absent here, so their bytes were not re-read; the row
+   is identified by teamId rather than a week-specific index. The value may
+   appear once. Another copy, a nested owner, a different string, another
+   club's row, or any other path still reports. Those reports keep the
+   exception on these five fields. The name remains permitted on the HQ site
+   beyond this checker exception. */
+const RETAINED_DRAFT_OWNER_FIELDS = Object.freeze([
+  Object.freeze({ rel: "data/rankings-w2-2026.DRAFT.json", value: "Bill Jenson" }),
+  Object.freeze({ rel: "data/rankings-w3-2026.DRAFT.json", value: "Bill Jenson" }),
+  Object.freeze({ rel: "data/rankings-w7-2026.DRAFT.json", value: "Bill Jenson" }),
+  Object.freeze({ rel: "data/rankings-w8-2026.DRAFT.json", value: "Bill Jenson" }),
+  Object.freeze({ rel: "data/rankings.DRAFT.json", value: "Bill Jenson" })
+]);
+
+function retainedDraftOwnerField(rel) {
+  for (const field of RETAINED_DRAFT_OWNER_FIELDS) {
+    if (field.rel === rel) return field;
+  }
+  return null;
+}
+
+function countLiteral(haystack, needle) {
+  if (!needle) return 0;
+  let count = 0;
+  let from = 0;
+  while (from <= haystack.length) {
+    const at = haystack.indexOf(needle, from);
+    if (at === -1) break;
+    count += 1;
+    from = at + needle.length;
+  }
+  return count;
+}
+
+function collectOwnerStrings(value, path, out) {
+  if (Array.isArray(value)) {
+    value.forEach((item, index) => collectOwnerStrings(item, `${path}[${index}]`, out));
+    return;
+  }
+  if (!value || typeof value !== "object") return;
+  for (const key of Object.keys(value)) {
+    const next = path ? `${path}.${key}` : key;
+    if (key === "owner" && typeof value[key] === "string") out.push({ path: next, value: value[key] });
+    collectOwnerStrings(value[key], next, out);
+  }
+}
+
+function ownerStringCaptures(body) {
+  const values = [];
+  const ownerRe = /"owner"\s*:\s*"([^"\\]*)"/g;
+  let match;
+  while ((match = ownerRe.exec(body))) values.push(match[1]);
+  return values;
+}
+
+/* skip is set only for the one exact rankings-row owner value. */
+function retainedDraftOwnerSkip(rel, body) {
+  const field = retainedDraftOwnerField(rel);
+  if (!field) return { skip: false, value: "" };
+  if (countLiteral(body, field.value) === 0) return { skip: false, value: "" };
+  let data;
+  try {
+    data = JSON.parse(body);
+  } catch {
+    return { skip: false, value: "" };
+  }
+  const found = [];
+  collectOwnerStrings(data, "", found);
+  const exact = found.filter((item) => item.value === field.value);
+  const direct = exact.filter((item) => {
+    const slot = item.path.match(/^rankings\[(\d+)\]\.owner$/);
+    if (!slot || !Array.isArray(data.rankings)) return false;
+    const row = data.rankings[Number(slot[1])];
+    return !!row && row.teamId === "eddies";
+  });
+  const tokens = ownerStringCaptures(body).filter((value) => value === field.value);
+  if (direct.length === 1 && exact.length === 1 && tokens.length === 1 && countLiteral(body, field.value) === 1) {
+    return { skip: true, value: field.value };
+  }
+  const withoutOwnerTokens = body.replace(/"owner"\s*:\s*"(?:[^"\\]|\\.)*"/g, '""');
+  const leftover = countLiteral(withoutOwnerTokens, field.value);
+  if (tokens.length > 0 || exact.length > 0 || leftover > 0) {
+    return {
+      skip: false,
+      value: "",
+      violation: `${rel} ${JSON.stringify(field.value)} is outside the one retained rankings owner field`
+    };
+  }
+  return { skip: false, value: "" };
+}
+
 /* Empty string means the file is allowed. */
 function publicNameViolation(rel, text) {
   const body = String(text || "");
   if (body.includes("billTeam")) return `${rel} contains billTeam`;
+  const retained = retainedDraftOwnerSkip(rel, body);
+  if (retained.violation) return retained.violation;
   const ownerRe = /"owner"\s*:\s*"([^"\\]*)"/g;
   let match;
+  let skippedRetained = false;
   while ((match = ownerRe.exec(body))) {
+    if (retained.skip && !skippedRetained && match[1] === retained.value) {
+      skippedRetained = true;
+      continue;
+    }
     if (/\bBill\b/.test(match[1])) return `${rel} owner label "${match[1]}"`;
     if (containsContact(match[1])) return `${rel} owner contact`;
   }
@@ -358,7 +462,8 @@ function publicNameViolation(rel, text) {
   return "";
 }
 
-/* Rendered owner cells. Exact "Bill" is allowed on the parlay page only. */
+/* Rendered owner cells. The parlay page may show one exact "Bill".
+   A longer label or a contact still reports. */
 function ownerLabelViolation(pageName, labels) {
   const cells = (labels || []).map((label) => String(label || "").trim());
   for (const cell of cells) {
@@ -394,15 +499,17 @@ async function checkPublicNames() {
     const violation = publicNameViolation(rel, text);
     if (violation) fail(violation);
   }
+  /* Same-name cases below stay reported so the draft exception cannot grow.
+     They record the current checker scope. The name remains permitted on the HQ site. */
   const rejected = [
-    ["data/teams.json", '{"owner":"Bill Jenson"}', "full name in an owner field"],
+    ["data/teams.json", '{"owner":"Bill Jenson"}', "same name in teams.json stays reported"],
     ["data/teams.json", '{"owner":"bill@example.com"}', "email in an owner field"],
     ["data/teams.json", '{"owner":"206-555-0100"}', "phone in an owner field"],
     ["data/notes.json", '{"name":"Bill"}', "first name outside the parlay file"],
     ["index.html", '<td class="owner-col">Bill</td>', "first name in another page"],
     ["td-parlay.html", '<td class="owner-col">Bill</td>', "first name baked into parlay HTML"],
-    ["data/td-parlay.json", parlayFixture("Bill Example"), "full name on the parlay row"],
-    ["data/td-parlay.json", parlayFixture("Bill Jenson"), "known full name on the parlay row"],
+    ["data/td-parlay.json", parlayFixture("Bill Example"), "longer label on the parlay row stays reported"],
+    ["data/td-parlay.json", parlayFixture("Bill Jenson"), "same name on the parlay row stays reported"],
     ["data/td-parlay.json", parlayFixture("bill@example.com"), "email on the parlay row"],
     ["data/td-parlay.json", parlayFixture("206-555-0100"), "phone on the parlay row"],
     ["data/td-parlay.json", parlayFixture("Bill", "nate"), "first name on a different row"],
@@ -413,6 +520,8 @@ async function checkPublicNames() {
   }
   const allowed = publicNameViolation("data/td-parlay.json", parlayFixture("Bill"));
   if (allowed) fail(`privacy rejected the parlay first name: ${allowed}`);
+  /* Expected strings are the current page diagnostics, including a rendered Bill Jenson.
+     That scan stays in place beside the five draft-field exception. */
   const labelCases = [
     ["index.html", ["Bill"], "owner label Bill is visible"],
     ["team-eddies", ["Bill"], "owner label Bill is visible"],
@@ -429,7 +538,85 @@ async function checkPublicNames() {
   }
   const parlayOk = ownerLabelViolation("td-parlay.html", ["Nate", "Bill", "WEEK PARLAY"]);
   if (parlayOk) fail(`privacy rejected the rendered parlay first name: ${parlayOk}`);
+  checkRetainedDraftOwnerExceptions();
   console.log("Public names ok");
+}
+
+function retainedDraftBody(owner = "Bill Jenson") {
+  return JSON.stringify({
+    week: 2,
+    season: 2026,
+    rankings: [
+      { teamId: "eddies", team: "Eagleridge Eddie's", owner, blurb: "Beat Bill 255–241" },
+      { teamId: "goats", team: "Valley Old Goats", owner: "Mike Heff" }
+    ]
+  });
+}
+
+/* Positive cases clear the one retained field. Negative cases show the exception
+   stayed there: other labels, other paths, and extra copies still report.
+   A report is checker scope, and the name remains permitted on the HQ site. */
+function checkRetainedDraftOwnerExceptions() {
+  const expectRels = [
+    "data/rankings-w2-2026.DRAFT.json",
+    "data/rankings-w3-2026.DRAFT.json",
+    "data/rankings-w7-2026.DRAFT.json",
+    "data/rankings-w8-2026.DRAFT.json",
+    "data/rankings.DRAFT.json"
+  ];
+  const listed = RETAINED_DRAFT_OWNER_FIELDS.map((field) => `${field.rel}=${field.value}`);
+  const expected = expectRels.map((rel) => `${rel}=Bill Jenson`);
+  if (listed.join("\n") !== expected.join("\n")) fail(`retained draft owner list is ${listed.join(", ")}`);
+  let positive = 0;
+  for (const rel of expectRels) {
+    const got = publicNameViolation(rel, retainedDraftBody());
+    if (got) fail(`retained draft owner field was reported for ${rel}: ${got}`);
+    else positive += 1;
+    const spaced = '{"rankings":[{ "teamId" : "eddies", "owner" : "Bill Jenson", "blurb": "Beat Bill" },{ "teamId": "goats", "owner": "Mike Heff" }]}';
+    const spacedGot = publicNameViolation(rel, spaced);
+    if (spacedGot) fail(`retained draft owner field was reported with spaces for ${rel}: ${spacedGot}`);
+    else positive += 1;
+  }
+  const retainedRel = "data/rankings-w2-2026.DRAFT.json";
+  const outside = `${retainedRel} ${JSON.stringify("Bill Jenson")} is outside the one retained rankings owner field`;
+  const negatives = [
+    [retainedRel, retainedDraftBody("Bill Example"), `${retainedRel} owner label "Bill Example"`, "different Bill label in the retained owner field"],
+    [retainedRel, retainedDraftBody("Bill"), `${retainedRel} owner label "Bill"`, "shorter Bill label in the retained owner field"],
+    [retainedRel, retainedDraftBody("Bill Jenson Jr"), `${retainedRel} owner label "Bill Jenson Jr"`, "longer label in the retained owner field"],
+    [retainedRel, retainedDraftBody("bill@example.com"), `${retainedRel} owner contact`, "email in the retained owner field"],
+    [retainedRel, retainedDraftBody("206-555-0100"), `${retainedRel} owner contact`, "phone in the retained owner field"],
+    ["data/rankings.json", retainedDraftBody(), 'data/rankings.json owner label "Bill Jenson"', "same name in production rankings"],
+    ["data/rankings-w1-2026.json", retainedDraftBody(), 'data/rankings-w1-2026.json owner label "Bill Jenson"', "same name in a published week file"],
+    ["data/teams.json", '{"owner":"Bill Jenson"}', 'data/teams.json owner label "Bill Jenson"', "same name in teams.json"],
+    ["data/rankings-w4-2026.DRAFT.json", retainedDraftBody(), 'data/rankings-w4-2026.DRAFT.json owner label "Bill Jenson"', "same name in a draft path that is not retained"],
+    ["data/rankings.draft.json", retainedDraftBody(), 'data/rankings.draft.json owner label "Bill Jenson"', "same name in a case-different path"],
+    ["rankings.DRAFT.json", retainedDraftBody(), 'rankings.DRAFT.json owner label "Bill Jenson"', "same name without the data/ prefix"],
+    ["data/rankings.DRAFT.json.bak", retainedDraftBody(), 'data/rankings.DRAFT.json.bak owner label "Bill Jenson"', "same name in a lookalike path"],
+    [retainedRel, JSON.stringify({ rankings: [{ teamId: "eddies", owner: "Bill Jenson" }, { teamId: "goats", owner: "Bill Jenson" }] }), outside, "second rankings owner value"],
+    [retainedRel, JSON.stringify({ rankings: [{ teamId: "eddies", owner: "Bill Jenson", alts: ["Bill Jenson"] }] }), outside, "same name in a nested array"],
+    [retainedRel, JSON.stringify({ rankings: [{ meta: { owner: "Bill Jenson" } }] }), outside, "nested owner"],
+    [retainedRel, JSON.stringify({ rankings: [{ owner: "Mike Heff" }], note: "Bill Jenson" }), outside, "same name in a non-owner field"],
+    [retainedRel, JSON.stringify({ rankings: [{ teamId: "eddies", owner: "Bill Jenson", blurb: "Week for Bill Jenson" }] }), outside, "same name repeated in the blurb"],
+    [retainedRel, JSON.stringify({ owner: "Bill Jenson", rankings: [{ owner: "Mike Heff" }] }), outside, "same name on a root owner"],
+    [retainedRel, '{"rankings":[{"teamId":"eddies","owner":"Bill Jenson"},{"teamId":"goats","owner":"Bill Smith"}]}', `${retainedRel} owner label "Bill Smith"`, "another Bill label beside the retained value"],
+    [retainedRel, JSON.stringify({ rankings: [{ teamId: "goats", owner: "Bill Jenson" }] }), outside, "same name on a different club row"],
+    [retainedRel, JSON.stringify({ rankings: [{ teamId: "eddies", owner: "Bill Jenson" }], name: "Bill" }), `${retainedRel} owner label "Bill"`, "first name on a name field beside the retained owner"],
+    [retainedRel, JSON.stringify({ rankings: [{ teamId: "eddies", owner: "Bill Jenson" }], note: "billTeam" }), `${retainedRel} contains billTeam`, "billTeam token beside the retained owner"]
+  ];
+  for (const [rel, text, expect, why] of negatives) {
+    const got = publicNameViolation(rel, text);
+    if (got !== expect) fail(`exception scope ${why}: got ${JSON.stringify(got)} expected ${JSON.stringify(expect)}`);
+  }
+  for (const key of ["owner", "owners", "pending", "pendingclaim", "pendingclaims", "bid", "bids", "claim", "claims", "trade", "trades"]) {
+    if (!LIVE_BANNED_KEYS.has(key)) fail(`live file privacy dropped ${key}`);
+  }
+  const bannedHits = [];
+  walkBannedKeys({ pending: [], bids: [1], nested: { trade: {}, claims: true } }, "$", bannedHits);
+  for (const path of ["$.pending", "$.bids", "$.nested.trade", "$.nested.claims"]) {
+    if (!bannedHits.includes(path)) fail(`pending/bid/trade scan missed ${path}`);
+  }
+  if (MAX_AGE_MS !== 36 * 60 * 60 * 1000) fail("36h freshness window changed");
+  console.log(`Retained draft owner exceptions ok (${positive} positive, ${negatives.length} negative)`);
 }
 
 // ---- Data integrity: rosters must have players, sync data must be fresh ----

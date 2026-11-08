@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-06",
-  "source": "Fantrax roster sync 2026-11-06 4:09 PM PT (/workspace/fantrax-raw-2026-11-06-pm.json)",
+  "updated": "2026-11-08",
+  "source": "Fantrax roster sync 2026-11-08 9:27 AM PT (/workspace/fantrax-raw-2026-11-08-normalized-v2.json)",
   "season": 2026,
   "trades": [
     {
@@ -725,11 +725,88 @@
         "Quentin Lake DB LAR"
       ],
       "note": null
+    },
+    {
+      "teamId": "morningside",
+      "team": "Morningside Muff Divers",
+      "lastUpdated": "Oct 7 9:30 AM",
+      "players": [
+        "Derrick Barnes LB DET",
+        "Bobby Okereke LB CAR",
+        "Pete Werner LB NO"
+      ],
+      "note": null,
+      "positionsOffered": [
+        "LB"
+      ],
+      "positionsNeeded": [
+        "RB"
+      ]
+    },
+    {
+      "teamId": "newman",
+      "team": "Newman Lake Sleep Paralysis Demons",
+      "lastUpdated": "Nov 3 10:18 PM",
+      "players": [
+        "Jordan Love QB GB",
+        "TreVeyon Henderson RB NE",
+        "Jordan Mason RB MIN",
+        "Jonathan Taylor RB IND",
+        "Davante Adams WR LAR",
+        "A.J. Brown WR NE",
+        "Zay Flowers WR BAL",
+        "Matthew Golden WR GB",
+        "Tee Higgins WR CIN",
+        "Myles Price WR MIN",
+        "Juwan Johnson TE NO",
+        "Michael Mayer TE LV",
+        "Andrew Van Ginkel DL,LB,ID MIN",
+        "Azeez Al-Shaair LB HOU",
+        "Zaire Franklin LB GB",
+        "Ty'Ron Hopper LB GB",
+        "Nathan Landman LB LAR",
+        "Jeremiah Trotter LB PHI",
+        "Jordan Battle DB CIN",
+        "Xavier Watts DB ATL"
+      ],
+      "note": null
+    },
+    {
+      "teamId": "pocket",
+      "team": "Pocket Agents",
+      "lastUpdated": "Oct 2 4:24 PM",
+      "players": [
+        "Jared Goff QB DET",
+        "Tyler Shough QB NO"
+      ],
+      "note": "Goff & Shough both top 5 QBs through 3 weeks. Looking to potentially trade 1 for a running back."
+    },
+    {
+      "teamId": "saltese",
+      "team": "Saltese Slamm",
+      "lastUpdated": "Oct 22 2:39 PM",
+      "players": [],
+      "note": "Looking for FAAB or flex swaps."
+    },
+    {
+      "teamId": "ttab",
+      "team": "TTAB",
+      "lastUpdated": "Nov 3 7:21 AM",
+      "players": [
+        "Javonte Williams RB DAL",
+        "Christian Watson WR GB",
+        "Jameson Williams WR DET",
+        "Dallas Goedert TE PHI",
+        "Divine Deablo LB ATL",
+        "Harold Perkins LB ATL",
+        "Dorian Williams LB BUF"
+      ],
+      "note": null
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-11-06 4:09 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-11-08 9:27 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: LAB↔Saltese Tyler Allgeier for Ashton Jeanty (Nov 4 11:53 AM); Newman↔Substation Eric Wilson+Henry To'oTo'o for Kevin Winston+Tyler Warren (Nov 3 10:18 PM); Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-06 4:09 PM PT"
+  "lastSynced": "2026-11-08 9:27 AM PT"
 }
