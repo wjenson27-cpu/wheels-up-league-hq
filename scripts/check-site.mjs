@@ -277,7 +277,9 @@ async function checkMatchupsLive() {
         leftB: game.sideB && game.sideB.playersLeft,
         emptyA: game.sideA && game.sideA.lineupSet === false,
         emptyB: game.sideB && game.sideB.lineupSet === false,
-        final: game.status === "final"
+        final: game.status === "final",
+        inProgressA: game.sideA && game.sideA.playersInProgress,
+        inProgressB: game.sideB && game.sideB.playersInProgress
       });
       const got = game.winProb;
       if (expect == null && got != null) fail(`${rel} ${game.id} has a winProb the formula would leave blank`);

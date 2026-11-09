@@ -6,7 +6,7 @@
   "weekEnd": "2026-11-11",
   "windowLabel": "Nov 5 – Nov 11, 2026",
   "timezone": "PT",
-  "asOf": "2026-11-08 11:53 AM PT",
+  "asOf": "2026-11-08 7:11 PM PT",
   "status": "live",
   "formula": {
     "id": "normal-approx-v1",
@@ -38,12 +38,12 @@
         "logo": "img/logos/substation.jpg",
         "record": "4-4",
         "lineupSet": true,
-        "score": 113,
-        "projection": 234.17,
-        "playersLeft": 8,
-        "playersDone": 2,
-        "playersInProgress": 4,
-        "minutesRemaining": 586
+        "score": 244.5,
+        "projection": 265.64,
+        "playersLeft": 1,
+        "playersDone": 11,
+        "playersInProgress": 2,
+        "minutesRemaining": 114
       },
       "sideB": {
         "teamId": "lab",
@@ -52,18 +52,18 @@
         "logo": "img/logos/lab.jpg",
         "record": "5-3",
         "lineupSet": true,
-        "score": 96.5,
-        "projection": 207.77,
-        "playersLeft": 5,
-        "playersDone": 1,
-        "playersInProgress": 8,
-        "minutesRemaining": 505
+        "score": 198.5,
+        "projection": 211.39,
+        "playersLeft": 1,
+        "playersDone": 12,
+        "playersInProgress": 1,
+        "minutesRemaining": 87
       },
       "winProb": {
-        "sideA": 0.8,
-        "sideB": 0.2,
-        "mu": 26.4,
-        "sigma": 28.8,
+        "sideA": 0.95,
+        "sideB": 0.05,
+        "mu": 54.3,
+        "sigma": 11.3,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -80,12 +80,12 @@
         "logo": "img/logos/slumlords.jpg",
         "record": "4-4",
         "lineupSet": true,
-        "score": 51,
-        "projection": 194.14,
-        "playersLeft": 9,
-        "playersDone": 1,
-        "playersInProgress": 4,
-        "minutesRemaining": 634
+        "score": 196.5,
+        "projection": 235.55,
+        "playersLeft": 2,
+        "playersDone": 10,
+        "playersInProgress": 2,
+        "minutesRemaining": 174
       },
       "sideB": {
         "teamId": "saltese",
@@ -94,18 +94,18 @@
         "logo": "img/logos/saltese.jpg",
         "record": "3-5",
         "lineupSet": true,
-        "score": 82.5,
-        "projection": 188.63,
-        "playersLeft": 5,
-        "playersDone": 3,
-        "playersInProgress": 6,
-        "minutesRemaining": 449
+        "score": 184.5,
+        "projection": 211.89,
+        "playersLeft": 1,
+        "playersDone": 11,
+        "playersInProgress": 2,
+        "minutesRemaining": 114
       },
       "winProb": {
-        "sideA": 0.55,
-        "sideB": 0.45,
-        "mu": 5.5,
-        "sigma": 29.9,
+        "sideA": 0.95,
+        "sideB": 0.05,
+        "mu": 23.7,
+        "sigma": 13.9,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -122,12 +122,12 @@
         "logo": "img/logos/newman.jpg",
         "record": "4-4",
         "lineupSet": true,
-        "score": 62,
-        "projection": 170.62,
-        "playersLeft": 6,
-        "playersDone": 4,
-        "playersInProgress": 4,
-        "minutesRemaining": 475
+        "score": 233,
+        "projection": 243.26,
+        "playersLeft": 1,
+        "playersDone": 13,
+        "playersInProgress": 0,
+        "minutesRemaining": 60
       },
       "sideB": {
         "teamId": "hyper",
@@ -136,18 +136,18 @@
         "logo": "img/logos/hyper.jpg",
         "record": "4-4",
         "lineupSet": true,
-        "score": 119,
-        "projection": 249.8,
-        "playersLeft": 5,
-        "playersDone": 0,
-        "playersInProgress": 9,
-        "minutesRemaining": 526
+        "score": 257.5,
+        "projection": 289,
+        "playersLeft": 1,
+        "playersDone": 11,
+        "playersInProgress": 2,
+        "minutesRemaining": 114
       },
       "winProb": {
         "sideA": 0.05,
         "sideB": 0.95,
-        "mu": -79.2,
-        "sigma": 26.5,
+        "mu": -45.7,
+        "sigma": 11.3,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -164,12 +164,12 @@
         "logo": "img/logos/pocket.jpg",
         "record": "5-3",
         "lineupSet": true,
-        "score": 83,
-        "projection": 232.2,
-        "playersLeft": 6,
-        "playersDone": 1,
-        "playersInProgress": 7,
-        "minutesRemaining": 544
+        "score": 219.5,
+        "projection": 240.9,
+        "playersLeft": 1,
+        "playersDone": 12,
+        "playersInProgress": 1,
+        "minutesRemaining": 87
       },
       "sideB": {
         "teamId": "ultron",
@@ -178,18 +178,18 @@
         "logo": "img/logos/ultron.jpg",
         "record": "3-5",
         "lineupSet": true,
-        "score": 146,
-        "projection": 216.66,
-        "playersLeft": 6,
-        "playersDone": 6,
-        "playersInProgress": 2,
-        "minutesRemaining": 416
+        "score": 233.5,
+        "projection": 230.39,
+        "playersLeft": 2,
+        "playersDone": 12,
+        "playersInProgress": 0,
+        "minutesRemaining": 120
       },
       "winProb": {
         "sideA": 0.7,
         "sideB": 0.3,
-        "mu": 15.5,
-        "sigma": 27.7,
+        "mu": 7.4,
+        "sigma": 13.9,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -206,12 +206,12 @@
         "logo": "img/logos/dongers.jpg",
         "record": "2-6",
         "lineupSet": true,
-        "score": 117,
-        "projection": 228.01,
-        "playersLeft": 5,
-        "playersDone": 2,
-        "playersInProgress": 7,
-        "minutesRemaining": 481
+        "score": 242,
+        "projection": 256,
+        "playersLeft": 1,
+        "playersDone": 12,
+        "playersInProgress": 0,
+        "minutesRemaining": 60
       },
       "sideB": {
         "teamId": "morningside",
@@ -220,18 +220,18 @@
         "logo": "img/logos/morningside.jpg",
         "record": "3-5",
         "lineupSet": true,
-        "score": 100,
-        "projection": 218.81,
-        "playersLeft": 6,
-        "playersDone": 3,
-        "playersInProgress": 5,
-        "minutesRemaining": 487
+        "score": 199.5,
+        "projection": 233.51,
+        "playersLeft": 2,
+        "playersDone": 12,
+        "playersInProgress": 0,
+        "minutesRemaining": 120
       },
       "winProb": {
-        "sideA": 0.65,
-        "sideB": 0.35,
-        "mu": 9.2,
-        "sigma": 26.5,
+        "sideA": 0.95,
+        "sideB": 0.05,
+        "mu": 22.5,
+        "sigma": 13.9,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -248,12 +248,12 @@
         "logo": "img/logos/goats.jpg",
         "record": "6-2",
         "lineupSet": true,
-        "score": 99,
-        "projection": 235.4,
-        "playersLeft": 6,
-        "playersDone": 2,
-        "playersInProgress": 6,
-        "minutesRemaining": 517
+        "score": 173.5,
+        "projection": 182.86,
+        "playersLeft": 0,
+        "playersDone": 13,
+        "playersInProgress": 1,
+        "minutesRemaining": 27
       },
       "sideB": {
         "teamId": "doubtpfizer",
@@ -262,18 +262,18 @@
         "logo": "img/logos/doubtpfizer.jpg",
         "record": "3-5",
         "lineupSet": true,
-        "score": 52.5,
-        "projection": 213.25,
-        "playersLeft": 7,
-        "playersDone": 1,
-        "playersInProgress": 6,
-        "minutesRemaining": 583
+        "score": 228.5,
+        "projection": 235.04,
+        "playersLeft": 0,
+        "playersDone": 13,
+        "playersInProgress": 1,
+        "minutesRemaining": 27
       },
       "winProb": {
-        "sideA": 0.8,
-        "sideB": 0.2,
-        "mu": 22.2,
-        "sigma": 28.8,
+        "sideA": 0.05,
+        "sideB": 0.95,
+        "mu": -52.2,
+        "sigma": 11.3,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -290,12 +290,12 @@
         "logo": "img/logos/ttab.jpg",
         "record": "4-4",
         "lineupSet": true,
-        "score": 75,
-        "projection": 189.59,
-        "playersLeft": 4,
-        "playersDone": 0,
-        "playersInProgress": 10,
-        "minutesRemaining": 511
+        "score": 231.5,
+        "projection": 257.2,
+        "playersLeft": 0,
+        "playersDone": 12,
+        "playersInProgress": 2,
+        "minutesRemaining": 54
       },
       "sideB": {
         "teamId": "eddies",
@@ -304,18 +304,18 @@
         "logo": "img/logos/eddies.jpg",
         "record": "6-2",
         "lineupSet": true,
-        "score": 101,
-        "projection": 233.18,
-        "playersLeft": 5,
-        "playersDone": 1,
-        "playersInProgress": 8,
-        "minutesRemaining": 511
+        "score": 269,
+        "projection": 283.64,
+        "playersLeft": 1,
+        "playersDone": 13,
+        "playersInProgress": 0,
+        "minutesRemaining": 60
       },
       "winProb": {
         "sideA": 0.05,
         "sideB": 0.95,
-        "mu": -43.6,
-        "sigma": 24,
+        "mu": -26.4,
+        "sigma": 8,
         "decided": false,
         "playersLeftKnown": true
       }
