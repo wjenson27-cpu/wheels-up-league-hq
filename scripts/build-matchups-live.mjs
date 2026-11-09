@@ -398,12 +398,25 @@ function recordsFrom(weeks, teams) {
   return table;
 }
 
-function gameStatus(game) {
+function progressCount(value) {
+  if (value == null || value === "") return null;
+  const n = Number(value);
+  return Number.isInteger(n) && n >= 0 ? n : null;
+}
+
+/* yet-to-play of zero is not a final while anyone is still in progress, or while that count is unknown. */
+export function gameStatus(game) {
   if (game.status === "final") return "final";
   const a = game.sideA;
   const b = game.sideB;
   const unset = a.lineupSet === false || b.lineupSet === false;
-  if (!unset && a.playersLeft === 0 && b.playersLeft === 0 && a.score != null && b.score != null) return "final";
+  const scored = a.score != null && b.score != null;
+  const noneYet = a.playersLeft === 0 && b.playersLeft === 0;
+  const ipA = progressCount(a.playersInProgress);
+  const ipB = progressCount(b.playersInProgress);
+  const progressKnown = ipA != null && ipB != null;
+  const active = (ipA || 0) > 0 || (ipB || 0) > 0;
+  if (!unset && scored && noneYet && progressKnown && !active) return "final";
   if (a.score != null || b.score != null) return "live";
   return "scheduled";
 }
@@ -420,7 +433,9 @@ function attachWin(game) {
     leftB: game.sideB.playersLeft,
     emptyA: game.sideA.lineupSet === false,
     emptyB: game.sideB.lineupSet === false,
-    final: status === "final"
+    final: status === "final",
+    inProgressA: game.sideA.playersInProgress,
+    inProgressB: game.sideB.playersInProgress
   });
   game.winProb = prob;
 }

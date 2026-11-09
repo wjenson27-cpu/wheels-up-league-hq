@@ -105,8 +105,14 @@ export function winProbability(input) {
   const leftA = leftCount(input.leftA);
   const leftB = leftCount(input.leftB);
   const unset = input.emptyA === true || input.emptyB === true;
-  /* An unset lineup is not a finished game. A 100 / 0 bar would treat "no lineup" as a lock. */
-  const finished = !unset && (input.final === true || (leftA === 0 && leftB === 0));
+  const progressSupplied = input && ("inProgressA" in input || "inProgressB" in input);
+  const ipA = progressSupplied ? leftCount(input.inProgressA) : 0;
+  const ipB = progressSupplied ? leftCount(input.inProgressB) : 0;
+  const active = (ipA || 0) > 0 || (ipB || 0) > 0;
+  const progressUnknown = progressSupplied && (ipA == null || ipB == null);
+  /* An unset lineup is not a finished game. A 100 / 0 bar would treat "no lineup" as a lock.
+     Yet-to-play of zero is not a finish while a player is in progress, or while that count is unknown. */
+  const finished = !unset && (input.final === true || (!active && !progressUnknown && leftA === 0 && leftB === 0));
   if (finished) return decided(scoreA, scoreB);
 
   const projA = num(input.projA);
@@ -116,11 +122,12 @@ export function winProbability(input) {
   const remainA = Math.max(0, projA - scoreA);
   const remainB = Math.max(0, projB - scoreB);
   const mu = (scoreA + remainA) - (scoreB + remainB);
-  const sigA = sigmaFor(leftA, remainA);
-  const sigB = sigmaFor(leftB, remainB);
+  const bothYetDone = leftA === 0 && leftB === 0;
+  const sigA = sigmaFor(bothYetDone && (ipA || 0) > 0 ? ipA : leftA, remainA);
+  const sigB = sigmaFor(bothYetDone && (ipB || 0) > 0 ? ipB : leftB, remainB);
   const sigma = Math.sqrt(sigA * sigA + sigB * sigB);
   if (sigma === 0) {
-    if (unset) return liveCap(scoreA + remainA, scoreB + remainB, leftA != null && leftB != null);
+    if (unset || active || progressUnknown) return liveCap(scoreA + remainA, scoreB + remainB, leftA != null && leftB != null);
     return decided(scoreA + remainA, scoreB + remainB);
   }
 
