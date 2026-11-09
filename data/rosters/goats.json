@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-11-08 9:27 AM PT",
+  "asOf": "2026-11-08 4:10 PM PT",
   "faabLeft": 60,
   "startingQB": "Patrick Mahomes",
   "roster": {
@@ -47,16 +47,21 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Keisean Nixon — Q (IR slot)"
+    "Patrick Mahomes — Q (active)",
+    "Josh Jacobs — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-08 9:27 AM PT (/workspace/fantrax-raw-2026-11-08-normalized-v2.json)",
+  "source": "Fantrax roster sync 2026-11-08 4:10 PM PT (/workspace/fantrax-raw-2026-11-08-pm.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Patrick Mahomes — Q (active)",
+    "Josh Jacobs — Q (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Keisean Nixon — Q (IR slot)"
+    "Patrick Mahomes — Q (active)",
+    "Josh Jacobs — Q (active)"
   ],
   "updated": "2026-11-08",
-  "lastSynced": "2026-11-08 9:27 AM PT"
+  "lastSynced": "2026-11-08 4:10 PM PT"
 }

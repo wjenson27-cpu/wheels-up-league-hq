@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-11-08 9:27 AM PT",
+  "asOf": "2026-11-08 4:10 PM PT",
   "faabLeft": 56,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -18,8 +18,8 @@
     ],
     "WR": [
       "Puka Nacua",
-      "Khalil Shakir",
       "Caleb Douglas",
+      "Khalil Shakir",
       "Mike Evans"
     ],
     "TE": [
@@ -30,10 +30,10 @@
     ],
     "LB": [
       "Roquan Smith",
-      "Akeem Davis-Gaither",
+      "Jack Gibbens",
       "Drue Tranquill",
       "Quay Walker",
-      "Jack Gibbens"
+      "Akeem Davis-Gaither"
     ],
     "DB": [
       "Minkah Fitzpatrick",
@@ -47,27 +47,30 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Puka Nacua — Q (active)",
     "Mike Evans — O (reserve)",
     "Jeremiyah Love — IR (IR slot)",
     "Carnell Tate — Q (IR slot)",
-    "Akeem Davis-Gaither — O (active)",
+    "Akeem Davis-Gaither — O (reserve)",
     "Jihaad Campbell — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-08 9:27 AM PT (/workspace/fantrax-raw-2026-11-08-normalized-v2.json)",
+  "source": "Fantrax roster sync 2026-11-08 4:10 PM PT (/workspace/fantrax-raw-2026-11-08-pm.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
+    "Puka Nacua — Q (active)",
     "Mike Evans — O (reserve)",
-    "Akeem Davis-Gaither — O (active)"
+    "Akeem Davis-Gaither — O (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Puka Nacua — Q (active)",
     "Mike Evans — O (reserve)",
     "Jeremiyah Love — IR (IR slot)",
     "Carnell Tate — Q (IR slot)",
-    "Akeem Davis-Gaither — O (active)",
+    "Akeem Davis-Gaither — O (reserve)",
     "Jihaad Campbell — O (IR slot)"
   ],
   "updated": "2026-11-08",
-  "lastSynced": "2026-11-08 9:27 AM PT"
+  "lastSynced": "2026-11-08 4:10 PM PT"
 }
