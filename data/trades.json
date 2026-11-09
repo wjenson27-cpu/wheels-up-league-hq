@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-08",
-  "source": "Fantrax roster sync 2026-11-08 4:10 PM PT (/workspace/fantrax-raw-2026-11-08-pm.json)",
+  "updated": "2026-11-09",
+  "source": "Fantrax roster sync 2026-11-09 6:31 AM PT (/workspace/fantrax-raw-2026-11-09-am.json)",
   "season": 2026,
   "trades": [
     {
@@ -713,16 +713,16 @@
   "blocks": [
     {
       "teamId": "eddies",
-      "team": "Eagleridge Eddie's",
+      "team": "Eagle Ridge Eddies",
       "lastUpdated": "Nov 2 3:02 PM",
       "players": [
         "Zach Charbonnet RB SEA",
-        "Jordyn Tyson WR NO",
-        "Chimere Dike WR TEN",
         "Travis Etienne RB NO",
-        "Quentin Lake DB LAR",
+        "Chimere Dike WR TEN",
+        "Jordyn Tyson WR NO",
         "Cedric Gray LB TEN",
-        "Trenton Simpson LB BAL"
+        "Trenton Simpson LB BAL",
+        "Quentin Lake DB LAR"
       ],
       "note": null
     },
@@ -731,9 +731,9 @@
       "team": "Morningside Muff Divers",
       "lastUpdated": "Oct 7 9:30 AM",
       "players": [
-        "Pete Werner LB NO",
         "Derrick Barnes LB DET",
-        "Bobby Okereke LB CAR"
+        "Bobby Okereke LB CAR",
+        "Pete Werner LB NO"
       ],
       "note": null,
       "positionsOffered": [
@@ -749,25 +749,25 @@
       "lastUpdated": "Nov 3 10:18 PM",
       "players": [
         "Jordan Love QB GB",
+        "TreVeyon Henderson RB NE",
+        "Jordan Mason RB MIN",
         "Jonathan Taylor RB IND",
+        "Davante Adams WR LAR",
+        "A.J. Brown WR NE",
         "Zay Flowers WR BAL",
         "Matthew Golden WR GB",
         "Tee Higgins WR CIN",
-        "Michael Mayer TE LV",
         "Myles Price WR MIN",
         "Juwan Johnson TE NO",
-        "A.J. Brown WR NE",
-        "Jordan Mason RB MIN",
-        "Davante Adams WR LAR",
-        "TreVeyon Henderson RB NE",
+        "Michael Mayer TE LV",
         "Andrew Van Ginkel DL,LB,ID MIN",
-        "Ty'Ron Hopper LB GB",
-        "Jordan Battle DB CIN",
-        "Xavier Watts DB ATL",
         "Azeez Al-Shaair LB HOU",
+        "Zaire Franklin LB GB",
+        "Ty'Ron Hopper LB GB",
         "Nathan Landman LB LAR",
         "Jeremiah Trotter LB PHI",
-        "Zaire Franklin LB GB"
+        "Jordan Battle DB CIN",
+        "Xavier Watts DB ATL"
       ],
       "note": null
     },
@@ -789,24 +789,31 @@
       "note": "Looking for FAAB or flex swaps."
     },
     {
+      "teamId": "substation",
+      "team": "Substation",
+      "lastUpdated": "Sep 30 8:25 AM",
+      "players": [],
+      "note": null
+    },
+    {
       "teamId": "ttab",
       "team": "TTAB",
       "lastUpdated": "Nov 3 7:21 AM",
       "players": [
         "Javonte Williams RB DAL",
+        "Christian Watson WR GB",
         "Jameson Williams WR DET",
         "Dallas Goedert TE PHI",
-        "Christian Watson WR GB",
+        "Divine Deablo LB ATL",
         "Harold Perkins LB ATL",
-        "Dorian Williams LB BUF",
-        "Divine Deablo LB ATL"
+        "Dorian Williams LB BUF"
       ],
       "note": null
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-11-08 4:10 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-11-09 6:31 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: LAB↔Saltese Tyler Allgeier for Ashton Jeanty (Nov 4 11:53 AM); Newman↔Substation Eric Wilson+Henry To'oTo'o for Kevin Winston+Tyler Warren (Nov 3 10:18 PM); Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-08 4:10 PM PT"
+  "lastSynced": "2026-11-09 6:31 AM PT"
 }
