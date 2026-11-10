@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-11-09 6:31 AM PT",
+  "asOf": "2026-11-10 1:11 PM PT",
   "faabLeft": 44,
   "startingQB": "Jordan Love",
   "roster": {
@@ -15,15 +15,15 @@
     ],
     "WR": [
       "Zay Flowers",
+      "A.J. Brown",
       "Matthew Golden",
       "Tee Higgins",
-      "Myles Price",
-      "A.J. Brown"
+      "Myles Price"
     ],
     "TE": [
       "Tyler Warren",
-      "Michael Mayer",
-      "Juwan Johnson"
+      "Juwan Johnson",
+      "Michael Mayer"
     ],
     "DL": [
       "Andrew Van Ginkel"
@@ -32,8 +32,8 @@
       "Ty'Ron Hopper",
       "Azeez Al-Shaair",
       "Nathan Landman",
-      "Jeremiah Trotter",
-      "Tyrel Dodson"
+      "Tyrel Dodson",
+      "Jeremiah Trotter"
     ],
     "DB": [
       "Jordan Battle",
@@ -48,27 +48,27 @@
   },
   "notes": "",
   "injuryFlags": [
-    "A.J. Brown — O (reserve)",
+    "A.J. Brown — Q (active)",
     "Davante Adams — IR (IR slot)",
-    "TreVeyon Henderson — O (IR slot)",
+    "TreVeyon Henderson — Q (IR slot)",
     "Ty'Ron Hopper — Q (active)",
-    "Zaire Franklin — O (IR slot)"
+    "Zaire Franklin — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-09 6:31 AM PT (/workspace/fantrax-raw-2026-11-09-am.json)",
+  "source": "Fantrax roster sync 2026-11-10 1:11 PM PT (/workspace/fantrax-raw-2026-11-10-pm-normalized.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
   "lineupFlags": [
-    "A.J. Brown — O (reserve)",
+    "A.J. Brown — Q (active)",
     "Ty'Ron Hopper — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "A.J. Brown — O (reserve)",
+    "A.J. Brown — Q (active)",
     "Davante Adams — IR (IR slot)",
-    "TreVeyon Henderson — O (IR slot)",
+    "TreVeyon Henderson — Q (IR slot)",
     "Ty'Ron Hopper — Q (active)",
-    "Zaire Franklin — O (IR slot)"
+    "Zaire Franklin — Q (IR slot)"
   ],
-  "updated": "2026-11-09",
-  "lastSynced": "2026-11-09 6:31 AM PT"
+  "updated": "2026-11-10",
+  "lastSynced": "2026-11-10 1:11 PM PT"
 }

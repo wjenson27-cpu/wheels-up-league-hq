@@ -2,21 +2,20 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-09 6:31 AM PT",
+  "asOf": "2026-11-10 1:11 PM PT",
   "faabLeft": 3,
   "startingQB": "Matthew Stafford",
   "roster": {
     "QB": [
-      "Matthew Stafford",
-      "Malik Willis"
+      "Matthew Stafford"
     ],
     "RB": [
-      "D'Andre Swift",
-      "Tyler Allgeier",
-      "Aaron Jones",
       "Bhayshul Tuten",
+      "Tyler Allgeier",
+      "Rico Dowdle",
+      "Aaron Jones",
       "Kyle Monangai",
-      "Rico Dowdle"
+      "D'Andre Swift"
     ],
     "WR": [
       "Antonio Williams",
@@ -36,9 +35,7 @@
       "Dee Winters"
     ],
     "DB": [
-      "Jonas Sanker",
-      "Antoine Winfield",
-      "Ty Okada"
+      "Jonas Sanker"
     ],
     "IR": [
       "Jonathon Brooks",
@@ -48,30 +45,24 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Malik Willis — Q (reserve)",
-    "Kyle Monangai — O (reserve)",
+    "Kyle Monangai — Q (reserve)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "David Montgomery — O (IR slot)",
-    "Antoine Winfield — Q (active)"
+    "David Montgomery — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-09 6:31 AM PT (/workspace/fantrax-raw-2026-11-09-am.json)",
+  "source": "Fantrax roster sync 2026-11-10 1:11 PM PT (/workspace/fantrax-raw-2026-11-10-pm-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
-    "Malik Willis — Q (reserve)",
-    "Kyle Monangai — O (reserve)",
-    "Antoine Winfield — Q (active)"
+    "Kyle Monangai — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Malik Willis — Q (reserve)",
-    "Kyle Monangai — O (reserve)",
+    "Kyle Monangai — Q (reserve)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "David Montgomery — O (IR slot)",
-    "Antoine Winfield — Q (active)"
+    "David Montgomery — Q (IR slot)"
   ],
-  "updated": "2026-11-09",
-  "lastSynced": "2026-11-09 6:31 AM PT"
+  "updated": "2026-11-10",
+  "lastSynced": "2026-11-10 1:11 PM PT"
 }

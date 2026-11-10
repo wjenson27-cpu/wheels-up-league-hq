@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-11-09 6:31 AM PT",
+  "asOf": "2026-11-10 1:11 PM PT",
   "faabLeft": 5,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -10,17 +10,16 @@
       "Brock Purdy"
     ],
     "RB": [
+      "Emmett Johnson",
       "Kenneth Gainwell",
-      "Tyler Goodson",
-      "Justice Hill",
-      "Emmett Johnson"
+      "Justice Hill"
     ],
     "WR": [
       "Ja'Marr Chase",
+      "Germie Bernard",
       "KC Concepcion",
       "Malik Nabers",
-      "Tre Tucker",
-      "Germie Bernard"
+      "Tre Tucker"
     ],
     "TE": [
       "Tucker Kraft"
@@ -29,40 +28,38 @@
       "Dexter Lawrence"
     ],
     "LB": [
-      "Zack Baun",
+      "Malcolm Rodriguez",
       "Kaden Elliss",
       "Henry To'oTo'o",
-      "Eric Wilson",
-      "Malcolm Rodriguez"
+      "Eric Wilson"
     ],
     "DB": [
       "Nick Emmanwori",
-      "Tykee Smith",
-      "Jalen Pitre"
+      "Jalen Pitre",
+      "Tykee Smith"
     ],
     "IR": [
       "Tyjae Spears",
+      "Zack Baun",
       "Jack Campbell"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Tyjae Spears — Q (IR slot)",
-    "Zack Baun — Q (active)",
+    "Zack Baun — Q (IR slot)",
     "Jack Campbell — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-09 6:31 AM PT (/workspace/fantrax-raw-2026-11-09-am.json)",
+  "source": "Fantrax roster sync 2026-11-10 1:11 PM PT (/workspace/fantrax-raw-2026-11-10-pm-normalized.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "lineupFlags": [
-    "Zack Baun — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Tyjae Spears — Q (IR slot)",
-    "Zack Baun — Q (active)",
+    "Zack Baun — Q (IR slot)",
     "Jack Campbell — IR (IR slot)"
   ],
-  "updated": "2026-11-09",
-  "lastSynced": "2026-11-09 6:31 AM PT"
+  "updated": "2026-11-10",
+  "lastSynced": "2026-11-10 1:11 PM PT"
 }
