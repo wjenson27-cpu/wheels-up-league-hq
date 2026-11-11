@@ -2,25 +2,25 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-11 9:25 AM PT",
+  "asOf": "2026-11-11 10:37 AM PT",
   "faabLeft": 10,
-  "startingQB": "Kirk Cousins",
+  "startingQB": "Josh Allen",
   "roster": {
     "QB": [
-      "Kirk Cousins",
-      "Bryce Young"
+      "Bryce Young",
+      "Josh Allen"
     ],
     "RB": [
       "Kenneth Walker III",
-      "Rachaad White",
-      "Jaylen Wright"
+      "Jaylen Wright",
+      "Emmett Johnson"
     ],
     "WR": [
-      "Amon-Ra St. Brown",
       "Luther Burden",
       "Emeka Egbuka",
       "Travis Hunter",
-      "De'Zhaun Stribling"
+      "De'Zhaun Stribling",
+      "Drake London"
     ],
     "TE": [
       "Sam LaPorta",
@@ -32,14 +32,13 @@
     ],
     "LB": [
       "Jacob Rodriguez",
-      "Nick Bolton",
       "Blake Cashman",
       "Payton Wilson",
       "Shemar James"
     ],
     "DB": [
-      "Jeremy Chinn",
-      "Kamren Curl"
+      "Kamren Curl",
+      "Nick Emmanwori"
     ],
     "IR": [
       "Jacory Croskey-Merritt",
@@ -53,7 +52,7 @@
     "Jacory Croskey-Merritt — IR (IR slot)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "source": "Fantrax waivers capture 2026-11-11 ~9:20–9:25 AM PT (/workspace/fantrax-waivers-2026-11-11.json)",
+  "source": "Fantrax completed-trades capture 2026-11-11 10:37 AM PT (/workspace/fantrax-trades-2026-11-11.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
     "Luther Burden — Q (active)",
@@ -68,5 +67,5 @@
     "Micah Parsons — IR (IR slot)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 9:25 AM PT"
+  "lastSynced": "2026-11-11 10:37 AM PT"
 }

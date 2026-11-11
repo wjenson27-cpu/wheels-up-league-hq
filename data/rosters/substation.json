@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-11-11 9:25 AM PT",
+  "asOf": "2026-11-11 10:37 AM PT",
   "faabLeft": 5,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -10,9 +10,9 @@
       "Brock Purdy"
     ],
     "RB": [
-      "Emmett Johnson",
       "Kenneth Gainwell",
-      "Justice Hill"
+      "Justice Hill",
+      "Rachaad White"
     ],
     "WR": [
       "Ja'Marr Chase",
@@ -35,10 +35,10 @@
       "Eric Wilson"
     ],
     "DB": [
-      "Nick Emmanwori",
       "Jalen Pitre",
       "Tykee Smith",
-      "DeShon Elliott"
+      "DeShon Elliott",
+      "Jeremy Chinn"
     ],
     "IR": [
       "Tyjae Spears",
@@ -52,7 +52,7 @@
     "Zack Baun — Q (IR slot)",
     "Jack Campbell — IR (IR slot)"
   ],
-  "source": "Fantrax waivers capture 2026-11-11 ~9:20–9:25 AM PT (/workspace/fantrax-waivers-2026-11-11.json)",
+  "source": "Fantrax completed-trades capture 2026-11-11 10:37 AM PT (/workspace/fantrax-trades-2026-11-11.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -63,5 +63,5 @@
     "Jack Campbell — IR (IR slot)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 9:25 AM PT"
+  "lastSynced": "2026-11-11 10:37 AM PT"
 }

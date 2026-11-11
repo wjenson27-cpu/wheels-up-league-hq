@@ -1,8 +1,45 @@
 {
   "updated": "2026-11-11",
-  "source": "Fantrax roster sync 2026-11-11 6:24 AM PT (/workspace/fantrax-raw-2026-11-11-am-normalized.json)",
+  "source": "Fantrax completed-trades capture 2026-11-11 10:37 AM PT (/workspace/fantrax-trades-2026-11-11.json)",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-11-11",
+      "time": "9:56 AM PST",
+      "week": 9,
+      "status": "completed",
+      "official": true,
+      "teamA": "The Hypersecretors",
+      "teamB": "Ultron",
+      "givesA": [
+        "Amon-Ra St. Brown (WR)",
+        "Nick Bolton (LB)",
+        "Kirk Cousins (QB)"
+      ],
+      "givesB": [
+        "Josh Allen (QB)",
+        "Drake London (WR)"
+      ],
+      "summary": "Week 9 — The Hypersecretors sent Amon-Ra St. Brown (WR), Nick Bolton (LB), Kirk Cousins (QB) to Ultron for Josh Allen (QB), Drake London (WR) (Nov 11 9:56 AM PST)."
+    },
+    {
+      "date": "2026-11-11",
+      "time": "9:40 AM PST",
+      "week": 9,
+      "status": "completed",
+      "official": true,
+      "teamA": "Substation",
+      "teamB": "The Hypersecretors",
+      "givesA": [
+        "Nick Emmanwori (DB)",
+        "Emmett Johnson (RB)"
+      ],
+      "givesB": [
+        "Jeremy Chinn (DB)",
+        "Rachaad White (RB)"
+      ],
+      "summary": "Week 9 — Substation sent Nick Emmanwori (DB), Emmett Johnson (RB) to The Hypersecretors for Jeremy Chinn (DB), Rachaad White (RB) (Nov 11 9:40 AM PST)."
+    },
     {
       "date": "2026-11-10",
       "time": "6:07 PM PST",
@@ -862,7 +899,7 @@
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
   "pending_note": "Pending trades 0 (Fantrax 2026-11-11 6:24 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
-  "fantrax_completed_view": "Newest official: Eagleridge↔Ultron George Pickens for Kyle Hamilton (Nov 10 6:07 PM); LAB↔Saltese C.J. Stroud for Matthew Stafford+Demetrius Knight (Nov 10 2:17 PM); LAB↔Newman Roquan Smith for Nathan Landman (Nov 10 1:27 PM).",
+  "fantrax_completed_view": "Newest official: Hypersecretors↔Ultron Amon-Ra St. Brown+Nick Bolton+Kirk Cousins for Josh Allen+Drake London (Nov 11 9:56 AM); Substation↔Hypersecretors Nick Emmanwori+Emmett Johnson for Jeremy Chinn+Rachaad White (Nov 11 9:40 AM); Eagleridge↔Ultron George Pickens for Kyle Hamilton (Nov 10 6:07 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-11 6:24 AM PT"
+  "lastSynced": "2026-11-11 10:37 AM PT"
 }
