@@ -56,7 +56,18 @@
         }
         const list = (data.recaps || []).slice().sort((a, b) => (b.week || 0) - (a.week || 0));
         if (!list.length) return;
-        const show = (s) => WUC.escapeHtml(WUC.displayText(s || ""));
+        // Recap prose is published as approved. Do not run it through
+        // WUC.displayText, which rewrites The Eddies, Hypersecretors, and TTAB.
+        // Keep a local cleanup only for the old Fantrax "Eagle Ridge Eddies"
+        // / "(Bill)" labels so earlier weeks (and leftover scorelines) do not regress.
+        const recapDisplayText = (text) => {
+          let s = String(text || "");
+          if (!s) return s;
+          s = s.replace(/Eagle Ridge Eddies\s*\(\s*Bill\s*\)/g, "The Eddies");
+          s = s.replace(/\bEagle Ridge Eddies\b/g, "The Eddies");
+          return s;
+        };
+        const show = (s) => WUC.escapeHtml(recapDisplayText(s || ""));
         document.getElementById("recapList").innerHTML = list.map((r) => {
           const mus = (r.matchups || []).map((m) => `
             <div class="matchup">

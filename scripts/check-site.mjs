@@ -986,7 +986,38 @@ async function checkPages() {
               labels
             };
           });
-          if (privacy.eagle) errors.push("page shows an old Eddies name");
+          if (privacy.eagle && name !== "recap.html") errors.push("page shows an old Eddies name");
+          if (name === "recap.html") {
+            const recap = await page.evaluate(() => {
+              const first = document.querySelector(".recap-card");
+              if (!first) return { missing: true };
+              const title = (first.querySelector("h2") || {}).textContent || "";
+              const closer = ([...first.querySelectorAll("p.recap-meta")].pop() || {}).textContent || "";
+              const juiceItems = [...first.querySelectorAll(".matchup")]
+                .filter((m) => ((m.querySelector(".matchup-score") || {}).textContent || "").trim() === "Juice")
+                .flatMap((m) => [...m.querySelectorAll("li")].map((li) => li.textContent.trim()));
+              const text = first.innerText || "";
+              return {
+                missing: false,
+                title,
+                closer,
+                juice0: juiceItems[0] || "",
+                hasEagle: /Eagle Ridge Eddies/.test(text),
+                hasKittyHyper: /Kitty to the Hypersecretors/.test(closer),
+                rewroteHyper: /Kitty to the hyper\b/.test(closer),
+                rewroteEddies: /Eagleridge Eddie's Win Seven Straight/.test(title)
+              };
+            });
+            if (recap.missing) errors.push("recap card missing");
+            else {
+              if (recap.hasEagle) errors.push("recap still shows Eagle Ridge Eddies");
+              if (!/The Eddies Win Seven Straight/.test(recap.title)) errors.push("Week 9 title lost The Eddies");
+              if (recap.rewroteEddies) errors.push("Week 9 title rewrote The Eddies");
+              if (!recap.hasKittyHyper) errors.push("Week 9 kitty line is not Kitty to the Hypersecretors");
+              if (recap.rewroteHyper) errors.push("Week 9 kitty line rewrote Hypersecretors");
+              if (!/^Hypersecretors 296\.5/.test(recap.juice0)) errors.push(`Week 9 hero line is ${recap.juice0}`);
+            }
+          }
           if (privacy.billTeam) errors.push("page contains billTeam");
           const ownerBill = ownerLabelViolation(name, privacy.labels);
           if (ownerBill) errors.push(ownerBill);
