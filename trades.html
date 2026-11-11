@@ -60,7 +60,8 @@
     function blockCard(b) {
       const players = Array.isArray(b.players) ? b.players.filter(Boolean) : [];
       const note = WUC.displayText(b.note || b.notes || "");
-      if (!players.length && !b.player && !b.assets && !note) return "";
+      // Keep a card (and logo) for a named club even when the list is empty.
+      if (!players.length && !b.player && !b.assets && !note && !(b.teamId || b.team)) return "";
       const listed = players.length
         ? players.map((p) => WUC.escapeHtml(p)).join(", ")
         : WUC.escapeHtml(b.player || b.assets || "");
