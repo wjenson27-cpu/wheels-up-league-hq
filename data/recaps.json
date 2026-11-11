@@ -1,8 +1,65 @@
 {
-  "updated": "2026-11-03",
-  "note": "Week 8 recap DRAFT pending Bill approval; do not publish prose until yes/go/push.",
+  "updated": "2026-11-11",
+  "note": "Week 9 recap DRAFT pending Bill approval; do not publish prose until yes/go/push.",
   "pendingPublish": false,
   "recaps": [
+    {
+      "week": 9,
+      "season": 2026,
+      "sample": false,
+      "title": "Week 9 Recap: Hyper Drops 296.5 and Takes the Kitty, LAB Goes Off the Bus, The Eddies Win Seven Straight",
+      "dateLabel": "Tuesday drop · Week 9 finals locked",
+      "coldOpen": "Week 9 in the WU had a 62-point quarterback who lost his game, a 62-point linebacker who lost his, and a Last Ride that ended the Goats' ride. The Hypersecretors posted the week's high at 296.5 and took the kitty. LAB scored 214.5, the lowest among the six teams still alive, so they're off the bus and five remain. The Eddies beat TTAB 276–239.5 for seven straight and sit alone in first at 7-2. Substation's 280.5 beat the Goats' 195.5 on Last Ride, so Substation rides on and the Goats are out for good. Hero of the week: the Hypersecretors, at 296.5. Goat of the week: LAB, whose C.J. Stroud scored 62 and still lost by 66.",
+      "matchups": [
+        {
+          "scoreline": "Substation 280.5, Little Ass Boys 214.5",
+          "blurb": "Substation had the second-best score of the week and beat LAB by 66. C.J. Stroud's 62 was the top offensive score in the league for the week, and it still wasn't enough: LAB's 214.5 was the lowest of the six alive teams, so they're off the bus. Substation goes to 5-4 and LAB drops to 5-4. Juice: Stroud 62; Substation's 280.5. Junk: LAB lost by 66 and is off the bus."
+        },
+        {
+          "scoreline": "Indian Trail Slumlords 271.5, Saltese Slamm 188.5",
+          "blurb": "The Slumlords posted the fourth-best score of the week, 271.5, and beat Saltese by 83. Saltese's 188.5 was the lowest score of the week, even with Carson Schwesinger's 60, the second-best IDP score in the league. Saltese falls to 3-6. The Slumlords go to 5-4. Juice: Slumlords' 271.5. Junk: Saltese's 188.5 despite a 60-point linebacker."
+        },
+        {
+          "scoreline": "Newman Lake Sleep Paralysis Demons 252, The Hypersecretors 296.5",
+          "blurb": "The Hypersecretors took the kitty with 296.5 and beat the SPD's by 44.5. Kenneth Walker III's 44 was the third-best offensive score of the week. The SPD's got Jordan Love's 47, the second-best offensive score in the league, and still lost. Hyper goes to 5-4. The SPD's drop to 4-5 but stay on the bus. Juice: the kitty; Walker 44; Love 47. Junk: a 44.5-point loss with a 47-point quarterback."
+        },
+        {
+          "scoreline": "Pocket Agents 237, Ultron 261.5",
+          "blurb": "Ultron beat Pocket by 24.5 and handed the WU's points leader a loss. Pocket is still on the bus and still leads the WU in points at 2446. Ultron goes to 4-5 with the win; Pocket falls to 5-4. Juice: Ultron's 261.5. Junk: Pocket's 237 from the points leader."
+        },
+        {
+          "scoreline": "Drummond Dongers 253.5, Morningside Muff Divers 231.5",
+          "blurb": "The Dongers beat Morningside by 22. David Bailey's 48 was the third-best IDP score of the week, and Jaxon Smith-Njigba's 275 points on the year lead all players. Morningside's 231.5 wasn't enough. The Dongers go to 3-6; Morningside drops to 3-6. Juice: Bailey 48. Junk: Morningside's 231.5."
+        },
+        {
+          "scoreline": "Valley Old Goats 195.5, Mrs. Doubtpfizer 236",
+          "blurb": "The Goats got Arvell Reese's 62, the best IDP score of the week, and still scored only 195.5. Doubtpfizer won by 40.5 and moved to 4-5. On Last Ride, the Goats' 195.5 lost to Substation's 280.5, so the Goats are out for good. Juice: Reese 62. Junk: Goats' 195.5, the second-lowest score of the week."
+        },
+        {
+          "scoreline": "Towner Top Aga Bottom 239.5, Eagle Ridge Eddies 276",
+          "blurb": "The Eddies made it seven straight with a 276 against TTAB, the third-best score of the week. The Eddies are 7-2 and alone in first, a game ahead of the Goats at 6-3, with 2294 PF, third in the WU. TTAB drops to 4-5. Juice: seven straight; first place; Eddies 276. Junk: TTAB's 239.5 and a 4-5 record."
+        }
+      ],
+      "heroes": [
+        "Hypersecretors 296.5: the week's high score and the kitty",
+        "Substation 280.5: second-best score; won Last Ride",
+        "The Eddies 276: third-best score, seven straight and first place at 7-2",
+        "Slumlords 271.5: fourth-best score; beat Saltese by 83",
+        "C.J. Stroud 62 (LAB): top offensive player of the week",
+        "Arvell Reese 62 (Goats): top IDP player of the week",
+        "Jordan Love 47 (SPD's) and Kenneth Walker III 44 (Hyper): the next two top offensive scores"
+      ],
+      "goats": [
+        "LAB 214.5: lowest among the alive, off the bus, despite a 62-point quarterback",
+        "Saltese 188.5: lowest score of the week, even with a 60-point linebacker",
+        "Valley Old Goats 195.5: second-lowest score, lost Last Ride, out for good",
+        "Pocket 237: lost to Ultron despite the most PF in the WU",
+        "Morningside 231.5: lost to the Dongers by 22"
+      ],
+      "closer": "Kitty to the Hypersecretors at 296.5. LAB is off the bus, and five teams remain: The Eddies, Hyper, Pocket, Doubtpfizer and the SPD's. Last Ride: Substation beat the Goats 280.5–195.5 and the Goats are out for good. The Eddies lead the WU at 7-2, with the Goats next at 6-3. Week 10 for the Eddies is Little Ass Boys at home. WWJDD: start your best quarterback, and don't count on one 62-point player to save the rest of your lineup.",
+      "pendingPublish": false,
+      "approvedForPush": true
+    },
     {
       "week": 8,
       "season": 2026,
