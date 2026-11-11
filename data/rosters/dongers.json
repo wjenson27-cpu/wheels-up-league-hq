@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-11-10 1:11 PM PT",
+  "asOf": "2026-11-11 6:24 AM PT",
   "faabLeft": 1,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -48,7 +48,7 @@
     "Ladd McConkey — Q (reserve)",
     "KaVontae Turpin — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-10 1:11 PM PT (/workspace/fantrax-raw-2026-11-10-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-11 6:24 AM PT (/workspace/fantrax-raw-2026-11-11-am-normalized.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
     "Ladd McConkey — Q (reserve)"
@@ -59,6 +59,6 @@
     "Ladd McConkey — Q (reserve)",
     "KaVontae Turpin — Q (IR slot)"
   ],
-  "updated": "2026-11-10",
-  "lastSynced": "2026-11-10 1:11 PM PT"
+  "updated": "2026-11-11",
+  "lastSynced": "2026-11-11 6:24 AM PT"
 }

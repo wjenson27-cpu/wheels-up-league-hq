@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-11-10 1:11 PM PT",
+  "asOf": "2026-11-11 6:24 AM PT",
   "faabLeft": 85,
   "startingQB": "Jared Goff",
   "roster": {
@@ -11,9 +11,9 @@
       "Tyler Shough"
     ],
     "RB": [
-      "Jonah Coleman",
       "Woody Marks",
-      "Mike Washington"
+      "Mike Washington",
+      "Jonah Coleman"
     ],
     "WR": [
       "Tetairoa McMillan",
@@ -47,24 +47,21 @@
   "notes": "",
   "injuryFlags": [
     "Rashid Shaheed — Q (reserve)",
-    "Chigoziem Okonkwo — Q (reserve)",
     "Jaylen Waddle — Q (IR slot)",
     "Brandon Jones — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-10 1:11 PM PT (/workspace/fantrax-raw-2026-11-10-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-11 6:24 AM PT (/workspace/fantrax-raw-2026-11-11-am-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Rashid Shaheed — Q (reserve)",
-    "Chigoziem Okonkwo — Q (reserve)"
+    "Rashid Shaheed — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Rashid Shaheed — Q (reserve)",
-    "Chigoziem Okonkwo — Q (reserve)",
     "Jaylen Waddle — Q (IR slot)",
     "Brandon Jones — Q (IR slot)"
   ],
-  "updated": "2026-11-10",
-  "lastSynced": "2026-11-10 1:11 PM PT"
+  "updated": "2026-11-11",
+  "lastSynced": "2026-11-11 6:24 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-10 1:11 PM PT",
+  "asOf": "2026-11-11 6:24 AM PT",
   "faabLeft": 25,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -12,14 +12,14 @@
     "RB": [
       "Breece Hall",
       "Zach Charbonnet",
+      "Cameron Skattebo",
       "Devin Singletary"
     ],
     "WR": [
+      "Jalen Coker",
       "Chimere Dike",
-      "George Pickens",
       "Josh Downs",
       "Ja'Kobi Lane",
-      "Jalen Coker",
       "Jordyn Tyson"
     ],
     "TE": [
@@ -42,30 +42,26 @@
     ],
     "IR": [
       "Travis Etienne",
-      "Cameron Skattebo",
-      "Garrett Wilson"
+      "Garrett Wilson",
+      "Kyle Hamilton"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "George Pickens — Q (active)",
     "Travis Etienne — IR (IR slot)",
-    "Cameron Skattebo — Q (IR slot)",
-    "Garrett Wilson — Q (IR slot)"
+    "Garrett Wilson — Q (IR slot)",
+    "Kyle Hamilton — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-10 1:11 PM PT (/workspace/fantrax-raw-2026-11-10-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-11 6:24 AM PT (/workspace/fantrax-raw-2026-11-11-am-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
-  "lineupFlags": [
-    "George Pickens — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "George Pickens — Q (active)",
     "Travis Etienne — IR (IR slot)",
-    "Cameron Skattebo — Q (IR slot)",
-    "Garrett Wilson — Q (IR slot)"
+    "Garrett Wilson — Q (IR slot)",
+    "Kyle Hamilton — Q (IR slot)"
   ],
-  "updated": "2026-11-10",
-  "lastSynced": "2026-11-10 1:11 PM PT"
+  "updated": "2026-11-11",
+  "lastSynced": "2026-11-11 6:24 AM PT"
 }

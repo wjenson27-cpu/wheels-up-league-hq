@@ -1,8 +1,57 @@
 {
-  "updated": "2026-11-10",
-  "source": "Fantrax roster sync 2026-11-10 1:11 PM PT (/workspace/fantrax-raw-2026-11-10-pm-normalized.json)",
+  "updated": "2026-11-11",
+  "source": "Fantrax roster sync 2026-11-11 6:24 AM PT (/workspace/fantrax-raw-2026-11-11-am-normalized.json)",
   "season": 2026,
   "trades": [
+    {
+      "date": "2026-11-10",
+      "time": "6:07 PM PST",
+      "week": 9,
+      "status": "completed",
+      "official": true,
+      "teamA": "Eagleridge Eddie's",
+      "teamB": "Ultron",
+      "givesA": [
+        "George Pickens (WR)"
+      ],
+      "givesB": [
+        "Kyle Hamilton (DB)"
+      ],
+      "summary": "Week 9 — Eagleridge Eddie's sent George Pickens (WR) to Ultron for Kyle Hamilton (DB) (Nov 10 6:07 PM PST)."
+    },
+    {
+      "date": "2026-11-10",
+      "time": "2:17 PM PST",
+      "week": 9,
+      "status": "completed",
+      "official": true,
+      "teamA": "Little Ass Boys",
+      "teamB": "Saltese Slamm",
+      "givesA": [
+        "C.J. Stroud (QB)"
+      ],
+      "givesB": [
+        "Matthew Stafford (QB)",
+        "Demetrius Knight (LB)"
+      ],
+      "summary": "Week 9 — Little Ass Boys sent C.J. Stroud (QB) to Saltese Slamm for Matthew Stafford (QB), Demetrius Knight (LB) (Nov 10 2:17 PM PST)."
+    },
+    {
+      "date": "2026-11-10",
+      "time": "1:27 PM PST",
+      "week": 9,
+      "status": "completed",
+      "official": true,
+      "teamA": "Little Ass Boys",
+      "teamB": "Newman Lake Sleep Paralysis Demons",
+      "givesA": [
+        "Roquan Smith (LB)"
+      ],
+      "givesB": [
+        "Nathan Landman (LB)"
+      ],
+      "summary": "Week 9 — Little Ass Boys sent Roquan Smith (LB) to Newman Lake Sleep Paralysis Demons for Nathan Landman (LB) (Nov 10 1:27 PM PST)."
+    },
     {
       "date": "2026-11-04",
       "time": "11:53 AM PST",
@@ -714,12 +763,11 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "Nov 9 2:57 PM",
+      "lastUpdated": "Nov 10 6:07 PM",
       "players": [
         "Jalen Coker WR CAR",
         "Josh Downs WR KC",
         "Ja'Kobi Lane WR BAL",
-        "George Pickens WR DAL",
         "Trenton Simpson LB BAL"
       ],
       "note": null
@@ -744,7 +792,7 @@
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "Nov 3 10:18 PM",
+      "lastUpdated": "Nov 10 1:27 PM",
       "players": [
         "Jordan Love QB GB",
         "TreVeyon Henderson RB NE",
@@ -762,7 +810,6 @@
         "Azeez Al-Shaair LB HOU",
         "Zaire Franklin LB GB",
         "Ty'Ron Hopper LB GB",
-        "Nathan Landman LB LAR",
         "Jeremiah Trotter LB PHI",
         "Jordan Battle DB CIN",
         "Xavier Watts DB ATL"
@@ -782,14 +829,13 @@
     {
       "teamId": "saltese",
       "team": "Saltese Slamm",
-      "lastUpdated": "Nov 10 12:56 PM",
+      "lastUpdated": "Nov 10 2:17 PM",
       "players": [
         "D'Andre Swift RB CHI",
-        "Demetrius Knight LB CIN",
         "Carson Schwesinger LB CLE",
         "Dee Winters LB DAL"
       ],
-      "note": "Looking for FAAB or flex swaps."
+      "note": null
     },
     {
       "teamId": "substation",
@@ -815,8 +861,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-11-10 1:11 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
-  "fantrax_completed_view": "Newest official: LAB↔Saltese Tyler Allgeier for Ashton Jeanty (Nov 4 11:53 AM); Newman↔Substation Eric Wilson+Henry To'oTo'o for Kevin Winston+Tyler Warren (Nov 3 10:18 PM); Morningside↔Saltese Demetrius Knight for Terrel Bernard+Denzel Boston (Oct 30 1:12 PM).",
+  "pending_note": "Pending trades 0 (Fantrax 2026-11-11 6:24 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "fantrax_completed_view": "Newest official: Eagleridge↔Ultron George Pickens for Kyle Hamilton (Nov 10 6:07 PM); LAB↔Saltese C.J. Stroud for Matthew Stafford+Demetrius Knight (Nov 10 2:17 PM); LAB↔Newman Roquan Smith for Nathan Landman (Nov 10 1:27 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-10 1:11 PM PT"
+  "lastSynced": "2026-11-11 6:24 AM PT"
 }
