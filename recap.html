@@ -59,12 +59,14 @@
         // Recap prose is published as approved. Do not run it through
         // WUC.displayText, which rewrites The Eddies, Hypersecretors, and TTAB.
         // Keep a local cleanup only for the old Fantrax "Eagle Ridge Eddies"
-        // / "(Bill)" labels so earlier weeks (and leftover scorelines) do not regress.
+        // / "(Bill)" / "Bill's Eddies" labels so earlier weeks (and leftover
+        // scorelines) do not identify the club as Bill's.
         const recapDisplayText = (text) => {
           let s = String(text || "");
           if (!s) return s;
           s = s.replace(/Eagle Ridge Eddies\s*\(\s*Bill\s*\)/g, "The Eddies");
           s = s.replace(/\bEagle Ridge Eddies\b/g, "The Eddies");
+          s = s.replace(/Bill['’]s Eddies/g, "The Eddies");
           return s;
         };
         const show = (s) => WUC.escapeHtml(recapDisplayText(s || ""));

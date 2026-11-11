@@ -996,13 +996,14 @@ async function checkPages() {
               const juiceItems = [...first.querySelectorAll(".matchup")]
                 .filter((m) => ((m.querySelector(".matchup-score") || {}).textContent || "").trim() === "Juice")
                 .flatMap((m) => [...m.querySelectorAll("li")].map((li) => li.textContent.trim()));
-              const text = first.innerText || "";
+              const text = (document.getElementById("recapList") || first).innerText || "";
               return {
                 missing: false,
                 title,
                 closer,
                 juice0: juiceItems[0] || "",
                 hasEagle: /Eagle Ridge Eddies/.test(text),
+                hasBills: /Bill['’]s Eddies/.test(text),
                 hasKittyHyper: /Kitty to the Hypersecretors/.test(closer),
                 rewroteHyper: /Kitty to the hyper\b/.test(closer),
                 rewroteEddies: /Eagleridge Eddie's Win Seven Straight/.test(title)
@@ -1011,6 +1012,7 @@ async function checkPages() {
             if (recap.missing) errors.push("recap card missing");
             else {
               if (recap.hasEagle) errors.push("recap still shows Eagle Ridge Eddies");
+              if (recap.hasBills) errors.push("recap still shows Bill's Eddies");
               if (!/The Eddies Win Seven Straight/.test(recap.title)) errors.push("Week 9 title lost The Eddies");
               if (recap.rewroteEddies) errors.push("Week 9 title rewrote The Eddies");
               if (!recap.hasKittyHyper) errors.push("Week 9 kitty line is not Kitty to the Hypersecretors");
