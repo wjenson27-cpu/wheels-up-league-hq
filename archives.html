@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-brand="wu-hq">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="img/wu-mark.png" type="image/png">
+<link rel="stylesheet" href="css/design-system-tokens.css">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/design-system-apply.css">
 <title>WU League Archives 2014–2025</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -107,34 +109,31 @@ details .body{padding:10px}
 
 </style>
 <style id="seahawks-freshen">
-.trophy .cup img{width:32px!important;height:32px!important;top:2px!important;border-radius:50%;object-fit:cover;background:#001a33}
+.trophy .cup img{width:32px!important;height:32px!important;top:2px!important;border-radius:50%;object-fit:cover;background:var(--ds-bg)}
 .trophy.duo .cup img{width:24px!important;height:24px!important}
 
-:root{
-  --sea-navy:#002244; --sea-deep:#000d1a; --sea-green:#69BE28; --sea-grey:#A5ACAF;
-  --gold:#c9a227; --gold-bright:#fde68a;
-}
-body{background:var(--sea-deep)!important;color:#e8eef4!important}
-header{background:linear-gradient(180deg,#001a33 0%,#002244 70%,#001528 100%)!important;border-bottom:2px solid var(--sea-green)!important}
-header .sub{color:var(--sea-green)!important}
-nav{background:var(--sea-deep)!important}
-nav button{background:#001a33!important;border-color:#1a3a5c!important;color:var(--sea-grey)!important}
-nav button.active{background:var(--sea-green)!important;color:#001a33!important}
-.card,.ring,.pod,.stat,details{background:#002244!important;border-color:#1a3a5c!important}
-.card{border-left-color:var(--sea-green)!important}
-h2.sec{color:var(--sea-green)!important}
-.ring .yr,.stat b,.yrline h3,.chip.gold{color:var(--gold-bright)!important}
-.chip.gold{border-color:var(--gold)!important}
-.bar{background:linear-gradient(90deg,var(--gold),var(--sea-green))!important}
-.pod.g{border-color:var(--gold)!important;background:linear-gradient(180deg,#0a2f1a,#002244)!important}
-a.hq-link{color:var(--sea-green);font-weight:700;text-decoration:none}
-a.hq-link:hover{text-decoration:underline}
-
-
+body{background:var(--ds-bg)!important;color:var(--ds-text)!important;font-family:var(--ds-font-body)!important}
+header.archive-banner{background:var(--ds-surface)!important;border-bottom:1px solid var(--ds-border)!important;color:var(--ds-text)}
+header.archive-banner h1{font:var(--ds-type-title);color:var(--ds-text)}
+header.archive-banner .sub{color:var(--ds-text-muted)!important;font-size:12px!important}
+nav.archive-tabs{background:var(--ds-bg)!important;flex-wrap:wrap;overflow-x:visible}
+nav.archive-tabs button{background:var(--ds-surface)!important;border:1px solid var(--ds-border)!important;color:var(--ds-text-muted)!important;min-height:44px;padding:0 14px;border-radius:999px;font:var(--ds-type-label)}
+nav.archive-tabs button.active{background:var(--ds-accent)!important;color:var(--ds-on-accent)!important;border-color:var(--ds-accent)!important}
+.card,.ring,.pod,.stat,details{background:var(--ds-surface)!important;border-color:var(--ds-border)!important;color:var(--ds-text)}
+.card{border-left-color:var(--ds-accent)!important}
+h2.sec{color:var(--ds-kicker)!important;font-size:12px!important;letter-spacing:.12em}
+.ring .yr,.stat b,.yrline h3{color:var(--ds-kicker)!important}
+.chip.gold{color:var(--ds-warning)!important;border-color:var(--ds-warning)!important}
+.bar{background:linear-gradient(90deg,var(--ds-warning),var(--ds-accent))!important}
+.pod.g{border-color:var(--ds-accent)!important;background:var(--ds-surface-raised)!important}
+.note,.meta,.footer,th,.pod .place,.ring .era,.stat span{color:var(--ds-text-muted)!important}
+.footer,th,td,.ring .era,.ring .yr,.stat span{font-size:12px!important}
+a.hq-link{color:var(--ds-link);font-weight:700;text-decoration:underline;text-underline-offset:3px;min-height:44px;display:inline-flex;align-items:center}
+a.hq-link:hover{color:var(--ds-accent-hover)}
 </style>
 
 </head>
-<body>
+<body class="ds">
 <div id="site-nav"></div>
 <header class="archive-banner">
   <h1>Wheels Up Archives</h1>

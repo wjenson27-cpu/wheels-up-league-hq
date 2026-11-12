@@ -1,39 +1,42 @@
-/* Wheels Up Collective — Seahawks dark mode with bite */
+/* Wheels Up Collective — Bill's Site Design System v1, WU HQ brand layer.
+   Legacy names point at design-system tokens. Load css/design-system-tokens.css first. */
 :root {
-  /* Official-ish Seahawks palette */
-  --sea-navy: #002244;
-  --sea-navy-deep: #001a33;
-  --sea-green: #69BE28;
-  --sea-green-hot: #7fd63a;
-  --sea-grey: #A5ACAF;
-  --sea-grey-dim: #8a9399;
+  --sea-navy: var(--ds-surface);
+  --sea-navy-deep: var(--ds-bg);
+  --sea-green: var(--ds-accent);
+  --sea-green-hot: var(--ds-kicker);
+  --sea-grey: var(--ds-text-muted);
+  --sea-grey-dim: var(--ds-nav-inactive);
 
-  --bg: #000d1a;
-  --bg-elev: #001a33;
-  --bg-card: #002244;
-  --bg-card-hover: #0a2f52;
-  --border: #1a3a5c;
-  --border-glow: #2a5080;
-  --text: #e8eef4;
-  --text-muted: #C5CCD1; /* raised for captions / body muted */
-  --text-dim: #8a9399; /* decorative chrome stays greyer */
-  --accent: #69BE28;
-  --accent-hot: #7fd63a;
-  --accent-glow: rgba(105, 190, 40, 0.4);
-  --teal: #69BE28;
-  --teal-dim: rgba(105, 190, 40, 0.15);
-  --red: #f43f5e;
-  --green: #69BE28;
-  --gold: #F5C518; /* real gold accents (was wrongly grey) */
-  --chrome-grey: #A5ACAF; /* former muted/gold grey for decorative chrome */
-  --font-display: "Syne", "Segoe UI", system-ui, sans-serif;
-  --font-body: "DM Sans", "Segoe UI", system-ui, sans-serif;
-  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  --radius: 14px;
-  --nav-h: 68px;
-  --max: 1120px;
-  --shadow: 0 12px 40px rgba(0, 8, 20, 0.55);
-  --shadow-glow: 0 0 0 1px rgba(105, 190, 40, 0.18), 0 12px 40px rgba(0, 8, 20, 0.55);
+  --bg: var(--ds-bg);
+  --bg-elev: var(--ds-surface-raised);
+  --bg-card: var(--ds-surface);
+  --bg-card-hover: var(--ds-surface-raised);
+  --border: var(--ds-border);
+  --border-glow: var(--ds-border);
+  --text: var(--ds-text);
+  --text-muted: var(--ds-text-muted);
+  --text-dim: var(--ds-text-muted);
+  --accent: var(--ds-accent);
+  --accent-hot: var(--ds-kicker);
+  --accent-glow: transparent;
+  --teal: var(--ds-link);
+  --teal-dim: color-mix(in srgb, var(--ds-accent) 16%, transparent);
+  --red: var(--ds-danger);
+  --green: var(--ds-success);
+  --gold: var(--ds-warning);
+  --chrome-grey: var(--ds-text-muted);
+  --font-display: var(--ds-font-display);
+  --font-body: var(--ds-font-body);
+  --font-mono: var(--ds-font-mono);
+  --radius: var(--ds-radius-lg);
+  --nav-h: var(--ds-nav-top-h);
+  --max: var(--ds-max);
+  --shadow: var(--ds-shadow-card);
+  --shadow-glow: var(--ds-shadow-card);
+}
+@media (min-width: 1024px) {
+  :root { --nav-h: var(--ds-nav-desktop-h); }
 }
 
 *, *::before, *::after { box-sizing: border-box; }

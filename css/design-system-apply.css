@@ -1,0 +1,819 @@
+/* Map Wheels Up League HQ onto Bill's Site Design System v1.
+   Brand layer: html[data-brand="wu-hq"] in design-system-tokens.css.
+   Reads semantic tokens only. Does not change page copy. */
+
+html[data-brand="wu-hq"] {
+  background: var(--ds-bg);
+  color: var(--ds-text);
+  color-scheme: dark;
+}
+html[data-brand="wu-hq"] body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--ds-bg);
+  background-image: none;
+  color: var(--ds-text);
+  font-family: var(--ds-font-body);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+html[data-brand="wu-hq"] h1,
+html[data-brand="wu-hq"] h2,
+html[data-brand="wu-hq"] h3,
+html[data-brand="wu-hq"] .brand,
+html[data-brand="wu-hq"] .rank-team {
+  font-family: var(--ds-font-display);
+}
+html[data-brand="wu-hq"] main {
+  min-width: 0;
+}
+
+/* —— Type —— */
+html[data-brand="wu-hq"] .eyebrow,
+html[data-brand="wu-hq"] .hero-kicker,
+html[data-brand="wu-hq"] .section-label,
+html[data-brand="wu-hq"] .live-feature {
+  display: block;
+  margin: 0 0 8px;
+  font: var(--ds-type-kicker);
+  letter-spacing: var(--ds-track-kicker);
+  text-transform: uppercase;
+  color: var(--ds-kicker) !important;
+}
+html[data-brand="wu-hq"] .pulse-banner h1,
+html[data-brand="wu-hq"] .page-hero h1,
+html[data-brand="wu-hq"] .podcast-hero h1 {
+  margin: 0 0 8px;
+  background: none;
+  background-clip: border-box;
+  -webkit-text-fill-color: var(--ds-text);
+  color: var(--ds-text);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+@media (min-width: 1024px) {
+  html[data-brand="wu-hq"] .pulse-banner h1,
+  html[data-brand="wu-hq"] .page-hero h1,
+  html[data-brand="wu-hq"] .podcast-hero h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+html[data-brand="wu-hq"] .card h2,
+html[data-brand="wu-hq"] .card h3,
+html[data-brand="wu-hq"] .rules-section h3 {
+  margin: 0 0 12px;
+  color: var(--ds-text);
+  font: var(--ds-type-title);
+}
+html[data-brand="wu-hq"] .tagline,
+html[data-brand="wu-hq"] .page-hero .lede,
+html[data-brand="wu-hq"] .podcast-hero p {
+  margin: 0 0 16px;
+  max-width: 40rem;
+  color: var(--ds-text-muted);
+  font: var(--ds-type-body-l);
+}
+html[data-brand="wu-hq"] .last-sync,
+html[data-brand="wu-hq"] .site-meta,
+html[data-brand="wu-hq"] .visit-count,
+html[data-brand="wu-hq"] .pos-label,
+html[data-brand="wu-hq"] .mu-tag,
+html[data-brand="wu-hq"] .live-tag,
+html[data-brand="wu-hq"] .live-vs,
+html[data-brand="wu-hq"] .feed-date,
+html[data-brand="wu-hq"] .type-tag,
+html[data-brand="wu-hq"] .rank-meta,
+html[data-brand="wu-hq"] .vbar-pts,
+html[data-brand="wu-hq"] .vbar-wk,
+html[data-brand="wu-hq"] .h2h-detail,
+html[data-brand="wu-hq"] .h2h-last-when,
+html[data-brand="wu-hq"] .move-meta,
+html[data-brand="wu-hq"] .trade-table thead th,
+html[data-brand="wu-hq"] .rules-table th,
+html[data-brand="wu-hq"] .parlay-table th,
+html[data-brand="wu-hq"] .wl-badge {
+  font-size: 12px;
+  line-height: 1.4;
+}
+html[data-brand="wu-hq"] .muted,
+html[data-brand="wu-hq"] .dim,
+html[data-brand="wu-hq"] .card p.muted,
+html[data-brand="wu-hq"] .last-sync {
+  color: var(--ds-text-muted);
+}
+html[data-brand="wu-hq"] .card p {
+  color: var(--ds-text);
+  font-size: 15px;
+  line-height: 1.5;
+}
+html[data-brand="wu-hq"] .card p.muted,
+html[data-brand="wu-hq"] .card .last-sync {
+  color: var(--ds-text-muted);
+}
+
+/* —— Page frame —— */
+html[data-brand="wu-hq"] .wrap,
+html[data-brand="wu-hq"] .wrap-wide {
+  width: 100%;
+  max-width: var(--ds-max);
+  margin: 0 auto;
+  padding: var(--ds-space-4) var(--ds-margin) var(--ds-space-12);
+}
+html[data-brand="wu-hq"] .page-hero {
+  margin: 0 0 var(--ds-space-6);
+  padding: 0;
+  border: 0;
+}
+html[data-brand="wu-hq"] .home-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--ds-gutter);
+  margin-top: var(--ds-space-4);
+}
+@media (min-width: 1024px) {
+  html[data-brand="wu-hq"] .home-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+html[data-brand="wu-hq"] .grid {
+  gap: var(--ds-gutter);
+}
+html[data-brand="wu-hq"] .grid-2,
+html[data-brand="wu-hq"] .grid-3 {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  html[data-brand="wu-hq"] .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html[data-brand="wu-hq"] .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* —— Cards —— */
+html[data-brand="wu-hq"] .card,
+html[data-brand="wu-hq"] .panel,
+html[data-brand="wu-hq"] .rank-row,
+html[data-brand="wu-hq"] .stat-card,
+html[data-brand="wu-hq"] .yearly-card,
+html[data-brand="wu-hq"] .podcast-hero,
+html[data-brand="wu-hq"] .pulse-banner {
+  position: relative;
+  background: var(--ds-surface);
+  background-image: none;
+  border: 1px solid var(--ds-border);
+  border-left-width: 1px;
+  border-left-color: var(--ds-border);
+  border-radius: var(--ds-radius-lg);
+  box-shadow: var(--ds-shadow-card);
+  color: var(--ds-text);
+}
+html[data-brand="wu-hq"] .card,
+html[data-brand="wu-hq"] .pulse-banner,
+html[data-brand="wu-hq"] .podcast-hero,
+html[data-brand="wu-hq"] .stat-card {
+  padding: var(--ds-space-4);
+}
+@media (min-width: 1024px) {
+  html[data-brand="wu-hq"] .card,
+  html[data-brand="wu-hq"] .pulse-banner,
+  html[data-brand="wu-hq"] .podcast-hero {
+    padding: var(--ds-space-6);
+  }
+}
+html[data-brand="wu-hq"] .card::before,
+html[data-brand="wu-hq"] .pulse-banner::before,
+html[data-brand="wu-hq"] .rank-row::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  top: 0;
+  height: 1px;
+  background: var(--ds-trim);
+  pointer-events: none;
+}
+html[data-brand="wu-hq"] .pulse-banner::after { content: none; }
+html[data-brand="wu-hq"] .card:hover,
+html[data-brand="wu-hq"] .panel:hover,
+html[data-brand="wu-hq"] .rank-row:hover,
+html[data-brand="wu-hq"] .pulse-banner:hover {
+  transform: none;
+  background: var(--ds-surface);
+  border-color: var(--ds-border);
+  border-left-color: var(--ds-border);
+  box-shadow: var(--ds-shadow-card);
+}
+html[data-brand="wu-hq"] .rank-row {
+  display: grid !important;
+  grid-template-columns: 2.5rem 2.75rem minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  margin-bottom: var(--ds-gutter);
+  padding: var(--ds-space-4) !important;
+  min-width: 0;
+}
+html[data-brand="wu-hq"] .rank-row > div,
+html[data-brand="wu-hq"] .rank-team,
+html[data-brand="wu-hq"] .rank-line,
+html[data-brand="wu-hq"] .rank-blurb {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+html[data-brand="wu-hq"] .rank-row.top3 {
+  background: var(--ds-surface);
+  box-shadow: var(--ds-shadow-card), inset 3px 0 0 var(--ds-accent);
+}
+html[data-brand="wu-hq"] .live-card.is-featured {
+  border-color: var(--ds-border);
+  box-shadow: var(--ds-shadow-card), inset 3px 0 0 var(--ds-accent);
+}
+html[data-brand="wu-hq"] .live-score,
+html[data-brand="wu-hq"] .home-score,
+html[data-brand="wu-hq"] .award-hero-score,
+html[data-brand="wu-hq"] .stat-card-value {
+  font-family: var(--ds-font-mono);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+html[data-brand="wu-hq"] .home-side {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--ds-border);
+  min-width: 0;
+}
+html[data-brand="wu-hq"] .home-side .team-link,
+html[data-brand="wu-hq"] .home-side .team-inline {
+  min-width: 0;
+  flex: 1 1 140px;
+}
+html[data-brand="wu-hq"] .home-score {
+  margin-left: auto;
+  font-size: 22px;
+  line-height: 1.1;
+  color: var(--ds-text);
+}
+html[data-brand="wu-hq"] .home-side .muted {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* —— Buttons, chips, links —— */
+html[data-brand="wu-hq"] .btn,
+html[data-brand="wu-hq"] .parlay-toolbar button,
+html[data-brand="wu-hq"] .parlay-toolbar label.btn,
+html[data-brand="wu-hq"] .nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--ds-btn-h);
+  min-width: 48px;
+  padding: 0 20px;
+  border-radius: var(--ds-radius-md);
+  border: 1px solid transparent;
+  font: var(--ds-type-label);
+  line-height: 1.2;
+  text-decoration: none;
+  box-shadow: none;
+  transform: none;
+  filter: none;
+  cursor: pointer;
+}
+html[data-brand="wu-hq"] .btn-primary,
+html[data-brand="wu-hq"] .btn-primary:hover,
+html[data-brand="wu-hq"] .parlay-toolbar button.primary,
+html[data-brand="wu-hq"] .parlay-toolbar button.primary:hover {
+  background: var(--ds-accent);
+  color: var(--ds-on-accent);
+  border-color: transparent;
+  filter: none;
+  box-shadow: none;
+  transform: none;
+}
+html[data-brand="wu-hq"] .btn-primary:hover,
+html[data-brand="wu-hq"] .parlay-toolbar button.primary:hover {
+  background: var(--ds-accent-hover);
+  color: var(--ds-on-accent);
+}
+html[data-brand="wu-hq"] .btn-ghost,
+html[data-brand="wu-hq"] .btn-ghost:hover,
+html[data-brand="wu-hq"] .btn-teal,
+html[data-brand="wu-hq"] .btn-teal:hover,
+html[data-brand="wu-hq"] .nav-toggle,
+html[data-brand="wu-hq"] .nav-toggle:hover,
+html[data-brand="wu-hq"] .parlay-toolbar button,
+html[data-brand="wu-hq"] .parlay-toolbar label.btn {
+  background: transparent;
+  color: var(--ds-text);
+  border-color: var(--ds-border);
+}
+html[data-brand="wu-hq"] .btn-ghost:hover,
+html[data-brand="wu-hq"] .btn-teal:hover,
+html[data-brand="wu-hq"] .nav-toggle:hover,
+html[data-brand="wu-hq"] .parlay-toolbar button:hover,
+html[data-brand="wu-hq"] .parlay-toolbar label.btn:hover {
+  background: var(--ds-surface-raised);
+  color: var(--ds-text);
+}
+html[data-brand="wu-hq"] .parlay-toolbar button.primary,
+html[data-brand="wu-hq"] .parlay-toolbar button.primary:hover {
+  background: var(--ds-accent);
+  color: var(--ds-on-accent);
+  border-color: transparent;
+}
+html[data-brand="wu-hq"] .cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+}
+html[data-brand="wu-hq"] .cta-row .btn { flex: 0 1 auto; }
+@media (max-width: 399px) {
+  html[data-brand="wu-hq"] .cta-row .btn,
+  html[data-brand="wu-hq"] .nav-toggle {
+    padding: 0 12px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+html[data-brand="wu-hq"] .chip,
+html[data-brand="wu-hq"] .survivor-chip,
+html[data-brand="wu-hq"] .stat-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 4px 12px;
+  border-radius: var(--ds-radius-pill);
+  background: var(--ds-surface-raised);
+  border: 1px solid var(--ds-border);
+  color: var(--ds-text);
+  font: var(--ds-type-label);
+  backdrop-filter: none;
+}
+html[data-brand="wu-hq"] a.chip,
+html[data-brand="wu-hq"] button.chip,
+html[data-brand="wu-hq"] .seg-btn {
+  min-height: var(--ds-tap-min);
+}
+html[data-brand="wu-hq"] .seg-btn {
+  padding: 0 14px;
+  border-radius: var(--ds-radius-pill);
+  background: var(--ds-surface-raised);
+  border: 1px solid var(--ds-border);
+  color: var(--ds-text-muted);
+  font: var(--ds-type-label);
+  letter-spacing: 0.04em;
+}
+html[data-brand="wu-hq"] .seg-btn.is-on,
+html[data-brand="wu-hq"] .seg-btn[aria-pressed="true"] {
+  background: var(--ds-accent);
+  border-color: var(--ds-accent);
+  color: var(--ds-on-accent);
+}
+html[data-brand="wu-hq"] a {
+  color: var(--ds-link);
+}
+html[data-brand="wu-hq"] a:hover { color: var(--ds-accent-hover); }
+html[data-brand="wu-hq"] a.team-link,
+html[data-brand="wu-hq"] .rank-team a.team-link,
+html[data-brand="wu-hq"] .brand {
+  color: var(--ds-text);
+  text-decoration: none;
+}
+html[data-brand="wu-hq"] a.team-link:hover { color: var(--ds-kicker); }
+html[data-brand="wu-hq"] .card > p a,
+html[data-brand="wu-hq"] .mt-1 a,
+html[data-brand="wu-hq"] .page-hero a:not(.btn),
+html[data-brand="wu-hq"] .site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ds-link);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+html[data-brand="wu-hq"] a.team-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+html[data-brand="wu-hq"] .sample-badge,
+html[data-brand="wu-hq"] .pill,
+html[data-brand="wu-hq"] .h2h-past-chip {
+  font-size: 12px;
+  line-height: 1.4;
+}
+html[data-brand="wu-hq"] .skip-link {
+  min-height: 44px;
+}
+html[data-brand="wu-hq"] .parlay-toolbar a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+html[data-brand="wu-hq"] .card > p a,
+html[data-brand="wu-hq"] .mt-1 a,
+html[data-brand="wu-hq"] .page-hero a:not(.btn) {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--ds-tap-min);
+}
+
+/* —— Header / nav —— */
+html[data-brand="wu-hq"] .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--ds-nav-top-h);
+  background: var(--ds-nav-bg);
+  border-bottom: 1px solid var(--ds-border);
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+html[data-brand="wu-hq"] .nav-inner {
+  max-width: var(--ds-max);
+  height: 100%;
+  padding: 0 var(--ds-margin);
+  gap: 10px;
+}
+html[data-brand="wu-hq"] .brand {
+  min-width: 0;
+  min-height: 44px;
+  gap: 8px;
+  color: var(--ds-text);
+  font: 700 18px/1 var(--ds-font-display);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-shadow: none;
+}
+html[data-brand="wu-hq"] .brand:hover { color: var(--ds-text); }
+html[data-brand="wu-hq"] .brand span:last-child {
+  text-shadow: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+@media (max-width: 399px) {
+  html[data-brand="wu-hq"] .brand { font-size: 16px; }
+}
+html[data-brand="wu-hq"] .brand-mark,
+html[data-brand="wu-hq"] .brand-mark img {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  box-shadow: none;
+}
+html[data-brand="wu-hq"] .brand::after {
+  content: "12";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-height: 22px;
+  margin-left: 2px;
+  padding: 0 8px;
+  border-radius: var(--ds-radius-pill);
+  background: var(--ds-accent);
+  color: var(--ds-on-accent);
+  font: 700 12px/1 var(--ds-font-body);
+  letter-spacing: 0;
+  text-shadow: none;
+  vertical-align: middle;
+}
+html[data-brand="wu-hq"] .nav-links a,
+html[data-brand="wu-hq"] .nav-more-btn {
+  color: var(--ds-nav-inactive);
+  background: transparent;
+  box-shadow: none;
+  text-decoration: none;
+}
+html[data-brand="wu-hq"] .nav-links a:hover,
+html[data-brand="wu-hq"] .nav-more-btn:hover {
+  color: var(--ds-text);
+  background: transparent;
+}
+html[data-brand="wu-hq"] .nav-links a.active,
+html[data-brand="wu-hq"] .nav-links a[aria-current="page"],
+html[data-brand="wu-hq"] .nav-more.has-active > .nav-more-btn {
+  color: var(--ds-text);
+  background: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 1023px) {
+  html[data-brand="wu-hq"] body {
+    padding-bottom: calc(var(--ds-nav-bottom-h) + env(safe-area-inset-bottom));
+  }
+  html[data-brand="wu-hq"] .nav-toggle { display: inline-flex; }
+  html[data-brand="wu-hq"] .nav-links {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    z-index: 130;
+    height: calc(var(--ds-nav-bottom-h) + env(safe-area-inset-bottom));
+    margin: 0;
+    padding: 0 0 env(safe-area-inset-bottom);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 0;
+    background: var(--ds-nav-bg);
+    border-top: 1px solid var(--ds-border);
+    border-bottom: 0;
+    box-shadow: none;
+    overflow: visible;
+  }
+  html[data-brand="wu-hq"] .nav-links:not(.open) > li:has(> a[href="rankings.html"]),
+  html[data-brand="wu-hq"] .nav-links:not(.open) > li:has(> a[href="trades.html"]),
+  html[data-brand="wu-hq"] .nav-links:not(.open) > li:has(> a[href="faab.html"]) {
+    display: none;
+  }
+  html[data-brand="wu-hq"] .nav-links:not(.open) > li {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+  }
+  html[data-brand="wu-hq"] .nav-links:not(.open) > li > a,
+  html[data-brand="wu-hq"] .nav-links:not(.open) .nav-more-btn {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    min-height: 48px;
+    padding: 8px 2px 4px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    border-radius: 0;
+    font: var(--ds-type-caption);
+    letter-spacing: 0;
+    text-transform: none;
+    white-space: nowrap;
+  }
+  html[data-brand="wu-hq"] .nav-links:not(.open) a[aria-current="page"]::before,
+  html[data-brand="wu-hq"] .nav-links:not(.open) .nav-more.has-active > .nav-more-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22%;
+    right: 22%;
+    height: 3px;
+    border-radius: 0 0 3px 3px;
+    background: var(--ds-nav-active-bar);
+  }
+  html[data-brand="wu-hq"] .nav-links:not(.open) .nav-more { position: static; width: auto; }
+  html[data-brand="wu-hq"] .nav-links:not(.open) .nav-more-menu {
+    display: none;
+    position: fixed;
+    left: var(--ds-margin);
+    right: var(--ds-margin);
+    bottom: calc(var(--ds-nav-bottom-h) + env(safe-area-inset-bottom) + 8px);
+    top: auto;
+    min-width: 0;
+    max-height: min(60vh, 420px);
+    overflow: auto;
+    padding: 8px;
+    background: var(--ds-surface);
+    border: 1px solid var(--ds-border);
+    border-radius: var(--ds-radius-md);
+    box-shadow: var(--ds-shadow-raised);
+    z-index: 140;
+  }
+  html[data-brand="wu-hq"] .nav-links:not(.open) .nav-more.open .nav-more-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  html[data-brand="wu-hq"] .nav-links.open {
+    top: var(--ds-nav-top-h);
+    bottom: 0;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px var(--ds-margin) 24px;
+    overflow: auto;
+    border-top: 1px solid var(--ds-border);
+    z-index: 120;
+  }
+  html[data-brand="wu-hq"] .nav-links.open > li,
+  html[data-brand="wu-hq"] .nav-more { display: flex; flex-direction: column; width: 100%; }
+  html[data-brand="wu-hq"] .nav-links.open a,
+  html[data-brand="wu-hq"] .nav-links.open .nav-more-btn {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 12px;
+    flex-direction: row;
+    justify-content: flex-start;
+    font: var(--ds-type-label);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: var(--ds-radius-sm);
+  }
+  html[data-brand="wu-hq"] .nav-links.open .nav-more-menu {
+    position: static;
+    display: none;
+    min-width: 0;
+    max-height: none;
+    padding: 0 0 0 12px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  html[data-brand="wu-hq"] .nav-links.open .nav-more.open .nav-more-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  html[data-brand="wu-hq"] .nav-more-menu a {
+    min-height: 44px;
+    font: var(--ds-type-label);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  html[data-brand="wu-hq"] .week-recap-toast {
+    bottom: calc(var(--ds-nav-bottom-h) + 12px);
+  }
+}
+
+@media (min-width: 1024px) {
+  html[data-brand="wu-hq"] .site-header {
+    height: var(--ds-nav-desktop-h);
+  }
+  html[data-brand="wu-hq"] .nav-toggle { display: none; }
+  html[data-brand="wu-hq"] .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    overflow: visible;
+  }
+  html[data-brand="wu-hq"] .nav-links > li { display: flex; width: auto; }
+  html[data-brand="wu-hq"] .nav-links a,
+  html[data-brand="wu-hq"] .nav-more-btn {
+    position: relative;
+    min-height: 44px;
+    padding: 0 12px;
+    font: var(--ds-type-label);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+  html[data-brand="wu-hq"] .nav-links a[aria-current="page"]::after,
+  html[data-brand="wu-hq"] .nav-more.has-active > .nav-more-btn::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 6px;
+    height: 2px;
+    background: var(--ds-nav-active-bar);
+  }
+  html[data-brand="wu-hq"] .nav-more { position: relative; width: auto; }
+  html[data-brand="wu-hq"] .nav-more-menu {
+    top: calc(100% + 4px);
+    right: 0;
+    left: auto;
+    bottom: auto;
+    min-width: 12rem;
+    padding: 8px;
+    background: var(--ds-surface);
+    border: 1px solid var(--ds-border);
+    border-radius: var(--ds-radius-md);
+    box-shadow: var(--ds-shadow-raised);
+  }
+  html[data-brand="wu-hq"] .nav-more-menu a {
+    min-height: 44px;
+    width: 100%;
+    font: var(--ds-type-label);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+/* —— Footer, focus, status —— */
+html[data-brand="wu-hq"] .site-footer {
+  background: var(--ds-nav-bg);
+  border-top: 1px solid var(--ds-border);
+  color: var(--ds-text-muted);
+  padding: 24px var(--ds-margin) 32px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+html[data-brand="wu-hq"] .site-footer::before {
+  color: var(--ds-text-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+html[data-brand="wu-hq"] .skip-link,
+html[data-brand="wu-hq"] .skip-link:focus,
+html[data-brand="wu-hq"] .skip-link:focus-visible {
+  background: var(--ds-accent);
+  color: var(--ds-on-accent);
+  border-radius: var(--ds-radius-sm);
+  font: var(--ds-type-label);
+}
+html[data-brand="wu-hq"] a:focus-visible,
+html[data-brand="wu-hq"] button:focus-visible,
+html[data-brand="wu-hq"] .btn:focus-visible,
+html[data-brand="wu-hq"] .seg-btn:focus-visible,
+html[data-brand="wu-hq"] summary:focus-visible,
+html[data-brand="wu-hq"] input:focus-visible,
+html[data-brand="wu-hq"] select:focus-visible,
+html[data-brand="wu-hq"] textarea:focus-visible {
+  outline: none;
+  box-shadow: var(--ds-shadow-focus);
+}
+html[data-brand="wu-hq"] .wl-badge.is-w {
+  color: var(--ds-on-accent);
+  background: var(--ds-accent);
+}
+html[data-brand="wu-hq"] .wl-badge.is-l {
+  color: #fff7f8;
+  background: var(--ds-red-700);
+}
+html[data-brand="wu-hq"] .wl-badge.is-t {
+  color: #1a1408;
+  background: var(--ds-warning);
+}
+html[data-brand="wu-hq"] .diff-pos,
+html[data-brand="wu-hq"] .h2h-rec.is-up,
+html[data-brand="wu-hq"] .parlay-table .hit { color: var(--ds-success); }
+html[data-brand="wu-hq"] .diff-neg,
+html[data-brand="wu-hq"] .h2h-rec.is-down,
+html[data-brand="wu-hq"] .bus-score,
+html[data-brand="wu-hq"] .parlay-table .miss,
+html[data-brand="wu-hq"] .rank-blurb .blurb-junk { color: var(--ds-danger); }
+html[data-brand="wu-hq"] .rank-blurb .blurb-juice,
+html[data-brand="wu-hq"] .parlay-table .hit { color: var(--ds-success); }
+html[data-brand="wu-hq"] .vbar-fill,
+html[data-brand="wu-hq"] .vbar-fill.win { background: var(--ds-accent); }
+html[data-brand="wu-hq"] .vbar-fill.loss { background: var(--ds-danger); }
+html[data-brand="wu-hq"] .vbar-fill.tie { background: var(--ds-warning); }
+html[data-brand="wu-hq"] .stale-badge {
+  min-height: 32px;
+  background: var(--ds-danger);
+  color: #1a0a0a;
+}
+html[data-brand="wu-hq"] .live-stale-row { color: var(--ds-danger); }
+html[data-brand="wu-hq"] .table-scroll,
+html[data-brand="wu-hq"] .trade-board,
+html[data-brand="wu-hq"] .parlay-scroll,
+html[data-brand="wu-hq"] .table-wrap,
+html[data-brand="wu-hq"] .h2h-scroll {
+  max-width: 100%;
+}
+html[data-brand="wu-hq"] .trade-table .col-team { min-width: 0; }
+html[data-brand="wu-hq"] .parlay-table th.week-head { background: var(--ds-surface-raised); color: var(--ds-text); }
+html[data-brand="wu-hq"] .parlay-table th.week-head.alt,
+html[data-brand="wu-hq"] .parlay-table thead th,
+html[data-brand="wu-hq"] .parlay-table thead th.owner-col { background: var(--ds-surface); color: var(--ds-text); }
+html[data-brand="wu-hq"] .parlay-table input.player,
+html[data-brand="wu-hq"] .parlay-table select.td,
+html[data-brand="wu-hq"] .smack-form input,
+html[data-brand="wu-hq"] .smack-form textarea,
+html[data-brand="wu-hq"] .parlay-weekbar select {
+  background: var(--ds-bg);
+  color: var(--ds-text);
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-sm);
+  min-height: 44px;
+}
+html[data-brand="wu-hq"] .week-recap-overlay {
+  background: color-mix(in srgb, var(--ds-bg) 82%, transparent);
+}
+html[data-brand="wu-hq"] .week-recap-panel {
+  background: var(--ds-surface);
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-lg);
+  box-shadow: var(--ds-shadow-raised);
+}
+html[data-brand="wu-hq"] .team-card { border-top: 3px solid var(--team-color, var(--ds-accent)); }
+html[data-brand="wu-hq"] img,
+html[data-brand="wu-hq"] svg,
+html[data-brand="wu-hq"] video,
+html[data-brand="wu-hq"] iframe { max-width: 100%; }
+html[data-brand="wu-hq"] .podcast-embed-wrap iframe { width: 100%; }
