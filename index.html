@@ -26,8 +26,7 @@
         <a class="btn btn-primary" href="matchups.html">View this week's matchups</a>
         <a class="btn btn-ghost" href="https://www.fantrax.com/fantasy/league/hms8onqvmsb3ulsx/home" target="_blank" rel="noopener">Fantrax</a>
       </div>
-      <p class="last-sync" id="homeFresh">Data as of — PT.</p>
-      <p class="last-sync">Half-hour score checks are paused. Scores reflect the last saved snapshot. Roster and transaction syncs still run.</p>
+      <p class="last-sync dev-note" id="homeFresh">Data as of — PT.</p>
     </section>
 
     <div class="home-stack">
@@ -237,10 +236,12 @@
       const side = (s) => {
         const name = s.teamId === "ttab" ? "TTAB" : (s.teamId === "eddies" ? "Eagleridge Eddie's" : (s.name || "—"));
         const score = s.score == null ? "—" : WUC.formatPts(s.score);
-        const tag = game.status === "final" ? "FINAL" : "SNAPSHOT";
-        return `<p class="home-side">${WUC.teamLinkHtml(s.teamId, { size: "sm", text: name })} <strong class="home-score">${WUC.escapeHtml(String(score))}</strong> <span class="muted">${tag}</span></p>`;
+        const tag = game.status === "final"
+          ? `<span class="muted">FINAL</span>`
+          : `<span class="dev-note">SNAPSHOT</span>`;
+        return `<p class="home-side">${WUC.teamLinkHtml(s.teamId, { size: "sm", text: name })} <strong class="home-score">${WUC.escapeHtml(String(score))}</strong> ${tag}</p>`;
       };
-      host.innerHTML = `${side(game.sideA)}${side(game.sideB)}<p class="muted mb-0">Data as of ${WUC.escapeHtml(live.asOf || "— PT")}.</p>`;
+      host.innerHTML = `${side(game.sideA)}${side(game.sideB)}<p class="muted mb-0 dev-note">Data as of ${WUC.escapeHtml(live.asOf || "— PT")}.</p>`;
     }
 
     function paintSurvivor(awards) {

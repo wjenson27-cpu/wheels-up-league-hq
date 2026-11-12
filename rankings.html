@@ -74,7 +74,7 @@
         document.getElementById("rankEyebrow").textContent = `Week ${week} · ${data.season || ""}`.trim();
         const lede = WUC.displayText(data.subtitle || "1–14 with blurbs.");
         document.getElementById("rankLede").innerHTML =
-          `${WUC.escapeHtml(lede)} <span class="dim">${WUC.escapeHtml(WUC.provenanceText({ updated: data.updated }))}</span>`;
+          `${WUC.escapeHtml(lede)} <span class="dim dev-note">${WUC.escapeHtml(WUC.provenanceText({ updated: data.updated }))}</span>`;
 
         
         function formatBlurb(text) {

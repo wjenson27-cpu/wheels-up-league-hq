@@ -816,4 +816,15 @@ html[data-brand="wu-hq"] img,
 html[data-brand="wu-hq"] svg,
 html[data-brand="wu-hq"] video,
 html[data-brand="wu-hq"] iframe { max-width: 100%; }
+
+/* Pipeline and dev notes. Scripts still fill these nodes. Members do not see them.
+   Does not match FAAB table cells (Trade −/+ and Left stay .col-trades). */
+html[data-brand="wu-hq"] .dev-note,
+html[data-brand="wu-hq"] .scroll-cue,
+html[data-brand="wu-hq"] .live-stale-row,
+html[data-brand="wu-hq"] .live-formula-meta,
+html[data-brand="wu-hq"] .live-nowin,
+html[data-brand="wu-hq"] #faabNote {
+  display: none !important;
+}
 html[data-brand="wu-hq"] .podcast-embed-wrap iframe { width: 100%; }

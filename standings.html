@@ -167,10 +167,11 @@
         const prov = document.getElementById("standProvenance");
         if (prov) {
           const weekBit = highlights.cover.ok ? `Through week ${highlights.cover.max}. ` : "";
-          prov.textContent = weekBit + WUC.provenanceText({
+          const stamp = WUC.provenanceText({
             asOf: coverWeek && coverWeek.asOf,
             updated: coverWeek && coverWeek.updated
           });
+          prov.innerHTML = `${WUC.escapeHtml(weekBit)}<span class="dev-note">${WUC.escapeHtml(stamp)}</span>`;
         }
 
         const finalWeeks = weeks.filter(WUC.weekIsFinal);
