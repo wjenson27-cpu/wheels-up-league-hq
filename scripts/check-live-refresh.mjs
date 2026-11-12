@@ -78,12 +78,32 @@ assert(JSON.stringify(generated) === JSON.stringify(generatedAgain), "generation
 for (const name of scoringNames) {
   assert((await readFile(join(root, "data", name), "utf8")) === sourceBefore.get(name), `${name} changed`);
 }
-const sourceRel = (generated.sources || []).find((item) => /^data\/livescoring-w\d+\.json$/.test(item));
-assert(sourceRel, "generation did not use a livescoring file");
-const sourceIso = JSON.parse(sourceBefore.get(sourceRel.slice("data/".length))).asOf;
-assert(typeof sourceIso === "string" && sourceIso.includes("T"), "source ISO is missing");
-assert(generated.asOf === clockToPt(sourceIso), "generated clock is not the floored source minute");
-assert(sameEpochMinute(parsedEnd(sourceIso), parsedEnd(generated.asOf)), "generated clock is not the source epoch minute");
+/* A final week rolls the board to the next week. That shell has no livescoring file until game day.
+   Require this week's file when it is on disk, and refuse an older week's file when it is not.
+   The minute-floor check still runs: against the file generation used, or against every stored ISO. */
+const weekLiveName = `livescoring-w${generated.week}.json`;
+const weekLiveRel = `data/${weekLiveName}`;
+const cited = (generated.sources || []).filter((item) => /^data\/livescoring-w\d+\.json$/.test(item));
+if (sourceBefore.has(weekLiveName)) {
+  assert(cited.length === 1 && cited[0] === weekLiveRel, `generation did not use ${weekLiveRel}`);
+  if (cited.length === 1 && cited[0] === weekLiveRel) {
+    const sourceIso = JSON.parse(sourceBefore.get(weekLiveName)).asOf;
+    assert(typeof sourceIso === "string" && sourceIso.includes("T"), "source ISO is missing");
+    assert(generated.asOf === clockToPt(sourceIso), "generated clock is not the floored source minute");
+    assert(sameEpochMinute(parsedEnd(sourceIso), parsedEnd(generated.asOf)), "generated clock is not the source epoch minute");
+  }
+} else {
+  assert(!cited.length, `pregame week ${generated.week} cited a livescoring file (${cited.join(", ")})`);
+  assert(scoringNames.length > 0, "no livescoring file is left to prove the minute floor");
+  for (const name of scoringNames) {
+    const sourceIso = JSON.parse(sourceBefore.get(name)).asOf;
+    const floored = clockToPt(sourceIso);
+    assert(typeof sourceIso === "string" && sourceIso.includes("T"), `${name} source ISO is missing`);
+    assert(floored, `${name} ISO did not floor`);
+    assert(sameEpochMinute(parsedEnd(sourceIso), parsedEnd(floored)), `${name} ISO is not its floored minute`);
+    assert(generated.asOf !== floored, `pregame clock adopted stale ${name}`);
+  }
+}
 
 const live = await readJson("data/matchups-live.json");
 const liveWeek = Number(live.week);
