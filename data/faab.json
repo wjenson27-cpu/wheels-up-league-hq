@@ -39,9 +39,9 @@
       "starting": 115,
       "remaining": 3,
       "spentClaims": 103,
-      "tradeOut": 29,
+      "tradeOut": 34,
       "tradeIn": 25,
-      "spentKnown": 132,
+      "spentKnown": 137,
       "remainingKnown": 3
     },
     {
@@ -78,9 +78,9 @@
       "starting": 115,
       "remaining": 25,
       "spentClaims": 79,
-      "tradeOut": 0,
+      "tradeOut": 11,
       "tradeIn": 0,
-      "spentKnown": 79,
+      "spentKnown": 90,
       "remainingKnown": 25
     },
     {
@@ -104,9 +104,9 @@
       "starting": 115,
       "remaining": 3,
       "spentClaims": 93,
-      "tradeOut": 30,
-      "tradeIn": 8,
-      "spentKnown": 123,
+      "tradeOut": 37,
+      "tradeIn": 18,
+      "spentKnown": 130,
       "remainingKnown": 3
     },
     {
@@ -118,7 +118,7 @@
       "remaining": 17,
       "spentClaims": 115,
       "tradeOut": 0,
-      "tradeIn": 10,
+      "tradeIn": 17,
       "spentKnown": 115,
       "remainingKnown": 17
     },
@@ -170,9 +170,9 @@
       "starting": 115,
       "remaining": 69,
       "spentClaims": 40,
-      "tradeOut": 10,
+      "tradeOut": 20,
       "tradeIn": 14,
-      "spentKnown": 50,
+      "spentKnown": 60,
       "remainingKnown": 69
     },
     {
@@ -184,7 +184,7 @@
       "remaining": 5,
       "spentClaims": 134,
       "tradeOut": 35,
-      "tradeIn": 43,
+      "tradeIn": 59,
       "spentKnown": 169,
       "remainingKnown": 5
     }
@@ -2206,6 +2206,20 @@
   ],
   "trades": [
     {
+      "date": "2026-11-11",
+      "amount": 7,
+      "fromTeam": "Towner Top Aga Bottom",
+      "fromTeamId": "ttab",
+      "toTeam": "The Hypersecretors",
+      "toTeamId": "hyper",
+      "for": [
+        "Bryce Young (QB)"
+      ],
+      "summary": "Fantrax official — Towner Top Aga Bottom paid $7 FAAB to The Hypersecretors in Week 9 trade (Nov 11 5:13 PM PT).",
+      "official": true,
+      "kind": "trade"
+    },
+    {
       "date": "2026-10-29",
       "amount": 5,
       "fromTeam": "Saltese Slamm",
@@ -2219,6 +2233,49 @@
         "D'Andre Swift (RB)"
       ],
       "summary": "Fantrax official — Saltese Slamm paid $5 FAAB to Ultron in Week 8 trade (Oct 29 12:41 PM PDT).",
+      "official": true,
+      "kind": "trade"
+    },
+    {
+      "date": "2026-10-28",
+      "amount": 5,
+      "fromTeam": "Saltese Slamm",
+      "fromTeamId": "saltese",
+      "toTeam": "Substation",
+      "toTeamId": "substation",
+      "for": [
+        "RJ Harvey (RB)"
+      ],
+      "summary": "Fantrax official — Saltese Slamm paid $5 FAAB to Substation in Week 8 trade (Oct 28 9:46 AM PT).",
+      "official": true,
+      "kind": "trade"
+    },
+    {
+      "date": "2026-10-27",
+      "amount": 11,
+      "fromTeam": "Eagleridge Eddie's",
+      "fromTeamId": "eddies",
+      "toTeam": "Substation",
+      "toTeamId": "substation",
+      "for": [
+        "George Pickens (WR)",
+        "Frankie Luvu (LB)"
+      ],
+      "summary": "Fantrax official — Eagleridge Eddie's paid $11 FAAB to Substation in Week 8 trade (Oct 27 6:16 PM PT).",
+      "official": true,
+      "kind": "trade"
+    },
+    {
+      "date": "2026-10-26",
+      "amount": 10,
+      "fromTeam": "Pocket Agents",
+      "fromTeamId": "pocket",
+      "toTeam": "Towner Top Aga Bottom",
+      "toTeamId": "ttab",
+      "for": [
+        "Dane Belton (DB)"
+      ],
+      "summary": "Fantrax official — Pocket Agents paid $10 FAAB to Towner Top Aga Bottom in Week 7 trade (Oct 26 9:51 PM PT).",
       "official": true,
       "kind": "trade"
     },
