@@ -5,6 +5,25 @@
   "trades": [
     {
       "date": "2026-11-11",
+      "time": "2:54 PM PST",
+      "week": 9,
+      "status": "completed",
+      "official": true,
+      "teamA": "Eagleridge Eddie's",
+      "teamB": "Substation",
+      "givesA": [
+        "Trevor Lawrence (QB)",
+        "Cameron Skattebo (RB)",
+        "Jordyn Tyson (WR)"
+      ],
+      "givesB": [
+        "Brock Purdy (QB)",
+        "Malik Nabers (WR)"
+      ],
+      "summary": "Week 9 — Eagleridge Eddie's sent Trevor Lawrence (QB), Cameron Skattebo (RB), Jordyn Tyson (WR) to Substation for Brock Purdy (QB), Malik Nabers (WR) (Nov 11 2:54 PM PST)."
+    },
+    {
+      "date": "2026-11-11",
       "time": "9:56 AM PST",
       "week": 9,
       "status": "completed",
@@ -899,7 +918,7 @@
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
   "pending_note": "Pending trades 0 (Fantrax 2026-11-11 4:09 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
-  "fantrax_completed_view": "Newest official: Hypersecretors↔Ultron Amon-Ra St. Brown+Nick Bolton+Kirk Cousins for Josh Allen+Drake London (Nov 11 9:56 AM); Substation↔Hypersecretors Nick Emmanwori+Emmett Johnson for Jeremy Chinn+Rachaad White (Nov 11 9:40 AM); Eagleridge↔Ultron George Pickens for Kyle Hamilton (Nov 10 6:07 PM).",
+  "fantrax_completed_view": "Newest official: Eagleridge↔Substation Trevor Lawrence+Cameron Skattebo+Jordyn Tyson for Brock Purdy+Malik Nabers (Nov 11 2:54 PM); Hypersecretors↔Ultron Amon-Ra St. Brown+Nick Bolton+Kirk Cousins for Josh Allen+Drake London (Nov 11 9:56 AM); Substation↔Hypersecretors Nick Emmanwori+Emmett Johnson for Jeremy Chinn+Rachaad White (Nov 11 9:40 AM).",
   "hqComplete": true,
   "lastSynced": "2026-11-11 4:09 PM PT"
 }
