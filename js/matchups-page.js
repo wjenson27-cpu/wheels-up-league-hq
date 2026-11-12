@@ -129,9 +129,10 @@ function card(game) {
   const eddiesUltron = ids.includes("eddies") && ids.includes("ultron");
   const title = featured && eddiesUltron ? `<h2>${esc(PUBLIC_EDDIES)} vs Ultron</h2>` : "";
   const tag = statusLabel(game.status);
+  const tagClass = tag === "SNAPSHOT" ? " dev-note" : "";
   return `<article class="card live-card${featured ? " is-featured" : ""}" data-matchup="${esc(game.id || "")}" data-featured="${featured ? "yes" : "no"}">
     <div class="live-kicker">
-      <span class="live-tag is-${esc(game.status || "scheduled")}">${tag}</span>
+      <span class="live-tag is-${esc(game.status || "scheduled")}${tagClass}">${tag}</span>
       ${featured ? `<span class="live-feature">Featured</span>` : ""}
     </div>
     ${title}
