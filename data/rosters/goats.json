@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-11-11 4:09 PM PT",
+  "asOf": "2026-11-12 6:23 AM PT",
   "faabLeft": 18,
   "startingQB": null,
   "roster": {
@@ -49,13 +49,12 @@
   "injuryFlags": [
     "Tank Dell — Q (active)",
     "Marvin Harrison — Q (reserve)",
-    "Patrick Mahomes — Q (IR slot)",
     "Josh Jacobs — O (IR slot)",
     "Alvin Kamara — Q (IR slot)",
     "Kevin Byard — Q (active)",
     "Quincy Williams — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-12 6:23 AM PT (/workspace/fantrax-raw-2026-11-12-am-normalized.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [
     "Tank Dell — Q (active)",
@@ -68,12 +67,11 @@
   "flags": [
     "Tank Dell — Q (active)",
     "Marvin Harrison — Q (reserve)",
-    "Patrick Mahomes — Q (IR slot)",
     "Josh Jacobs — O (IR slot)",
     "Alvin Kamara — Q (IR slot)",
     "Kevin Byard — Q (active)",
     "Quincy Williams — Q (active)"
   ],
-  "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 4:09 PM PT"
+  "updated": "2026-11-12",
+  "lastSynced": "2026-11-12 6:23 AM PT"
 }

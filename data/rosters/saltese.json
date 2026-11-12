@@ -2,25 +2,25 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-11 4:09 PM PT",
+  "asOf": "2026-11-12 6:23 AM PT",
   "faabLeft": 3,
-  "startingQB": "C.J. Stroud",
+  "startingQB": "Aaron Rodgers",
   "roster": {
     "QB": [
-      "C.J. Stroud",
-      "Aaron Rodgers"
+      "Aaron Rodgers",
+      "C.J. Stroud"
     ],
     "RB": [
       "Bhayshul Tuten",
       "Tyler Allgeier",
       "Rico Dowdle",
       "Aaron Jones",
+      "Chris Rodriguez Jr.",
       "Jonathon Brooks",
       "D'Andre Swift"
     ],
     "WR": [
-      "Adonai Mitchell",
-      "Antonio Williams"
+      "Adonai Mitchell"
     ],
     "TE": [
       "Darnell Washington"
@@ -49,16 +49,18 @@
   "notes": "",
   "injuryFlags": [
     "Bhayshul Tuten — Q (active)",
+    "Chris Rodriguez Jr. — Q (reserve)",
     "Jonathon Brooks — IR (reserve)",
     "Kyle Monangai — Q (IR slot)",
     "RJ Harvey — IR (IR slot)",
     "David Montgomery — Q (IR slot)",
     "Carson Schwesinger — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-12 6:23 AM PT (/workspace/fantrax-raw-2026-11-12-am-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "Bhayshul Tuten — Q (active)",
+    "Chris Rodriguez Jr. — Q (reserve)",
     "Jonathon Brooks — IR (reserve)",
     "Carson Schwesinger — Q (active)"
   ],
@@ -66,12 +68,13 @@
   "pendingClaims": [],
   "flags": [
     "Bhayshul Tuten — Q (active)",
+    "Chris Rodriguez Jr. — Q (reserve)",
     "Jonathon Brooks — IR (reserve)",
     "Kyle Monangai — Q (IR slot)",
     "RJ Harvey — IR (IR slot)",
     "David Montgomery — Q (IR slot)",
     "Carson Schwesinger — Q (active)"
   ],
-  "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 4:09 PM PT"
+  "updated": "2026-11-12",
+  "lastSynced": "2026-11-12 6:23 AM PT"
 }

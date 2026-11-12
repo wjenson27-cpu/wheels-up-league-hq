@@ -2,11 +2,12 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-11-11 4:09 PM PT",
-  "faabLeft": 10,
-  "startingQB": "Caleb Williams",
+  "asOf": "2026-11-12 6:23 AM PT",
+  "faabLeft": 3,
+  "startingQB": "Bryce Young",
   "roster": {
     "QB": [
+      "Bryce Young",
       "Caleb Williams"
     ],
     "RB": [
@@ -17,11 +18,11 @@
       "Ryan Flournoy",
       "Malik Washington",
       "Christian Watson",
-      "Omar Cooper Jr.",
       "Stefon Diggs"
     ],
     "TE": [
-      "Dallas Goedert"
+      "Dallas Goedert",
+      "Mark Andrews"
     ],
     "DL": [
       "Quinnen Williams"
@@ -29,46 +30,45 @@
     "LB": [
       "Demario Davis",
       "Micah McFadden",
+      "Harold Perkins",
       "Patrick Queen",
       "Divine Deablo",
-      "Harold Perkins",
       "Dorian Williams"
     ],
     "DB": [
       "Caleb Downs",
       "Andrew Wingard",
-      "Brian Branch",
       "Dillon Thieneman"
     ],
     "IR": [
-      "DeVonta Smith"
+      "Omar Cooper Jr.",
+      "DeVonta Smith",
+      "Brian Branch"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Omar Cooper Jr. — Q (reserve)",
+    "Omar Cooper Jr. — Q (IR slot)",
     "DeVonta Smith — Q (IR slot)",
     "Andrew Wingard — Q (active)",
-    "Brian Branch — Q (active)",
-    "Divine Deablo — Q (reserve)"
+    "Divine Deablo — Q (reserve)",
+    "Brian Branch — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-12 6:23 AM PT (/workspace/fantrax-raw-2026-11-12-am-normalized.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
-    "Omar Cooper Jr. — Q (reserve)",
     "Andrew Wingard — Q (active)",
-    "Brian Branch — Q (active)",
     "Divine Deablo — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Omar Cooper Jr. — Q (reserve)",
+    "Omar Cooper Jr. — Q (IR slot)",
     "DeVonta Smith — Q (IR slot)",
     "Andrew Wingard — Q (active)",
-    "Brian Branch — Q (active)",
-    "Divine Deablo — Q (reserve)"
+    "Divine Deablo — Q (reserve)",
+    "Brian Branch — Q (IR slot)"
   ],
-  "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 4:09 PM PT"
+  "updated": "2026-11-12",
+  "lastSynced": "2026-11-12 6:23 AM PT"
 }

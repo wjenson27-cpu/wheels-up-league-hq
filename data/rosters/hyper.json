@@ -2,13 +2,12 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-11 4:09 PM PT",
-  "faabLeft": 10,
+  "asOf": "2026-11-12 6:23 AM PT",
+  "faabLeft": 17,
   "startingQB": "Josh Allen",
   "roster": {
     "QB": [
-      "Josh Allen",
-      "Bryce Young"
+      "Josh Allen"
     ],
     "RB": [
       "Kenneth Walker III",
@@ -31,13 +30,14 @@
     ],
     "LB": [
       "Jacob Rodriguez",
-      "Blake Cashman",
       "Shemar James",
-      "Payton Wilson"
+      "Payton Wilson",
+      "Blake Cashman"
     ],
     "DB": [
       "Kamren Curl",
-      "Nick Emmanwori"
+      "Nick Emmanwori",
+      "A.J. Haulcy"
     ],
     "IR": [
       "Jacory Croskey-Merritt",
@@ -47,30 +47,33 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Jaylen Wright — Q (active)",
     "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
     "De'Zhaun Stribling — IR (IR slot)",
-    "Blake Cashman — Q (active)",
+    "Kamren Curl — Q (active)",
+    "A.J. Haulcy — Q (reserve)",
+    "Blake Cashman — Q (reserve)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-12 6:23 AM PT (/workspace/fantrax-raw-2026-11-12-am-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
-    "Jaylen Wright — Q (active)",
     "Luther Burden — Q (reserve)",
-    "Blake Cashman — Q (active)"
+    "Kamren Curl — Q (active)",
+    "A.J. Haulcy — Q (reserve)",
+    "Blake Cashman — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Jaylen Wright — Q (active)",
     "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
     "De'Zhaun Stribling — IR (IR slot)",
-    "Blake Cashman — Q (active)",
+    "Kamren Curl — Q (active)",
+    "A.J. Haulcy — Q (reserve)",
+    "Blake Cashman — Q (reserve)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 4:09 PM PT"
+  "updated": "2026-11-12",
+  "lastSynced": "2026-11-12 6:23 AM PT"
 }

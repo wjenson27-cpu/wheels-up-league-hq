@@ -175,7 +175,7 @@
       "owner": "Chase Anderson",
       "abbrev": "TTA",
       "record": "4-5-0",
-      "faab": 10,
+      "faab": 3,
       "projW1": 185.52,
       "powerRank": 8,
       "note": "Chase Anderson — TTAB. Sep 16: +Goedert+Winfield+$8 FAAB (−Pollard/−Edmunds) vs Substation. FAAB $59. Sep 20: Christian Harris add/drop churn (net zero). | Sep 23: acquired Dorian Williams + Wingard for Etienne + Winfield (Eddies). | Sep 23 FA: +Emanuel Wilson; +Kendre Miller/−McGowan; +Ji'Ayir Brown/−Bishop. | Sep 25: −Kendre Miller; +Cole Bishop; +Romeo Doubs/−Jalen Thompson. | Sep 28: −Abdul Carter ($0/null). | Sep 30 W4 waivers/FA: −Romeo Doubs; +Mack Hollins; +Bradley Chubb; +Malaki Starks; +Andre Cisco. FAAB $42. | Oct 3: +Harold Perkins/−Tre Harris ($0/null). | Oct 7 W5 waivers/FA: +Khalil Mack (−Bradley Chubb) [FA 09:07 AM]; +Mansoor Delane (−Treydan Stukes) [FA 09:08 AM]; +Dane Belton (−Andre Cisco) [FA 09:12 AM]. FAAB $42. | Oct 7 FA: −Mansoor Delane; +Najee Harris/−Mack Hollins. | Oct 10: +Javon Bullard (−Jeremiah Trotter). | Oct 11: −Ji'Ayir Brown; Jeanty IR→Active.",
@@ -201,7 +201,7 @@
       "owner": "Jacob Crisp",
       "abbrev": "HYP",
       "record": "5-4-0",
-      "faab": 10,
+      "faab": 17,
       "projW1": 183.76,
       "powerRank": 9,
       "note": "Jacob Crisp — +Jaxson Dart $16; +Dallas Turner; +Grant Delpit (−Brandon Jones). FAAB $92. Sep 18 FA: see transactions. | Sep 23 FA: +Bo Nix. | Sep 24: +Dobbins $2/−Taaffe +Mayfield −Darnold. | Sep 25: +Jeremy Chinn $3/−Baker Mayfield. FAAB $78. | Sep 30 W4 waivers/FA: −MarShawn Lloyd; −Grant Delpit; +Darren Waller $6. FAAB $72. | Oct 3: +Keaton Mitchell $8/−Kirk Cousins. FAAB $64. | Oct 7 W5 waivers/FA: +Jaylin Noel $11 (−Bo Nix). FAAB $53. | Oct 8: +Rachaad White; −Alec Pierce; +Laiatu Latu. | Oct 10: −Laiatu Latu; −Darren Waller.",
@@ -340,11 +340,11 @@
       "pa": 2044
     }
   ],
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "ownerSource": "Bill confirmed Sep 6 2026 + League Archives",
   "standingsSource": "Fantrax Week 9 finals (standings page Tue Nov 10 2026 approximately 1:11 PM PT); records cross-checked vs Fantrax records scrape Wed Nov 11 6:24–6:30 AM PT",
   "week": 10,
   "hqNote": "Week 6 FINAL: Eddies beat Substation 259.5–227.5 (4-2, four straight). Kitty Pocket 262.5; survivor TTAB 186.5 off the bus. Last Ride: Saltese beat Ultron 259–205.5 (Ultron out). Pocket, LAB and Goats share 5-1. OMVP Jaxon Smith-Njigba 197 / DMVP Nakobe Dean 163.",
-  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
-  "note": "Week 9 finals applied Wed Nov 11 · records/PF/PA from Fantrax standings Tue Nov 10 ~1:11 PM PT, records identical on Nov 11 6:24–6:30 AM PT scrape. Week 6 finals applied Tue Oct 20 · records/PF/PA from Fantrax finals. Nov 1 6:25 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 1 4:08 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 2 6:29 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 3 6:23 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 10:18 AM PT roster sync: FAAB verified live, all 14 updated. Nov 5 6:24 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 6 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 6 4:09 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 8 9:27 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 8 4:10 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 9 6:31 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 10 1:11 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 11 6:24 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 11 4:09 PM PT roster sync: FAAB verified live, all 14 unchanged."
+  "source": "Fantrax roster sync 2026-11-12 6:23 AM PT (/workspace/fantrax-raw-2026-11-12-am-normalized.json)",
+  "note": "Week 9 finals applied Wed Nov 11 · records/PF/PA from Fantrax standings Tue Nov 10 ~1:11 PM PT, records identical on Nov 11 6:24–6:30 AM PT scrape. Week 6 finals applied Tue Oct 20 · records/PF/PA from Fantrax finals. Nov 1 6:25 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 1 4:08 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 2 6:29 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 3 6:23 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 10:18 AM PT roster sync: FAAB verified live, all 14 updated. Nov 5 6:24 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 6 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 6 4:09 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 8 9:27 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 8 4:10 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 9 6:31 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 10 1:11 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 11 6:24 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 11 4:09 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 12 6:23 AM PT roster sync: FAAB verified live, all 14 updated."
 }
