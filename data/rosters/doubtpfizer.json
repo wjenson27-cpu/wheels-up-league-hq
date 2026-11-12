@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-11-11 9:25 AM PT",
+  "asOf": "2026-11-11 4:09 PM PT",
   "faabLeft": 70,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -47,18 +47,22 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Hunter Henry — Q (active)",
     "Reed Blankenship — Q (IR slot)",
     "DeMarvion Overshown — Q (IR slot)"
   ],
-  "source": "Fantrax waivers capture 2026-11-11 ~9:20–9:25 AM PT (/workspace/fantrax-waivers-2026-11-11.json)",
+  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Hunter Henry — Q (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Hunter Henry — Q (active)",
     "Reed Blankenship — Q (IR slot)",
     "DeMarvion Overshown — Q (IR slot)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 9:25 AM PT"
+  "lastSynced": "2026-11-11 4:09 PM PT"
 }

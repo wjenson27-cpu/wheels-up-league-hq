@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-11-11 9:25 AM PT",
+  "asOf": "2026-11-11 4:09 PM PT",
   "faabLeft": 69,
   "startingQB": "Jared Goff",
   "roster": {
@@ -30,15 +30,15 @@
     ],
     "LB": [
       "Barrett Carter",
+      "Troy Dye",
       "Ernest Jones",
-      "Josiah Trotter",
-      "Troy Dye"
+      "Josiah Trotter"
     ],
     "DB": [
+      "Tony Adams",
       "Dane Belton",
-      "Cooper DeJean",
       "Amani Hooker",
-      "Tony Adams"
+      "Cooper DeJean"
     ],
     "IR": [
       "Saquon Barkley",
@@ -48,22 +48,31 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Jared Goff — Q (active)",
+    "Woody Marks — Q (active)",
+    "Dalton Kincaid — Q (active)",
     "Rashid Shaheed — Q (reserve)",
     "Jaylen Waddle — Q (IR slot)",
     "Brandon Jones — Q (IR slot)"
   ],
-  "source": "Fantrax waivers capture 2026-11-11 ~9:20–9:25 AM PT (/workspace/fantrax-waivers-2026-11-11.json)",
+  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
+    "Jared Goff — Q (active)",
+    "Woody Marks — Q (active)",
+    "Dalton Kincaid — Q (active)",
     "Rashid Shaheed — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Jared Goff — Q (active)",
+    "Woody Marks — Q (active)",
+    "Dalton Kincaid — Q (active)",
     "Rashid Shaheed — Q (reserve)",
     "Jaylen Waddle — Q (IR slot)",
     "Brandon Jones — Q (IR slot)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 9:25 AM PT"
+  "lastSynced": "2026-11-11 4:09 PM PT"
 }

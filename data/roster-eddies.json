@@ -2,25 +2,24 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-11 6:24 AM PT",
+  "asOf": "2026-11-11 4:09 PM PT",
   "faabLeft": 25,
-  "startingQB": "Trevor Lawrence",
+  "startingQB": "Brock Purdy",
   "roster": {
     "QB": [
-      "Trevor Lawrence"
+      "Brock Purdy"
     ],
     "RB": [
       "Breece Hall",
       "Zach Charbonnet",
-      "Cameron Skattebo",
       "Devin Singletary"
     ],
     "WR": [
+      "Malik Nabers",
       "Jalen Coker",
       "Chimere Dike",
       "Josh Downs",
-      "Ja'Kobi Lane",
-      "Jordyn Tyson"
+      "Ja'Kobi Lane"
     ],
     "TE": [
       "Brock Bowers"
@@ -52,7 +51,7 @@
     "Garrett Wilson — Q (IR slot)",
     "Kyle Hamilton — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-11 6:24 AM PT (/workspace/fantrax-raw-2026-11-11-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -63,5 +62,5 @@
     "Kyle Hamilton — Q (IR slot)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 6:24 AM PT"
+  "lastSynced": "2026-11-11 4:09 PM PT"
 }

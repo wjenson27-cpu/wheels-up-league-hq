@@ -2,34 +2,31 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-11-11 9:25 AM PT",
+  "asOf": "2026-11-11 4:09 PM PT",
   "faabLeft": 18,
-  "startingQB": "Patrick Mahomes",
+  "startingQB": null,
   "roster": {
-    "QB": [
-      "Patrick Mahomes"
-    ],
+    "QB": [],
     "RB": [
       "Derrick Henry",
       "Chase Brown",
-      "Bucky Irving",
-      "Josh Jacobs",
+      "Corey Kiner",
       "Samaje Perine",
-      "Corey Kiner"
+      "Bucky Irving"
     ],
     "WR": [
-      "Devaughn Vele",
+      "Tank Dell",
       "DK Metcalf",
-      "Marvin Harrison",
-      "Tank Dell"
+      "Devaughn Vele",
+      "Marvin Harrison"
     ],
     "TE": [
       "George Kittle",
       "Mike Gesicki"
     ],
     "DL": [
-      "Danielle Hunter",
-      "T.J. Watt"
+      "T.J. Watt",
+      "Danielle Hunter"
     ],
     "LB": [
       "Devin Lloyd",
@@ -43,26 +40,40 @@
       "Amik Robertson"
     ],
     "IR": [
+      "Patrick Mahomes",
+      "Josh Jacobs",
       "Alvin Kamara"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Patrick Mahomes — Q (active)",
-    "Josh Jacobs — O (active)"
+    "Tank Dell — Q (active)",
+    "Marvin Harrison — Q (reserve)",
+    "Patrick Mahomes — Q (IR slot)",
+    "Josh Jacobs — O (IR slot)",
+    "Alvin Kamara — Q (IR slot)",
+    "Kevin Byard — Q (active)",
+    "Quincy Williams — Q (active)"
   ],
-  "source": "Fantrax waivers capture 2026-11-11 ~9:20–9:25 AM PT (/workspace/fantrax-waivers-2026-11-11.json)",
+  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [
-    "Patrick Mahomes — Q (active)",
-    "Josh Jacobs — O (active)"
+    "Tank Dell — Q (active)",
+    "Marvin Harrison — Q (reserve)",
+    "Kevin Byard — Q (active)",
+    "Quincy Williams — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Patrick Mahomes — Q (active)",
-    "Josh Jacobs — O (active)"
+    "Tank Dell — Q (active)",
+    "Marvin Harrison — Q (reserve)",
+    "Patrick Mahomes — Q (IR slot)",
+    "Josh Jacobs — O (IR slot)",
+    "Alvin Kamara — Q (IR slot)",
+    "Kevin Byard — Q (active)",
+    "Quincy Williams — Q (active)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 9:25 AM PT"
+  "lastSynced": "2026-11-11 4:09 PM PT"
 }

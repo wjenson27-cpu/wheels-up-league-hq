@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-11 9:25 AM PT",
+  "asOf": "2026-11-11 4:09 PM PT",
   "faabLeft": 3,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -15,7 +15,7 @@
       "Tyler Allgeier",
       "Rico Dowdle",
       "Aaron Jones",
-      "Kyle Monangai",
+      "Jonathon Brooks",
       "D'Andre Swift"
     ],
     "WR": [
@@ -26,44 +26,52 @@
       "Darnell Washington"
     ],
     "DL": [
-      "Boye Mafe"
+      "Mason Graham"
     ],
     "LB": [
       "Jamien Sherwood",
       "Dre Greenlaw",
       "Carson Schwesinger",
+      "Nick Niemann",
       "Dee Winters"
     ],
     "DB": [
+      "Jaquan Brisker",
       "Jonas Sanker",
-      "Jaquan Brisker"
+      "Bryan Cook"
     ],
     "IR": [
-      "Jonathon Brooks",
+      "Kyle Monangai",
       "RJ Harvey",
       "David Montgomery"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Kyle Monangai — Q (reserve)",
-    "Jonathon Brooks — IR (IR slot)",
+    "Bhayshul Tuten — Q (active)",
+    "Jonathon Brooks — IR (reserve)",
+    "Kyle Monangai — Q (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "David Montgomery — Q (IR slot)"
+    "David Montgomery — Q (IR slot)",
+    "Carson Schwesinger — Q (active)"
   ],
-  "source": "Fantrax waivers capture 2026-11-11 ~9:20–9:25 AM PT (/workspace/fantrax-waivers-2026-11-11.json)",
+  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
-    "Kyle Monangai — Q (reserve)"
+    "Bhayshul Tuten — Q (active)",
+    "Jonathon Brooks — IR (reserve)",
+    "Carson Schwesinger — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Kyle Monangai — Q (reserve)",
-    "Jonathon Brooks — IR (IR slot)",
+    "Bhayshul Tuten — Q (active)",
+    "Jonathon Brooks — IR (reserve)",
+    "Kyle Monangai — Q (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "David Montgomery — Q (IR slot)"
+    "David Montgomery — Q (IR slot)",
+    "Carson Schwesinger — Q (active)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 9:25 AM PT"
+  "lastSynced": "2026-11-11 4:09 PM PT"
 }

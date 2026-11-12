@@ -2,25 +2,24 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-11 10:37 AM PT",
+  "asOf": "2026-11-11 4:09 PM PT",
   "faabLeft": 10,
   "startingQB": "Josh Allen",
   "roster": {
     "QB": [
-      "Bryce Young",
-      "Josh Allen"
+      "Josh Allen",
+      "Bryce Young"
     ],
     "RB": [
       "Kenneth Walker III",
-      "Jaylen Wright",
-      "Emmett Johnson"
+      "Emmett Johnson",
+      "Jaylen Wright"
     ],
     "WR": [
+      "Drake London",
       "Luther Burden",
       "Emeka Egbuka",
-      "Travis Hunter",
-      "De'Zhaun Stribling",
-      "Drake London"
+      "Travis Hunter"
     ],
     "TE": [
       "Sam LaPorta",
@@ -33,8 +32,8 @@
     "LB": [
       "Jacob Rodriguez",
       "Blake Cashman",
-      "Payton Wilson",
-      "Shemar James"
+      "Shemar James",
+      "Payton Wilson"
     ],
     "DB": [
       "Kamren Curl",
@@ -42,30 +41,36 @@
     ],
     "IR": [
       "Jacory Croskey-Merritt",
+      "De'Zhaun Stribling",
       "Micah Parsons"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Luther Burden — Q (active)",
     "Jaylen Wright — Q (active)",
+    "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
+    "De'Zhaun Stribling — IR (IR slot)",
+    "Blake Cashman — Q (active)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "source": "Fantrax completed-trades capture 2026-11-11 10:37 AM PT (/workspace/fantrax-trades-2026-11-11.json)",
+  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
-    "Luther Burden — Q (active)",
-    "Jaylen Wright — Q (active)"
+    "Jaylen Wright — Q (active)",
+    "Luther Burden — Q (reserve)",
+    "Blake Cashman — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Luther Burden — Q (active)",
     "Jaylen Wright — Q (active)",
+    "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
+    "De'Zhaun Stribling — IR (IR slot)",
+    "Blake Cashman — Q (active)",
     "Micah Parsons — IR (IR slot)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 10:37 AM PT"
+  "lastSynced": "2026-11-11 4:09 PM PT"
 }

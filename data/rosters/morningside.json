@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-11-11 6:24 AM PT",
+  "asOf": "2026-11-11 4:09 PM PT",
   "faabLeft": 8,
   "startingQB": "Drew Lock",
   "roster": {
@@ -47,26 +47,32 @@
   "notes": "",
   "injuryFlags": [
     "Drew Lock — Q (active)",
+    "Denzel Boston — Q (active)",
     "Deebo Samuel — Q (active)",
     "Xavier Worthy — Q (IR slot)",
+    "Lukas Van Ness — Q (active)",
     "Derwin James — IR (IR slot)",
     "Bobby Okereke — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-11 6:24 AM PT (/workspace/fantrax-raw-2026-11-11-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
     "Drew Lock — Q (active)",
-    "Deebo Samuel — Q (active)"
+    "Denzel Boston — Q (active)",
+    "Deebo Samuel — Q (active)",
+    "Lukas Van Ness — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Drew Lock — Q (active)",
+    "Denzel Boston — Q (active)",
     "Deebo Samuel — Q (active)",
     "Xavier Worthy — Q (IR slot)",
+    "Lukas Van Ness — Q (active)",
     "Derwin James — IR (IR slot)",
     "Bobby Okereke — Q (IR slot)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 6:24 AM PT"
+  "lastSynced": "2026-11-11 4:09 PM PT"
 }

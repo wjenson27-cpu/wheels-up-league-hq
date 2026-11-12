@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-11-11 6:24 AM PT",
+  "asOf": "2026-11-11 4:09 PM PT",
   "faabLeft": 10,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -46,16 +46,29 @@
   },
   "notes": "",
   "injuryFlags": [
-    "DeVonta Smith — Q (IR slot)"
+    "Omar Cooper Jr. — Q (reserve)",
+    "DeVonta Smith — Q (IR slot)",
+    "Andrew Wingard — Q (active)",
+    "Brian Branch — Q (active)",
+    "Divine Deablo — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-11 6:24 AM PT (/workspace/fantrax-raw-2026-11-11-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-11 4:09 PM PT (/workspace/fantrax-raw-2026-11-11-pm-normalized.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Omar Cooper Jr. — Q (reserve)",
+    "Andrew Wingard — Q (active)",
+    "Brian Branch — Q (active)",
+    "Divine Deablo — Q (reserve)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "DeVonta Smith — Q (IR slot)"
+    "Omar Cooper Jr. — Q (reserve)",
+    "DeVonta Smith — Q (IR slot)",
+    "Andrew Wingard — Q (active)",
+    "Brian Branch — Q (active)",
+    "Divine Deablo — Q (reserve)"
   ],
   "updated": "2026-11-11",
-  "lastSynced": "2026-11-11 6:24 AM PT"
+  "lastSynced": "2026-11-11 4:09 PM PT"
 }
