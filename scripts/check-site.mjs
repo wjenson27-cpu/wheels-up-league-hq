@@ -1138,12 +1138,17 @@ async function checkPages() {
             }
             const bars = await page.evaluate(() => ({
               filled: document.querySelectorAll(".winbar:not(.winbar-empty)").length,
+              empty: document.querySelectorAll(".winbar.winbar-empty").length,
               unset: document.querySelectorAll("[data-lineup='unset']").length
             }));
             const unsetExpected = (live.matchups || []).reduce((n, game) => {
               return n + [game.sideA, game.sideB].filter((side) => side && side.lineupSet === false).length;
             }, 0);
-            if (bars.filled !== (live.matchups || []).length) errors.push(`filled win bars ${bars.filled}`);
+            const withProb = (live.matchups || []).filter((game) => game && game.winProb).length;
+            const slate = (live.matchups || []).length;
+            /* A scheduled week has null scores, and the formula leaves that bar blank. */
+            if (bars.filled !== withProb) errors.push(`filled win bars ${bars.filled}, file has ${withProb}`);
+            if (bars.empty !== slate - withProb) errors.push(`empty win bars ${bars.empty}, file has ${slate - withProb} without a winProb`);
             if (bars.unset !== unsetExpected) errors.push(`unset-lineup rows ${bars.unset}, file has ${unsetExpected}`);
             if (unsetExpected && !/No lineup set/.test(info.text)) errors.push("empty lineup is not labeled");
             if (!unsetExpected && /No lineup set/.test(info.text)) errors.push("empty lineup labeled when every lineup is set");
