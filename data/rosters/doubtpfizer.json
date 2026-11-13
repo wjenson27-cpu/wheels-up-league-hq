@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-11-12 6:23 AM PT",
+  "asOf": "2026-11-12 4:01 PM PT",
   "faabLeft": 70,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -31,27 +31,25 @@
     ],
     "LB": [
       "Nakobe Dean",
-      "Alex Singleton",
-      "Sonny Styles"
+      "DeMarvion Overshown",
+      "Sonny Styles",
+      "Alex Singleton"
     ],
     "DB": [
       "Kamari Lassiter",
       "Malik Mustapha",
-      "Ji'Ayir Brown",
-      "Hunter Wohler"
+      "Ji'Ayir Brown"
     ],
     "IR": [
-      "Reed Blankenship",
-      "DeMarvion Overshown"
+      "Reed Blankenship"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Hunter Henry — Q (active)",
-    "Reed Blankenship — Q (IR slot)",
-    "DeMarvion Overshown — Q (IR slot)"
+    "Reed Blankenship — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-12 6:23 AM PT (/workspace/fantrax-raw-2026-11-12-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-12 4:01 PM PT (/workspace/fantrax-raw-2026-11-12-pm-normalized.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
   "lineupFlags": [
     "Hunter Henry — Q (active)"
@@ -60,9 +58,8 @@
   "pendingClaims": [],
   "flags": [
     "Hunter Henry — Q (active)",
-    "Reed Blankenship — Q (IR slot)",
-    "DeMarvion Overshown — Q (IR slot)"
+    "Reed Blankenship — Q (IR slot)"
   ],
   "updated": "2026-11-12",
-  "lastSynced": "2026-11-12 6:23 AM PT"
+  "lastSynced": "2026-11-12 4:01 PM PT"
 }

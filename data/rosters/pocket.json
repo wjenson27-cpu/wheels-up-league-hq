@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-11-12 6:23 AM PT",
+  "asOf": "2026-11-12 4:01 PM PT",
   "faabLeft": 69,
   "startingQB": "Jared Goff",
   "roster": {
@@ -21,9 +21,9 @@
       "Rashid Shaheed"
     ],
     "TE": [
-      "Trey McBride",
+      "Chigoziem Okonkwo",
       "Dalton Kincaid",
-      "Chigoziem Okonkwo"
+      "Trey McBride"
     ],
     "DL": [
       "Will Anderson Jr."
@@ -48,28 +48,28 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Jared Goff — Q (active)",
     "Woody Marks — Q (active)",
     "Dalton Kincaid — Q (active)",
     "Jaylen Waddle — Q (IR slot)",
+    "Will Anderson Jr. — Q (active)",
     "Brandon Jones — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-12 6:23 AM PT (/workspace/fantrax-raw-2026-11-12-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-12 4:01 PM PT (/workspace/fantrax-raw-2026-11-12-pm-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Jared Goff — Q (active)",
     "Woody Marks — Q (active)",
-    "Dalton Kincaid — Q (active)"
+    "Dalton Kincaid — Q (active)",
+    "Will Anderson Jr. — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Jared Goff — Q (active)",
     "Woody Marks — Q (active)",
     "Dalton Kincaid — Q (active)",
     "Jaylen Waddle — Q (IR slot)",
+    "Will Anderson Jr. — Q (active)",
     "Brandon Jones — Q (IR slot)"
   ],
   "updated": "2026-11-12",
-  "lastSynced": "2026-11-12 6:23 AM PT"
+  "lastSynced": "2026-11-12 4:01 PM PT"
 }

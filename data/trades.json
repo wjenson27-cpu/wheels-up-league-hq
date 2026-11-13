@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-12",
-  "source": "Fantrax roster sync 2026-11-12 6:23 AM PT (/workspace/fantrax-raw-2026-11-12-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-12 4:01 PM PT (/workspace/fantrax-raw-2026-11-12-pm-normalized.json)",
   "season": 2026,
   "trades": [
     {
@@ -949,8 +949,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-11-12 6:23 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-11-12 4:01 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Saltese↔Ultron Antonio Williams for Chris Rodriguez Jr. (Nov 11 5:13 PM); Hypersecretors↔TTAB Bryce Young for $7 FAAB (Nov 11 5:13 PM); Eagleridge↔Substation Trevor Lawrence+Cameron Skattebo+Jordyn Tyson for Brock Purdy+Malik Nabers (Nov 11 2:54 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-12 6:23 AM PT"
+  "lastSynced": "2026-11-12 4:01 PM PT"
 }

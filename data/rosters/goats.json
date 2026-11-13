@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Mike Heff",
-  "asOf": "2026-11-12 6:23 AM PT",
+  "asOf": "2026-11-12 4:01 PM PT",
   "faabLeft": 18,
   "startingQB": null,
   "roster": {
@@ -47,31 +47,29 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Tank Dell — Q (active)",
     "Marvin Harrison — Q (reserve)",
     "Josh Jacobs — O (IR slot)",
-    "Alvin Kamara — Q (IR slot)",
     "Kevin Byard — Q (active)",
-    "Quincy Williams — Q (active)"
+    "Quincy Williams — Q (active)",
+    "Danielle Hunter — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-12 6:23 AM PT (/workspace/fantrax-raw-2026-11-12-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-12 4:01 PM PT (/workspace/fantrax-raw-2026-11-12-pm-normalized.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [
-    "Tank Dell — Q (active)",
     "Marvin Harrison — Q (reserve)",
     "Kevin Byard — Q (active)",
-    "Quincy Williams — Q (active)"
+    "Quincy Williams — Q (active)",
+    "Danielle Hunter — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Tank Dell — Q (active)",
     "Marvin Harrison — Q (reserve)",
     "Josh Jacobs — O (IR slot)",
-    "Alvin Kamara — Q (IR slot)",
     "Kevin Byard — Q (active)",
-    "Quincy Williams — Q (active)"
+    "Quincy Williams — Q (active)",
+    "Danielle Hunter — Q (reserve)"
   ],
   "updated": "2026-11-12",
-  "lastSynced": "2026-11-12 6:23 AM PT"
+  "lastSynced": "2026-11-12 4:01 PM PT"
 }
