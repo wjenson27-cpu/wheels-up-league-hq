@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-11-13 4:11 PM PT",
+  "asOf": "2026-11-14 5:57 AM PT",
   "faabLeft": 7,
   "startingQB": "Drew Lock",
   "roster": {
@@ -55,7 +55,7 @@
     "Derwin James — IR (IR slot)",
     "Bobby Okereke — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-14 5:57 AM PT (/workspace/fantrax-raw-2026-11-14-am-normalized.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
     "Denzel Boston — Q (active)",
@@ -73,6 +73,6 @@
     "Derwin James — IR (IR slot)",
     "Bobby Okereke — O (IR slot)"
   ],
-  "updated": "2026-11-13",
-  "lastSynced": "2026-11-13 4:11 PM PT"
+  "updated": "2026-11-14",
+  "lastSynced": "2026-11-14 5:57 AM PT"
 }

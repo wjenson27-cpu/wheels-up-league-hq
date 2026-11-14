@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-13 4:11 PM PT",
+  "asOf": "2026-11-14 5:57 AM PT",
   "faabLeft": 3,
   "startingQB": "Aaron Rodgers",
   "roster": {
@@ -16,8 +16,8 @@
       "Rico Dowdle",
       "Aaron Jones",
       "Chris Rodriguez Jr.",
-      "D'Andre Swift",
-      "Jonathon Brooks"
+      "David Montgomery",
+      "D'Andre Swift"
     ],
     "WR": [
       "Adonai Mitchell"
@@ -41,37 +41,37 @@
       "Bryan Cook"
     ],
     "IR": [
-      "David Montgomery",
       "Kyle Monangai",
+      "Jonathon Brooks",
       "RJ Harvey"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Adonai Mitchell — Q (active)",
-    "David Montgomery — Q (IR slot)",
+    "David Montgomery — Q (reserve)",
     "Kyle Monangai — Q (IR slot)",
-    "Jonathon Brooks — IR (reserve)",
+    "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
     "Zack Baun — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-14 5:57 AM PT (/workspace/fantrax-raw-2026-11-14-am-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "Adonai Mitchell — Q (active)",
-    "Jonathon Brooks — IR (reserve)",
+    "David Montgomery — Q (reserve)",
     "Zack Baun — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Adonai Mitchell — Q (active)",
-    "David Montgomery — Q (IR slot)",
+    "David Montgomery — Q (reserve)",
     "Kyle Monangai — Q (IR slot)",
-    "Jonathon Brooks — IR (reserve)",
+    "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
     "Zack Baun — Q (reserve)"
   ],
-  "updated": "2026-11-13",
-  "lastSynced": "2026-11-13 4:11 PM PT"
+  "updated": "2026-11-14",
+  "lastSynced": "2026-11-14 5:57 AM PT"
 }

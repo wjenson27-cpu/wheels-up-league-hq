@@ -2,7 +2,7 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-11-13 4:11 PM PT",
+  "asOf": "2026-11-14 5:57 AM PT",
   "faabLeft": 44,
   "startingQB": "Jordan Love",
   "roster": {
@@ -53,7 +53,7 @@
     "Azeez Al-Shaair — O (IR slot)",
     "Zaire Franklin — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-14 5:57 AM PT (/workspace/fantrax-raw-2026-11-14-am-normalized.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
   "lineupFlags": [
     "A.J. Brown — Q (active)"
@@ -66,6 +66,6 @@
     "Azeez Al-Shaair — O (IR slot)",
     "Zaire Franklin — Q (IR slot)"
   ],
-  "updated": "2026-11-13",
-  "lastSynced": "2026-11-13 4:11 PM PT"
+  "updated": "2026-11-14",
+  "lastSynced": "2026-11-14 5:57 AM PT"
 }

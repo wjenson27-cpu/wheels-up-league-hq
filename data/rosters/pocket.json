@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-11-13 4:11 PM PT",
+  "asOf": "2026-11-14 5:57 AM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -52,7 +52,7 @@
     "Will Anderson Jr. — Q (active)",
     "Brandon Jones — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-14 5:57 AM PT (/workspace/fantrax-raw-2026-11-14-am-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
     "Will Anderson Jr. — Q (active)"
@@ -64,6 +64,6 @@
     "Will Anderson Jr. — Q (active)",
     "Brandon Jones — Q (IR slot)"
   ],
-  "updated": "2026-11-13",
-  "lastSynced": "2026-11-13 4:11 PM PT"
+  "updated": "2026-11-14",
+  "lastSynced": "2026-11-14 5:57 AM PT"
 }

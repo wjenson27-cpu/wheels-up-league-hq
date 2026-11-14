@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-13 4:11 PM PT",
+  "asOf": "2026-11-14 5:57 AM PT",
   "faabLeft": 17,
   "startingQB": "Josh Allen",
   "roster": {
@@ -13,7 +13,8 @@
       "Kenneth Walker III",
       "Emmett Johnson",
       "Jaylen Wright",
-      "Kaleb Johnson"
+      "Kaleb Johnson",
+      "Seth McGowan"
     ],
     "WR": [
       "Drake London",
@@ -32,8 +33,7 @@
     "LB": [
       "Jacob Rodriguez",
       "Shemar James",
-      "Payton Wilson",
-      "Blake Cashman"
+      "Payton Wilson"
     ],
     "DB": [
       "Nick Emmanwori",
@@ -42,8 +42,8 @@
     ],
     "IR": [
       "Jacory Croskey-Merritt",
-      "De'Zhaun Stribling",
-      "Micah Parsons"
+      "Micah Parsons",
+      "Blake Cashman"
     ]
   },
   "notes": "",
@@ -51,18 +51,16 @@
     "Kenneth Walker III — Q (active)",
     "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
-    "De'Zhaun Stribling — IR (IR slot)",
-    "Blake Cashman — O (reserve)",
-    "Kamren Curl — Q (active)",
-    "Micah Parsons — IR (IR slot)"
+    "Kamren Curl — Q (reserve)",
+    "Micah Parsons — IR (IR slot)",
+    "Blake Cashman — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-14 5:57 AM PT (/workspace/fantrax-raw-2026-11-14-am-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
     "Kenneth Walker III — Q (active)",
     "Luther Burden — Q (reserve)",
-    "Blake Cashman — O (reserve)",
-    "Kamren Curl — Q (active)"
+    "Kamren Curl — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -70,11 +68,10 @@
     "Kenneth Walker III — Q (active)",
     "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
-    "De'Zhaun Stribling — IR (IR slot)",
-    "Blake Cashman — O (reserve)",
-    "Kamren Curl — Q (active)",
-    "Micah Parsons — IR (IR slot)"
+    "Kamren Curl — Q (reserve)",
+    "Micah Parsons — IR (IR slot)",
+    "Blake Cashman — O (IR slot)"
   ],
-  "updated": "2026-11-13",
-  "lastSynced": "2026-11-13 4:11 PM PT"
+  "updated": "2026-11-14",
+  "lastSynced": "2026-11-14 5:57 AM PT"
 }
