@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-13",
-  "source": "Fantrax roster sync 2026-11-13 6:23 AM PT (/workspace/fantrax-raw-2026-11-13-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
   "season": 2026,
   "trades": [
     {
@@ -851,7 +851,7 @@
     {
       "teamId": "eddies",
       "team": "Eagle Ridge Eddies",
-      "lastUpdated": "Last Updated: Nov 10 6:07 PM",
+      "lastUpdated": "Nov 10 6:07 PM",
       "players": [
         "Jalen Coker WR CAR",
         "Josh Downs WR KC",
@@ -863,23 +863,26 @@
     {
       "teamId": "morningside",
       "team": "Morningside Muff Divers",
-      "lastUpdated": "Last Updated: Oct 7 9:30 AM",
+      "lastUpdated": "Oct 7 9:30 AM",
       "players": [
         "Derrick Barnes LB DET",
         "Bobby Okereke LB CAR",
         "Pete Werner LB NO"
       ],
       "note": null,
-      "positionsOffered": "LB",
-      "positionsNeeded": "RB"
+      "positionsOffered": [
+        "LB"
+      ],
+      "positionsNeeded": [
+        "RB"
+      ]
     },
     {
       "teamId": "newman",
       "team": "Newman Lake Sleep Paralysis Demons",
-      "lastUpdated": "Last Updated: Nov 10 1:27 PM",
+      "lastUpdated": "Nov 13 1:03 PM",
       "players": [
         "Jordan Love QB GB",
-        "TreVeyon Henderson RB NE",
         "Jordan Mason RB MIN",
         "Jonathan Taylor RB IND",
         "Davante Adams WR LAR",
@@ -903,7 +906,7 @@
     {
       "teamId": "pocket",
       "team": "Pocket Agents",
-      "lastUpdated": "Last Updated: Oct 2 4:24 PM",
+      "lastUpdated": "Oct 2 4:24 PM",
       "players": [
         "Jared Goff QB DET",
         "Tyler Shough QB NO"
@@ -913,25 +916,23 @@
     {
       "teamId": "saltese",
       "team": "Saltese Slamm",
-      "lastUpdated": "Last Updated: Nov 10 2:17 PM",
+      "lastUpdated": "Nov 13 3:00 PM",
       "players": [
-        "D'Andre Swift RB CHI",
-        "Carson Schwesinger LB CLE",
-        "Dee Winters LB DAL"
+        "D'Andre Swift RB CHI"
       ],
       "note": null
     },
     {
       "teamId": "substation",
       "team": "Substation",
-      "lastUpdated": "Last Updated: Sep 30 8:25 AM",
+      "lastUpdated": "Sep 30 8:25 AM",
       "players": [],
       "note": null
     },
     {
       "teamId": "ttab",
       "team": "TTAB",
-      "lastUpdated": "Last Updated: Nov 3 7:21 AM",
+      "lastUpdated": "Nov 3 7:21 AM",
       "players": [
         "Javonte Williams RB DAL",
         "Christian Watson WR GB",
@@ -945,8 +946,8 @@
     }
   ],
   "leaderboard_note": "As of early HQ: Nate led all-2026 deal count (incl handshake). Fantrax official player/pick deals concentrated with Aga/Chase/Larry.",
-  "pending_note": "Pending trades 0 (Fantrax 2026-11-13 6:23 AM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
+  "pending_note": "Pending trades 0 (Fantrax 2026-11-13 4:11 PM PT roster sync). Eagle Ridge Eddies exclusion standing: no pending offers involving Eddies in public HQ.",
   "fantrax_completed_view": "Newest official: Saltese↔Ultron Antonio Williams for Chris Rodriguez Jr. (Nov 11 5:13 PM); Hypersecretors↔TTAB Bryce Young for $7 FAAB (Nov 11 5:13 PM); Eagleridge↔Substation Trevor Lawrence+Cameron Skattebo+Jordyn Tyson for Brock Purdy+Malik Nabers (Nov 11 2:54 PM).",
   "hqComplete": true,
-  "lastSynced": "2026-11-13 6:23 AM PT"
+  "lastSynced": "2026-11-13 4:11 PM PT"
 }

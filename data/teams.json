@@ -225,7 +225,7 @@
       "owner": "Tim Brandle",
       "abbrev": "MMD",
       "record": "3-6-0",
-      "faab": 8,
+      "faab": 7,
       "projW1": 176.7,
       "powerRank": 10,
       "note": "Tim Brandle — stars or bust. | Sep 28: −Devon Achane ($0/null). | Sep 30 W4 waivers/FA: +Ollie Gordon $65; +Raheim Sanders $4; +A.J. Dillon $2; +Roman Wilson $2. FAAB $42. | Oct 7 W5 waivers/FA: +Aaron Rodgers (−Gabe Jacas). FAAB $42. | Oct 7 FA: +Tyler Higbee/−Cedric Gray. | Oct 8: −Jordan Mason.",
@@ -297,7 +297,7 @@
       "owner": "Kellen Olson",
       "abbrev": "PKT",
       "record": "5-4-0",
-      "faab": 69,
+      "faab": 66,
       "projW1": 169.07,
       "powerRank": 13,
       "note": "Kellen Olson (Host) — Week 1 L. FAAB $111. Sep 19: +Teddye Buchanan/−Jake Hansen; Sep 18: +Marvin Mims $0/−Kyler Gordon. See transactions. | Sep 25: −Marvin Mims; +Brandon Jones (Dennis churn). | Sep 30 W4 waivers/FA: +Jonah Coleman (−Ty Okada); +Chris Johnson (−Teddye Buchanan). FAAB $111. | Oct 5: −Chris Bell ($0/null). | Oct 7 W5 waivers/FA: +Jonah Coleman; +Jalen Pitre. FAAB $111. | Oct 8: traded Oluokun+$10 FAAB to Ultron for Hooker+Barkley; −Gainwell. FAAB $101.",
@@ -345,6 +345,6 @@
   "standingsSource": "Fantrax Week 9 finals (standings page Tue Nov 10 2026 approximately 1:11 PM PT); records cross-checked vs Fantrax records scrape Wed Nov 11 6:24–6:30 AM PT",
   "week": 10,
   "hqNote": "Week 6 FINAL: Eddies beat Substation 259.5–227.5 (4-2, four straight). Kitty Pocket 262.5; survivor TTAB 186.5 off the bus. Last Ride: Saltese beat Ultron 259–205.5 (Ultron out). Pocket, LAB and Goats share 5-1. OMVP Jaxon Smith-Njigba 197 / DMVP Nakobe Dean 163.",
-  "source": "Fantrax roster sync 2026-11-13 6:23 AM PT (/workspace/fantrax-raw-2026-11-13-am-normalized.json)",
-  "note": "Week 9 finals applied Wed Nov 11 · records/PF/PA from Fantrax standings Tue Nov 10 ~1:11 PM PT, records identical on Nov 11 6:24–6:30 AM PT scrape. Week 6 finals applied Tue Oct 20 · records/PF/PA from Fantrax finals. Nov 1 6:25 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 1 4:08 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 2 6:29 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 3 6:23 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 10:18 AM PT roster sync: FAAB verified live, all 14 updated. Nov 5 6:24 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 6 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 6 4:09 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 8 9:27 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 8 4:10 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 9 6:31 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 10 1:11 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 11 6:24 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 11 4:09 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 12 6:23 AM PT roster sync: FAAB verified live, all 14 updated. Nov 12 4:01 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 13 6:23 AM PT roster sync: FAAB verified live, all 14 unchanged."
+  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
+  "note": "Week 9 finals applied Wed Nov 11 · records/PF/PA from Fantrax standings Tue Nov 10 ~1:11 PM PT, records identical on Nov 11 6:24–6:30 AM PT scrape. Week 6 finals applied Tue Oct 20 · records/PF/PA from Fantrax finals. Nov 1 6:25 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 1 4:08 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 2 6:29 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 3 6:23 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 4 10:18 AM PT roster sync: FAAB verified live, all 14 updated. Nov 5 6:24 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 6 6:26 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 6 4:09 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 8 9:27 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 8 4:10 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 9 6:31 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 10 1:11 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 11 6:24 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 11 4:09 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 12 6:23 AM PT roster sync: FAAB verified live, all 14 updated. Nov 12 4:01 PM PT roster sync: FAAB verified live, all 14 unchanged. Nov 13 6:23 AM PT roster sync: FAAB verified live, all 14 unchanged. Nov 13 4:11 PM PT roster sync: FAAB verified live, all 14 updated."
 }

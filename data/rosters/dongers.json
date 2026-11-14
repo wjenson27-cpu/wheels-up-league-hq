@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-11-13 6:23 AM PT",
+  "asOf": "2026-11-13 4:11 PM PT",
   "faabLeft": 1,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -45,26 +45,24 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Tony Pollard — Q (active)",
-    "T.J. Hockenson — Q (active)",
+    "T.J. Hockenson — O (active)",
     "Ladd McConkey — Q (reserve)",
-    "KaVontae Turpin — Q (IR slot)"
+    "Xavier McKinney — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-13 6:23 AM PT (/workspace/fantrax-raw-2026-11-13-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
-    "Tony Pollard — Q (active)",
-    "T.J. Hockenson — Q (active)",
-    "Ladd McConkey — Q (reserve)"
+    "T.J. Hockenson — O (active)",
+    "Ladd McConkey — Q (reserve)",
+    "Xavier McKinney — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Tony Pollard — Q (active)",
-    "T.J. Hockenson — Q (active)",
+    "T.J. Hockenson — O (active)",
     "Ladd McConkey — Q (reserve)",
-    "KaVontae Turpin — Q (IR slot)"
+    "Xavier McKinney — Q (active)"
   ],
   "updated": "2026-11-13",
-  "lastSynced": "2026-11-13 6:23 AM PT"
+  "lastSynced": "2026-11-13 4:11 PM PT"
 }

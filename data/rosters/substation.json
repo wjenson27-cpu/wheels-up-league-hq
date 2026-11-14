@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-11-13 6:23 AM PT",
+  "asOf": "2026-11-13 4:11 PM PT",
   "faabLeft": 5,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -12,7 +12,6 @@
     "RB": [
       "Cameron Skattebo",
       "Kenneth Gainwell",
-      "Justice Hill",
       "Rachaad White"
     ],
     "WR": [
@@ -20,10 +19,10 @@
       "Germie Bernard",
       "KC Concepcion",
       "Jordyn Tyson",
-      "Tre Tucker"
+      "Jakobi Meyers"
     ],
     "TE": [
-      "Tucker Kraft",
+      "Eli Raridon",
       "Brevyn Spann-Ford"
     ],
     "DL": [
@@ -32,36 +31,41 @@
     "LB": [
       "Malcolm Rodriguez",
       "Kaden Elliss",
-      "Henry To'oTo'o",
-      "Eric Wilson"
+      "Dre Greenlaw",
+      "Carson Schwesinger"
     ],
     "DB": [
       "Jeremy Chinn",
       "Jalen Pitre",
+      "DeShon Elliott",
       "Tykee Smith"
     ],
     "IR": [
-      "Jakobi Meyers",
-      "Zack Baun",
+      "Tank Bigsby",
+      "Keaton Mitchell",
       "Jack Campbell"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Jakobi Meyers — Q (IR slot)",
-    "Zack Baun — Q (IR slot)",
+    "Tank Bigsby — IR (IR slot)",
+    "Keaton Mitchell — Q (IR slot)",
+    "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-13 6:23 AM PT (/workspace/fantrax-raw-2026-11-13-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Dre Greenlaw — Q (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Jakobi Meyers — Q (IR slot)",
-    "Zack Baun — Q (IR slot)",
+    "Tank Bigsby — IR (IR slot)",
+    "Keaton Mitchell — Q (IR slot)",
+    "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)"
   ],
   "updated": "2026-11-13",
-  "lastSynced": "2026-11-13 6:23 AM PT"
+  "lastSynced": "2026-11-13 4:11 PM PT"
 }

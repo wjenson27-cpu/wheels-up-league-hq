@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-13 6:23 AM PT",
+  "asOf": "2026-11-13 4:11 PM PT",
   "faabLeft": 25,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -48,10 +48,9 @@
   "notes": "",
   "injuryFlags": [
     "Garrett Wilson — Q (active)",
-    "Colby Parkinson — Q (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-13 6:23 AM PT (/workspace/fantrax-raw-2026-11-13-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Garrett Wilson — Q (active)"
@@ -60,9 +59,8 @@
   "pendingClaims": [],
   "flags": [
     "Garrett Wilson — Q (active)",
-    "Colby Parkinson — Q (IR slot)",
     "Travis Etienne — IR (IR slot)"
   ],
   "updated": "2026-11-13",
-  "lastSynced": "2026-11-13 6:23 AM PT"
+  "lastSynced": "2026-11-13 4:11 PM PT"
 }

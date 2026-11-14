@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-13 6:23 AM PT",
+  "asOf": "2026-11-13 4:11 PM PT",
   "faabLeft": 17,
   "startingQB": "Josh Allen",
   "roster": {
@@ -48,30 +48,33 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Kenneth Walker III — Q (active)",
     "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
     "De'Zhaun Stribling — IR (IR slot)",
+    "Blake Cashman — O (reserve)",
     "Kamren Curl — Q (active)",
-    "Blake Cashman — Q (reserve)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-13 6:23 AM PT (/workspace/fantrax-raw-2026-11-13-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-13 4:11 PM PT (/workspace/fantrax-raw-2026-11-13-pm-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
+    "Kenneth Walker III — Q (active)",
     "Luther Burden — Q (reserve)",
-    "Kamren Curl — Q (active)",
-    "Blake Cashman — Q (reserve)"
+    "Blake Cashman — O (reserve)",
+    "Kamren Curl — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Kenneth Walker III — Q (active)",
     "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
     "De'Zhaun Stribling — IR (IR slot)",
+    "Blake Cashman — O (reserve)",
     "Kamren Curl — Q (active)",
-    "Blake Cashman — Q (reserve)",
     "Micah Parsons — IR (IR slot)"
   ],
   "updated": "2026-11-13",
-  "lastSynced": "2026-11-13 6:23 AM PT"
+  "lastSynced": "2026-11-13 4:11 PM PT"
 }
