@@ -95,6 +95,26 @@
     },
     {
       "date": "2026-11-13",
+      "team": "Saltese Slamm",
+      "type": "TRADE",
+      "summary": "Saltese Slamm sent Carson Schwesinger (LB), Dre Greenlaw (LB) to Substation for Eric Wilson (LB), Henry To'oTo'o (LB), Zack Baun (LB), Tucker Kraft (TE)",
+      "time": "2:44 PM PT",
+      "player": "Carson Schwesinger",
+      "playerMeta": "LB-CLE",
+      "dropped": null,
+      "droppedMeta": null,
+      "bid": null,
+      "period": "Week 10",
+      "counterparty": "Substation",
+      "received": [
+        "Eric Wilson (LB)",
+        "Henry To'oTo'o (LB)",
+        "Zack Baun (LB)",
+        "Tucker Kraft (TE)"
+      ]
+    },
+    {
+      "date": "2026-11-13",
       "team": "Substation",
       "type": "ADD",
       "summary": "Added Eli Raridon (TE-NE); bid unknown",
