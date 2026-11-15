@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-14 4:05 PM PT",
+  "asOf": "2026-11-15 5:47 AM PT",
   "faabLeft": 25,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -30,27 +30,30 @@
     "LB": [
       "Fred Warner",
       "Jordyn Brooks",
-      "Frankie Luvu",
       "Cedric Gray",
+      "Frankie Luvu",
       "Trenton Simpson"
     ],
     "DB": [
-      "Kyle Hamilton",
       "Quentin Lake",
       "Evan Williams",
-      "Cole Bishop"
+      "Cole Bishop",
+      "Kyle Hamilton"
     ],
     "IR": [
-      "Colby Parkinson",
-      "Travis Etienne"
+      "De'Zhaun Stribling",
+      "Travis Etienne",
+      "Mansoor Delane"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Garrett Wilson — Q (active)",
-    "Travis Etienne — Q (IR slot)"
+    "De'Zhaun Stribling — IR (IR slot)",
+    "Travis Etienne — Q (IR slot)",
+    "Mansoor Delane — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-14 4:05 PM PT (/workspace/fantrax-raw-2026-11-14-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-15 5:47 AM PT (/workspace/fantrax-raw-2026-11-15-am-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Garrett Wilson — Q (active)"
@@ -59,8 +62,10 @@
   "pendingClaims": [],
   "flags": [
     "Garrett Wilson — Q (active)",
-    "Travis Etienne — Q (IR slot)"
+    "De'Zhaun Stribling — IR (IR slot)",
+    "Travis Etienne — Q (IR slot)",
+    "Mansoor Delane — Q (IR slot)"
   ],
-  "updated": "2026-11-14",
-  "lastSynced": "2026-11-14 4:05 PM PT"
+  "updated": "2026-11-15",
+  "lastSynced": "2026-11-15 5:47 AM PT"
 }

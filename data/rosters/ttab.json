@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-11-14 4:05 PM PT",
+  "asOf": "2026-11-15 5:47 AM PT",
   "faabLeft": 3,
   "startingQB": "Bryce Young",
   "roster": {
@@ -18,6 +18,7 @@
       "Malik Washington",
       "Christian Watson",
       "Jameson Williams",
+      "Omar Cooper Jr.",
       "Ryan Flournoy"
     ],
     "TE": [
@@ -37,35 +38,34 @@
     "DB": [
       "Brian Branch",
       "Caleb Downs",
-      "Andrew Wingard",
       "Dillon Thieneman"
     ],
     "IR": [
-      "Omar Cooper Jr.",
       "DeVonta Smith",
+      "Andrew Wingard",
       "Divine Deablo"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Omar Cooper Jr. — Q (IR slot)",
+    "Omar Cooper Jr. — Q (reserve)",
     "DeVonta Smith — Q (IR slot)",
-    "Andrew Wingard — Q (reserve)",
+    "Andrew Wingard — Q (IR slot)",
     "Divine Deablo — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-14 4:05 PM PT (/workspace/fantrax-raw-2026-11-14-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-15 5:47 AM PT (/workspace/fantrax-raw-2026-11-15-am-normalized.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
-    "Andrew Wingard — Q (reserve)"
+    "Omar Cooper Jr. — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Omar Cooper Jr. — Q (IR slot)",
+    "Omar Cooper Jr. — Q (reserve)",
     "DeVonta Smith — Q (IR slot)",
-    "Andrew Wingard — Q (reserve)",
+    "Andrew Wingard — Q (IR slot)",
     "Divine Deablo — O (IR slot)"
   ],
-  "updated": "2026-11-14",
-  "lastSynced": "2026-11-14 4:05 PM PT"
+  "updated": "2026-11-15",
+  "lastSynced": "2026-11-15 5:47 AM PT"
 }

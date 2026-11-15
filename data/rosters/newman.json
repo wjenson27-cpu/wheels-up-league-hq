@@ -2,12 +2,13 @@
   "teamId": "newman",
   "teamName": "Newman Lake Sleep Paralysis Demons",
   "owner": "Ryan McCallum",
-  "asOf": "2026-11-14 4:05 PM PT",
+  "asOf": "2026-11-15 5:47 AM PT",
   "faabLeft": 44,
   "startingQB": "Jordan Love",
   "roster": {
     "QB": [
-      "Jordan Love"
+      "Jordan Love",
+      "Bo Nix"
     ],
     "RB": [
       "Jonathan Taylor",
@@ -22,8 +23,7 @@
     ],
     "TE": [
       "Tyler Warren",
-      "Juwan Johnson",
-      "Michael Mayer"
+      "Juwan Johnson"
     ],
     "DL": [
       "Andrew Van Ginkel"
@@ -48,24 +48,20 @@
   },
   "notes": "",
   "injuryFlags": [
-    "A.J. Brown — Q (active)",
     "Davante Adams — IR (IR slot)",
     "Azeez Al-Shaair — O (IR slot)",
     "Zaire Franklin — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-14 4:05 PM PT (/workspace/fantrax-raw-2026-11-14-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-15 5:47 AM PT (/workspace/fantrax-raw-2026-11-15-am-normalized.json)",
   "fantraxTeamId": "kwaohsfwmsb3ulv4",
-  "lineupFlags": [
-    "A.J. Brown — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "A.J. Brown — Q (active)",
     "Davante Adams — IR (IR slot)",
     "Azeez Al-Shaair — O (IR slot)",
     "Zaire Franklin — Q (IR slot)"
   ],
-  "updated": "2026-11-14",
-  "lastSynced": "2026-11-14 4:05 PM PT"
+  "updated": "2026-11-15",
+  "lastSynced": "2026-11-15 5:47 AM PT"
 }

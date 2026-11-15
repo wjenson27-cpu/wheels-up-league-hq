@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-11-14 4:05 PM PT",
+  "asOf": "2026-11-15 5:47 AM PT",
   "faabLeft": 50,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -55,7 +55,7 @@
     "Akeem Davis-Gaither — IR (reserve)",
     "Jihaad Campbell — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-14 4:05 PM PT (/workspace/fantrax-raw-2026-11-14-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-15 5:47 AM PT (/workspace/fantrax-raw-2026-11-15-am-normalized.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
     "Carnell Tate — O (reserve)",
@@ -72,6 +72,6 @@
     "Akeem Davis-Gaither — IR (reserve)",
     "Jihaad Campbell — Q (IR slot)"
   ],
-  "updated": "2026-11-14",
-  "lastSynced": "2026-11-14 4:05 PM PT"
+  "updated": "2026-11-15",
+  "lastSynced": "2026-11-15 5:47 AM PT"
 }

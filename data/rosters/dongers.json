@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Gavin Heaton",
-  "asOf": "2026-11-14 4:05 PM PT",
+  "asOf": "2026-11-15 5:47 AM PT",
   "faabLeft": 1,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -21,7 +21,8 @@
       "KaVontae Turpin"
     ],
     "TE": [
-      "Brenton Strange"
+      "Brenton Strange",
+      "Mike Gesicki"
     ],
     "DL": [
       "David Bailey",
@@ -49,7 +50,7 @@
     "Ladd McConkey — Q (IR slot)",
     "Xavier McKinney — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-14 4:05 PM PT (/workspace/fantrax-raw-2026-11-14-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-15 5:47 AM PT (/workspace/fantrax-raw-2026-11-15-am-normalized.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
     "Xavier McKinney — Q (active)"
@@ -61,6 +62,6 @@
     "Ladd McConkey — Q (IR slot)",
     "Xavier McKinney — Q (active)"
   ],
-  "updated": "2026-11-14",
-  "lastSynced": "2026-11-14 4:05 PM PT"
+  "updated": "2026-11-15",
+  "lastSynced": "2026-11-15 5:47 AM PT"
 }
