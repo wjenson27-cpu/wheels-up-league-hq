@@ -6,7 +6,7 @@
   "weekEnd": "2026-11-18",
   "windowLabel": "Nov 12 – Nov 18, 2026",
   "timezone": "PT",
-  "asOf": "2026-11-15 8:50 AM PT",
+  "asOf": "2026-11-15 11:57 AM PT",
   "status": "live",
   "formula": {
     "id": "normal-approx-v1",
@@ -27,48 +27,6 @@
   ],
   "matchups": [
     {
-      "id": "w10-lab-eddies",
-      "featured": true,
-      "status": "live",
-      "place": "vs",
-      "sideA": {
-        "teamId": "lab",
-        "name": "Little Ass Boys",
-        "color": "#EF4444",
-        "logo": "img/logos/lab.jpg",
-        "record": "5-4",
-        "lineupSet": true,
-        "score": 89,
-        "projection": 240.85,
-        "playersLeft": 10,
-        "playersDone": 2,
-        "playersInProgress": 2,
-        "minutesRemaining": 640
-      },
-      "sideB": {
-        "teamId": "eddies",
-        "name": "Eagleridge Eddie's",
-        "color": "#69BE28",
-        "logo": "img/logos/eddies.jpg",
-        "record": "7-2",
-        "lineupSet": true,
-        "score": 22,
-        "projection": 201.94,
-        "playersLeft": 12,
-        "playersDone": 2,
-        "playersInProgress": 0,
-        "minutesRemaining": 720
-      },
-      "winProb": {
-        "sideA": 0.85,
-        "sideB": 0.15,
-        "mu": 38.9,
-        "sigma": 37.5,
-        "decided": false,
-        "playersLeftKnown": true
-      }
-    },
-    {
       "id": "w10-morningside-newman",
       "featured": false,
       "status": "live",
@@ -80,12 +38,12 @@
         "logo": "img/logos/morningside.jpg",
         "record": "3-6",
         "lineupSet": true,
-        "score": 0,
-        "projection": 190.33,
-        "playersLeft": 14,
+        "score": 80.5,
+        "projection": 194.64,
+        "playersLeft": 4,
         "playersDone": 0,
-        "playersInProgress": 0,
-        "minutesRemaining": 840
+        "playersInProgress": 10,
+        "minutesRemaining": 493
       },
       "sideB": {
         "teamId": "newman",
@@ -94,18 +52,60 @@
         "logo": "img/logos/newman.jpg",
         "record": "4-5",
         "lineupSet": true,
-        "score": 0,
-        "projection": 179.08,
-        "playersLeft": 13,
-        "playersDone": 0,
-        "playersInProgress": 1,
-        "minutesRemaining": 800
+        "score": 65,
+        "projection": 180.04,
+        "playersLeft": 4,
+        "playersDone": 1,
+        "playersInProgress": 9,
+        "minutesRemaining": 470
       },
       "winProb": {
-        "sideA": 0.6,
-        "sideB": 0.4,
-        "mu": 11.3,
-        "sigma": 41.6,
+        "sideA": 0.75,
+        "sideB": 0.25,
+        "mu": 14.6,
+        "sigma": 22.6,
+        "decided": false,
+        "playersLeftKnown": true
+      }
+    },
+    {
+      "id": "w10-lab-eddies",
+      "featured": false,
+      "status": "live",
+      "place": "vs",
+      "sideA": {
+        "teamId": "lab",
+        "name": "Little Ass Boys",
+        "color": "#EF4444",
+        "logo": "img/logos/lab.jpg",
+        "record": "5-4",
+        "lineupSet": true,
+        "score": 100,
+        "projection": 218.56,
+        "playersLeft": 6,
+        "playersDone": 4,
+        "playersInProgress": 4,
+        "minutesRemaining": 462
+      },
+      "sideB": {
+        "teamId": "eddies",
+        "name": "Eagleridge Eddie's",
+        "color": "#69BE28",
+        "logo": "img/logos/eddies.jpg",
+        "record": "7-2",
+        "lineupSet": true,
+        "score": 135,
+        "projection": 270.92,
+        "playersLeft": 5,
+        "playersDone": 2,
+        "playersInProgress": 7,
+        "minutesRemaining": 483
+      },
+      "winProb": {
+        "sideA": 0.05,
+        "sideB": 0.95,
+        "mu": -52.4,
+        "sigma": 26.5,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -122,12 +122,12 @@
         "logo": "img/logos/dongers.jpg",
         "record": "3-6",
         "lineupSet": true,
-        "score": 30,
-        "projection": 203.02,
-        "playersLeft": 11,
-        "playersDone": 1,
-        "playersInProgress": 2,
-        "minutesRemaining": 700
+        "score": 128.5,
+        "projection": 242.71,
+        "playersLeft": 3,
+        "playersDone": 3,
+        "playersInProgress": 8,
+        "minutesRemaining": 387
       },
       "sideB": {
         "teamId": "substation",
@@ -136,18 +136,18 @@
         "logo": "img/logos/substation.jpg",
         "record": "5-4",
         "lineupSet": true,
-        "score": 37,
-        "projection": 198.93,
-        "playersLeft": 12,
-        "playersDone": 1,
-        "playersInProgress": 1,
-        "minutesRemaining": 740
+        "score": 113,
+        "projection": 231.79,
+        "playersLeft": 6,
+        "playersDone": 2,
+        "playersInProgress": 6,
+        "minutesRemaining": 509
       },
       "winProb": {
-        "sideA": 0.55,
-        "sideB": 0.45,
-        "mu": 4.1,
-        "sigma": 38.4,
+        "sideA": 0.7,
+        "sideB": 0.3,
+        "mu": 10.9,
+        "sigma": 24,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -164,12 +164,12 @@
         "logo": "img/logos/goats.jpg",
         "record": "6-3",
         "lineupSet": true,
-        "score": 86,
-        "projection": 247.31,
-        "playersLeft": 10,
-        "playersDone": 2,
-        "playersInProgress": 2,
-        "minutesRemaining": 640
+        "score": 160,
+        "projection": 281.99,
+        "playersLeft": 6,
+        "playersDone": 4,
+        "playersInProgress": 4,
+        "minutesRemaining": 458
       },
       "sideB": {
         "teamId": "slumlords",
@@ -178,18 +178,18 @@
         "logo": "img/logos/slumlords.jpg",
         "record": "5-4",
         "lineupSet": true,
-        "score": 44,
-        "projection": 189.37,
-        "playersLeft": 11,
-        "playersDone": 0,
-        "playersInProgress": 3,
-        "minutesRemaining": 720
+        "score": 103.5,
+        "projection": 179.18,
+        "playersLeft": 5,
+        "playersDone": 3,
+        "playersInProgress": 6,
+        "minutesRemaining": 451
       },
       "winProb": {
         "sideA": 0.95,
         "sideB": 0.05,
-        "mu": 57.9,
-        "sigma": 36.7,
+        "mu": 102.8,
+        "sigma": 26.5,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -206,12 +206,12 @@
         "logo": "img/logos/hyper.jpg",
         "record": "5-4",
         "lineupSet": true,
-        "score": 3,
-        "projection": 162.99,
-        "playersLeft": 13,
-        "playersDone": 0,
-        "playersInProgress": 1,
-        "minutesRemaining": 800
+        "score": 64,
+        "projection": 159.82,
+        "playersLeft": 5,
+        "playersDone": 1,
+        "playersInProgress": 8,
+        "minutesRemaining": 504
       },
       "sideB": {
         "teamId": "ultron",
@@ -220,18 +220,18 @@
         "logo": "img/logos/ultron.jpg",
         "record": "4-5",
         "lineupSet": true,
-        "score": 32,
-        "projection": 201.21,
-        "playersLeft": 12,
-        "playersDone": 0,
-        "playersInProgress": 2,
-        "minutesRemaining": 760
+        "score": 116,
+        "projection": 201.31,
+        "playersLeft": 3,
+        "playersDone": 2,
+        "playersInProgress": 9,
+        "minutesRemaining": 408
       },
       "winProb": {
-        "sideA": 0.15,
-        "sideB": 0.85,
-        "mu": -38.2,
-        "sigma": 40,
+        "sideA": 0.05,
+        "sideB": 0.95,
+        "mu": -41.5,
+        "sigma": 22.6,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -248,12 +248,12 @@
         "logo": "img/logos/ttab.jpg",
         "record": "4-5",
         "lineupSet": true,
-        "score": 65,
-        "projection": 204.86,
-        "playersLeft": 10,
-        "playersDone": 2,
-        "playersInProgress": 2,
-        "minutesRemaining": 640
+        "score": 122,
+        "projection": 214.19,
+        "playersLeft": 5,
+        "playersDone": 4,
+        "playersInProgress": 5,
+        "minutesRemaining": 425
       },
       "sideB": {
         "teamId": "pocket",
@@ -262,18 +262,18 @@
         "logo": "img/logos/pocket.jpg",
         "record": "5-4",
         "lineupSet": true,
-        "score": 55,
-        "projection": 237.33,
-        "playersLeft": 11,
-        "playersDone": 1,
-        "playersInProgress": 2,
-        "minutesRemaining": 700
+        "score": 112.5,
+        "projection": 228.51,
+        "playersLeft": 4,
+        "playersDone": 3,
+        "playersInProgress": 7,
+        "minutesRemaining": 416
       },
       "winProb": {
-        "sideA": 0.2,
-        "sideB": 0.8,
-        "mu": -32.5,
-        "sigma": 36.7,
+        "sideA": 0.3,
+        "sideB": 0.7,
+        "mu": -14.3,
+        "sigma": 24,
         "decided": false,
         "playersLeftKnown": true
       }
@@ -290,12 +290,12 @@
         "logo": "img/logos/saltese.jpg",
         "record": "3-6",
         "lineupSet": true,
-        "score": 0,
-        "projection": 149.55,
-        "playersLeft": 14,
+        "score": 84,
+        "projection": 184.78,
+        "playersLeft": 5,
         "playersDone": 0,
-        "playersInProgress": 0,
-        "minutesRemaining": 840
+        "playersInProgress": 9,
+        "minutesRemaining": 526
       },
       "sideB": {
         "teamId": "doubtpfizer",
@@ -304,18 +304,18 @@
         "logo": "img/logos/doubtpfizer.jpg",
         "record": "4-5",
         "lineupSet": true,
-        "score": 34.5,
-        "projection": 213.47,
-        "playersLeft": 12,
-        "playersDone": 1,
-        "playersInProgress": 1,
-        "minutesRemaining": 740
+        "score": 94.5,
+        "projection": 240.17,
+        "playersLeft": 7,
+        "playersDone": 2,
+        "playersInProgress": 5,
+        "minutesRemaining": 543
       },
       "winProb": {
         "sideA": 0.05,
         "sideB": 0.95,
-        "mu": -63.9,
-        "sigma": 40.8,
+        "mu": -55.4,
+        "sigma": 27.7,
         "decided": false,
         "playersLeftKnown": true
       }
