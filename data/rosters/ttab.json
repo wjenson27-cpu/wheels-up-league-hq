@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-11-14 5:57 AM PT",
+  "asOf": "2026-11-14 4:05 PM PT",
   "faabLeft": 3,
   "startingQB": "Bryce Young",
   "roster": {
@@ -51,9 +51,9 @@
     "Omar Cooper Jr. — Q (IR slot)",
     "DeVonta Smith — Q (IR slot)",
     "Andrew Wingard — Q (reserve)",
-    "Divine Deablo — Q (IR slot)"
+    "Divine Deablo — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-14 5:57 AM PT (/workspace/fantrax-raw-2026-11-14-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-14 4:05 PM PT (/workspace/fantrax-raw-2026-11-14-pm-normalized.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
     "Andrew Wingard — Q (reserve)"
@@ -64,8 +64,8 @@
     "Omar Cooper Jr. — Q (IR slot)",
     "DeVonta Smith — Q (IR slot)",
     "Andrew Wingard — Q (reserve)",
-    "Divine Deablo — Q (IR slot)"
+    "Divine Deablo — O (IR slot)"
   ],
   "updated": "2026-11-14",
-  "lastSynced": "2026-11-14 5:57 AM PT"
+  "lastSynced": "2026-11-14 4:05 PM PT"
 }

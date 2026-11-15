@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-14 5:57 AM PT",
+  "asOf": "2026-11-14 4:05 PM PT",
   "faabLeft": 17,
   "startingQB": "Josh Allen",
   "roster": {
@@ -10,11 +10,11 @@
       "Josh Allen"
     ],
     "RB": [
-      "Kenneth Walker III",
       "Emmett Johnson",
-      "Jaylen Wright",
       "Kaleb Johnson",
-      "Seth McGowan"
+      "Jaylen Wright",
+      "Seth McGowan",
+      "Kenneth Walker III"
     ],
     "WR": [
       "Drake London",
@@ -48,24 +48,24 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Kenneth Walker III — Q (active)",
+    "Kenneth Walker III — O (reserve)",
     "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
     "Kamren Curl — Q (reserve)",
     "Micah Parsons — IR (IR slot)",
     "Blake Cashman — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-14 5:57 AM PT (/workspace/fantrax-raw-2026-11-14-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-14 4:05 PM PT (/workspace/fantrax-raw-2026-11-14-pm-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
-    "Kenneth Walker III — Q (active)",
+    "Kenneth Walker III — O (reserve)",
     "Luther Burden — Q (reserve)",
     "Kamren Curl — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Kenneth Walker III — Q (active)",
+    "Kenneth Walker III — O (reserve)",
     "Luther Burden — Q (reserve)",
     "Jacory Croskey-Merritt — IR (IR slot)",
     "Kamren Curl — Q (reserve)",
@@ -73,5 +73,5 @@
     "Blake Cashman — O (IR slot)"
   ],
   "updated": "2026-11-14",
-  "lastSynced": "2026-11-14 5:57 AM PT"
+  "lastSynced": "2026-11-14 4:05 PM PT"
 }

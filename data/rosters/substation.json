@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-11-14 5:57 AM PT",
+  "asOf": "2026-11-14 4:05 PM PT",
   "faabLeft": 5,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -32,12 +32,12 @@
       "Malcolm Rodriguez",
       "Kaden Elliss",
       "Dre Greenlaw",
-      "Carson Schwesinger"
+      "Carson Schwesinger",
+      "K.J. Britt"
     ],
     "DB": [
       "Jeremy Chinn",
       "Jalen Pitre",
-      "DeShon Elliott",
       "Tykee Smith"
     ],
     "IR": [
@@ -49,11 +49,10 @@
   "notes": "",
   "injuryFlags": [
     "Tank Bigsby — IR (IR slot)",
-    "Keaton Mitchell — Q (IR slot)",
     "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-14 5:57 AM PT (/workspace/fantrax-raw-2026-11-14-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-14 4:05 PM PT (/workspace/fantrax-raw-2026-11-14-pm-normalized.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
     "Dre Greenlaw — Q (active)"
@@ -62,10 +61,9 @@
   "pendingClaims": [],
   "flags": [
     "Tank Bigsby — IR (IR slot)",
-    "Keaton Mitchell — Q (IR slot)",
     "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)"
   ],
   "updated": "2026-11-14",
-  "lastSynced": "2026-11-14 5:57 AM PT"
+  "lastSynced": "2026-11-14 4:05 PM PT"
 }
