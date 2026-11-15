@@ -1,0 +1,163 @@
+{
+ "source": "Fantrax live scoring, read-only box scrape",
+ "asOf": "2026-11-15T08:50:00-08:00",
+ "week": 10,
+ "period": "Nov 12 - Nov 18, 2026",
+ "columnsNote": "counts read as done/inProgress/yetToPlay; minutesRemaining; winShare is Fantrax's own %",
+ "matchups": [
+  [
+   {
+    "team": "Little Ass Boys",
+    "score": 89,
+    "proj": 240.85,
+    "done": 2,
+    "inProgress": 2,
+    "yet": 10,
+    "min": 640,
+    "fantraxPct": 71
+   },
+   {
+    "team": "Eagle Ridge Eddies",
+    "score": 22,
+    "proj": 201.94,
+    "done": 2,
+    "inProgress": 0,
+    "yet": 12,
+    "min": 720,
+    "fantraxPct": 29
+   }
+  ],
+  [
+   {
+    "team": "Drummond Dongers",
+    "score": 30,
+    "proj": 203.02,
+    "done": 1,
+    "inProgress": 2,
+    "yet": 11,
+    "min": 700,
+    "fantraxPct": 52
+   },
+   {
+    "team": "Substation",
+    "score": 37,
+    "proj": 198.93,
+    "done": 1,
+    "inProgress": 1,
+    "yet": 12,
+    "min": 740,
+    "fantraxPct": 48
+   }
+  ],
+  [
+   {
+    "team": "Morningside Muff Divers",
+    "score": 0,
+    "proj": 190.33,
+    "done": 0,
+    "inProgress": 0,
+    "yet": 14,
+    "min": 840,
+    "fantraxPct": 56
+   },
+   {
+    "team": "Newman Lake Sleep Paralysis Demons",
+    "score": 0,
+    "proj": 179.08,
+    "done": 0,
+    "inProgress": 1,
+    "yet": 13,
+    "min": 800,
+    "fantraxPct": 44
+   }
+  ],
+  [
+   {
+    "team": "Saltese Slamm",
+    "score": 0,
+    "proj": 149.55,
+    "done": 0,
+    "inProgress": 0,
+    "yet": 14,
+    "min": 840,
+    "fantraxPct": 19
+   },
+   {
+    "team": "Mrs. Doubtpfizer",
+    "score": 34.5,
+    "proj": 213.47,
+    "done": 1,
+    "inProgress": 1,
+    "yet": 12,
+    "min": 740,
+    "fantraxPct": 81
+   }
+  ],
+  [
+   {
+    "team": "The Hypersecretors",
+    "score": 3,
+    "proj": 162.99,
+    "done": 0,
+    "inProgress": 1,
+    "yet": 13,
+    "min": 800,
+    "fantraxPct": 29
+   },
+   {
+    "team": "Ultron",
+    "score": 32,
+    "proj": 201.21,
+    "done": 0,
+    "inProgress": 2,
+    "yet": 12,
+    "min": 760,
+    "fantraxPct": 71
+   }
+  ],
+  [
+   {
+    "team": "Towner Top Aga Bottom",
+    "score": 65,
+    "proj": 204.86,
+    "done": 2,
+    "inProgress": 2,
+    "yet": 10,
+    "min": 640,
+    "fantraxPct": 33
+   },
+   {
+    "team": "Pocket Agents",
+    "score": 55,
+    "proj": 237.33,
+    "done": 1,
+    "inProgress": 2,
+    "yet": 11,
+    "min": 700,
+    "fantraxPct": 67
+   }
+  ],
+  [
+   {
+    "team": "Valley Old Goats",
+    "score": 86,
+    "proj": 247.31,
+    "done": 2,
+    "inProgress": 2,
+    "yet": 10,
+    "min": 640,
+    "fantraxPct": 80
+   },
+   {
+    "team": "Indian Trail Slumlords",
+    "score": 44,
+    "proj": 189.37,
+    "done": 0,
+    "inProgress": 3,
+    "yet": 11,
+    "min": 720,
+    "fantraxPct": 20
+   }
+  ]
+ ]
+}
