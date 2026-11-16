@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-15 5:47 AM PT",
+  "asOf": "2026-11-15 4:06 AM PT",
   "faabLeft": 25,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -11,14 +11,14 @@
     ],
     "RB": [
       "Breece Hall",
-      "Zach Charbonnet"
+      "Zach Charbonnet",
+      "Travis Etienne"
     ],
     "WR": [
       "Malik Nabers",
       "Chimere Dike",
       "Garrett Wilson",
       "Josh Downs",
-      "Ja'Kobi Lane",
       "Jalen Coker"
     ],
     "TE": [
@@ -41,31 +41,25 @@
       "Kyle Hamilton"
     ],
     "IR": [
-      "De'Zhaun Stribling",
-      "Travis Etienne",
-      "Mansoor Delane"
+      "De'Zhaun Stribling"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Garrett Wilson — Q (active)",
-    "De'Zhaun Stribling — IR (IR slot)",
-    "Travis Etienne — Q (IR slot)",
-    "Mansoor Delane — Q (IR slot)"
+    "Brock Bowers — O (active)",
+    "De'Zhaun Stribling — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-15 5:47 AM PT (/workspace/fantrax-raw-2026-11-15-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-15 4:06 AM PT (/workspace/fantrax-raw-2026-11-15-pm-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
-    "Garrett Wilson — Q (active)"
+    "Brock Bowers — O (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Garrett Wilson — Q (active)",
-    "De'Zhaun Stribling — IR (IR slot)",
-    "Travis Etienne — Q (IR slot)",
-    "Mansoor Delane — Q (IR slot)"
+    "Brock Bowers — O (active)",
+    "De'Zhaun Stribling — IR (IR slot)"
   ],
   "updated": "2026-11-15",
-  "lastSynced": "2026-11-15 5:47 AM PT"
+  "lastSynced": "2026-11-15 4:06 AM PT"
 }

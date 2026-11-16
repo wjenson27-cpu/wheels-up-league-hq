@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-11-15 5:47 AM PT",
+  "asOf": "2026-11-15 4:06 AM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -48,22 +48,28 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Woody Marks — Q (active)",
     "Jaylen Waddle — Q (IR slot)",
-    "Will Anderson Jr. — Q (active)",
+    "Robert Spillane — Q (active)",
+    "Tony Adams — Q (active)",
     "Brandon Jones — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-15 5:47 AM PT (/workspace/fantrax-raw-2026-11-15-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-15 4:06 AM PT (/workspace/fantrax-raw-2026-11-15-pm-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Will Anderson Jr. — Q (active)"
+    "Woody Marks — Q (active)",
+    "Robert Spillane — Q (active)",
+    "Tony Adams — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Woody Marks — Q (active)",
     "Jaylen Waddle — Q (IR slot)",
-    "Will Anderson Jr. — Q (active)",
+    "Robert Spillane — Q (active)",
+    "Tony Adams — Q (active)",
     "Brandon Jones — Q (IR slot)"
   ],
   "updated": "2026-11-15",
-  "lastSynced": "2026-11-15 5:47 AM PT"
+  "lastSynced": "2026-11-15 4:06 AM PT"
 }
