@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-15 4:06 AM PT",
+  "asOf": "2026-11-16 6:56 AM PT",
   "faabLeft": 3,
   "startingQB": "Aaron Rodgers",
   "roster": {
@@ -54,7 +54,7 @@
     "RJ Harvey — IR (IR slot)",
     "Zack Baun — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-15 4:06 AM PT (/workspace/fantrax-raw-2026-11-15-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-16 6:56 AM PT (/workspace/fantrax-raw-2026-11-16-am2-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "David Montgomery — O (reserve)",
@@ -69,6 +69,6 @@
     "RJ Harvey — IR (IR slot)",
     "Zack Baun — Q (reserve)"
   ],
-  "updated": "2026-11-15",
-  "lastSynced": "2026-11-15 4:06 AM PT"
+  "updated": "2026-11-16",
+  "lastSynced": "2026-11-16 6:56 AM PT"
 }

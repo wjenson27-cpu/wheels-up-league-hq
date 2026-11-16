@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-11-15 4:06 AM PT",
+  "asOf": "2026-11-16 6:56 AM PT",
   "faabLeft": 50,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -48,33 +48,33 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Carnell Tate — O (reserve)",
+    "Carnell Tate — Q (reserve)",
     "Mike Evans — O (reserve)",
     "Puka Nacua — IR (IR slot)",
     "Jeremiyah Love — IR (IR slot)",
-    "Aidan Hutchinson — Q (active)",
+    "Aidan Hutchinson — O (active)",
     "Akeem Davis-Gaither — IR (reserve)",
     "Jihaad Campbell — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-15 4:06 AM PT (/workspace/fantrax-raw-2026-11-15-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-16 6:56 AM PT (/workspace/fantrax-raw-2026-11-16-am2-normalized.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
-    "Carnell Tate — O (reserve)",
+    "Carnell Tate — Q (reserve)",
     "Mike Evans — O (reserve)",
-    "Aidan Hutchinson — Q (active)",
+    "Aidan Hutchinson — O (active)",
     "Akeem Davis-Gaither — IR (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Carnell Tate — O (reserve)",
+    "Carnell Tate — Q (reserve)",
     "Mike Evans — O (reserve)",
     "Puka Nacua — IR (IR slot)",
     "Jeremiyah Love — IR (IR slot)",
-    "Aidan Hutchinson — Q (active)",
+    "Aidan Hutchinson — O (active)",
     "Akeem Davis-Gaither — IR (reserve)",
     "Jihaad Campbell — Q (IR slot)"
   ],
-  "updated": "2026-11-15",
-  "lastSynced": "2026-11-15 4:06 AM PT"
+  "updated": "2026-11-16",
+  "lastSynced": "2026-11-16 6:56 AM PT"
 }
