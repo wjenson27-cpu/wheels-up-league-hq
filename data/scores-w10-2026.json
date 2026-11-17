@@ -1,0 +1,86 @@
+{
+  "updated": "2026-11-17",
+  "asOf": "2026-11-17",
+  "week": 10,
+  "season": 2026,
+  "weekStatus": "final",
+  "complete": true,
+  "source": "Fantrax",
+  "note": "Week 10 FINAL from Fantrax standings page Tue Nov 17 7:36 AM PT (MNF complete; all 14 scores and official PF/PA recounted from the Standings page). Kitty Mrs. Doubtpfizer 341.5; survivor-low Newman Lake Sleep Paralysis Demons 201 (alive pool).",
+  "kitty": {
+    "team": "Doubtpfizer",
+    "teamFull": "Mrs. Doubtpfizer",
+    "teamId": "doubtpfizer",
+    "score": 341.5
+  },
+  "survivorLowest": {
+    "team": "Newman Lake Sleep Paralysis Demons",
+    "teamId": "newman",
+    "score": 201
+  },
+  "matchups": [
+    {
+      "home": "Newman Lake Sleep Paralysis Demons",
+      "away": "Morningside Muff Divers",
+      "homeScore": 201,
+      "awayScore": 194.5,
+      "winner": "Newman Lake Sleep Paralysis Demons",
+      "status": "final",
+      "notes": "Fantrax Week 10 final · standings page Tue Nov 17 7:36 AM PT"
+    },
+    {
+      "home": "Eagle Ridge Eddies",
+      "away": "Little Ass Boys",
+      "homeScore": 272,
+      "awayScore": 198,
+      "winner": "Eagle Ridge Eddies",
+      "status": "final",
+      "notes": "Fantrax Week 10 final · standings page Tue Nov 17 7:36 AM PT"
+    },
+    {
+      "home": "Substation",
+      "away": "Drummond Dongers",
+      "homeScore": 294,
+      "awayScore": 289.5,
+      "winner": "Substation",
+      "status": "final",
+      "notes": "Fantrax Week 10 final · standings page Tue Nov 17 7:36 AM PT"
+    },
+    {
+      "home": "Indian Trail Slumlords",
+      "away": "Valley Old Goats",
+      "homeScore": 255.5,
+      "awayScore": 298,
+      "winner": "Valley Old Goats",
+      "status": "final",
+      "notes": "Fantrax Week 10 final · standings page Tue Nov 17 7:36 AM PT"
+    },
+    {
+      "home": "Ultron",
+      "away": "The Hypersecretors",
+      "homeScore": 265,
+      "awayScore": 221,
+      "winner": "Ultron",
+      "status": "final",
+      "notes": "Fantrax Week 10 final · standings page Tue Nov 17 7:36 AM PT"
+    },
+    {
+      "home": "Pocket Agents",
+      "away": "Towner Top Aga Bottom",
+      "homeScore": 230,
+      "awayScore": 262.5,
+      "winner": "Towner Top Aga Bottom",
+      "status": "final",
+      "notes": "Fantrax Week 10 final · standings page Tue Nov 17 7:36 AM PT"
+    },
+    {
+      "home": "Mrs. Doubtpfizer",
+      "away": "Saltese Slamm",
+      "homeScore": 341.5,
+      "awayScore": 179.5,
+      "winner": "Mrs. Doubtpfizer",
+      "status": "final",
+      "notes": "Fantrax Week 10 final · standings page Tue Nov 17 7:36 AM PT"
+    }
+  ]
+}
