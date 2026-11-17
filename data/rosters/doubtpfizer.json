@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-11-16 6:56 AM PT",
+  "asOf": "2026-11-17 5:56 AM PT",
   "faabLeft": 70,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -11,19 +11,19 @@
     ],
     "RB": [
       "Christian McCaffrey",
-      "Blake Corum",
       "Chuba Hubbard",
       "Kaelon Black",
-      "Braelon Allen"
+      "Braelon Allen",
+      "Blake Corum"
     ],
     "WR": [
       "Nico Collins",
-      "Rashee Rice",
-      "Rome Odunze"
+      "Rome Odunze",
+      "Rashee Rice"
     ],
     "TE": [
-      "Hunter Henry",
       "Colston Loveland",
+      "Hunter Henry",
       "Kyle Pitts"
     ],
     "DL": [
@@ -32,24 +32,24 @@
     "LB": [
       "Nakobe Dean",
       "DeMarvion Overshown",
-      "Sonny Styles",
-      "Alex Singleton"
+      "Alex Singleton",
+      "Sonny Styles"
     ],
     "DB": [
+      "Reed Blankenship",
       "Kamari Lassiter",
-      "Malik Mustapha",
-      "Reed Blankenship"
+      "Malik Mustapha"
     ],
     "IR": []
   },
   "notes": "",
   "injuryFlags": [],
-  "source": "Fantrax roster sync 2026-11-16 6:56 AM PT (/workspace/fantrax-raw-2026-11-16-am2-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-17 5:56 AM PT (/workspace/fantrax-raw-2026-11-17-am-normalized.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [],
-  "updated": "2026-11-16",
-  "lastSynced": "2026-11-16 6:56 AM PT"
+  "updated": "2026-11-17",
+  "lastSynced": "2026-11-17 5:56 AM PT"
 }

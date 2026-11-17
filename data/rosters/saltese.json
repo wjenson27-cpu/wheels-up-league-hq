@@ -2,38 +2,34 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-16 6:56 AM PT",
+  "asOf": "2026-11-17 5:56 AM PT",
   "faabLeft": 3,
-  "startingQB": "Aaron Rodgers",
+  "startingQB": "C.J. Stroud",
   "roster": {
     "QB": [
-      "Aaron Rodgers",
       "C.J. Stroud"
     ],
     "RB": [
       "Bhayshul Tuten",
       "Tyler Allgeier",
-      "Rico Dowdle",
-      "Aaron Jones",
-      "Chris Rodriguez Jr.",
       "David Montgomery",
-      "D'Andre Swift"
+      "D'Andre Swift",
+      "Chris Rodriguez Jr.",
+      "Rico Dowdle",
+      "Aaron Jones"
     ],
     "WR": [
       "Adonai Mitchell"
     ],
     "TE": [
-      "Darnell Washington",
       "Tucker Kraft"
     ],
-    "DL": [
-      "Mason Graham"
-    ],
+    "DL": [],
     "LB": [
       "Jamien Sherwood",
+      "Zack Baun",
       "Henry To'oTo'o",
-      "Eric Wilson",
-      "Zack Baun"
+      "Eric Wilson"
     ],
     "DB": [
       "Jaquan Brisker",
@@ -48,27 +44,24 @@
   },
   "notes": "",
   "injuryFlags": [
-    "David Montgomery — O (reserve)",
     "Kyle Monangai — Q (IR slot)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "Zack Baun — Q (reserve)"
+    "Zack Baun — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-16 6:56 AM PT (/workspace/fantrax-raw-2026-11-16-am2-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-17 5:56 AM PT (/workspace/fantrax-raw-2026-11-17-am-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
-    "David Montgomery — O (reserve)",
-    "Zack Baun — Q (reserve)"
+    "Zack Baun — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "David Montgomery — O (reserve)",
     "Kyle Monangai — Q (IR slot)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "Zack Baun — Q (reserve)"
+    "Zack Baun — Q (active)"
   ],
-  "updated": "2026-11-16",
-  "lastSynced": "2026-11-16 6:56 AM PT"
+  "updated": "2026-11-17",
+  "lastSynced": "2026-11-17 5:56 AM PT"
 }

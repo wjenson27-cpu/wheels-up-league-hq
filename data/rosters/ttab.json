@@ -2,38 +2,38 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase Anderson",
-  "asOf": "2026-11-16 6:56 AM PT",
+  "asOf": "2026-11-17 5:56 AM PT",
   "faabLeft": 3,
-  "startingQB": "Bryce Young",
+  "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
-      "Bryce Young",
-      "Caleb Williams"
+      "Caleb Williams",
+      "Bryce Young"
     ],
     "RB": [
       "Javonte Williams"
     ],
     "WR": [
       "Stefon Diggs",
+      "Ryan Flournoy",
       "Malik Washington",
-      "Christian Watson",
       "Jameson Williams",
       "Omar Cooper Jr.",
-      "Ryan Flournoy"
+      "Christian Watson"
     ],
     "TE": [
-      "Mark Andrews",
-      "Dallas Goedert"
+      "Dallas Goedert",
+      "Mark Andrews"
     ],
     "DL": [
       "Quinnen Williams"
     ],
     "LB": [
-      "Demario Davis",
       "Micah McFadden",
-      "Harold Perkins",
       "Patrick Queen",
-      "Dorian Williams"
+      "Dorian Williams",
+      "Demario Davis",
+      "Harold Perkins"
     ],
     "DB": [
       "Brian Branch",
@@ -42,31 +42,33 @@
     ],
     "IR": [
       "DeVonta Smith",
-      "Andrew Wingard",
-      "Divine Deablo"
+      "Divine Deablo",
+      "Andrew Wingard"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Omar Cooper Jr. — Q (reserve)",
     "DeVonta Smith — Q (IR slot)",
-    "Dorian Williams — Q (reserve)",
-    "Divine Deablo — O (IR slot)"
+    "Dorian Williams — Q (active)",
+    "Divine Deablo — Q (IR slot)",
+    "Andrew Wingard — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-16 6:56 AM PT (/workspace/fantrax-raw-2026-11-16-am2-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-17 5:56 AM PT (/workspace/fantrax-raw-2026-11-17-am-normalized.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
     "Omar Cooper Jr. — Q (reserve)",
-    "Dorian Williams — Q (reserve)"
+    "Dorian Williams — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Omar Cooper Jr. — Q (reserve)",
     "DeVonta Smith — Q (IR slot)",
-    "Dorian Williams — Q (reserve)",
-    "Divine Deablo — O (IR slot)"
+    "Dorian Williams — Q (active)",
+    "Divine Deablo — Q (IR slot)",
+    "Andrew Wingard — O (IR slot)"
   ],
-  "updated": "2026-11-16",
-  "lastSynced": "2026-11-16 6:56 AM PT"
+  "updated": "2026-11-17",
+  "lastSynced": "2026-11-17 5:56 AM PT"
 }
