@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-17 5:56 AM PT",
+  "asOf": "2026-11-18 5:53 AM PT",
   "faabLeft": 25,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -49,7 +49,7 @@
     "Brock Bowers — Q (active)",
     "De'Zhaun Stribling — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-17 5:56 AM PT (/workspace/fantrax-raw-2026-11-17-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-18 5:53 AM PT (/workspace/fantrax-raw-2026-11-18-am-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Brock Bowers — Q (active)"
@@ -60,6 +60,6 @@
     "Brock Bowers — Q (active)",
     "De'Zhaun Stribling — IR (IR slot)"
   ],
-  "updated": "2026-11-17",
-  "lastSynced": "2026-11-17 5:56 AM PT"
+  "updated": "2026-11-18",
+  "lastSynced": "2026-11-18 5:53 AM PT"
 }

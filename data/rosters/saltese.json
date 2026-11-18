@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-17 5:56 AM PT",
+  "asOf": "2026-11-18 5:53 AM PT",
   "faabLeft": 3,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -33,8 +33,7 @@
     ],
     "DB": [
       "Jaquan Brisker",
-      "Jonas Sanker",
-      "Emmanuel McNeil-Warren"
+      "Jonas Sanker"
     ],
     "IR": [
       "Kyle Monangai",
@@ -49,7 +48,7 @@
     "RJ Harvey — IR (IR slot)",
     "Zack Baun — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-17 5:56 AM PT (/workspace/fantrax-raw-2026-11-17-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-18 5:53 AM PT (/workspace/fantrax-raw-2026-11-18-am-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "Zack Baun — Q (active)"
@@ -62,6 +61,6 @@
     "RJ Harvey — IR (IR slot)",
     "Zack Baun — Q (active)"
   ],
-  "updated": "2026-11-17",
-  "lastSynced": "2026-11-17 5:56 AM PT"
+  "updated": "2026-11-18",
+  "lastSynced": "2026-11-18 5:53 AM PT"
 }

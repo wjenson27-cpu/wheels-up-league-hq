@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob Crisp",
-  "asOf": "2026-11-17 5:56 AM PT",
+  "asOf": "2026-11-18 5:53 AM PT",
   "faabLeft": 17,
   "startingQB": "Josh Allen",
   "roster": {
@@ -31,7 +31,6 @@
     ],
     "LB": [
       "Jacob Rodriguez",
-      "Blake Cashman",
       "Shemar James",
       "Payton Wilson"
     ],
@@ -41,33 +40,30 @@
     ],
     "IR": [
       "Jacory Croskey-Merritt",
-      "Micah Parsons"
+      "Micah Parsons",
+      "Blake Cashman"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Kenneth Walker III — Q (active)",
-    "Luther Burden — Q (active)",
     "Jacory Croskey-Merritt — IR (IR slot)",
-    "Blake Cashman — Q (active)",
-    "Micah Parsons — IR (IR slot)"
+    "Micah Parsons — IR (IR slot)",
+    "Blake Cashman — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-17 5:56 AM PT (/workspace/fantrax-raw-2026-11-17-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-18 5:53 AM PT (/workspace/fantrax-raw-2026-11-18-am-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
-    "Kenneth Walker III — Q (active)",
-    "Luther Burden — Q (active)",
-    "Blake Cashman — Q (active)"
+    "Kenneth Walker III — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Kenneth Walker III — Q (active)",
-    "Luther Burden — Q (active)",
     "Jacory Croskey-Merritt — IR (IR slot)",
-    "Blake Cashman — Q (active)",
-    "Micah Parsons — IR (IR slot)"
+    "Micah Parsons — IR (IR slot)",
+    "Blake Cashman — Q (IR slot)"
   ],
-  "updated": "2026-11-17",
-  "lastSynced": "2026-11-17 5:56 AM PT"
+  "updated": "2026-11-18",
+  "lastSynced": "2026-11-18 5:53 AM PT"
 }

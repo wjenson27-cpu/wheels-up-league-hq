@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-11-17 5:56 AM PT",
+  "asOf": "2026-11-18 5:53 AM PT",
   "faabLeft": 0,
   "startingQB": "Drake Maye",
   "roster": {
@@ -16,10 +16,8 @@
     ],
     "WR": [
       "Dohnte Meyers",
-      "Tutu Atwell",
       "Demario Douglas",
-      "Devin Duvernay",
-      "Wan'Dale Robinson"
+      "Devin Duvernay"
     ],
     "TE": [
       "Harold Fannin"
@@ -32,13 +30,12 @@
       "Jeffery Simmons"
     ],
     "LB": [
-      "Alex Anzalone",
-      "Jaden Dugger"
+      "Alex Anzalone"
     ],
     "DB": [
       "Budda Baker",
-      "Devon Witherspoon",
-      "Chamarri Conner"
+      "Chamarri Conner",
+      "Devon Witherspoon"
     ],
     "IR": [
       "Anthony Hill",
@@ -49,26 +46,23 @@
   "notes": "",
   "injuryFlags": [
     "Drake Maye — Q (active)",
-    "Wan'Dale Robinson — Q (reserve)",
     "Anthony Hill — Q (IR slot)",
     "Talanoa Hufanga — Q (IR slot)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-17 5:56 AM PT (/workspace/fantrax-raw-2026-11-17-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-18 5:53 AM PT (/workspace/fantrax-raw-2026-11-18-am-normalized.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
-    "Drake Maye — Q (active)",
-    "Wan'Dale Robinson — Q (reserve)"
+    "Drake Maye — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Drake Maye — Q (active)",
-    "Wan'Dale Robinson — Q (reserve)",
     "Anthony Hill — Q (IR slot)",
     "Talanoa Hufanga — Q (IR slot)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "updated": "2026-11-17",
-  "lastSynced": "2026-11-17 5:56 AM PT"
+  "updated": "2026-11-18",
+  "lastSynced": "2026-11-18 5:53 AM PT"
 }

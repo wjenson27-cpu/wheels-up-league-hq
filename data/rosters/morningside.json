@@ -2,7 +2,7 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-11-17 5:56 AM PT",
+  "asOf": "2026-11-18 5:53 AM PT",
   "faabLeft": 7,
   "startingQB": "Drew Lock",
   "roster": {
@@ -36,9 +36,9 @@
       "Derrick Barnes"
     ],
     "DB": [
-      "Byron Murphy",
+      "Jessie Bates",
       "Malaki Starks",
-      "Jessie Bates"
+      "Byron Murphy"
     ],
     "IR": [
       "Jordan Addison",
@@ -53,7 +53,7 @@
     "Derwin James — IR (IR slot)",
     "Bobby Okereke — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-17 5:56 AM PT (/workspace/fantrax-raw-2026-11-17-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-18 5:53 AM PT (/workspace/fantrax-raw-2026-11-18-am-normalized.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
     "Pete Werner — Q (active)"
@@ -66,6 +66,6 @@
     "Derwin James — IR (IR slot)",
     "Bobby Okereke — Q (IR slot)"
   ],
-  "updated": "2026-11-17",
-  "lastSynced": "2026-11-17 5:56 AM PT"
+  "updated": "2026-11-18",
+  "lastSynced": "2026-11-18 5:53 AM PT"
 }
