@@ -2,8 +2,8 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Tim Brandle",
-  "asOf": "2026-11-18 5:53 AM PT",
-  "faabLeft": 7,
+  "asOf": "2026-11-18 10:16 AM PT",
+  "faabLeft": 6,
   "startingQB": "Drew Lock",
   "roster": {
     "QB": [
@@ -16,7 +16,7 @@
     ],
     "WR": [
       "Justin Jefferson",
-      "Keenan Allen",
+      "Elic Ayomanor",
       "Deebo Samuel",
       "Denzel Boston",
       "Xavier Worthy"
@@ -32,7 +32,7 @@
       "Ventrell Miller",
       "Terrel Bernard",
       "Daiyan Henley",
-      "Pete Werner",
+      "Bobby Okereke",
       "Derrick Barnes"
     ],
     "DB": [
@@ -43,29 +43,29 @@
     "IR": [
       "Jordan Addison",
       "Derwin James",
-      "Bobby Okereke"
+      "Pete Werner"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Jordan Addison — O (IR slot)",
-    "Pete Werner — Q (active)",
+    "Bobby Okereke — Q (active)",
     "Derwin James — IR (IR slot)",
-    "Bobby Okereke — Q (IR slot)"
+    "Pete Werner — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-18 5:53 AM PT (/workspace/fantrax-raw-2026-11-18-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-18 10:16 AM PT (/workspace/fantrax-raw-2026-11-18-pw-normalized.json)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
-    "Pete Werner — Q (active)"
+    "Bobby Okereke — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Jordan Addison — O (IR slot)",
-    "Pete Werner — Q (active)",
+    "Bobby Okereke — Q (active)",
     "Derwin James — IR (IR slot)",
-    "Bobby Okereke — Q (IR slot)"
+    "Pete Werner — Q (IR slot)"
   ],
   "updated": "2026-11-18",
-  "lastSynced": "2026-11-18 5:53 AM PT"
+  "lastSynced": "2026-11-18 10:16 AM PT"
 }

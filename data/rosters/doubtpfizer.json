@@ -2,8 +2,8 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-11-18 5:53 AM PT",
-  "faabLeft": 70,
+  "asOf": "2026-11-18 10:16 AM PT",
+  "faabLeft": 68,
   "startingQB": "Dak Prescott",
   "roster": {
     "QB": [
@@ -27,6 +27,7 @@
       "Kyle Pitts"
     ],
     "DL": [
+      "Jalen Carter",
       "Byron Young"
     ],
     "LB": [
@@ -37,25 +38,27 @@
     ],
     "DB": [
       "Reed Blankenship",
-      "Kamari Lassiter",
       "Malik Mustapha"
     ],
-    "IR": []
+    "IR": [
+      "TreVeyon Henderson",
+      "Kamari Lassiter"
+    ]
   },
   "notes": "",
   "injuryFlags": [
-    "Kamari Lassiter — Q (active)"
+    "TreVeyon Henderson — IR (IR slot)",
+    "Kamari Lassiter — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-18 5:53 AM PT (/workspace/fantrax-raw-2026-11-18-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-18 10:16 AM PT (/workspace/fantrax-raw-2026-11-18-pw-normalized.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
-  "lineupFlags": [
-    "Kamari Lassiter — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Kamari Lassiter — Q (active)"
+    "TreVeyon Henderson — IR (IR slot)",
+    "Kamari Lassiter — Q (IR slot)"
   ],
   "updated": "2026-11-18",
-  "lastSynced": "2026-11-18 5:53 AM PT"
+  "lastSynced": "2026-11-18 10:16 AM PT"
 }

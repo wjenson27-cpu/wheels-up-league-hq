@@ -2,8 +2,8 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-11-18 5:53 AM PT",
-  "faabLeft": 50,
+  "asOf": "2026-11-18 10:16 AM PT",
+  "faabLeft": 44,
   "startingQB": "Jayden Daniels",
   "roster": {
     "QB": [
@@ -25,18 +25,20 @@
     "TE": [
       "Isaiah Likely"
     ],
-    "DL": [],
+    "DL": [
+      "Austin Booker"
+    ],
     "LB": [
       "Nathan Landman",
       "Demetrius Knight",
       "Drue Tranquill",
       "Quay Walker",
+      "Dee Winters",
       "Akeem Davis-Gaither"
     ],
     "DB": [
       "Minkah Fitzpatrick",
-      "Jacob Parrish",
-      "Marcus Jones"
+      "Jacob Parrish"
     ],
     "IR": [
       "Puka Nacua",
@@ -53,7 +55,7 @@
     "Akeem Davis-Gaither — IR (reserve)",
     "Jihaad Campbell — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-18 5:53 AM PT (/workspace/fantrax-raw-2026-11-18-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-18 10:16 AM PT (/workspace/fantrax-raw-2026-11-18-pw-normalized.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
     "Mike Evans — Q (active)",
@@ -71,5 +73,5 @@
     "Jihaad Campbell — Q (IR slot)"
   ],
   "updated": "2026-11-18",
-  "lastSynced": "2026-11-18 5:53 AM PT"
+  "lastSynced": "2026-11-18 10:16 AM PT"
 }

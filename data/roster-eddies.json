@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-18 5:53 AM PT",
+  "asOf": "2026-11-18 10:16 AM PT",
   "faabLeft": 25,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -22,7 +22,7 @@
       "Jalen Coker"
     ],
     "TE": [
-      "Brock Bowers"
+      "Michael Mayer"
     ],
     "DL": [
       "George Karlaftis"
@@ -41,25 +41,24 @@
       "Evan Williams"
     ],
     "IR": [
-      "De'Zhaun Stribling"
+      "De'Zhaun Stribling",
+      "Brock Bowers"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Brock Bowers — Q (active)",
-    "De'Zhaun Stribling — IR (IR slot)"
+    "De'Zhaun Stribling — IR (IR slot)",
+    "Brock Bowers — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-18 5:53 AM PT (/workspace/fantrax-raw-2026-11-18-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-18 10:16 AM PT (/workspace/fantrax-raw-2026-11-18-pw-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
-  "lineupFlags": [
-    "Brock Bowers — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Brock Bowers — Q (active)",
-    "De'Zhaun Stribling — IR (IR slot)"
+    "De'Zhaun Stribling — IR (IR slot)",
+    "Brock Bowers — Q (IR slot)"
   ],
   "updated": "2026-11-18",
-  "lastSynced": "2026-11-18 5:53 AM PT"
+  "lastSynced": "2026-11-18 10:16 AM PT"
 }
