@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "",
-  "asOf": "2026-11-18 10:16 AM PT",
+  "asOf": "2026-11-19 5:54 AM PT",
   "faabLeft": 25,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -35,30 +35,33 @@
       "Trenton Simpson"
     ],
     "DB": [
-      "Cole Bishop",
       "Kyle Hamilton",
+      "Zyon McCollum",
       "Quentin Lake",
       "Evan Williams"
     ],
     "IR": [
       "De'Zhaun Stribling",
-      "Brock Bowers"
+      "Brock Bowers",
+      "Cole Bishop"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "De'Zhaun Stribling — IR (IR slot)",
-    "Brock Bowers — Q (IR slot)"
+    "Brock Bowers — Q (IR slot)",
+    "Cole Bishop — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-18 10:16 AM PT (/workspace/fantrax-raw-2026-11-18-pw-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "De'Zhaun Stribling — IR (IR slot)",
-    "Brock Bowers — Q (IR slot)"
+    "Brock Bowers — Q (IR slot)",
+    "Cole Bishop — Q (IR slot)"
   ],
-  "updated": "2026-11-18",
-  "lastSynced": "2026-11-18 10:16 AM PT"
+  "updated": "2026-11-19",
+  "lastSynced": "2026-11-19 5:54 AM PT"
 }

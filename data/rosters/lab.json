@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-11-18 10:16 AM PT",
+  "asOf": "2026-11-19 5:54 AM PT",
   "faabLeft": 44,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -29,11 +29,11 @@
       "Austin Booker"
     ],
     "LB": [
-      "Nathan Landman",
+      "Dee Winters",
       "Demetrius Knight",
       "Drue Tranquill",
       "Quay Walker",
-      "Dee Winters",
+      "Nathan Landman",
       "Akeem Davis-Gaither"
     ],
     "DB": [
@@ -48,16 +48,17 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Caleb Douglas — Q (active)",
     "Mike Evans — Q (active)",
     "Carnell Tate — Q (active)",
     "Puka Nacua — IR (IR slot)",
     "Jeremiyah Love — IR (IR slot)",
-    "Akeem Davis-Gaither — IR (reserve)",
-    "Jihaad Campbell — Q (IR slot)"
+    "Akeem Davis-Gaither — IR (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-18 10:16 AM PT (/workspace/fantrax-raw-2026-11-18-pw-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
+    "Caleb Douglas — Q (active)",
     "Mike Evans — Q (active)",
     "Carnell Tate — Q (active)",
     "Akeem Davis-Gaither — IR (reserve)"
@@ -65,13 +66,13 @@
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Caleb Douglas — Q (active)",
     "Mike Evans — Q (active)",
     "Carnell Tate — Q (active)",
     "Puka Nacua — IR (IR slot)",
     "Jeremiyah Love — IR (IR slot)",
-    "Akeem Davis-Gaither — IR (reserve)",
-    "Jihaad Campbell — Q (IR slot)"
+    "Akeem Davis-Gaither — IR (reserve)"
   ],
-  "updated": "2026-11-18",
-  "lastSynced": "2026-11-18 10:16 AM PT"
+  "updated": "2026-11-19",
+  "lastSynced": "2026-11-19 5:54 AM PT"
 }

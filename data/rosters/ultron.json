@@ -2,23 +2,23 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Brian Aga",
-  "asOf": "2026-11-18 10:16 AM PT",
-  "faabLeft": 0,
+  "asOf": "2026-11-19 5:54 AM PT",
+  "faabLeft": 5,
   "startingQB": "Kirk Cousins",
   "roster": {
     "QB": [
       "Kirk Cousins"
     ],
     "RB": [
+      "Emmett Johnson",
       "Omarion Hampton",
-      "Bijan Robinson",
       "Khalil Herbert",
       "Rhamondre Stevenson"
     ],
     "WR": [
       "Amon-Ra St. Brown",
+      "Luther Burden",
       "George Pickens",
-      "Courtland Sutton",
       "Antonio Williams"
     ],
     "TE": [
@@ -46,16 +46,20 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Terrance Ferguson — IR (IR slot)"
+    "Terrance Ferguson — IR (IR slot)",
+    "Nick Bolton — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-18 10:16 AM PT (/workspace/fantrax-raw-2026-11-18-pw-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Nick Bolton — Q (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Terrance Ferguson — IR (IR slot)"
+    "Terrance Ferguson — IR (IR slot)",
+    "Nick Bolton — Q (active)"
   ],
-  "updated": "2026-11-18",
-  "lastSynced": "2026-11-18 10:16 AM PT"
+  "updated": "2026-11-19",
+  "lastSynced": "2026-11-19 5:54 AM PT"
 }

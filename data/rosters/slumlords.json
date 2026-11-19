@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-11-18 10:16 AM PT",
+  "asOf": "2026-11-19 5:54 AM PT",
   "faabLeft": 0,
   "startingQB": "Cam Ward",
   "roster": {
@@ -48,23 +48,26 @@
   "notes": "",
   "injuryFlags": [
     "Drake Maye — Q (reserve)",
+    "Jeffery Simmons — Q (active)",
     "Anthony Hill — Q (IR slot)",
     "Talanoa Hufanga — Q (IR slot)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-18 10:16 AM PT (/workspace/fantrax-raw-2026-11-18-pw-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
-    "Drake Maye — Q (reserve)"
+    "Drake Maye — Q (reserve)",
+    "Jeffery Simmons — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Drake Maye — Q (reserve)",
+    "Jeffery Simmons — Q (active)",
     "Anthony Hill — Q (IR slot)",
     "Talanoa Hufanga — Q (IR slot)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "updated": "2026-11-18",
-  "lastSynced": "2026-11-18 10:16 AM PT"
+  "updated": "2026-11-19",
+  "lastSynced": "2026-11-19 5:54 AM PT"
 }
