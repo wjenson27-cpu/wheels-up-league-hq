@@ -844,7 +844,7 @@
     const randn = makeRandn(rng);
     const made = Object.fromEntries(ids.map((id) => [id, 0]));
     for (let sim = 0; sim < sims; sim += 1) {
-      const state = copyStandings(list);
+      const state = copyStandings(list, weeks);
       fixed.forEach((g) => playGame(state, model, g.a, g.b, randn));
       openWeeks.forEach(() => {
         const order = shuffleIds(ids, rng);

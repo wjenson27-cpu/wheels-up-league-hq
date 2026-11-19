@@ -117,7 +117,8 @@
       "doubtpfizer",
       "eddies",
       "hyper",
-      "pocket"
+      "pocket",
+      "substation"
     ],
     "eliminations": [
       {
@@ -235,11 +236,9 @@
         "teamA": "Substation",
         "teamBId": "lab",
         "teamB": "Little Ass Boys",
-        "note": "Week 10 Last Ride final — Substation 294, LAB 198. Substation wins Last Ride and gets a Week 11 re-entry shot. Last Ride is over."
+        "note": "Week 10 Last Ride final — Substation 294, LAB 198. Substation won Last Ride and is back on the bus for Week 11. Last Ride is over."
       },
-      "aliveTeamIds": [
-        "substation"
-      ],
+      "aliveTeamIds": [],
       "results": [
         {
           "week": 3,
@@ -330,7 +329,15 @@
           "note": "Week 10 Last Ride (final week) — Substation wins Last Ride; LAB out of Last Ride for good. Substation gets a Week 11 re-entry shot."
         }
       ]
-    }
+    },
+    "reentries": [
+      {
+        "week": 11,
+        "teamId": "substation",
+        "team": "Substation",
+        "note": "Last Ride winner (beat LAB 294–198 in Week 10) is back on the bus for Week 11; 5 alive."
+      }
+    ]
   },
   "yearly": {
     "topRecord": {
