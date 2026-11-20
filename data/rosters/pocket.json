@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "Kellen Olson",
-  "asOf": "2026-11-19 5:54 AM PT",
+  "asOf": "2026-11-20 5:56 AM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -29,9 +29,9 @@
       "Will Anderson Jr."
     ],
     "LB": [
-      "Josiah Trotter",
-      "Barrett Carter",
       "Bryce Boettcher",
+      "Barrett Carter",
+      "Josiah Trotter",
       "Ernest Jones"
     ],
     "DB": [
@@ -56,7 +56,7 @@
     "Robert Spillane — Q (IR slot)",
     "Tony Adams — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-20 5:56 AM PT (/workspace/fantrax-raw-2026-11-20-am-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
     "Dalton Kincaid — Q (active)",
@@ -75,6 +75,6 @@
     "Robert Spillane — Q (IR slot)",
     "Tony Adams — Q (IR slot)"
   ],
-  "updated": "2026-11-19",
-  "lastSynced": "2026-11-19 5:54 AM PT"
+  "updated": "2026-11-20",
+  "lastSynced": "2026-11-20 5:56 AM PT"
 }

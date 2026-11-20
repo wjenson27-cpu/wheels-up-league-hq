@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Ryan Towner",
-  "asOf": "2026-11-19 5:54 AM PT",
+  "asOf": "2026-11-20 5:56 AM PT",
   "faabLeft": 0,
   "startingQB": "Cam Ward",
   "roster": {
@@ -30,44 +30,41 @@
       "Maxx Crosby",
       "Gregory Rousseau",
       "Carl Granderson",
-      "Jacob Martin",
-      "Jeffery Simmons"
+      "Jacob Martin"
     ],
     "LB": [],
     "DB": [
       "Budda Baker",
       "Chamarri Conner",
+      "Talanoa Hufanga",
       "Devon Witherspoon"
     ],
     "IR": [
       "Anthony Hill",
-      "Talanoa Hufanga",
+      "Jeffery Simmons",
       "Leonard Williams"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Drake Maye — Q (reserve)",
-    "Jeffery Simmons — Q (active)",
     "Anthony Hill — Q (IR slot)",
-    "Talanoa Hufanga — Q (IR slot)",
+    "Jeffery Simmons — Q (IR slot)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-20 5:56 AM PT (/workspace/fantrax-raw-2026-11-20-am-normalized.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [
-    "Drake Maye — Q (reserve)",
-    "Jeffery Simmons — Q (active)"
+    "Drake Maye — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Drake Maye — Q (reserve)",
-    "Jeffery Simmons — Q (active)",
     "Anthony Hill — Q (IR slot)",
-    "Talanoa Hufanga — Q (IR slot)",
+    "Jeffery Simmons — Q (IR slot)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "updated": "2026-11-19",
-  "lastSynced": "2026-11-19 5:54 AM PT"
+  "updated": "2026-11-20",
+  "lastSynced": "2026-11-20 5:56 AM PT"
 }

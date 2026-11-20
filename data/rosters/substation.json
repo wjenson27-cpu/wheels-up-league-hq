@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nathan Kelly",
-  "asOf": "2026-11-19 5:54 AM PT",
+  "asOf": "2026-11-20 5:56 AM PT",
   "faabLeft": 4,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -22,16 +22,16 @@
       "KC Concepcion"
     ],
     "TE": [
-      "Brevyn Spann-Ford",
-      "David Njoku"
+      "David Njoku",
+      "Brevyn Spann-Ford"
     ],
     "DL": [
       "Jaelan Phillips"
     ],
     "LB": [
-      "Malcolm Rodriguez",
       "Kaden Elliss",
       "Dre Greenlaw",
+      "Malcolm Rodriguez",
       "K.J. Britt",
       "Carson Schwesinger"
     ],
@@ -42,8 +42,8 @@
     ],
     "IR": [
       "Tank Bigsby",
-      "Keaton Mitchell",
-      "Jack Campbell"
+      "Jack Campbell",
+      "D.J. Reed"
     ]
   },
   "notes": "",
@@ -52,9 +52,10 @@
     "Jordyn Tyson — Q (active)",
     "Tank Bigsby — IR (IR slot)",
     "Dre Greenlaw — Q (active)",
-    "Jack Campbell — IR (IR slot)"
+    "Jack Campbell — IR (IR slot)",
+    "D.J. Reed — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-20 5:56 AM PT (/workspace/fantrax-raw-2026-11-20-am-normalized.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
     "Jakobi Meyers — Q (active)",
@@ -68,8 +69,9 @@
     "Jordyn Tyson — Q (active)",
     "Tank Bigsby — IR (IR slot)",
     "Dre Greenlaw — Q (active)",
-    "Jack Campbell — IR (IR slot)"
+    "Jack Campbell — IR (IR slot)",
+    "D.J. Reed — Q (IR slot)"
   ],
-  "updated": "2026-11-19",
-  "lastSynced": "2026-11-19 5:54 AM PT"
+  "updated": "2026-11-20",
+  "lastSynced": "2026-11-20 5:56 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse Nicholson",
-  "asOf": "2026-11-19 5:54 AM PT",
+  "asOf": "2026-11-20 5:56 AM PT",
   "faabLeft": 44,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -55,7 +55,7 @@
     "Jeremiyah Love — IR (IR slot)",
     "Akeem Davis-Gaither — IR (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-20 5:56 AM PT (/workspace/fantrax-raw-2026-11-20-am-normalized.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
     "Caleb Douglas — Q (active)",
@@ -73,6 +73,6 @@
     "Jeremiyah Love — IR (IR slot)",
     "Akeem Davis-Gaither — IR (reserve)"
   ],
-  "updated": "2026-11-19",
-  "lastSynced": "2026-11-19 5:54 AM PT"
+  "updated": "2026-11-20",
+  "lastSynced": "2026-11-20 5:56 AM PT"
 }

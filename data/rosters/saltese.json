@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Luke Sahlberg",
-  "asOf": "2026-11-19 5:54 AM PT",
+  "asOf": "2026-11-20 5:56 AM PT",
   "faabLeft": 2,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -14,14 +14,13 @@
       "Kyle Monangai",
       "David Montgomery",
       "D'Andre Swift",
-      "Chris Rodriguez Jr.",
       "Tyler Allgeier",
       "Rico Dowdle",
       "Aaron Jones"
     ],
     "WR": [
-      "Adonai Mitchell",
-      "Ashton Dulin"
+      "Ashton Dulin",
+      "Adonai Mitchell"
     ],
     "TE": [
       "Dalton Schultz",
@@ -34,13 +33,15 @@
       "Jamien Sherwood",
       "Zack Baun",
       "Henry To'oTo'o",
-      "Eric Wilson"
+      "Eric Wilson",
+      "Jaden Dugger"
     ],
     "DB": [
       "Jonas Sanker",
       "M.J. Stewart"
     ],
     "IR": [
+      "Chris Rodriguez Jr.",
       "Jonathon Brooks",
       "RJ Harvey"
     ]
@@ -48,27 +49,26 @@
   "notes": "",
   "injuryFlags": [
     "Bhayshul Tuten — Q (active)",
-    "Chris Rodriguez Jr. — Q (reserve)",
+    "Chris Rodriguez Jr. — Q (IR slot)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
     "Zack Baun — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-20 5:56 AM PT (/workspace/fantrax-raw-2026-11-20-am-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "Bhayshul Tuten — Q (active)",
-    "Chris Rodriguez Jr. — Q (reserve)",
     "Zack Baun — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Bhayshul Tuten — Q (active)",
-    "Chris Rodriguez Jr. — Q (reserve)",
+    "Chris Rodriguez Jr. — Q (IR slot)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
     "Zack Baun — Q (active)"
   ],
-  "updated": "2026-11-19",
-  "lastSynced": "2026-11-19 5:54 AM PT"
+  "updated": "2026-11-20",
+  "lastSynced": "2026-11-20 5:56 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle Weberg",
-  "asOf": "2026-11-19 5:54 AM PT",
+  "asOf": "2026-11-20 5:56 AM PT",
   "faabLeft": 68,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -38,18 +38,17 @@
     ],
     "DB": [
       "Reed Blankenship",
-      "Malik Mustapha"
+      "Kamari Lassiter"
     ],
     "IR": [
-      "TreVeyon Henderson",
-      "Kamari Lassiter"
+      "TreVeyon Henderson"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "TreVeyon Henderson — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-19 5:54 AM PT (/workspace/fantrax-raw-2026-11-19-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-20 5:56 AM PT (/workspace/fantrax-raw-2026-11-20-am-normalized.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -57,6 +56,6 @@
   "flags": [
     "TreVeyon Henderson — IR (IR slot)"
   ],
-  "updated": "2026-11-19",
-  "lastSynced": "2026-11-19 5:54 AM PT"
+  "updated": "2026-11-20",
+  "lastSynced": "2026-11-20 5:56 AM PT"
 }
