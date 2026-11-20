@@ -989,7 +989,8 @@ async function checkPages() {
           if (privacy.eagle && name !== "recap.html") errors.push("page shows an old Eddies name");
           if (name === "recap.html") {
             const recap = await page.evaluate(() => {
-              const first = document.querySelector(".recap-card");
+              const cards = [...document.querySelectorAll(".recap-card")];
+              const first = cards.find((card) => /Week 9/.test((card.querySelector("h2") || {}).textContent || "")) || null;
               if (!first) return { missing: true };
               const title = (first.querySelector("h2") || {}).textContent || "";
               const closer = ([...first.querySelectorAll("p.recap-meta")].pop() || {}).textContent || "";

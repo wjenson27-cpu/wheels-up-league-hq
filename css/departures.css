@@ -233,16 +233,21 @@
 
 /* —— Standings: one strip per club on a wide screen —— */
 .dep-standings {
-  --dep-cols: 32px minmax(0, 1.5fr) 48px 76px 76px 64px 48px 58px 84px 92px;
-  gap: 3px;
+  display: table;
+  width: 100%;
+  min-width: 0;
+  border-collapse: separate;
+  border-spacing: 0 3px;
+  table-layout: fixed;
 }
+
+.dep-standings thead { display: table-header-group; }
+.dep-standings tbody { display: table-row-group; }
 
 .dep-stand-head,
 .dep-stand-row {
-  display: grid;
-  grid-template-columns: var(--dep-cols);
-  column-gap: 6px;
-  align-items: center;
+  display: table-row;
+  height: 48px;
 }
 
 .dep-stand-head {
@@ -263,11 +268,10 @@
 }
 
 .dep-stand-row {
-  height: 48px;
   min-height: 48px;
-  max-height: 48px;
+  height: 48px;
   padding: 0 8px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .dep-standings .flap-char {
@@ -277,9 +281,6 @@
   font-size: 13px;
   border-radius: 2px;
 }
-
-.dep-line2,
-.dep-extra { display: contents; }
 
 .dep-more-btn { display: none; }
 
@@ -341,16 +342,41 @@
   white-space: nowrap;
 }
 
-.dep-rank { grid-column: 1; }
-.dep-team { grid-column: 2; }
-.dep-stat[data-k="record"] { grid-column: 3; }
-.dep-stat[data-k="pf"] { grid-column: 4; }
-.dep-stat[data-k="pa"] { grid-column: 5; }
-.dep-stat[data-k="diff"] { grid-column: 6; }
-.dep-stat[data-k="faab"] { grid-column: 7; }
-.dep-stat[data-k="streak"] { grid-column: 8; }
-.dep-stat[data-k="playoff"] { grid-column: 9; }
-.dep-stand-row > .dep-status { grid-column: 10; justify-self: end; }
+.dep-standings col.dep-c-rank { width: 36px; }
+.dep-standings col.dep-c-team { width: auto; }
+.dep-standings col.dep-c-num { width: 76px; }
+.dep-standings col.dep-c-diff { width: 64px; }
+.dep-standings col.dep-c-sm { width: 52px; }
+.dep-standings col.dep-c-play { width: 84px; }
+.dep-standings col.dep-c-status { width: 96px; }
+
+.dep-more-cell,
+.dep-break { display: none; }
+
+.dep-cut-row,
+.dep-cut-row td {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+table.trade-table.standings-table.dep-standings th,
+table.trade-table.standings-table.dep-standings td {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  line-height: 1.1;
+}
+
+table.dep-standings .team-inline > span:last-child,
+table.dep-standings .dep-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .dep-cut {
   display: flex;
@@ -602,63 +628,80 @@
 /* Phone standings: two lines, extras behind More. */
 @media (max-width: 899px) {
   .dep-stand-head { display: none; }
+  table.dep-standings,
+  table.dep-standings tbody { display: block; width: 100%; }
 
   .dep-stand-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     height: auto;
     min-height: 0;
     max-height: none;
     overflow: visible;
-    grid-template-columns: auto minmax(0, 1fr) auto;
-    grid-template-areas:
-      "rank team status"
-      "line2 line2 line2"
-      "extra extra extra";
-    row-gap: 2px;
+    gap: 2px 6px;
     padding: 4px 8px;
   }
 
-  .dep-rank { grid-area: rank; grid-column: auto; }
-  .dep-team { grid-area: team; grid-column: auto; }
-  .dep-stat { grid-column: auto; }
-  .dep-stand-row > .dep-status { grid-area: status; grid-column: auto; align-self: center; }
+  .dep-stand-row > td { grid-column: auto; }
+
+  .dep-rank { order: 1; }
+  .dep-team { order: 2; flex: 1 1 auto; min-width: 0; }
+  .dep-stand-row > .dep-status { order: 3; }
+  .dep-break {
+    display: block;
+    order: 4;
+    flex: 1 1 100%;
+    height: 0;
+    padding: 0;
+    border: 0;
+  }
+  .col-record { order: 5; }
+  .dep-pf { order: 6; }
+  .col-playoff { order: 7; }
+  .dep-more-cell { order: 8; margin-left: auto; }
+  .dep-x { order: 9; }
+
   .dep-owner-line { display: none; }
 
-  .dep-line2 {
-    display: flex;
-    grid-area: line2;
-    align-items: center;
-    gap: 4px;
-    min-width: 0;
-  }
-
-  .dep-line2 .flap-char {
-    height: 16px;
-    font-size: 13px;
-  }
-
-  .dep-line2 .dep-stat {
+  .col-record,
+  .dep-pf,
+  .col-playoff,
+  .dep-x {
     display: flex;
     align-items: center;
     gap: 4px;
-    min-width: 0;
   }
 
-  .dep-inline-k {
-    display: inline;
-    flex: none;
+  .col-record::before,
+  .dep-pf::before,
+  .col-playoff::before,
+  .dep-x[data-k="pa"]::before,
+  .dep-x[data-k="diff"]::before,
+  .dep-x[data-k="faab"]::before,
+  .dep-x[data-k="streak"]::before {
     color: #AFC0D6;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
   }
+
+  .col-record::before { content: "W-L"; }
+  .dep-pf::before { content: "PF"; }
+  .col-playoff::before { content: "PO%"; }
+  .dep-x[data-k="pa"]::before { content: "PA"; }
+  .dep-x[data-k="diff"]::before { content: "+/−"; }
+  .dep-x[data-k="faab"]::before { content: "FAAB"; }
+  .dep-x[data-k="streak"]::before { content: "Streak"; }
+
+  .dep-stand-row .flap-char { height: 16px; font-size: 13px; }
+
+  .dep-more-cell { display: flex; align-items: center; }
 
   .dep-more-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex: none;
-    margin-left: auto;
     min-width: 44px;
     min-height: 44px;
     padding: 0 8px;
@@ -670,22 +713,23 @@
     cursor: pointer;
   }
 
-  .dep-extra { display: none; grid-area: extra; }
+  .dep-x { display: none; flex: 1 1 42%; }
 
-  .dep-stand-row.is-open .dep-extra {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 6px 10px;
-    padding-top: 4px;
+  .dep-stand-row.is-open .dep-x { display: flex; }
+}
+
+@media (max-width: 700px) {
+  table.dep-standings.standings-table,
+  table.dep-standings.standings-table .col-rank,
+  table.dep-standings.standings-table .col-team,
+  table.dep-standings.standings-table .col-record {
+    position: static;
+    left: auto;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    box-shadow: none;
   }
-
-  .dep-extra .dep-stat {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .dep-extra .dep-inline-k { display: inline; }
 }
 
 /* Desktop games: one strip, header aligned with the columns. */

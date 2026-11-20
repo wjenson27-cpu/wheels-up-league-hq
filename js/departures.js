@@ -85,10 +85,7 @@
     if (!ranked.length) return `<p class="muted mb-0">No clubs in the team file yet.</p>`;
     const official = WUC.sortStandings(teams, "official");
     const cut = spots();
-    const head = `<div class="dep-head dep-stand-head">
-      <span>#</span><span>Team</span><span>W-L</span><span>PF</span><span>PA</span><span>+/−</span><span>FAAB</span><span>Streak</span><span>Playoff %</span><span>Status</span>
-    </div>`;
-    const rows = [head];
+    const rows = [];
     ranked.forEach((team, index) => {
       const pf = WUC.pointsFor(team);
       const pa = WUC.pointsAgainst(team);
@@ -108,39 +105,57 @@
       const canceled = status && status.kind === "canceled";
       const mark = WUC.teamMark ? WUC.teamMark(team.id, { size: "sm" }) : "";
       const name = WUC.officialName(team.id);
-      rows.push(`<article class="dep-row dep-stand-row${canceled ? " is-canceled" : ""}" data-seed="${seed == null ? "" : seed}">
-        <div class="dep-rank" data-k="rank"><span class="dep-val">${flaps(index + 1)}</span></div>
-        <div class="dep-team" data-k="team">
+      const pfText = pf == null ? "—" : WUC.formatPts(pf);
+      const paText = pa == null ? "—" : WUC.formatPts(pa);
+      rows.push(`<tr class="dep-row dep-stand-row${canceled ? " is-canceled" : ""}" data-seed="${seed == null ? "" : seed}">
+        <td class="dep-rank col-rank" data-k="rank"><span class="dep-val">${flaps(index + 1)}</span></td>
+        <td class="dep-team col-team" data-k="team">
           <a class="dep-club team-link" href="${WUC.teamHref(team.id)}" title="${esc(name)}">
             ${mark}
             <span class="dep-club-text">
-              <span class="dep-val dep-name">${esc(name)}</span>
+              <span class="team-inline"><span class="dep-val dep-name">${esc(name)}</span></span>
               <span class="dep-owner-line" data-k="owner"><span class="dep-val">${owner ? esc(owner) : ""}</span></span>
             </span>
           </a>
-        </div>
-        <div class="dep-line2">
-          ${stat("record", "W-L", flaps(record))}
-          ${stat("pf", "PF", flaps(pf == null ? "—" : WUC.formatPts(pf)))}
-          ${stat("playoff", "PO%", `<span title="${esc(oddsTitle)}">${flaps(oddsLabel)}</span>`)}
-          <button type="button" class="dep-more-btn" aria-expanded="false">More</button>
-        </div>
-        <div class="dep-extra">
-          ${stat("pa", "PA", flaps(pa == null ? "—" : WUC.formatPts(pa)))}
-          ${stat("diff", "+/−", flaps(WUC.formatDiff(diff), diffClass(diff)))}
-          ${stat("faab", "FAAB", flaps(faab))}
-          ${stat("streak", "Streak", flaps(streak || "—"))}
-        </div>
-        <div class="dep-status">${status ? chip(status.label, status.kind) : ""}</div>
-      </article>`);
+        </td>
+        <td class="dep-stat col-record" data-k="record"><span class="dep-val">${flaps(record)}</span></td>
+        <td class="dep-stat col-num dep-pf" data-k="pf"><span class="dep-val">${flaps(pfText)}</span></td>
+        <td class="dep-stat dep-x col-pa" data-k="pa"><span class="dep-val">${flaps(paText)}</span></td>
+        <td class="dep-stat dep-x" data-k="diff"><span class="dep-val">${flaps(WUC.formatDiff(diff), diffClass(diff))}</span></td>
+        <td class="dep-stat dep-x" data-k="faab"><span class="dep-val">${flaps(faab)}</span></td>
+        <td class="dep-stat dep-x" data-k="streak"><span class="dep-val">${flaps(streak || "—")}</span></td>
+        <td class="dep-stat col-playoff" data-k="playoff" title="${esc(oddsTitle)}"><span class="dep-val">${flaps(oddsLabel)}</span></td>
+        <td class="dep-status">${status ? chip(status.label, status.kind) : ""}</td>
+        <td class="dep-break" aria-hidden="true"></td>
+        <td class="dep-more-cell"><button type="button" class="dep-more-btn" aria-expanded="false">More</button></td>
+      </tr>`);
       if (mode === "official" && seed != null && nextSeed != null && seed <= cut && nextSeed > cut) {
-        rows.push(`<div class="dep-cut" role="separator"><span>Playoff line</span></div>`);
+        rows.push(`<tr class="dep-cut-row"><td colspan="12"><div class="dep-cut" role="separator"><span>Playoff line</span></div></td></tr>`);
       }
     });
     const lineNote = mode === "official"
       ? `The dashed line sits after seed ${cut} in this record order.`
       : "The playoff line is drawn in record order. Status still uses that seed.";
-    return `<div class="dep-board dep-standings" role="list" aria-label="League standings">${rows.join("")}</div>
+    return `<table class="trade-table standings-table dep-board dep-standings" aria-label="League standings">
+      <colgroup>
+        <col class="dep-c-rank"><col class="dep-c-team"><col class="dep-c-sm"><col class="dep-c-num">
+        <col class="dep-c-num"><col class="dep-c-diff"><col class="dep-c-sm"><col class="dep-c-sm">
+        <col class="dep-c-play"><col class="dep-c-status">
+      </colgroup>
+      <thead><tr class="dep-stand-head">
+        <th class="h-rank col-rank">#</th>
+        <th class="h-team col-team">Team</th>
+        <th class="h-record col-record">W-L</th>
+        <th class="h-pf col-num">PF</th>
+        <th class="h-pa">PA</th>
+        <th class="h-diff">+/−</th>
+        <th class="h-faab">FAAB</th>
+        <th class="h-streak">Streak</th>
+        <th class="h-playoff col-playoff">Playoff %</th>
+        <th class="h-status">Status</th>
+      </tr></thead>
+      <tbody>${rows.join("")}</tbody>
+    </table>
       <p class="dep-legend">CLINCHED and CANCELED come from the playoff odds. ON TIME is a seed in the top ${cut}. DELAYED is seed ${cut + 1} or lower. ${lineNote}</p>`;
   }
 
