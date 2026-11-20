@@ -16,6 +16,12 @@
     return `<span class="flap-group${extraCls}" role="img" aria-label="${esc(text)}"><span class="flap-tiles" aria-hidden="true">${tiles}</span></span>`;
   }
 
+  function plainNum(value, extra) {
+    const text = value == null || value === "" ? "—" : String(value);
+    const cls = extra ? ` dep-plain ${extra}` : " dep-plain";
+    return `<span class="${cls.trim()}">${esc(text)}</span>`;
+  }
+
   function isBlankScore(value) {
     const text = value == null || value === "" ? "—" : String(value);
     return text === "—" || text === "–" || text === "-";
@@ -120,9 +126,9 @@
         </td>
         <td class="dep-stat col-record" data-k="record"><span class="dep-val">${flaps(record)}</span></td>
         <td class="dep-stat col-num dep-pf" data-k="pf"><span class="dep-val">${flaps(pfText)}</span></td>
-        <td class="dep-stat dep-x col-pa" data-k="pa"><span class="dep-val">${flaps(paText)}</span></td>
-        <td class="dep-stat dep-x" data-k="diff"><span class="dep-val">${flaps(WUC.formatDiff(diff), diffClass(diff))}</span></td>
-        <td class="dep-stat dep-x" data-k="faab"><span class="dep-val">${flaps(faab)}</span></td>
+        <td class="dep-stat dep-x col-pa" data-k="pa"><span class="dep-val">${plainNum(paText)}</span></td>
+        <td class="dep-stat dep-x" data-k="diff"><span class="dep-val">${plainNum(WUC.formatDiff(diff), diffClass(diff))}</span></td>
+        <td class="dep-stat dep-x" data-k="faab"><span class="dep-val">${plainNum(faab)}</span></td>
         <td class="dep-stat dep-x" data-k="streak"><span class="dep-val">${flaps(streak || "—")}</span></td>
         <td class="dep-stat col-playoff" data-k="playoff" title="${esc(oddsTitle)}"><span class="dep-val">${flaps(oddsLabel)}</span></td>
         <td class="dep-status">${status ? chip(status.label, status.kind) : ""}</td>
@@ -130,7 +136,7 @@
         <td class="dep-more-cell"><button type="button" class="dep-more-btn" aria-expanded="false">More</button></td>
       </tr>`);
       if (mode === "official" && seed != null && nextSeed != null && seed <= cut && nextSeed > cut) {
-        rows.push(`<tr class="dep-cut-row"><td colspan="12"><div class="dep-cut" role="separator"><span>Playoff line</span></div></td></tr>`);
+        rows.push(`<tr class="dep-cut-row"><td colspan="10"><div class="dep-cut" role="separator"><span>Playoff line</span></div></td></tr>`);
       }
     });
     const lineNote = mode === "official"

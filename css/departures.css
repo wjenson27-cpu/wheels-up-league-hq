@@ -256,7 +256,7 @@
   color: #AFC0D6;
   font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -276,11 +276,27 @@
 
 .dep-standings .flap-char {
   height: 18px;
-  min-width: 0.62em;
-  padding: 0 1px;
+  min-width: 0.55em;
+  padding: 0;
   font-size: 13px;
   border-radius: 2px;
+  letter-spacing: 0;
 }
+
+.dep-standings .flap-tiles { gap: 1px; }
+
+.dep-plain {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.dep-plain.is-pos { color: #8BD86A; }
+.dep-plain.is-neg { color: #FF8A8A; }
 
 .dep-more-btn { display: none; }
 
@@ -342,33 +358,63 @@
   white-space: nowrap;
 }
 
-.dep-standings col.dep-c-rank { width: 36px; }
+.dep-standings col.dep-c-rank { width: 44px; }
 .dep-standings col.dep-c-team { width: auto; }
-.dep-standings col.dep-c-num { width: 76px; }
-.dep-standings col.dep-c-diff { width: 64px; }
-.dep-standings col.dep-c-sm { width: 52px; }
-.dep-standings col.dep-c-play { width: 84px; }
-.dep-standings col.dep-c-status { width: 96px; }
+.dep-standings col.dep-c-sm { width: 72px; }
+.dep-standings col.dep-c-num { width: 104px; }
+.dep-standings col.dep-c-diff { width: 84px; }
+.dep-standings col.dep-c-play { width: 112px; }
+.dep-standings col.dep-c-status { width: 108px; }
 
 .dep-more-cell,
 .dep-break { display: none; }
 
-.dep-cut-row,
-.dep-cut-row td {
-  display: block;
-  width: 100%;
-  padding: 0;
+.dep-cut-row { display: table-row; height: auto; }
+
+table.trade-table.standings-table.dep-standings tr.dep-cut-row > td {
+  display: table-cell;
+  width: auto;
+  padding: 4px 0;
   border: 0;
   background: transparent;
+  overflow: visible;
+  text-align: left;
 }
 
 table.trade-table.standings-table.dep-standings th,
 table.trade-table.standings-table.dep-standings td {
-  padding: 0;
+  padding: 0 0 0 12px;
   border: 0;
   background: transparent;
   text-align: left;
   line-height: 1.1;
+  overflow: hidden;
+}
+
+table.trade-table.standings-table.dep-standings th.h-rank,
+table.trade-table.standings-table.dep-standings td.dep-rank,
+table.trade-table.standings-table.dep-standings th.h-team,
+table.trade-table.standings-table.dep-standings td.dep-team {
+  padding-left: 8px;
+  text-align: left;
+  overflow: visible;
+}
+
+table.trade-table.standings-table.dep-standings th.h-record,
+table.trade-table.standings-table.dep-standings th.h-pf,
+table.trade-table.standings-table.dep-standings th.h-pa,
+table.trade-table.standings-table.dep-standings th.h-diff,
+table.trade-table.standings-table.dep-standings th.h-faab,
+table.trade-table.standings-table.dep-standings th.h-streak,
+table.trade-table.standings-table.dep-standings th.h-playoff,
+table.trade-table.standings-table.dep-standings td.dep-stat {
+  text-align: right;
+}
+
+table.trade-table.standings-table.dep-standings td.dep-stat .dep-val,
+table.trade-table.standings-table.dep-standings td.dep-stat .flap-tiles {
+  justify-content: flex-end;
+  margin-left: auto;
 }
 
 table.dep-standings .team-inline > span:last-child,
@@ -382,13 +428,18 @@ table.dep-standings .dep-name {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 2px 0;
+  width: 100%;
+  margin: 0;
   color: #E9B44C;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.14em;
+  line-height: 1;
   text-transform: uppercase;
+  white-space: nowrap;
 }
+
+.dep-cut span { flex: none; }
 
 .dep-cut::before,
 .dep-cut::after {
@@ -639,15 +690,35 @@ table.dep-standings .dep-name {
     min-height: 0;
     max-height: none;
     overflow: visible;
-    gap: 2px 6px;
+    gap: 2px 4px;
     padding: 4px 8px;
   }
 
-  .dep-stand-row > td { grid-column: auto; }
+  table.trade-table.standings-table.dep-standings .dep-stand-row > td { padding-left: 0; }
 
-  .dep-rank { order: 1; }
-  .dep-team { order: 2; flex: 1 1 auto; min-width: 0; }
-  .dep-stand-row > .dep-status { order: 3; }
+  .dep-rank {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 32px;
+    width: 32px;
+    min-width: 32px;
+    height: 44px;
+    align-self: center;
+    position: static;
+  }
+  .dep-rank .flap-tiles { flex-wrap: nowrap; }
+  .dep-team {
+    order: 2;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: calc(100% - 150px);
+    align-self: center;
+  }
+  .dep-standings .dep-club,
+  .dep-standings .team-mark { align-items: center; align-self: center; }
+  .dep-stand-row > .dep-status { order: 3; flex: 0 0 auto; align-self: center; }
   .dep-break {
     display: block;
     order: 4;
@@ -694,7 +765,9 @@ table.dep-standings .dep-name {
   .dep-x[data-k="faab"]::before { content: "FAAB"; }
   .dep-x[data-k="streak"]::before { content: "Streak"; }
 
-  .dep-stand-row .flap-char { height: 16px; font-size: 13px; }
+  .dep-stand-row .flap-char { height: 16px; min-width: 0.5em; padding: 0; font-size: 13px; }
+  .dep-stand-row .flap-tiles { gap: 0; }
+  .col-record, .dep-pf, .col-playoff { flex: 0 1 auto; min-width: 0; }
 
   .dep-more-cell { display: flex; align-items: center; }
 
@@ -704,7 +777,7 @@ table.dep-standings .dep-name {
     justify-content: center;
     min-width: 44px;
     min-height: 44px;
-    padding: 0 8px;
+    padding: 0 4px;
     border: 1px solid #1E3A5F;
     border-radius: 8px;
     background: #07182C;
