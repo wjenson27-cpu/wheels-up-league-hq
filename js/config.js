@@ -13,9 +13,9 @@ window.WUC_CONFIG = {
   season: 2026,
   podcastUrl: "https://open.spotify.com/show/7q7HcYt7hu5P4jXEcceyUk",
   PODCAST_URL: "https://open.spotify.com/show/7q7HcYt7hu5P4jXEcceyUk",
-  // Luke and Larry are the same person (ThiccSwede / Saltese)
-  commissioner: "Luke Sahlberg (ThiccSwede)",
-  commissioners: ["Luke Sahlberg (ThiccSwede)"],
+  // Saltese owner; public commissioner name
+  commissioner: "Larry",
+  commissioners: ["Larry"],
   featuredTeam: "Eagleridge Eddie's",
   leagueFocus: true
 };
