@@ -4,9 +4,9 @@ Clubhouse site for the **Wheels Up Collective**, a 14-team IDP league on [Fantra
 
 It is a static site: plain HTML, CSS, and JavaScript. No build step. GitHub Pages serves the `main` branch at <https://wjenson27-cpu.github.io/wheels-up-league-hq/>.
 
-**Eagleridge Eddie's:** public name for the club Fantrax still calls Eagle Ridge Eddies. Pages and `scripts/build-matchups-live.mjs` match on that Fantrax name (and on team id `eddies`) and display **Eagleridge Eddie's**. `data/livescoring-wN.json` keeps the Fantrax name as a join key. The owner is not shown.  
+**Eagleridge Eddie's:** public name for the club Fantrax still calls Eagle Ridge Eddies. Pages and `scripts/build-matchups-live.mjs` match on that Fantrax name (and on team id `eddies`) and display **Eagleridge Eddie's**. `data/livescoring-wN.json` keeps the Fantrax name as a join key. The owner is shown as Bill.  
 **Draft:** Aug 30, 2026  
-**Commissioner:** Luke Sahlberg (ThiccSwede)
+**Commissioner:** Larry
 
 ## Look at it on your computer
 

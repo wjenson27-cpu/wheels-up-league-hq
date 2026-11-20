@@ -8,7 +8,7 @@
     {
       "id": "slumlords",
       "name": "Indian Trail Slumlords",
-      "owner": "Ryan Towner",
+      "owner": "Towner",
       "abbrev": "ITS",
       "starting": 115,
       "remaining": 0,
@@ -21,7 +21,7 @@
     {
       "id": "newman",
       "name": "Newman Lake Sleep Paralysis Demons",
-      "owner": "Ryan McCallum",
+      "owner": "Ryan",
       "abbrev": "NLS",
       "starting": 115,
       "remaining": 40,
@@ -34,7 +34,7 @@
     {
       "id": "saltese",
       "name": "Saltese Slamm",
-      "owner": "Luke Sahlberg",
+      "owner": "Larry",
       "abbrev": "SAL",
       "starting": 115,
       "remaining": 2,
@@ -47,7 +47,7 @@
     {
       "id": "lab",
       "name": "Little Ass Boys",
-      "owner": "Jesse Nicholson",
+      "owner": "Jesse",
       "abbrev": "LAB",
       "starting": 115,
       "remaining": 44,
@@ -60,7 +60,7 @@
     {
       "id": "doubtpfizer",
       "name": "Mrs. Doubtpfizer",
-      "owner": "Kyle Weberg",
+      "owner": "Kyle",
       "abbrev": "MDP",
       "starting": 115,
       "remaining": 68,
@@ -73,7 +73,7 @@
     {
       "id": "eddies",
       "name": "Eagleridge Eddie's",
-      "owner": "",
+      "owner": "Bill",
       "abbrev": "ERE",
       "starting": 115,
       "remaining": 25,
@@ -86,7 +86,7 @@
     {
       "id": "dongers",
       "name": "Drummond Dongers",
-      "owner": "Gavin Heaton",
+      "owner": "Big Show",
       "abbrev": "DDG",
       "starting": 115,
       "remaining": 1,
@@ -99,7 +99,7 @@
     {
       "id": "ttab",
       "name": "Towner Top Aga Bottom",
-      "owner": "Chase Anderson",
+      "owner": "Chase",
       "abbrev": "TTA",
       "starting": 115,
       "remaining": 3,
@@ -112,7 +112,7 @@
     {
       "id": "hyper",
       "name": "The Hypersecretors",
-      "owner": "Jacob Crisp",
+      "owner": "Jacob",
       "abbrev": "HYP",
       "starting": 115,
       "remaining": 8,
@@ -125,7 +125,7 @@
     {
       "id": "morningside",
       "name": "Morningside Muff Divers",
-      "owner": "Tim Brandle",
+      "owner": "Grizz",
       "abbrev": "MMD",
       "starting": 115,
       "remaining": 5,
@@ -138,7 +138,7 @@
     {
       "id": "ultron",
       "name": "Ultron",
-      "owner": "Brian Aga",
+      "owner": "Aga",
       "abbrev": "ULT",
       "starting": 115,
       "remaining": 5,
@@ -151,7 +151,7 @@
     {
       "id": "goats",
       "name": "Valley Old Goats",
-      "owner": "Mike Heff",
+      "owner": "Heff",
       "abbrev": "VOG",
       "starting": 100,
       "remaining": 16,
@@ -165,7 +165,7 @@
     {
       "id": "pocket",
       "name": "Pocket Agents",
-      "owner": "Kellen Olson",
+      "owner": "KO",
       "abbrev": "PKT",
       "starting": 115,
       "remaining": 66,
@@ -178,7 +178,7 @@
     {
       "id": "substation",
       "name": "Substation",
-      "owner": "Nathan Kelly",
+      "owner": "Nate",
       "abbrev": "SUB",
       "starting": 115,
       "remaining": 4,
