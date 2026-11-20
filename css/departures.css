@@ -1,0 +1,883 @@
+/* Departures-board presentation. Colors sit on the HQ navy.
+   Split-flap motion is one short settle, and it is off when the
+   visitor asks for reduced motion. */
+
+.dep-board,
+.dep-week,
+.dep-game,
+.dep-stand-row,
+.dep-game-top,
+.dep-tx-row {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.dep-board {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dep-legend {
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #AFC0D6;
+}
+
+.dep-row,
+.dep-week-sum,
+.dep-game-top,
+.dep-tx-row {
+  background: #0E2A4A;
+  border: 1px solid #1E3A5F;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+.dep-stand-row,
+.dep-tx-row,
+.dep-game-top,
+.dep-week-sum {
+  padding: 10px 12px;
+}
+
+.dep-stand-row.is-canceled,
+.dep-tx-row.is-canceled,
+.dep-game-top.is-canceled {
+  background: #081422;
+  border-color: #4A3038;
+}
+
+.dep-stand-row.is-canceled .team-inline > span:last-child,
+.dep-tx-row.is-canceled .dep-summary,
+.dep-tx-row.is-canceled .team-inline > span:last-child {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #FFB4B4;
+}
+
+/* —— Split-flap tiles —— */
+.flap-group {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.flap-tiles {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  max-width: 100%;
+  perspective: 280px;
+}
+
+.flap-char {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0.78em;
+  height: 1.35em;
+  padding: 0 0.08em;
+  border-radius: 3px;
+  background: #07182C;
+  color: #FFFFFF;
+  font-family: Archivo, system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.flap-char.is-narrow { min-width: 0.42em; padding: 0; }
+.flap-char.is-gap {
+  min-width: 0.35em;
+  background: transparent;
+  box-shadow: none;
+}
+
+.flap-char::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.78);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.14);
+  pointer-events: none;
+}
+
+.flap-char.is-gap::after { content: none; }
+
+.flap-group.is-pos .flap-char { color: #8BD86A; }
+.flap-group.is-neg .flap-char { color: #FF8A8A; }
+.flap-group.is-win .flap-char { color: #6CC24A; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .flap-char {
+    transform-origin: center center;
+    animation: dep-flap-settle 0.38s ease both;
+    animation-delay: calc(var(--i, 0) * 16ms);
+  }
+}
+
+@keyframes dep-flap-settle {
+  from { transform: rotateX(-72deg); }
+  to { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flap-char { animation: none; }
+}
+
+/* —— Status chips —— */
+.dep-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  font-family: Archivo, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dep-chip.is-ontime {
+  color: #6CC24A;
+  border-color: #6CC24A;
+  background: transparent;
+}
+
+.dep-chip.is-delayed {
+  color: #E9B44C;
+  border-color: #E9B44C;
+  background: transparent;
+}
+
+.dep-chip.is-final {
+  color: #061428;
+  background: #6CC24A;
+  border-color: #6CC24A;
+}
+
+.dep-chip.is-canceled {
+  color: #FFB4B4;
+  border-color: #E25B5B;
+  background: transparent;
+}
+
+.dep-k {
+  display: block;
+  margin-bottom: 3px;
+  color: #AFC0D6;
+  font-family: Archivo, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dep-val {
+  display: block;
+  max-width: 100%;
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.team-card a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  max-width: 100%;
+}
+
+.dep-board a.team-link {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-width: 40px;
+  min-height: 40px;
+  color: #FFFFFF;
+}
+
+.dep-board .team-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.dep-board .team-inline > span:last-child {
+  min-width: 0;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.3;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* —— Standings: one strip per club on a wide screen —— */
+.dep-standings {
+  display: table;
+  width: 100%;
+  min-width: 0;
+  border-collapse: separate;
+  border-spacing: 0 3px;
+  table-layout: fixed;
+}
+
+.dep-standings thead { display: table-header-group; }
+.dep-standings tbody { display: table-row-group; }
+
+.dep-stand-head,
+.dep-stand-row {
+  display: table-row;
+  height: 48px;
+}
+
+.dep-stand-head {
+  min-height: 28px;
+  padding: 0 8px;
+  color: #AFC0D6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.dep-stand-head > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dep-stand-row {
+  min-height: 48px;
+  height: 48px;
+  padding: 0 8px;
+  overflow: visible;
+}
+
+.dep-standings .flap-char {
+  height: 18px;
+  min-width: 0.55em;
+  padding: 0;
+  font-size: 13px;
+  border-radius: 2px;
+  letter-spacing: 0;
+}
+
+.dep-standings .flap-tiles { gap: 1px; }
+
+.dep-plain {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.dep-plain.is-pos { color: #8BD86A; }
+.dep-plain.is-neg { color: #FF8A8A; }
+
+.dep-more-btn { display: none; }
+
+.dep-inline-k { display: none; }
+
+.dep-club {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  color: #FFFFFF;
+}
+
+.dep-club-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.dep-name {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.dep-owner-line {
+  display: block;
+  overflow: hidden;
+  color: #AFC0D6;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.15;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dep-owner-line:has(.dep-val:empty) { display: none; }
+
+.dep-standings .team-logo {
+  width: 28px;
+  height: 28px;
+}
+
+.dep-stand-row.is-canceled .dep-name {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #FFB4B4;
+}
+
+.dep-stat {
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.dep-standings col.dep-c-rank { width: 44px; }
+.dep-standings col.dep-c-team { width: auto; }
+.dep-standings col.dep-c-sm { width: 72px; }
+.dep-standings col.dep-c-num { width: 104px; }
+.dep-standings col.dep-c-diff { width: 84px; }
+.dep-standings col.dep-c-play { width: 112px; }
+.dep-standings col.dep-c-status { width: 108px; }
+
+.dep-more-cell,
+.dep-break { display: none; }
+
+.dep-cut-row { display: table-row; height: auto; }
+
+table.trade-table.standings-table.dep-standings tr.dep-cut-row > td {
+  display: table-cell;
+  width: auto;
+  padding: 4px 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+  text-align: left;
+}
+
+table.trade-table.standings-table.dep-standings th,
+table.trade-table.standings-table.dep-standings td {
+  padding: 0 0 0 12px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  line-height: 1.1;
+  overflow: hidden;
+}
+
+table.trade-table.standings-table.dep-standings th.h-rank,
+table.trade-table.standings-table.dep-standings td.dep-rank,
+table.trade-table.standings-table.dep-standings th.h-team,
+table.trade-table.standings-table.dep-standings td.dep-team {
+  padding-left: 8px;
+  text-align: left;
+  overflow: visible;
+}
+
+table.trade-table.standings-table.dep-standings th.h-record,
+table.trade-table.standings-table.dep-standings th.h-pf,
+table.trade-table.standings-table.dep-standings th.h-pa,
+table.trade-table.standings-table.dep-standings th.h-diff,
+table.trade-table.standings-table.dep-standings th.h-faab,
+table.trade-table.standings-table.dep-standings th.h-streak,
+table.trade-table.standings-table.dep-standings th.h-playoff,
+table.trade-table.standings-table.dep-standings td.dep-stat {
+  text-align: right;
+}
+
+table.trade-table.standings-table.dep-standings td.dep-stat .dep-val,
+table.trade-table.standings-table.dep-standings td.dep-stat .flap-tiles {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+table.dep-standings .team-inline > span:last-child,
+table.dep-standings .dep-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dep-cut {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  color: #E9B44C;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dep-cut span { flex: none; }
+
+.dep-cut::before,
+.dep-cut::after {
+  content: "";
+  flex: 1 1 auto;
+  border-top: 2px dashed #E9B44C;
+}
+
+/* —— Matchups and schedule games —— */
+.dep-game { padding: 8px 10px; margin-bottom: 8px; }
+.dep-game .dep-game-top { padding: 0; background: transparent; border: 0; }
+
+.dep-game-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  min-height: 28px;
+  padding: 0 4px 6px;
+  color: #AFC0D6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dep-game-top,
+.dep-game-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "codes status"
+    "dest dest";
+  gap: 6px 10px;
+  align-items: center;
+}
+
+.dep-codes {
+  grid-area: codes;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px 14px;
+  min-width: 0;
+}
+
+.dep-dest { grid-area: dest; min-width: 0; }
+
+.dep-game-top .dep-status,
+.dep-game-line .dep-status {
+  grid-area: status;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  justify-self: end;
+  gap: 6px;
+}
+
+.dep-blank {
+  color: #EAF0F7;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.dep-codes .flap-tiles,
+.dep-stat .flap-tiles,
+.dep-rank .flap-tiles,
+.dep-score .flap-tiles,
+.dep-tx-flight .flap-tiles,
+.dep-tx-gate .flap-tiles {
+  flex-wrap: nowrap;
+}
+
+.dep-side {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "who score"
+    "meta score";
+  column-gap: 8px;
+  align-items: center;
+  min-width: 0;
+}
+
+.dep-who { grid-area: who; min-width: 0; }
+.dep-score { grid-area: score; justify-self: end; }
+.dep-meta {
+  grid-area: meta;
+  margin: 0;
+  color: #AFC0D6;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.dep-vs {
+  margin: 2px 0 2px 40px;
+  color: #AFC0D6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dep-feature {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  color: #6CC24A;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dep-game .winbar,
+.dep-game .winbar-head,
+.dep-game .live-spread,
+.dep-game .live-nowin,
+.dep-game h2 {
+  margin-top: 10px;
+}
+
+.dep-game h2 {
+  font-size: 18px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.dep-game .live-who .team-inline > span:last-child,
+.dep-game .dep-who .team-inline > span:last-child {
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+}
+
+@media (max-width: 720px) {
+  .dep-vs { margin-left: 0; }
+}
+
+/* —— Transactions —— */
+.dep-tx-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "when status"
+    "main main";
+  gap: 10px 16px;
+  align-items: start;
+}
+
+.dep-when { grid-area: when; min-width: 0; }
+.dep-tx-main { grid-area: main; min-width: 0; }
+.dep-tx-row .dep-status { grid-area: status; justify-self: end; }
+
+.dep-summary {
+  margin: 4px 0 0;
+  color: #EAF0F7;
+  font-size: 15px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.dep-when {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  min-width: 0;
+}
+
+@media (min-width: 800px) {
+  .dep-tx-row {
+    grid-template-columns: auto auto minmax(0, 1fr) auto;
+    grid-template-areas: "flight gate main status";
+    align-items: center;
+  }
+  .dep-when { display: contents; }
+  .dep-tx-flight { grid-area: flight; }
+  .dep-tx-gate { grid-area: gate; }
+}
+
+/* —— Schedule weeks —— */
+.dep-week { margin: 0 0 10px; }
+
+.dep-week-sum {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  min-height: 48px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.dep-week-sum::-webkit-details-marker { display: none; }
+
+.dep-week-sum::before {
+  content: "";
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #EAF0F7;
+  border-bottom: 2px solid #EAF0F7;
+  transform: rotate(-45deg);
+}
+
+.dep-week[open] > .dep-week-sum::before { transform: rotate(45deg); }
+
+.dep-week-sum:focus-visible {
+  outline: 2px solid #8BD86A;
+  outline-offset: 3px;
+}
+
+.dep-week-label {
+  flex: 1 1 140px;
+  min-width: 0;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.dep-week .dep-board { margin-top: 8px; }
+
+.dep-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.dep-pair .dep-side { min-height: 44px; }
+
+/* Phone standings: two lines, extras behind More. */
+@media (max-width: 899px) {
+  .dep-stand-head { display: none; }
+  table.dep-standings,
+  table.dep-standings tbody { display: block; width: 100%; }
+
+  .dep-stand-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+    gap: 2px 4px;
+    padding: 4px 8px;
+  }
+
+  table.trade-table.standings-table.dep-standings .dep-stand-row > td { padding-left: 0; }
+
+  .dep-rank {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 32px;
+    width: 32px;
+    min-width: 32px;
+    height: 44px;
+    align-self: center;
+    position: static;
+  }
+  .dep-rank .flap-tiles { flex-wrap: nowrap; }
+  .dep-team {
+    order: 2;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: calc(100% - 150px);
+    align-self: center;
+  }
+  .dep-standings .dep-club,
+  .dep-standings .team-mark { align-items: center; align-self: center; }
+  .dep-stand-row > .dep-status { order: 3; flex: 0 0 auto; align-self: center; }
+  .dep-break {
+    display: block;
+    order: 4;
+    flex: 1 1 100%;
+    height: 0;
+    padding: 0;
+    border: 0;
+  }
+  .col-record { order: 5; }
+  .dep-pf { order: 6; }
+  .col-playoff { order: 7; }
+  .dep-more-cell { order: 8; margin-left: auto; }
+  .dep-x { order: 9; }
+
+  .dep-owner-line { display: none; }
+
+  .col-record,
+  .dep-pf,
+  .col-playoff,
+  .dep-x {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .col-record::before,
+  .dep-pf::before,
+  .col-playoff::before,
+  .dep-x[data-k="pa"]::before,
+  .dep-x[data-k="diff"]::before,
+  .dep-x[data-k="faab"]::before,
+  .dep-x[data-k="streak"]::before {
+    color: #AFC0D6;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  .col-record::before { content: "W-L"; }
+  .dep-pf::before { content: "PF"; }
+  .col-playoff::before { content: "PO%"; }
+  .dep-x[data-k="pa"]::before { content: "PA"; }
+  .dep-x[data-k="diff"]::before { content: "+/−"; }
+  .dep-x[data-k="faab"]::before { content: "FAAB"; }
+  .dep-x[data-k="streak"]::before { content: "Streak"; }
+
+  .dep-stand-row .flap-char { height: 16px; min-width: 0.5em; padding: 0; font-size: 13px; }
+  .dep-stand-row .flap-tiles { gap: 0; }
+  .col-record, .dep-pf, .col-playoff { flex: 0 1 auto; min-width: 0; }
+
+  .dep-more-cell { display: flex; align-items: center; }
+
+  .dep-more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0 4px;
+    border: 1px solid #1E3A5F;
+    border-radius: 8px;
+    background: #07182C;
+    color: #EAF0F7;
+    font: 700 13px/1 Archivo, system-ui, sans-serif;
+    cursor: pointer;
+  }
+
+  .dep-x { display: none; flex: 1 1 42%; }
+
+  .dep-stand-row.is-open .dep-x { display: flex; }
+}
+
+@media (max-width: 700px) {
+  table.dep-standings.standings-table,
+  table.dep-standings.standings-table .col-rank,
+  table.dep-standings.standings-table .col-team,
+  table.dep-standings.standings-table .col-record {
+    position: static;
+    left: auto;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    box-shadow: none;
+  }
+}
+
+/* Desktop games: one strip, header aligned with the columns. */
+@media (min-width: 900px) {
+  .dep-game-head,
+  .dep-schedule-games .dep-game-head {
+    display: grid;
+    grid-template-columns: 78px 46px minmax(0, 1fr) minmax(0, 1fr) auto;
+    column-gap: 8px;
+    align-items: end;
+    padding: 0 8px 4px;
+  }
+
+  .dep-game-head .dep-head-match { grid-column: 3 / span 2; }
+  .dep-game-head span:last-child { grid-column: 5; }
+
+  .dep-game-top,
+  .dep-schedule-games .dep-game-line {
+    grid-template-columns: 78px 46px minmax(0, 1fr) minmax(0, 1fr) auto;
+    grid-template-areas: "flight gate sideA sideB status";
+    column-gap: 8px;
+    min-height: 48px;
+    align-items: center;
+  }
+
+  .dep-game .dep-codes,
+  .dep-game .dep-dest,
+  .dep-schedule-games .dep-codes,
+  .dep-schedule-games .dep-dest,
+  .dep-schedule-games .dep-pair {
+    display: contents;
+  }
+
+  .dep-flight { grid-area: flight; }
+  .dep-gate { grid-area: gate; }
+  .dep-side-a { grid-area: sideA; }
+  .dep-side-b { grid-area: sideB; }
+
+  .dep-game .dep-vs { display: none; }
+
+  .dep-schedule-games .dep-game-line {
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+    padding: 0 8px;
+    overflow: hidden;
+  }
+
+  .dep-schedule-games .dep-side {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    min-height: 44px;
+  }
+
+  .dep-schedule-games .team-inline > span:last-child,
+  .dep-game .team-inline > span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .dep-game .team-logo,
+  .dep-schedule-games .team-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .dep-week-sum {
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+}
+

@@ -340,8 +340,8 @@ function parlayNameViolation(text) {
 /* Five retained draft owner fields.
    Each allowance is one exact repo path, the direct owner property of the
    rankings row whose teamId is "eddies", and the exact value "Bill Jenson".
-   Check-site reports that owner string today. Published rankings on this
-   branch keep that row's owner empty. The draft files match *.DRAFT.json in
+   Check-site reports that full owner string today. Published rankings use
+   the short name Bill, which is allowed. The draft files match *.DRAFT.json in
    .gitignore and are absent here, so their bytes were not re-read; the row
    is identified by teamId rather than a week-specific index. The value may
    appear once. Another copy, a nested owner, a different string, another
@@ -447,7 +447,7 @@ function publicNameViolation(rel, text) {
       skippedRetained = true;
       continue;
     }
-    if (/\bBill\b/.test(match[1])) return `${rel} owner label "${match[1]}"`;
+    if (/\bBill\b/.test(match[1]) && match[1].trim() !== "Bill") return `${rel} owner label "${match[1]}"`;
     if (containsContact(match[1])) return `${rel} owner contact`;
   }
   if (rel === "data/td-parlay.json") {
@@ -464,18 +464,24 @@ function publicNameViolation(rel, text) {
   return "";
 }
 
-/* Rendered owner cells. The parlay page may show one exact "Bill".
-   A longer label or a contact still reports. */
+/* A rendered "Bill" is the short owner name. A longer Bill label is still
+   a full name. The parlay page may show that short name once. */
+function billIsFullName(cell) {
+  if (!/\bBill\b/.test(cell)) return false;
+  if (cell === "Bill") return false;
+  if (/^Bill\s*[·•]/.test(cell)) return false;
+  return true;
+}
+
 function ownerLabelViolation(pageName, labels) {
   const cells = (labels || []).map((label) => String(label || "").trim());
   for (const cell of cells) {
     if (containsContact(cell)) return "owner contact is visible";
-    if (/\bBill\b/.test(cell) && cell !== "Bill") return "owner full name is visible";
+    if (billIsFullName(cell)) return "owner full name is visible";
   }
   const exact = cells.filter((cell) => cell === "Bill");
-  if (!exact.length) return "";
-  if (pageName === "td-parlay.html" && exact.length === 1) return "";
-  return "owner label Bill is visible";
+  if (pageName === "td-parlay.html" && exact.length > 1) return "owner label Bill is visible";
+  return "";
 }
 
 function parlayFixture(name, id = "bill") {
@@ -522,12 +528,14 @@ async function checkPublicNames() {
   }
   const allowed = publicNameViolation("data/td-parlay.json", parlayFixture("Bill"));
   if (allowed) fail(`privacy rejected the parlay first name: ${allowed}`);
+  const shortOwner = publicNameViolation("data/teams.json", '{"owner":"Bill"}');
+  if (shortOwner) fail(`privacy rejected the short owner Bill: ${shortOwner}`);
   /* Expected strings are the current page diagnostics, including a rendered Bill Jenson.
      That scan stays in place beside the five draft-field exception. */
   const labelCases = [
-    ["index.html", ["Bill"], "owner label Bill is visible"],
-    ["team-eddies", ["Bill"], "owner label Bill is visible"],
-    ["standings.html", ["Ryan Towner", "Bill"], "owner label Bill is visible"],
+    ["index.html", ["Bill"], ""],
+    ["team-eddies", ["Bill"], ""],
+    ["standings.html", ["Towner", "Bill"], ""],
     ["td-parlay.html", ["Bill", "Bill"], "owner label Bill is visible"],
     ["td-parlay.html", ["Bill Example"], "owner full name is visible"],
     ["td-parlay.html", ["Bill Jenson"], "owner full name is visible"],
@@ -583,7 +591,7 @@ function checkRetainedDraftOwnerExceptions() {
   const outside = `${retainedRel} ${JSON.stringify("Bill Jenson")} is outside the one retained rankings owner field`;
   const negatives = [
     [retainedRel, retainedDraftBody("Bill Example"), `${retainedRel} owner label "Bill Example"`, "different Bill label in the retained owner field"],
-    [retainedRel, retainedDraftBody("Bill"), `${retainedRel} owner label "Bill"`, "shorter Bill label in the retained owner field"],
+    [retainedRel, retainedDraftBody("Bill"), "", "short owner Bill in the retained owner field"],
     [retainedRel, retainedDraftBody("Bill Jenson Jr"), `${retainedRel} owner label "Bill Jenson Jr"`, "longer label in the retained owner field"],
     [retainedRel, retainedDraftBody("bill@example.com"), `${retainedRel} owner contact`, "email in the retained owner field"],
     [retainedRel, retainedDraftBody("206-555-0100"), `${retainedRel} owner contact`, "phone in the retained owner field"],
@@ -989,7 +997,8 @@ async function checkPages() {
           if (privacy.eagle && name !== "recap.html") errors.push("page shows an old Eddies name");
           if (name === "recap.html") {
             const recap = await page.evaluate(() => {
-              const first = document.querySelector(".recap-card");
+              const cards = [...document.querySelectorAll(".recap-card")];
+              const first = cards.find((card) => /Week 9/.test((card.querySelector("h2") || {}).textContent || "")) || null;
               if (!first) return { missing: true };
               const title = (first.querySelector("h2") || {}).textContent || "";
               const closer = ([...first.querySelectorAll("p.recap-meta")].pop() || {}).textContent || "";
@@ -1121,7 +1130,7 @@ async function checkPages() {
                 overflow
               };
             });
-            const owners = ["Ryan Towner", "Ryan McCallum", "Luke Sahlberg", "Jesse Nicholson", "Kyle Weberg", "Bill Jenson", "Gavin Heaton", "Chase Anderson", "Jacob Crisp", "Tim Brandle", "Brian Aga", "Mike Heff", "Kellen Olson", "Nathan Kelly", "ThiccSwede"];
+            const owners = ["Towner", "Ryan", "Larry", "Jesse", "Kyle", "Bill", "Big Show", "Chase", "Jacob", "Grizz", "Aga", "Heff", "KO", "Nate", "Ryan Towner", "Ryan McCallum", "Luke Sahlberg", "Jesse Nicholson", "Kyle Weberg", "Bill Jenson", "Gavin Heaton", "Chase Anderson", "Jacob Crisp", "Tim Brandle", "Brian Aga", "Mike Heff", "Kellen Olson", "Nathan Kelly", "ThiccSwede"];
             if (info.n !== (live.matchups || []).length) errors.push(`live board has ${info.n} matchups`);
             if (feat.featured === true && info.featured !== "yes") errors.push("featured matchup is not first");
             if (feat.sideA && feat.sideB && (!info.firstText.includes(feat.sideA.name) || !info.firstText.includes(feat.sideB.name))) {

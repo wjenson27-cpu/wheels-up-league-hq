@@ -15,6 +15,7 @@
     { href: "recap.html", label: "Recap" },
     { href: "history.html", label: "History & Archives", also: ["archives.html"] },
     { href: "rosters.html#transactions", label: "Transactions" },
+    { href: "schedule.html", label: "Schedule" },
     { href: "podcast.html", label: "Podcast" },
     { href: "scoring.html", label: "Scoring" },
     { href: "td-parlay.html", label: "TD Parlay" }

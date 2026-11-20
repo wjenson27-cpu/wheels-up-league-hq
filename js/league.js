@@ -85,10 +85,8 @@
     if (!team || typeof team !== "object") return team;
     if (team.id === "eddies" || isEddiesLabel(team.name)) {
       team.name = PUBLIC_EDDIES;
-      team.owner = "";
-    } else if (ownerIsBill(team.owner)) {
-      team.owner = "";
     }
+    if (ownerIsBill(team.owner)) team.owner = "Bill";
     return team;
   }
 
@@ -159,12 +157,12 @@
     return publicOwner(team && team.owner, id, "");
   }
 
-  /* Blank when the label would identify the featured club's owner.
-     fallback is used only for a genuinely empty owner. */
+  /* Short display names, including Bill for Eagleridge Eddie's.
+     A longer Bill label still publishes as Bill. fallback is used only
+     for a genuinely empty owner. */
   function publicOwner(owner, teamId, fallback) {
-    const id = teamId ? (resolveTeamId(teamId) || "") : "";
-    if (id === "eddies" || ownerIsBill(owner)) return "";
-    const name = String(owner || "").trim();
+    let name = String(owner || "").trim();
+    if (ownerIsBill(name)) name = "Bill";
     if (name) return name;
     return fallback == null ? "" : String(fallback);
   }
