@@ -67,29 +67,6 @@ function statusLabel(status) {
   return "NOT POSTED";
 }
 
-function teamRow(side) {
-  const id = safeId(side.teamId);
-  const name = publicName(side);
-  const color = safeColor(side.color);
-  const logo = id ? `img/logos/${id}.jpg` : "";
-  const mark = logo
-    ? `<span class="team-mark team-mark-md" style="--team-color:${color}"><img class="team-logo" src="${esc(logo)}" alt="" width="40" height="40" /></span>`
-    : "";
-  const rec = side.record ? ` · ${esc(side.record)}` : "";
-  const inner = `<span class="team-inline">${mark}<span>${esc(name)}</span></span>`;
-  const who = id ? `<a class="team-link" href="team.html?id=${encodeURIComponent(id)}">${inner}</a>` : inner;
-  const unset = side.lineupSet === false;
-  const meta = unset
-    ? `No lineup set${rec}`
-    : `Proj ${esc(pts(side.projection))} · ${esc(leftText(side.playersLeft))}${rec}`;
-  const score = unset ? "—" : pts(side.score);
-  return `<div class="live-side"${unset ? ' data-lineup="unset"' : ""}>
-    <div class="live-who">${who}</div>
-    <div class="live-score${unset ? " is-unset" : ""}" style="color:${color}">${esc(score)}</div>
-    <p class="live-meta${unset ? " live-unset" : ""}">${meta}</p>
-  </div>`;
-}
-
 function winBar(game) {
   const prob = game.winProb;
   const nameA = publicName(game.sideA);
@@ -120,25 +97,80 @@ function winBar(game) {
     <p class="live-spread">${esc(spread)}</p>`;
 }
 
-function card(game) {
+function slotFor(week, game, fallback) {
+  const pairs = (scheduleWeeks && (scheduleWeeks[String(week)] || scheduleWeeks[week])) || [];
+  const idA = game.sideA && game.sideA.teamId;
+  const idB = game.sideB && game.sideB.teamId;
+  const idx = pairs.findIndex((pair) => {
+    if (!window.WUC || !WUC.resolveTeamId || !Array.isArray(pair)) return false;
+    const a = WUC.resolveTeamId(pair[0]);
+    const b = WUC.resolveTeamId(pair[1]);
+    return (a === idA && b === idB) || (a === idB && b === idA);
+  });
+  return idx >= 0 ? idx : fallback;
+}
+
+function boardSide(side, win) {
+  const id = safeId(side.teamId);
+  const name = publicName(side);
+  const color = safeColor(side.color);
+  const logo = id ? `img/logos/${id}.jpg` : "";
+  const mark = logo
+    ? `<span class="team-mark team-mark-md" style="--team-color:${color}"><img class="team-logo" src="${esc(logo)}" alt="" width="40" height="40" /></span>`
+    : "";
+  const rec = side.record ? ` · ${esc(side.record)}` : "";
+  const inner = `<span class="team-inline">${mark}<span>${esc(name)}</span></span>`;
+  const who = id ? `<a class="team-link" href="team.html?id=${encodeURIComponent(id)}">${inner}</a>` : inner;
+  const unset = side.lineupSet === false;
+  const meta = unset
+    ? `No lineup set${rec}`
+    : `Proj ${esc(pts(side.projection))} · ${esc(leftText(side.playersLeft))}${rec}`;
+  const score = unset ? "—" : pts(side.score);
+  const tiles = window.WUC && WUC.board ? WUC.board.flaps(score, win ? "is-win" : "") : esc(score);
+  return `<div class="dep-side${win ? " is-win" : ""}"${unset ? ' data-lineup="unset"' : ""}>
+    <div class="dep-who">${who}</div>
+    <div class="dep-score">${tiles}</div>
+    <p class="dep-meta${unset ? " live-unset" : ""}">${meta}</p>
+  </div>`;
+}
+
+function card(game, ctx) {
   const featured = game.featured === true;
-  const nameA = publicName(game.sideA);
-  const nameB = publicName(game.sideB);
   const place = game.place === "at" ? "at" : "vs";
   const ids = [game.sideA && game.sideA.teamId, game.sideB && game.sideB.teamId];
   const eddiesUltron = ids.includes("eddies") && ids.includes("ultron");
   const title = featured && eddiesUltron ? `<h2>${esc(PUBLIC_EDDIES)} vs Ultron</h2>` : "";
   const tag = statusLabel(game.status);
-  const tagClass = tag === "SNAPSHOT" ? " dev-note" : "";
-  return `<article class="card live-card${featured ? " is-featured" : ""}" data-matchup="${esc(game.id || "")}" data-featured="${featured ? "yes" : "no"}">
-    <div class="live-kicker">
-      <span class="live-tag is-${esc(game.status || "scheduled")}${tagClass}">${tag}</span>
-      ${featured ? `<span class="live-feature">Featured</span>` : ""}
+  const kind = tag === "FINAL" ? "final" : tag === "LIVE" ? "ontime" : "delayed";
+  const slot = slotFor(ctx.week, game, ctx.index);
+  const flight = window.WUC && WUC.board ? WUC.board.flightCode(ctx.week, slot) : "";
+  const gate = window.WUC && WUC.board ? WUC.board.gateCode(slot) : "";
+  const flaps = window.WUC && WUC.board ? WUC.board.flaps : (value) => esc(value);
+  const chip = window.WUC && WUC.board ? WUC.board.chip(tag, kind) : esc(tag);
+  const final = game.status === "final";
+  const aScore = Number(game.sideA && game.sideA.score);
+  const bScore = Number(game.sideB && game.sideB.score);
+  const aWin = final && Number.isFinite(aScore) && Number.isFinite(bScore) && aScore > bScore;
+  const bWin = final && Number.isFinite(aScore) && Number.isFinite(bScore) && bScore > aScore;
+  return `<article class="card live-card dep-game${featured ? " is-featured" : ""}" data-matchup="${esc(game.id || "")}" data-featured="${featured ? "yes" : "no"}">
+    <div class="dep-game-top">
+      <div class="dep-codes">
+        <div class="dep-flight"><span class="dep-k">Flight</span>${flaps(flight)}</div>
+        <div class="dep-gate"><span class="dep-k">Gate</span>${flaps(gate)}</div>
+      </div>
+      <div class="dep-dest">
+        <span class="dep-k">Destination</span>
+        ${boardSide(game.sideA, aWin)}
+        <p class="dep-vs">${esc(place)}</p>
+        ${boardSide(game.sideB, bWin)}
+      </div>
+      <div class="dep-status">
+        <span class="dep-k">Status</span>
+        ${chip}
+        ${featured ? `<span class="dep-feature">Featured</span>` : ""}
+      </div>
     </div>
     ${title}
-    ${teamRow(game.sideA)}
-    <p class="live-vs">${place}</p>
-    ${teamRow(game.sideB)}
     ${winBar(game)}
   </article>`;
 }
@@ -160,7 +192,7 @@ function render(data) {
   const dataAsOf = document.getElementById("dataAsOf");
   if (dataAsOf) dataAsOf.textContent = `Data as of ${stamp}.`;
   const formula = (data.formula && data.formula.text) || FORMULA.text;
-  const cards = games.map(card).join("");
+  const cards = games.map((game, index) => card(game, { week, index })).join("");
   board.removeAttribute("aria-busy");
   board.innerHTML = `${cards}
     <section class="card live-formula" id="formulaCard">
@@ -170,6 +202,7 @@ function render(data) {
     </section>`;
 }
 
+let scheduleWeeks = null;
 let lastGood = null;
 let fileMissing = false;
 let lastWindowFetchMs = null;
@@ -227,6 +260,19 @@ async function refreshCompanions(data, now) {
   }));
 }
 
+async function ensureSchedule() {
+  if (scheduleWeeks) return scheduleWeeks;
+  try {
+    const res = await fetch("data/schedule.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(String(res.status));
+    const data = await res.json();
+    scheduleWeeks = (data && data.weeks) || {};
+  } catch (_) {
+    scheduleWeeks = {};
+  }
+  return scheduleWeeks;
+}
+
 async function pull({ windowed }) {
   const now = Date.now();
   if (windowed && !shouldRefresh({ now, lastAttemptMs: lastWindowFetchMs, inWindow: isGameWindow(now) })) {
@@ -249,6 +295,7 @@ async function pull({ windowed }) {
     }
     lastGood = merged.data;
     fileMissing = merged.missing;
+    await ensureSchedule();
     render(merged.data);
     paintFreshness(merged.data, fileMissing);
     if (!merged.missing) await refreshCompanions(merged.data, now);

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-brand="wu-hq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Schedule — Wheels Up Collective</title>
+  <link rel="icon" href="img/wu-mark.png" type="image/png" />
+  <meta name="description" content="Wheels Up Collective season schedule as a departures board. Scores appear after a week is posted." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/design-system-tokens.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/design-system-apply.css" />
+  <link rel="stylesheet" href="css/departures.css" />
+</head>
+<body class="ds">
+  <div id="site-nav"></div>
+  <main class="wrap">
+    <header class="page-hero">
+      <span class="eyebrow" id="schedEyebrow">Season</span>
+      <h1>Schedule</h1>
+      <p class="lede">Each week is a departures row. Open a week for the pairings. Flight codes and gates are board labels. Scores are the posted totals.</p>
+    </header>
+    <div id="scheduleBoard" aria-busy="true">
+      <div class="skeleton-stack" aria-hidden="true">
+        <div class="skeleton-bar"></div>
+        <div class="skeleton-bar med"></div>
+        <div class="skeleton-bar short"></div>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/league.js"></script>
+  <script src="js/departures.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const host = document.getElementById("scheduleBoard");
+      try {
+        await WUC.loadTeamColors();
+        const [schedule, weeks, teamsData] = await Promise.all([
+          WUC.loadOptional("data/schedule.json"),
+          WUC.loadSeasonWeeks(),
+          WUC.loadJSON("data/teams.json")
+        ]);
+        const teams = (teamsData && teamsData.teams) || [];
+        WUC.indexTeams(teams);
+        const season = (schedule && schedule.season) || (teamsData && teamsData.season) || (window.WUC_CONFIG && WUC_CONFIG.season) || "";
+        const eyebrow = document.getElementById("schedEyebrow");
+        if (eyebrow) eyebrow.textContent = season ? `Season ${season}` : "Season";
+        host.removeAttribute("aria-busy");
+        host.innerHTML = schedule
+          ? WUC.board.schedulePage(schedule, weeks || [])
+          : WUC.emptyState("No schedule file yet.");
+      } catch (err) {
+        host.removeAttribute("aria-busy");
+        host.innerHTML = WUC.softError("Schedule didn’t load. Try Refresh.");
+      }
+    });
+  </script>
+</body>
+</html>

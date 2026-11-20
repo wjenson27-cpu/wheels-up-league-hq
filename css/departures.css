@@ -1,0 +1,505 @@
+/* Departures-board presentation. Colors sit on the HQ navy.
+   Split-flap motion is one short settle, and it is off when the
+   visitor asks for reduced motion. */
+
+.dep-board,
+.dep-week,
+.dep-game,
+.dep-stand-row,
+.dep-game-top,
+.dep-tx-row {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.dep-board {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dep-legend {
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #AFC0D6;
+}
+
+.dep-row,
+.dep-week-sum,
+.dep-game-top,
+.dep-tx-row {
+  background: #0E2A4A;
+  border: 1px solid #1E3A5F;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+.dep-stand-row,
+.dep-tx-row,
+.dep-game-top,
+.dep-week-sum {
+  padding: 10px 12px;
+}
+
+.dep-stand-row.is-canceled,
+.dep-tx-row.is-canceled,
+.dep-game-top.is-canceled {
+  background: #081422;
+  border-color: #4A3038;
+}
+
+.dep-stand-row.is-canceled .team-inline > span:last-child,
+.dep-tx-row.is-canceled .dep-summary,
+.dep-tx-row.is-canceled .team-inline > span:last-child {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #FFB4B4;
+}
+
+/* —— Split-flap tiles —— */
+.flap-group {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.flap-tiles {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  max-width: 100%;
+  perspective: 280px;
+}
+
+.flap-char {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0.78em;
+  height: 1.35em;
+  padding: 0 0.08em;
+  border-radius: 3px;
+  background: #07182C;
+  color: #FFFFFF;
+  font-family: Archivo, system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.flap-char.is-narrow { min-width: 0.42em; padding: 0; }
+.flap-char.is-gap {
+  min-width: 0.35em;
+  background: transparent;
+  box-shadow: none;
+}
+
+.flap-char::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.78);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.14);
+  pointer-events: none;
+}
+
+.flap-char.is-gap::after { content: none; }
+
+.flap-group.is-pos .flap-char { color: #8BD86A; }
+.flap-group.is-neg .flap-char { color: #FF8A8A; }
+.flap-group.is-win .flap-char { color: #6CC24A; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .flap-char {
+    transform-origin: center center;
+    animation: dep-flap-settle 0.38s ease both;
+    animation-delay: calc(var(--i, 0) * 16ms);
+  }
+}
+
+@keyframes dep-flap-settle {
+  from { transform: rotateX(-72deg); }
+  to { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flap-char { animation: none; }
+}
+
+/* —— Status chips —— */
+.dep-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  font-family: Archivo, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.dep-chip.is-ontime {
+  color: #6CC24A;
+  border-color: #6CC24A;
+  background: transparent;
+}
+
+.dep-chip.is-delayed {
+  color: #E9B44C;
+  border-color: #E9B44C;
+  background: transparent;
+}
+
+.dep-chip.is-final {
+  color: #061428;
+  background: #6CC24A;
+  border-color: #6CC24A;
+}
+
+.dep-chip.is-canceled {
+  color: #FFB4B4;
+  border-color: #E25B5B;
+  background: transparent;
+}
+
+.dep-k {
+  display: block;
+  margin-bottom: 3px;
+  color: #AFC0D6;
+  font-family: Archivo, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dep-val {
+  display: block;
+  max-width: 100%;
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.team-card a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  max-width: 100%;
+}
+
+.dep-board a.team-link {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-width: 40px;
+  min-height: 40px;
+  color: #FFFFFF;
+}
+
+.dep-board .team-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.dep-board .team-inline > span:last-child {
+  min-width: 0;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.3;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* —— Standings —— */
+.dep-stand-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px 10px;
+  align-items: center;
+}
+
+.dep-rank { grid-column: 1; grid-row: 1; }
+.dep-status {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.dep-team {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.dep-owner {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  color: #EAF0F7;
+  font-size: 14px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.dep-owner .dep-k { display: inline; margin: 0 6px 0 0; }
+.dep-owner .dep-val { display: inline; font-size: 14px; }
+
+.dep-stats {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+  gap: 10px 12px;
+  min-width: 0;
+}
+
+.dep-stat { min-width: 0; }
+
+.dep-cut {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 0;
+  color: #E9B44C;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.dep-cut::before,
+.dep-cut::after {
+  content: "";
+  flex: 1 1 auto;
+  border-top: 2px dashed #E9B44C;
+}
+
+/* —— Matchups and schedule games —— */
+.dep-game { padding: 12px; }
+.dep-game .dep-game-top { padding: 10px 12px; }
+
+.dep-game-top,
+.dep-game-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "codes status"
+    "dest dest";
+  gap: 8px 12px;
+  align-items: center;
+}
+
+.dep-codes {
+  grid-area: codes;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px 16px;
+  min-width: 0;
+}
+
+.dep-dest { grid-area: dest; min-width: 0; }
+
+.dep-game-top .dep-status,
+.dep-game-line .dep-status {
+  grid-area: status;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-self: end;
+  align-self: start;
+  gap: 4px;
+}
+
+.dep-codes .flap-tiles,
+.dep-stat .flap-tiles,
+.dep-rank .flap-tiles,
+.dep-score .flap-tiles,
+.dep-tx-flight .flap-tiles,
+.dep-tx-gate .flap-tiles {
+  flex-wrap: nowrap;
+}
+
+.dep-side {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "who score"
+    "meta score";
+  column-gap: 8px;
+  align-items: center;
+  min-width: 0;
+}
+
+.dep-who { grid-area: who; min-width: 0; }
+.dep-score { grid-area: score; justify-self: end; }
+.dep-meta {
+  grid-area: meta;
+  margin: 0;
+  color: #AFC0D6;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.dep-vs {
+  margin: 2px 0 2px 40px;
+  color: #AFC0D6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dep-feature {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  color: #6CC24A;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dep-game .winbar,
+.dep-game .winbar-head,
+.dep-game .live-spread,
+.dep-game .live-nowin,
+.dep-game h2 {
+  margin-top: 10px;
+}
+
+.dep-game h2 {
+  font-size: 18px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.dep-game .live-who .team-inline > span:last-child,
+.dep-game .dep-who .team-inline > span:last-child {
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+}
+
+@media (max-width: 720px) {
+  .dep-vs { margin-left: 0; }
+}
+
+/* —— Transactions —— */
+.dep-tx-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "when status"
+    "main main";
+  gap: 10px 16px;
+  align-items: start;
+}
+
+.dep-when { grid-area: when; min-width: 0; }
+.dep-tx-main { grid-area: main; min-width: 0; }
+.dep-tx-row .dep-status { grid-area: status; justify-self: end; }
+
+.dep-summary {
+  margin: 4px 0 0;
+  color: #EAF0F7;
+  font-size: 15px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.dep-when {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  min-width: 0;
+}
+
+@media (min-width: 800px) {
+  .dep-tx-row {
+    grid-template-columns: auto auto minmax(0, 1fr) auto;
+    grid-template-areas: "flight gate main status";
+    align-items: center;
+  }
+  .dep-when { display: contents; }
+  .dep-tx-flight { grid-area: flight; }
+  .dep-tx-gate { grid-area: gate; }
+}
+
+/* —— Schedule weeks —— */
+.dep-week { margin: 0 0 10px; }
+
+.dep-week-sum {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  min-height: 48px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.dep-week-sum::-webkit-details-marker { display: none; }
+
+.dep-week-sum::before {
+  content: "";
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #EAF0F7;
+  border-bottom: 2px solid #EAF0F7;
+  transform: rotate(-45deg);
+}
+
+.dep-week[open] > .dep-week-sum::before { transform: rotate(45deg); }
+
+.dep-week-sum:focus-visible {
+  outline: 2px solid #8BD86A;
+  outline-offset: 3px;
+}
+
+.dep-week-label {
+  flex: 1 1 140px;
+  min-width: 0;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.dep-week .dep-board { margin-top: 8px; }
+
+.dep-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.dep-pair .dep-side { min-height: 40px; }
+

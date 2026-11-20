@@ -1,0 +1,307 @@
+/* Departures-board markup. Presentation only.
+   Every figure is formatted by the existing WUC helpers. */
+(function () {
+  function esc(value) {
+    return window.WUC && WUC.escapeHtml ? WUC.escapeHtml(value) : String(value ?? "");
+  }
+
+  function flaps(value, extra) {
+    const text = value == null || value === "" ? "—" : String(value);
+    const tiles = Array.from(text).map((ch, i) => {
+      const narrow = /[,.'’:+\-]/.test(ch) ? " is-narrow" : "";
+      const gap = ch === " " ? " is-gap" : "";
+      return `<span class="flap-char${narrow}${gap}" style="--i:${Math.min(i, 14)}">${esc(ch)}</span>`;
+    }).join("");
+    const extraCls = extra ? ` ${extra}` : "";
+    return `<span class="flap-group${extraCls}" role="img" aria-label="${esc(text)}"><span class="flap-tiles" aria-hidden="true">${tiles}</span></span>`;
+  }
+
+  function chip(label, kind) {
+    if (!label) return "";
+    return `<span class="dep-chip is-${kind}">${esc(label)}</span>`;
+  }
+
+  function flightCode(week, index) {
+    const n = Number(week);
+    const wk = Number.isFinite(n) ? String(n).padStart(2, "0") : "00";
+    const letter = index >= 0 && index < 26 ? String.fromCharCode(65 + index) : String(index + 1);
+    return `WU${wk}${letter}`;
+  }
+
+  function gateCode(index) {
+    const n = Number(index);
+    return `G${Number.isFinite(n) ? n + 1 : 1}`;
+  }
+
+  function spots() {
+    return (window.WUC && WUC.PLAYOFF_ODDS && WUC.PLAYOFF_ODDS.spots) || 8;
+  }
+
+  function seedOf(team, official) {
+    const rank = Number(team && team.standingsRank);
+    if (Number.isFinite(rank) && rank > 0) return rank;
+    const idx = (official || []).findIndex((row) => row && team && row.id === team.id);
+    return idx >= 0 ? idx + 1 : null;
+  }
+
+  function standingStatus(team, seed, playoff) {
+    const odds = playoff && playoff.byId ? playoff.byId[team.id] : null;
+    if (odds && odds.clinched) return { label: "CLINCHED", kind: "final" };
+    if (odds && odds.eliminated) return { label: "CANCELED", kind: "canceled" };
+    const cut = spots();
+    if (seed != null && seed <= cut) return { label: "ON TIME", kind: "ontime" };
+    if (seed != null && seed > cut) return { label: "DELAYED", kind: "delayed" };
+    return null;
+  }
+
+  function diffClass(diff) {
+    if (diff == null || !Number.isFinite(Number(diff))) return "";
+    if (Number(diff) > 0) return "is-pos";
+    if (Number(diff) < 0) return "is-neg";
+    return "";
+  }
+
+  function stat(key, label, valueHtml) {
+    return `<div class="dep-stat" data-k="${key}"><span class="dep-k">${esc(label)}</span><span class="dep-val">${valueHtml}</span></div>`;
+  }
+
+  function standings(teams, mode, opts) {
+    const options = opts || {};
+    const weeks = options.weeks || [];
+    const playoff = options.playoff || null;
+    const ranked = WUC.sortStandings(teams, mode, playoff);
+    if (!ranked.length) return `<p class="muted mb-0">No clubs in the team file yet.</p>`;
+    const official = WUC.sortStandings(teams, "official");
+    const cut = spots();
+    const rows = [];
+    ranked.forEach((team, index) => {
+      const pf = WUC.pointsFor(team);
+      const pa = WUC.pointsAgainst(team);
+      const diff = pf != null && pa != null ? pf - pa : null;
+      const games = weeks.length ? WUC.gamesForTeam(team.id, weeks) : [];
+      const streak = weeks.length ? WUC.streakFromLog(games, team) : null;
+      const faab = team.faab != null ? `$${team.faab}` : "—";
+      const odds = playoff && playoff.byId ? playoff.byId[team.id] : null;
+      const oddsLabel = WUC.formatPlayoffLabel(odds);
+      const oddsTitle = odds && odds.rate != null ? `${(odds.rate * 100).toFixed(1)}%` : "";
+      const owner = WUC.publicOwner(team.owner, team.id, "—");
+      const record = WUC.recordLabel(team);
+      const seed = seedOf(team, official);
+      const status = standingStatus(team, seed, playoff);
+      const next = ranked[index + 1];
+      const nextSeed = next ? seedOf(next, official) : null;
+      const canceled = status && status.kind === "canceled";
+      rows.push(`<article class="dep-row dep-stand-row${canceled ? " is-canceled" : ""}" data-seed="${seed == null ? "" : seed}">
+        <div class="dep-rank" data-k="rank"><span class="dep-k">#</span><span class="dep-val">${flaps(index + 1)}</span></div>
+        <div class="dep-status">${status ? chip(status.label, status.kind) : ""}</div>
+        <div class="dep-team" data-k="team">
+          <span class="dep-k">Team</span>
+          <span class="dep-val">${WUC.teamLinkHtml(team.id, { size: "sm" })}</span>
+        </div>
+        <div class="dep-owner" data-k="owner"><span class="dep-k">Owner</span><span class="dep-val">${owner ? esc(owner) : ""}</span></div>
+        <div class="dep-stats">
+          ${stat("record", "W-L", flaps(record))}
+          ${stat("pf", "PF", flaps(pf == null ? "—" : WUC.formatPts(pf)))}
+          ${stat("pa", "PA", flaps(pa == null ? "—" : WUC.formatPts(pa)))}
+          ${stat("diff", "+/−", flaps(WUC.formatDiff(diff), diffClass(diff)))}
+          ${stat("faab", "FAAB", flaps(faab))}
+          ${stat("streak", "Streak", flaps(streak || "—"))}
+          ${stat("playoff", "Playoff %", `<span title="${esc(oddsTitle)}">${flaps(oddsLabel)}</span>`)}
+        </div>
+      </article>`);
+      if (mode === "official" && seed != null && nextSeed != null && seed <= cut && nextSeed > cut) {
+        rows.push(`<div class="dep-cut" role="separator"><span>Playoff line</span></div>`);
+      }
+    });
+    const lineNote = mode === "official"
+      ? `The dashed line sits after seed ${cut} in this record order.`
+      : "The playoff line is drawn in record order. Status still uses that seed.";
+    return `<div class="dep-board dep-standings" role="list" aria-label="League standings">${rows.join("")}</div>
+      <p class="dep-legend">CLINCHED and CANCELED come from the playoff odds. ON TIME is a seed in the top ${cut}. DELAYED is seed ${cut + 1} or lower. ${lineNote}</p>`;
+  }
+
+  function sideLine(nameHtml, scoreText, win) {
+    return `<div class="dep-side${win ? " is-win" : ""}">
+      <div class="dep-who">${nameHtml}</div>
+      <div class="dep-score">${flaps(scoreText, win ? "is-win" : "")}</div>
+    </div>`;
+  }
+
+  function statusKind(tag) {
+    if (tag === "FINAL") return "final";
+    if (tag === "LIVE" || tag === "ON TIME" || tag === "SCHEDULED") return "ontime";
+    if (tag === "CANCELED") return "canceled";
+    return "delayed";
+  }
+
+  function gameTag(matchup, weekFinal) {
+    const st = String((matchup && matchup.status) || "").toLowerCase();
+    const final = Boolean(weekFinal) || st === "final";
+    if (final) return "FINAL";
+    if (st === "live") return "LIVE";
+    if (st) return st.toUpperCase();
+    return "";
+  }
+
+  function scoreboard(matchups, opts) {
+    const options = opts || {};
+    const list = matchups || [];
+    if (!list.length) return `<p class="muted mb-0">No matchups posted for this week.</p>`;
+    const week = options.week;
+    const rows = list.map((matchup, index) => {
+      const hs = Number(matchup.homeScore);
+      const as = Number(matchup.awayScore);
+      const tag = gameTag(matchup, options.weekFinal);
+      const final = tag === "FINAL";
+      const homeWin = final && Number.isFinite(hs) && Number.isFinite(as) && hs > as;
+      const awayWin = final && Number.isFinite(hs) && Number.isFinite(as) && as > hs;
+      const slot = Number.isFinite(Number(options.slot)) ? Number(options.slot) : index;
+      const flight = options.flight || flightCode(week, slot);
+      const gate = options.gate || gateCode(slot);
+      return `<article class="dep-row dep-game-line${tag === "CANCELED" ? " is-canceled" : ""}">
+        <div class="dep-codes">
+          <div class="dep-flight"><span class="dep-k">Flight</span>${flaps(flight)}</div>
+          <div class="dep-gate"><span class="dep-k">Gate</span>${flaps(gate)}</div>
+        </div>
+        <div class="dep-dest">
+          <span class="dep-k">Destination</span>
+          <div class="dep-pair">
+            ${sideLine(WUC.teamLinkHtml(matchup.away, { size: "sm" }), WUC.formatPts(as), awayWin)}
+            ${sideLine(WUC.teamLinkHtml(matchup.home, { size: "sm" }), WUC.formatPts(hs), homeWin)}
+          </div>
+        </div>
+        <div class="dep-status">${tag ? chip(tag, statusKind(tag)) : ""}</div>
+      </article>`;
+    }).join("");
+    return `<div class="dep-board" role="list" aria-label="Week ${esc(week == null ? "" : week)} matchups">${rows}</div>`;
+  }
+
+  function weekBoard(week) {
+    if (!week) return WUC.emptyState("No score file for that week yet.");
+    return scoreboard(week.matchups || [], {
+      week: week.week,
+      weekFinal: WUC.weekIsFinal(week)
+    });
+  }
+
+  function pairScore(weekObj, teamId) {
+    if (!weekObj || !teamId) return null;
+    const games = weekObj.matchups || [];
+    for (let i = 0; i < games.length; i += 1) {
+      const game = games[i];
+      const home = WUC.resolveTeamId(game.home);
+      const away = WUC.resolveTeamId(game.away);
+      if (home === teamId) return game.homeScore;
+      if (away === teamId) return game.awayScore;
+    }
+    return null;
+  }
+
+  function schedulePage(schedule, weeks) {
+    const weekMap = (schedule && schedule.weeks) || {};
+    const posted = {};
+    (weeks || []).forEach((week) => { posted[Number(week.week)] = week; });
+    const keys = Object.keys(weekMap).map(Number).filter((n) => n > 0).sort((a, b) => a - b);
+    if (!keys.length) return `<p class="muted mb-0">No weeks in the schedule file yet.</p>`;
+    const finals = (weeks || []).filter(WUC.weekIsFinal).map((week) => Number(week.week));
+    const latestFinal = finals.length ? Math.max.apply(null, finals) : 0;
+    const blocks = keys.map((week) => {
+      const pairs = weekMap[String(week)] || weekMap[week] || [];
+      const postedWeek = posted[week] || null;
+      const isFinal = postedWeek ? WUC.weekIsFinal(postedWeek) : false;
+      const tag = isFinal ? "FINAL" : postedWeek ? "NOT POSTED" : "SCHEDULED";
+      const kind = statusKind(tag === "NOT POSTED" ? "DELAYED" : tag);
+      const open = week === 1 || week > latestFinal;
+      const games = (Array.isArray(pairs) ? pairs : []).map((pair, index) => {
+        const aName = pair && pair[0];
+        const bName = pair && pair[1];
+        const aId = WUC.resolveTeamId(aName);
+        const bId = WUC.resolveTeamId(bName);
+        const aScore = pairScore(postedWeek, aId);
+        const bScore = pairScore(postedWeek, bId);
+        const aPts = aScore == null ? "—" : WUC.formatPts(aScore);
+        const bPts = bScore == null ? "—" : WUC.formatPts(bScore);
+        let aWin = false;
+        let bWin = false;
+        if (isFinal && aScore != null && bScore != null) {
+          const an = Number(aScore);
+          const bn = Number(bScore);
+          if (Number.isFinite(an) && Number.isFinite(bn) && an !== bn) {
+            aWin = an > bn;
+            bWin = bn > an;
+          }
+        }
+        return `<article class="dep-row dep-game-line">
+          <div class="dep-codes">
+            <div class="dep-flight"><span class="dep-k">Flight</span>${flaps(flightCode(week, index))}</div>
+            <div class="dep-gate"><span class="dep-k">Gate</span>${flaps(gateCode(index))}</div>
+          </div>
+          <div class="dep-dest">
+            <span class="dep-k">Destination</span>
+            <div class="dep-pair">
+              ${sideLine(WUC.teamLinkHtml(aId || aName, { size: "sm" }), aPts, aWin)}
+              ${sideLine(WUC.teamLinkHtml(bId || bName, { size: "sm" }), bPts, bWin)}
+            </div>
+          </div>
+          <div class="dep-status">${chip(tag, kind)}</div>
+        </article>`;
+      }).join("");
+      return `<details class="dep-week"${open ? " open" : ""}>
+        <summary class="dep-week-sum">
+          ${flaps(String(week).padStart(2, "0"))}
+          <span class="dep-week-label">Week ${esc(week)} · ${Array.isArray(pairs) ? pairs.length : 0} games</span>
+          ${chip(tag, kind)}
+        </summary>
+        <div class="dep-board" role="list">${games}</div>
+      </details>`;
+    }).join("");
+    return blocks;
+  }
+
+  function txKind(type) {
+    const label = String(type || "Move").toUpperCase();
+    if (label === "CANCELED" || label === "CANCELLED") return { label, kind: "canceled" };
+    if (label === "TRADE") return { label, kind: "final" };
+    if (label === "ADD" || label === "ADD/DROP") return { label, kind: "ontime" };
+    return { label, kind: "delayed" };
+  }
+
+  function transactions(items) {
+    const list = items || [];
+    if (!list.length) return `<p class="muted mb-0">No transactions loaded yet.</p>`;
+    const rows = list.map((item) => {
+      const status = txKind(item.type);
+      const when = item.time ? String(item.time) : "—";
+      const canceled = status.kind === "canceled";
+      return `<article class="dep-row dep-tx-row${canceled ? " is-canceled" : ""}">
+        <div class="dep-when">
+          <div class="dep-tx-flight"><span class="dep-k">Flight</span>${flaps(WUC.formatDate(item.date))}</div>
+          <div class="dep-tx-gate"><span class="dep-k">Gate</span>${flaps(when)}</div>
+        </div>
+        <div class="dep-tx-main">
+          <span class="dep-k">Team</span>
+          <div class="dep-val">${WUC.teamLinkHtml(item.teamId || item.team, { size: "sm" })}</div>
+          <p class="dep-summary">${esc(WUC.displayText(item.summary || ""))}</p>
+        </div>
+        <div class="dep-status">${chip(status.label, status.kind)}</div>
+      </article>`;
+    }).join("");
+    return `<div class="dep-board dep-tx" role="list" aria-label="League transaction feed">${rows}</div>`;
+  }
+
+  const api = {
+    flaps,
+    chip,
+    flightCode,
+    gateCode,
+    standings,
+    scoreboard,
+    weekBoard,
+    schedulePage,
+    transactions,
+    statusKind
+  };
+
+  window.WUC = window.WUC || {};
+  window.WUC.board = api;
+})();

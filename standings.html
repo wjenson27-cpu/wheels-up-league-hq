@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/design-system-tokens.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/design-system-apply.css" />
+  <link rel="stylesheet" href="css/departures.css" />
 </head>
 <body class="ds">
   <div id="site-nav"></div>
@@ -68,6 +69,7 @@
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
   <script src="js/league.js"></script>
+  <script src="js/departures.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       const tableEl = document.getElementById("standTable");
@@ -81,8 +83,7 @@
 
       function paintTable() {
         tableEl.removeAttribute("aria-busy");
-        const table = WUC.renderStandingsRows(teams, mode, { weeks, playoff });
-        tableEl.innerHTML = table;
+        tableEl.innerHTML = WUC.board.standings(teams, mode, { weeks, playoff });
         const note = document.getElementById("sortNote");
         if (note) {
           note.textContent = mode === "pf"
@@ -107,7 +108,7 @@
           weeksEl.innerHTML = WUC.emptyState("No score file for that week yet.");
           return;
         }
-        weeksEl.innerHTML = WUC.renderMatchups(week.matchups, WUC.weekIsFinal(week));
+        weeksEl.innerHTML = WUC.board.weekBoard(week);
         tabsEl.querySelectorAll("[data-week]").forEach((btn) => {
           const on = Number(btn.getAttribute("data-week")) === Number(weekNum);
           btn.setAttribute("aria-pressed", on ? "true" : "false");
