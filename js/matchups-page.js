@@ -110,7 +110,7 @@ function slotFor(week, game, fallback) {
   return idx >= 0 ? idx : fallback;
 }
 
-function boardSide(side, win) {
+function boardSide(side, win, which) {
   const id = safeId(side.teamId);
   const name = publicName(side);
   const color = safeColor(side.color);
@@ -126,8 +126,8 @@ function boardSide(side, win) {
     ? `No lineup set${rec}`
     : `Proj ${esc(pts(side.projection))} · ${esc(leftText(side.playersLeft))}${rec}`;
   const score = unset ? "—" : pts(side.score);
-  const tiles = window.WUC && WUC.board ? WUC.board.flaps(score, win ? "is-win" : "") : esc(score);
-  return `<div class="dep-side${win ? " is-win" : ""}"${unset ? ' data-lineup="unset"' : ""}>
+  const tiles = window.WUC && WUC.board ? WUC.board.scoreReadout(score, win ? "is-win" : "") : esc(score);
+  return `<div class="dep-side dep-side-${which}${win ? " is-win" : ""}"${unset ? ' data-lineup="unset"' : ""}>
     <div class="dep-who">${who}</div>
     <div class="dep-score">${tiles}</div>
     <p class="dep-meta${unset ? " live-unset" : ""}">${meta}</p>
@@ -155,17 +155,15 @@ function card(game, ctx) {
   return `<article class="card live-card dep-game${featured ? " is-featured" : ""}" data-matchup="${esc(game.id || "")}" data-featured="${featured ? "yes" : "no"}">
     <div class="dep-game-top">
       <div class="dep-codes">
-        <div class="dep-flight"><span class="dep-k">Flight</span>${flaps(flight)}</div>
-        <div class="dep-gate"><span class="dep-k">Gate</span>${flaps(gate)}</div>
+        <div class="dep-flight">${flaps(flight)}</div>
+        <div class="dep-gate">${flaps(gate)}</div>
       </div>
       <div class="dep-dest">
-        <span class="dep-k">Destination</span>
-        ${boardSide(game.sideA, aWin)}
+        ${boardSide(game.sideA, aWin, "a")}
         <p class="dep-vs">${esc(place)}</p>
-        ${boardSide(game.sideB, bWin)}
+        ${boardSide(game.sideB, bWin, "b")}
       </div>
       <div class="dep-status">
-        <span class="dep-k">Status</span>
         ${chip}
         ${featured ? `<span class="dep-feature">Featured</span>` : ""}
       </div>
@@ -193,8 +191,9 @@ function render(data) {
   if (dataAsOf) dataAsOf.textContent = `Data as of ${stamp}.`;
   const formula = (data.formula && data.formula.text) || FORMULA.text;
   const cards = games.map((game, index) => card(game, { week, index })).join("");
+  const head = window.WUC && WUC.board ? WUC.board.gameHead() : "";
   board.removeAttribute("aria-busy");
-  board.innerHTML = `${cards}
+  board.innerHTML = `<div class="dep-match-board">${head}${cards}</div>
     <section class="card live-formula" id="formulaCard">
       <h2>How the win chance is calculated</h2>
       <p id="formulaText">${esc(formula)}</p>

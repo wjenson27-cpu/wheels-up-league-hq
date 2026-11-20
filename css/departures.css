@@ -231,51 +231,126 @@
   font-weight: 700;
 }
 
-/* —— Standings —— */
+/* —— Standings: one strip per club on a wide screen —— */
+.dep-standings {
+  --dep-cols: 32px minmax(0, 1.5fr) 48px 76px 76px 64px 48px 58px 84px 92px;
+  gap: 3px;
+}
+
+.dep-stand-head,
 .dep-stand-row {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 8px 10px;
+  grid-template-columns: var(--dep-cols);
+  column-gap: 6px;
   align-items: center;
 }
 
-.dep-rank { grid-column: 1; grid-row: 1; }
-.dep-status {
-  grid-column: 2;
-  grid-row: 1;
-  justify-self: end;
+.dep-stand-head {
+  min-height: 28px;
+  padding: 0 8px;
+  color: #AFC0D6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.dep-stand-head > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dep-stand-row {
+  height: 48px;
+  min-height: 48px;
+  max-height: 48px;
+  padding: 0 8px;
+  overflow: hidden;
+}
+
+.dep-standings .flap-char {
+  height: 18px;
+  min-width: 0.62em;
+  padding: 0 1px;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.dep-line2,
+.dep-extra { display: contents; }
+
+.dep-more-btn { display: none; }
+
+.dep-inline-k { display: none; }
+
+.dep-club {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 6px;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 44px;
+  color: #FFFFFF;
 }
 
-.dep-team {
-  grid-column: 1 / -1;
+.dep-club-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-width: 0;
 }
 
-.dep-owner {
-  grid-column: 1 / -1;
-  margin-top: 2px;
-  color: #EAF0F7;
+.dep-name {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 14px;
-  line-height: 1.35;
-  overflow-wrap: anywhere;
+  font-weight: 700;
+  line-height: 1.15;
 }
 
-.dep-owner .dep-k { display: inline; margin: 0 6px 0 0; }
-.dep-owner .dep-val { display: inline; font-size: 14px; }
+.dep-owner-line {
+  display: block;
+  overflow: hidden;
+  color: #AFC0D6;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.15;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
-.dep-stats {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
-  gap: 10px 12px;
+.dep-owner-line:has(.dep-val:empty) { display: none; }
+
+.dep-standings .team-logo {
+  width: 28px;
+  height: 28px;
+}
+
+.dep-stand-row.is-canceled .dep-name {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #FFB4B4;
+}
+
+.dep-stat {
   min-width: 0;
+  white-space: nowrap;
 }
 
-.dep-stat { min-width: 0; }
+.dep-rank { grid-column: 1; }
+.dep-team { grid-column: 2; }
+.dep-stat[data-k="record"] { grid-column: 3; }
+.dep-stat[data-k="pf"] { grid-column: 4; }
+.dep-stat[data-k="pa"] { grid-column: 5; }
+.dep-stat[data-k="diff"] { grid-column: 6; }
+.dep-stat[data-k="faab"] { grid-column: 7; }
+.dep-stat[data-k="streak"] { grid-column: 8; }
+.dep-stat[data-k="playoff"] { grid-column: 9; }
+.dep-stand-row > .dep-status { grid-column: 10; justify-self: end; }
 
 .dep-cut {
   display: flex;
@@ -297,8 +372,21 @@
 }
 
 /* —— Matchups and schedule games —— */
-.dep-game { padding: 12px; }
-.dep-game .dep-game-top { padding: 10px 12px; }
+.dep-game { padding: 8px 10px; margin-bottom: 8px; }
+.dep-game .dep-game-top { padding: 0; background: transparent; border: 0; }
+
+.dep-game-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  min-height: 28px;
+  padding: 0 4px 6px;
+  color: #AFC0D6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 
 .dep-game-top,
 .dep-game-line {
@@ -307,16 +395,16 @@
   grid-template-areas:
     "codes status"
     "dest dest";
-  gap: 8px 12px;
+  gap: 6px 10px;
   align-items: center;
 }
 
 .dep-codes {
   grid-area: codes;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 8px 16px;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px 14px;
   min-width: 0;
 }
 
@@ -326,11 +414,19 @@
 .dep-game-line .dep-status {
   grid-area: status;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
   justify-self: end;
-  align-self: start;
-  gap: 4px;
+  gap: 6px;
+}
+
+.dep-blank {
+  color: #EAF0F7;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .dep-codes .flap-tiles,
@@ -501,5 +597,170 @@
   min-width: 0;
 }
 
-.dep-pair .dep-side { min-height: 40px; }
+.dep-pair .dep-side { min-height: 44px; }
+
+/* Phone standings: two lines, extras behind More. */
+@media (max-width: 899px) {
+  .dep-stand-head { display: none; }
+
+  .dep-stand-row {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      "rank team status"
+      "line2 line2 line2"
+      "extra extra extra";
+    row-gap: 2px;
+    padding: 4px 8px;
+  }
+
+  .dep-rank { grid-area: rank; grid-column: auto; }
+  .dep-team { grid-area: team; grid-column: auto; }
+  .dep-stat { grid-column: auto; }
+  .dep-stand-row > .dep-status { grid-area: status; grid-column: auto; align-self: center; }
+  .dep-owner-line { display: none; }
+
+  .dep-line2 {
+    display: flex;
+    grid-area: line2;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .dep-line2 .flap-char {
+    height: 16px;
+    font-size: 13px;
+  }
+
+  .dep-line2 .dep-stat {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .dep-inline-k {
+    display: inline;
+    flex: none;
+    color: #AFC0D6;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .dep-more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    margin-left: auto;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0 8px;
+    border: 1px solid #1E3A5F;
+    border-radius: 8px;
+    background: #07182C;
+    color: #EAF0F7;
+    font: 700 13px/1 Archivo, system-ui, sans-serif;
+    cursor: pointer;
+  }
+
+  .dep-extra { display: none; grid-area: extra; }
+
+  .dep-stand-row.is-open .dep-extra {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 10px;
+    padding-top: 4px;
+  }
+
+  .dep-extra .dep-stat {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .dep-extra .dep-inline-k { display: inline; }
+}
+
+/* Desktop games: one strip, header aligned with the columns. */
+@media (min-width: 900px) {
+  .dep-game-head,
+  .dep-schedule-games .dep-game-head {
+    display: grid;
+    grid-template-columns: 78px 46px minmax(0, 1fr) minmax(0, 1fr) auto;
+    column-gap: 8px;
+    align-items: end;
+    padding: 0 8px 4px;
+  }
+
+  .dep-game-head .dep-head-match { grid-column: 3 / span 2; }
+  .dep-game-head span:last-child { grid-column: 5; }
+
+  .dep-game-top,
+  .dep-schedule-games .dep-game-line {
+    grid-template-columns: 78px 46px minmax(0, 1fr) minmax(0, 1fr) auto;
+    grid-template-areas: "flight gate sideA sideB status";
+    column-gap: 8px;
+    min-height: 48px;
+    align-items: center;
+  }
+
+  .dep-game .dep-codes,
+  .dep-game .dep-dest,
+  .dep-schedule-games .dep-codes,
+  .dep-schedule-games .dep-dest,
+  .dep-schedule-games .dep-pair {
+    display: contents;
+  }
+
+  .dep-flight { grid-area: flight; }
+  .dep-gate { grid-area: gate; }
+  .dep-side-a { grid-area: sideA; }
+  .dep-side-b { grid-area: sideB; }
+
+  .dep-game .dep-vs { display: none; }
+
+  .dep-schedule-games .dep-game-line {
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+    padding: 0 8px;
+    overflow: hidden;
+  }
+
+  .dep-schedule-games .dep-side {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    min-height: 44px;
+  }
+
+  .dep-schedule-games .team-inline > span:last-child,
+  .dep-game .team-inline > span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .dep-game .team-logo,
+  .dep-schedule-games .team-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .dep-week-sum {
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+}
 

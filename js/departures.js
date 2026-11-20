@@ -16,6 +16,18 @@
     return `<span class="flap-group${extraCls}" role="img" aria-label="${esc(text)}"><span class="flap-tiles" aria-hidden="true">${tiles}</span></span>`;
   }
 
+  function isBlankScore(value) {
+    const text = value == null || value === "" ? "—" : String(value);
+    return text === "—" || text === "–" || text === "-";
+  }
+
+  /* A missing score is a plain dash. A flap tile around it reads as an empty box. */
+  function scoreReadout(value, extra) {
+    const text = value == null || value === "" ? "—" : String(value);
+    if (isBlankScore(text)) return `<span class="dep-blank">—</span>`;
+    return flaps(text, extra);
+  }
+
   function chip(label, kind) {
     if (!label) return "";
     return `<span class="dep-chip is-${kind}">${esc(label)}</span>`;
@@ -62,7 +74,7 @@
   }
 
   function stat(key, label, valueHtml) {
-    return `<div class="dep-stat" data-k="${key}"><span class="dep-k">${esc(label)}</span><span class="dep-val">${valueHtml}</span></div>`;
+    return `<div class="dep-stat" data-k="${key}"><span class="dep-inline-k">${esc(label)}</span><span class="dep-val">${valueHtml}</span></div>`;
   }
 
   function standings(teams, mode, opts) {
@@ -73,7 +85,10 @@
     if (!ranked.length) return `<p class="muted mb-0">No clubs in the team file yet.</p>`;
     const official = WUC.sortStandings(teams, "official");
     const cut = spots();
-    const rows = [];
+    const head = `<div class="dep-head dep-stand-head">
+      <span>#</span><span>Team</span><span>W-L</span><span>PF</span><span>PA</span><span>+/−</span><span>FAAB</span><span>Streak</span><span>Playoff %</span><span>Status</span>
+    </div>`;
+    const rows = [head];
     ranked.forEach((team, index) => {
       const pf = WUC.pointsFor(team);
       const pa = WUC.pointsAgainst(team);
@@ -91,23 +106,32 @@
       const next = ranked[index + 1];
       const nextSeed = next ? seedOf(next, official) : null;
       const canceled = status && status.kind === "canceled";
+      const mark = WUC.teamMark ? WUC.teamMark(team.id, { size: "sm" }) : "";
+      const name = WUC.officialName(team.id);
       rows.push(`<article class="dep-row dep-stand-row${canceled ? " is-canceled" : ""}" data-seed="${seed == null ? "" : seed}">
-        <div class="dep-rank" data-k="rank"><span class="dep-k">#</span><span class="dep-val">${flaps(index + 1)}</span></div>
-        <div class="dep-status">${status ? chip(status.label, status.kind) : ""}</div>
+        <div class="dep-rank" data-k="rank"><span class="dep-val">${flaps(index + 1)}</span></div>
         <div class="dep-team" data-k="team">
-          <span class="dep-k">Team</span>
-          <span class="dep-val">${WUC.teamLinkHtml(team.id, { size: "sm" })}</span>
+          <a class="dep-club team-link" href="${WUC.teamHref(team.id)}" title="${esc(name)}">
+            ${mark}
+            <span class="dep-club-text">
+              <span class="dep-val dep-name">${esc(name)}</span>
+              <span class="dep-owner-line" data-k="owner"><span class="dep-val">${owner ? esc(owner) : ""}</span></span>
+            </span>
+          </a>
         </div>
-        <div class="dep-owner" data-k="owner"><span class="dep-k">Owner</span><span class="dep-val">${owner ? esc(owner) : ""}</span></div>
-        <div class="dep-stats">
+        <div class="dep-line2">
           ${stat("record", "W-L", flaps(record))}
           ${stat("pf", "PF", flaps(pf == null ? "—" : WUC.formatPts(pf)))}
+          ${stat("playoff", "PO%", `<span title="${esc(oddsTitle)}">${flaps(oddsLabel)}</span>`)}
+          <button type="button" class="dep-more-btn" aria-expanded="false">More</button>
+        </div>
+        <div class="dep-extra">
           ${stat("pa", "PA", flaps(pa == null ? "—" : WUC.formatPts(pa)))}
           ${stat("diff", "+/−", flaps(WUC.formatDiff(diff), diffClass(diff)))}
           ${stat("faab", "FAAB", flaps(faab))}
           ${stat("streak", "Streak", flaps(streak || "—"))}
-          ${stat("playoff", "Playoff %", `<span title="${esc(oddsTitle)}">${flaps(oddsLabel)}</span>`)}
         </div>
+        <div class="dep-status">${status ? chip(status.label, status.kind) : ""}</div>
       </article>`);
       if (mode === "official" && seed != null && nextSeed != null && seed <= cut && nextSeed > cut) {
         rows.push(`<div class="dep-cut" role="separator"><span>Playoff line</span></div>`);
@@ -120,11 +144,15 @@
       <p class="dep-legend">CLINCHED and CANCELED come from the playoff odds. ON TIME is a seed in the top ${cut}. DELAYED is seed ${cut + 1} or lower. ${lineNote}</p>`;
   }
 
-  function sideLine(nameHtml, scoreText, win) {
-    return `<div class="dep-side${win ? " is-win" : ""}">
+  function sideLine(nameHtml, scoreText, win, which) {
+    return `<div class="dep-side dep-side-${which}${win ? " is-win" : ""}">
       <div class="dep-who">${nameHtml}</div>
-      <div class="dep-score">${flaps(scoreText, win ? "is-win" : "")}</div>
+      <div class="dep-score">${scoreReadout(scoreText, win ? "is-win" : "")}</div>
     </div>`;
+  }
+
+  function gameHead() {
+    return `<div class="dep-head dep-game-head"><span>Flight</span><span>Gate</span><span class="dep-head-match">Matchup</span><span>Status</span></div>`;
   }
 
   function statusKind(tag) {
@@ -160,20 +188,19 @@
       const gate = options.gate || gateCode(slot);
       return `<article class="dep-row dep-game-line${tag === "CANCELED" ? " is-canceled" : ""}">
         <div class="dep-codes">
-          <div class="dep-flight"><span class="dep-k">Flight</span>${flaps(flight)}</div>
-          <div class="dep-gate"><span class="dep-k">Gate</span>${flaps(gate)}</div>
+          <div class="dep-flight">${flaps(flight)}</div>
+          <div class="dep-gate">${flaps(gate)}</div>
         </div>
         <div class="dep-dest">
-          <span class="dep-k">Destination</span>
           <div class="dep-pair">
-            ${sideLine(WUC.teamLinkHtml(matchup.away, { size: "sm" }), WUC.formatPts(as), awayWin)}
-            ${sideLine(WUC.teamLinkHtml(matchup.home, { size: "sm" }), WUC.formatPts(hs), homeWin)}
+            ${sideLine(WUC.teamLinkHtml(matchup.away, { size: "sm" }), WUC.formatPts(as), awayWin, "a")}
+            ${sideLine(WUC.teamLinkHtml(matchup.home, { size: "sm" }), WUC.formatPts(hs), homeWin, "b")}
           </div>
         </div>
         <div class="dep-status">${tag ? chip(tag, statusKind(tag)) : ""}</div>
       </article>`;
     }).join("");
-    return `<div class="dep-board" role="list" aria-label="Week ${esc(week == null ? "" : week)} matchups">${rows}</div>`;
+    return `<div class="dep-board dep-schedule-games" role="list" aria-label="Week ${esc(week == null ? "" : week)} matchups">${gameHead()}${rows}</div>`;
   }
 
   function weekBoard(week) {
@@ -233,14 +260,13 @@
         }
         return `<article class="dep-row dep-game-line">
           <div class="dep-codes">
-            <div class="dep-flight"><span class="dep-k">Flight</span>${flaps(flightCode(week, index))}</div>
-            <div class="dep-gate"><span class="dep-k">Gate</span>${flaps(gateCode(index))}</div>
+            <div class="dep-flight">${flaps(flightCode(week, index))}</div>
+            <div class="dep-gate">${flaps(gateCode(index))}</div>
           </div>
           <div class="dep-dest">
-            <span class="dep-k">Destination</span>
             <div class="dep-pair">
-              ${sideLine(WUC.teamLinkHtml(aId || aName, { size: "sm" }), aPts, aWin)}
-              ${sideLine(WUC.teamLinkHtml(bId || bName, { size: "sm" }), bPts, bWin)}
+              ${sideLine(WUC.teamLinkHtml(aId || aName, { size: "sm" }), aPts, aWin, "a")}
+              ${sideLine(WUC.teamLinkHtml(bId || bName, { size: "sm" }), bPts, bWin, "b")}
             </div>
           </div>
           <div class="dep-status">${chip(tag, kind)}</div>
@@ -252,7 +278,7 @@
           <span class="dep-week-label">Week ${esc(week)} · ${Array.isArray(pairs) ? pairs.length : 0} games</span>
           ${chip(tag, kind)}
         </summary>
-        <div class="dep-board" role="list">${games}</div>
+        <div class="dep-board dep-schedule-games" role="list">${gameHead()}${games}</div>
       </details>`;
     }).join("");
     return blocks;
@@ -299,8 +325,20 @@
     weekBoard,
     schedulePage,
     transactions,
-    statusKind
+    statusKind,
+    scoreReadout,
+    gameHead
   };
+
+  document.addEventListener("click", (ev) => {
+    const btn = ev.target.closest(".dep-more-btn");
+    if (!btn) return;
+    const row = btn.closest(".dep-stand-row");
+    if (!row) return;
+    const open = row.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.textContent = open ? "Less" : "More";
+  });
 
   window.WUC = window.WUC || {};
   window.WUC.board = api;
