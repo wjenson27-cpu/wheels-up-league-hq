@@ -2,7 +2,7 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Aga",
-  "asOf": "2026-11-20 5:56 AM PT",
+  "asOf": "2026-11-21 5:48 AM PT",
   "faabLeft": 5,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -12,7 +12,6 @@
     "RB": [
       "Emmett Johnson",
       "Omarion Hampton",
-      "Khalil Herbert",
       "Rhamondre Stevenson"
     ],
     "WR": [
@@ -33,6 +32,7 @@
       "CJ Allen",
       "Nick Bolton",
       "Mack Wilson",
+      "Marlowe Wax",
       "Kendal Daniels"
     ],
     "DB": [
@@ -49,19 +49,19 @@
   "notes": "",
   "injuryFlags": [
     "Terrance Ferguson — IR (IR slot)",
-    "Kyler Gordon — Q (IR slot)",
+    "Kyler Gordon — O (IR slot)",
     "Ronnie Hickman — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-20 5:56 AM PT (/workspace/fantrax-raw-2026-11-20-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-21 5:48 AM PT (/workspace/fantrax-raw-2026-11-21-am-normalized.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Terrance Ferguson — IR (IR slot)",
-    "Kyler Gordon — Q (IR slot)",
+    "Kyler Gordon — O (IR slot)",
     "Ronnie Hickman — Q (IR slot)"
   ],
-  "updated": "2026-11-20",
-  "lastSynced": "2026-11-20 5:56 AM PT"
+  "updated": "2026-11-21",
+  "lastSynced": "2026-11-21 5:48 AM PT"
 }

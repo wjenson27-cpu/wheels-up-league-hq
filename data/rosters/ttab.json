@@ -2,13 +2,12 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase",
-  "asOf": "2026-11-20 5:56 AM PT",
+  "asOf": "2026-11-21 5:48 AM PT",
   "faabLeft": 3,
   "startingQB": "Caleb Williams",
   "roster": {
     "QB": [
-      "Caleb Williams",
-      "Bryce Young"
+      "Caleb Williams"
     ],
     "RB": [
       "Javonte Williams"
@@ -32,6 +31,7 @@
       "Micah McFadden",
       "Demario Davis",
       "Patrick Queen",
+      "Cole Holcomb",
       "Harold Perkins"
     ],
     "DB": [
@@ -48,12 +48,12 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Omar Cooper Jr. — Q (IR slot)",
+    "Omar Cooper Jr. — O (IR slot)",
     "Patrick Queen — Q (active)",
     "Divine Deablo — Q (IR slot)",
-    "Dorian Williams — Q (IR slot)"
+    "Dorian Williams — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-20 5:56 AM PT (/workspace/fantrax-raw-2026-11-20-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-21 5:48 AM PT (/workspace/fantrax-raw-2026-11-21-am-normalized.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
     "Patrick Queen — Q (active)"
@@ -61,11 +61,11 @@
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Omar Cooper Jr. — Q (IR slot)",
+    "Omar Cooper Jr. — O (IR slot)",
     "Patrick Queen — Q (active)",
     "Divine Deablo — Q (IR slot)",
-    "Dorian Williams — Q (IR slot)"
+    "Dorian Williams — O (IR slot)"
   ],
-  "updated": "2026-11-20",
-  "lastSynced": "2026-11-20 5:56 AM PT"
+  "updated": "2026-11-21",
+  "lastSynced": "2026-11-21 5:48 AM PT"
 }
