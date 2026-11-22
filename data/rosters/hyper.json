@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob",
-  "asOf": "2026-11-21 5:48 AM PT",
+  "asOf": "2026-11-22 5:55 AM PT",
   "faabLeft": 6,
   "startingQB": "Josh Allen",
   "roster": {
@@ -53,7 +53,7 @@
     "Kenneth Walker III — O (IR slot)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-21 5:48 AM PT (/workspace/fantrax-raw-2026-11-21-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-22 5:55 AM PT (/workspace/fantrax-raw-2026-11-22-am-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
     "Seth McGowan — Q (active)"
@@ -66,6 +66,6 @@
     "Kenneth Walker III — O (IR slot)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "updated": "2026-11-21",
-  "lastSynced": "2026-11-21 5:48 AM PT"
+  "updated": "2026-11-22",
+  "lastSynced": "2026-11-22 5:55 AM PT"
 }

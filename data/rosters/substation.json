@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nate",
-  "asOf": "2026-11-21 5:48 AM PT",
+  "asOf": "2026-11-22 5:55 AM PT",
   "faabLeft": 4,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -30,42 +30,38 @@
     ],
     "LB": [
       "Kaden Elliss",
-      "Dre Greenlaw",
+      "Alex Anzalone",
       "Malcolm Rodriguez",
-      "K.J. Britt",
       "Carson Schwesinger"
     ],
     "DB": [
       "Jeremy Chinn",
       "Tykee Smith",
+      "Bryan Cook",
       "Jalen Pitre"
     ],
     "IR": [
-      "Tank Bigsby",
       "Jack Campbell",
+      "Dre Greenlaw",
       "D.J. Reed"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Tank Bigsby — IR (IR slot)",
-    "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)",
+    "Dre Greenlaw — Q (IR slot)",
     "D.J. Reed — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-21 5:48 AM PT (/workspace/fantrax-raw-2026-11-21-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-22 5:55 AM PT (/workspace/fantrax-raw-2026-11-22-am-normalized.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "lineupFlags": [
-    "Dre Greenlaw — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Tank Bigsby — IR (IR slot)",
-    "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)",
+    "Dre Greenlaw — Q (IR slot)",
     "D.J. Reed — Q (IR slot)"
   ],
-  "updated": "2026-11-21",
-  "lastSynced": "2026-11-21 5:48 AM PT"
+  "updated": "2026-11-22",
+  "lastSynced": "2026-11-22 5:55 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Larry",
-  "asOf": "2026-11-21 5:48 AM PT",
+  "asOf": "2026-11-22 5:55 AM PT",
   "faabLeft": 2,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -31,9 +31,9 @@
     ],
     "LB": [
       "Jamien Sherwood",
+      "Jaden Dugger",
       "Henry To'oTo'o",
-      "Eric Wilson",
-      "Jaden Dugger"
+      "Eric Wilson"
     ],
     "DB": [
       "Jonas Sanker",
@@ -49,9 +49,9 @@
   "injuryFlags": [
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "Zack Baun — O (IR slot)"
+    "Zack Baun — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-21 5:48 AM PT (/workspace/fantrax-raw-2026-11-21-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-22 5:55 AM PT (/workspace/fantrax-raw-2026-11-22-am-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -59,8 +59,8 @@
   "flags": [
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
-    "Zack Baun — O (IR slot)"
+    "Zack Baun — IR (IR slot)"
   ],
-  "updated": "2026-11-21",
-  "lastSynced": "2026-11-21 5:48 AM PT"
+  "updated": "2026-11-22",
+  "lastSynced": "2026-11-22 5:55 AM PT"
 }

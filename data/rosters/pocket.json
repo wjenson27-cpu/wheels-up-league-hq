@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "KO",
-  "asOf": "2026-11-21 5:48 AM PT",
+  "asOf": "2026-11-22 5:55 AM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -36,9 +36,9 @@
     "DB": [
       "Dane Belton",
       "Cooper DeJean",
-      "Amani Hooker",
       "Tony Adams",
-      "Brandon Jones"
+      "Brandon Jones",
+      "Amani Hooker"
     ],
     "IR": [
       "Woody Marks",
@@ -50,14 +50,12 @@
   "injuryFlags": [
     "Woody Marks — O (IR slot)",
     "Dalton Kincaid — Q (IR slot)",
-    "Tony Adams — Q (reserve)",
     "Brandon Jones — Q (reserve)",
     "Robert Spillane — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-21 5:48 AM PT (/workspace/fantrax-raw-2026-11-21-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-22 5:55 AM PT (/workspace/fantrax-raw-2026-11-22-am-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Tony Adams — Q (reserve)",
     "Brandon Jones — Q (reserve)"
   ],
   "pendingClaim": null,
@@ -65,10 +63,9 @@
   "flags": [
     "Woody Marks — O (IR slot)",
     "Dalton Kincaid — Q (IR slot)",
-    "Tony Adams — Q (reserve)",
     "Brandon Jones — Q (reserve)",
     "Robert Spillane — Q (IR slot)"
   ],
-  "updated": "2026-11-21",
-  "lastSynced": "2026-11-21 5:48 AM PT"
+  "updated": "2026-11-22",
+  "lastSynced": "2026-11-22 5:55 AM PT"
 }

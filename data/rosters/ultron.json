@@ -2,7 +2,7 @@
   "teamId": "ultron",
   "teamName": "Ultron",
   "owner": "Aga",
-  "asOf": "2026-11-21 5:48 AM PT",
+  "asOf": "2026-11-22 5:55 AM PT",
   "faabLeft": 5,
   "startingQB": "Kirk Cousins",
   "roster": {
@@ -18,6 +18,7 @@
       "Amon-Ra St. Brown",
       "Luther Burden",
       "George Pickens",
+      "Makai Lemon",
       "Antonio Williams"
     ],
     "TE": [
@@ -32,7 +33,6 @@
       "CJ Allen",
       "Nick Bolton",
       "Mack Wilson",
-      "Marlowe Wax",
       "Kendal Daniels"
     ],
     "DB": [
@@ -52,7 +52,7 @@
     "Kyler Gordon — O (IR slot)",
     "Ronnie Hickman — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-21 5:48 AM PT (/workspace/fantrax-raw-2026-11-21-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-22 5:55 AM PT (/workspace/fantrax-raw-2026-11-22-am-normalized.json)",
   "fantraxTeamId": "k9i4qjrlmsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -62,6 +62,6 @@
     "Kyler Gordon — O (IR slot)",
     "Ronnie Hickman — Q (IR slot)"
   ],
-  "updated": "2026-11-21",
-  "lastSynced": "2026-11-21 5:48 AM PT"
+  "updated": "2026-11-22",
+  "lastSynced": "2026-11-22 5:55 AM PT"
 }
