@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob",
-  "asOf": "2026-11-22 5:55 AM PT",
+  "asOf": "2026-11-23 5:53 AM PT",
   "faabLeft": 6,
   "startingQB": "Josh Allen",
   "roster": {
@@ -11,13 +11,13 @@
     ],
     "RB": [
       "Seth McGowan",
+      "Jacory Croskey-Merritt",
       "Jaylen Wright",
       "Bijan Robinson"
     ],
     "WR": [
       "Emeka Egbuka",
-      "Ja'Kobi Lane",
-      "Tre Tucker",
+      "Zavion Thomas",
       "Drake London",
       "Travis Hunter"
     ],
@@ -41,7 +41,7 @@
       "Nick Emmanwori"
     ],
     "IR": [
-      "Jacory Croskey-Merritt",
+      "Lamar Jackson",
       "Kenneth Walker III",
       "Micah Parsons"
     ]
@@ -49,23 +49,26 @@
   "notes": "",
   "injuryFlags": [
     "Seth McGowan — Q (active)",
-    "Jacory Croskey-Merritt — IR (IR slot)",
+    "Jacory Croskey-Merritt — IR (active)",
+    "Lamar Jackson — IR (IR slot)",
     "Kenneth Walker III — O (IR slot)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-22 5:55 AM PT (/workspace/fantrax-raw-2026-11-22-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
-    "Seth McGowan — Q (active)"
+    "Seth McGowan — Q (active)",
+    "Jacory Croskey-Merritt — IR (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Seth McGowan — Q (active)",
-    "Jacory Croskey-Merritt — IR (IR slot)",
+    "Jacory Croskey-Merritt — IR (active)",
+    "Lamar Jackson — IR (IR slot)",
     "Kenneth Walker III — O (IR slot)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "updated": "2026-11-22",
-  "lastSynced": "2026-11-22 5:55 AM PT"
+  "updated": "2026-11-23",
+  "lastSynced": "2026-11-23 5:53 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse",
-  "asOf": "2026-11-22 5:55 AM PT",
+  "asOf": "2026-11-23 5:53 AM PT",
   "faabLeft": 44,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -18,9 +18,9 @@
     ],
     "WR": [
       "Caleb Douglas",
-      "Khalil Shakir",
+      "Mike Evans",
       "Carnell Tate",
-      "Mike Evans"
+      "Khalil Shakir"
     ],
     "TE": [
       "Isaiah Likely"
@@ -47,29 +47,29 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Carnell Tate — Q (active)",
-    "Mike Evans — Q (reserve)",
     "Kyren Williams — Q (reserve)",
     "Jeremiyah Love — IR (IR slot)",
+    "Dee Winters — Q (active)",
+    "Jacob Parrish — Q (active)",
     "Akeem Davis-Gaither — IR (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-22 5:55 AM PT (/workspace/fantrax-raw-2026-11-22-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [
-    "Carnell Tate — Q (active)",
-    "Mike Evans — Q (reserve)",
     "Kyren Williams — Q (reserve)",
+    "Dee Winters — Q (active)",
+    "Jacob Parrish — Q (active)",
     "Akeem Davis-Gaither — IR (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Carnell Tate — Q (active)",
-    "Mike Evans — Q (reserve)",
     "Kyren Williams — Q (reserve)",
     "Jeremiyah Love — IR (IR slot)",
+    "Dee Winters — Q (active)",
+    "Jacob Parrish — Q (active)",
     "Akeem Davis-Gaither — IR (reserve)"
   ],
-  "updated": "2026-11-22",
-  "lastSynced": "2026-11-22 5:55 AM PT"
+  "updated": "2026-11-23",
+  "lastSynced": "2026-11-23 5:53 AM PT"
 }

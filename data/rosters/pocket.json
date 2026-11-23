@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "KO",
-  "asOf": "2026-11-22 5:55 AM PT",
+  "asOf": "2026-11-23 5:53 AM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -36,9 +36,9 @@
     "DB": [
       "Dane Belton",
       "Cooper DeJean",
-      "Tony Adams",
+      "Amani Hooker",
       "Brandon Jones",
-      "Amani Hooker"
+      "Tony Adams"
     ],
     "IR": [
       "Woody Marks",
@@ -48,24 +48,30 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Saquon Barkley — Q (active)",
     "Woody Marks — O (IR slot)",
-    "Dalton Kincaid — Q (IR slot)",
-    "Brandon Jones — Q (reserve)",
+    "Dalton Kincaid — O (IR slot)",
+    "Brandon Jones — O (reserve)",
+    "Tony Adams — Q (reserve)",
     "Robert Spillane — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-22 5:55 AM PT (/workspace/fantrax-raw-2026-11-22-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Brandon Jones — Q (reserve)"
+    "Saquon Barkley — Q (active)",
+    "Brandon Jones — O (reserve)",
+    "Tony Adams — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Saquon Barkley — Q (active)",
     "Woody Marks — O (IR slot)",
-    "Dalton Kincaid — Q (IR slot)",
-    "Brandon Jones — Q (reserve)",
+    "Dalton Kincaid — O (IR slot)",
+    "Brandon Jones — O (reserve)",
+    "Tony Adams — Q (reserve)",
     "Robert Spillane — Q (IR slot)"
   ],
-  "updated": "2026-11-22",
-  "lastSynced": "2026-11-22 5:55 AM PT"
+  "updated": "2026-11-23",
+  "lastSynced": "2026-11-23 5:53 AM PT"
 }

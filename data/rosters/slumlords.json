@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Towner",
-  "asOf": "2026-11-22 5:55 AM PT",
+  "asOf": "2026-11-23 5:53 AM PT",
   "faabLeft": 0,
   "startingQB": "Cam Ward",
   "roster": {
@@ -17,8 +17,8 @@
     ],
     "WR": [
       "Dohnte Meyers",
-      "Keenan Allen",
-      "Devin Duvernay"
+      "Barion Brown",
+      "Josh Cameron"
     ],
     "TE": [
       "Gunnar Helm",
@@ -28,8 +28,8 @@
       "Maxx Crosby",
       "Gregory Rousseau",
       "Carl Granderson",
-      "Jacob Martin",
-      "Jeffery Simmons"
+      "Jeffery Simmons",
+      "Jacob Martin"
     ],
     "LB": [
       "Anthony Hill"
@@ -50,22 +50,18 @@
   "injuryFlags": [
     "Drake Maye — O (IR slot)",
     "Rachaad White — Q (IR slot)",
-    "Anthony Hill — Q (reserve)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-22 5:55 AM PT (/workspace/fantrax-raw-2026-11-22-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
-  "lineupFlags": [
-    "Anthony Hill — Q (reserve)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Drake Maye — O (IR slot)",
     "Rachaad White — Q (IR slot)",
-    "Anthony Hill — Q (reserve)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "updated": "2026-11-22",
-  "lastSynced": "2026-11-22 5:55 AM PT"
+  "updated": "2026-11-23",
+  "lastSynced": "2026-11-23 5:53 AM PT"
 }
