@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "KO",
-  "asOf": "2026-11-23 5:53 AM PT",
+  "asOf": "2026-11-24 5:48 AM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -28,50 +28,50 @@
       "Will Anderson Jr."
     ],
     "LB": [
-      "Bryce Boettcher",
+      "Robert Spillane",
       "Barrett Carter",
+      "Ernest Jones",
       "Josiah Trotter",
-      "Ernest Jones"
+      "Bryce Boettcher"
     ],
     "DB": [
-      "Dane Belton",
+      "Tony Adams",
       "Cooper DeJean",
-      "Amani Hooker",
-      "Brandon Jones",
-      "Tony Adams"
+      "Dane Belton",
+      "Amani Hooker"
     ],
     "IR": [
       "Woody Marks",
       "Dalton Kincaid",
-      "Robert Spillane"
+      "Brandon Jones"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Saquon Barkley — Q (active)",
-    "Woody Marks — O (IR slot)",
-    "Dalton Kincaid — O (IR slot)",
-    "Brandon Jones — O (reserve)",
-    "Tony Adams — Q (reserve)",
-    "Robert Spillane — Q (IR slot)"
+    "Woody Marks — Q (IR slot)",
+    "Dalton Kincaid — Q (IR slot)",
+    "Robert Spillane — Q (active)",
+    "Tony Adams — Q (active)",
+    "Brandon Jones — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
     "Saquon Barkley — Q (active)",
-    "Brandon Jones — O (reserve)",
-    "Tony Adams — Q (reserve)"
+    "Robert Spillane — Q (active)",
+    "Tony Adams — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Saquon Barkley — Q (active)",
-    "Woody Marks — O (IR slot)",
-    "Dalton Kincaid — O (IR slot)",
-    "Brandon Jones — O (reserve)",
-    "Tony Adams — Q (reserve)",
-    "Robert Spillane — Q (IR slot)"
+    "Woody Marks — Q (IR slot)",
+    "Dalton Kincaid — Q (IR slot)",
+    "Robert Spillane — Q (active)",
+    "Tony Adams — Q (active)",
+    "Brandon Jones — Q (IR slot)"
   ],
-  "updated": "2026-11-23",
-  "lastSynced": "2026-11-23 5:53 AM PT"
+  "updated": "2026-11-24",
+  "lastSynced": "2026-11-24 5:48 AM PT"
 }

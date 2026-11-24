@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Big Show",
-  "asOf": "2026-11-23 5:53 AM PT",
+  "asOf": "2026-11-24 5:48 AM PT",
   "faabLeft": 1,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -10,8 +10,7 @@
       "Joe Burrow"
     ],
     "RB": [
-      "Tony Pollard",
-      "Audric Estime"
+      "Tony Pollard"
     ],
     "WR": [
       "Parker Washington",
@@ -46,21 +45,21 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Audric Estime — O (reserve)",
+    "Chuck Clark — Q (active)",
     "Isaiah McDuffie — Q (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
-    "Audric Estime — O (reserve)",
+    "Chuck Clark — Q (active)",
     "Isaiah McDuffie — Q (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Audric Estime — O (reserve)",
+    "Chuck Clark — Q (active)",
     "Isaiah McDuffie — Q (reserve)"
   ],
-  "updated": "2026-11-23",
-  "lastSynced": "2026-11-23 5:53 AM PT"
+  "updated": "2026-11-24",
+  "lastSynced": "2026-11-24 5:48 AM PT"
 }

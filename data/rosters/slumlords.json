@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Towner",
-  "asOf": "2026-11-23 5:53 AM PT",
+  "asOf": "2026-11-24 5:48 AM PT",
   "faabLeft": 0,
   "startingQB": "Cam Ward",
   "roster": {
@@ -49,19 +49,21 @@
   "notes": "",
   "injuryFlags": [
     "Drake Maye — O (IR slot)",
-    "Rachaad White — Q (IR slot)",
+    "Gregory Rousseau — Q (active)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
-  "lineupFlags": [],
+  "lineupFlags": [
+    "Gregory Rousseau — Q (active)"
+  ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Drake Maye — O (IR slot)",
-    "Rachaad White — Q (IR slot)",
+    "Gregory Rousseau — Q (active)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "updated": "2026-11-23",
-  "lastSynced": "2026-11-23 5:53 AM PT"
+  "updated": "2026-11-24",
+  "lastSynced": "2026-11-24 5:48 AM PT"
 }

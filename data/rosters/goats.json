@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Heff",
-  "asOf": "2026-11-23 5:53 AM PT",
+  "asOf": "2026-11-24 5:48 AM PT",
   "faabLeft": 16,
   "startingQB": "Patrick Mahomes",
   "roster": {
@@ -42,17 +42,15 @@
     ],
     "IR": [
       "Josh Jacobs",
-      "Alvin Kamara",
-      "Danielle Hunter"
+      "Alvin Kamara"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Josh Jacobs — Q (IR slot)",
-    "Amik Robertson — Q (active)",
-    "Danielle Hunter — O (IR slot)"
+    "Amik Robertson — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [
     "Amik Robertson — Q (active)"
@@ -61,9 +59,8 @@
   "pendingClaims": [],
   "flags": [
     "Josh Jacobs — Q (IR slot)",
-    "Amik Robertson — Q (active)",
-    "Danielle Hunter — O (IR slot)"
+    "Amik Robertson — Q (active)"
   ],
-  "updated": "2026-11-23",
-  "lastSynced": "2026-11-23 5:53 AM PT"
+  "updated": "2026-11-24",
+  "lastSynced": "2026-11-24 5:48 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob",
-  "asOf": "2026-11-23 5:53 AM PT",
+  "asOf": "2026-11-24 5:48 AM PT",
   "faabLeft": 6,
   "startingQB": "Josh Allen",
   "roster": {
@@ -48,27 +48,27 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Seth McGowan — Q (active)",
-    "Jacory Croskey-Merritt — IR (active)",
+    "Seth McGowan — O (active)",
+    "Sam LaPorta — Q (active)",
     "Lamar Jackson — IR (IR slot)",
-    "Kenneth Walker III — O (IR slot)",
+    "Kenneth Walker III — Q (IR slot)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
-    "Seth McGowan — Q (active)",
-    "Jacory Croskey-Merritt — IR (active)"
+    "Seth McGowan — O (active)",
+    "Sam LaPorta — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Seth McGowan — Q (active)",
-    "Jacory Croskey-Merritt — IR (active)",
+    "Seth McGowan — O (active)",
+    "Sam LaPorta — Q (active)",
     "Lamar Jackson — IR (IR slot)",
-    "Kenneth Walker III — O (IR slot)",
+    "Kenneth Walker III — Q (IR slot)",
     "Micah Parsons — IR (IR slot)"
   ],
-  "updated": "2026-11-23",
-  "lastSynced": "2026-11-23 5:53 AM PT"
+  "updated": "2026-11-24",
+  "lastSynced": "2026-11-24 5:48 AM PT"
 }

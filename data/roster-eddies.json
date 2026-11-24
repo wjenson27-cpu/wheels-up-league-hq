@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "Bill",
-  "asOf": "2026-11-23 5:53 AM PT",
+  "asOf": "2026-11-24 5:48 AM PT",
   "faabLeft": 25,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -18,8 +18,7 @@
       "Malik Nabers",
       "Chimere Dike",
       "Josh Downs",
-      "Garrett Wilson",
-      "Jalen Coker"
+      "Garrett Wilson"
     ],
     "TE": [
       "Michael Mayer"
@@ -30,40 +29,37 @@
     "LB": [
       "Fred Warner",
       "Jordyn Brooks",
-      "Cedric Gray",
       "Frankie Luvu",
+      "Cedric Gray",
       "Trenton Simpson"
     ],
     "DB": [
       "Kyle Hamilton",
-      "Zyon McCollum",
+      "Evan Williams",
       "Quentin Lake",
-      "Evan Williams"
+      "Cole Bishop",
+      "Zyon McCollum"
     ],
     "IR": [
       "De'Zhaun Stribling",
       "Brock Bowers",
-      "Cole Bishop"
+      "Jalen Coker"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Jalen Coker — Q (reserve)",
     "De'Zhaun Stribling — IR (IR slot)",
-    "Brock Bowers — O (IR slot)"
+    "Brock Bowers — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-23 5:53 AM PT (/workspace/fantrax-raw-2026-11-23-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
-  "lineupFlags": [
-    "Jalen Coker — Q (reserve)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Jalen Coker — Q (reserve)",
     "De'Zhaun Stribling — IR (IR slot)",
-    "Brock Bowers — O (IR slot)"
+    "Brock Bowers — Q (IR slot)"
   ],
-  "updated": "2026-11-23",
-  "lastSynced": "2026-11-23 5:53 AM PT"
+  "updated": "2026-11-24",
+  "lastSynced": "2026-11-24 5:48 AM PT"
 }
