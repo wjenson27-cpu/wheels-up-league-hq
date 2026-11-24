@@ -4,13 +4,13 @@
   "schemaVersion": 2,
   "schema": {
     "weeklyKitty": "Array of weekly high-score (kitty) winners. One entry per completed week.",
-    "survivor": "Lowest scoring team still alive that week is eliminated (off the bus). Last Ride (Weeks 3–10): eliminated teams battle head-to-head weekly; one loss on Last Ride and you're out for good. Winner stays alive for a Week 11 re-entry shot.",
+    "survivor": "Lowest scoring team still alive that week is eliminated (off the bus). Last Ride (Weeks 3\u201310): eliminated teams battle head-to-head weekly; one loss on Last Ride and you're out for good. Winner stays alive for a Week 11 re-entry shot.",
     "yearly": "Season-long awards. Each category tracks live top 3 (leaders[]); status live until season end, then final.",
     "weeklyTopPlayers": "Per completed week: top 3 offensive and top 3 defensive players by Fantrax points among taken players."
   },
   "rules": {
     "kitty": "Each week, the highest final team score wins the kitty.",
-    "survivor": "Each week, the lowest final score among teams still alive is eliminated (off the bus). Everyone starts alive in Week 1. Last Ride (starts Week 3): teams already off the bus battle head-to-head each week through Week 10 — lose once and you're out of Last Ride for good. Only the Last Ride winner gets a chance to re-enter the bus in Week 11.",
+    "survivor": "Each week, the lowest final score among teams still alive is eliminated (off the bus). Everyone starts alive in Week 1. Last Ride (starts Week 3): teams already off the bus battle head-to-head each week through Week 10 \u2014 lose once and you're out of Last Ride for good. Only the Last Ride winner gets a chance to re-enter the bus in Week 11.",
     "yearly": {
       "topRecord": "Best win-loss record at season end.",
       "topPoints": "Most fantasy points scored (PF) for the season.",
@@ -137,7 +137,7 @@
         "score": 176.5,
         "aliveBefore": 14,
         "aliveAfter": 13,
-        "note": "Lowest Week 1 final score (post-MNF 176.5) — off the bus"
+        "note": "Lowest Week 1 final score (post-MNF 176.5) \u2014 off the bus"
       },
       {
         "week": 2,
@@ -147,7 +147,7 @@
         "score": 158.5,
         "aliveBefore": 13,
         "aliveAfter": 12,
-        "note": "Lowest Week 2 final score among teams still alive — off the bus"
+        "note": "Lowest Week 2 final score among teams still alive \u2014 off the bus"
       },
       {
         "week": 3,
@@ -157,7 +157,7 @@
         "score": 144,
         "aliveBefore": 12,
         "aliveAfter": 11,
-        "note": "Lowest Week 3 final score among teams still alive — off the bus"
+        "note": "Lowest Week 3 final score among teams still alive \u2014 off the bus"
       },
       {
         "week": 4,
@@ -167,7 +167,7 @@
         "score": 206.5,
         "aliveBefore": 11,
         "aliveAfter": 10,
-        "note": "Lowest Week 4 final score among teams still alive — off the bus"
+        "note": "Lowest Week 4 final score among teams still alive \u2014 off the bus"
       },
       {
         "week": 5,
@@ -177,7 +177,7 @@
         "score": 207,
         "aliveBefore": 10,
         "aliveAfter": 9,
-        "note": "Lowest Week 5 final score among teams still alive — off the bus"
+        "note": "Lowest Week 5 final score among teams still alive \u2014 off the bus"
       },
       {
         "week": 6,
@@ -187,7 +187,7 @@
         "score": 186.5,
         "aliveBefore": 9,
         "aliveAfter": 8,
-        "note": "Lowest Week 6 final score among teams still alive — off the bus"
+        "note": "Lowest Week 6 final score among teams still alive \u2014 off the bus"
       },
       {
         "week": 7,
@@ -197,7 +197,7 @@
         "score": 203.5,
         "aliveBefore": 8,
         "aliveAfter": 7,
-        "note": "Lowest Week 7 final score among teams still alive — off the bus"
+        "note": "Lowest Week 7 final score among teams still alive \u2014 off the bus"
       },
       {
         "week": 8,
@@ -207,7 +207,7 @@
         "score": 203.5,
         "aliveBefore": 7,
         "aliveAfter": 6,
-        "note": "Lowest Week 8 final score among teams still alive — off the bus"
+        "note": "Lowest Week 8 final score among teams still alive \u2014 off the bus"
       },
       {
         "week": 9,
@@ -217,7 +217,7 @@
         "score": 214.5,
         "aliveBefore": 6,
         "aliveAfter": 5,
-        "note": "Lowest Week 9 final score among teams still alive — off the bus"
+        "note": "Lowest Week 9 final score among teams still alive \u2014 off the bus"
       },
       {
         "week": 10,
@@ -227,7 +227,7 @@
         "score": 201.0,
         "aliveBefore": 5,
         "aliveAfter": 4,
-        "note": "Lowest Week 10 final score among teams still alive — off the bus"
+        "note": "Lowest Week 10 final score among teams still alive \u2014 off the bus"
       },
       {
         "week": 11,
@@ -237,7 +237,7 @@
         "score": 135.5,
         "aliveBefore": 5,
         "aliveAfter": 4,
-        "note": "Lowest Week 11 final score among teams still alive — off the bus. Last Ride re-entry lasted one week."
+        "note": "Lowest Week 11 final score among teams still alive \u2014 off the bus. Last Ride re-entry lasted one week."
       }
     ],
     "lastRide": {
@@ -254,7 +254,7 @@
         "teamA": "Substation",
         "teamBId": "lab",
         "teamB": "Little Ass Boys",
-        "note": "Week 10 Last Ride final — Substation 294, LAB 198. Substation won Last Ride and is back on the bus for Week 11. Last Ride is over."
+        "note": "Week 10 Last Ride final \u2014 Substation 294, LAB 198. Substation won Last Ride and is back on the bus for Week 11. Last Ride is over."
       },
       "aliveTeamIds": [],
       "results": [
@@ -267,7 +267,7 @@
           "loserTeamId": "dongers",
           "loser": "Drummond Dongers",
           "loserScore": 224,
-          "note": "Week 3 Last Ride opener — Slumlords stay alive; Dongers out of Last Ride for good"
+          "note": "Week 3 Last Ride opener \u2014 Slumlords stay alive; Dongers out of Last Ride for good"
         },
         {
           "week": 4,
@@ -278,7 +278,7 @@
           "loserTeamId": "slumlords",
           "loser": "Indian Trail Slumlords",
           "loserScore": 218.5,
-          "note": "Week 4 Last Ride — Morningside stay alive; Slumlords out of Last Ride for good"
+          "note": "Week 4 Last Ride \u2014 Morningside stay alive; Slumlords out of Last Ride for good"
         },
         {
           "week": 5,
@@ -289,7 +289,7 @@
           "loserTeamId": "morningside",
           "loser": "Morningside Muff Divers",
           "loserScore": 203,
-          "note": "Week 5 Last Ride — Saltese stay alive; Morningside out of Last Ride for good"
+          "note": "Week 5 Last Ride \u2014 Saltese stay alive; Morningside out of Last Ride for good"
         },
         {
           "week": 6,
@@ -300,7 +300,7 @@
           "loserTeamId": "ultron",
           "loser": "Ultron",
           "loserScore": 205.5,
-          "note": "Week 6 Last Ride — Saltese stay alive; Ultron out of Last Ride for good"
+          "note": "Week 6 Last Ride \u2014 Saltese stay alive; Ultron out of Last Ride for good"
         },
         {
           "week": 7,
@@ -311,7 +311,7 @@
           "loserTeamId": "saltese",
           "loser": "Saltese Slamm",
           "loserScore": 208.5,
-          "note": "Week 7 Last Ride — TTAB stay alive; Saltese out of Last Ride for good"
+          "note": "Week 7 Last Ride \u2014 TTAB stay alive; Saltese out of Last Ride for good"
         },
         {
           "week": 8,
@@ -322,7 +322,7 @@
           "loserTeamId": "ttab",
           "loser": "Towner Top Aga Bottom",
           "loserScore": 213.5,
-          "note": "Week 8 Last Ride — Goats stay alive; TTAB out of Last Ride for good"
+          "note": "Week 8 Last Ride \u2014 Goats stay alive; TTAB out of Last Ride for good"
         },
         {
           "week": 9,
@@ -333,7 +333,7 @@
           "loserTeamId": "goats",
           "loser": "Valley Old Goats",
           "loserScore": 195.5,
-          "note": "Week 9 Last Ride — Substation stay alive; Goats out of Last Ride for good"
+          "note": "Week 9 Last Ride \u2014 Substation stay alive; Goats out of Last Ride for good"
         },
         {
           "week": 10,
@@ -344,7 +344,7 @@
           "loserTeamId": "lab",
           "loser": "Little Ass Boys",
           "loserScore": 198.0,
-          "note": "Week 10 Last Ride (final week) — Substation wins Last Ride; LAB out of Last Ride for good. Substation gets a Week 11 re-entry shot."
+          "note": "Week 10 Last Ride (final week) \u2014 Substation wins Last Ride; LAB out of Last Ride for good. Substation gets a Week 11 re-entry shot."
         }
       ]
     },
@@ -353,7 +353,7 @@
         "week": 11,
         "teamId": "substation",
         "team": "Substation",
-        "note": "Last Ride winner (beat LAB 294–198 in Week 10) is back on the bus for Week 11; 5 alive."
+        "note": "Last Ride winner (beat LAB 294\u2013198 in Week 10) is back on the bus for Week 11; 5 alive."
       }
     ]
   },
@@ -365,34 +365,34 @@
       "trackTop": 3,
       "teamId": "eddies",
       "team": "Eagleridge Eddie's",
-      "value": "8-2",
+      "value": "9-2",
       "leaders": [
         {
           "rank": 1,
           "teamId": "eddies",
           "team": "Eagleridge Eddie's",
           "teamShort": "Eddies",
-          "value": "8-2",
-          "valueLabel": "8-2 · 2566 PF"
+          "value": "9-2",
+          "valueLabel": "9-2 \u00b7 2823.5 PF"
         },
         {
           "rank": 2,
           "teamId": "goats",
           "team": "Valley Old Goats",
           "teamShort": "Goats",
-          "value": "7-3",
-          "valueLabel": "7-3 · 2380.5 PF"
+          "value": "7-4",
+          "valueLabel": "7-4 \u00b7 2569 PF"
         },
         {
           "rank": 3,
-          "teamId": "substation",
-          "team": "Substation",
-          "teamShort": "Substation",
-          "value": "6-4",
-          "valueLabel": "6-4 · 2363.5 PF"
+          "teamId": "pocket",
+          "team": "Pocket Agents",
+          "teamShort": "Pocket",
+          "value": "6-5",
+          "valueLabel": "6-5 \u00b7 2974 PF"
         }
       ],
-      "note": "Live after Week 10 · locks at season end"
+      "note": "Live after Week 11 \u00b7 locks at season end"
     },
     "topPoints": {
       "key": "topPoints",
@@ -401,48 +401,68 @@
       "trackTop": 3,
       "teamId": "pocket",
       "team": "Pocket Agents",
-      "value": 2676,
+      "value": 2974,
       "leaders": [
         {
           "rank": 1,
           "teamId": "pocket",
           "team": "Pocket Agents",
           "teamShort": "Pocket",
-          "value": 2676,
-          "valueLabel": "2676"
+          "value": 2974,
+          "valueLabel": "2974"
         },
         {
           "rank": 2,
           "teamId": "doubtpfizer",
           "team": "Mrs. Doubtpfizer",
           "teamShort": "Doubtpfizer",
-          "value": 2588.5,
-          "valueLabel": "2588.5"
+          "value": 2856.5,
+          "valueLabel": "2856.5"
         },
         {
           "rank": 3,
           "teamId": "eddies",
           "team": "Eagleridge Eddie's",
           "teamShort": "Eddies",
-          "value": 2566,
-          "valueLabel": "2566"
+          "value": 2823.5,
+          "valueLabel": "2823.5"
         }
       ],
-      "note": "Live season PF · locks at season end"
+      "note": "Live season PF \u00b7 locks at season end"
     },
     "topOffensivePlayer": {
       "key": "topOffensivePlayer",
       "label": "Top Offensive Player",
       "status": "live",
       "trackTop": 3,
-      "player": "Jaxon Smith-Njigba",
-      "pos": "WR",
+      "player": "Joe Burrow",
+      "pos": "QB",
       "teamId": "dongers",
       "team": "Drummond Dongers",
-      "value": 318,
+      "value": 336,
       "leaders": [
         {
           "rank": 1,
+          "player": "Joe Burrow",
+          "pos": "QB",
+          "teamId": "dongers",
+          "team": "Drummond Dongers",
+          "teamShort": "Dongers",
+          "value": 336,
+          "valueLabel": "336"
+        },
+        {
+          "rank": 2,
+          "player": "Jahmyr Gibbs",
+          "pos": "RB",
+          "teamId": "slumlords",
+          "team": "Indian Trail Slumlords",
+          "teamShort": "Slumlords",
+          "value": 329,
+          "valueLabel": "329"
+        },
+        {
+          "rank": 3,
           "player": "Jaxon Smith-Njigba",
           "pos": "WR",
           "teamId": "dongers",
@@ -450,30 +470,10 @@
           "teamShort": "Dongers",
           "value": 318,
           "valueLabel": "318"
-        },
-        {
-          "rank": 2,
-          "player": "Joe Burrow",
-          "pos": "QB",
-          "teamId": "dongers",
-          "team": "Drummond Dongers",
-          "teamShort": "Dongers",
-          "value": 306,
-          "valueLabel": "306"
-        },
-        {
-          "rank": 3,
-          "player": "Jahmyr Gibbs",
-          "pos": "RB",
-          "teamId": "slumlords",
-          "team": "Indian Trail Slumlords",
-          "teamShort": "Slumlords",
-          "value": 299,
-          "valueLabel": "299"
         }
       ],
-      "note": "Live after Week 10 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end",
-      "source": "Fantrax Players, 2026-27 Reg Season - YTD, All Taken Players (excl. free agents), Off/Def filters, 2026-11-17 9:40 AM PT (America/Los_Angeles) after Week 10 finals"
+      "note": "Live after Week 11 \u00b7 Fantrax YTD All Taken Players (excl. free agents) \u00b7 locks at season end",
+      "source": "Fantrax Players, 2026-27 Reg Season - YTD, All Taken Players (excl. free agents), Off/Def filters, 2026-11-24 9:40 AM PT (America/Los_Angeles) after Week 11 finals"
     },
     "topDefensivePlayer": {
       "key": "topDefensivePlayer",
@@ -484,7 +484,7 @@
       "pos": "LB",
       "teamId": "doubtpfizer",
       "team": "Mrs. Doubtpfizer",
-      "value": 273,
+      "value": 316,
       "leaders": [
         {
           "rank": 1,
@@ -493,32 +493,32 @@
           "teamId": "doubtpfizer",
           "team": "Mrs. Doubtpfizer",
           "teamShort": "Doubtpfizer",
-          "value": 273,
-          "valueLabel": "273"
+          "value": 316,
+          "valueLabel": "316"
         },
         {
           "rank": 2,
-          "player": "Carson Schwesinger",
-          "pos": "LB",
-          "teamId": "substation",
-          "team": "Substation",
-          "teamShort": "Substation",
-          "value": 262,
-          "valueLabel": "262"
-        },
-        {
-          "rank": 3,
           "player": "Alex Singleton",
           "pos": "LB",
           "teamId": "doubtpfizer",
           "team": "Mrs. Doubtpfizer",
           "teamShort": "Doubtpfizer",
-          "value": 254,
-          "valueLabel": "254"
+          "value": 287,
+          "valueLabel": "287"
+        },
+        {
+          "rank": 3,
+          "player": "Arvell Reese",
+          "pos": "LB",
+          "teamId": "goats",
+          "team": "Valley Old Goats",
+          "teamShort": "Goats",
+          "value": 271,
+          "valueLabel": "271"
         }
       ],
-      "note": "Live after Week 10 · Fantrax YTD All Taken Players (excl. free agents) · locks at season end",
-      "source": "Fantrax Players, 2026-27 Reg Season - YTD, All Taken Players (excl. free agents), Off/Def filters, 2026-11-17 9:40 AM PT (America/Los_Angeles) after Week 10 finals"
+      "note": "Live after Week 11 \u00b7 Fantrax YTD All Taken Players (excl. free agents) \u00b7 locks at season end",
+      "source": "Fantrax Players, 2026-27 Reg Season - YTD, All Taken Players (excl. free agents), Off/Def filters, 2026-11-24 9:40 AM PT (America/Los_Angeles) after Week 11 finals"
     }
   },
   "weekScores": {
