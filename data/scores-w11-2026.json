@@ -1,0 +1,86 @@
+{
+  "updated": "2026-11-24",
+  "asOf": "2026-11-24",
+  "week": 11,
+  "season": 2026,
+  "weekStatus": "final",
+  "complete": true,
+  "source": "Fantrax",
+  "note": "Week 11 FINAL from Fantrax standings page Tue Nov 24 7:18 AM PT (MNF complete; all 14 scores and official PF/PA recounted from the Standings page). Kitty Pocket Agents 298; survivor-low The Hypersecretors 193.5 (alive pool).",
+  "kitty": {
+    "team": "Pocket",
+    "teamFull": "Pocket Agents",
+    "teamId": "pocket",
+    "score": 298
+  },
+  "survivorLowest": {
+    "team": "The Hypersecretors",
+    "teamId": "hyper",
+    "score": 193.5
+  },
+  "matchups": [
+    {
+      "home": "Pocket Agents",
+      "away": "Valley Old Goats",
+      "homeScore": 298,
+      "awayScore": 188.5,
+      "winner": "Pocket Agents",
+      "status": "final",
+      "notes": "Fantrax Week 11 final · standings page Tue Nov 24 7:18 AM PT"
+    },
+    {
+      "home": "The Hypersecretors",
+      "away": "Towner Top Aga Bottom",
+      "homeScore": 193.5,
+      "awayScore": 238,
+      "winner": "Towner Top Aga Bottom",
+      "status": "final",
+      "notes": "Fantrax Week 11 final · standings page Tue Nov 24 7:18 AM PT"
+    },
+    {
+      "home": "Mrs. Doubtpfizer",
+      "away": "Little Ass Boys",
+      "homeScore": 268,
+      "awayScore": 206,
+      "winner": "Mrs. Doubtpfizer",
+      "status": "final",
+      "notes": "Fantrax Week 11 final · standings page Tue Nov 24 7:18 AM PT"
+    },
+    {
+      "home": "Saltese Slamm",
+      "away": "Substation",
+      "homeScore": 178,
+      "awayScore": 135.5,
+      "winner": "Saltese Slamm",
+      "status": "final",
+      "notes": "Fantrax Week 11 final · standings page Tue Nov 24 7:18 AM PT"
+    },
+    {
+      "home": "Indian Trail Slumlords",
+      "away": "Drummond Dongers",
+      "homeScore": 237,
+      "awayScore": 277,
+      "winner": "Drummond Dongers",
+      "status": "final",
+      "notes": "Fantrax Week 11 final · standings page Tue Nov 24 7:18 AM PT"
+    },
+    {
+      "home": "Newman Lake Sleep Paralysis Demons",
+      "away": "Eagle Ridge Eddies",
+      "homeScore": 184,
+      "awayScore": 257.5,
+      "winner": "Eagle Ridge Eddies",
+      "status": "final",
+      "notes": "Fantrax Week 11 final · standings page Tue Nov 24 7:18 AM PT"
+    },
+    {
+      "home": "Morningside Muff Divers",
+      "away": "Ultron",
+      "homeScore": 201.5,
+      "awayScore": 223.5,
+      "winner": "Ultron",
+      "status": "final",
+      "notes": "Fantrax Week 11 final · standings page Tue Nov 24 7:18 AM PT"
+    }
+  ]
+}
