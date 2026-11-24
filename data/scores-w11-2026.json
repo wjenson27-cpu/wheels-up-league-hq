@@ -6,7 +6,7 @@
   "weekStatus": "final",
   "complete": true,
   "source": "Fantrax",
-  "note": "Week 11 FINAL from Fantrax standings page Tue Nov 24 7:18 AM PT (MNF complete; all 14 scores and official PF/PA recounted from the Standings page). Kitty Pocket Agents 298; survivor-low The Hypersecretors 193.5 (alive pool).",
+  "note": "Week 11 FINAL from Fantrax standings page Tue Nov 24 7:18 AM PT (MNF complete; all 14 scores and official PF/PA recounted from the Standings page). Kitty Pocket Agents 298; survivor-low Substation 135.5 (alive pool).",
   "kitty": {
     "team": "Pocket",
     "teamFull": "Pocket Agents",
@@ -14,9 +14,9 @@
     "score": 298
   },
   "survivorLowest": {
-    "team": "The Hypersecretors",
-    "teamId": "hyper",
-    "score": 193.5
+    "team": "Substation",
+    "teamId": "substation",
+    "score": 135.5
   },
   "matchups": [
     {

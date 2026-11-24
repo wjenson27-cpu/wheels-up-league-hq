@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "updated": "2026-11-17",
+  "updated": "2026-11-24",
   "schemaVersion": 2,
   "schema": {
     "weeklyKitty": "Array of weekly high-score (kitty) winners. One entry per completed week.",
@@ -117,8 +117,7 @@
       "doubtpfizer",
       "eddies",
       "hyper",
-      "pocket",
-      "substation"
+      "pocket"
     ],
     "eliminations": [
       {
@@ -220,6 +219,16 @@
         "aliveBefore": 5,
         "aliveAfter": 4,
         "note": "Lowest Week 10 final score among teams still alive — off the bus"
+      },
+      {
+        "week": 11,
+        "status": "final",
+        "teamId": "substation",
+        "team": "Substation",
+        "score": 135.5,
+        "aliveBefore": 5,
+        "aliveAfter": 4,
+        "note": "Lowest Week 11 final score among teams still alive — off the bus. Last Ride re-entry lasted one week."
       }
     ],
     "lastRide": {
