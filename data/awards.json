@@ -109,6 +109,15 @@
       "winnerShort": "Doubtpfizer",
       "score": 341.5,
       "note": "Highest Week 10 final score"
+    },
+    {
+      "week": 11,
+      "status": "final",
+      "winnerTeamId": "pocket",
+      "winner": "Pocket Agents",
+      "winnerShort": "Pocket",
+      "score": 298.0,
+      "note": "Highest Week 11 final score"
     }
   ],
   "survivor": {
@@ -1232,6 +1241,78 @@
         "team": "Saltese Slamm",
         "score": 179.5
       }
+    ],
+    "11": [
+      {
+        "teamId": "pocket",
+        "team": "Pocket Agents",
+        "score": 298.0
+      },
+      {
+        "teamId": "dongers",
+        "team": "Drummond Dongers",
+        "score": 277.0
+      },
+      {
+        "teamId": "doubtpfizer",
+        "team": "Mrs. Doubtpfizer",
+        "score": 268.0
+      },
+      {
+        "teamId": "eddies",
+        "team": "Eagleridge Eddie's",
+        "score": 257.5
+      },
+      {
+        "teamId": "ttab",
+        "team": "Towner Top Aga Bottom",
+        "score": 238.0
+      },
+      {
+        "teamId": "slumlords",
+        "team": "Indian Trail Slumlords",
+        "score": 237.0
+      },
+      {
+        "teamId": "ultron",
+        "team": "Ultron",
+        "score": 223.5
+      },
+      {
+        "teamId": "lab",
+        "team": "Little Ass Boys",
+        "score": 206.0
+      },
+      {
+        "teamId": "morningside",
+        "team": "Morningside Muff Divers",
+        "score": 201.5
+      },
+      {
+        "teamId": "hyper",
+        "team": "The Hypersecretors",
+        "score": 193.5
+      },
+      {
+        "teamId": "goats",
+        "team": "Valley Old Goats",
+        "score": 188.5
+      },
+      {
+        "teamId": "newman",
+        "team": "Newman Lake Sleep Paralysis Demons",
+        "score": 184.0
+      },
+      {
+        "teamId": "saltese",
+        "team": "Saltese Slamm",
+        "score": 178.0
+      },
+      {
+        "teamId": "substation",
+        "team": "Substation",
+        "score": 135.5
+      }
     ]
   },
   "weeklyTopPlayers": [
@@ -1514,6 +1595,76 @@
         }
       ],
       "note": "Week 10 final top 3 by Fantrax points among taken players. Joe Burrow (Dongers) also scored 52, tied with Gibbs; Fantrax display order places Gibbs 3rd."
+    },
+    {
+      "week": 11,
+      "status": "final",
+      "source": "Fantrax Players, Week 11 (Nov 19 - Nov 24), Period Only, All Taken Players; 2026-11-24 8:54 AM PT (America/Los_Angeles)",
+      "topOffensivePlayer": [
+        {
+          "player": "Dak Prescott",
+          "pos": "QB",
+          "rank": 1,
+          "team": "Mrs. Doubtpfizer",
+          "teamId": "doubtpfizer",
+          "teamShort": "Doubtpfizer",
+          "value": 49,
+          "valueLabel": "49"
+        },
+        {
+          "player": "Jonah Coleman",
+          "pos": "RB",
+          "rank": 2,
+          "team": "Pocket Agents",
+          "teamId": "pocket",
+          "teamShort": "Pocket",
+          "value": 43,
+          "valueLabel": "43"
+        },
+        {
+          "player": "CeeDee Lamb",
+          "pos": "WR",
+          "rank": 3,
+          "team": "Pocket Agents",
+          "teamId": "pocket",
+          "teamShort": "Pocket",
+          "value": 36,
+          "valueLabel": "36"
+        }
+      ],
+      "topDefensivePlayer": [
+        {
+          "player": "Quinnen Williams",
+          "pos": "DL",
+          "rank": 1,
+          "team": "Towner Top Aga Bottom",
+          "teamId": "ttab",
+          "teamShort": "TTAB",
+          "value": 44,
+          "valueLabel": "44"
+        },
+        {
+          "player": "Nakobe Dean",
+          "pos": "LB",
+          "rank": 2,
+          "team": "Mrs. Doubtpfizer",
+          "teamId": "doubtpfizer",
+          "teamShort": "Doubtpfizer",
+          "value": 43,
+          "valueLabel": "43"
+        },
+        {
+          "player": "Boye Mafe",
+          "pos": "DL,LB",
+          "rank": 3,
+          "team": "Morningside Muff Divers",
+          "teamId": "morningside",
+          "teamShort": "Morningside",
+          "value": 42,
+          "valueLabel": "42"
+        }
+      ],
+      "note": "Week 11 final top 3 by Fantrax points among taken players. Patrick Mahomes (Goats) also scored 36, tied with Lamb; Fantrax Off display order places Lamb 3rd."
     }
   ]
 }
