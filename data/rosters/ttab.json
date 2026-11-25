@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase",
-  "asOf": "2026-11-24 9:15 PM PT",
+  "asOf": "2026-11-25 5:56 AM PT",
   "faabLeft": 3,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -51,7 +51,7 @@
     "Divine Deablo — Q (IR slot)",
     "Dorian Williams — Q (IR slot)"
   ],
-  "source": "Fantrax completed-trade capture 2026-11-24 9:15 PM PT (/workspace/eddie-trade-goedert-2026-11-24/fantrax-capture.json)",
+  "source": "Fantrax roster sync 2026-11-25 5:56 AM PT (/workspace/fantrax-raw-2026-11-25-am-normalized.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -61,6 +61,6 @@
     "Divine Deablo — Q (IR slot)",
     "Dorian Williams — Q (IR slot)"
   ],
-  "updated": "2026-11-24",
-  "lastSynced": "2026-11-24 9:15 PM PT"
+  "updated": "2026-11-25",
+  "lastSynced": "2026-11-25 5:56 AM PT"
 }

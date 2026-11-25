@@ -2,7 +2,7 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse",
-  "asOf": "2026-11-24 4:20 PM PT",
+  "asOf": "2026-11-25 5:56 AM PT",
   "faabLeft": 44,
   "startingQB": "Jayden Daniels",
   "roster": {
@@ -13,13 +13,13 @@
     "RB": [
       "Jaylen Warren",
       "Ashton Jeanty",
-      "Dylan Sampson",
-      "Kyren Williams"
+      "Kyren Williams",
+      "Dylan Sampson"
     ],
     "WR": [
-      "Caleb Douglas",
       "Mike Evans",
       "Carnell Tate",
+      "Caleb Douglas",
       "Khalil Shakir"
     ],
     "TE": [
@@ -29,40 +29,37 @@
       "Austin Booker"
     ],
     "LB": [
-      "Dee Winters",
+      "Nathan Landman",
       "Demetrius Knight",
       "Drue Tranquill",
       "Quay Walker",
-      "Nathan Landman"
+      "Jihaad Campbell"
     ],
     "DB": [
-      "Minkah Fitzpatrick",
-      "Jacob Parrish"
+      "Minkah Fitzpatrick"
     ],
     "IR": [
       "Jeremiyah Love",
-      "Jihaad Campbell"
+      "Dee Winters",
+      "Jacob Parrish"
     ]
   },
   "notes": "",
   "injuryFlags": [
     "Jeremiyah Love — IR (IR slot)",
-    "Dee Winters — Q (active)",
-    "Jacob Parrish — Q (active)"
+    "Dee Winters — Q (IR slot)",
+    "Jacob Parrish — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-24 4:20 PM PT (/workspace/fantrax-raw-2026-11-24-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-25 5:56 AM PT (/workspace/fantrax-raw-2026-11-25-am-normalized.json)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
-  "lineupFlags": [
-    "Dee Winters — Q (active)",
-    "Jacob Parrish — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
     "Jeremiyah Love — IR (IR slot)",
-    "Dee Winters — Q (active)",
-    "Jacob Parrish — Q (active)"
+    "Dee Winters — Q (IR slot)",
+    "Jacob Parrish — Q (IR slot)"
   ],
-  "updated": "2026-11-24",
-  "lastSynced": "2026-11-24 4:20 PM PT"
+  "updated": "2026-11-25",
+  "lastSynced": "2026-11-25 5:56 AM PT"
 }

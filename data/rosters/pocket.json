@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "KO",
-  "asOf": "2026-11-24 4:20 PM PT",
+  "asOf": "2026-11-25 5:56 AM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -48,30 +48,25 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Saquon Barkley — Q (active)",
     "Woody Marks — Q (IR slot)",
     "Dalton Kincaid — Q (IR slot)",
     "Robert Spillane — Q (active)",
-    "Tony Adams — Q (active)",
-    "Brandon Jones — Q (IR slot)"
+    "Tony Adams — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-24 4:20 PM PT (/workspace/fantrax-raw-2026-11-24-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-25 5:56 AM PT (/workspace/fantrax-raw-2026-11-25-am-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Saquon Barkley — Q (active)",
     "Robert Spillane — Q (active)",
     "Tony Adams — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Saquon Barkley — Q (active)",
     "Woody Marks — Q (IR slot)",
     "Dalton Kincaid — Q (IR slot)",
     "Robert Spillane — Q (active)",
-    "Tony Adams — Q (active)",
-    "Brandon Jones — Q (IR slot)"
+    "Tony Adams — Q (active)"
   ],
-  "updated": "2026-11-24",
-  "lastSynced": "2026-11-24 4:20 PM PT"
+  "updated": "2026-11-25",
+  "lastSynced": "2026-11-25 5:56 AM PT"
 }

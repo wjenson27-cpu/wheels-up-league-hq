@@ -2,7 +2,7 @@
   "teamId": "doubtpfizer",
   "teamName": "Mrs. Doubtpfizer",
   "owner": "Kyle",
-  "asOf": "2026-11-24 4:20 PM PT",
+  "asOf": "2026-11-25 5:56 AM PT",
   "faabLeft": 68,
   "startingQB": "Dak Prescott",
   "roster": {
@@ -12,10 +12,10 @@
     "RB": [
       "Christian McCaffrey",
       "Blake Corum",
+      "Omarion Hampton",
       "Chuba Hubbard",
       "Kaelon Black",
-      "Braelon Allen",
-      "Omarion Hampton"
+      "Braelon Allen"
     ],
     "WR": [
       "Nico Collins",
@@ -27,8 +27,8 @@
       "Kyle Pitts"
     ],
     "DL": [
-      "Dexter Lawrence",
-      "Byron Young"
+      "Byron Young",
+      "Dexter Lawrence"
     ],
     "LB": [
       "Nakobe Dean",
@@ -48,7 +48,7 @@
   "injuryFlags": [
     "TreVeyon Henderson — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-24 4:20 PM PT (/workspace/fantrax-raw-2026-11-24-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-25 5:56 AM PT (/workspace/fantrax-raw-2026-11-25-am-normalized.json)",
   "fantraxTeamId": "xg1akj6omsb3ulv5",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -56,6 +56,6 @@
   "flags": [
     "TreVeyon Henderson — IR (IR slot)"
   ],
-  "updated": "2026-11-24",
-  "lastSynced": "2026-11-24 4:20 PM PT"
+  "updated": "2026-11-25",
+  "lastSynced": "2026-11-25 5:56 AM PT"
 }
