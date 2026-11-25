@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "KO",
-  "asOf": "2026-11-24 5:48 AM PT",
+  "asOf": "2026-11-24 4:20 PM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -55,7 +55,7 @@
     "Tony Adams — Q (active)",
     "Brandon Jones — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 4:20 PM PT (/workspace/fantrax-raw-2026-11-24-pm-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
     "Saquon Barkley — Q (active)",
@@ -73,5 +73,5 @@
     "Brandon Jones — Q (IR slot)"
   ],
   "updated": "2026-11-24",
-  "lastSynced": "2026-11-24 5:48 AM PT"
+  "lastSynced": "2026-11-24 4:20 PM PT"
 }

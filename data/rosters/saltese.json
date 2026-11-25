@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Larry",
-  "asOf": "2026-11-24 5:48 AM PT",
+  "asOf": "2026-11-24 4:20 PM PT",
   "faabLeft": 2,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -19,9 +19,7 @@
       "Rico Dowdle",
       "Kyle Monangai"
     ],
-    "WR": [
-      "Ashton Dulin"
-    ],
+    "WR": [],
     "TE": [
       "Dalton Schultz",
       "Tucker Kraft"
@@ -36,8 +34,7 @@
       "Eric Wilson"
     ],
     "DB": [
-      "Jonas Sanker",
-      "M.J. Stewart"
+      "Jonas Sanker"
     ],
     "IR": [
       "Jonathon Brooks",
@@ -52,7 +49,7 @@
     "RJ Harvey — IR (IR slot)",
     "Zack Baun — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 4:20 PM PT (/workspace/fantrax-raw-2026-11-24-pm-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
     "Bhayshul Tuten — Q (reserve)"
@@ -66,5 +63,5 @@
     "Zack Baun — IR (IR slot)"
   ],
   "updated": "2026-11-24",
-  "lastSynced": "2026-11-24 5:48 AM PT"
+  "lastSynced": "2026-11-24 4:20 PM PT"
 }

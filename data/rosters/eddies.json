@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "Bill",
-  "asOf": "2026-11-24 5:48 AM PT",
+  "asOf": "2026-11-24 4:20 PM PT",
   "faabLeft": 25,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -17,8 +17,9 @@
     "WR": [
       "Malik Nabers",
       "Chimere Dike",
-      "Josh Downs",
-      "Garrett Wilson"
+      "Garrett Wilson",
+      "Jalen Coker",
+      "Josh Downs"
     ],
     "TE": [
       "Michael Mayer"
@@ -37,13 +38,11 @@
       "Kyle Hamilton",
       "Evan Williams",
       "Quentin Lake",
-      "Cole Bishop",
-      "Zyon McCollum"
+      "Cole Bishop"
     ],
     "IR": [
       "De'Zhaun Stribling",
-      "Brock Bowers",
-      "Jalen Coker"
+      "Brock Bowers"
     ]
   },
   "notes": "",
@@ -51,7 +50,7 @@
     "De'Zhaun Stribling — IR (IR slot)",
     "Brock Bowers — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 4:20 PM PT (/workspace/fantrax-raw-2026-11-24-pm-normalized.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -61,5 +60,5 @@
     "Brock Bowers — Q (IR slot)"
   ],
   "updated": "2026-11-24",
-  "lastSynced": "2026-11-24 5:48 AM PT"
+  "lastSynced": "2026-11-24 4:20 PM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Heff",
-  "asOf": "2026-11-24 5:48 AM PT",
+  "asOf": "2026-11-24 4:20 PM PT",
   "faabLeft": 16,
   "startingQB": "Patrick Mahomes",
   "roster": {
@@ -50,7 +50,7 @@
     "Josh Jacobs — Q (IR slot)",
     "Amik Robertson — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-24 5:48 AM PT (/workspace/fantrax-raw-2026-11-24-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-24 4:20 PM PT (/workspace/fantrax-raw-2026-11-24-pm-normalized.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [
     "Amik Robertson — Q (active)"
@@ -62,5 +62,5 @@
     "Amik Robertson — Q (active)"
   ],
   "updated": "2026-11-24",
-  "lastSynced": "2026-11-24 5:48 AM PT"
+  "lastSynced": "2026-11-24 4:20 PM PT"
 }
