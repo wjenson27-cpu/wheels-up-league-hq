@@ -2,8 +2,8 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob",
-  "asOf": "2026-11-25 5:56 AM PT",
-  "faabLeft": 6,
+  "asOf": "2026-11-25 10:40 AM PT",
+  "faabLeft": 2,
   "startingQB": "Josh Allen",
   "roster": {
     "QB": [
@@ -19,7 +19,8 @@
       "Drake London",
       "Zavion Thomas",
       "Emeka Egbuka",
-      "Travis Hunter"
+      "Travis Hunter",
+      "Konata Mumpfield"
     ],
     "TE": [
       "Sam LaPorta"
@@ -36,9 +37,8 @@
       "Kaleb Elarms-Orr"
     ],
     "DB": [
-      "Jaquan Brisker",
-      "A.J. Haulcy",
-      "Nick Emmanwori"
+      "Nick Emmanwori",
+      "Xavier Watts"
     ],
     "IR": [
       "Lamar Jackson",
@@ -53,7 +53,7 @@
     "Seth McGowan — O (IR slot)",
     "Micah Parsons — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-25 5:56 AM PT (/workspace/fantrax-raw-2026-11-25-am-normalized.json)",
+  "source": "Fantrax post-waiver read 2026-11-25 10:30 AM PT (patched from history adds/drops)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
   "lineupFlags": [
     "Kenneth Walker III — Q (active)"
@@ -67,5 +67,5 @@
     "Micah Parsons — Q (IR slot)"
   ],
   "updated": "2026-11-25",
-  "lastSynced": "2026-11-25 5:56 AM PT"
+  "lastSynced": "2026-11-25 10:40 AM PT"
 }

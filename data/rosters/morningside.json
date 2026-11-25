@@ -2,25 +2,25 @@
   "teamId": "morningside",
   "teamName": "Morningside Muff Divers",
   "owner": "Grizz",
-  "asOf": "2026-11-25 5:56 AM PT",
-  "faabLeft": 5,
+  "asOf": "2026-11-25 10:40 AM PT",
+  "faabLeft": 3,
   "startingQB": "Aaron Rodgers",
   "roster": {
     "QB": [
-      "Aaron Rodgers",
-      "Drew Lock"
+      "Drew Lock",
+      "Deshaun Watson"
     ],
     "RB": [
       "Ollie Gordon",
-      "Jadarian Price",
-      "Kimani Vidal"
+      "Jadarian Price"
     ],
     "WR": [
       "Justin Jefferson",
       "Denzel Boston",
       "Deebo Samuel",
       "Elic Ayomanor",
-      "Xavier Worthy"
+      "Xavier Worthy",
+      "Ted Hurst"
     ],
     "TE": [
       "Travis Kelce"
@@ -55,7 +55,7 @@
     "Derwin James — IR (IR slot)",
     "Pete Werner — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-25 5:56 AM PT (/workspace/fantrax-raw-2026-11-25-am-normalized.json)",
+  "source": "Fantrax post-waiver read 2026-11-25 10:30 AM PT (patched from history adds/drops)",
   "fantraxTeamId": "3hpc63ermsb3ulv5",
   "lineupFlags": [
     "Denzel Boston — Q (active)",
@@ -73,5 +73,5 @@
     "Pete Werner — Q (IR slot)"
   ],
   "updated": "2026-11-25",
-  "lastSynced": "2026-11-25 5:56 AM PT"
+  "lastSynced": "2026-11-25 10:40 AM PT"
 }

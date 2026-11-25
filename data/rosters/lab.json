@@ -2,8 +2,8 @@
   "teamId": "lab",
   "teamName": "Little Ass Boys",
   "owner": "Jesse",
-  "asOf": "2026-11-25 5:56 AM PT",
-  "faabLeft": 44,
+  "asOf": "2026-11-25 10:40 AM PT",
+  "faabLeft": 33,
   "startingQB": "Jayden Daniels",
   "roster": {
     "QB": [
@@ -33,10 +33,12 @@
       "Demetrius Knight",
       "Drue Tranquill",
       "Quay Walker",
-      "Jihaad Campbell"
+      "Jihaad Campbell",
+      "Mike Green"
     ],
     "DB": [
-      "Minkah Fitzpatrick"
+      "Minkah Fitzpatrick",
+      "Ja'Quan McMillian"
     ],
     "IR": [
       "Jeremiyah Love",
@@ -50,7 +52,7 @@
     "Dee Winters — Q (IR slot)",
     "Jacob Parrish — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-25 5:56 AM PT (/workspace/fantrax-raw-2026-11-25-am-normalized.json)",
+  "source": "Fantrax post-waiver read 2026-11-25 10:30 AM PT (patched from history adds/drops)",
   "fantraxTeamId": "a4q2ra3ymsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -61,5 +63,5 @@
     "Jacob Parrish — Q (IR slot)"
   ],
   "updated": "2026-11-25",
-  "lastSynced": "2026-11-25 5:56 AM PT"
+  "lastSynced": "2026-11-25 10:40 AM PT"
 }
