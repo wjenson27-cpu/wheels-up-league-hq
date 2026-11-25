@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-24",
-  "asOf": "2026-11-24 4:20 PM PT",
+  "asOf": "2026-11-24 9:15 PM PT",
   "teams": [
     "dongers",
     "doubtpfizer",
@@ -17,6 +17,6 @@
     "ttab",
     "ultron"
   ],
-  "source": "Fantrax roster sync 2026-11-24 4:20 PM PT (/workspace/fantrax-raw-2026-11-24-pm-normalized.json)",
-  "lastSynced": "2026-11-24 4:20 PM PT"
+  "source": "Fantrax completed-trade capture 2026-11-24 9:15 PM PT (/workspace/eddie-trade-goedert-2026-11-24/fantrax-capture.json)",
+  "lastSynced": "2026-11-24 9:15 PM PT"
 }

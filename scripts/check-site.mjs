@@ -1076,13 +1076,17 @@ async function checkPages() {
                 ok: /Eagleridge Eddie's/.test(text) && !/Eagle Ridge Eddies/.test(text) && !/\bThe Eddies\b/.test(text) && Boolean(document.getElementById("roster")),
                 chars: count("Zach Charbonnet"),
                 etienne: count("Travis Etienne"),
+                goedert: count("Dallas Goedert"),
+                dupes: [...new Set(chips.filter((n, i) => chips.indexOf(n) !== i))],
                 raw: /W1 FINAL/.test(text),
                 larry: /Saltese Slamm \(Larry\)/.test(text),
                 lukeNick: /Saltese Slamm \(Luke\)/.test(text)
               };
             });
             if (!info.ok) errors.push("Eddies team page did not render");
-            if (info.chars !== 1 || info.etienne !== 1) errors.push(`IR dupes charbonnet=${info.chars} etienne=${info.etienne}`);
+            // Etienne left in the Nov 24 5:26 PM PT trade for Goedert; still flag any doubled chips.
+            if (info.chars !== 1 || info.etienne !== 0 || info.goedert !== 1) errors.push(`IR dupes charbonnet=${info.chars} etienne=${info.etienne} goedert=${info.goedert}`);
+            if (info.dupes.length) errors.push(`IR dupes ${info.dupes.join(", ")}`);
             if (info.raw) errors.push("raw roster note is visible");
             if (info.larry || info.lukeNick) errors.push("trade still uses a nickname owner");
             if (viewport.name === "mobile") {

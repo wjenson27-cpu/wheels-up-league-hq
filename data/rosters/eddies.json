@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "Bill",
-  "asOf": "2026-11-24 4:20 PM PT",
+  "asOf": "2026-11-24 9:15 PM PT",
   "faabLeft": 25,
   "startingQB": "Brock Purdy",
   "roster": {
@@ -11,8 +11,7 @@
     ],
     "RB": [
       "Breece Hall",
-      "Zach Charbonnet",
-      "Travis Etienne"
+      "Zach Charbonnet"
     ],
     "WR": [
       "Malik Nabers",
@@ -22,6 +21,7 @@
       "Josh Downs"
     ],
     "TE": [
+      "Dallas Goedert",
       "Michael Mayer"
     ],
     "DL": [
@@ -50,7 +50,7 @@
     "De'Zhaun Stribling — IR (IR slot)",
     "Brock Bowers — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-24 4:20 PM PT (/workspace/fantrax-raw-2026-11-24-pm-normalized.json)",
+  "source": "Fantrax completed-trade capture 2026-11-24 9:15 PM PT (/workspace/eddie-trade-goedert-2026-11-24/fantrax-capture.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -60,5 +60,5 @@
     "Brock Bowers — Q (IR slot)"
   ],
   "updated": "2026-11-24",
-  "lastSynced": "2026-11-24 4:20 PM PT"
+  "lastSynced": "2026-11-24 9:15 PM PT"
 }
