@@ -2,7 +2,7 @@
   "teamId": "hyper",
   "teamName": "The Hypersecretors",
   "owner": "Jacob",
-  "asOf": "2026-11-25 10:40 AM PT",
+  "asOf": "2026-11-25 4:07 PM PT",
   "faabLeft": 2,
   "startingQB": "Josh Allen",
   "roster": {
@@ -12,15 +12,15 @@
     "RB": [
       "Bijan Robinson",
       "Jacory Croskey-Merritt",
-      "Kenneth Walker III",
+      "Kaleb Johnson",
       "Jaylen Wright"
     ],
     "WR": [
       "Drake London",
       "Zavion Thomas",
+      "Konata Mumpfield",
       "Emeka Egbuka",
-      "Travis Hunter",
-      "Konata Mumpfield"
+      "Travis Hunter"
     ],
     "TE": [
       "Sam LaPorta"
@@ -41,31 +41,25 @@
       "Xavier Watts"
     ],
     "IR": [
-      "Lamar Jackson",
       "Seth McGowan",
+      "Kenneth Walker III",
       "Micah Parsons"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Kenneth Walker III — Q (active)",
-    "Lamar Jackson — IR (IR slot)",
     "Seth McGowan — O (IR slot)",
-    "Micah Parsons — Q (IR slot)"
+    "Kenneth Walker III — O (IR slot)"
   ],
-  "source": "Fantrax post-waiver read 2026-11-25 10:30 AM PT (patched from history adds/drops)",
+  "source": "Fantrax roster sync 2026-11-25 4:07 PM PT (/workspace/fantrax-raw-2026-11-25-pm-normalized.json)",
   "fantraxTeamId": "xz2uv87rmsb3ulv4",
-  "lineupFlags": [
-    "Kenneth Walker III — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Kenneth Walker III — Q (active)",
-    "Lamar Jackson — IR (IR slot)",
     "Seth McGowan — O (IR slot)",
-    "Micah Parsons — Q (IR slot)"
+    "Kenneth Walker III — O (IR slot)"
   ],
   "updated": "2026-11-25",
-  "lastSynced": "2026-11-25 10:40 AM PT"
+  "lastSynced": "2026-11-25 4:07 PM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "KO",
-  "asOf": "2026-11-25 5:56 AM PT",
+  "asOf": "2026-11-25 4:07 PM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -48,25 +48,25 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Tetairoa McMillan — Q (active)",
     "Woody Marks — Q (IR slot)",
     "Dalton Kincaid — Q (IR slot)",
-    "Robert Spillane — Q (active)",
-    "Tony Adams — Q (active)"
+    "Robert Spillane — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-25 5:56 AM PT (/workspace/fantrax-raw-2026-11-25-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-25 4:07 PM PT (/workspace/fantrax-raw-2026-11-25-pm-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Robert Spillane — Q (active)",
-    "Tony Adams — Q (active)"
+    "Tetairoa McMillan — Q (active)",
+    "Robert Spillane — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Tetairoa McMillan — Q (active)",
     "Woody Marks — Q (IR slot)",
     "Dalton Kincaid — Q (IR slot)",
-    "Robert Spillane — Q (active)",
-    "Tony Adams — Q (active)"
+    "Robert Spillane — Q (active)"
   ],
   "updated": "2026-11-25",
-  "lastSynced": "2026-11-25 10:40 AM PT"
+  "lastSynced": "2026-11-25 4:07 PM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "dongers",
   "teamName": "Drummond Dongers",
   "owner": "Big Show",
-  "asOf": "2026-11-25 5:56 AM PT",
+  "asOf": "2026-11-25 4:07 PM PT",
   "faabLeft": 1,
   "startingQB": "Joe Burrow",
   "roster": {
@@ -43,18 +43,21 @@
   },
   "notes": "",
   "injuryFlags": [
+    "Jaxon Smith-Njigba — Q (active)",
     "Chuck Clark — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-25 5:56 AM PT (/workspace/fantrax-raw-2026-11-25-am-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-25 4:07 PM PT (/workspace/fantrax-raw-2026-11-25-pm-normalized.json)",
   "fantraxTeamId": "lreem0zbmsb3ulv5",
   "lineupFlags": [
+    "Jaxon Smith-Njigba — Q (active)",
     "Chuck Clark — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
+    "Jaxon Smith-Njigba — Q (active)",
     "Chuck Clark — Q (active)"
   ],
   "updated": "2026-11-25",
-  "lastSynced": "2026-11-25 10:40 AM PT"
+  "lastSynced": "2026-11-25 4:07 PM PT"
 }

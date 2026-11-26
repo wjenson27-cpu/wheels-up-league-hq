@@ -2,7 +2,7 @@
   "teamId": "saltese",
   "teamName": "Saltese Slamm",
   "owner": "Larry",
-  "asOf": "2026-11-25 10:40 AM PT",
+  "asOf": "2026-11-25 4:07 PM PT",
   "faabLeft": 2,
   "startingQB": "C.J. Stroud",
   "roster": {
@@ -37,7 +37,8 @@
     ],
     "DB": [
       "Jonas Sanker",
-      "Joshua Williams"
+      "Joshua Williams",
+      "Emmanuel McNeil-Warren"
     ],
     "IR": [
       "Jonathon Brooks",
@@ -50,12 +51,14 @@
     "Bhayshul Tuten — Q (reserve)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
+    "Abdul Carter — Q (active)",
     "Zack Baun — IR (IR slot)"
   ],
-  "source": "Fantrax post-waiver read 2026-11-25 10:30 AM PT (patched from history adds/drops)",
+  "source": "Fantrax roster sync 2026-11-25 4:07 PM PT (/workspace/fantrax-raw-2026-11-25-pm-normalized.json)",
   "fantraxTeamId": "xdx6ngm2msb3ulv5",
   "lineupFlags": [
-    "Bhayshul Tuten — Q (reserve)"
+    "Bhayshul Tuten — Q (reserve)",
+    "Abdul Carter — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
@@ -63,8 +66,9 @@
     "Bhayshul Tuten — Q (reserve)",
     "Jonathon Brooks — IR (IR slot)",
     "RJ Harvey — IR (IR slot)",
+    "Abdul Carter — Q (active)",
     "Zack Baun — IR (IR slot)"
   ],
   "updated": "2026-11-25",
-  "lastSynced": "2026-11-25 10:40 AM PT"
+  "lastSynced": "2026-11-25 4:07 PM PT"
 }
