@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Towner",
-  "asOf": "2026-11-25 4:07 PM PT",
+  "asOf": "2026-11-26 4:07 PM PT",
   "faabLeft": 0,
   "startingQB": "Jacoby Brissett",
   "roster": {
@@ -25,8 +25,8 @@
       "Harold Fannin"
     ],
     "DL": [
-      "Maxx Crosby",
       "Gregory Rousseau",
+      "Maxx Crosby",
       "Carl Granderson",
       "Jeffery Simmons",
       "Jacob Martin"
@@ -47,22 +47,18 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Harold Fannin — Q (active)",
     "Drake Maye — O (IR slot)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-25 4:07 PM PT (/workspace/fantrax-raw-2026-11-25-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-26 4:07 PM PT (/workspace/fantrax-raw-2026-11-26-pm-normalized.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
-  "lineupFlags": [
-    "Harold Fannin — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Harold Fannin — Q (active)",
     "Drake Maye — O (IR slot)",
     "Leonard Williams — Q (IR slot)"
   ],
-  "updated": "2026-11-25",
-  "lastSynced": "2026-11-25 4:07 PM PT"
+  "updated": "2026-11-26",
+  "lastSynced": "2026-11-26 4:07 PM PT"
 }

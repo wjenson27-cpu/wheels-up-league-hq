@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "KO",
-  "asOf": "2026-11-25 4:07 PM PT",
+  "asOf": "2026-11-26 4:07 PM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -11,17 +11,17 @@
       "Tyler Shough"
     ],
     "RB": [
-      "Jonah Coleman",
-      "Saquon Barkley"
+      "Saquon Barkley",
+      "Jonah Coleman"
     ],
     "WR": [
-      "Tetairoa McMillan",
       "CeeDee Lamb",
       "Rashid Shaheed",
       "Jaylen Waddle"
     ],
     "TE": [
       "Chigoziem Okonkwo",
+      "Dalton Kincaid",
       "Trey McBride"
     ],
     "DL": [
@@ -42,31 +42,40 @@
     ],
     "IR": [
       "Woody Marks",
-      "Dalton Kincaid",
+      "Tetairoa McMillan",
       "Brandon Jones"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Tetairoa McMillan — Q (active)",
+    "Saquon Barkley — Q (active)",
     "Woody Marks — Q (IR slot)",
-    "Dalton Kincaid — Q (IR slot)",
-    "Robert Spillane — Q (active)"
+    "Tetairoa McMillan — Q (IR slot)",
+    "Robert Spillane — Q (active)",
+    "Cooper DeJean — Q (active)",
+    "Ernest Jones — Q (active)",
+    "Josiah Trotter — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-25 4:07 PM PT (/workspace/fantrax-raw-2026-11-25-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-26 4:07 PM PT (/workspace/fantrax-raw-2026-11-26-pm-normalized.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
-    "Tetairoa McMillan — Q (active)",
-    "Robert Spillane — Q (active)"
+    "Saquon Barkley — Q (active)",
+    "Robert Spillane — Q (active)",
+    "Cooper DeJean — Q (active)",
+    "Ernest Jones — Q (active)",
+    "Josiah Trotter — Q (active)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Tetairoa McMillan — Q (active)",
+    "Saquon Barkley — Q (active)",
     "Woody Marks — Q (IR slot)",
-    "Dalton Kincaid — Q (IR slot)",
-    "Robert Spillane — Q (active)"
+    "Tetairoa McMillan — Q (IR slot)",
+    "Robert Spillane — Q (active)",
+    "Cooper DeJean — Q (active)",
+    "Ernest Jones — Q (active)",
+    "Josiah Trotter — Q (active)"
   ],
-  "updated": "2026-11-25",
-  "lastSynced": "2026-11-25 4:07 PM PT"
+  "updated": "2026-11-26",
+  "lastSynced": "2026-11-26 4:07 PM PT"
 }
