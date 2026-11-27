@@ -1,8 +1,10 @@
 {
-  "asOf": "2026-11-19 5:54 AM PT",
-  "week": 11,
+  "asOf": "2026-11-26 4:10 PM PT",
+  "week": 12,
   "season": 2026,
-  "source": "W11 pregame shell after Thu roll",
-  "note": "Empty overlay; live scores fill later on game day.",
-  "games": []
+  "source": "W12 Thursday roll; Fantrax home tile projections only",
+  "note": "Scores left null (live tile score approximate, not entered). Other matchups unscored.",
+  "games": [
+    { "away": "Pocket Agents", "home": "Eagleridge Eddie's", "awayProjection": 226.7, "homeProjection": 204.2 }
+  ]
 }
