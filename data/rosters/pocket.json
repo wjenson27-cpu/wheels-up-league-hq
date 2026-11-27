@@ -2,7 +2,7 @@
   "teamId": "pocket",
   "teamName": "Pocket Agents",
   "owner": "KO",
-  "asOf": "2026-11-26 4:07 PM PT",
+  "asOf": "2026-11-27 5:50 AM PT",
   "faabLeft": 66,
   "startingQB": "Jared Goff",
   "roster": {
@@ -21,8 +21,8 @@
     ],
     "TE": [
       "Chigoziem Okonkwo",
-      "Dalton Kincaid",
-      "Trey McBride"
+      "Trey McBride",
+      "Dalton Kincaid"
     ],
     "DL": [
       "Will Anderson Jr."
@@ -56,7 +56,7 @@
     "Ernest Jones — Q (active)",
     "Josiah Trotter — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-26 4:07 PM PT (/workspace/fantrax-raw-2026-11-26-pm-normalized.json)",
+  "source": "Fantrax roster sync 2026-11-27 5:50 AM PT (/workspace/fantrax-raw-2026-11-27-am.json)",
   "fantraxTeamId": "20zozmjgmsb3ulv4",
   "lineupFlags": [
     "Saquon Barkley — Q (active)",
@@ -76,6 +76,6 @@
     "Ernest Jones — Q (active)",
     "Josiah Trotter — Q (active)"
   ],
-  "updated": "2026-11-26",
-  "lastSynced": "2026-11-26 4:07 PM PT"
+  "updated": "2026-11-27",
+  "lastSynced": "2026-11-27 5:50 AM PT"
 }
