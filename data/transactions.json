@@ -260,7 +260,7 @@
       "dropped": null,
       "droppedMeta": null,
       "bid": null,
-      "period": "Week 11",
+      "period": "Week 12",
       "counterparty": "Little Ass Boys",
       "received": [
         "Dylan Sampson (RB)"
@@ -617,23 +617,6 @@
       "bid": null,
       "period": "Week 12",
       "counterparty": "TTAB",
-      "received": [
-        "Dallas Goedert (TE)"
-      ]
-    },
-    {
-      "date": "2026-11-24",
-      "team": "Eagleridge Eddie's",
-      "type": "TRADE",
-      "summary": "Eagleridge Eddie's sent Travis Etienne (RB) to Towner Top Aga Bottom for Dallas Goedert (TE)",
-      "time": "5:26 PM PT",
-      "player": "Travis Etienne",
-      "playerMeta": "RB-NO",
-      "dropped": null,
-      "droppedMeta": null,
-      "bid": null,
-      "period": "Week 11",
-      "counterparty": "Towner Top Aga Bottom",
       "received": [
         "Dallas Goedert (TE)"
       ]
