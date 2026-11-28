@@ -2,12 +2,12 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "Bill",
-  "asOf": "2026-11-27 4:10 PM PT",
+  "asOf": "2026-11-28 5:55 AM PT",
   "faabLeft": 25,
-  "startingQB": "Anthony Richardson",
+  "startingQB": "J.J. McCarthy",
   "roster": {
     "QB": [
-      "Anthony Richardson"
+      "J.J. McCarthy"
     ],
     "RB": [
       "Breece Hall",
@@ -54,7 +54,7 @@
     "Kayshon Boutte — O (IR slot)",
     "De'Zhaun Stribling — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-27 4:10 PM PT (/workspace/fantrax-raw-2026-11-27-pm.json)",
+  "source": "Fantrax roster sync 2026-11-28 5:55 AM PT (/workspace/fantrax-raw-2026-11-28-am.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Dallas Goedert — Q (active)",
@@ -69,6 +69,6 @@
     "Kayshon Boutte — O (IR slot)",
     "De'Zhaun Stribling — IR (IR slot)"
   ],
-  "updated": "2026-11-27",
-  "lastSynced": "2026-11-27 4:10 PM PT"
+  "updated": "2026-11-28",
+  "lastSynced": "2026-11-28 5:55 AM PT"
 }

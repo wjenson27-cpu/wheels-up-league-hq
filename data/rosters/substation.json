@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nate",
-  "asOf": "2026-11-27 4:10 PM PT",
+  "asOf": "2026-11-28 5:55 AM PT",
   "faabLeft": 4,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -30,7 +30,7 @@
     "LB": [
       "Carson Schwesinger",
       "Kaden Elliss",
-      "Dre Greenlaw",
+      "Garret Wallow",
       "Alex Anzalone",
       "Malcolm Rodriguez"
     ],
@@ -42,27 +42,26 @@
     ],
     "IR": [
       "Jack Campbell",
+      "Dre Greenlaw",
       "Devin White"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)",
+    "Dre Greenlaw — Q (IR slot)",
     "Devin White — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-27 4:10 PM PT (/workspace/fantrax-raw-2026-11-27-pm.json)",
+  "source": "Fantrax roster sync 2026-11-28 5:55 AM PT (/workspace/fantrax-raw-2026-11-28-am.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
-  "lineupFlags": [
-    "Dre Greenlaw — Q (active)"
-  ],
+  "lineupFlags": [],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)",
+    "Dre Greenlaw — Q (IR slot)",
     "Devin White — IR (IR slot)"
   ],
-  "updated": "2026-11-27",
-  "lastSynced": "2026-11-27 4:10 PM PT"
+  "updated": "2026-11-28",
+  "lastSynced": "2026-11-28 5:55 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "ttab",
   "teamName": "Towner Top Aga Bottom",
   "owner": "Chase",
-  "asOf": "2026-11-27 4:10 PM PT",
+  "asOf": "2026-11-28 5:55 AM PT",
   "faabLeft": 0,
   "startingQB": "Caleb Williams",
   "roster": {
@@ -53,7 +53,7 @@
     "Omar Cooper Jr. — O (IR slot)",
     "Quinnen Williams — Q (active)"
   ],
-  "source": "Fantrax roster sync 2026-11-27 4:10 PM PT (/workspace/fantrax-raw-2026-11-27-pm.json)",
+  "source": "Fantrax roster sync 2026-11-28 5:55 AM PT (/workspace/fantrax-raw-2026-11-28-am.json)",
   "fantraxTeamId": "4grk2ph6msb3ulv4",
   "lineupFlags": [
     "Caleb Williams — Q (active)",
@@ -70,6 +70,6 @@
     "Omar Cooper Jr. — O (IR slot)",
     "Quinnen Williams — Q (active)"
   ],
-  "updated": "2026-11-27",
-  "lastSynced": "2026-11-27 4:10 PM PT"
+  "updated": "2026-11-28",
+  "lastSynced": "2026-11-28 5:55 AM PT"
 }

@@ -2,7 +2,7 @@
   "teamId": "slumlords",
   "teamName": "Indian Trail Slumlords",
   "owner": "Towner",
-  "asOf": "2026-11-27 4:10 PM PT",
+  "asOf": "2026-11-28 5:55 AM PT",
   "faabLeft": 0,
   "startingQB": "Jacoby Brissett",
   "roster": {
@@ -49,7 +49,7 @@
   "injuryFlags": [
     "Drake Maye — O (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-27 4:10 PM PT (/workspace/fantrax-raw-2026-11-27-pm.json)",
+  "source": "Fantrax roster sync 2026-11-28 5:55 AM PT (/workspace/fantrax-raw-2026-11-28-am.json)",
   "fantraxTeamId": "59frnthimsb3ulv4",
   "lineupFlags": [],
   "pendingClaim": null,
@@ -57,6 +57,6 @@
   "flags": [
     "Drake Maye — O (IR slot)"
   ],
-  "updated": "2026-11-27",
-  "lastSynced": "2026-11-27 4:10 PM PT"
+  "updated": "2026-11-28",
+  "lastSynced": "2026-11-28 5:55 AM PT"
 }
