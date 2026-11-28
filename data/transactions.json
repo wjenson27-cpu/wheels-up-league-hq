@@ -736,23 +736,6 @@
     },
     {
       "date": "2026-11-24",
-      "team": "The Eddies",
-      "type": "TRADE",
-      "summary": "The Eddies sent Travis Etienne (RB) to TTAB for Dallas Goedert (TE)",
-      "time": "5:26 PM PT",
-      "player": "Travis Etienne",
-      "playerMeta": "RB-NO",
-      "dropped": null,
-      "droppedMeta": null,
-      "bid": null,
-      "period": "Week 12",
-      "counterparty": "TTAB",
-      "received": [
-        "Dallas Goedert (TE)"
-      ]
-    },
-    {
-      "date": "2026-11-24",
       "team": "Eagleridge Eddie's",
       "type": "TRADE",
       "summary": "Eagleridge Eddie's sent Travis Etienne (RB) to Towner Top Aga Bottom for Dallas Goedert (TE)",
@@ -762,7 +745,7 @@
       "dropped": null,
       "droppedMeta": null,
       "bid": null,
-      "period": "Week 11",
+      "period": "Week 12",
       "counterparty": "Towner Top Aga Bottom",
       "received": [
         "Dallas Goedert (TE)"

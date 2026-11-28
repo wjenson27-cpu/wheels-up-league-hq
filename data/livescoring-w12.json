@@ -1,0 +1,149 @@
+{
+ "source": "Fantrax live scoring, read-only box scrape (livescoring page, captured 2026-11-28 6:16 AM PT)",
+ "asOf": "2026-11-28T06:16:00-08:00",
+ "week": 12,
+ "period": "Nov 25 - Dec 2, 2026",
+ "columnsNote": "counts read as done/inProgress/yetToPlay; minutesRemaining; Fantrax win % omitted (not explained on page). First listed team = away, second = home (order-inferred).",
+ "matchups": [
+  [
+   {
+    "team": "Pocket Agents",
+    "score": 66,
+    "proj": 194.3,
+    "done": 5,
+    "inProgress": 0,
+    "yet": 9,
+    "min": 540
+   },
+   {
+    "team": "Eagle Ridge Eddies",
+    "score": 44,
+    "proj": 194.02,
+    "done": 4,
+    "inProgress": 0,
+    "yet": 10,
+    "min": 600
+   }
+  ],
+  [
+   {
+    "team": "Little Ass Boys",
+    "score": 73,
+    "proj": 200.42,
+    "done": 6,
+    "inProgress": 0,
+    "yet": 8,
+    "min": 480
+   },
+   {
+    "team": "Saltese Slamm",
+    "score": 32.5,
+    "proj": 168.9,
+    "done": 2,
+    "inProgress": 0,
+    "yet": 12,
+    "min": 720
+   }
+  ],
+  [
+   {
+    "team": "Morningside Muff Divers",
+    "score": 59.5,
+    "proj": 191.16,
+    "done": 4,
+    "inProgress": 0,
+    "yet": 10,
+    "min": 600
+   },
+   {
+    "team": "The Hypersecretors",
+    "score": 68.5,
+    "proj": 189.1,
+    "done": 5,
+    "inProgress": 0,
+    "yet": 9,
+    "min": 540
+   }
+  ],
+  [
+   {
+    "team": "Mrs. Doubtpfizer",
+    "score": 115.5,
+    "proj": 264.26,
+    "done": 5,
+    "inProgress": 0,
+    "yet": 9,
+    "min": 540
+   },
+   {
+    "team": "Drummond Dongers",
+    "score": 53,
+    "proj": 215.47,
+    "done": 4,
+    "inProgress": 0,
+    "yet": 10,
+    "min": 600
+   }
+  ],
+  [
+   {
+    "team": "Newman Lake Sleep Paralysis Demons",
+    "score": 78,
+    "proj": 217.47,
+    "done": 4,
+    "inProgress": 0,
+    "yet": 10,
+    "min": 600
+   },
+   {
+    "team": "Indian Trail Slumlords",
+    "score": 122,
+    "proj": 245.22,
+    "done": 4,
+    "inProgress": 0,
+    "yet": 10,
+    "min": 600
+   }
+  ],
+  [
+   {
+    "team": "Substation",
+    "score": 11,
+    "proj": 190.59,
+    "done": 1,
+    "inProgress": 0,
+    "yet": 13,
+    "min": 780
+   },
+   {
+    "team": "Valley Old Goats",
+    "score": 58,
+    "proj": 195.71,
+    "done": 5,
+    "inProgress": 0,
+    "yet": 9,
+    "min": 540
+   }
+  ],
+  [
+   {
+    "team": "Ultron",
+    "score": 150.5,
+    "proj": 226.68,
+    "done": 9,
+    "inProgress": 0,
+    "yet": 5,
+    "min": 300
+   },
+   {
+    "team": "TTAB",
+    "score": 256,
+    "proj": 304.06,
+    "done": 10,
+    "inProgress": 0,
+    "yet": 4,
+    "min": 240
+   }
+  ]
+ ]
+}

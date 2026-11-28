@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-28",
   "season": 2026,
   "weeks": 17,
   "note": "Anytime TD. Yes/No/N/A. Weekly HIT if every active pick is Yes (N/A excluded).",
@@ -12,7 +12,10 @@
     "6": "Week 6 finals (TNF Oct 15 through MNF Oct 19 2026). No HIT.",
     "7": "Week 7 finals (TNF Oct 22 through MNF Oct 26 2026). No HIT.",
     "8": "Week 8 finals (TNF Oct 29 through MNF Nov 2 2026). No HIT.",
-    "9": "Week 9 picks in Nov 7; results pending."
+    "9": "Week 9 finals (TNF Nov 5 through MNF Nov 9 2026). No HIT (7 of 12 Yes). Results from nflverse weekly player stats, rushing/receiving/return TDs.",
+    "10": "Week 10 picks not on file; not entered.",
+    "11": "Week 11 picks not on file; not entered.",
+    "12": "Week 12 picks not on file; not entered."
   },
   "owners": [
     {
@@ -53,7 +56,7 @@
         },
         "9": {
           "player": "Jaxon Smith-Njigba",
-          "td": ""
+          "td": "No"
         },
         "10": {
           "player": "",
@@ -127,7 +130,7 @@
         },
         "9": {
           "player": "George Kittle",
-          "td": ""
+          "td": "No"
         },
         "10": {
           "player": "",
@@ -201,7 +204,7 @@
         },
         "9": {
           "player": "Kyren Williams",
-          "td": ""
+          "td": "No"
         },
         "10": {
           "player": "",
@@ -275,7 +278,7 @@
         },
         "9": {
           "player": "Jahmyr Gibbs",
-          "td": ""
+          "td": "Yes"
         },
         "10": {
           "player": "",
@@ -349,7 +352,7 @@
         },
         "9": {
           "player": "D'Andre Swift",
-          "td": ""
+          "td": "No"
         },
         "10": {
           "player": "",
@@ -423,7 +426,7 @@
         },
         "9": {
           "player": "Javonte Williams",
-          "td": ""
+          "td": "Yes"
         },
         "10": {
           "player": "",
@@ -497,7 +500,7 @@
         },
         "9": {
           "player": "Bijan Robinson",
-          "td": ""
+          "td": "Yes"
         },
         "10": {
           "player": "",
@@ -571,7 +574,7 @@
         },
         "9": {
           "player": "T.J. Hockenson",
-          "td": ""
+          "td": "No"
         },
         "10": {
           "player": "",
@@ -645,7 +648,7 @@
         },
         "9": {
           "player": "Bucky Irving",
-          "td": ""
+          "td": "Yes"
         },
         "10": {
           "player": "",
@@ -719,7 +722,7 @@
         },
         "9": {
           "player": "Puka Nacua",
-          "td": ""
+          "td": "Yes"
         },
         "10": {
           "player": "",
@@ -793,7 +796,7 @@
         },
         "9": {
           "player": "Christian McCaffrey",
-          "td": ""
+          "td": "Yes"
         },
         "10": {
           "player": "",
@@ -867,7 +870,7 @@
         },
         "9": {
           "player": "Brock Bowers",
-          "td": ""
+          "td": "Yes"
         },
         "10": {
           "player": "",
