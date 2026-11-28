@@ -2,7 +2,7 @@
   "teamId": "goats",
   "teamName": "Valley Old Goats",
   "owner": "Heff",
-  "asOf": "2026-11-27 5:50 AM PT",
+  "asOf": "2026-11-27 4:10 PM PT",
   "faabLeft": 16,
   "startingQB": "Patrick Mahomes",
   "roster": {
@@ -47,29 +47,20 @@
   },
   "notes": "",
   "injuryFlags": [
-    "Derrick Henry — Q (active)",
     "Josh Jacobs — O (IR slot)",
-    "Arvell Reese — Q (active)",
-    "Quincy Williams — Q (active)",
-    "Amik Robertson — Q (reserve)"
+    "Amik Robertson — O (reserve)"
   ],
-  "source": "Fantrax roster sync 2026-11-27 5:50 AM PT (/workspace/fantrax-raw-2026-11-27-am.json)",
+  "source": "Fantrax roster sync 2026-11-27 4:10 PM PT (/workspace/fantrax-raw-2026-11-27-pm.json)",
   "fantraxTeamId": "81bbo25imsb3ulv5",
   "lineupFlags": [
-    "Derrick Henry — Q (active)",
-    "Arvell Reese — Q (active)",
-    "Quincy Williams — Q (active)",
-    "Amik Robertson — Q (reserve)"
+    "Amik Robertson — O (reserve)"
   ],
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Derrick Henry — Q (active)",
     "Josh Jacobs — O (IR slot)",
-    "Arvell Reese — Q (active)",
-    "Quincy Williams — Q (active)",
-    "Amik Robertson — Q (reserve)"
+    "Amik Robertson — O (reserve)"
   ],
   "updated": "2026-11-27",
-  "lastSynced": "2026-11-27 5:50 AM PT"
+  "lastSynced": "2026-11-27 4:10 PM PT"
 }

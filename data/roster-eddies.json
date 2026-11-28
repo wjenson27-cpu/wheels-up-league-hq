@@ -2,7 +2,7 @@
   "teamId": "eddies",
   "teamName": "Eagleridge Eddie's",
   "owner": "Bill",
-  "asOf": "2026-11-27 5:50 AM PT",
+  "asOf": "2026-11-27 4:10 PM PT",
   "faabLeft": 25,
   "startingQB": "Anthony Richardson",
   "roster": {
@@ -50,11 +50,11 @@
   "injuryFlags": [
     "Dallas Goedert — Q (active)",
     "Brock Bowers — Q (reserve)",
-    "Brock Purdy — Q (IR slot)",
-    "Kayshon Boutte — Q (IR slot)",
+    "Brock Purdy — O (IR slot)",
+    "Kayshon Boutte — O (IR slot)",
     "De'Zhaun Stribling — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-27 5:50 AM PT (/workspace/fantrax-raw-2026-11-27-am.json)",
+  "source": "Fantrax roster sync 2026-11-27 4:10 PM PT (/workspace/fantrax-raw-2026-11-27-pm.json)",
   "fantraxTeamId": "xbvk9dpgmsb3ulv4",
   "lineupFlags": [
     "Dallas Goedert — Q (active)",
@@ -65,10 +65,10 @@
   "flags": [
     "Dallas Goedert — Q (active)",
     "Brock Bowers — Q (reserve)",
-    "Brock Purdy — Q (IR slot)",
-    "Kayshon Boutte — Q (IR slot)",
+    "Brock Purdy — O (IR slot)",
+    "Kayshon Boutte — O (IR slot)",
     "De'Zhaun Stribling — IR (IR slot)"
   ],
   "updated": "2026-11-27",
-  "lastSynced": "2026-11-27 5:50 AM PT"
+  "lastSynced": "2026-11-27 4:10 PM PT"
 }

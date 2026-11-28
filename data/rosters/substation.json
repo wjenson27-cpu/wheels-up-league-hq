@@ -2,7 +2,7 @@
   "teamId": "substation",
   "teamName": "Substation",
   "owner": "Nate",
-  "asOf": "2026-11-27 5:50 AM PT",
+  "asOf": "2026-11-27 4:10 PM PT",
   "faabLeft": 4,
   "startingQB": "Trevor Lawrence",
   "roster": {
@@ -16,9 +16,9 @@
     "WR": [
       "Ja'Marr Chase",
       "KC Concepcion",
+      "Jakobi Meyers",
       "Jordyn Tyson",
       "Jack Bech",
-      "Pat Bryant",
       "Germie Bernard"
     ],
     "TE": [
@@ -41,19 +41,17 @@
       "Jalen Pitre"
     ],
     "IR": [
-      "Jakobi Meyers",
       "Jack Campbell",
       "Devin White"
     ]
   },
   "notes": "",
   "injuryFlags": [
-    "Jakobi Meyers — Q (IR slot)",
     "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)",
     "Devin White — IR (IR slot)"
   ],
-  "source": "Fantrax roster sync 2026-11-27 5:50 AM PT (/workspace/fantrax-raw-2026-11-27-am.json)",
+  "source": "Fantrax roster sync 2026-11-27 4:10 PM PT (/workspace/fantrax-raw-2026-11-27-pm.json)",
   "fantraxTeamId": "bbdlo6fkmsb3ulv5",
   "lineupFlags": [
     "Dre Greenlaw — Q (active)"
@@ -61,11 +59,10 @@
   "pendingClaim": null,
   "pendingClaims": [],
   "flags": [
-    "Jakobi Meyers — Q (IR slot)",
     "Dre Greenlaw — Q (active)",
     "Jack Campbell — IR (IR slot)",
     "Devin White — IR (IR slot)"
   ],
   "updated": "2026-11-27",
-  "lastSynced": "2026-11-27 5:50 AM PT"
+  "lastSynced": "2026-11-27 4:10 PM PT"
 }
